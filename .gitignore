@@ -32,3 +32,10 @@
 *.sn*
 *.sa*
 *.sg1
+
+
+# windsurf rules
+.windsurfrules
+
+#wiki
+wiki/
