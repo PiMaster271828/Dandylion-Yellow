@@ -538,7 +538,8 @@ GiovanniData:
 ; Silph Co. 11F
 	db $FF, 37, NIDORINO, 35, PERSIAN, 37, RHYHORN, 41, NIDOQUEEN, 0
 ; Viridian Gym
-	db $FF, 50, DUGTRIO, 53, PERSIAN, 53, NIDOQUEEN, 55, NIDOKING, 55, RHYDON, 0
+    db $FF, 50, DUGTRIO, 52, PINSIR, 54, PERSIAN, 56, NIDOQUEEN, 58, NIDOKING, 60, RHYDON, 0             ; Added animeesque Pokémon	
+  ; db $FF, 50, DUGTRIO, 53, PERSIAN, 53, NIDOQUEEN, 55, NIDOKING, 55, RHYDON, 0
 
 RocketData:
 ; Mt. Moon B2F
@@ -649,28 +650,36 @@ CooltrainerFData:
 	db 43, PERSIAN, NINETALES, RAICHU, 0
 
 BrunoData:
-	db $FF, 53, ONIX, 55, HITMONCHAN, 55, HITMONLEE, 56, ONIX, 58, MACHAMP, 0
+    db $FF, 57, ONIX, 56, PRIMEAPE, 55, HITMONCHAN, 55, HITMONLEE, 58, POLIWRATH, 60, MACHAMP, 0         ; Changed Bruno's team
+  ; db $FF, 53, ONIX, 55, HITMONCHAN, 55, HITMONLEE, 56, ONIX, 58, MACHAMP, 0
 
 BrockData:
-	db $FF, 10, GEODUDE, 12, ONIX, 0
+	db $FF, 12, GEODUDE, 11, KABUTO, 10, ZUBAT, 10, VULPIX, 11, OMANYTE, 14, ONIX, 0                     ; Added animeesque Pokémon	
+  ; db $FF, 10, GEODUDE, 12, ONIX, 0
 
 MistyData:
-	db $FF, 18, STARYU, 21, STARMIE, 0
+    db $FF, 19, HORSEA, 19, SEEL, 20, STARYU, 20, GOLDEEN, 21, PSYDUCK , 21, STARMIE, 0                  ; Added animeesque Pokémon	
+  ; db $FF, 18, STARYU, 21, STARMIE, 0
 
 LtSurgeData:
-	db $FF, 28, RAICHU, 0
+    db $FF, 24, RATICATE, 26, ELECTRODE, 26, MAGNETON, 28, FEAROW, 28, ELECTABUZZ, 30, RAICHU, 0         ; Added animeesque Pokémon	
+  ; db $FF, 28, RAICHU, 0
 
 ErikaData:
-	db $FF, 30, TANGELA, 32, WEEPINBELL, 32, GLOOM, 0
+    db $FF, 32, WEEPINBELL, 32, GLOOM, 33, EXEGGUTOR, 33, TANGELA, 34, VICTREEBEL, 34, VILEPLUME, 0      ; Added animeesque Pokémon	
+  ; db $FF, 30, TANGELA, 32, WEEPINBELL, 32, GLOOM, 0
 
 KogaData:
-	db $FF, 44, VENONAT, 46, VENONAT, 48, VENONAT, 50, VENOMOTH, 0
+    db $FF, 45, VENONAT, 46, GOLBAT, 47, SCYTHER, 48, ARBOK, 49, WEEZING, 50, VENOMOTH, 0                ; Added animeesque Pokémon	
+  ; db $FF, 44, VENONAT, 46, VENONAT, 48, VENONAT, 50, VENOMOTH, 0
 
 BlaineData:
-	db $FF, 48, NINETALES, 50, RAPIDASH, 54, ARCANINE, 0
+    db $FF, 48, NINETALES, 48, TAUROS, 50, RAPIDASH, 52, CHARIZARD, 54, ARCANINE, 58, MAGMAR, 0           ; Added animeesque Pokémon  ; Charizard will be Charizard_Y
+  ; db $FF, 48, NINETALES, 50, RAPIDASH, 54, ARCANINE, 0
 
 SabrinaData:
-	db $FF, 50, ABRA, 50, KADABRA, 50, ALAKAZAM, 0
+    db $FF, 44, GOLDUCK, 46, MR_MIME, 46, HAUNTER, 48, HYPNO, 48, SLOWBRO, 50, ALAKAZAM, 0               ; Added animeesque Pokémon	
+  ; db $FF, 50, ABRA, 50, KADABRA, 50, ALAKAZAM, 0
 
 GentlemanData:
 ; SS Anne 1F Rooms
@@ -706,7 +715,8 @@ Rival3Data:
 	db $FF, 61, SANDSLASH, 59, ALAKAZAM, 61, EXEGGUTOR, 61, NINETALES, 63, MAGNETON, 65, VAPOREON, 0
 
 LoreleiData:
-	db $FF, 54, DEWGONG, 53, CLOYSTER, 54, SLOWBRO, 56, JYNX, 56, LAPRAS, 0
+    db $FF, 54, DEWGONG, 53, CLOYSTER, 54, SLOWBRO, 55, ARTICUNO, 56, JYNX, 58, LAPRAS, 0	             ; Changed Lorelei's team
+  ; db $FF, 54, DEWGONG, 53, CLOYSTER, 54, SLOWBRO, 56, JYNX, 56, LAPRAS, 0
 
 ChannelerData:
 ; Unused
@@ -748,7 +758,9 @@ ChannelerData:
 	db 33, GASTLY, GASTLY, HAUNTER, 0
 
 AgathaData:
-	db $FF, 56, GENGAR, 56, GOLBAT, 55, HAUNTER, 58, ARBOK, 60, GENGAR, 0
+    db $FF, 56, GENGAR, 58, MAROWAK, 56, GOLBAT, 55, HAUNTER, 60, NINETALES, 62, GENGAR, 0	             ; Changed Agatha's team 
+  ; db $FF, 56, GENGAR, 56, GOLBAT, 55, HAUNTER, 58, ARBOK, 60, GENGAR, 0
 
 LanceData:
-	db $FF, 58, GYARADOS, 56, DRAGONAIR, 56, DRAGONAIR, 60, AERODACTYL, 62, DRAGONITE, 0
+    db $FF, 59, GYARADOS, 58, DRAGONAIR, 58, DRAGONAIR, 60, CHARIZARD, 62, AERODACTYL, 64, DRAGONITE, 0  ; Charizard will be Charizard X
+  ; db $FF, 58, GYARADOS, 56, DRAGONAIR, 56, DRAGONAIR, 60, AERODACTYL, 62, DRAGONITE, 0
