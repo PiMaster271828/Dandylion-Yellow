@@ -34,8 +34,10 @@
 *.sg1
 
 
+#Vlad's personal files
+
 # windsurf rules
 .windsurfrules
-
-#wiki
 wiki/
+.vscode/
+pokeyellow.ss5
