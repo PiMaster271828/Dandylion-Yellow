@@ -1,5 +1,5 @@
 TypeNames:
-	table_width 2
+	table_width 2, TypeNames
 
 	dw .Normal
 	dw .Fighting
@@ -9,7 +9,11 @@ TypeNames:
 	dw .Rock
 	dw .Bird
 	dw .Bug
-	dw .Ghost
+	dw .Dragon
+	dw .Steel
+	dw .Dark
+	dw .Glass
+	dw .Struggler
 
 REPT UNUSED_TYPES_END - UNUSED_TYPES
 	dw .Normal
@@ -21,7 +25,9 @@ ENDR
 	dw .Electric
 	dw .Psychic
 	dw .Ice
-	dw .Dragon
+	dw .Ghost
+	dw .Fairy
+	dw .Sound
 
 	assert_table_length NUM_TYPES
 
@@ -41,3 +47,9 @@ ENDR
 .Bug:      db "BUG@"
 .Ghost:    db "GHOST@"
 .Dragon:   db "DRAGON@"
+.Steel:    db "STEEL@"
+.Dark:     db "DARK@"
+.Fairy:    db "FAIRY@"
+.Sound:    db "SOUND@"
+.Glass:    db "GLASS@"
+.Struggler: db "STRUGGLER@"

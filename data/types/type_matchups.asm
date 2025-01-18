@@ -32,6 +32,7 @@ TypeEffects:
 	db GRASS,        FLYING,       NOT_VERY_EFFECTIVE
 	db ICE,          WATER,        NOT_VERY_EFFECTIVE
 	db ICE,          GRASS,        SUPER_EFFECTIVE
+	db ICE,          BUG,          SUPER_EFFECTIVE
 	db ICE,          GROUND,       SUPER_EFFECTIVE
 	db ICE,          FLYING,       SUPER_EFFECTIVE
 	db FIGHTING,     NORMAL,       SUPER_EFFECTIVE
@@ -75,11 +76,92 @@ TypeEffects:
 	db ROCK,         BUG,          SUPER_EFFECTIVE
 	db ROCK,         ICE,          SUPER_EFFECTIVE
 	db GHOST,        NORMAL,       NO_EFFECT
-	db GHOST,        PSYCHIC_TYPE, NO_EFFECT
+	db GHOST,        PSYCHIC_TYPE, SUPER_EFFECTIVE
 	db FIRE,         DRAGON,       NOT_VERY_EFFECTIVE
 	db WATER,        DRAGON,       NOT_VERY_EFFECTIVE
 	db ELECTRIC,     DRAGON,       NOT_VERY_EFFECTIVE
 	db GRASS,        DRAGON,       NOT_VERY_EFFECTIVE
 	db ICE,          DRAGON,       SUPER_EFFECTIVE
 	db DRAGON,       DRAGON,       SUPER_EFFECTIVE
+	db NORMAL,       STEEL,        NOT_VERY_EFFECTIVE
+	db STEEL,        FIRE,         NOT_VERY_EFFECTIVE
+	db FIRE,         STEEL,        SUPER_EFFECTIVE
+	db STEEL,        WATER,        NOT_VERY_EFFECTIVE
+	db STEEL,        ELECTRIC,     NOT_VERY_EFFECTIVE
+	db GRASS,        STEEL,        NOT_VERY_EFFECTIVE
+	db STEEL,        ICE,          SUPER_EFFECTIVE
+	db ICE,          STEEL,        NOT_VERY_EFFECTIVE
+	db STEEL,        ROCK,         SUPER_EFFECTIVE
+	db ROCK,         STEEL,        NOT_VERY_EFFECTIVE
+	db GROUND,       STEEL,        SUPER_EFFECTIVE
+	db FIGHTING,     STEEL,        SUPER_EFFECTIVE
+	db ICE,          FIRE,         NOT_VERY_EFFECTIVE
+	db POISON,       STEEL,        NO_EFFECT
+	db FLYING,       STEEL, 	   NOT_VERY_EFFECTIVE
+	db PSYCHIC_TYPE, STEEL,        NOT_VERY_EFFECTIVE
+	db BUG,          STEEL,        NOT_VERY_EFFECTIVE
+	db GHOST,        STEEL,        NOT_VERY_EFFECTIVE
+	db DRAGON,       STEEL,        NOT_VERY_EFFECTIVE
+	db DARK,         STEEL,        NOT_VERY_EFFECTIVE
+	db STEEL,        STEEL,        NOT_VERY_EFFECTIVE
+	db FAIRY,        STEEL,        NOT_VERY_EFFECTIVE
+	db STEEL,        FAIRY,        SUPER_EFFECTIVE
+	db FAIRY,        FIRE,         NOT_VERY_EFFECTIVE
+	db FAIRY,        FIGHTING,     SUPER_EFFECTIVE
+	db FIGHTING,     FAIRY,        NOT_VERY_EFFECTIVE
+	db POISON,       FAIRY,        SUPER_EFFECTIVE
+	db FAIRY,        POISON,       NOT_VERY_EFFECTIVE
+	db GROUND,       FAIRY,        NOT_VERY_EFFECTIVE
+	db BUG,          FAIRY,        NOT_VERY_EFFECTIVE
+	db DRAGON,       FAIRY,        NOT_VERY_EFFECTIVE
+	db FAIRY,        DRAGON,       SUPER_EFFECTIVE
+	db FAIRY,        DARK,         SUPER_EFFECTIVE
+	db DARK,         FAIRY,        NOT_VERY_EFFECTIVE
+	db FIGHTING,     DARK,         SUPER_EFFECTIVE
+	db DARK,         FIGHTING,     NOT_VERY_EFFECTIVE
+	db BUG,          DARK,         SUPER_EFFECTIVE
+	db PSYCHIC_TYPE, DARK,         NO_EFFECT
+	db DARK,         PSYCHIC_TYPE, SUPER_EFFECTIVE
+	db GHOST,        DARK,         NOT_VERY_EFFECTIVE
+	db DARK,         GHOST,        SUPER_EFFECTIVE
+	db DARK,         DARK,         NOT_VERY_EFFECTIVE
+    db SOUND,        WATER,        SUPER_EFFECTIVE
+	db SOUND,        FLYING,       SUPER_EFFECTIVE
+	db SOUND,        GROUND,       SUPER_EFFECTIVE
+	db SOUND,        FAIRY,        SUPER_EFFECTIVE
+	db SOUND,        SOUND,        NOT_VERY_EFFECTIVE
+	db FAIRY,        SOUND,        NOT_VERY_EFFECTIVE
+	db SOUND,        STEEL,        SUPER_EFFECTIVE
+	db STEEL,        SOUND,        SUPER_EFFECTIVE
+	db SOUND,        ELECTRIC,     NOT_VERY_EFFECTIVE
+	db SOUND,        PSYCHIC_TYPE, NOT_VERY_EFFECTIVE
+	db SOUND,        ROCK,         SUPER_EFFECTIVE
+	db SOUND,        DRAGON,       NOT_VERY_EFFECTIVE
+	db SOUND,        GHOST,        NO_EFFECT
+	db ELECTRIC,     SOUND,        SUPER_EFFECTIVE
+	db FIRE,         SOUND,        SUPER_EFFECTIVE
+	db WATER,        GLASS,        NO_EFFECT
+	db FIRE,         GLASS,        SUPER_EFFECTIVE
+	db ICE,          GLASS,        SUPER_EFFECTIVE
+	db GRASS,        GLASS,        NOT_VERY_EFFECTIVE
+	db FIGHTING,     GLASS,        SUPER_EFFECTIVE
+	db NORMAL,       GLASS,        NOT_VERY_EFFECTIVE
+	db BUG,          GLASS,        NOT_VERY_EFFECTIVE
+	db POISON,       GLASS,        NO_EFFECT
+	db STEEL,        GLASS,        SUPER_EFFECTIVE
+	db SOUND,        GLASS,        SUPER_EFFECTIVE
+	db ROCK,         GLASS,        SUPER_EFFECTIVE
+	db ELECTRIC,     GLASS,        NOT_VERY_EFFECTIVE
+	db FAIRY,        GLASS,        NOT_VERY_EFFECTIVE
+	db GLASS,        BUG,          SUPER_EFFECTIVE
+	db GLASS,        GRASS,        SUPER_EFFECTIVE
+	db GLASS,        FIRE,         NOT_VERY_EFFECTIVE
+	db GLASS,        WATER,        SUPER_EFFECTIVE
+	db GLASS,        STEEL,        NOT_VERY_EFFECTIVE
+	db GLASS,        POISON,       SUPER_EFFECTIVE
+	db GLASS,        SOUND,        SUPER_EFFECTIVE
+	db GLASS,        ICE,          NOT_VERY_EFFECTIVE
+	db GLASS,        GLASS,        NOT_VERY_EFFECTIVE
+	db GLASS,        FLYING,       SUPER_EFFECTIVE
+	db GLASS,        FAIRY,        SUPER_EFFECTIVE            
 	db -1 ; end
