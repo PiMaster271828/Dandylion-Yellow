@@ -21,7 +21,7 @@ Moves:
 	move ICE_PUNCH,    FREEZE_SIDE_EFFECT1,         75, ICE,          100, 15
 	move THUNDERPUNCH, PARALYZE_SIDE_EFFECT1,       75, ELECTRIC,     100, 15
 	move SCRATCH,      NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 35
-	move VICEGRIP,     NO_ADDITIONAL_EFFECT,        55, NORMAL,        100, 30 ;STEEL
+	move VICEGRIP,     NO_ADDITIONAL_EFFECT,        55, STEEL,        100, 30
 	move GUILLOTINE,   OHKO_EFFECT,                  1, NORMAL,        30,  5
 	move RAZOR_WIND,   CHARGE_EFFECT,              100, NORMAL,        95, 10
 	move SWORDS_DANCE, ATTACK_UP2_EFFECT,            0, NORMAL,       100, 30
@@ -53,8 +53,8 @@ Moves:
 	move POISON_STING, POISON_SIDE_EFFECT1,         35, POISON,       100, 35
 	move TWINEEDLE,    TWINEEDLE_EFFECT,            40, BUG,          100, 20
 	move PIN_MISSILE,  TWO_TO_FIVE_ATTACKS_EFFECT,  25, BUG,           85, 20
-	move LEER,         DEFENSE_DOWN1_EFFECT,         0, NORMAL,       100, 30 ;DARK
-	move BITE,         FLINCH_SIDE_EFFECT1,         60, NORMAL,       100, 25 ;DARK
+	move LEER,         DEFENSE_DOWN1_EFFECT,         0, DARK,         100, 30
+	move BITE,         FLINCH_SIDE_EFFECT1,         60, DARK,         100, 25
 	move GROWL,        ATTACK_DOWN1_EFFECT,          0, NORMAL,       100, 40
 	move ROAR,         SWITCH_AND_TELEPORT_EFFECT,   0, NORMAL,       100, 20
 	move SING,         SLEEP_EFFECT,                 0, NORMAL,        55, 15
@@ -118,13 +118,13 @@ Moves:
 	move RECOVER,      HEAL_EFFECT,                  0, NORMAL,       100, 20
 	move HARDEN,       DEFENSE_UP1_EFFECT,           0, ROCK,         100, 30
 	move MINIMIZE,     EVASION_UP1_EFFECT,           0, NORMAL,       100, 20
-	move SMOKESCREEN,  ACCURACY_DOWN1_EFFECT,        0, NORMAL,       100, 20 ;DARK
+	move SMOKESCREEN,  ACCURACY_DOWN1_EFFECT,        0, DARK,         100, 20
 	move CONFUSE_RAY,  CONFUSION_EFFECT,             0, GHOST,        100, 10
 	move WITHDRAW,     DEFENSE_UP1_EFFECT,           0, WATER,        100, 40
 	move DEFENSE_CURL, DEFENSE_UP1_EFFECT,           0, NORMAL,       100, 40
 	move BARRIER,      DEFENSE_UP2_EFFECT,           0, PSYCHIC_TYPE, 100, 30
 	move LIGHT_SCREEN, LIGHT_SCREEN_EFFECT,          0, PSYCHIC_TYPE, 100, 30
-	move HAZE,         HAZE_EFFECT,                  0, NORMAL,       100, 30 ;DARK
+	move HAZE,         HAZE_EFFECT,                  0, DARK,         100, 30
 	move REFLECT,      REFLECT_EFFECT,               0, PSYCHIC_TYPE, 100, 20
 	move FOCUS_ENERGY, FOCUS_ENERGY_EFFECT,          0, NORMAL,       100, 30
 	move BIDE,         BIDE_EFFECT,                  0, NORMAL,       100, 10
@@ -147,12 +147,12 @@ Moves:
 	move KINESIS,      ACCURACY_DOWN1_EFFECT,        0, PSYCHIC_TYPE,  80, 15
 	move SOFTBOILED,   HEAL_EFFECT,                  0, NORMAL,       100, 10
 	move HI_JUMP_KICK, JUMP_KICK_EFFECT,           130, FIGHTING,      90, 20
-	move GLARE,        PARALYZE_EFFECT,              0, NORMAL,       100, 30 ;DARK
+	move GLARE,        PARALYZE_EFFECT,              0, DARK,         100, 30
 	move DREAM_EATER,  DREAM_EATER_EFFECT,         100, PSYCHIC_TYPE, 100, 15
 	move POISON_GAS,   POISON_EFFECT,                0, POISON,        85, 40
 	move BARRAGE,      TWO_TO_FIVE_ATTACKS_EFFECT,  35, NORMAL,        85, 20
 	move LEECH_LIFE,   DRAIN_HP_EFFECT,             80, BUG,          100, 15
-	move LOVELY_KISS,  SLEEP_EFFECT,                 0, NORMAL,        75, 10 ;FAIRY
+	move LOVELY_KISS,  SLEEP_EFFECT,                 0, FAIRY,         75, 10
 	move SKY_ATTACK,   CHARGE_EFFECT,              140, FLYING,        90,  5
 	move TRANSFORM,    TRANSFORM_EFFECT,             0, NORMAL,       100, 10
 	move BUBBLE,       SPEED_DOWN_SIDE_EFFECT,      20, WATER,        100, 30
@@ -175,5 +175,5 @@ Moves:
 	move SUPER_FANG,   SUPER_FANG_EFFECT,            1, NORMAL,        90, 10
 	move SLASH,        NO_ADDITIONAL_EFFECT,        70, NORMAL,       100, 20
 	move SUBSTITUTE,   SUBSTITUTE_EFFECT,            0, NORMAL,       100, 10
-	move STRUGGLE,     RECOIL_EFFECT,               50, NORMAL,       100, 10
+	move STRUGGLE,     RECOIL_EFFECT,               50, STRUGGLER,    100, 10
 	assert_table_length NUM_ATTACKS
