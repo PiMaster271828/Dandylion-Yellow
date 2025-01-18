@@ -23,9 +23,9 @@ Moves:
 	move SCRATCH,      NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 35
 	move VICEGRIP,     NO_ADDITIONAL_EFFECT,        55, STEEL,        100, 30 ; Changed to Steel type
 	move GUILLOTINE,   OHKO_EFFECT,                  1, NORMAL,        30,  5
-	move RAZOR_WIND,   CHARGE_EFFECT,              100, NORMAL,        95, 10 ; Buffed power & accuracy
+	move RAZOR_WIND,   CHARGE_EFFECT,              100, NORMAL,        95, 10 ; changed to Flying type, buffed power & accuracy (New high crit. rate move)
 	move SWORDS_DANCE, ATTACK_UP2_EFFECT,            0, NORMAL,       100, 30
-	move CUT,          NO_ADDITIONAL_EFFECT,        55, BUG,           95, 30 ; Changed to Bug type
+	move CUT,          NO_ADDITIONAL_EFFECT,        55, BUG,           95, 30 ; Changed to Bug type, & buffed power (New high crit. rate move)
 	move GUST,         NO_ADDITIONAL_EFFECT,        40, FLYING,       100, 35 ; Changed to Flying type
 	move WING_ATTACK,  NO_ADDITIONAL_EFFECT,        60, FLYING,       100, 35 ; Buffed power
 	move WHIRLWIND,    SWITCH_AND_TELEPORT_EFFECT,   0, FLYING,       100, 20 ; Changed to Flying type, & buffed accuracy
@@ -40,7 +40,7 @@ Moves:
 	move ROLLING_KICK, FLINCH_SIDE_EFFECT2,         75, FIGHTING,      95, 15 ; Buffed power & accuracy
 	move SAND_ATTACK,  ACCURACY_DOWN1_EFFECT,        0, GROUND,       100, 15 ; Changed to Ground type
 	move HEADBUTT,     FLINCH_SIDE_EFFECT2,         70, NORMAL,       100, 15
-	move HORN_ATTACK,  NO_ADDITIONAL_EFFECT,        65, BUG,          100, 25 ; Changed to Bug type
+	move HORN_ATTACK,  POISON_SIDE_EFFECT1,         65, BUG,          100, 25 ; Changed to Bug type, & gave a Poison side effect
 	move FURY_ATTACK,  TWO_TO_FIVE_ATTACKS_EFFECT,  20, NORMAL,        95, 20 ; Buffed power & accuracy
 	move HORN_DRILL,   OHKO_EFFECT,                  1, NORMAL,        30,  5
 	move TACKLE,       NO_ADDITIONAL_EFFECT,        35, NORMAL,        95, 35
@@ -52,14 +52,14 @@ Moves:
 	move TAIL_WHIP,    DEFENSE_DOWN1_EFFECT,         0, NORMAL,       100, 30
 	move POISON_STING, POISON_SIDE_EFFECT1,         35, POISON,       100, 35 ; Buffed power 
 	move TWINEEDLE,    TWINEEDLE_EFFECT,            40, BUG,          100, 20 ; Buffed power
-	move PIN_MISSILE,  TWO_TO_FIVE_ATTACKS_EFFECT,  25, BUG,           90, 20 ; Buffed accuracy
+	move PIN_MISSILE,  TWO_TO_FIVE_ATTACKS_EFFECT,  25, BUG,           90, 20 ; Buffed accuracy (Poison side effect to be added)
 	move LEER,         DEFENSE_DOWN1_EFFECT,         0, DARK,         100, 30 ; Changed to Dark type
 	move BITE,         FLINCH_SIDE_EFFECT1,         60, DARK,         100, 25 ; Changed to Dark type
 	move GROWL,        ATTACK_DOWN1_EFFECT,          0, SOUND,        100, 40 ; Changed to Sound type
 	move ROAR,         SWITCH_AND_TELEPORT_EFFECT,   0, SOUND,        100, 20 ; Changed to Sound type
 	move SING,         SLEEP_EFFECT,                 0, SOUND,         55, 15 ; Changed to Sound type
 	move SUPERSONIC,   CONFUSION_EFFECT,             0, SOUND,         75, 20 ; Changed to Sound type, & buffed accuracy
-	move SONICBOOM,    SPECIAL_DAMAGE_EFFECT,        1, SOUND,         90, 20 ; Changed to Sound type
+	move SONICBOOM,    SPECIAL_DAMAGE_EFFECT,        1, SOUND,         90, 20 ; Changed to Sound type (Flinch side effect to be added)
 	move DISABLE,      DISABLE_EFFECT,               0, PSYCHIC_TYPE,  85, 20 ; Changed to Psychic type, & buffed accuracy
 	move ACID,         DEFENSE_DOWN_SIDE_EFFECT,    65, POISON,       100, 30 ; Buffed power
 	move EMBER,        BURN_SIDE_EFFECT1,           40, FIRE,         100, 25 
@@ -75,9 +75,9 @@ Moves:
 	move AURORA_BEAM,  ATTACK_DOWN_SIDE_EFFECT,     65, ICE,          100, 20
 	move HYPER_BEAM,   HYPER_BEAM_EFFECT,          150, DRAGON,        90,  5 ; Changed to Dragon type
 	move PECK,         NO_ADDITIONAL_EFFECT,        35, FLYING,       100, 35
-	move DRILL_PECK,   NO_ADDITIONAL_EFFECT,        85, FLYING,       100, 20 ; Buffed power
-	move SUBMISSION,   RECOIL_EFFECT,              100, FIGHTING,      90, 25 ; Buffed power & accuracy
-	move LOW_KICK,     FLINCH_SIDE_EFFECT2,         55, FIGHTING,     100, 20 ; Buffed power & accuracy
+	move DRILL_PECK,   NO_ADDITIONAL_EFFECT,        85, FLYING,       100, 20 ; Buffed power (New high crit. rate move)
+	move SUBMISSION,   RECOIL_EFFECT,              100, FIGHTING,      90, 25 ; Buffed power & accuracy (Flinch side effect to be added)
+	move LOW_KICK,     FLINCH_SIDE_EFFECT2,         55, FIGHTING,     100, 20 ; Buffed power & accuracy (Varying power based on weight to be added)
 	move COUNTER,      NO_ADDITIONAL_EFFECT,         1, FIGHTING,     100, 20
 	move SEISMIC_TOSS, SPECIAL_DAMAGE_EFFECT,        1, FIGHTING,     100, 20
 	move STRENGTH,     NO_ADDITIONAL_EFFECT,        80, FIGHTING,     100, 15 ; Changed to Fighting type
@@ -86,18 +86,18 @@ Moves:
 	move LEECH_SEED,   LEECH_SEED_EFFECT,            0, GRASS,         90, 10
 	move GROWTH,       SPECIAL_UP1_EFFECT,           0, NORMAL,       100, 40
 	move RAZOR_LEAF,   NO_ADDITIONAL_EFFECT,        55, GRASS,         95, 25
-	move SOLARBEAM,    CHARGE_EFFECT,              180, GRASS,        100, 10 ; Buffed power
+	move SOLARBEAM,    CHARGE_EFFECT,              180, GRASS,        100, 10 ; Buffed power (Burn side effect to be added)
 	move POISONPOWDER, POISON_EFFECT,                0, POISON,        85, 35 ; Buffed accuracy
 	move STUN_SPORE,   PARALYZE_EFFECT,              0, GRASS,         85, 30 ; Buffed accuracy
 	move SLEEP_POWDER, SLEEP_EFFECT,                 0, GRASS,         85, 15 ; Buffed accuracy
 	move PETAL_DANCE,  THRASH_PETAL_DANCE_EFFECT,  120, GRASS,        100, 20 ; Buffed power
 	move STRING_SHOT,  SPEED_DOWN1_EFFECT,           0, BUG,          100, 40
 	move DRAGON_RAGE,  SPECIAL_DAMAGE_EFFECT,        1, DRAGON,       100, 10
-	move FIRE_SPIN,    TRAPPING_EFFECT,             15, FIRE,          85, 15
+	move FIRE_SPIN,    TRAPPING_EFFECT,             15, FIRE,          85, 15 ; Buffed accuracy (Burn side effect to be added)
 	move THUNDERSHOCK, PARALYZE_SIDE_EFFECT1,       40, ELECTRIC,     100, 30
 	move THUNDERBOLT,  PARALYZE_SIDE_EFFECT1,       95, ELECTRIC,     100, 15
 	move THUNDER_WAVE, PARALYZE_EFFECT,              0, ELECTRIC,     100, 20
-	move THUNDER,      PARALYZE_SIDE_EFFECT1,      120, SOUND,         85, 10 ; Changed to Sound type, & buffed accuracy (A new Electric type move "Thunder Strike" will replace this move)
+	move THUNDER,      FLINCH_SIDE_EFFECT1,        120, SOUND,         85, 10 ; Changed to Sound type, changed side effect to flinch, & buffed accuracy (A new Electric type move "Thunder Strike" will replace this move)
 	move ROCK_THROW,   NO_ADDITIONAL_EFFECT,        55, ROCK,          90, 15 ; Buffed power & accuracy
 	move EARTHQUAKE,   NO_ADDITIONAL_EFFECT,       100, GROUND,       100, 10 ; Unchanged (This is the best move in the game!)
 	move FISSURE,      OHKO_EFFECT,                  1, GROUND,        30,  5
@@ -118,7 +118,7 @@ Moves:
 	move RECOVER,      HEAL_EFFECT,                  0, NORMAL,       100, 20
 	move HARDEN,       DEFENSE_UP1_EFFECT,           0, ROCK,         100, 30 ; Changed to Rock type
 	move MINIMIZE,     EVASION_UP1_EFFECT,           0, NORMAL,       100, 20
-	move SMOKESCREEN,  ACCURACY_DOWN1_EFFECT,        0, DARK,         100, 20 ; Changed to Dark type 
+	move SMOKESCREEN,  ACCURACY_DOWN1_EFFECT,        0, DARK,         100, 20 ; Changed to Dark type
 	move CONFUSE_RAY,  CONFUSION_EFFECT,             0, GHOST,        100, 10
 	move WITHDRAW,     DEFENSE_UP1_EFFECT,           0, WATER,        100, 40
 	move DEFENSE_CURL, DEFENSE_UP1_EFFECT,           0, NORMAL,       100, 40
@@ -130,17 +130,17 @@ Moves:
 	move BIDE,         BIDE_EFFECT,                  0, NORMAL,       100, 10
 	move METRONOME,    METRONOME_EFFECT,             0, NORMAL,       100, 10
 	move MIRROR_MOVE,  MIRROR_MOVE_EFFECT,           0, FLYING,       100, 20
-	move SELFDESTRUCT, EXPLODE_EFFECT,             200, NORMAL,       100,  5 ; Buffed power
+	move SELFDESTRUCT, EXPLODE_EFFECT,             200, NORMAL,       100,  5 ; Buffed power (Defense halving effect to be added)
 	move EGG_BOMB,     NO_ADDITIONAL_EFFECT,       100, GRASS,         95, 10 ; Changed to Grass type, & buffed accuracy
 	move LICK,         PARALYZE_SIDE_EFFECT2,       40, GHOST,        100, 30 ; Buffed power
 	move SMOG,         POISON_SIDE_EFFECT2,         40, POISON,        95, 20 ; Buffed power & accuracy
 	move SLUDGE,       POISON_SIDE_EFFECT2,         70, POISON,       100, 20 ; Buffed power
 	move BONE_CLUB,    FLINCH_SIDE_EFFECT1,         70, GROUND,        90, 20 ; Buffed power & accuracy
 	move FIRE_BLAST,   BURN_SIDE_EFFECT2,          120, FIRE,          85, 10 ; Buffed power points 
-	move WATERFALL,    NO_ADDITIONAL_EFFECT,        80, WATER,        100, 15
+	move WATERFALL,    FLINCH_SIDE_EFFECT1,         80, WATER,        100, 15 ; Added flinch side effect
 	move CLAMP,        TRAPPING_EFFECT,             35, WATER,         75, 10
 	move SWIFT,        SWIFT_EFFECT,                60, NORMAL,       100, 20
-	move SKULL_BASH,   CHARGE_EFFECT,              120, NORMAL,       100, 15 ; Buffed power
+	move SKULL_BASH,   CHARGE_EFFECT,              120, NORMAL,       100, 15 ; Buffed power (Defense boost on charge turn to be added)
 	move SPIKE_CANNON, TWO_TO_FIVE_ATTACKS_EFFECT,  35, WATER,        100, 15 ; Changed to Water type, & buffed power
 	move CONSTRICT,    SPEED_DOWN_SIDE_EFFECT,      10, NORMAL,       100, 35
 	move AMNESIA,      SPECIAL_UP2_EFFECT,           0, PSYCHIC_TYPE, 100, 20
@@ -153,17 +153,17 @@ Moves:
 	move BARRAGE,      TWO_TO_FIVE_ATTACKS_EFFECT,  35, GRASS,         85, 20 ; Changed to Grass type, & buffed power
 	move LEECH_LIFE,   DRAIN_HP_EFFECT,             80, BUG,          100, 15 ; Buffed power
 	move LOVELY_KISS,  SLEEP_EFFECT,                 0, FAIRY,         75, 10 ; Changed to Fairy type
-	move SKY_ATTACK,   CHARGE_EFFECT,              140, FLYING,        90,  5 
+	move SKY_ATTACK,   CHARGE_EFFECT,              140, FLYING,        90,  5 ; (New high crit. move)
 	move TRANSFORM,    TRANSFORM_EFFECT,             0, NORMAL,       100, 10
 	move BUBBLE,       SPEED_DOWN_SIDE_EFFECT,      20, WATER,        100, 30
 	move DIZZY_PUNCH,  NO_ADDITIONAL_EFFECT,        70, FIGHTING,     100, 10 ; Changed to Fighting type
 	move SPORE,        SLEEP_EFFECT,                 0, GRASS,        100, 15
 	move FLASH,        ACCURACY_DOWN1_EFFECT,        0, NORMAL,        95, 20 ; Buffed accuracy
-	move PSYWAVE,      SPECIAL_DAMAGE_EFFECT,        1, PSYCHIC_TYPE, 100, 15 ; Buffed accuracy
+	move PSYWAVE,      SPECIAL_DAMAGE_EFFECT,        1, PSYCHIC_TYPE, 100, 15 ; Buffed accuracy (Buff to damage calculation to be added)
 	move SPLASH,       SPLASH_EFFECT,                0, WATER,         10, 40 ; Nerfed accuracy (Move too strong, please nerf!)
 	move ACID_ARMOR,   DEFENSE_UP2_EFFECT,           0, POISON,       100, 40
-	move CRABHAMMER,   NO_ADDITIONAL_EFFECT,        90, WATER,         95, 10 ; Buffed power & accuracy
-	move EXPLOSION,    EXPLODE_EFFECT,             250, NORMAL,       100,  5 ; Buffed power
+	move CRABHAMMER,   NO_ADDITIONAL_EFFECT,        90, WATER,         95, 10 ; Gave flinch side effect, & buffed power & accuracy
+	move EXPLOSION,    EXPLODE_EFFECT,             250, NORMAL,       100,  5 ; Buffed power (Defense halving effect to be added)
 	move FURY_SWIPES,  TWO_TO_FIVE_ATTACKS_EFFECT,  20, NORMAL,        85, 15 ; Buffed power & accuracy
 	move BONEMERANG,   ATTACK_TWICE_EFFECT,         50, GROUND,        90, 10
 	move REST,         HEAL_EFFECT,                  0, NORMAL,       100, 10 ; Changed to Normal type
@@ -171,7 +171,7 @@ Moves:
 	move HYPER_FANG,   FLINCH_SIDE_EFFECT1,         80, NORMAL,        90, 15
 	move SHARPEN,      ATTACK_UP1_EFFECT,            0, NORMAL,       100, 30
 	move CONVERSION,   CONVERSION_EFFECT,            0, NORMAL,       100, 30
-	move TRI_ATTACK,   NO_ADDITIONAL_EFFECT,        80, NORMAL,       100, 10
+	move TRI_ATTACK,   NO_ADDITIONAL_EFFECT,        80, NORMAL,       100, 10 ; (Tri Attack effect to be added)
 	move SUPER_FANG,   SUPER_FANG_EFFECT,            1, NORMAL,        90, 10
 	move SLASH,        NO_ADDITIONAL_EFFECT,        70, NORMAL,       100, 20
 	move SUBSTITUTE,   SUBSTITUTE_EFFECT,            0, NORMAL,       100, 10
