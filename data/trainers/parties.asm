@@ -47,6 +47,7 @@ TrainerDataPointers:
 	dw ChannelerData
 	dw AgathaData
 	dw LanceData
+	dw JessieJamesData
 	assert_table_length NUM_TRAINERS
 
 ; if first byte != $FF, then
@@ -764,3 +765,5 @@ AgathaData:
 LanceData:
     db $FF, 59, GYARADOS, 58, DRAGONAIR, 58, DRAGONAIR, 60, CHARIZARD, 62, AERODACTYL, 64, DRAGONITE, 0  ; Charizard will be Charizard X
   ; db $FF, 58, GYARADOS, 56, DRAGONAIR, 56, DRAGONAIR, 60, AERODACTYL, 62, DRAGONITE, 0
+
+JessieJamesData:

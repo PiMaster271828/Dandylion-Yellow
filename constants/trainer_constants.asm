@@ -62,4 +62,5 @@ ENDM
 	trainer_const CHANNELER      ; $2D
 	trainer_const AGATHA         ; $2E
 	trainer_const LANCE          ; $2F
+	trainer_const JESSIE_JAMES   ; $30 ;New trainer class for Team Rocket
 DEF NUM_TRAINERS EQU const_value - 1
