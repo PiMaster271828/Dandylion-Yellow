@@ -1,257 +1,257 @@
 ; default hidden/shown objects for each map
 
 MapHSPointers:
-; entries correspond to map ids
+; entries correspond to map ids.  See constants/map_constants.asm
 	table_width 2
-	dw PalletTownHS
-	dw ViridianCityHS
-	dw PewterCityHS
-	dw CeruleanCityHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw SaffronCityHS
-	dw NoHS
-	dw NoHS
-	dw Route2HS
-	dw NoHS
-	dw Route4HS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw Route9HS
-	dw NoHS
-	dw NoHS
-	dw Route12HS
-	dw NoHS
-	dw NoHS
-	dw Route15HS
-	dw Route16HS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw Route22HS
-	dw NoHS
-	dw Route24HS
-	dw Route25HS
-	dw NoHS
-	dw NoHS
-	dw BluesHouseHS
-	dw OaksLabHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw ViridianGymHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw ViridianForestHS
-	dw Museum1FHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw MtMoon1FHS
-	dw NoHS
-	dw MtMoonB2FHS
-	dw NoHS
-	dw CeruleanMelaniesHouseHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw PowerPlantHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw BillsHouseHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw SSAnne2FHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw SSAnne1FRoomsHS
-	dw SSAnne2FRoomsHS
-	dw SSAnneB1FRoomsHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw VictoryRoad1FHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw ChampionsRoomHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw CeladonMansionRoofHouseHS
-	dw NoHS
-	dw NoHS
-	dw GameCornerHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw PokemonTower2FHS
-	dw PokemonTower3FHS
-	dw PokemonTower4FHS
-	dw PokemonTower5FHS
-	dw PokemonTower6FHS
-	dw PokemonTower7FHS
-	dw MrFujisHouseHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw WardensHouseHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw SeafoamIslandsB1FHS
-	dw SeafoamIslandsB2FHS
-	dw SeafoamIslandsB3FHS
-	dw SeafoamIslandsB4FHS
-	dw NoHS
-	dw NoHS
-	dw PokemonMansion1FHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw FightingDojoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw SilphCo1FHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw SeafoamIslands1FHS
-	dw NoHS
-	dw VictoryRoad2FHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw VictoryRoad3FHS
-	dw RocketHideoutB1FHS
-	dw RocketHideoutB2FHS
-	dw RocketHideoutB3FHS
-	dw RocketHideoutB4FHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw SilphCo2FHS
-	dw SilphCo3FHS
-	dw SilphCo4FHS
-	dw SilphCo5FHS
-	dw SilphCo6FHS
-	dw SilphCo7FHS
-	dw SilphCo8FHS
-	dw PokemonMansion2FHS
-	dw PokemonMansion3FHS
-	dw PokemonMansionB1FHS
-	dw SafariZoneEastHS
-	dw SafariZoneNorthHS
-	dw SafariZoneWestHS
-	dw SafariZoneCenterHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw CeruleanCave2FHS
-	dw CeruleanCaveB1FHS
-	dw CeruleanCaveHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw SilphCo9FHS
-	dw SilphCo10FHS
-	dw SilphCo11FHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw UnusedMapF4HS
-	dw NoHS
-	dw NoHS
-	dw NoHS
-	dw NoHS
+	dw PalletTownHS                 ; 00 - Pallet Town
+	dw ViridianCityHS               ; 01 - Viridian City
+	dw PewterCityHS                 ; 02 - Pewter City
+	dw CeruleanCityHS               ; 03 - Cerulean City
+	dw NoHS                         ; 04 - Lavender Town
+	dw NoHS                         ; 05 - Vermilion City
+	dw NoHS                         ; 06 - Celadon City
+	dw NoHS                         ; 07 - Fuchsia City
+	dw NoHS                         ; 08 - Cinnabar Island
+	dw NoHS                         ; 09 - Indigo Plateau
+	dw SaffronCityHS                ; 0A - Saffron City
+	dw NoHS                         ; 0B - **Unused**
+	dw NoHS                         ; 0C - Route 1
+	dw Route2HS                     ; 0D - Route 2
+	dw NoHS                         ; 0E - Route 3
+	dw Route4HS                     ; 0F - Route 4
+	dw NoHS                         ; 10 - Route 5
+	dw NoHS                         ; 11 - Route 6
+	dw NoHS                         ; 12 - Route 7
+	dw NoHS                         ; 13 - Route 8
+	dw Route9HS                     ; 14 - Route 9
+	dw NoHS                         ; 15 - Route 10
+	dw NoHS                         ; 16 - Route 11
+	dw Route12HS                    ; 17 - Route 12
+	dw NoHS                         ; 18 - Route 13
+	dw NoHS                         ; 19 - Route 14
+	dw Route15HS                    ; 1A - Route 15
+	dw Route16HS                    ; 1B - Route 16
+	dw NoHS                         ; 1C - Route 17
+	dw NoHS                         ; 1D - Route 18
+	dw NoHS                         ; 1E - Route 19
+	dw NoHS                         ; 1F - Route 20
+	dw NoHS                         ; 20 - Route 21
+	dw Route22HS                    ; 21 - Route 22
+	dw NoHS                         ; 22 - Route 23
+	dw Route24HS                    ; 23 - Route 24
+	dw Route25HS                    ; 24 - Route 25
+	dw NoHS                         ; 25 - Reds House 1F
+	dw NoHS                         ; 26 - Reds House 2F
+	dw BluesHouseHS                 ; 27 - Blues House
+	dw OaksLabHS                    ; 28 - Oaks Lab
+	dw NoHS                         ; 29 - Viridian Pokecenter
+	dw NoHS                         ; 2A - Viridian Mart
+	dw NoHS                         ; 2B - Viridian School House
+	dw NoHS                         ; 2C - Viridian Nickname House
+	dw ViridianGymHS                ; 2D - Viridian Gym
+	dw NoHS                         ; 2E - Digletts Cave (Route 2)
+	dw NoHS                         ; 2F - Viridian Forest North Gate
+	dw NoHS                         ; 30 - Route 2 Trade House
+	dw NoHS                         ; 31 - Route 2 Gate
+	dw NoHS                         ; 32 - Viridian Forest South Gate
+	dw ViridianForestHS             ; 33 - Viridian Forest
+	dw Museum1FHS                   ; 34 - Museum 1F
+	dw NoHS                         ; 35 - Museum 2F
+	dw NoHS                         ; 36 - Pewter Gym
+	dw NoHS                         ; 37 - Pewter Nidoran House
+	dw NoHS                         ; 38 - Pewter Mart
+	dw NoHS                         ; 39 - Pewter Speech House
+	dw NoHS                         ; 3A - Pewter Pokecenter
+	dw MtMoon1FHS                   ; 3B - Mt. Moon 1F
+	dw NoHS                         ; 3C - Mt. Moon B1F
+	dw MtMoonB2FHS                  ; 3D - Mt. Moon B2F
+	dw NoHS                         ; 3E - Cerulean Trashed House
+	dw CeruleanMelaniesHouseHS      ; 3F - Cerulean Melanies House
+	dw NoHS                         ; 40 - Cerulean Pokecenter
+	dw NoHS	                        ; 41 - Cerulean Gym
+	dw NoHS                         ; 42 - Bike Shop
+	dw NoHS                         ; 43 - Cerulean Mart
+	dw NoHS                         ; 44 - Mt. Moon Pokecenter
+	dw NoHS                         ; 45 - Cerulean Trashed House (Copy)
+	dw NoHS                         ; 46 - Route 5 Gate
+	dw NoHS                         ; 47 - Underground Path (Route 5)
+	dw NoHS                         ; 48 - Daycare
+	dw NoHS                         ; 49 - Route 6 Gate
+	dw NoHS                         ; 4A - Underground Path (Route 6)
+	dw NoHS                         ; 4B - Underground Path (Route 6) (Copy)
+	dw NoHS                         ; 4C - Route 7 Gate
+	dw NoHS                         ; 4D - Underground Path (Route 7)
+	dw NoHS                         ; 4E - Underground Path (Route 7) (Copy)
+	dw NoHS                         ; 4F - Route 8 Gate
+	dw NoHS                         ; 50 - Underground Path (Route 8)
+	dw NoHS                         ; 51 - Rock Tunnel Pokecenter
+	dw NoHS                         ; 52 - Rock Tunnel 1F
+	dw PowerPlantHS                 ; 53 - Power Plant
+	dw NoHS                         ; 54 - Route 11 Gate 1F
+	dw NoHS                         ; 55 - Digletts Cave (Route 11)
+	dw NoHS                         ; 56 - Route 11 Gate 2F
+	dw NoHS                         ; 57 - Route 12 Gate 1F
+	dw BillsHouseHS                 ; 58 - Bill's House
+	dw NoHS                         ; 59 - Vermilion Pokecenter
+	dw NoHS                         ; 5A - Pokemon Fan Club
+	dw NoHS                         ; 5B - Vermilion Mart
+	dw NoHS                         ; 5C - Vermilion Gym
+	dw NoHS                         ; 5D - Vermilion Pidgey House
+	dw NoHS                         ; 5E - Vermilion Dock
+	dw NoHS                         ; 5F - SS Anne 1F
+	dw SSAnne2FHS                   ; 60 - SS Anne 2F
+	dw NoHS                         ; 61 - SS Anne 3F
+	dw NoHS                         ; 62 - SS Anne B1F
+	dw NoHS                         ; 63 - SS Anne Bow
+	dw NoHS                         ; 64 - SS Anne Kitchen
+	dw NoHS                         ; 65 - SS Anne Captain's Room
+	dw SSAnne1FRoomsHS              ; 66 - SS Anne 1F Rooms
+	dw SSAnne2FRoomsHS              ; 67 - SS Anne 2F Rooms
+	dw SSAnneB1FRoomsHS             ; 68 - SS Anne B1F Rooms
+	dw NoHS                         ; 69 - **Unused**
+	dw NoHS                         ; 6A - **Unused**
+	dw NoHS                         ; 6B - **Unused**
+	dw VictoryRoad1FHS              ; 6C - Victory Road 1F
+	dw NoHS                         ; 6D - **Unused**
+	dw NoHS                         ; 6E - **Unused**
+	dw NoHS                         ; 6F - **Unused**
+	dw NoHS                         ; 70 - **Unused**
+	dw NoHS                         ; 71 - Lance's Room
+	dw NoHS                         ; 72 - **Unused**
+	dw NoHS                         ; 73 - **Unused**
+	dw NoHS                         ; 74 - **Unused**
+	dw NoHS                         ; 75 - **Unused**
+	dw NoHS                         ; 76 - Hall of Fame
+	dw NoHS                         ; 77 - Underground Path North South
+	dw ChampionsRoomHS              ; 78 - Champions Room
+	dw NoHS                         ; 79 - Underground Path West East
+	dw NoHS                         ; 7A - Celadon Mart 1F
+	dw NoHS                         ; 7B - Celadon Mart 2F
+	dw NoHS                         ; 7C - Celadon Mart 3F
+	dw NoHS                         ; 7D - Celadon Mart 4F
+	dw NoHS                         ; 7E - Celadon Mart Roof
+	dw NoHS                         ; 7F - Celadon Mart Elevator
+	dw NoHS                         ; 80 - Celadon Mansion 1F
+	dw NoHS                         ; 81 - Celadon Mansion 2F
+	dw NoHS                         ; 82 - Celadon Mansion 3F
+	dw NoHS                         ; 83 - Celadon Mansion Roof
+	dw CeladonMansionRoofHouseHS    ; 84 - Celadon Mansion Roof House
+	dw NoHS                         ; 85 - Celadon Pokecenter
+	dw NoHS                         ; 86 - Celadon Gym
+	dw GameCornerHS                 ; 87 - Game Corner
+	dw NoHS                         ; 88 - Celadon Mart 5F
+	dw NoHS                         ; 89 - Game Corner Prize Room
+	dw NoHS                         ; 8A - Celadon Diner
+	dw NoHS                         ; 8B - Celadon Chief House
+	dw NoHS                         ; 8C - Celadon Hotel
+	dw NoHS                         ; 8D - Lavender Pokecenter
+	dw NoHS                         ; 8E - Pokemon Tower 1F
+	dw PokemonTower2FHS             ; 8F - Pokemon Tower 2F
+	dw PokemonTower3FHS             ; 90 - Pokemon Tower 3F
+	dw PokemonTower4FHS             ; 91 - Pokemon Tower 4F
+	dw PokemonTower5FHS             ; 92 - Pokemon Tower 5F
+	dw PokemonTower6FHS             ; 93 - Pokemon Tower 6F
+	dw PokemonTower7FHS             ; 94 - Pokemon Tower 7F
+	dw MrFujisHouseHS               ; 95 - Mr. Fujis House
+	dw NoHS                         ; 96 - Lavender Mart
+	dw NoHS                         ; 97 - Lavender Cubone House
+	dw NoHS                         ; 98 = Fuchsia Mart
+	dw NoHS                         ; 99 - Fuschia Bill's Grandpa's House
+	dw NoHS                         ; 9A - Fuchsia Pokecenter
+	dw WardensHouseHS               ; 9B - Warden's House
+	dw NoHS                         ; 9C - Safari Zone Gate
+	dw NoHS                         ; 9D - Fuchsia Gym
+	dw NoHS                         ; 9E - Fuchsia Meeting Room
+	dw SeafoamIslandsB1FHS          ; 9F - Seafoam Islands B1F
+	dw SeafoamIslandsB2FHS          ; A0 - Seafoam Islands B2F
+	dw SeafoamIslandsB3FHS          ; A1 - Seafoam Islands B3F
+	dw SeafoamIslandsB4FHS          ; A2 - Seafoam Islands B4F
+	dw NoHS                         ; A3 - Vermillion Old Rod House
+	dw NoHS                         ; A4 - Fuchsia Good Rod House
+	dw PokemonMansion1FHS           ; A5 - Pokemon Mansion 1F
+	dw NoHS                         ; A6 - Cinnabar Gym
+	dw NoHS                         ; A7 - Cinnabar Lab
+	dw NoHS                         ; A8 - Cinnabar Lab Trade Room
+	dw NoHS                         ; A9 - Cinnabar Lab Metronome Room
+	dw NoHS                         ; AA - Cinnabar Lab Fossil Room
+	dw NoHS                         ; AB - Cinnabar Pokecenter
+	dw NoHS                         ; AC - Cinnabar Mart
+	dw NoHS                         ; AD - Cinnabar Mart (Copy)
+	dw NoHS                         ; AE - Indigo Plateau Lobby
+	dw NoHS                         ; AF - Copycat's House 1F
+	dw NoHS                         ; B0 - Copycat's House 2F
+	dw FightingDojoHS               ; B1 - Fighting Dojo
+	dw NoHS                         ; B2 - Saffron Gym
+	dw NoHS                         ; B3 - Saffron Pidgey House
+	dw NoHS                         ; B4 - Saffron Mart
+	dw SilphCo1FHS                  ; B5 - Silph Co 1F
+	dw NoHS                         ; B6 - Saffron Pokecenter
+	dw NoHS                         ; B7 - Mr. Psychic's House
+	dw NoHS                         ; B8 - Route 15 Gate 1F
+	dw NoHS                         ; B9 - Route 15 Gate 2F
+	dw NoHS                         ; BA - Route 16 Gate 1F
+	dw NoHS                         ; BB - Route 16 Gate 2F
+	dw NoHS                         ; BC - Route 16 Fly House
+	dw NoHS                         ; BD - Route 12 Super Rod House
+	dw NoHS                         ; BE - Route 18 Gate 1F
+	dw NoHS                         ; BF - Route 18 Gate 2F
+	dw SeafoamIslands1FHS           ; C0 - Seafoam Islands 1F
+	dw NoHS                         ; C1 - Route 22 Gate
+	dw VictoryRoad2FHS              ; C2 - Victory Road 2F
+	dw NoHS                         ; C3 - Route 12 Gate 2F
+	dw NoHS                         ; C4 - Vermilion  Trade House
+	dw NoHS                         ; C5 - Diggletts Cave
+	dw VictoryRoad3FHS              ; C6 - Victory Road 3F
+	dw RocketHideoutB1FHS           ; C7 - Rocket Hideout B1F
+	dw RocketHideoutB2FHS           ; C8 - Rocket Hideout B2F
+	dw RocketHideoutB3FHS           ; C9 - Rocket Hideout B3F
+	dw RocketHideoutB4FHS           ; CA - Rocket Hideout B4F
+	dw NoHS                         ; CB - Rocket Hideout Elevator
+	dw NoHS                         ; CC - **Unused**
+	dw NoHS                         ; CD - **Unused**
+	dw NoHS                         ; CE - **Unused**
+	dw SilphCo2FHS                  ; CF - Silph Co 2F
+	dw SilphCo3FHS                  ; D0 - Silph Co 3F
+	dw SilphCo4FHS                  ; D1 - Silph Co 4F
+	dw SilphCo5FHS                  ; D2 - Silph Co 5F
+	dw SilphCo6FHS                  ; D3 - Silph Co 6F
+	dw SilphCo7FHS                  ; D4 - Silph Co 7F
+	dw SilphCo8FHS                  ; D5 - Silph Co 8F
+	dw PokemonMansion2FHS           ; D6 - Pokemon Mansion 2F
+	dw PokemonMansion3FHS           ; D7 - Pokemon Mansion 3F
+	dw PokemonMansionB1FHS          ; D8 - Pokemon Mansion B1F
+	dw SafariZoneEastHS             ; D9 - Safari Zone East
+	dw SafariZoneNorthHS            ; DA - Safari Zone North
+	dw SafariZoneWestHS             ; DB - Safari Zone West
+	dw SafariZoneCenterHS           ; DC - Safari Zone Center
+	dw NoHS                         ; DD - Safari Zone Center Rest House
+	dw NoHS                         ; DE - Safari Zone Secret House
+	dw NoHS                         ; DF - Safari Zone West Rest House
+	dw NoHS                         ; E0 - Safari Zone East Rest House
+	dw NoHS                         ; E1 - Safari Zone North Rest House
+	dw CeruleanCave2FHS             ; E2 - Cerulean Cave 2F
+	dw CeruleanCaveB1FHS            ; E3 - Cerulean Cave B1F
+	dw CeruleanCaveHS               ; E4 - Cerulean Cave 1F
+	dw NoHS                         ; E5 - Name Rater's House
+	dw NoHS                         ; E6 - Cerulean Badge House
+	dw NoHS                         ; E7 - **Unused**
+	dw NoHS                         ; E8 - Rock Tunne B1F
+	dw SilphCo9FHS                  ; E9 - Silph Co 9F
+	dw SilphCo10FHS                 ; EA - Silph Co 10F
+	dw SilphCo11FHS                 ; EB - Silph Co 11F
+	dw NoHS                         ; EC - Silph Co Elevator
+	dw NoHS                         ; ED - **Unused**
+	dw NoHS                         ; EE - **Unused**
+	dw NoHS                         ; EF - Trade Center
+	dw NoHS                         ; F0 - Colosseum
+	dw NoHS                         ; F1 - **Unused**
+	dw NoHS                         ; F2 - **Unused**
+	dw NoHS                         ; F3 - **Unused**
+	dw UnusedMapF4HS                ; F4 - **Unused**
+	dw NoHS                         ; F5 - Lorelei's Room
+	dw NoHS                         ; F6 - Bruno's Room
+	dw NoHS                         ; F7 - Agatha's Room
+	dw NoHS                         ; F8 - Summer Beach House
 	assert_table_length NUM_MAPS
 	dw -1 ; end
 

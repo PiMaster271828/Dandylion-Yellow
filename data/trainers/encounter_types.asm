@@ -14,4 +14,5 @@ EvilTrainerList::
 	db OPP_SCIENTIST
 	db OPP_GIOVANNI
 	db OPP_ROCKET
+	db OPP_JESSIE_JAMES ;New Trainer Class Jessie_James
 	db -1 ; end

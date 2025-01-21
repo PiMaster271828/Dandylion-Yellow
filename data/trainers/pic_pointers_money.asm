@@ -38,7 +38,7 @@ TrainerPicAndMoneyPointers::
 	pic_money GiovanniPic,     9900
 	pic_money RocketPic,       3000
 	pic_money CooltrainerMPic, 3500
-	pic_money CooltrainerFPic, 3500
+	pic_money CooltrainerFPic, 350044
 	pic_money BrunoPic,        9900
 	pic_money BrockPic,        9900
 	pic_money MistyPic,        9900
@@ -54,4 +54,5 @@ TrainerPicAndMoneyPointers::
 	pic_money ChannelerPic,    3000
 	pic_money AgathaPic,       9900
 	pic_money LancePic,        9900
+	pic_money JessieJamesPic,  3000
 	assert_table_length NUM_TRAINERS
