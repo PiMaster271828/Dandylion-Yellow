@@ -336,15 +336,15 @@ GetSplitMapSpriteSetID:
 .loadSpriteSetID
 	ld a, [hl]
 	ret
-; Uses sprite set SPRITESET_PALLET_VIRIDIAN for west side and SPRITESET_FUCHSIA for east side.
+; Uses sprite set SPRITESET_CINNABAR_ISLAND for west side and SPRITESET_FUCHSIA for east side.
 ; Route 20 is a special case because the two map sections have a more complex
 ; shape instead of the map simply being split horizontally or vertically.
 .route20
 	ld hl, wXCoord
-	; Use SPRITESET_PALLET_VIRIDIAN if X < 43
+	; Use SPRITESET_CINNABAR_ISLAND if X < 43
 	ld a, [hl]
 	cp 43
-	ld a, SPRITESET_PALLET_VIRIDIAN
+	ld a, SPRITESET_CINNABAR_ISLAND
 	ret c
 	; Use SPRITESET_FUCHSIA if X >= 62.
 	ld a, [hl]
@@ -358,12 +358,12 @@ GetSplitMapSpriteSetID:
 	jr nc, .next
 	ld b, 13
 .next
-	; Use SPRITESET_FUCHSIA if Y < split; else use SPRITESET_PALLET_VIRIDIAN
+	; Use SPRITESET_FUCHSIA if Y < split; else use SPRITESET_CINNABAR_ISLAND
 	ld a, [wYCoord]
 	cp b
 	ld a, SPRITESET_FUCHSIA
 	ret c
-	ld a, SPRITESET_PALLET_VIRIDIAN
+	ld a, SPRITESET_CINNABAR_ISLAND
 	ret
 
 INCLUDE "data/maps/sprite_sets.asm"
