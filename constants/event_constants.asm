@@ -24,8 +24,8 @@
 
 ; Viridian City events
 	const_next $28
-	const EVENT_VIRIDIAN_GYM_OPEN
-	const EVENT_GOT_TM42
+	const EVENT_VIRIDIAN_GYM_OPEN                      
+	const EVENT_GOT_TM42                               
 	const_skip 2
 	const EVENT_SPAWNED_OLD_MAN_1
 	const EVENT_COMPLETED_CATCH_TRAINING
@@ -45,6 +45,9 @@
 	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_5
 	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_6
 	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_7
+	const_skip 1
+	const EVENT_BEAT_JESSIE_1_TRAINER_0
+	const EVENT_3C
 
 ; Pewter City events
 	const_next $68

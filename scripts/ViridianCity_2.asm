@@ -200,6 +200,15 @@ ViridianCityPrintGymLockedText::
 	text_far _ViridianCityGymLockedText
 	text_end
 
+ViridianCityPrintOfficerJennyText::
+	ld hl, .text
+	call PrintText
+	ret
+
+.text
+	text_far _ViridianCityOfficerJennyText
+	text_end
+
 
 ViridianCityMovePikachu::
 	ld hl, ViridianCityPikachuMovementData

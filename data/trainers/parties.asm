@@ -767,3 +767,4 @@ LanceData:
   ; db $FF, 58, GYARADOS, 56, DRAGONAIR, 56, DRAGONAIR, 60, AERODACTYL, 62, DRAGONITE, 0
 
 JessieJamesData:
+	db 5,  EKANS, MEOWTH, KOFFING, 0  ; Viridian City Pokémon Center

@@ -193,3 +193,10 @@ _ViridianCityGymLockedText::
 	text "The GYM's doors"
 	line "are locked..."
 	done
+
+_ViridianCityOfficerJennyText::
+	text "Team Rocket is"
+	line "stealing Pokemon"
+	cont "from the" 
+	cont "Pokemon Center!"
+	done

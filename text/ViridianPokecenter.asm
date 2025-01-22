@@ -14,3 +14,46 @@ _ViridianPokecenterCooltrainerMText::
 	para "They don't charge"
 	line "any money either!"
 	done
+
+_ViridianPokecenterRocketText1::
+	text "Stop right there!@"
+	text_end
+_ViridianPokecenterJessieBattleText::
+	text "Prepare for" 
+	line "trouble!"
+	cont "Make it double!"
+	para "To protect the"
+	line "world from"
+	cont "devastation!"
+	para "To unite all"
+	line "people within"
+	cont "our nation!"
+	para "To denounce"
+	line "the evils of"
+	cont "truth and love!"
+	para "To extend our"
+	line "reach to the"
+	cont "stars above!"
+	para "Jessie!"
+	para "James!"
+	para "Team Rocket"
+	line "blasts off at"
+	cont "the speed of"
+	cont "light!"
+	para "Surrender now,"
+	line "or prepare to"
+	cont "fight!"
+	para "Meowth:"
+	line "That's right!"
+	done
+	
+
+_ViridianPokecenterJessieEndBattleText::
+	text ""
+	line "A twerp beat us!?"
+	done
+	
+_ViridianPokecenterJessieAfterBattleText::
+	text "And we are"
+	line "blasting off!"
+	done

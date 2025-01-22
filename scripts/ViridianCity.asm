@@ -265,6 +265,7 @@ ViridianCity_TextPointers:
 	dw_const ViridianCityFisherText,                         TEXT_VIRIDIANCITY_FISHER
 	dw_const ViridianCityOldManText,                         TEXT_VIRIDIANCITY_OLD_MAN
 	dw_const ViridianCityOldMan2Text,                        TEXT_VIRIDIANCITY_OLD_MAN2
+	dw_const ViridianCityOfficerJennyText,                   TEXT_VIRIDIANCITY_OFFICER_JENNY
 	dw_const ViridianCitySignText,                           TEXT_VIRIDIANCITY_SIGN
 	dw_const ViridianCityTrainerTips1Text,                   TEXT_VIRIDIANCITY_TRAINER_TIPS1
 	dw_const ViridianCityTrainerTips2Text,                   TEXT_VIRIDIANCITY_TRAINER_TIPS2
@@ -273,6 +274,7 @@ ViridianCity_TextPointers:
 	dw_const ViridianCityGymSignText,                        TEXT_VIRIDIANCITY_GYM_SIGN
 	dw_const ViridianCityGymLockedText,                      TEXT_VIRIDIANCITY_GYM_LOCKED
 	dw_const ViridianCityOldManYouNeedToWeakenTheTargetText, TEXT_VIRIDIANCITY_OLD_MAN_YOU_NEED_TO_WEAKEN_THE_TARGET
+
 
 ViridianCityYoungster1Text:
 	text_asm
@@ -362,4 +364,9 @@ ViridianCityGymSignText:
 ViridianCityGymLockedText:
 	text_asm
 	farcall ViridianCityPrintGymLockedText
+	jp TextScriptEnd
+
+ViridianCityOfficerJennyText:
+	text_asm
+	farcall ViridianCityPrintOfficerJennyText
 	jp TextScriptEnd

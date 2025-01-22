@@ -44,7 +44,7 @@ MapHSPointers:
 	dw NoHS                         ; 26 - Reds House 2F
 	dw BluesHouseHS                 ; 27 - Blues House
 	dw OaksLabHS                    ; 28 - Oaks Lab
-	dw NoHS                         ; 29 - Viridian Pokecenter
+	dw ViridianPokecenterHS         ; 29 - Viridian Pokecenter
 	dw NoHS                         ; 2A - Viridian Mart
 	dw NoHS                         ; 2B - Viridian School House
 	dw NoHS                         ; 2C - Viridian Nickname House
@@ -269,6 +269,7 @@ ViridianCityHS:
 	db VIRIDIAN_CITY, VIRIDIANCITY_OLD_MAN_SLEEPY, SHOW
 	db VIRIDIAN_CITY, VIRIDIANCITY_OLD_MAN,        HIDE
 	db VIRIDIAN_CITY, VIRIDIANCITY_OLD_MAN2,       HIDE
+	db VIRIDIAN_CITY, VIRIDIANCITY_OFFICER_JENNY,  SHOW
 PewterCityHS:
 	db PEWTER_CITY, PEWTERCITY_SUPER_NERD1, SHOW
 	db PEWTER_CITY, PEWTERCITY_YOUNGSTER,   SHOW
@@ -328,6 +329,9 @@ OaksLabHS:
 	db OAKS_LAB, OAKSLAB_POKEDEX1,             SHOW
 	db OAKS_LAB, OAKSLAB_POKEDEX2,             SHOW
 	db OAKS_LAB, OAKSLAB_OAK2,                 HIDE
+ViridianPokecenterHS:
+	db VIRIDIAN_POKECENTER, VIRIDIANPOKECENTER_JESSIE, HIDE
+	db VIRIDIAN_POKECENTER, VIRIDIANPOKECENTER_JAMES,  HIDE
 ViridianGymHS:
 	db VIRIDIAN_GYM, VIRIDIANGYM_GIOVANNI, SHOW
 	db VIRIDIAN_GYM, VIRIDIANGYM_REVIVE,   SHOW
