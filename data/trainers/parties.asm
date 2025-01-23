@@ -141,16 +141,16 @@ LassData:
 
 SailorData:
 ; SS Anne Stern
-	db 18, MACHOP, SHELLDER, 0			; Sailor Team 1
-	db 17, MACHOP, TENTACOOL, 0			; Sailor Team 2
+	db 18, MACHOP, SHELLDER, 0                                                    ; Sailor 1
+	db 17, MACHOP, TENTACOOL, 0                                                   ; Sailor 2
 ; SS Anne B1F Rooms
-	db 21, SHELLDER, 0					; Sailor Team 3
-	db 17, HORSEA, SHELLDER, TENTACOOL, 0	; Sailor Team 4
-	db 18, TENTACOOL, STARYU, 0			; Sailor Team 5
-	db 17, HORSEA, HORSEA, HORSEA, 0		; Sailor Team 6
-	db 20, MACHOP, 0						; Sailor Team 7
+	db 21, SHELLDER, MACHOP, 0                                                    ; Sailor 3              ; Machop added by G-Dubs
+	db 17, HORSEA, SHELLDER, TENTACOOL, 0                                         ; Sailor 4
+	db 18, TENTACOOL, STARYU, 0                                                   ; Sailor 5
+	db 17, HORSEA, HORSEA, HORSEA, 0                                              ; Sailor 6
+	db 20, MACHOP, KRABBY, 0                                                      ; Sailor 7              ; Krabby added by G-Dubs
 ; Vermilion Gym
-	db 24, MAGNEMITE, 0					; Sailor Team 8
+	db 21, PIKACHU, MACHOP, PIKACHU, MAGNEMITE, 0                                 ; Sailor 8              ; Pikachu from Red/Blue, and Machop with Thunderpunch added by G-Dubs
 
 JrTrainerMData:
 ; Pewter Gym
@@ -216,16 +216,16 @@ JrTrainerFData:
 
 PokemaniacData:
 ; Route 10
-	db 30, RHYHORN, LICKITUNG, 0 			; Pokemaniac Team 1
-	db 20, CUBONE, SLOWPOKE, 0 			    ; Pokemaniac Team 2
+	db 30, RHYHORN, LICKITUNG, 0                                                  ; Pokémaniac 1
+	db 20, CUBONE, SLOWPOKE, NIDORAN_M, 0                                         ; Pokémaniac 2          ; Nidoran♂ added by G-Dubs
 ; Rock Tunnel B1F
-	db 20, SLOWPOKE, SLOWPOKE, SLOWPOKE, 0	; Pokemaniac Team 3
-	db 22, CHARMANDER, CUBONE, 0			; Pokemaniac Team 4
-	db 25, SLOWPOKE, 0					; Pokemaniac Team 5
+	db 20, SLOWPOKE, SLOWPOKE, SLOWPOKE, 0                                        ; Pokémaniac 3
+	db 22, CHARMANDER, CUBONE, NIDORINO, 0                                        ; Pokémaniac 4          ; Nidorino added by G-Dubs
+	db 25, SLOWPOKE, CHARMELEON, 0                                                ; Pokémaniac 5          ; Charmeleon added by G-Dubs
 ; Victory Road 2F
-	db 40, CHARMELEON, LAPRAS, LICKITUNG, 0	; Pokemaniac Team 6
+	db 45, CHARIZARD, LAPRAS, LICKITUNG, 0                                        ; Pokémaniac 6          ; Level changed to 45, and Charmeleon changed to Charizard by G-Dubs
 ; Rock Tunnel 1F
-	db 23, CUBONE, SLOWPOKE, 0			; Pokemaniac Team 7
+	db 23, CUBONE, SLOWPOKE, 0                                                    ; Pokémaniac 7
 
 SuperNerdData:
 ; Mt. Moon 1F
