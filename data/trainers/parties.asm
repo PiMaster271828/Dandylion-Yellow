@@ -154,65 +154,65 @@ SailorData:
 
 JrTrainerMData:
 ; Pewter Gym
-	db 9, DIGLETT, SANDSHREW, 0			; Jr. Trainer (M) Team 1
+	db 11, DIGLETT, SANDSHREW, 0                                                  ; Jr. Trainer ♂ 1       ; Changed from level 9 to 11 to match Red/Blue by G-Dubs
 ; Route 24/Route 25
-	db 14, RATTATA, EKANS, 0			; Jr. Trainer (M) Team 2
-; Route 24
-	db 18, MANKEY, 0					; Jr. Trainer (M) Team 3
+	db 14, NIDORAN_M, RATTATA, EKANS, 0                                           ; Jr. Trainer ♂ 2       ; Nidoran♂ added by G-Dubs
+ ; Route 24
+	db 18, NIDORAN_M, SANDSHREW, MANKEY, 0                                        ; Jr. Trainer ♂ 3       ; Nidoran♂ & Sandshrew added by G-Dubs
 ; Unused
-	db 20, SQUIRTLE, 0					; Jr. Trainer (M) Team 4
-; Route 6
-	db 16, SPEAROW, RATICATE, 0			; Jr. Trainer (M) Team 5
+	db 20, SQUIRTLE, 0					                                          ; Jr. Trainer ♂ 4       ; (Unused)
+; Route 6   
+	db 16, SPEAROW, NIDORAN_M ,RATICATE, 0                                        ; Jr. Trainer ♂ 5       ; Nidoran♂ added by G-Dubs
 ; Unused
-	db 18, DIGLETT, DIGLETT, SANDSHREW, 0	; Jr. Trainer (M) Team 6
-	db 21, GROWLITHE, CHARMANDER, 0		; Jr. Trainer (M) Team 7
+	db 18, DIGLETT, DIGLETT, SANDSHREW, 0	                                      ; Jr. Trainer ♂ 6       ; (Unused)
+	db 21, GROWLITHE, CHARMANDER, 0		                                          ; Jr. Trainer ♂ 7       ; (Unused)
 ; Route 9
-	db 19, RATTATA, DIGLETT, EKANS, SANDSHREW, 0	; Jr. Trainer (M) Team 8
+	db 19, RATTATA, DIGLETT, EKANS, SANDSHREW, 0                                  ; Jr. Trainer ♂ 8
 ; Route 12
-	db 29, NIDORAN_M, NIDORINO, 0		; Jr. Trainer (M) Team 9
-; Route 6
-	db 16, WEEPINBELL, 0				; Jr. Trainer (M) Team 10
+	db 29, NIDORAN_M, NIDORINO, 0                                                 ; Jr. Trainer ♂ 9
+; Route 6 (Again)
+	db 16, WEEPINBELL, 0                                                          ; Jr. Trainer ♂ 10      ; Joe from the anime, exclusive to Yellow (Poor coding)
 
 JrTrainerFData:
 ; Cerulean Gym
-	db 19, GOLDEEN, 0					; Jr. Trainer (F) Team 1
+	db 19, GOLDEEN, 0                                                             ; Jr. Trainer ♀ 1
 ; Unused
-	db 16, ODDISH, BELLSPROUT, 0			; Jr. Trainer (F) Team 2
+	db 16, ODDISH, BELLSPROUT, 0			                                      ; Jr. Trainer ♀ 2       ; (Unused)
 ; Route 6
-	db 16, PIDGEY, PIDGEY, PIDGEY, 0		; Jr. Trainer (F) Team 3
+	db 16, PIDGEY, PIDGEY, PIDGEY, 0		                                      ; Jr. Trainer ♀ 3
 ; Unused
-	db 22, BULBASAUR, 0					; Jr. Trainer (F) Team 4
+	db 22, BULBASAUR, 0					                                          ; Jr. Trainer ♀ 4       ; (Unused)
 ; Route 9
-	db 18, ODDISH, BELLSPROUT, ODDISH, BELLSPROUT, 0	; Jr. Trainer (F) Team 5
-	db 23, MEOWTH, 0					; Jr. Trainer (F) Team 6
+	db 18, ODDISH, BELLSPROUT, ODDISH, BELLSPROUT, 0                              ; Jr. Trainer ♀ 5
+	db 23, MEOWTH, 0                                                              ; Jr. Trainer ♀ 6  
 ; Route 10
-	db 20, JIGGLYPUFF, CLEFAIRY, 0		; Jr. Trainer (F) Team 7
-	db 21, PIDGEY, PIDGEOTTO, 0			; Jr. Trainer (F) Team 8
+	db 20, JIGGLYPUFF, PIKACHU, CLEFAIRY, 0                                       ; Jr. Trainer ♀ 7       ; Pikachu from Red/Blue added by G-Dubs 
+	db 21, PIDGEY, PIDGEOTTO, 0                                                   ; Jr. Trainer ♀ 8
 ; Rock Tunnel B1F
-	db 21, JIGGLYPUFF, PIDGEY, MEOWTH, 0	; Jr. Trainer (F) Team 9
-	db 22, ODDISH, BULBASAUR, 0			; Jr. Trainer (F) Team 10
+	db 21, JIGGLYPUFF, PIDGEY, MEOWTH, NIDORAN_F, 0                               ; Jr. Trainer ♀ 9       ; Nidoran♀ added by G-Dubs
+	db 22, ODDISH, BULBASAUR, 0                                                   ; Jr. Trainer ♀ 10     
 ; Celadon Gym
-	db 24, BULBASAUR, IVYSAUR, 0			; Jr. Trainer (F) Team 11
+	db 24, BULBASAUR, IVYSAUR, 0                                                  ; Jr. Trainer ♀ 11
 ; Route 13
-	db 24, PIDGEY, MEOWTH, RATTATA, PIDGEY, MEOWTH, 0	; Jr. Trainer (F) Team 12
-	db 30, POLIWAG, POLIWAG, 0			; Jr. Trainer (F) Team 13
-	db 27, PIDGEY, MEOWTH, PIDGEY, PIDGEOTTO, 0	; Jr. Trainer (F) Team 14
-	db 28, GOLDEEN, POLIWAG, HORSEA, 0	; Jr. Trainer (F) Team 15
+	db 24, PIDGEY, MEOWTH, RATTATA, PIKACHU, MEOWTH, PIDGEOTTO 0                  ; Jr. Trainer ♀ 12      ; Pikachu from Red/Blue added and Pidgey changed to Pidgeotto by G-Dubs
+	db 30, POLIWAG, POLIWAG, 0                                                    ; Jr. Trainer ♀ 13
+	db 27, PIDGEY, MEOWTH, PIDGEY, PIDGEOTTO, 0                                   ; Jr. Trainer ♀ 14
+	db 28, GOLDEEN, POLIWAG, HORSEA, 0                                            ; Jr. Trainer ♀ 15
 ; Route 20
-	db 31, GOLDEEN, SEAKING, 0			; Jr. Trainer (F) Team 16
+	db 31, GOLDEEN, SEAKING, 0                                                    ; Jr. Trainer ♀ 16
 ; Rock Tunnel 1F
-	db 22, BELLSPROUT, CLEFAIRY, 0		; Jr. Trainer (F) Team 17
-	db 20, MEOWTH, ODDISH, PIDGEY, 0		; Jr. Trainer (F) Team 18
-	db 19, PIDGEY, RATTATA, RATTATA, BELLSPROUT, 0	; Jr. Trainer (F) Team 19
+	db 22, BELLSPROUT, CLEFAIRY, 0                                                ; Jr. Trainer ♀ 17
+	db 20, MEOWTH, ODDISH, PIDGEY, NIDORAN_F, 0                                   ; Jr. Trainer ♀ 18      ; Nidoran♀ added by G-Dubs
+	db 19, PIDGEY, RATTATA, RATTATA, BELLSPROUT, NIDORAN_F, 0                     ; Jr. Trainer ♀ 19      ; Nidoran♀ added by G-Dubs
 ; Route 15
-	db 28, GLOOM, ODDISH, ODDISH, 0		; Jr. Trainer (F) Team 20
-	db 29, PIDGEY, PIDGEOTTO, 0			; Jr. Trainer (F) Team 21
-	db 33, CLEFAIRY, 0					; Jr. Trainer (F) Team 22
-	db 29, BELLSPROUT, ODDISH, TANGELA, 0	; Jr. Trainer (F) Team 23
-; Route 20
-	db 30, TENTACOOL, HORSEA, SEEL, 0	; Jr. Trainer (F) Team 24
-; Route 6
-	db 20, CUBONE, 0					; Jr. Trainer (F) Team 25
+	db 28, GLOOM, ODDISH, ODDISH, 0                                               ; Jr. Trainer ♀ 20
+	db 29, PIDGEY, PIDGEOTTO, 0                                                   ; Jr. Trainer ♀ 21
+	db 33, CLEFAIRY, 0                                                            ; Jr. Trainer ♀ 22
+	db 29, BELLSPROUT, ODDISH, TANGELA, 0                                         ; Jr. Trainer ♀ 23 
+; Route 20 (Again) 
+	db 30, TENTACOOL, HORSEA, SEEL, 0                                             ; Jr. Trainer ♀ 24      ; Added to the Route 20 section not in order due to poor coding
+; Route 6 (Again)
+	db 20, CUBONE, 0                                                              ; Jr. Trainer ♀ 25      ; Giselle from the anime, exclusive to Yellow (Poor coding)
 
 PokemaniacData:
 ; Route 10
