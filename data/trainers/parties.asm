@@ -85,28 +85,28 @@ YoungsterData:
 
 BugCatcherData:
 ; Viridian Forest
-	db 7, CATERPIE, CATERPIE, 0				; Bug Catcher Team 1
-	db 6, METAPOD, CATERPIE, METAPOD, 0		; Bug Catcher Team 2
-	db 10, CATERPIE, 0						; Bug Catcher Team 3
-; Route 3
-	db 10, CATERPIE, WEEDLE, CATERPIE, 0		; Bug Catcher Team 4
-	db 9, WEEDLE, KAKUNA, CATERPIE, METAPOD, 0	; Bug Catcher Team 5
-	db 11, CATERPIE, METAPOD, 0				; Bug Catcher Team 6
+	db 7, CATERPIE, WEEDLE, 0                                                     ; Bug Catcher 1       ; Weedle added by G-Dubs
+ 	db 6, METAPOD, CATERPIE, METAPOD, 0                                           ; Bug Catcher 2
+	db 10, CATERPIE, WEEDLE, 0                                                    ; Bug Catcher 3       ; Weedle added by G-Dubs
+; Route 3    
+	db 10, CATERPIE, WEEDLE, CATERPIE, 0                                          ; Bug Catcher 4
+	db 9, WEEDLE, KAKUNA, CATERPIE, METAPOD, 0                                    ; Bug Catcher 5
+	db 11, CATERPIE, METAPOD, 0                                                   ; Bug Catcher 6
 ; Mt. Moon 1F
-	db 11, WEEDLE, KAKUNA, 0				; Bug Catcher Team 7
-	db 10, CATERPIE, METAPOD, CATERPIE, 0	; Bug Catcher Team 8
+	db 11, WEEDLE, KAKUNA, CATERPIE, 0                                            ; Bug Catcher 7        ; Caterpie added by G-Dubs
+	db 10, CATERPIE, METAPOD, WEEDLE, 0                                           ; Bug Catcher 8        ; 2nd Caterpie changed to Weedle by G-Dubs
 ; Route 24
-	db 14, CATERPIE, WEEDLE, 0				; Bug Catcher Team 9
+	db 14, CATERPIE, WEEDLE, 0                                                    ; Bug Catcher 9
 ; Route 6
-	db 16, WEEDLE, CATERPIE, WEEDLE, 0		; Bug Catcher Team 10
-	db 20, BUTTERFREE, 0					; Bug Catcher Team 11
+	db 16, WEEDLE, CATERPIE, WEEDLE, 0                                            ; Bug Catcher 10
+	db 20, BUTTERFREE, 0                                                          ; Bug Catcher 11
 ; Unused
-	db 18, METAPOD, CATERPIE, VENONAT, 0	; Bug Catcher Team 12
+	db 18, METAPOD, CATERPIE, VENONAT, 0	                                      ; Bug Catcher 12       ; (Unused)
 ; Route 9
-	db 19, BEEDRILL, BEEDRILL, 0			; Bug Catcher Team 13
-	db 20, CATERPIE, WEEDLE, VENONAT, 0		; Bug Catcher Team 14
-; Viridian Forest
-	db 8, CATERPIE, METAPOD, 0				; Bug Catcher Team 15
+	db 19, BEEDRILL, BEEDRILL, 0                                                  ; Bug Catcher 13
+	db 20, CATERPIE, WEEDLE, VENONAT, 0                                           ; Bug Catcher 14
+; Viridian Forest (Again)
+	db 8, CATERPIE, METAPOD, 0                                                    ; Bug Catcher 15       ; Yellow exclusive Bug Catcher in Viridian Forest (Poor coding)
 
 LassData:
 ; Route 3
