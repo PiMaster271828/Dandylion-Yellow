@@ -194,7 +194,7 @@ JrTrainerFData:
 ; Celadon Gym
 	db 24, BULBASAUR, IVYSAUR, 0                                                  ; Jr. Trainer ♀ 11
 ; Route 13
-	db 24, PIDGEY, MEOWTH, RATTATA, PIKACHU, MEOWTH, PIDGEOTTO 0                  ; Jr. Trainer ♀ 12      ; Pikachu from Red/Blue added and Pidgey changed to Pidgeotto by G-Dubs
+	db 24, PIDGEY, MEOWTH, RATTATA, PIKACHU, MEOWTH, PIDGEOTTO, 0                 ; Jr. Trainer ♀ 12      ; Pikachu from Red/Blue added and Pidgey changed to Pidgeotto by G-Dubs
 	db 30, POLIWAG, POLIWAG, 0                                                    ; Jr. Trainer ♀ 13
 	db 27, PIDGEY, MEOWTH, PIDGEY, PIDGEOTTO, 0                                   ; Jr. Trainer ♀ 14
 	db 28, GOLDEEN, POLIWAG, HORSEA, 0                                            ; Jr. Trainer ♀ 15
@@ -310,10 +310,10 @@ BurglarData:
 
 EngineerData:
 ; Unused
-	db 21, VOLTORB, MAGNEMITE, 0			; Engineer Team 1
+	db 21, VOLTORB, MAGNEMITE, 0			                                      ; Engineer 1            ; (Unused)
 ; Route 11
-	db 21, MAGNEMITE, 0					; Engineer Team 2
-	db 18, MAGNEMITE, MAGNEMITE, MAGNETON, 0	; Engineer Team 3
+	db 21, MAGNEMITE, 0                                                           ; Engineer 2
+	db 18, MAGNEMITE, MAGNEMITE, MAGNETON, 0                                      ; Engineer 3
 
 UnusedJugglerData:
 ; none
