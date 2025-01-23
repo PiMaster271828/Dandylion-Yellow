@@ -110,34 +110,34 @@ BugCatcherData:
 
 LassData:
 ; Route 3
-	db 9, PIDGEY, PIDGEY, 0					; Lass Team 1
-	db 10, RATTATA, NIDORAN_M, 0			; Lass Team 2
-	db 14, JIGGLYPUFF, 0					; Lass Team 3
+	db 9, PIDGEY, PIDGEY, 0                                                       ; Lass 1
+	db 10, NIDORAN_F, RATTATA, NIDORAN_M, 0                                       ; Lass 2               ; Nidoran♀ added by G-Dubs
+	db 14, JIGGLYPUFF, 0                                                          ; Lass 3
 ; Route 4
-	db 31, PARAS, PARAS, PARASECT, 0		; Lass Team 4
+	db 31, PARAS, PARAS, PARASECT, 0                                              ; Lass 4
 ; Mt. Moon 1F
-	db 11, ODDISH, BELLSPROUT, 0			; Lass Team 5
-	db 14, CLEFAIRY, 0						; Lass Team 6
+	db 11, ODDISH, BELLSPROUT, 0                                                  ; Lass 5
+	db 14, CLEFAIRY, 0                                                            ; Lass 6
 ; Route 24
-	db 16, PIDGEY, NIDORAN_F, 0				; Lass Team 7
-	db 14, PIDGEY, NIDORAN_F, 0				; Lass Team 8
+	db 16, NIDORAN_M, PIDGEY, NIDORAN_F, 0                                        ; Lass 7               ; Nidoran♂ added by G-Dubs
+	db 14, NIDORAN_M, PIDGEY, NIDORAN_F, 0                                        ; Lass 8               ; Nidoran♂ added by G-Dubs
 ; Route 25
-	db 15, NIDORAN_M, NIDORAN_F, 0			; Lass Team 9
-	db 13, ODDISH, PIDGEY, ODDISH, 0		; Lass Team 10
+	db 15, NIDORAN_M, NIDORAN_F, 0                                                ; Lass 9
+	db 13, ODDISH, PIDGEY, ODDISH, 0                                              ; Lass 10
 ; SS Anne 1F Rooms
-	db 18, PIDGEY, NIDORAN_F, 0				; Lass Team 11
+	db 18, NIDORAN_F, PIDGEY, NIDORAN_F, 0                                        ; Lass 11              ; Nidoran♀ added by G-Dubs
 ; SS Anne 2F Rooms
-	db 20, JIGGLYPUFF, 0					; Lass Team 12
+	db 20, RATTATA, PIKACHU, JIGGLYPUFF, 0                                        ; Lass 12              ; Rattata, and Pikachu from Red/Blue added by G-Dubs
 ; Route 8
-	db 23, NIDORAN_F, NIDORINA, 0			; Lass Team 13
-	db 24, MEOWTH, MEOWTH, MEOWTH, 0		; Lass Team 14
-	db 19, PIDGEY, RATTATA, NIDORAN_F, MEOWTH, NIDORAN_M, 0	; Lass Team 15
-	db 22, CLEFAIRY, CLEFAIRY, 0			; Lass Team 16
+	db 23, NIDORAN_F, NIDORINA, 0                                                 ; Lass 13
+	db 24, MEOWTH, MEOWTH, MEOWTH, 0                                              ; Lass 14
+	db 19, PIDGEY, RATTATA, NIDORAN_F, MEOWTH, NIDORAN_M, PIKACHU, 0              ; Lass 15              ; Pikachu from Red/Blue added by G-Dubs
+	db 22, CLEFAIRY, CLEFAIRY, 0                                                  ; Lass 16
 ; Celadon Gym
-	db 23, BELLSPROUT, WEEPINBELL, 0		; Lass Team 17
-	db 23, ODDISH, GLOOM, 0				; Lass Team 18
-; Viridian Forest
-	db 6, NIDORAN_F, NIDORAN_M, 0			; Lass Team 19
+	db 23, BELLSPROUT, WEEPINBELL, 0		                                      ; Lass 17
+	db 23, ODDISH, GLOOM, 0				                                          ; Lass 18
+; Viridian Forest (Again)
+	db 6, NIDORAN_F, NIDORAN_M, 0                                                 ; Lass 19              ; Yellow exclusive Lass in Viridian Forest (Poor coding)
 
 SailorData:
 ; SS Anne Stern
