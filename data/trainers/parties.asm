@@ -410,16 +410,16 @@ BeautyData:
 
 PsychicData:
 ; Saffron Gym
-	db 31, KADABRA, SLOWPOKE, MR_MIME, KADABRA, 0	; Psychic Team 1
-	db 34, MR_MIME, KADABRA, 0			; Psychic Team 2
-	db 33, SLOWPOKE, SLOWPOKE, SLOWBRO, 0	; Psychic Team 3
-	db 38, SLOWBRO, 0					; Psychic Team 4
+	db 31, KADABRA, SLOWPOKE, MR_MIME, KADABRA, 0                                 ; Psychic 1
+	db 34, MR_MIME, KADABRA, 0                                                    ; Psychic 2
+	db 33, SLOWPOKE, SLOWPOKE, SLOWBRO, 0                                         ; Psychic 3
+	db 38, SLOWBRO, 0                                                             ; Psychic 4
 
 RockerData:
 ; Vermilion Gym
-	db 20, VOLTORB, VOLTORB, VOLTORB, 0			; Rocker Team 1
+	db 20, VOLTORB, VOLTORB, MAGNEMITE, VOLTORB, 0                                ; Rocker 1               ; Magnemite from Red/Blue added by G-Dubs
 ; Route 12
-	db 29, VOLTORB, ELECTRODE, 0			; Rocker Team 2
+	db 29, VOLTORB, ELECTRODE, 0                                                  ; Rocker 2
 
 JugglerData:
 ; Silph Co. 5F
