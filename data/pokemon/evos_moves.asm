@@ -230,12 +230,19 @@ NidoranMEvosMoves:
 	db EVOLVE_LEVEL, 16, NIDORINO
 	db 0
 ; Learnset
+	db 1, TACKLE
+	db 2, LEER
+	db 4, PECK
 	db 8, HORN_ATTACK
 	db 12, DOUBLE_KICK
 	db 17, POISON_STING
-	db 23, FOCUS_ENERGY
-	db 30, FURY_ATTACK
-	db 38, HORN_DRILL
+	db 20, FOCUS_ENERGY
+	db 24, FURY_ATTACK
+	db 28, DIG
+   ;db 32, POISON_JAB
+   ;db 36, EARTH_POWER
+	db 40, TOXIC
+	db 44, HORN_DRILL
 	db 0
 
 ClefairyEvosMoves:
@@ -279,9 +286,16 @@ NidokingEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 1, TACKLE
+	db 2, LEER
+	db 4, PECK
 	db 8, HORN_ATTACK
 	db 12, DOUBLE_KICK
+	db 19, POISON_STING
 	db 23, THRASH
+   ;db 35, POISON_TAIL
+   ;db 47, MEGAHORN
+	db 59, HORN_DRILL
 	db 0
 
 SlowbroEvosMoves:
@@ -368,21 +382,36 @@ NidoranFEvosMoves:
 	db EVOLVE_LEVEL, 16, NIDORINA
 	db 0
 ; Learnset
+	db 1, TACKLE
+	db 2, GROWL
+	db 4, TAIL_WHIP
 	db 8, SCRATCH
 	db 12, DOUBLE_KICK
 	db 17, POISON_STING
-	db 23, TAIL_WHIP
-	db 30, BITE
-	db 38, FURY_SWIPES
+    db 20, BITE 
+   ;db 20, GNAW
+	db 24, FURY_SWIPES
+   ;db 28, SWEET_KISS 
+   ;db 32, POISON_JAB
+   ;db 36, EARTH_POWER
+	db 40, TOXIC
+   ;db 44, POISON_FANG
 	db 0
 
 NidoqueenEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 1, TACKLE
+	db 2, GROWL
+	db 4, TAIL_WHIP
 	db 8, SCRATCH
 	db 12, DOUBLE_KICK
+	db 19, POISON_STING
 	db 23, BODY_SLAM
+   ;db 35, POISON_TAIL
+   ;db 47, CRUNCH
+   ;db 59, POISON_FANG
 	db 0
 
 CuboneEvosMoves:
@@ -1936,12 +1965,19 @@ NidorinoEvosMoves:
 	db EVOLVE_ITEM, MOON_STONE, 1, NIDOKING
 	db 0
 ; Learnset
+	db 1, TACKLE
+	db 2, LEER
+	db 4, PECK
 	db 8, HORN_ATTACK
 	db 12, DOUBLE_KICK
 	db 19, POISON_STING
-	db 27, FOCUS_ENERGY
-	db 36, FURY_ATTACK
-	db 46, HORN_DRILL
+	db 22, FOCUS_ENERGY
+	db 27, FURY_ATTACK
+	db 31, TAKE_DOWN
+   ;db 35, POISON_JAB
+   ;db 39, EARTH_POWER
+	db 43, TOXIC
+	db 47, HORN_DRILL
 	db 0
 
 NidorinaEvosMoves:
@@ -1949,12 +1985,19 @@ NidorinaEvosMoves:
 	db EVOLVE_ITEM, MOON_STONE, 1, NIDOQUEEN
 	db 0
 ; Learnset
+	db 1, TACKLE
+	db 2, GROWL
+	db 4, TAIL_WHIP
 	db 8, SCRATCH
 	db 12, DOUBLE_KICK
 	db 19, POISON_STING
-	db 27, TAIL_WHIP
-	db 36, BITE
-	db 46, FURY_SWIPES
+	db 22, BITE
+	db 27, FURY_SWIPES
+   ;db 31, SWEET_KISS 
+   ;db 35, POISON_JAB
+   ;db 39, EARTH_POWER
+	db 43, TOXIC
+   ;db 47, POISON_FANG
 	db 0
 
 GeodudeEvosMoves:
