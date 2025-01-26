@@ -14,8 +14,12 @@ SpecialTrainerMoves:
 	db 0
 
 	db BROCK, 1
-	db 2, 3, BIND
-	db 2, 4, BIDE
+	db 2, 3, SCRATCH        ; Brock's Kabuto
+	db 3, 3, LEECH_LIFE     ; Brock's Zubat
+	db 4, 4, QUICK_ATTACK   ; Brock's Vulpix
+	db 5, 3, CONSTRICT      ; Brock's Omanyte
+	db 5, 4, WITHDRAW          
+	db 6, 4, BIDE           ; Brock's Onix
 	db 0
 
 	db MISTY, 1
