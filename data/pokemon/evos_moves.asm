@@ -1397,6 +1397,9 @@ WeedleEvosMoves:
 	db EVOLVE_LEVEL, 7, KAKUNA
 	db 0
 ; Learnset
+    db 1, POISON_STING
+	db 2, STRING_SHOT
+	db 9, HORN_ATTACK
 	db 0
 
 KakunaEvosMoves:
@@ -1412,8 +1415,11 @@ BeedrillEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 12, FURY_ATTACK
-	db 16, FOCUS_ENERGY
+	db 1, HORN_ATTACK
+	db 2, POISON_STING
+	db 10, FURY_ATTACK
+	db 14, FOCUS_ENERGY
+	db 17, TWINEEDLE
 	db 20, TWINEEDLE
 	db 25, RAGE
 	db 30, PIN_MISSILE
@@ -1503,6 +1509,9 @@ CaterpieEvosMoves:
 	db EVOLVE_LEVEL, 7, METAPOD
 	db 0
 ; Learnset
+    db 1, TACKLE
+	db 2, STRING_SHOT
+	db 9, STRUGGLE
 	db 0
 
 MetapodEvosMoves:
