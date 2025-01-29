@@ -1,7 +1,7 @@
 	db DEX_ZUBAT ; pokedex id
 
-	db  40,  45,  35,  55,  40
-	;   hp  atk  def  spd  spc
+	db  40,  45,  35,  55,  40 ; 255
+	;   hp  atk  def  spd  spc   tot
 
 	db POISON, FLYING ; type
 	db 255 ; catch rate
@@ -14,9 +14,11 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
-	     RAGE,         MEGA_DRAIN,   MIMIC,        DOUBLE_TEAM,  BIDE,         \
-	     SWIFT,        REST,         SUBSTITUTE
+	tmhm  RAZOR_WIND,   WHIRLWIND,    TOXIC,         TAKE_DOWN,    DOUBLE_EDGE,  \
+	      RAGE,         MEGA_DRAIN,   TELEPORT,      MIMIC,        DOUBLE_TEAM,  \
+		  BIDE,         SWIFT,        REST,          SUBSTITUTE,   /*STEEL_WING,   \
+		  SLUDGE_BOMB,  AERIAL_ACE,   DARK_PULSE,    DUALWINGBEAT, SHADOW_BALL,  \
+		  GIGA_DRAIN,*/   FLY
 	; end
 
 	db 0 ; padding

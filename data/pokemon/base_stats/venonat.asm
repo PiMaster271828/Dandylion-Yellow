@@ -1,7 +1,7 @@
 	db DEX_VENONAT ; pokedex id
 
-	db  60,  55,  50,  45,  40
-	;   hp  atk  def  spd  spc
+	db  60,  55,  50,  55,  55 ; 325
+	;   hp  atk  def  spd  spc   tot
 
 	db BUG, POISON ; type
 	db 190 ; catch rate
@@ -16,7 +16,8 @@
 	; tm/hm learnset
 	tmhm TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         MEGA_DRAIN,   \
 	     SOLARBEAM,    PSYCHIC_M,    MIMIC,        DOUBLE_TEAM,  REFLECT,      \
-	     BIDE,         REST,         PSYWAVE,      SUBSTITUTE,   FLASH
+	     BIDE,         SWIFT,        REST,         PSYWAVE,      SUBSTITUTE,   \
+	   /*SLUDGE_BOMB,  GIGA_DRAIN,   SLUDGE_WAVE,  POISON_JAB,*/ FLASH
 	; end
 
 	db 0 ; padding

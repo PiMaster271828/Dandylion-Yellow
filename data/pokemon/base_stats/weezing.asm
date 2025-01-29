@@ -1,7 +1,7 @@
 	db DEX_WEEZING ; pokedex id
 
-	db  65,  90, 120,  60,  85
-	;   hp  atk  def  spd  spc
+	db  60,  90, 120,  80,  75 ; 500
+	;   hp  atk  def  spd  spc   tot
 
 	db POISON, POISON ; type
 	db 60 ; catch rate
@@ -13,10 +13,11 @@
 	db TACKLE, SMOG, SLUDGE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
-	; tm/hm learnset
-	tmhm TOXIC,        HYPER_BEAM,   RAGE,         THUNDERBOLT,  THUNDER,      \
-	     MIMIC,        DOUBLE_TEAM,  BIDE,         SELFDESTRUCT, FIRE_BLAST,   \
-	     REST,         EXPLOSION,    SUBSTITUTE
+	; tm/hm learnset	 
+	tmhm TOXIC,        RAGE,         THUNDERBOLT,  THUNDER,      MIMIC,        \
+	     DOUBLE_TEAM,  BIDE,         SELFDESTRUCT, FIRE_BLAST,   REST,         \
+	     EXPLOSION,    SUBSTITUTE/*, SLUDGE_BOMB,  FLAMETHROWER, GIGA_IMPACT   \
+		 DARK_PULSE,   SHADOW_BALL,  ICY_WIND,     SEARING_SAND, SLUDGE_WAVE  */
 	; end
 
 	db 0 ; padding

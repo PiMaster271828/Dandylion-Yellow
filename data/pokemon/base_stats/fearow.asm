@@ -1,7 +1,7 @@
 	db DEX_FEAROW ; pokedex id
 
-	db  65,  90,  65, 100,  61
-	;   hp  atk  def  spd  spc
+	db  65, 100,  65, 100,  60 ; 450
+	;   hp  atk  def  spd  spc   tot
 
 	db NORMAL, FLYING ; type
 	db 90 ; catch rate
@@ -14,9 +14,10 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
-	     HYPER_BEAM,   RAGE,         MIMIC,        DOUBLE_TEAM,  BIDE,         \
-	     SWIFT,        SKY_ATTACK,   REST,         SUBSTITUTE,   FLY
+	tmhm RAZOR_WIND,     WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
+	     RAGE,           MIMIC,        DOUBLE_TEAM,  BIDE,         SWIFT,        \
+	     SKY_ATTACK,     REST,         SUBSTITUTE, /*STEEL_WING,   AERIAL_ACE, */\
+	   /*GIGA_IMPACT,    DUALWINGBEAT, MUD-SLAP,   */FLY
 	; end
 
 	db 0 ; padding

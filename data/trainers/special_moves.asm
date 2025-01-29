@@ -13,59 +13,102 @@ SpecialTrainerMoves:
 	db 1, 4, FISSURE
 	db 0
 
-	db BROCK, 1
-	db 2, 3, SCRATCH        ; Brock's Kabuto
-	db 3, 3, LEECH_LIFE     ; Brock's Zubat
-	db 4, 4, QUICK_ATTACK   ; Brock's Vulpix
-	db 5, 3, CONSTRICT      ; Brock's Omanyte
-	db 5, 4, WITHDRAW          
-	db 6, 4, BIDE           ; Brock's Onix
-	db 0
+; Gym Leaders
+  ; Pewter City Gym
+    ; Brock
+	  db BROCK, 1
+	  db 2, 3, SCRATCH        ; Brock's Kabuto
+	  db 3, 3, LEECH_LIFE     ; Brock's Zubat
+	  db 4, 4, QUICK_ATTACK   ; Brock's Vulpix
+	  db 5, 3, CONSTRICT      ; Brock's Omanyte
+	  db 5, 4, WITHDRAW          
+	  db 6, 4, BIDE           ; Brock's Onix
+	  db 0
+  ; Cerulean City Gym
+	; Misty
+	  db MISTY, 1
+	  db 1, 2, BUBBLEBEAM     ; Misty's Horsea
+	  db 2, 2, BUBBLEBEAM     ; Misty's Seel
+	  db 3, 3, TACKLE         ; Misty's Staryu
+	  db 4, 2, PECK           ; Misty's Goldeen
+      db 5, 1, WATER_GUN      ; Misty's Psyduck
+      db 5, 4, TAIL_WHIP
+	  db 6, 3, BUBBLEBEAM     ; Misty's Starmie
+	  db 0
+  ; Vermillion City Gym
+	; Lt. Surge
+	  db LT_SURGE, 1
+	  db 1, 1, QUICK_ATTACK   ; Lt. Surge's Raticate
+	  db 1, 4, THUNDERBOLT
+	  db 2, 1, SONICBOOM      ; Lt. Surge's Electrode
+	  db 2, 2, THUNDERBOLT
+	  db 3, 1, THUNDERPUNCH   ; Lt. Surge's Magneton    ; Will have Spark
+	  db 4, 1, THUNDERBOLT    ; Lt. Surge's Fearow      ; Will have Bolt Beak
+	  db 4, 2, SWIFT     
+	  db 5, 3, THUNDERPUNCH   ; Lt. surge's Electabuzz	
+	  db 6, 1, MEGA_PUNCH     ; Lt. Surge's Raichu
+	  db 6, 2, MEGA_KICK
+	  db 6, 4, GROWL
+	  db 0
+  ; Celadon City Gym
+    ; Erika 
+	  db ERIKA, 1
+	  db 1, 1, RAZOR_LEAF     ; Erika's Victreebel
+	  db 1, 3, WRAP
+	  db 2, 2, MEGA_DRAIN     ; Erika's Parasect
+	  db 3, 4, MEGA_DRAIN     ; Erika's Butterfree
+	  db 4, 1, BIND           ; Erika's Tangela
+      db 4, 2,  MEGA_DRAIN                            ; Will have Natural Gift
+ 	  db 5, 2,  MEGA_DRAIN    ; Erika's Exeggutor
+	  db 6, 2, STUN_SPORE     ; Erika's Vileplume
+	  db 6, 3, MEGA_DRAIN
+      db 6, 4, PETAL_DANCE
+	  db 0
+  ; Fuchsia City Gym
+    ; Koga
+	  db KOGA, 1
+	  db 1, 1, SLUDGE         ; Koga's Venonat  ; Will have Poison Fang
+	  db 1, 2, SLEEP_POWDER
+	  db 1, 3, PSYWAVE 
+	  db 2, 2, SLUDGE         ; Koga's Golbat   ; Will have Poison Fang
+      db 2, 3, HYPNOSIS	  
+	  db 2, 4, TOXIC
+	  db 3, 2, SLASH           ; Koga's Scyther 
+	  db 4, 1, GLARE           ; Koga's Arbok  
+	  db 4, 4, TOXIC
+	  db 5, 1, NIGHT_SHADE     ; Koga's Weezing
+	  db 6, 2, TOXIC           ; Koga's Venomoth
+	  db 6, 3, DOUBLE_TEAM
+	  db 0 
+  ; Cinnibar Island Gym	
+	; Blaine
+	  db BLAINE, 1
+	  db 1, 2, FLAMETHROWER    ; Blaine's Ninetales
+	  db 2, 2, FIRE_BLAST      ; Blaine's Tauros
+      db 3, 1, FIRE_SPIN       ; Blaine's Rapidash
+	  db 3, 2, EARTHQUAKE
+	  db 3, 3, THUNDERBOLT
+	  db 4, 4, FIRE_BLAST      ; Blaine's Charizard Y
+	  db 5, 3, BITE            ; Blaine's Arcanine
+      db 6, 1, FIRE_SPIN       ; Blaine's Magmar
+	  db 6, 2, THUNDERPUNCH
+	  db 0
 
-	db MISTY, 1
-	db 2, 4, BUBBLEBEAM
-	db 0
-
-	db LT_SURGE, 1
-	db 1, 1, THUNDERBOLT
-	db 1, 2, MEGA_PUNCH
-	db 1, 3, MEGA_KICK
-	db 1, 4, GROWL
-	db 0
-
-	db ERIKA, 1
-	db 1, 3, MEGA_DRAIN
-	db 2, 1, RAZOR_LEAF
-	db 3, 1, PETAL_DANCE
-	db 0
-
-	db KOGA, 1
-	db 1, 1, TOXIC
-	db 1, 2, TACKLE
-	db 2, 1, TOXIC
-	db 2, 3, SUPERSONIC
-	db 3, 1, TOXIC
-	db 3, 2, DOUBLE_EDGE
-	db 4, 1, LEECH_LIFE
-	db 4, 2, DOUBLE_TEAM
-	db 4, 3, PSYCHIC_M
-	db 4, 4, TOXIC
-	db 0
-
-	db BLAINE, 1
-	db 1, 1, FLAMETHROWER
-	db 1, 4, CONFUSE_RAY
-	db 3, 1, FLAMETHROWER
-	db 3, 2, FIRE_BLAST
-	db 3, 3, REFLECT
-	db 0
-
-	db SABRINA, 1
-	db 1, 1, FLASH
-	db 2, 1, KINESIS
-	db 2, 4, PSYWAVE
-	db 3, 1, PSYWAVE
-	db 0
+  ; Saffron City Gym	
+    ; Sabrina
+	  db SABRINA, 1
+	  db 1, 2, PSYWAVE        ; Sabrina's Golduck
+	  db 1, 4, PSYCHIC_M    
+	  db 2, 1, SUBSTITUTE	  ; Sabrina's Mr. Mime
+	  db 2, 2, PSYWAVE
+	  db 3, 2, NIGHT_SHADE    ; Sabrina's Haunter
+	  db 4, 2, HYPNOSIS       ; Sabrina's Hypno
+      db 4, 3, PSYWAVE        
+	  db 5, 1, PSYWAVE        ; Sabrina's Slowbro
+	  db 5, 2, HEADBUTT
+	  db 6, 1, PSYWAVE        ; Sabrina's Alakazam
+	  db 6, 1, REFLECT
+	  db 0
 
 	db GIOVANNI, 3
 	db 1, 3, FISSURE

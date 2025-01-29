@@ -1,7 +1,7 @@
 	db DEX_WEEDLE ; pokedex id
 
-	db  40,  35,  30,  50,  20
-	;   hp  atk  def  spd  spc
+	db  40,  40,  30,  50,  20 ; 200 
+	;   hp  atk  def  spd  spc   tot
 
 	db BUG, POISON ; type
 	db 255 ; catch rate

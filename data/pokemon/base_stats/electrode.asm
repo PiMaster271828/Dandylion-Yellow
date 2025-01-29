@@ -1,7 +1,7 @@
 	db DEX_ELECTRODE ; pokedex id
 
-	db  60,  50,  70, 140,  80
-	;   hp  atk  def  spd  spc
+	db  60,  55,  70, 150,  95 ; 425
+	;   hp  atk  def  spd  spc   tot
 
 	db ELECTRIC, ELECTRIC ; type
 	db 60 ; catch rate
@@ -16,8 +16,9 @@
 	; tm/hm learnset
 	tmhm TOXIC,        TAKE_DOWN,    HYPER_BEAM,   RAGE,         THUNDERBOLT,  \
 	     THUNDER,      TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      \
-	     BIDE,         SELFDESTRUCT, SWIFT,        SKULL_BASH,   REST,         \
-	     THUNDER_WAVE, EXPLOSION,    SUBSTITUTE,   FLASH
+	     BIDE,         SELFDESTRUCT, SWIFT,        SKULL_BASH, /*LIGHT_SCREEN*/\
+		 REST,         THUNDER_WAVE, EXPLOSION,    SUBSTITUTE, /*GIGA_IMPACT,*/\
+	   /*WILD_CHARGE,  MIRROR_COAT,  FLASH_CANNON, SHOCK_WAVE, */FLASH
 	; end
 
 	db 0 ; padding

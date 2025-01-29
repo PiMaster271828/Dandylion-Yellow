@@ -1,7 +1,7 @@
 	db DEX_PRIMEAPE ; pokedex id
 
-	db  65, 105,  60,  95,  60
-	;   hp  atk  def  spd  spc
+	db  70, 105,  60,  95,  60 ; 450
+	;   hp  atk  def  spd  spc   tot
 
 	db FIGHTING, FIGHTING ; type
 	db 75 ; catch rate
@@ -15,10 +15,14 @@
 
 	; tm/hm learnset
 	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	     DOUBLE_EDGE,  HYPER_BEAM,   PAY_DAY,      SUBMISSION,   COUNTER,      \
-	     SEISMIC_TOSS, RAGE,         THUNDERBOLT,  THUNDER,      DIG,          \
-	     MIMIC,        DOUBLE_TEAM,  BIDE,         METRONOME,    SWIFT,        \
-	     SKULL_BASH,   REST,         ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
+	     DOUBLE_EDGE,  PAY_DAY,      SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
+		 RAGE,         THUNDERBOLT,  THUNDER,      DIG,          EARTHQUAKE,   \
+		 MIMIC,        DOUBLE_TEAM,  BIDE,         METRONOME,    SWIFT,        \
+	     SKULL_BASH,   REST,         ROCK_SLIDE,   SUBSTITUTE, /*FIRE_PUNCH, */\
+		 STRENGTH
+	   /*THUNDERPUNCH, GIGA_IMPACT,  ICE_PUNCH,    HEADBUTT,     WILD_CHARGE,  \
+		 STONE_EDGE,   MUD-SLAP,     ROCK_SMASH,   PLAY_ROUGH,   DRAIN_PUNCH,  \
+		 POISON_JAB,   ROCK_TOMB, */   
 	; end
 
 	db 0 ; padding
