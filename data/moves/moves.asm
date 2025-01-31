@@ -131,7 +131,7 @@ Moves:
 	move METRONOME,    METRONOME_EFFECT,             0, NORMAL,       100, 10
 	move MIRROR_MOVE,  MIRROR_MOVE_EFFECT,           0, FLYING,       100, 20
 	move SELFDESTRUCT, EXPLODE_EFFECT,             200, NORMAL,       100,  5 ; Buffed power (Defense halving effect to be added)
-	move EGG_BOMB,     NO_ADDITIONAL_EFFECT,       100, GRASS,         95, 10 ; Changed to Grass type, & buffed accuracy
+	move EGG_BOMB,     NO_ADDITIONAL_EFFECT,       100, GRASS,         95, 10 ; Changed to Grass type, & buffed accuracy, and made a high Crit. rate (What is this OP trash?)
 	move LICK,         PARALYZE_SIDE_EFFECT2,       40, GHOST,        100, 30 ; Buffed power
 	move SMOG,         POISON_SIDE_EFFECT2,         40, POISON,        95, 20 ; Buffed power & accuracy
 	move SLUDGE,       POISON_SIDE_EFFECT2,         70, POISON,       100, 20 ; Buffed power
