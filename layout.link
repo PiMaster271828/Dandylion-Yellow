@@ -229,6 +229,9 @@ ROMX $3F
 
 ROMX $40
 	"Trainer Pics 2"
+
+ROMX $41
+    "Battle Engine 10"
 	
 WRAM0
 	"Audio RAM"

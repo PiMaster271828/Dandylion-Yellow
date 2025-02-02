@@ -580,6 +580,7 @@ ScytherEvosMoves:
 	db 0
 ; Learnset
 	db 2, QUICK_ATTACK
+	db 3, SHARPEN
 	db 4, SCRATCH
 	db 7, LEER
    ;db 11, BUG_BITE
@@ -632,12 +633,24 @@ PinsirEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 21, BIND
+	db 1, SCRATCH
+	db 4, SHARPEN
+	db 8, HORN_ATTACK
+	db 11, VICEGRIP
+   ;db 15, BUG_BITE
+	db 18, BIND 
+	db 21, FURY_ATTACK
 	db 25, SEISMIC_TOSS
-	db 30, GUILLOTINE
+	db 28, PIN_MISSILE
+	db 30, HARDEN
+	db 33, CUT
 	db 36, FOCUS_ENERGY
-	db 43, HARDEN
-	db 49, SLASH
+	db 40, STRENGTH
+	db 43, SLASH
+	db 45, SUBMISSION
+	db 47, THRASH 
+	db 49, GUILLOTINE 
+   ;db 52, MEGAHORN
 	db 54, SWORDS_DANCE
 	db 0
 
@@ -859,11 +872,21 @@ ParasectEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 1, SCRATCH
+	db 4, LEECH_SEED
+	db 6, POISONPOWDER
+	db 11, ABSORB
 	db 13, STUN_SPORE
-	db 20, LEECH_LIFE
-	db 30, SPORE
-	db 39, SLASH
-	db 48, GROWTH
+   ;db 17, BUG_BITE
+	db 20, GROWTH
+	db 22, SLEEP_POWDER
+	db 24, CRABHAMMER
+	db 29, CUT
+	db 37, MEGA_DRAIN
+	db 44, SPORE 
+	db 51, LEECH_LIFE  
+	db 59, SLASH
+   ;db 66, GIGA_DRAIN
 	db 0
 
 PsyduckEvosMoves:
@@ -1692,11 +1715,20 @@ ParasEvosMoves:
 	db EVOLVE_LEVEL, 24, PARASECT
 	db 0
 ; Learnset
+	db 1, SCRATCH
+	db 4, LEECH_SEED
+	db 6, POISONPOWDER
+	db 11, ABSORB
 	db 13, STUN_SPORE
-	db 20, LEECH_LIFE
-	db 27, SPORE
-	db 34, SLASH
-	db 41, GROWTH
+   ;db 17, BUG_BITE
+	db 20, GROWTH
+	db 22, SLEEP_POWDER
+	db 27, CUT
+	db 34, MEGA_DRAIN
+	db 38, SPORE
+	db 41, LEECH_LIFE
+	db 49, SLASH
+   ;db 54, GIGA_DRAIN
 	db 0
 
 PoliwhirlEvosMoves:
@@ -2148,11 +2180,17 @@ PersianEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 12, BITE
-	db 17, PAY_DAY
-	db 24, SCREECH
-	db 37, FURY_SWIPES
-	db 51, SLASH
+	db 4, SCRATCH
+	db 8, GROWL
+	db 12, LICK
+   ;db 15, COPYCAT
+	db 20, PAY_DAY
+	db 25, BITE
+   ;db 31, FAINT_ATTACK	
+	db 36, SCREECH
+	db 32, FURY_SWIPES
+	db 48, SLASH
+   ;db 54, MAKE_IT_RAIN
 	db 0
 
 MarowakEvosMoves:
@@ -2428,20 +2466,35 @@ RattataEvosMoves:
 	db EVOLVE_LEVEL, 20, RATICATE
 	db 0
 ; Learnset
+	db 1, TACKLE
+	db 4, TAIL_WHIP
 	db 7, QUICK_ATTACK
+   ;db 10, GNAW
 	db 14, HYPER_FANG
-	db 23, FOCUS_ENERGY
-	db 34, SUPER_FANG
+	db 16, BITE
+	db 19, FOCUS_ENERGY
+	db 23, TAKE_DOWN
+	db 28, SUPER_FANG
+   ;db 34, CRUNCH
+	db 41, DOUBLE_EDGE
 	db 0
 
 RaticateEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 1, TACKLE
+	db 4, TAIL_WHIP
 	db 7, QUICK_ATTACK
+   ;db 10, GNAW
 	db 14, HYPER_FANG
-	db 27, FOCUS_ENERGY
-	db 41, SUPER_FANG
+	db 16, BITE
+	db 24, FOCUS_ENERGY
+	db 29, TAKE_DOWN
+	db 34, SUPER_FANG
+   ;db 39, CRUNCH
+	db 44, DOUBLE_EDGE
+   ;db 49, GIGA_IMPACT
 	db 0
 
 NidorinoEvosMoves:
