@@ -1,7 +1,7 @@
 	db DEX_PIDGEY ; pokedex id
 
-	db  40,  45,  40,  56,  35
-	;   hp  atk  def  spd  spc
+	db  40,  45,  40,  60,  35 ; 255
+	;   hp  atk  def  spd  spc   tot
 
 	db NORMAL, FLYING ; type
 	db 255 ; catch rate
@@ -10,13 +10,14 @@
 	INCBIN "gfx/pokemon/front/pidgey.pic", 0, 1 ; sprite dimensions
 	dw PidgeyPicFront, PidgeyPicBack
 
-	db GUST, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+	db TACKLE, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
-	     RAGE,         MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
-	     SWIFT,        SKY_ATTACK,   REST,         SUBSTITUTE,   FLY
+	tmhm RAZOR_WIND,   WHIRLWIND,     TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
+	     RAGE,         MIMIC,         DOUBLE_TEAM,  REFLECT,      BIDE,         \
+	     SWIFT,        SKY_ATTACK,    REST,         SUBSTITUTE, /*STEEL_WING, */\
+	   /*AERIAL_ACE,   DUALWINGBEAT,  MUD-SLAP, */  FLY
 	; end
 
 	db 0 ; padding

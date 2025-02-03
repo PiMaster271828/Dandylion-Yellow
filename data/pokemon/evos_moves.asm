@@ -746,12 +746,17 @@ PidgeyEvosMoves:
 	db EVOLVE_LEVEL, 18, PIDGEOTTO
 	db 0
 ; Learnset
+	db 2, TACKLE
 	db 5, SAND_ATTACK
-	db 12, QUICK_ATTACK
-	db 19, WHIRLWIND
-	db 28, WING_ATTACK
-	db 36, AGILITY
-	db 44, MIRROR_MOVE
+	db 9, GUST
+	db 13, QUICK_ATTACK
+	db 17, WHIRLWIND
+	db 25, WING_ATTACK
+	db 33, AGILITY
+	db 37, MIRROR_MOVE
+   ;db 43, AERIAL_ACE
+	db 49, FLY
+	db 53, SKY_ATTACK
 	db 0
 
 SlowpokeEvosMoves:
@@ -1810,6 +1815,7 @@ WeedleEvosMoves:
     db 1, POISON_STING
 	db 2, STRING_SHOT
 	db 9, HORN_ATTACK
+	db 15, BUG_BITE
 	db 0
 
 KakunaEvosMoves:
@@ -1983,6 +1989,7 @@ CaterpieEvosMoves:
     db 1, TACKLE
 	db 2, STRING_SHOT
 	db 9, STRUGGLE
+	db 15, BUG_BITE
 	db 0
 
 MetapodEvosMoves:
@@ -2305,24 +2312,40 @@ PidgeottoEvosMoves:
 	db EVOLVE_LEVEL, 36, PIDGEOT
 	db 0
 ; Learnset
+	db 2, TACKLE
 	db 5, SAND_ATTACK
-	db 12, QUICK_ATTACK
-	db 21, WHIRLWIND
-	db 31, WING_ATTACK
-	db 40, AGILITY
-	db 49, MIRROR_MOVE
+	db 9, GUST
+	db 13, QUICK_ATTACK
+	db 17, WHIRLWIND
+	db 18, PECK
+	db 27, WING_ATTACK
+	db 37, AGILITY
+	db 42, MIRROR_MOVE
+   ;db 47, AERIAL_ACE
+	db 52, FLY
+	db 57, SKY_ATTACK
 	db 0
 
 PidgeotEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 2, TACKLE
 	db 5, SAND_ATTACK
-	db 12, QUICK_ATTACK
-	db 21, WHIRLWIND
-	db 31, WING_ATTACK
-	db 44, AGILITY
-	db 54, MIRROR_MOVE
+	db 9, GUST
+	db 13, QUICK_ATTACK
+	db 17, WHIRLWIND
+	db 18, PECK
+	db 27, WING_ATTACK
+	db 36, SONICBOOM
+	db 37, RAZOR_WIND
+	db 38, AGILITY
+	db 44, MIRROR_MOVE
+   ;db 50, AERIAL_ACE
+   ;db 56, EXTREMESPEED
+	db 62, FLY
+	db 68, SKY_ATTACK
+   ;db 75, DIVE_BOMB
 	db 0
 
 StarmieEvosMoves:
