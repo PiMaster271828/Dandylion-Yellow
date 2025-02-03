@@ -1815,7 +1815,7 @@ WeedleEvosMoves:
     db 1, POISON_STING
 	db 2, STRING_SHOT
 	db 9, HORN_ATTACK
-	db 15, BUG_BITE
+   ;db 15, BUG_BITE
 	db 0
 
 KakunaEvosMoves:
@@ -1989,7 +1989,7 @@ CaterpieEvosMoves:
     db 1, TACKLE
 	db 2, STRING_SHOT
 	db 9, STRUGGLE
-	db 15, BUG_BITE
+   ;db 15, BUG_BITE
 	db 0
 
 MetapodEvosMoves:

@@ -4,14 +4,25 @@
 ;	db 0
 
 SpecialTrainerMoves:
-	db BUG_CATCHER, 15
-	db 2, 2, TACKLE
-	db 2, 3, STRING_SHOT
-	db 0
+; Bug Catchers
+  ; Viridian Forest
+      db BUG_CATCHER, 2
+	  db 1, 2, TACKLE        ; Adding Tackle and String Shot on the Metapod         ; Added by G-Dubs
+	  db 1, 3, STRING_SHOT
+	  db 3, 2, TACKLE        ; Adding Tackle and String Shot on the Metapod         ; Added by G-Dubs
+	  db 3, 3, STRING_SHOT
+	  db 0
+  ; Viridian Forest (Again)
+	  db BUG_CATCHER, 15
+	  db 2, 2, TACKLE        ; Adding Tackle and String Shot on the Metapod
+	  db 2, 3, STRING_SHOT
+	  db 0
 
-	db YOUNGSTER, 14
-	db 1, 4, FISSURE
-	db 0
+; Youngsters
+  ; Route 9
+	  db YOUNGSTER, 14        ; A.J. from the Anime and his OP Sandshrew
+	  db 1, 4, FISSURE
+	  db 0
 
 ; Gym Leaders
   ; Pewter City Gym
