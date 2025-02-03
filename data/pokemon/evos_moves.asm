@@ -791,12 +791,16 @@ GravelerEvosMoves:
 	db EVOLVE_TRADE, 1, GOLEM
 	db 0
 ; Learnset
-	db 11, DEFENSE_CURL
-	db 16, ROCK_THROW
+	db 1, TACKLE
+	db 6, DEFENSE_CURL
+	db 11, ROCK_THROW
+   ;db 16, MUD-SLAP
 	db 21, SELFDESTRUCT
-	db 29, HARDEN
-	db 36, EARTHQUAKE
-	db 43, EXPLOSION
+	db 30, HARDEN
+	db 34, ROCK_SLIDE
+	db 40, EARTHQUAKE
+	db 44, EXPLOSION
+	db 50, DOUBLE_EDGE
 	db 0
 
 ChanseyEvosMoves:
@@ -861,11 +865,21 @@ ArbokEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 10, POISON_STING
-	db 17, BITE
-	db 27, GLARE
-	db 36, SCREECH
-	db 47, ACID
+	db 1, POISON_STING
+	db 4, WRAP
+	db 7, LEER
+	db 9, BITE
+	db 15, GLARE
+	db 20, ACID
+   ;db 22, CRUNCH
+	db 25, SLUDGE
+	db 27, SCREECH
+   ;db 30, POISON_JAB
+   ;db 33, POISON_TAIL
+   ;db 35, POISON_FANG
+	db 44, HAZE
+   ;db 48, SLUDGE_BOMB
+   ;db 52, SLUDGE_WAVE
 	db 0
 
 ParasectEvosMoves:
@@ -930,12 +944,17 @@ GolemEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 11, DEFENSE_CURL
-	db 16, ROCK_THROW
+	db 1, TACKLE
+	db 6, DEFENSE_CURL
+	db 11, ROCK_THROW
+   ;db 16, MUD-SLAP
 	db 21, SELFDESTRUCT
-	db 29, HARDEN
-	db 36, EARTHQUAKE
-	db 43, EXPLOSION
+	db 30, HARDEN
+	db 34, ROCK_SLIDE
+	db 46, EARTHQUAKE
+	db 50, EXPLOSION
+	db 54, DOUBLE_EDGE
+   ;db 60, HEAD_SMASH
 	db 0
 
 MissingNo32EvosMoves:
@@ -1060,11 +1079,19 @@ DiglettEvosMoves:
 	db EVOLVE_LEVEL, 26, DUGTRIO
 	db 0
 ; Learnset
-	db 15, GROWL
+	db 1, SCRATCH
+	db 4, GROWL
+	db 8, SAND_ATTACK
+   ;db 12, MUD-SLAP
+   ;db 15, GNAW
 	db 19, DIG
-	db 24, SAND_ATTACK
+   ;db 24, MUD_SHOT
+   ;db 29, MUD_BOMB
 	db 31, SLASH
+   ;db 34, ROCK_BLAST
+   ;db 37, EARTH_POWER
 	db 40, EARTHQUAKE
+	db 45, FISSURE
 	db 0
 
 TaurosEvosMoves:
@@ -1412,20 +1439,25 @@ KabutoEvosMoves:
 	db 0
 ; Learnset
 	db 1, SCRATCH
-	db 2, WITHDRAW
-	db 4, ABSORB
-	db 6, BIDE
+	db 3, WITHDRAW
+	db 5, ABSORB
+	db 7, BIDE
 	db 9, SAND_ATTACK
 	db 11, HARDEN
+   ;db 13, MUD-SLAP
 	db 15, WATER_GUN
-	db 20, LEER
+   ;db 17, METAL_CLAW
+	db 19, LEER
+   ;db 21, MUD_SHOT
+   ;db 23, ROCK_BLAST
 	db 25, DEFENSE_CURL
    ;db 30, ANCIENTPOWER
 	db 35, MEGA_DRAIN
 	db 40, SLASH
 	db 45, LEECH_LIFE
 	db 50, CLAMP
-	db 55, HYDRO_PUMP
+   ;db 55, GIGA_DRAIN
+	db 60, HYDRO_PUMP
 	db 0
 
 KabutopsEvosMoves:
@@ -1433,21 +1465,26 @@ KabutopsEvosMoves:
 	db 0
 ; Learnset
 	db 1, SCRATCH
-   ;db 2, METAL_CLAW
-	db 4, ABSORB
-	db 6, BIDE
+   ;db 3, METAL_CLAW
+	db 5, ABSORB
+	db 7, BIDE
 	db 9, SAND_ATTACK
 	db 11, HARDEN
+   ;db 13, MUD-SLAP
 	db 15, WATER_GUN
-	db 20, LEER
+   ;db 17, METAL_CLAW
+	db 19, LEER
+   ;db 21, MUD_SHOT
+   ;db 23, ROCK_BLAST
 	db 25, FURY_SWIPES
    ;db 30, ANCIENTPOWER
 	db 35, MEGA_DRAIN
 	db 40, WATERFALL
-	db 49, LEECH_LIFE
+	db 48, LEECH_LIFE
 	db 50, SLASH
-	db 56, HYDRO_PUMP
-	db 65, GUILLOTINE
+   ;db 58, GIGA_DRAIN 
+	db 64, HYDRO_PUMP
+	db 69, GUILLOTINE
 	db 0
 
 HorseaEvosMoves:
@@ -1547,14 +1584,16 @@ OmanyteEvosMoves:
 	db 6, BIDE
 	db 9, SAND_ATTACK
 	db 11, HARDEN
+   ;db 13, MUD-SLAP
 	db 15, WATER_GUN
-	db 20, LEER
+	db 18, LEER
+   ;db 20, MUD_SHOT
    ;db 23, ROCK_BLAST
 	db 25, DEFENSE_CURL
    ;db 30, ANCIENTPOWER
 	db 35, HORN_ATTACK
 	db 40, BUBBLEBEAM
-	db 45, BITE
+	db 45, SPIKE_CANNON
 	db 50, WRAP
 	db 55, HYDRO_PUMP
 	db 0
@@ -1569,8 +1608,10 @@ OmastarEvosMoves:
 	db 6, BIDE
 	db 9, SAND_ATTACK
 	db 11, HARDEN
+   ;db 13, MUD-SLAP
 	db 15, WATER_GUN
-	db 20, LEER
+	db 18, LEER
+   ;db 20, MUD_SHOT
    ;db 23, ROCK_BLAST
 	db 25, DEFENSE_CURL
    ;db 30, ANCIENTPOWER
@@ -1703,11 +1744,20 @@ EkansEvosMoves:
 	db EVOLVE_LEVEL, 22, ARBOK
 	db 0
 ; Learnset
-	db 10, POISON_STING
-	db 17, BITE
-	db 24, GLARE
-	db 31, SCREECH
-	db 38, ACID
+	db 1, POISON_STING
+	db 4, WRAP
+	db 7, LEER
+	db 9, BITE
+	db 15, GLARE
+	db 20, ACID
+	db 22, SLUDGE
+	db 25, SCREECH
+   ;db 28, POISON_JAB
+   ;db 30, POISON_TAIL
+   ;db 33, POISON_FANG
+	db 36, HAZE
+   ;db 38, SLUDGE_BOMB
+   ;db 42, SLUDGE_WAVE
 	db 0
 
 ParasEvosMoves:
@@ -1843,11 +1893,20 @@ DugtrioEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 15, GROWL
+	db 1, SCRATCH
+	db 4, GROWL
+	db 8, SAND_ATTACK
+   ;db 12, MUD-SLAP
+   ;db 15, GNAW
 	db 19, DIG
-	db 24, SAND_ATTACK
-	db 35, SLASH
-	db 47, EARTHQUAKE
+   ;db 24, MUD_SHOT
+   ;db 26, BITE
+   ;db 30, MUD_BOMB
+	db 36, SLASH
+   ;db 42, ROCK_BLAST
+   ;db 48, EARTH_POWER
+	db 54, EARTHQUAKE
+	db 60, FISSURE
 	db 0
 
 VenomothEvosMoves:
@@ -2545,12 +2604,13 @@ GeodudeEvosMoves:
 	db 1, TACKLE
 	db 6, DEFENSE_CURL
 	db 11, ROCK_THROW
-	db 16, HARDEN
+   ;db 16, MUD-SLAP
 	db 21, SELFDESTRUCT
-	db 26, ROCK_SLIDE
-	db 31, EARTHQUAKE
-	db 36, EXPLOSION
-	db 41, DOUBLE_EDGE
+	db 26, HARDEN
+	db 31, ROCK_SLIDE
+	db 36, EARTHQUAKE
+	db 41, EXPLOSION
+	db 46, DOUBLE_EDGE
 	db 0
 
 PorygonEvosMoves:

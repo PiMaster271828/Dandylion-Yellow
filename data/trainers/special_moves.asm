@@ -17,12 +17,30 @@ SpecialTrainerMoves:
   ; Pewter City Gym
     ; Brock
 	  db BROCK, 1
-	  db 2, 3, SCRATCH        ; Brock's Kabuto
-	  db 3, 3, LEECH_LIFE     ; Brock's Zubat
-	  db 4, 4, QUICK_ATTACK   ; Brock's Vulpix
-	  db 5, 3, CONSTRICT      ; Brock's Omanyte
-	  db 5, 4, WITHDRAW          
-	  db 6, 4, BIDE           ; Brock's Onix
+	  db 1, 1, TACKLE         ; Brock's Geodude 
+	  db 1, 2, DEFENSE_CURL
+	  db 1, 3, ROCK_THROW
+	  db 1, 4, BIDE
+	  db 2, 1, SCRATCH        ; Brock's Kabuto
+	  db 2, 2, ABSORB
+	  db 2, 3, BIDE
+	  db 2, 4, HARDEN
+	  db 3, 1, ABSORB         ; Brock's Zubat
+	  db 3, 2, SUPERSONIC        
+	  db 3, 3, GUST
+	  db 3, 4, LEECH_LIFE    
+	  db 4, 1, TACKLE         ; Brock's Vulpix
+	  db 4, 2, EMBER /*KINDLE*/
+	  db 4, 3, TAIL_WHIP
+	  db 4, 4, QUICK_ATTACK
+	  db 5, 1, CONSTRICT      ; Brock's Omanyte
+	  db 5, 2, BIND  
+	  db 5, 3, WITHDRAW      
+	  db 5, 4, BIDE       
+	  db 6, 1, TACKLE         ; Brock's Onix 
+	  db 6, 2, SCREECH
+	  db 6, 3, BIND  
+	  db 6, 4, BIDE           
 	  db 0
   ; Cerulean City Gym
 	; Misty

@@ -1,7 +1,7 @@
 	db DEX_ONIX ; pokedex id
 
-	db  55,  85, 160,  70,  45
-	;   hp  atk  def  spd  spc
+	db  55,  85, 175,  70,  45 ; 475 
+	;   hp  atk  def  spd  spc   tot
 
 	db ROCK, GROUND ; type
 	db 45 ; catch rate
@@ -14,10 +14,14 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         \
-	     EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  \
-	     BIDE,         SELFDESTRUCT, SKULL_BASH,   REST,         EXPLOSION,    \
-	     ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
+	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  HYPER_BEAM,   \
+	     RAGE,         DRAGON_RAGE,  EARTHQUAKE,   FISSURE,      DIG,          \
+		 MIMIC,        DOUBLE_TEAM,  BIDE,         SELFDESTRUCT, SKULL_BASH,   \
+		 REST,         EXPLOSION,    EXPLOSION,    ROCK_SLIDE,   SUBSTITUTE,   \
+	     STRENGTH
+	   /*TOMBSTONER,   GIGA_IMPACT,  HEADBUTT,     IRON_TAIL,    STONE_EDGE,   \
+		 SEARING_SAND, MUD-SLAP,     ROCK_SMASH,   EARTH_POWER,  POISON_JAB,   \
+		 ROCK_TOMB, */    
 	; end
 
 	db 0 ; padding

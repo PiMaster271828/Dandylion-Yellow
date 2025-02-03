@@ -1,7 +1,7 @@
 	db DEX_DUGTRIO ; pokedex id
 
-	db  35,  80,  50, 120,  70
-	;   hp  atk  def  spd  spc
+	db  30, 110,  50, 120,  70 ; 450 
+	;   hp  atk  def  spd  spc   tot
 
 	db GROUND, GROUND ; type
 	db 50 ; catch rate
@@ -14,10 +14,13 @@
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  HYPER_BEAM,   \
+	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
 	     RAGE,         EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        \
-	     DOUBLE_TEAM,  BIDE,         REST,         ROCK_SLIDE,   SUBSTITUTE,   \
+		 DOUBLE_TEAM,  BIDE,         REST,         ROCK_SLIDE,   SUBSTITUTE,   \
 	     CUT
+	   /*SLUDGE_BOMB,  AERIAL_ACE,   GIGA_IMPACT,  STONE_EDGE,   SEARING_SAND, \
+		 SHADOW_CLAW,  MUD-SLAP,     ROCK_SMASH,   EARTH_POWER,  ROCK_TOMB,    \
+	   */	 
 	; end
 
 	db 0 ; padding
