@@ -321,6 +321,7 @@ FlyAnim:
 BindAnim:
 	battle_anim BIND, SUBANIM_0_BIND, 0, 4
 	battle_anim BIND, SUBANIM_0_BIND, 0, 4
+	battle_anim BIND, SUBANIM_0_BIND, 0, 4
 	db -1 ; end
 
 SlamAnim:
@@ -373,6 +374,7 @@ FuryAttackAnim:
 	db -1 ; end
 
 HornDrillAnim:
+	battle_anim HORN_ATTACK, SUBANIM_0_HORN_JAB_TWICE, 0, 4
 	battle_anim HORN_DRILL, SUBANIM_1_STAR_BIG, 1, 2
 	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 2
 	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 2
@@ -405,6 +407,8 @@ TakeDownAnim:
 	db -1 ; end
 
 ThrashAnim:
+	battle_anim THRASH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim MEGA_PUNCH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	battle_anim THRASH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 
@@ -491,6 +495,7 @@ AcidAnim:
 	db -1 ; end
 
 EmberAnim:
+	battle_anim FLAMETHROWER, SUBANIM_1_FLAME_BEAM, 1, 6
 	battle_anim EMBER, SUBANIM_1_FLAMES, 1, 6
 	db -1 ; end
 
@@ -687,6 +692,7 @@ ThunderWaveAnim:
 	battle_anim THUNDER_WAVE, SUBANIM_1_LIGHTNING_BALL, 1, 2
 	battle_anim NO_MOVE, SUBANIM_0_BIND, 0, 2
 	battle_anim NO_MOVE, SUBANIM_0_BIND, 0, 4
+	battle_anim NO_MOVE, SUBANIM_0_BIND, 0, 6
 	db -1 ; end
 
 ThunderAnim:
@@ -722,6 +728,10 @@ DigAnim:
 ToxicAnim:
 	battle_anim SURF, SE_WATER_DROPLETS_EVERYWHERE
 	battle_anim TOXIC, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
+	battle_anim BIND, SUBANIM_0_STATUS_PARALYZED, 0, 4
+	battle_anim BIND, SUBANIM_0_STATUS_PARALYZED, 0, 4
+	battle_anim BIND, SUBANIM_0_STATUS_POISONED, 0, 8
+	battle_anim BIND, SUBANIM_0_STATUS_POISONED, 0, 8
 	db -1 ; end
 
 ConfusionAnim:
@@ -944,6 +954,7 @@ ClampAnim:
 	battle_anim CLAMP, SUBANIM_0_SLICE_BOTH_SIDES, 0, 8
 	battle_anim CONSTRICT, SUBANIM_0_BIND, 0, 6
 	battle_anim CONSTRICT, SUBANIM_0_BIND, 0, 6
+	battle_anim CONSTRICT, SUBANIM_0_BIND, 0, 6
 	db -1 ; end
 
 SwiftAnim:
@@ -965,6 +976,7 @@ ConstrictAnim:
 	db -1 ; end
 
 AmnesiaAnim:
+	battle_anim AMNESIA, SUBANIM_0_STATUS_CONFUSED, 0, 8
 	battle_anim AMNESIA, SUBANIM_0_STATUS_CONFUSED, 0, 8
 	battle_anim AMNESIA, SUBANIM_0_STATUS_CONFUSED, 0, 8
 	db -1 ; end
@@ -1118,7 +1130,9 @@ ConversionAnim:
 
 TriAttackAnim:
 	battle_anim TRI_ATTACK, SE_DARK_SCREEN_FLASH
-	battle_anim NO_MOVE, SUBANIM_1_TRIANGLE_TOSS, 1, 6
+	battle_anim NO_MOVE, SUBANIM_1_TRIANGLE_TOSS, 1, 2
+	battle_anim NO_MOVE, SUBANIM_1_TRIANGLE_TOSS, 1, 2
+	battle_anim NO_MOVE, SUBANIM_1_TRIANGLE_TOSS, 1, 2
 	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
 	db -1 ; end
 
