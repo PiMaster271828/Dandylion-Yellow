@@ -1821,13 +1821,13 @@ WeedleEvosMoves:
 KakunaEvosMoves:
 ; Evolutions
 	db EVOLVE_LEVEL, 10, BEEDRILL
-	db 1, HARDEN
+	db 0
+; Learnset
+    db 1, HARDEN
 	db 7, HARDEN
 	db 8, HARDEN
 	db 9, HARDEN
 	db 10, HARDEN
-	db 0
-; Learnset
 	db 0
 
 BeedrillEvosMoves:
