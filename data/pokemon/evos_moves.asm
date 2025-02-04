@@ -2008,7 +2008,8 @@ ButterfreeEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-   ;db 1, BUG_BITE
+    db 1, TACKLE
+	db 2, STRUGGLE 
 	db 10, CONFUSION
 	db 11, POISONPOWDER
 	db 12, SUPERSONIC
