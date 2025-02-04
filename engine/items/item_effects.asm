@@ -1008,7 +1008,11 @@ ItemUseMedicine:
 	ld de, wBattleMonStats
 	ld bc, NUM_STATS * 2
 	call CopyData ; copy party stats to in-battle stat data
-	predef DoubleOrHalveSelectedStats
+   ;predef DoubleOrHalveSelectedStats  ; line removed by G-Dubs to fix a bug messing up stat changes for PokéMon healed from a status by an item
+    xor a                              ; this line and below added by G-Dubs to fix a bug messing up stat changes for PokéMon healed from a status by an item
+	ld [wCalculateWhoseStats], a
+	callfar CalculateModifiedStats
+	callfar ApplyBadgeStatBoosts       ; this line and above added by G-Dubs to fix a bug messing up stat changes for PokéMon healed from a status by an item
 	jp .doneHealing
 
 .healHP

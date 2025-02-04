@@ -547,7 +547,8 @@ Subanim_0Circle_1Square_TossBack:
 	db FRAMEBLOCK_47, BASECOORD_B0, FRAMEBLOCKMODE_00
 
 Subanim_0CirclesCentering:
-	subanim SUBANIMTYPE_COORDFLIP, 6 ; should be SUBANIMTYPE_HVFLIP
+   ;subanim SUBANIMTYPE_COORDFLIP, 6 ; should be SUBANIMTYPE_HVFLIP  ; removed by G-Dubs to avoid Double Edge looking weird when the opponent uses it
+	subanim SUBANIMTYPE_HVFLIP, 6                                    ; added by G-Dubs to avoid Double Edge looking weird when the opponent uses it
 	db FRAMEBLOCK_44, BASECOORD_64, FRAMEBLOCKMODE_00
 	db FRAMEBLOCK_45, BASECOORD_65, FRAMEBLOCKMODE_00
 	db FRAMEBLOCK_46, BASECOORD_66, FRAMEBLOCKMODE_00
