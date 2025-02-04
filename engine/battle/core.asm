@@ -4977,25 +4977,31 @@ ApplyAttackToEnemyPokemon:
 	cp DRAGON_RAGE
 	jr z, .storeDamage
 ; Psywave
-	ld a, [hl]
-	ld b, a
-	srl a
-	add b
-	ld b, a ; b = level * 1.5
+/*  ld a, [hl]  ; Load the value at memory address (hl) into register a (assume this is "level")
+	ld b, a     ; Copy a into b (so b now holds "level")
+    srl a       ; Originally shifting to the right (a = level / 2)
+	add b       ; Add b (original "level") to A, computing (level / 2) + level
+	ld b, a     ; b = level * 1.5 */
+; Psywave (Buffed)
+	ld a, [hl]  ; Load the value at memory address (hl) into register a (assume this is "level")
+	ld b, a     ; Copy a into b (so b now holds "level")
+    sla a       ; Shift a left by 1 bit (a = level * 2)
+	add b       ; Add b (original "level") to a, computing (level * 2) + level
+	ld b, a     ; b = level * 3
 ; loop until a random number in the range [1, b) is found
 .loop
-	call BattleRandom
-	and a
-	jr z, .loop
-	cp b
-	jr nc, .loop
-	ld b, a
+	call BattleRandom ; Call the BattleRandom function to generate a random value in register a
+	and a             ; Perform a bitwise AND on a with itself to set the zero flag if a is zero
+	jr z, .loop       ; If a is zero (zero flag set), jump back to .loop to generate a new random value
+	cp b              ; Compare the value in a with the value in b
+	jr nc, .loop      ; If a is greater than or equal to b (carry flag not set), jump back to .loop
+	ld b, a           ; Load the non-zero random value from a into b
 .storeDamage ; store damage value at b
-	ld hl, wDamage
-	xor a
-	ld [hli], a
-	ld a, b
-	ld [hl], a
+	ld hl, wDamage    ; Load the memory address of wDamage into register pair hl
+	xor a             ; Set register a to 0 (a = 0)
+	ld [hli], a       ; Store 0 at the address in hl, then increment hl
+	ld a, b           ; Load the damage value (stored in b) into a
+	ld [hl], a        ; Store a (damage value) at the new hl address
 
 ApplyDamageToEnemyPokemon:
 	ld hl, wDamage
@@ -5096,11 +5102,18 @@ ApplyAttackToPlayerPokemon:
 	cp DRAGON_RAGE
 	jr z, .storeDamage
 ; Psywave
-	ld a, [hl]
-	ld b, a
-	srl a
-	add b
-	ld b, a ; b = attacker's level * 1.5
+/*  ld a, [hl]  ; Load the value at memory address (hl) into register a (assume this is "level")
+	ld b, a     ; Copy a into b (so b now holds "level")
+    srl a       ; Originally shifting to the right (a = level / 2)
+	add b       ; Add b (original "level") to A, computing (level / 2) + level
+	ld b, a     ; b = attacker's level * 1.5 */
+; Psywave (Buffed)
+	ld a, [hl]  ; Load the value at memory address (hl) into register a (assume this is "level")
+	ld b, a     ; Copy a into b (so b now holds "level")
+    sla a       ; Shift a left by 1 bit (a = level * 2)
+	add b       ; Add b (original "level") to a, computing (level * 2) + level
+	ld b, a     ; b = attacker's level * 3
+/* Old Loop (Bugged)
 ; loop until a random number in the range [0, b) is found
 ; this differs from the range when the player attacks, which is [1, b)
 ; it's possible for the enemy to do 0 damage with Psywave, but the player always does at least 1 damage
@@ -5108,13 +5121,22 @@ ApplyAttackToPlayerPokemon:
 	call BattleRandom
 	cp b
 	jr nc, .loop
-	ld b, a
-.storeDamage
-	ld hl, wDamage
-	xor a
-	ld [hli], a
-	ld a, b
-	ld [hl], a
+	ld b, a */
+/* New Loop (Fixed)	*/
+; loop until a random number in the range [1, b) is found 
+.loop
+	call BattleRandom ; Call the BattleRandom function to generate a random value in register a
+	and a             ; Perform a bitwise AND on a with itself to set the zero flag if a is zero
+	jr z, .loop       ; If a is zero (zero flag set), jump back to .loop to generate a new random value
+	cp b              ; Compare the value in a with the value in b
+	jr nc, .loop      ; If a is greater than or equal to b (carry flag not set), jump back to .loop
+	ld b, a           ; Load the non-zero random value from a into b
+.storeDamage ; store damage value at b
+	ld hl, wDamage    ; Load the memory address of wDamage into register pair hl
+	xor a             ; Set register a to 0 (a = 0)
+	ld [hli], a       ; Store 0 at the address in hl, then increment hl
+	ld a, b           ; Load the damage value (stored in b) into a
+	ld [hl], a        ; Store a (damage value) at the new hl address
 
 ApplyDamageToPlayerPokemon:
 	ld hl, wDamage
