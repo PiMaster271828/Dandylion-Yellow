@@ -25,6 +25,7 @@ ViridianForest_TextPointers:
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POTION2
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POKE_BALL
 	dw_const ViridianForestYoungster6Text,      TEXT_VIRIDIANFOREST_YOUNGSTER6
+	dw_const ViridianForestYoungster7Text,      TEXT_VIRIDIANFOREST_YOUNGSTER7
 	dw_const ViridianForestTrainerTips1Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS1
 	dw_const ViridianForestUseAntidoteSignText, TEXT_VIRIDIANFOREST_USE_ANTIDOTE_SIGN
 	dw_const ViridianForestTrainerTips2Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS2
@@ -44,6 +45,8 @@ ViridianForestTrainerHeader3:
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_3, 0, ViridianForestCooltrainerFBattleText, ViridianForestCooltrainerFEndBattleText, ViridianForestCooltrainerFAfterBattleText
 ViridianForestTrainerHeader4:
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_4, 4, ViridianForestYoungster5BattleText, ViridianForestYoungster5EndBattleText, ViridianForestYoungster5AfterBattleText
+ViridianForestTrainerHeader5:
+	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_5, 4, ViridianForestYoungster7BattleText, ViridianForestYoungster7EndBattleText, ViridianForestYoungster7AfterBattleText
 	db -1 ; end
 
 ViridianForestYoungster1Text:
@@ -72,7 +75,14 @@ ViridianForestCooltrainerFText:
 
 ViridianForestYoungster5Text:
 	text_asm
-	ld hl, ViridianForestTrainerHeader4
+	ld hl, ViridianForestTrainerHeader4 
+	jr ViridianForestTalkToTrainer ;New line
+
+ViridianForestYoungster7Text:
+	text_asm
+	ld hl, ViridianForestTrainerHeader5
+	jr ViridianForestTalkToTrainer
+
 ViridianForestTalkToTrainer:
 	call TalkToTrainer
 	jp TextScriptEnd
@@ -139,6 +149,18 @@ ViridianForestYoungster5AfterBattleText:
 
 ViridianForestYoungster6Text:
 	text_far _ViridianForestYoungster6Text
+	text_end
+
+ViridianForestYoungster7BattleText:                          ;new trainer
+	text_far _ViridianForestYoungster7BattleText
+	text_end
+
+ViridianForestYoungster7EndBattleText:
+	text_far _ViridianForestYoungster7EndBattleText
+	text_end
+
+ViridianForestYoungster7AfterBattleText:
+	text_far _ViridianForestYoungster7AfterBattleText
 	text_end
 
 ViridianForestTrainerTips1Text:

@@ -105,6 +105,22 @@ _ViridianForestYoungster6Text::
 	line "extras!"
 	done
 
+_ViridianForestYoungster7BattleText::
+	text "Kakuna is better"
+	line "than Metapod!"
+	done
+
+_ViridianForestYoungster7EndBattleText::
+	text "Kakuna is"
+	line "still better!"
+	prompt
+
+_ViridianForestYoungster7AfterBattleText::
+	text "Make sure to"
+	line "teach your "
+	cont "Kakuna BUG BITE!"
+	done
+
 _ViridianForestTrainerTips1Text::
 	text "TRAINER TIPS"
 

@@ -107,7 +107,7 @@ BugCatcherData:
 	db 20, CATERPIE, WEEDLE, VENONAT, 0                                           ; Bug Catcher 14
 ; Viridian Forest (Again)
 	db 8, CATERPIE, METAPOD, 0                                                    ; Bug Catcher 15       ; Yellow exclusive Bug Catcher in Viridian Forest (Poor coding)
-
+	db 6, KAKUNA, WEEDLE, KAKUNA, 0                                               ; Bug Catcher 16       ; Trainer from Red/Blue added 
 LassData:
 ; Route 3
 	db 9, PIDGEY, PIDGEY, 0                                                       ; Lass 1
