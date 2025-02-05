@@ -7,17 +7,35 @@ SpecialTrainerMoves:
 ; Bug Catchers
   ; Viridian Forest
       db BUG_CATCHER, 2
-	  db 1, 2, TACKLE        ; Adding Tackle and String Shot on the Metapod         ; Added by G-Dubs
+	  db 1, 2, TACKLE        ; Adding Tackle and String Shot on the Metapod            ; Added by G-Dubs
 	  db 1, 3, STRING_SHOT
-	  db 3, 2, TACKLE        ; Adding Tackle and String Shot on the Metapod         ; Added by G-Dubs
+	  db 3, 2, TACKLE        ; Adding Tackle and String Shot on the Metapod            ; Added by G-Dubs
 	  db 3, 3, STRING_SHOT
 	  db 0
   ; Viridian Forest (Again)
 	  db BUG_CATCHER, 15
-	  db 2, 2, TACKLE        ; Adding Tackle and String Shot on the Metapod
+	  db 2, 2, TACKLE         ; Adding Tackle and String Shot on the Metapod
 	  db 2, 3, STRING_SHOT
 	  db 0
 
+	  db BUG_CATCHER, 16
+	  db 1, 2, POISON_STING   ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna  ; Added by G-Dubs
+	  db 1, 3, STRING_SHOT
+	 ;db 1, 4, BUG_BITE
+	  db 3, 2, POISON_STING   ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna  ; Added by G-Dubs
+	  db 3, 3, STRING_SHOT
+	 ;db 3, 4, BUG_BITE
+	  db 0
+	  
+	  db BUG_CATCHER, 17
+	  db 1, 2, FURY_ATTACK    ; Adding a TCG exclusive move to this level 9 Weedle      ; Added by G-Dubs
+	  db 1, 4, PECK           ; Adding a TCG exclusive move to this level 9 Weedle      ; Added by G-Dubs
+	  db 0
+    /*
+	  db BUG_CATCHER, 18
+	  db 1, 4, HEADBUTT       ; Adding a TCG exclusive move to this level 9 Caterpie    ; Added by G-Dubs
+	  db 0
+    */
 ; Youngsters
   ; Route 9
 	  db YOUNGSTER, 14        ; A.J. from the Anime and his OP Sandshrew

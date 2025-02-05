@@ -61,171 +61,191 @@ TrainerDataPointers:
 
 YoungsterData:
 ; Route 3
-	db 11, RATTATA, EKANS, 0		                                              ; Youngster 1
-	db 14, SPEAROW, 0				                                              ; Youngster 2
+	db 11, RATTATA, EKANS, 0		                                                      ; Youngster 1
+	db 14, SPEAROW, 0				                                                      ; Youngster 2
 ; Mt. Moon 1F
-	db 10, RATTATA, NIDORAN_M, ZUBAT, 0                                           ; Youngster 3         ; Rattata 2 changed to Nidoran♂ by G-Dubs
+	db 10, RATTATA, NIDORAN_M, ZUBAT, 0                                                   ; Youngster 3         ; Rattata 2 changed to Nidoran♂ by G-Dubs
 ; Route 24
-	db 14, RATTATA, EKANS, ZUBAT, 0	                                              ; Youngster 4
+	db 14, RATTATA, EKANS, ZUBAT, 0	                                                      ; Youngster 4
 ; Route 25
-	db 15, RATTATA, SPEAROW, NIDORAN_M, 0                                         ; Youngster 5         ; Nidoran♂ added by G-Dubs
-	db 17, SLOWPOKE, 0				                                              ; Youngster 6
-	db 14, EKANS, SANDSHREW, 0		                                              ; Youngster 7
+	db 15, RATTATA, SPEAROW, NIDORAN_M, 0                                                 ; Youngster 5         ; Nidoran♂ added by G-Dubs
+	db 17, SLOWPOKE, 0				                                                      ; Youngster 6
+	db 14, EKANS, SANDSHREW, 0		                                                      ; Youngster 7
 ; SS Anne 1F Rooms
-	db 21, NIDORAN_M, 0			 	                                              ; Youngster 8
+	db 21, NIDORAN_M, 0			 	                                                      ; Youngster 8
 ; Route 11
-	db 21, EKANS, 0					                                              ; Youngster 9
-	db 19, NIDORAN_M, SANDSHREW, ZUBAT, 0                                         ; Youngster 10        ; Nidoran♂ added by G-Dubs
-	db 17, RATTATA, RATTATA, RATICATE, 0	                                      ; Youngster 11
-	db 18, NIDORAN_M, NIDORINO, 0	                                              ; Youngster 12
+	db 21, EKANS, 0					                                                      ; Youngster 9
+	db 19, NIDORAN_M, SANDSHREW, ZUBAT, 0                                                 ; Youngster 10        ; Nidoran♂ added by G-Dubs
+	db 17, RATTATA, RATTATA, RATICATE, 0	                                              ; Youngster 11
+	db 18, NIDORAN_M, NIDORINO, 0	                                                      ; Youngster 12
 ; Unused
-	db 17, SPEAROW, RATTATA, RATTATA, SPEAROW, 0                                  ; Youngster 13        ; (Unused)
+	db 17, SPEAROW, RATTATA, RATTATA, SPEAROW, 0                                          ; Youngster 13        ; (Unused)
 ; Route 9
-	db 24, SANDSHREW, 0                                                           ; Youngster 14        ; A.J. from the Anime and his OP Sandshrew
+	db 24, SANDSHREW, 0                                                                   ; Youngster 14        ; A.J. from the Anime and his OP Sandshrew
+	; Viridian Forest
+    db $FF, 6, RATTATA, 7, PIDGEY, 6, CATERPIE, 7, RATTATA, 6, WEEDLE, 9, PIDGEOTTO, 0    ; Youngster 15        ; New Trainer added by G-Dubs
 
 BugCatcherData:
 ; Viridian Forest
-	db 7, CATERPIE, WEEDLE, 0                                                     ; Bug Catcher 1       ; Weedle added by G-Dubs
- 	db 6, METAPOD, CATERPIE, METAPOD, 0                                           ; Bug Catcher 2
-	db 10, CATERPIE, WEEDLE, 0                                                    ; Bug Catcher 3       ; Weedle added by G-Dubs
+	db 7, CATERPIE, WEEDLE, 0                                                             ; Bug Catcher 1       ; Weedle added by G-Dubs
+ 	db 6, METAPOD, CATERPIE, METAPOD, 0                                                   ; Bug Catcher 2
+	db 10, CATERPIE, WEEDLE, 0                                                            ; Bug Catcher 3       ; Weedle added by G-Dubs
 ; Route 3    
-	db 10, CATERPIE, WEEDLE, CATERPIE, 0                                          ; Bug Catcher 4
-	db 9, WEEDLE, KAKUNA, CATERPIE, METAPOD, 0                                    ; Bug Catcher 5
-	db 11, CATERPIE, METAPOD, 0                                                   ; Bug Catcher 6
+	db 10, CATERPIE, WEEDLE, CATERPIE, 0                                                  ; Bug Catcher 4
+	db 9, WEEDLE, KAKUNA, CATERPIE, METAPOD, 0                                            ; Bug Catcher 5
+	db 11, CATERPIE, METAPOD, 0                                                           ; Bug Catcher 6
 ; Mt. Moon 1F
-	db 11, WEEDLE, KAKUNA, CATERPIE, 0                                            ; Bug Catcher 7        ; Caterpie added by G-Dubs
-	db 10, CATERPIE, METAPOD, WEEDLE, 0                                           ; Bug Catcher 8        ; 2nd Caterpie changed to Weedle by G-Dubs
+	db 11, WEEDLE, KAKUNA, CATERPIE, 0                                                    ; Bug Catcher 7        ; Caterpie added by G-Dubs
+	db 10, CATERPIE, METAPOD, WEEDLE, 0                                                   ; Bug Catcher 8        ; 2nd Caterpie changed to Weedle by G-Dubs
 ; Route 24
-	db 14, CATERPIE, WEEDLE, 0                                                    ; Bug Catcher 9
+	db 14, CATERPIE, WEEDLE, 0                                                            ; Bug Catcher 9
 ; Route 6
-	db 16, WEEDLE, CATERPIE, WEEDLE, 0                                            ; Bug Catcher 10
-	db 20, BUTTERFREE, 0                                                          ; Bug Catcher 11
+	db 16, WEEDLE, CATERPIE, WEEDLE, 0                                                    ; Bug Catcher 10
+	db 20, BUTTERFREE, 0                                                                  ; Bug Catcher 11
 ; Unused
-	db 18, METAPOD, CATERPIE, VENONAT, 0	                                      ; Bug Catcher 12       ; (Unused)
+	db 18, METAPOD, CATERPIE, VENONAT, 0	                                              ; Bug Catcher 12       ; (Unused)
 ; Route 9
-	db 19, BEEDRILL, BEEDRILL, 0                                                  ; Bug Catcher 13
-	db 20, CATERPIE, WEEDLE, VENONAT, 0                                           ; Bug Catcher 14
+	db 19, BEEDRILL, BEEDRILL, 0                                                          ; Bug Catcher 13
+	db 20, CATERPIE, WEEDLE, VENONAT, 0                                                   ; Bug Catcher 14
 ; Viridian Forest (Again)
-	db 8, CATERPIE, METAPOD, 0                                                    ; Bug Catcher 15       ; Yellow exclusive Bug Catcher in Viridian Forest (Poor coding)
-	db 6, KAKUNA, WEEDLE, KAKUNA, 0                                               ; Bug Catcher 16       ; Trainer from Red/Blue added 
+	db 8, CATERPIE, METAPOD, 0                                                            ; Bug Catcher 15       ; Yellow exclusive Bug Catcher in Viridian Forest (Poor coding)
+	db 6, KAKUNA, WEEDLE, KAKUNA, 0                                                       ; Bug Catcher 16       ; Trainer from Red/Blue added by G-Dubs
+	db 9, WEEDLE, 0                                                                       ; Bug Catcher 17       ; Trainer from Red/Blue added by G-Dubs
+	db 9, CATERPIE, 0                                                                     ; Bug Catcher 18       ; Trainer from Red/Blue added by G-Dubs
+/*
+; Route 13
+    db 30, BUTTERFREE, BEEDRILL, VENOMOTH, 0                                              ; Bug Catcher 19       ; New Trainer added by G-Dubs
+; Route 15
+    db $FF, 33, VENONAT, 36, VENOMOTH, 0                                                  ; Bug Catcher 20       ; New Trainer added by G-Dubs
+; Route 16
+    db $FF, 34, VENONAT, 36, VENONAT, 38, VENONAT, 40, VENOMOTH, 0                        ; Bug Catcher 21       ; New Trainer added by G-Dubs
+; Safari Zone Area 1 Rest House
+    db $FF, 32, PARAS, 36, PARASECT, 0                                                    ; Bug Catcher 22       ; New Trainer added by G-Dubs
+; Safari Zone Area 3 Rest House	
+	db 33, SCYTHER, PINSIR, 0                                                             ; Bug Catcher 23       ; New Trainer added by G-Dubs
+; Safari Zone Area 4 Rest House
+   db $FF, 32, VENONAT, 36, VENOMOTH, 0                                                   ; Bug Catcher 24       ; New Trainer added by G-Dubs
+; Victory Road  
+    db 50, BUTTERFREE, PARASECT, BEEDRILL, VENOMOTH, 0                                    ; Bug Catcher 25       ; New Trainer added by G-Dubs
+*/
 LassData:
 ; Route 3
-	db 9, PIDGEY, PIDGEY, 0                                                       ; Lass 1
-	db 10, NIDORAN_F, RATTATA, NIDORAN_M, 0                                       ; Lass 2               ; Nidoran♀ added by G-Dubs
-	db 14, JIGGLYPUFF, 0                                                          ; Lass 3
+	db 9, PIDGEY, PIDGEY, 0                                                               ; Lass 1
+	db 10, NIDORAN_F, RATTATA, NIDORAN_M, 0                                               ; Lass 2               ; Nidoran♀ added by G-Dubs
+	db 14, JIGGLYPUFF, 0                                                                  ; Lass 3
 ; Route 4
-	db 31, PARAS, PARAS, PARASECT, 0                                              ; Lass 4
+	db 31, PARAS, PARAS, PARASECT, 0                                                      ; Lass 4
 ; Mt. Moon 1F
-	db 11, ODDISH, BELLSPROUT, 0                                                  ; Lass 5
-	db 14, CLEFAIRY, 0                                                            ; Lass 6
+	db 11, ODDISH, BELLSPROUT, 0                                                          ; Lass 5
+	db 14, CLEFAIRY, 0                                                                    ; Lass 6
 ; Route 24
-	db 16, NIDORAN_M, PIDGEY, NIDORAN_F, 0                                        ; Lass 7               ; Nidoran♂ added by G-Dubs
-	db 14, NIDORAN_M, PIDGEY, NIDORAN_F, 0                                        ; Lass 8               ; Nidoran♂ added by G-Dubs
+	db 16, NIDORAN_M, PIDGEY, NIDORAN_F, 0                                                ; Lass 7               ; Nidoran♂ added by G-Dubs
+	db 14, NIDORAN_M, PIDGEY, NIDORAN_F, 0                                                ; Lass 8               ; Nidoran♂ added by G-Dubs
 ; Route 25
-	db 15, NIDORAN_M, NIDORAN_F, 0                                                ; Lass 9
-	db 13, ODDISH, PIDGEY, ODDISH, 0                                              ; Lass 10
+	db 15, NIDORAN_M, NIDORAN_F, 0                                                        ; Lass 9
+	db 13, ODDISH, PIDGEY, ODDISH, 0                                                      ; Lass 10
 ; SS Anne 1F Rooms
-	db 18, NIDORAN_F, PIDGEY, NIDORAN_F, 0                                        ; Lass 11              ; Nidoran♀ added by G-Dubs
+	db 18, NIDORAN_F, PIDGEY, NIDORAN_F, 0                                                ; Lass 11              ; Nidoran♀ added by G-Dubs
 ; SS Anne 2F Rooms
-	db 20, RATTATA, PIKACHU, JIGGLYPUFF, 0                                        ; Lass 12              ; Rattata, and Pikachu from Red/Blue added by G-Dubs
+	db 20, RATTATA, PIKACHU, JIGGLYPUFF, 0                                                ; Lass 12              ; Rattata, and Pikachu from Red/Blue added by G-Dubs
 ; Route 8
-	db 23, NIDORAN_F, NIDORINA, 0                                                 ; Lass 13
-	db 24, MEOWTH, MEOWTH, MEOWTH, 0                                              ; Lass 14
-	db 19, PIDGEY, RATTATA, NIDORAN_F, MEOWTH, NIDORAN_M, PIKACHU, 0              ; Lass 15              ; Pikachu from Red/Blue added by G-Dubs
-	db 22, CLEFAIRY, CLEFAIRY, 0                                                  ; Lass 16
+	db 23, NIDORAN_F, NIDORINA, 0                                                         ; Lass 13
+	db 24, MEOWTH, MEOWTH, MEOWTH, 0                                                      ; Lass 14
+	db 19, PIDGEY, RATTATA, NIDORAN_F, MEOWTH, NIDORAN_M, PIKACHU, 0                      ; Lass 15              ; Pikachu from Red/Blue added by G-Dubs
+	db 22, CLEFAIRY, CLEFAIRY, 0                                                          ; Lass 16
 ; Celadon Gym
-	db 23, BELLSPROUT, WEEPINBELL, 0		                                      ; Lass 17
-	db 23, ODDISH, GLOOM, 0				                                          ; Lass 18
+	db 23, BELLSPROUT, WEEPINBELL, 0		                                              ; Lass 17
+	db 23, ODDISH, GLOOM, 0				                                                  ; Lass 18
 ; Viridian Forest (Again)
-	db 6, NIDORAN_F, NIDORAN_M, 0                                                 ; Lass 19              ; Yellow exclusive Lass in Viridian Forest (Poor coding)
+	db 6, NIDORAN_F, NIDORAN_M, 0                                                         ; Lass 19              ; Yellow exclusive Lass in Viridian Forest (Poor coding)
 
 SailorData:
 ; SS Anne Stern
-	db 18, MACHOP, SHELLDER, 0                                                    ; Sailor 1
-	db 17, MACHOP, TENTACOOL, 0                                                   ; Sailor 2
+	db 18, MACHOP, SHELLDER, 0                                                            ; Sailor 1
+	db 17, MACHOP, TENTACOOL, 0                                                           ; Sailor 2
 ; SS Anne B1F Rooms
-	db 21, SHELLDER, MACHOP, 0                                                    ; Sailor 3              ; Machop added by G-Dubs
-	db 17, HORSEA, SHELLDER, TENTACOOL, 0                                         ; Sailor 4
-	db 18, TENTACOOL, STARYU, 0                                                   ; Sailor 5
-	db 17, HORSEA, HORSEA, HORSEA, 0                                              ; Sailor 6
-	db 20, MACHOP, KRABBY, 0                                                      ; Sailor 7              ; Krabby added by G-Dubs
+	db 21, SHELLDER, MACHOP, 0                                                            ; Sailor 3              ; Machop added by G-Dubs
+	db 17, HORSEA, SHELLDER, TENTACOOL, 0                                                 ; Sailor 4
+	db 18, TENTACOOL, STARYU, 0                                                           ; Sailor 5
+	db 17, HORSEA, HORSEA, HORSEA, 0                                                      ; Sailor 6
+	db 20, MACHOP, KRABBY, 0                                                              ; Sailor 7              ; Krabby added by G-Dubs
 ; Vermilion Gym
-	db 21, PIKACHU, MACHOP, PIKACHU, MAGNEMITE, 0                                 ; Sailor 8              ; Pikachu from Red/Blue, and Machop with Thunderpunch added by G-Dubs
+	db 21, PIKACHU, MACHOP, PIKACHU, MAGNEMITE, 0                                         ; Sailor 8              ; Pikachu from Red/Blue, and Machop with Thunderpunch added by G-Dubs
 
 JrTrainerMData:
 ; Pewter Gym
-	db 11, DIGLETT, SANDSHREW, 0                                                  ; Jr. Trainer ♂ 1       ; Changed from level 9 to 11 to match Red/Blue by G-Dubs
+	db 11, DIGLETT, SANDSHREW, 0                                                          ; Jr. Trainer ♂ 1       ; Changed from level 9 to 11 to match Red/Blue by G-Dubs
 ; Route 24/Route 25
-	db 14, NIDORAN_M, RATTATA, EKANS, 0                                           ; Jr. Trainer ♂ 2       ; Nidoran♂ added by G-Dubs
+	db 14, NIDORAN_M, RATTATA, EKANS, 0                                                   ; Jr. Trainer ♂ 2       ; Nidoran♂ added by G-Dubs
  ; Route 24
-	db 18, NIDORAN_M, SANDSHREW, MANKEY, 0                                        ; Jr. Trainer ♂ 3       ; Nidoran♂ & Sandshrew added by G-Dubs
+	db 18, NIDORAN_M, SANDSHREW, MANKEY, 0                                                ; Jr. Trainer ♂ 3       ; Nidoran♂ & Sandshrew added by G-Dubs
 ; Unused
-	db 20, SQUIRTLE, 0					                                          ; Jr. Trainer ♂ 4       ; (Unused)
+	db 20, SQUIRTLE, 0					                                                  ; Jr. Trainer ♂ 4       ; (Unused)
 ; Route 6   
-	db 16, SPEAROW, NIDORAN_M ,RATICATE, 0                                        ; Jr. Trainer ♂ 5       ; Nidoran♂ added by G-Dubs
+	db 16, SPEAROW, NIDORAN_M ,RATICATE, 0                                                ; Jr. Trainer ♂ 5       ; Nidoran♂ added by G-Dubs
 ; Unused
-	db 18, DIGLETT, DIGLETT, SANDSHREW, 0	                                      ; Jr. Trainer ♂ 6       ; (Unused)
-	db 21, GROWLITHE, CHARMANDER, 0		                                          ; Jr. Trainer ♂ 7       ; (Unused)
+	db 18, DIGLETT, DIGLETT, SANDSHREW, 0	                                              ; Jr. Trainer ♂ 6       ; (Unused)
+	db 21, GROWLITHE, CHARMANDER, 0		                                                  ; Jr. Trainer ♂ 7       ; (Unused)
 ; Route 9
-	db 19, RATTATA, DIGLETT, EKANS, SANDSHREW, 0                                  ; Jr. Trainer ♂ 8
+	db 19, RATTATA, DIGLETT, EKANS, SANDSHREW, 0                                          ; Jr. Trainer ♂ 8
 ; Route 12
-	db 29, NIDORAN_M, NIDORINO, 0                                                 ; Jr. Trainer ♂ 9
+	db 29, NIDORAN_M, NIDORINO, 0                                                         ; Jr. Trainer ♂ 9
 ; Route 6 (Again)
-	db 16, WEEPINBELL, 0                                                          ; Jr. Trainer ♂ 10      ; Joe from the anime, exclusive to Yellow (Poor coding)
+	db 16, WEEPINBELL, 0                                                                  ; Jr. Trainer ♂ 10      ; Joe from the anime, exclusive to Yellow (Poor coding)
 
 JrTrainerFData:
 ; Cerulean Gym
-	db 19, GOLDEEN, 0                                                             ; Jr. Trainer ♀ 1
+	db 19, GOLDEEN, 0                                                                     ; Jr. Trainer ♀ 1
 ; Unused
-	db 16, ODDISH, BELLSPROUT, 0			                                      ; Jr. Trainer ♀ 2       ; (Unused)
+	db 16, ODDISH, BELLSPROUT, 0			                                              ; Jr. Trainer ♀ 2       ; (Unused)
 ; Route 6
-	db 16, PIDGEY, PIDGEY, PIDGEY, 0		                                      ; Jr. Trainer ♀ 3
+	db 16, PIDGEY, PIDGEY, PIDGEY, 0		                                              ; Jr. Trainer ♀ 3
 ; Unused
-	db 22, BULBASAUR, 0					                                          ; Jr. Trainer ♀ 4       ; (Unused)
+	db 22, BULBASAUR, 0					                                                  ; Jr. Trainer ♀ 4       ; (Unused)
 ; Route 9
-	db 18, ODDISH, BELLSPROUT, ODDISH, BELLSPROUT, 0                              ; Jr. Trainer ♀ 5
-	db 23, MEOWTH, 0                                                              ; Jr. Trainer ♀ 6  
+	db 18, ODDISH, BELLSPROUT, ODDISH, BELLSPROUT, 0                                      ; Jr. Trainer ♀ 5
+	db 23, MEOWTH, 0                                                                      ; Jr. Trainer ♀ 6  
 ; Route 10
-	db 20, JIGGLYPUFF, PIKACHU, CLEFAIRY, 0                                       ; Jr. Trainer ♀ 7       ; Pikachu from Red/Blue added by G-Dubs 
-	db 21, PIDGEY, PIDGEOTTO, 0                                                   ; Jr. Trainer ♀ 8
+	db 20, JIGGLYPUFF, PIKACHU, CLEFAIRY, 0                                               ; Jr. Trainer ♀ 7       ; Pikachu from Red/Blue added by G-Dubs 
+	db 21, PIDGEY, PIDGEOTTO, 0                                                           ; Jr. Trainer ♀ 8
 ; Rock Tunnel B1F
-	db 21, JIGGLYPUFF, PIDGEY, MEOWTH, NIDORAN_F, 0                               ; Jr. Trainer ♀ 9       ; Nidoran♀ added by G-Dubs
-	db 22, ODDISH, BULBASAUR, 0                                                   ; Jr. Trainer ♀ 10     
-; Celadon Gym
-	db 24, BULBASAUR, IVYSAUR, 0                                                  ; Jr. Trainer ♀ 11
+	db 21, JIGGLYPUFF, PIDGEY, MEOWTH, NIDORAN_F, 0                                       ; Jr. Trainer ♀ 9       ; Nidoran♀ added by G-Dubs
+	db 22, ODDISH, BULBASAUR, 0                                                           ; Jr. Trainer ♀ 10     
+; Celadon Gym        
+	db 24, BULBASAUR, IVYSAUR, 0                                                          ; Jr. Trainer ♀ 11
 ; Route 13
-	db 24, PIDGEY, MEOWTH, RATTATA, PIKACHU, MEOWTH, PIDGEOTTO, 0                 ; Jr. Trainer ♀ 12      ; Pikachu from Red/Blue added and Pidgey changed to Pidgeotto by G-Dubs
-	db 30, POLIWAG, POLIWAG, 0                                                    ; Jr. Trainer ♀ 13
-	db 27, PIDGEY, MEOWTH, PIDGEY, PIDGEOTTO, 0                                   ; Jr. Trainer ♀ 14
-	db 28, GOLDEEN, POLIWAG, HORSEA, 0                                            ; Jr. Trainer ♀ 15
+	db 24, PIDGEY, MEOWTH, RATTATA, PIKACHU, MEOWTH, PIDGEOTTO, 0                         ; Jr. Trainer ♀ 12      ; Pikachu from Red/Blue added and Pidgey changed to Pidgeotto by G-Dubs
+	db 30, POLIWAG, POLIWAG, 0                                                            ; Jr. Trainer ♀ 13
+	db 27, PIDGEY, MEOWTH, PIDGEY, PIDGEOTTO, 0                                           ; Jr. Trainer ♀ 14
+	db 28, GOLDEEN, POLIWAG, HORSEA, 0                                                    ; Jr. Trainer ♀ 15
 ; Route 20
-	db 31, GOLDEEN, SEAKING, 0                                                    ; Jr. Trainer ♀ 16
+	db 31, GOLDEEN, SEAKING, 0                                                            ; Jr. Trainer ♀ 16
 ; Rock Tunnel 1F
-	db 22, BELLSPROUT, CLEFAIRY, 0                                                ; Jr. Trainer ♀ 17
-	db 20, MEOWTH, ODDISH, PIDGEY, NIDORAN_F, 0                                   ; Jr. Trainer ♀ 18      ; Nidoran♀ added by G-Dubs
-	db 19, PIDGEY, RATTATA, RATTATA, BELLSPROUT, NIDORAN_F, 0                     ; Jr. Trainer ♀ 19      ; Nidoran♀ added by G-Dubs
+	db 22, BELLSPROUT, CLEFAIRY, 0                                                        ; Jr. Trainer ♀ 17
+	db 20, MEOWTH, ODDISH, PIDGEY, NIDORAN_F, 0                                           ; Jr. Trainer ♀ 18      ; Nidoran♀ added by G-Dubs
+	db 19, PIDGEY, RATTATA, RATTATA, BELLSPROUT, NIDORAN_F, 0                             ; Jr. Trainer ♀ 19      ; Nidoran♀ added by G-Dubs
 ; Route 15
-	db 28, GLOOM, ODDISH, ODDISH, 0                                               ; Jr. Trainer ♀ 20
-	db 29, PIDGEY, PIDGEOTTO, 0                                                   ; Jr. Trainer ♀ 21
-	db 33, CLEFAIRY, 0                                                            ; Jr. Trainer ♀ 22
-	db 29, BELLSPROUT, ODDISH, TANGELA, 0                                         ; Jr. Trainer ♀ 23 
+	db 28, GLOOM, ODDISH, ODDISH, 0                                                       ; Jr. Trainer ♀ 20
+	db 29, PIDGEY, PIDGEOTTO, 0                                                           ; Jr. Trainer ♀ 21
+	db 33, CLEFAIRY, 0                                                                    ; Jr. Trainer ♀ 22
+	db 29, BELLSPROUT, ODDISH, TANGELA, 0                                                 ; Jr. Trainer ♀ 23 
 ; Route 20 (Again) 
-	db 30, TENTACOOL, HORSEA, SEEL, 0                                             ; Jr. Trainer ♀ 24      ; Added to the Route 20 section not in order due to poor coding
+	db 30, TENTACOOL, HORSEA, SEEL, 0                                                     ; Jr. Trainer ♀ 24      ; Added to the Route 20 section not in order due to poor coding
 ; Route 6 (Again)
-	db 20, CUBONE, 0                                                              ; Jr. Trainer ♀ 25      ; Giselle from the anime, exclusive to Yellow (Poor coding)
+	db 20, CUBONE, 0                                                                      ; Jr. Trainer ♀ 25      ; Giselle from the anime, exclusive to Yellow (Poor coding)
 
 PokemaniacData:
 ; Route 10
-	db 30, RHYHORN, LICKITUNG, 0                                                  ; Pokémaniac 1
-	db 20, CUBONE, SLOWPOKE, NIDORAN_M, 0                                         ; Pokémaniac 2          ; Nidoran♂ added by G-Dubs
+	db 30, RHYHORN, LICKITUNG, 0                                                          ; Pokémaniac 1
+	db 20, CUBONE, SLOWPOKE, NIDORAN_M, 0                                                 ; Pokémaniac 2          ; Nidoran♂ added by G-Dubs
 ; Rock Tunnel B1F
-	db 20, SLOWPOKE, SLOWPOKE, SLOWPOKE, 0                                        ; Pokémaniac 3
-	db 22, CHARMANDER, CUBONE, NIDORINO, 0                                        ; Pokémaniac 4          ; Nidorino added by G-Dubs
-	db 25, SLOWPOKE, CHARMELEON, 0                                                ; Pokémaniac 5          ; Charmeleon added by G-Dubs
+	db 20, SLOWPOKE, SLOWPOKE, SLOWPOKE, 0                                                ; Pokémaniac 3
+	db 22, CHARMANDER, CUBONE, NIDORINO, 0                                                ; Pokémaniac 4          ; Nidorino added by G-Dubs
+	db 25, SLOWPOKE, CHARMELEON, 0                                                        ; Pokémaniac 5          ; Charmeleon added by G-Dubs
 ; Victory Road 2F
-	db 45, CHARIZARD, LAPRAS, LICKITUNG, 0                                        ; Pokémaniac 6          ; Level changed to 45, and Charmeleon changed to Charizard by G-Dubs
+	db 45, CHARIZARD, LAPRAS, LICKITUNG, 0                                                ; Pokémaniac 6          ; Level changed to 45, and Charmeleon changed to Charizard by G-Dubs
 ; Rock Tunnel 1F
-	db 23, CUBONE, SLOWPOKE, 0                                                    ; Pokémaniac 7
+	db 23, CUBONE, SLOWPOKE, 0                                                            ; Pokémaniac 7
 
 SuperNerdData:
 ; Mt. Moon 1F

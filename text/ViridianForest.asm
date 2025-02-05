@@ -38,7 +38,7 @@ _ViridianForestYoungster3EndBattleText::
 _ViridianForestYoungster3AfterBattleText::
 	text "Darn! I'm going"
 	line "to catch some"
-	cont "stronger ones!"
+	cont "stronger bugs!"
 	done
 
 _ViridianForestYoungster4BattleText::
@@ -58,7 +58,7 @@ _ViridianForestYoungster4AfterBattleText::
 	cont "the ground!"
 
 	para "I'm looking for"
-	line "the stuff I"
+	line "the POTION I"
 	cont "dropped!"
 	done
 
@@ -105,21 +105,91 @@ _ViridianForestYoungster6Text::
 	line "extras!"
 	done
 
-_ViridianForestYoungster7BattleText::
-	text "Kakuna is better"
-	line "than Metapod!"
+_ViridianForestYoungster7BattleText::           ; New trainer added by Vlad
+	text "Kakuna is the best" 
+	line "COCOON #MON!"
 	done
 
 _ViridianForestYoungster7EndBattleText::
-	text "Kakuna is"
-	line "still better!"
+	text "At" 
+	line "least, Kakuna" 
+	cont "is still better"
+	cont "than Metapod!"
 	prompt
 
 _ViridianForestYoungster7AfterBattleText::
 	text "Make sure to"
-	line "teach your "
-	cont "Kakuna BUG BITE!"
+	line "teach your Kakuna"
+	cont "BUG BITE!"
 	done
+
+_ViridianForestYoungster8BattleText::          ; New trainer added by G-Dubs
+	text "My Weedle is"
+	line "different from"
+	cont "regular Weedle!"
+    
+	para "It’s like my"
+	line "Weedle is in the"
+	cont "top percentage of"
+	cont "all Weedle!!!"
+	done
+
+_ViridianForestYoungster8EndBattleText::
+	text "No!" 
+	line "Not my top"
+	cont "percentage Weedle!"
+	prompt
+
+_ViridianForestYoungster8AfterBattleText::
+	text "I got my Weedle"
+	line "from the #Mon TCG!"
+	done
+
+_ViridianForestYoungster9BattleText::           ; New trainer added by G-Dubs
+	text "BUG type #MON"
+	line "are my favorite" 
+	cont "type of #MON!"
+	done
+
+_ViridianForestYoungster9EndBattleText::
+	text "I" 
+	line "still love my BUG" 
+	cont "type #MON."
+	prompt
+
+_ViridianForestYoungster9AfterBattleText::
+	text "BUG type #MON"
+	line "are the best type"
+	cont "because they can"
+	cont "evolve really"
+	cont "quickly!"
+	done	
+
+_ViridianForestYoungster10BattleText::           ; New trainer added by G-Dubs
+	text "I was helping my"
+	line "friend try to" 
+	cont "find his lost"
+	cont "item, but now" 
+	cont "I'm bored."
+
+	para "Let's have a"
+	line "#MON battle!"
+	done
+
+_ViridianForestYoungster10EndBattleText::
+	text "I lost" 
+	line "because I had too" 
+	cont "many weak BUG type"
+	cont "#MON."
+	prompt
+
+_ViridianForestYoungster10AfterBattleText::
+	text "Even if some of my"
+	line "BUG type #MON "
+	cont "are weak, they"
+	cont "are still my" 
+	cont "friends."
+	done	
 
 _ViridianForestTrainerTips1Text::
 	text "TRAINER TIPS"
