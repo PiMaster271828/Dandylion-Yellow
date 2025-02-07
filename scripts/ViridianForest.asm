@@ -56,6 +56,8 @@ ViridianForestTrainerHeader7:                                                   
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_7, 1, ViridianForestYoungster9BattleText, ViridianForestYoungster9EndBattleText, ViridianForestYoungster9AfterBattleText
 ViridianForestTrainerHeader8:                                                                                                                                                  ; New trainer header added by G-Dubs
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_8, 4, ViridianForestYoungster10BattleText, ViridianForestYoungster10EndBattleText, ViridianForestYoungster10AfterBattleText
+;ViridianForestTrainerHeader9:                                                                                                                                                  ; New trainer header added by G-Dubs
+;	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_9, 4, ViridianForestYoungster11BattleText, ViridianForestYoungster11EndBattleText, ViridianForestYoungster11AfterBattleText
 	db -1 ; end
 
 ViridianForestYoungster1Text:
@@ -106,7 +108,12 @@ ViridianForestYoungster10Text:                               ; New trainer added
 	text_asm
 	ld hl, ViridianForestTrainerHeader8
 	jr ViridianForestTalkToTrainer
-
+/*
+ViridianForestYoungster11Text:                               ; New trainer added by G-Dubs
+	text_asm
+	ld hl, ViridianForestTrainerHeader9
+	jr ViridianForestTalkToTrainer
+*/
 ViridianForestTalkToTrainer:
 	call TalkToTrainer
 	jp TextScriptEnd
@@ -187,7 +194,7 @@ ViridianForestYoungster7AfterBattleText:
 	text_far _ViridianForestYoungster7AfterBattleText
 	text_end
 
-ViridianForestYoungster8BattleText:                          ; New trainer added by Vlad
+ViridianForestYoungster8BattleText:                          ; New trainer added by G-Dubs
 	text_far _ViridianForestYoungster8BattleText
 	text_end
 
@@ -199,7 +206,7 @@ ViridianForestYoungster8AfterBattleText:
 	text_far _ViridianForestYoungster8AfterBattleText
 	text_end
 
-ViridianForestYoungster9BattleText:                          ; New trainer added by Vlad
+ViridianForestYoungster9BattleText:                          ; New trainer added by G-Dubs
 	text_far _ViridianForestYoungster9BattleText
 	text_end
 
@@ -211,7 +218,7 @@ ViridianForestYoungster9AfterBattleText:
 	text_far _ViridianForestYoungster9AfterBattleText
 	text_end
 
-ViridianForestYoungster10BattleText:                         ; New trainer added by Vlad
+ViridianForestYoungster10BattleText:                         ; New trainer added by G-Dubs
 	text_far _ViridianForestYoungster10BattleText
 	text_end
 
@@ -222,7 +229,19 @@ ViridianForestYoungster10EndBattleText:
 ViridianForestYoungster10AfterBattleText:
 	text_far _ViridianForestYoungster10AfterBattleText
 	text_end
+/*
+ViridianForestYoungster11sBattleText:                         ; New trainer added by G-Dubs
+	text_far _ViridianForestYoungster11BattleText
+	text_end
 
+ViridianForestYoungster11EndBattleText:
+	text_far _ViridianForestYoungster11EndBattleText
+	text_end
+
+ViridianForestYoungster11AfterBattleText:
+	text_far _ViridianForestYoungster11AfterBattleText
+	text_end
+*/
 ViridianForestTrainerTips1Text:                              ; Signs must be at the end, for some reason...
 	text_asm
 	ld hl, ViridianForestPrintTrainerTips1Text

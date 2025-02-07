@@ -13,6 +13,7 @@
 	const_export VIRIDIANFOREST_YOUNGSTER8   ; New trainer added by G-Dubs
 	const_export VIRIDIANFOREST_YOUNGSTER9   ; New trainer added by G-Dubs
     const_export VIRIDIANFOREST_YOUNGSTER10  ; New trainer added by G-Dubs
+	const_export VIRIDIANFOREST_YOUNGSTER11  ; New trainer added by G-Dubs
 
 ViridianForest_Object:
 	db $3 ; border block
@@ -48,5 +49,6 @@ ViridianForest_Object:
 	object_event 24,  1, SPRITE_YOUNGSTER, STAY, DOWN, TEXT_VIRIDIANFOREST_YOUNGSTER8, OPP_BUG_CATCHER, 17   ; New trainer added by G-Dubs
 	object_event 29,  9, SPRITE_YOUNGSTER, STAY, LEFT, TEXT_VIRIDIANFOREST_YOUNGSTER9, OPP_BUG_CATCHER, 18   ; New trainer added by G-Dubs
 	object_event 12, 25, SPRITE_YOUNGSTER, STAY, LEFT, TEXT_VIRIDIANFOREST_YOUNGSTER10, OPP_YOUNGSTER, 15    ; New trainer added by G-Dubs
+   ;object_event 17, 32, SPRITE_YOUNGSTER, STAY, DOWN, TEXT_VIRIDIANFOREST_YOUNGSTER11, OPP_YOUNGSTER, 13    ; New trainer added by G-Dubs
 
 	def_warps_to VIRIDIAN_FOREST
