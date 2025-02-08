@@ -6,53 +6,62 @@ _ViridianForestYoungster1Text::
 	line "#MON fights!"
 	done
 
-_ViridianForestYoungster2BattleText::
+_ViridianForestYoungster2Text::
+	text "I ran out of #"
+	line "BALLs to catch"
+	cont "#MON with!"
+
+	para "You should carry"
+	line "extras!"
+	done
+
+_ViridianForestYoungster3BattleText::
 	text "Hey! You have"
 	line "#MON! Come on!"
 	cont "Let's battle 'em!"
 	done
 
-_ViridianForestYoungster2EndBattleText::
+_ViridianForestYoungster3EndBattleText::
 	text "No!"
 	line "CATERPIE can't"
 	cont "cut it!"
 	prompt
 
-_ViridianForestYoungster2AfterBattleText::
+_ViridianForestYoungster3AfterBattleText::
 	text "Ssh! You'll scare"
 	line "the bugs away!"
 	done
 
-_ViridianForestYoungster3BattleText::
+_ViridianForestYoungster4BattleText::
 	text "Yo! You can't jam"
 	line "out if you're a"
 	cont "#MON trainer!"
 	done
 
-_ViridianForestYoungster3EndBattleText::
+_ViridianForestYoungster4EndBattleText::
 	text "Huh?"
 	line "I ran out of"
 	cont "#MON!"
 	prompt
 
-_ViridianForestYoungster3AfterBattleText::
+_ViridianForestYoungster4AfterBattleText::
 	text "Darn! I'm going"
 	line "to catch some"
 	cont "stronger bugs!"
 	done
 
-_ViridianForestYoungster4BattleText::
+_ViridianForestYoungster5BattleText::
 	text "Hey, wait up!"
 	line "What's the hurry?"
 	done
 
-_ViridianForestYoungster4EndBattleText::
+_ViridianForestYoungster5EndBattleText::
 	text "I"
 	line "give! You're good"
 	cont "at this!"
 	prompt
 
-_ViridianForestYoungster4AfterBattleText::
+_ViridianForestYoungster5AfterBattleText::
 	text "Sometimes, you"
 	line "can find stuff on"
 	cont "the ground!"
@@ -78,32 +87,24 @@ _ViridianForestCooltrainerFAfterBattleText::
 	cont "a PIKACHU here!"
 	done
 
-_ViridianForestYoungster5BattleText::
+_ViridianForestYoungster6BattleText::
 	text "I'm gonna be the"
 	line "best. You just"
 	cont "can't beat me!"
 	done
 
-_ViridianForestYoungster5EndBattleText::
+_ViridianForestYoungster6EndBattleText::
 	text "After"
 	line "all I did..."
 	prompt
 
-_ViridianForestYoungster5AfterBattleText::
+_ViridianForestYoungster6AfterBattleText::
 	text "A METAPOD is cool"
 	line "because its"
 	cont "attack is its"
 	cont "defense!"
 	done
 
-_ViridianForestYoungster6Text::
-	text "I ran out of #"
-	line "BALLs to catch"
-	cont "#MON with!"
-
-	para "You should carry"
-	line "extras!"
-	done
 
 _ViridianForestYoungster7BattleText::           ; New trainer added by Vlad
 	text "Kakuna is the best" 
