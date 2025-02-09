@@ -6,13 +6,39 @@ _ViridianForestYoungster1Text::
 	line "#MON fights!"
 	done
 
-_ViridianForestYoungster2Text::
+_ViridianForestYoungster2BattleText::     ; New trainer added by G-Dubs
+	text "Battle me now,"
+	line "so I can evolve"
+	cont "my BUG #MON"
+	cont "before all of"
+	cont "my friends!"
+	done
+
+_ViridianForestYoungster2EndBattleText::
+	text "Agh"
+	line "I can't evolve my"
+	cont "BUG #MON, if I"
+	cont "lose!"
+	prompt
+
+_ViridianForestYoungster2AfterBattleText::
 	text "I ran out of #"
 	line "BALLs to catch"
 	cont "#MON with!"
 
 	para "You should carry"
 	line "extras!"
+
+	para "Sometimes, my"
+	line "lose stuff if"
+	cont "they drop them"
+	cont "the ground!"
+
+	para "Whenever that" 
+	line "happens, I help"
+	cont "them look for"
+	cont "the items they"
+	cont "dropped."
 	done
 
 _ViridianForestYoungster3BattleText::
@@ -191,35 +217,7 @@ _ViridianForestYoungster10AfterBattleText::
 	cont "are still my" 
 	cont "friends."
 	done	
-/*
-_ViridianForestYoungster11BattleText::
-	text "Battle me now,"
-	line "so I can evolve"
-	cont "my BUG #MON"
-	cont "before all of"
-	cont "my friends!"
-	done
 
-_ViridianForestYoungster11EndBattleText::
-	text "Agh"
-	line "I can't evolve my"
-	cont "BUG #MON, if I"
-	cont "lose!"
-	prompt
-
-_ViridianForestYoungster11AfterBattleText::
-	text "Sometimes, my"
-	line "lose stuff if"
-	cont "they drop them"
-	cont "the ground!"
-
-	para "Whenever that" 
-	line "happens, I help"
-	cont "them look for"
-	cont "the items they"
-	cont "dropped."
-	done
-*/
 _ViridianForestTrainerTips1Text::
 	text "TRAINER TIPS"
 
