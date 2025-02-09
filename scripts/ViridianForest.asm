@@ -111,12 +111,7 @@ ViridianForestYoungster10Text:
 	text_asm
 	ld hl, ViridianForestTrainerHeader8
 	jr ViridianForestTalkToTrainer
-/*
-ViridianForestYoungster11Text:                               ; New trainer added by G-Dubs
-	text_asm
-	ld hl, ViridianForestTrainerHeader9
-	jr ViridianForestTalkToTrainer
-*/
+
 ViridianForestTalkToTrainer:
 	call TalkToTrainer
 	jp TextScriptEnd
@@ -193,7 +188,7 @@ ViridianForestYoungster7AfterBattleText:
 	text_far _ViridianForestYoungster7AfterBattleText
 	text_end
 
-ViridianForestYoungster8BattleText:                          ; New trainer added by Vlad
+ViridianForestYoungster8BattleText:
 	text_far _ViridianForestYoungster8BattleText
 	text_end
 
@@ -205,7 +200,7 @@ ViridianForestYoungster8AfterBattleText:
 	text_far _ViridianForestYoungster8AfterBattleText
 	text_end
 
-ViridianForestYoungster9BattleText:                          ; New trainer added by Vlad
+ViridianForestYoungster9BattleText:
 	text_far _ViridianForestYoungster9BattleText
 	text_end
 
@@ -217,7 +212,7 @@ ViridianForestYoungster9AfterBattleText:
 	text_far _ViridianForestYoungster9AfterBattleText
 	text_end
 
-ViridianForestYoungster10BattleText:                         ; New trainer added by Vlad
+ViridianForestYoungster10BattleText:
 	text_far _ViridianForestYoungster10BattleText
 	text_end
 
@@ -228,8 +223,8 @@ ViridianForestYoungster10EndBattleText:
 ViridianForestYoungster10AfterBattleText:
 	text_far _ViridianForestYoungster10AfterBattleText
 	text_end
-
-ViridianForestTrainerTips1Text:                              ; Signs must be at the end, for some reason...
+	
+ViridianForestTrainerTips1Text:
 	text_asm
 	ld hl, ViridianForestPrintTrainerTips1Text
 	jp ViridianForestSign_Common
