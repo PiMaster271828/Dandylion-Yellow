@@ -61,29 +61,29 @@ TrainerDataPointers:
 
 YoungsterData:
 ; Route 3
-	db 11, RATTATA, EKANS, 0		                                                      ; Youngster 1
-	db 14, SPEAROW, 0				                                                      ; Youngster 2
+	db 11, RATTATA, EKANS, 0                                                              ; Youngster 1
+	db 14, SPEAROW, 0                                                                     ; Youngster 2
 ; Mt. Moon 1F
-	db 10, RATTATA, NIDORAN_M, ZUBAT, 0                                                   ; Youngster 3         ; Rattata 2 changed to Nidoran♂ by G-Dubs
+	db 10, RATTATA, NIDORAN_M, ZUBAT, 0                                                   ; Youngster 3         ; Rattata 2 changed to Nidoran♂  
 ; Route 24
-	db 14, RATTATA, EKANS, ZUBAT, 0	                                                      ; Youngster 4
+	db 14, RATTATA, EKANS, ZUBAT, 0                                                       ; Youngster 4
 ; Route 25
 	db 15, RATTATA, SPEAROW, NIDORAN_M, 0                                                 ; Youngster 5         ; Nidoran♂ added by G-Dubs
-	db 17, SLOWPOKE, 0				                                                      ; Youngster 6
-	db 14, EKANS, SANDSHREW, 0		                                                      ; Youngster 7
-; SS Anne 1F Rooms
-	db 21, NIDORAN_M, 0			 	                                                      ; Youngster 8
+	db 17, SLOWPOKE, 0                                                                    ; Youngster 6
+	db 14, EKANS, SANDSHREW, 0                                                            ; Youngster 7
+; SS Anne 1F Rooms    
+	db 21, NIDORAN_M, 0                                                                   ; Youngster 8
 ; Route 11
-	db 21, EKANS, 0					                                                      ; Youngster 9
+	db 21, EKANS, 0                                                                       ; Youngster 9
 	db 19, NIDORAN_M, SANDSHREW, ZUBAT, 0                                                 ; Youngster 10        ; Nidoran♂ added by G-Dubs
-	db 17, RATTATA, RATTATA, RATICATE, 0	                                              ; Youngster 11
-	db 18, NIDORAN_M, NIDORINO, 0	                                                      ; Youngster 12
-; Unused
-	db 17, SPEAROW, RATTATA, RATTATA, SPEAROW, 0                                          ; Youngster 13        ; (Unused)
-; Route 9
+	db 17, RATTATA, RATTATA, RATICATE, 0                                                  ; Youngster 11
+	db 18, NIDORAN_M, NIDORINO, 0                                                         ; Youngster 12
+; Viridian Forest (Previously Unused)
+	db 7, PIDGEY, RATTATA, NIDORAN_M, SPEAROW, 0                                          ; Youngster 13        ; Trainer unused in any version added by G-Dubs (Some PokéMon Changed) (Level hanged from 17 to 7)
+; Route 9      
 	db 24, SANDSHREW, 0                                                                   ; Youngster 14        ; A.J. from the Anime and his OP Sandshrew
-	; Viridian Forest
-    db $FF, 6, RATTATA, 7, PIDGEY, 6, CATERPIE, 7, RATTATA, 6, WEEDLE, 9, PIDGEOTTO, 0    ; Youngster 15        ; New Trainer added by G-Dubs
+; Viridian Forest (Again)
+    db $FF, 6, RATTATA, 7, PIDGEY, 6, CATERPIE, 7, NIDORAN_M, 6, WEEDLE, 9, PIDGEOTTO, 0  ; Youngster 15        ; New Trainer added by G-Dubs
 
 BugCatcherData:
 ; Viridian Forest
