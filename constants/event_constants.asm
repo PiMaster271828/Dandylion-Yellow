@@ -548,7 +548,7 @@
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_6  ; New trainer added by G-Dubs
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_7  ; New trainer added by G-Dubs
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_8  ; New trainer added by G-Dubs
-   ;const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_9  ; New trainer added by G-Dubs
+   ;const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_9  ; New trainer added by G-Dubs (Left by Vlad)
 
 ; Mt. Moon events
 	const_next $570
