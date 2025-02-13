@@ -538,17 +538,17 @@
 
 ; Viridian Forest events
 	const_next $560
-	const_skip 3
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_0
+	const_skip 2								; Skips const_next and first NPC
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_0  ; Old NPC replaced with trainer added by G-Dubs
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_1
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_2
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_3
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_4
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_5  ; New trainer added by Vlad
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_6  ; New trainer added by G-Dubs
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_5  
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_6  ; New trainer added by Vlad
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_7  ; New trainer added by G-Dubs
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_8  ; New trainer added by G-Dubs
-   ;const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_9  ; New trainer added by G-Dubs (Left by Vlad)
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_9  ; New trainer added by G-Dubs (Left by Vlad)
 
 ; Mt. Moon events
 	const_next $570
