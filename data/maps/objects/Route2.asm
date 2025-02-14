@@ -7,12 +7,13 @@ Route2_Object:
 
 	def_warp_events
 	warp_event 12,  9, DIGLETTS_CAVE_ROUTE_2, 1
-	warp_event  3, 11, VIRIDIAN_FOREST_NORTH_GATE, 2
+	warp_event  3, 11, VIRIDIAN_FOREST_NORTH_GATE, 1 ; Changed Warp to correct door
 	warp_event 15, 19, ROUTE_2_TRADE_HOUSE, 1
 	warp_event 16, 35, ROUTE_2_GATE, 2
 	warp_event 15, 39, ROUTE_2_GATE, 3
 	warp_event  3, 43, VIRIDIAN_FOREST_SOUTH_GATE, 3
 	warp_event 17, 35, ROUTE_2_GATE, 2
+	warp_event  4, 11, VIRIDIAN_FOREST_NORTH_GATE, 2 ; New Warp Added by Vlad
 
 	def_bg_events
 	bg_event  5, 65, TEXT_ROUTE2_SIGN
