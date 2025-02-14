@@ -201,8 +201,8 @@ _ViridianForestYoungster10BattleText::           ; New trainer added by G-Dubs
 _ViridianForestYoungster10EndBattleText::
 	text "I lost" 
 	line "because I had too" 
-	cont "many weak BUG type"
-	cont "#MON."
+	cont "many weak BUG"
+	cont "type #MON."
 	prompt
 
 _ViridianForestYoungster10AfterBattleText::
