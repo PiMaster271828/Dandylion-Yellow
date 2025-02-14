@@ -274,7 +274,7 @@ ViridianForestUsePokeBallsSignText:
 	text_asm
 	ld hl, ViridianForestPrintUsePokeBallsSignText
 	jp ViridianForestSign_Common
-	
+
 ViridianForestSign_Common:
 	ld b, BANK(ViridianForestPrintTrainerTips1Text)
 	call Bankswitch
