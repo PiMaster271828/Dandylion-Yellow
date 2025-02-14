@@ -89,10 +89,10 @@ BugCatcherData:
 ; Viridian Forest
 	db 7, CATERPIE, WEEDLE, 0                                                             ; Bug Catcher 1       ; Weedle added by G-Dubs
  	db 6, METAPOD, CATERPIE, METAPOD, 0                                                   ; Bug Catcher 2
-	db 10, CATERPIE, WEEDLE, METAPOD, KAKUNA, BUTTERFREE, BEEDRILL, 0                     ; Bug Catcher 3       ; Weedle added by G-Dubs (Other PokéMon suggested by Vlads)
+	db 10, CATERPIE, WEEDLE, METAPOD, KAKUNA, BUTTERFREE, BEEDRILL, 0                     ; Bug Catcher 3       ; Weedle added by G-Dubs (Other PokéMon suggested by Vlad)
 ; Route 3    
-	db 10, CATERPIE, WEEDLE, CATERPIE, 0                                                  ; Bug Catcher 4
-	db 9, WEEDLE, KAKUNA, CATERPIE, METAPOD, 0                                            ; Bug Catcher 5
+	db 11, CATERPIE, WEEDLE, CATERPIE, 0                                                  ; Bug Catcher 4       ; Level changed to 11, for Bug Bite by G-Dubs
+	db 11, WEEDLE, KAKUNA, CATERPIE, METAPOD, 0                                           ; Bug Catcher 5       ; Level changed to 11, for Bug Bite by G-Dubs
 	db 11, CATERPIE, METAPOD, 0                                                           ; Bug Catcher 6
 ; Mt. Moon 1F
 	db 11, WEEDLE, KAKUNA, CATERPIE, 0                                                    ; Bug Catcher 7        ; Caterpie added by G-Dubs
@@ -194,6 +194,8 @@ JrTrainerMData:
 	db 29, NIDORAN_M, NIDORINO, 0                                                         ; Jr. Trainer ♂ 9
 ; Route 6 (Again)
 	db 16, WEEPINBELL, 0                                                                  ; Jr. Trainer ♂ 10      ; Joe from the anime, exclusive to Yellow (Poor coding)
+; Route 3
+    db 12, DIGLETT, NIDORAN_M, RATTATA, EKANS, SANDSHREW, 0                               ; Jr. Trainer ♂ 11      ; New trainer added by G-Dubs
 
 JrTrainerFData:
 ; Cerulean Gym
