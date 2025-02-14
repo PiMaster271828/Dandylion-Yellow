@@ -680,7 +680,7 @@ BrunoData:
 
 BrockData:
 ; Badge Match
-	db $FF, 12, GEODUDE, 11, KABUTO, 10, ZUBAT, 13, VULPIX, 11, OMANYTE, 14, ONIX, 0                      ; Added animeesque Pokémon	
+	db $FF, 12, GEODUDE, 13, KABUTO, 12, ZUBAT, 12, VULPIX, 13, OMANYTE, 14, ONIX, 0                      ; Added animeesque Pokémon	
   ; db $FF, 10, GEODUDE, 12, ONIX, 0
 
 MistyData:
