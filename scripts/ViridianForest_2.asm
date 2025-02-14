@@ -51,3 +51,12 @@ ViridianForestPrintLeavingSignText:
 .text
 	text_far _ViridianForestLeavingSignText
 	text_end
+
+ViridianForestPrintUsePokeBallsSignText:
+	ld hl, .text
+	call PrintText
+	ret
+
+.text
+	text_far _ViridianForestUsePokeBallsSignText
+	text_end

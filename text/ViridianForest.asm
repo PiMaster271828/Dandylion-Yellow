@@ -7,32 +7,22 @@ _ViridianForestYoungster1Text::
 	done
 
 _ViridianForestYoungster2BattleText::     ; New trainer added by G-Dubs
-	text "Battle me now,"
-	line "so I can evolve"
-	cont "my BUG #MON"
-	cont "before all of"
-	cont "my friends!"
+	text "Hey, wait up!"
+	line "What's the hurry?"
 	done
 
 _ViridianForestYoungster2EndBattleText::
-	text "Agh"
-	line "I can't evolve my"
-	cont "BUG #MON, if I"
-	cont "lose!"
+	text "I"
+	line "give! You're good"
+	cont "at this!"
 	prompt
 
 _ViridianForestYoungster2AfterBattleText::
-	text "I ran out of #"
-	line "BALLs to catch"
-	cont "#MON with!"
-
-	para "You should carry"
-	line "extras!"
-
-	para "Sometimes, my"
-	line "lose stuff if"
+	text "Sometimes, my"
+	line "friends lose"
+	cont "their stuff if "
 	cont "they drop them"
-	cont "the ground!"
+	cont "on the ground!"
 
 	para "Whenever that" 
 	line "happens, I help"
@@ -77,14 +67,18 @@ _ViridianForestYoungster4AfterBattleText::
 	done
 
 _ViridianForestYoungster5BattleText::
-	text "Hey, wait up!"
-	line "What's the hurry?"
+	text "Battle me now,"
+	line "so I can evolve"
+	cont "my BUG #MON"
+	cont "before all of"
+	cont "my friends!"
 	done
 
 _ViridianForestYoungster5EndBattleText::
-	text "I"
-	line "give! You're good"
-	cont "at this!"
+	text "Agh"
+	line "I can't evolve my"
+	cont "BUG #MON, if I"
+	cont "lose!"
 	prompt
 
 _ViridianForestYoungster5AfterBattleText::
@@ -169,7 +163,8 @@ _ViridianForestYoungster8EndBattleText::
 
 _ViridianForestYoungster8AfterBattleText::
 	text "I got my Weedle"
-	line "from the #Mon TCG!"
+	line "from the #Mon"
+	cont "TCG!"
 	done
 
 _ViridianForestYoungster9BattleText::           ; New trainer added by G-Dubs
@@ -267,4 +262,17 @@ _ViridianForestLeavingSignText::
 	text "LEAVING"
 	line "VIRIDIAN FOREST"
 	cont "PEWTER CITY AHEAD"
+	done
+
+
+_ViridianForestUsePokeBallsSignText::
+    text "Trainers should"  
+	line "never run out of" 
+	cont "#BALLs so"
+	cont "they can always"
+	cont "catch a #MON"
+	cont "if they need to."
+
+	para "Trainers should"
+	line "carry extras."
 	done

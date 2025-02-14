@@ -15,31 +15,32 @@ ViridianForest_ScriptPointers:
 
 ViridianForest_TextPointers:
 	def_text_pointers
-	dw_const ViridianForestYoungster1Text,      TEXT_VIRIDIANFOREST_YOUNGSTER1
-	dw_const ViridianForestYoungster2Text,      TEXT_VIRIDIANFOREST_YOUNGSTER2         ; New Trainer Added by G-Dubs
-	dw_const ViridianForestYoungster3Text,      TEXT_VIRIDIANFOREST_YOUNGSTER3
-	dw_const ViridianForestYoungster4Text,      TEXT_VIRIDIANFOREST_YOUNGSTER4
-	dw_const ViridianForestYoungster5Text,      TEXT_VIRIDIANFOREST_YOUNGSTER5
-	dw_const ViridianForestCooltrainerFText,    TEXT_VIRIDIANFOREST_COOLTRAINER_F
-	dw_const ViridianForestYoungster6Text,      TEXT_VIRIDIANFOREST_YOUNGSTER6
-	dw_const ViridianForestYoungster7Text,      TEXT_VIRIDIANFOREST_YOUNGSTER7         ; New Trainer Added by Vlad
-	dw_const ViridianForestYoungster8Text,      TEXT_VIRIDIANFOREST_YOUNGSTER8         ; New Trainer Added by G-Dubs
-	dw_const ViridianForestYoungster9Text,      TEXT_VIRIDIANFOREST_YOUNGSTER9 	       ; New Trainer Added by G-Dubs
-	dw_const ViridianForestYoungster10Text,     TEXT_VIRIDIANFOREST_YOUNGSTER10        ; New Trainer Added by G-Dubs
-	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POTION1
-	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POTION2
-	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POKE_BALL
-	dw_const ViridianForestTrainerTips1Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS1
-	dw_const ViridianForestUseAntidoteSignText, TEXT_VIRIDIANFOREST_USE_ANTIDOTE_SIGN
-	dw_const ViridianForestTrainerTips2Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS2
-	dw_const ViridianForestTrainerTips3Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS3
-	dw_const ViridianForestTrainerTips4Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS4
-	dw_const ViridianForestLeavingSignText,     TEXT_VIRIDIANFOREST_LEAVING_SIGN
+	dw_const ViridianForestYoungster1Text,       TEXT_VIRIDIANFOREST_YOUNGSTER1
+	dw_const ViridianForestYoungster2Text,       TEXT_VIRIDIANFOREST_YOUNGSTER2          ; New Trainer Added by G-Dubs
+	dw_const ViridianForestYoungster3Text,       TEXT_VIRIDIANFOREST_YOUNGSTER3
+	dw_const ViridianForestYoungster4Text,       TEXT_VIRIDIANFOREST_YOUNGSTER4
+	dw_const ViridianForestYoungster5Text,       TEXT_VIRIDIANFOREST_YOUNGSTER5
+	dw_const ViridianForestCooltrainerFText,     TEXT_VIRIDIANFOREST_COOLTRAINER_F
+	dw_const ViridianForestYoungster6Text,       TEXT_VIRIDIANFOREST_YOUNGSTER6
+	dw_const ViridianForestYoungster7Text,       TEXT_VIRIDIANFOREST_YOUNGSTER7          ; New Trainer Added by Vlad
+	dw_const ViridianForestYoungster8Text,       TEXT_VIRIDIANFOREST_YOUNGSTER8          ; New Trainer Added by G-Dubs
+	dw_const ViridianForestYoungster9Text,       TEXT_VIRIDIANFOREST_YOUNGSTER9 	     ; New Trainer Added by G-Dubs
+	dw_const ViridianForestYoungster10Text,      TEXT_VIRIDIANFOREST_YOUNGSTER10         ; New Trainer Added by G-Dubs
+	dw_const PickUpItemText,                     TEXT_VIRIDIANFOREST_POTION1
+	dw_const PickUpItemText,                     TEXT_VIRIDIANFOREST_POTION2
+	dw_const PickUpItemText,                     TEXT_VIRIDIANFOREST_POKE_BALL
+	dw_const ViridianForestTrainerTips1Text,     TEXT_VIRIDIANFOREST_TRAINER_TIPS1
+	dw_const ViridianForestUseAntidoteSignText,  TEXT_VIRIDIANFOREST_USE_ANTIDOTE_SIGN
+	dw_const ViridianForestTrainerTips2Text,     TEXT_VIRIDIANFOREST_TRAINER_TIPS2
+	dw_const ViridianForestTrainerTips3Text,     TEXT_VIRIDIANFOREST_TRAINER_TIPS3
+	dw_const ViridianForestTrainerTips4Text,     TEXT_VIRIDIANFOREST_TRAINER_TIPS4
+	dw_const ViridianForestLeavingSignText,      TEXT_VIRIDIANFOREST_LEAVING_SIGN
+	dw_const ViridianForestUsePokeBallsSignText, TEXT_VIRIDIANFOREST_USE_POKEBALLS_SIGN  ; New Sign Added by G-Dubs
 
 ViridianForestTrainerHeaders:
 	def_trainers 2
 ViridianForestTrainerHeader0:
-	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_0, 3, ViridianForestYoungster2BattleText, ViridianForestYoungster2EndBattleText, ViridianForestYoungster2AfterBattleText  ; New Trainer Added by G-Dubs
+	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_0, 3, ViridianForestYoungster2BattleText, ViridianForestYoungster2EndBattleText, ViridianForestYoungster2AfterBattleText    ; New Trainer Added by G-Dubs
 ViridianForestTrainerHeader1:
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_1, 4, ViridianForestYoungster3BattleText, ViridianForestYoungster3EndBattleText, ViridianForestYoungster3AfterBattleText
 ViridianForestTrainerHeader2:
@@ -267,8 +268,14 @@ ViridianForestTrainerTips4Text:
 ViridianForestLeavingSignText:
 	text_asm
 	ld hl, ViridianForestPrintLeavingSignText ; supposed to be ViridianForestPrintLeavingSignText
+	jp ViridianForestSign_Common
+
+ViridianForestUsePokeBallsSignText:
+	text_asm
+	ld hl, ViridianForestPrintUsePokeBallsSignText
+	jp ViridianForestSign_Common
+	
 ViridianForestSign_Common:
 	ld b, BANK(ViridianForestPrintTrainerTips1Text)
 	call Bankswitch
 	jp TextScriptEnd
-

@@ -13,6 +13,15 @@ SpecialTrainerMoves:
 	  db 3, 3, STRING_SHOT
 	  db 0
   ; Viridian Forest (Again)
+      db BUG_CATCHER, 3
+	  db 3, 2, TACKLE         ; Adding Tackle and String Shot on the Metapod           ; Added by G-Dubs
+	  db 3, 3, STRING_SHOT
+      db 4, 2, POISON_STING   ; Adding Poison Sting and String Shot on Kakuna          ; Added by G-Dubs
+	  db 4, 3, STRING_SHOT
+	  db 5, 3, HARDEN         ; Adding Harden on Butterfree                            ; Added by G-Dubs    
+	  db 6, 3, STRING_SHOT    ; Adding String Shot on Beedrill                         ; Added by G-Dubs
+	  db 0
+
 	  db BUG_CATCHER, 15
 	  db 2, 2, TACKLE         ; Adding Tackle and String Shot on the Metapod
 	  db 2, 3, STRING_SHOT

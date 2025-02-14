@@ -89,7 +89,7 @@ BugCatcherData:
 ; Viridian Forest
 	db 7, CATERPIE, WEEDLE, 0                                                             ; Bug Catcher 1       ; Weedle added by G-Dubs
  	db 6, METAPOD, CATERPIE, METAPOD, 0                                                   ; Bug Catcher 2
-	db 10, CATERPIE, WEEDLE, 0                                                            ; Bug Catcher 3       ; Weedle added by G-Dubs
+	db 10, CATERPIE, WEEDLE, METAPOD, KAKUNA, BUTTERFREE, BEEDRILL, 0                     ; Bug Catcher 3       ; Weedle added by G-Dubs (Other PokéMon suggested by Vlads)
 ; Route 3    
 	db 10, CATERPIE, WEEDLE, CATERPIE, 0                                                  ; Bug Catcher 4
 	db 9, WEEDLE, KAKUNA, CATERPIE, METAPOD, 0                                            ; Bug Catcher 5
@@ -158,6 +158,8 @@ LassData:
 	db 23, ODDISH, GLOOM, 0				                                                  ; Lass 18
 ; Viridian Forest (Again)
 	db 6, NIDORAN_F, NIDORAN_M, 0                                                         ; Lass 19              ; Yellow exclusive Lass in Viridian Forest (Poor coding)
+; Route 4 (Again)
+    db $FF, 14, JIGGLYPUFF, 13, PARAS, 12, GEODUDE, 13, NIDORAN_F, 14, CLEFAIRY           ; Lass 20              ; New Trainer added by G-Dubs 
 
 SailorData:
 ; SS Anne Stern
