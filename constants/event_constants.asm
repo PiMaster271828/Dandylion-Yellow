@@ -249,6 +249,7 @@
 	const EVENT_BEAT_ROUTE_3_TRAINER_5
 	const EVENT_BEAT_ROUTE_3_TRAINER_6
 	const EVENT_BEAT_ROUTE_3_TRAINER_7
+	const EVENT_BEAT_ROUTE_3_TRAINER_8  ; New trainer added by G-Dubs
 
 ; Route 4 events
 	const_next $3F0

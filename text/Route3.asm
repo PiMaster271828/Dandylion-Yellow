@@ -139,6 +139,26 @@ _Route3CooltrainerF3AfterBattleText::
 	line "foot of MT.MOON."
 	done
 
+_Route3CooltrainerM1BattleText::          ; New trainer added by G-Dubs
+	text "You misstepped" 
+	line "didn't you?"
+	
+	para "You can't get"
+	line "back up so" 
+	cont "easily can you?"
+	done
+
+_Route3CooltrainerM1EndBattleText::
+	text "You're"
+	line "good!"
+	prompt
+
+_Route3CooltrainerM1AfterBattleText::
+	text "You can go"
+	line "around the ledges"
+	cont "and try again."
+	done
+
 _Route3SignText::
 	text "ROUTE 3"
 	line "MT.MOON AHEAD"
