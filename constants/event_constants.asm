@@ -256,7 +256,9 @@
 	const_next $3F0
 	const_skip 1
 	const EVENT_BEAT_ROUTE_4_TRAINER_0  ; New trainer added by G-Dubs
-    const EVENT_BEAT_ROUTE_4_TRAINER_1  
+    const EVENT_BEAT_ROUTE_4_TRAINER_1
+	const EVENT_BEAT_ROUTE_4_TRAINER_2  ; New trainer added by G-Dubs
+	const EVENT_BEAT_ROUTE_4_TRAINER_3  ; New trainer added by G-Dubs  
 	const_skip 12
 	const EVENT_BOUGHT_MAGIKARP
 

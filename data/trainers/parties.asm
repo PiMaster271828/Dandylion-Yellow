@@ -102,8 +102,8 @@ BugCatcherData:
 ; Route 6
 	db 16, WEEDLE, CATERPIE, WEEDLE, 0                                                    ; Bug Catcher 10
 	db 20, BUTTERFREE, 0                                                                  ; Bug Catcher 11
-; Unused
-	db 18, METAPOD, CATERPIE, VENONAT, 0	                                              ; Bug Catcher 12       ; (Unused)
+; Route 4 (Previously Unused)
+	db 18, PARAS, WEEDLE, METAPOD, CATERPIE, KAKUNA, VENONAT, 0                           ; Bug Catcher 12       ; Trainer unused in any version added by G-Dubs (PokéMon added by G-Dubs)
 ; Route 9
 	db 19, BEEDRILL, BEEDRILL, 0                                                          ; Bug Catcher 13
 	db 20, CATERPIE, WEEDLE, VENONAT, 0                                                   ; Bug Catcher 14
@@ -201,8 +201,8 @@ JrTrainerMData:
 JrTrainerFData:
 ; Cerulean Gym
 	db 19, GOLDEEN, 0                                                                     ; Jr. Trainer ♀ 1
-; Unused
-	db 16, ODDISH, BELLSPROUT, 0			                                              ; Jr. Trainer ♀ 2       ; (Unused)
+; Route 4 (Previously Unused)
+	db 16, ODDISH, BELLSPROUT, 0                                                          ; Jr. Trainer ♀ 2       ; Trainer unused in any version added by G-Dubs
 ; Route 6
 	db 16, PIDGEY, PIDGEY, PIDGEY, 0		                                              ; Jr. Trainer ♀ 3
 ; Unused
@@ -251,7 +251,14 @@ PokemaniacData:
 	db 45, CHARIZARD, LAPRAS, LICKITUNG, 0                                                ; Pokémaniac 6          ; Level changed to 45, and Charmeleon changed to Charizard by G-Dubs
 ; Rock Tunnel 1F
 	db 23, CUBONE, SLOWPOKE, 0                                                            ; Pokémaniac 7
-
+; Route 4
+    db 35, CUBONE, NIDORINO, RHYHORN, NIDOQUEEN, 0                                        ; Pokémaniac 8          ; New trainer added by G-Dubs
+/*
+; Route 23
+    db 45, NIDOKING, KANGASKHAN, CHARIZARD, SLOWBRO, LICKITUNG, LAPRAS, 0                 ; Pokémaniac 9          ; New trainer added by G-Dubs
+; Safari Zone Area 2 Rest House
+    db 33, RHYHORN, PINSIR, TANGELA, KANGASKHAN, SCYTHER, MAROWAK, 0                      ; Pokémaniac 10         ; New trainer added by G-Dubs
+*/
 SuperNerdData:
 ; Mt. Moon 1F
 	db 11, MAGNEMITE, VOLTORB, 0			; Super Nerd Team 1

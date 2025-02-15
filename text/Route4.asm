@@ -43,6 +43,51 @@ _Route4CooltrainerF2AfterBattleText::
 	line "them all."
 	done
 
+_Route4CooltrainerF3BattleText::
+	text "I'm on my way to"
+	line "CERULEAN CITY"
+	cont "to audition to be"
+	cont "in the Misty"
+	cont "Mermaid!"
+	done
+
+_Route4CooltrainerF3EndBattleText::
+	text "Oh!"
+	line "I won't get in"
+	cont "with GRASS type"
+	cont "#MON!"
+	prompt
+
+_Route4CooltrainerF3AfterBattleText::
+	text "The Misty Mermaid"
+	line "is the show put"
+	cont "on by the CERULEAN"
+	cont "CITY GYM."
+	done
+
+_Route4Youngster1BattleText::             ; New trainer replaced the NPC added by G-Dubs 
+	text "MT. MOON was"
+	line "awesome!"
+	cont "There were some"
+	cont "great BUG type"
+	cont "#MON there!"
+	done
+
+_Route4Youngster1EndBattleText::
+    text "Oof!"
+	line "You beat my"
+	cont "special BUG type"
+	cont "#MON!"
+	prompt
+
+_Route4Youngster1AfterBattleText::
+    text "I actually got "
+	line "most of my BUG"
+	cont "type #MON,"
+	cont "north of CERULEAN"
+	cont "CITY!"
+	done
+
 _Route4MtMoonSignText::
 	text "MT.MOON"
 	line "Tunnel Entrance"
