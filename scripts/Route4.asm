@@ -30,9 +30,15 @@ Route4TrainerHeader1:
 	trainer EVENT_BEAT_ROUTE_4_TRAINER_1, 3, Route4CooltrainerF2BattleText, Route4CooltrainerF2EndBattleText, Route4CooltrainerF2AfterBattleText  ; Changed to TrainerHeader1 by G-Dubs
 	db -1 ; end
 
-Route4CooltrainerF1Text:                           ; New trainer added by G-Dubs
+Route4CooltrainerF1Text:                            ; New trainer added by G-Dubs
 	text_asm
 	ld hl, Route4TrainerHeader0
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route4CooltrainerF2Text:
+	text_asm
+	ld hl, Route4TrainerHeader1  					; Changed to TrainerHeader1 by G-Dubs 
 	call TalkToTrainer
 	jp TextScriptEnd
 
@@ -47,12 +53,6 @@ Route4CooltrainerF1EndBattleText:
 Route4CooltrainerF1AfterBattleText:
 	text_far _Route4CooltrainerF1AfterBattleText
 	text_end
-
-Route4CooltrainerF2Text:
-	text_asm
-	ld hl, Route4TrainerHeader1  ; Changed to TrainerHeader1 by G-Dubs 
-	call TalkToTrainer
-	jp TextScriptEnd
 
 Route4CooltrainerF2BattleText:
 	text_far _Route4CooltrainerF2BattleText

@@ -1,7 +1,7 @@
 _Route4CooltrainerF1BattleText::          ; New trainer replaced the NPC added by G-Dubs 
 	text "Ouch! I tripped"
 	line "over a rocky"
-	cont "#MON, GEODUDE!"
+	cont "#MON GEODUDE!"
     
 	para "So I decided to"
 	line "catch that"
@@ -18,7 +18,7 @@ _Route4CooltrainerF1EndBattleText::
 _Route4CooltrainerF1AfterBattleText::
     text "If you go into"
 	line "MT. MOON, be"
-	cont "careful, not to"
+	cont "careful not to"
 	cont "trip on rocks!"
 	cont "They could be"
 	cont "#MON!"
