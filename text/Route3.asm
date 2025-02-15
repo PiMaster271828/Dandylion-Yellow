@@ -159,6 +159,32 @@ _Route3CooltrainerM1AfterBattleText::
 	cont "and try again."
 	done
 
+_Route3CooltrainerM2BattleText::          ; New trainer added by G-Dubs
+	text "Are you going to"
+	line "CERULEAN CITY, or"
+	cont "are you going to" 
+	cont "MT. MOON, to"
+	cont "catch #MON?"
+	done
+
+_Route3CooltrainerM2EndBattleText::
+	text "You're"
+	line "good!  You don't"
+	cont "even need to"
+	cont "catch any more" 
+	cont "#MON!"
+	prompt
+
+_Route3CooltrainerM2AfterBattleText::
+	text "I heard there's"
+	line "something called"
+	cont "The Misty Mermaid"
+	cont "in CERULEAN CITY!"
+
+	para "It sounds" 
+	line "interesting!"
+	done
+
 _Route3SignText::
 	text "ROUTE 3"
 	line "MT.MOON AHEAD"

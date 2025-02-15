@@ -23,18 +23,34 @@ Route4_TextPointers:
 	dw_const Route4SignText,          TEXT_ROUTE4_SIGN
 
 Route4TrainerHeaders:
-	def_trainers 2
-Route4TrainerHeader0:
-	trainer EVENT_BEAT_ROUTE_4_TRAINER_0, 3, Route4CooltrainerF2BattleText, Route4CooltrainerF2EndBattleText, Route4CooltrainerF2AfterBattleText
+	def_trainers 1
+Route4TrainerHeader0:    
+	trainer EVENT_BEAT_ROUTE_4_TRAINER_0, 0, Route4CooltrainerF1BattleText, Route4CooltrainerF1EndBattleText, Route4CooltrainerF1AfterBattleText  ; New trainer added by G-Dubs
+Route4TrainerHeader1:
+	trainer EVENT_BEAT_ROUTE_4_TRAINER_1, 3, Route4CooltrainerF2BattleText, Route4CooltrainerF2EndBattleText, Route4CooltrainerF2AfterBattleText  ; Changed to TrainerHeader1 by G-Dubs
 	db -1 ; end
 
-Route4CooltrainerF1Text:
-	text_far _Route4CooltrainerF1Text
+Route4CooltrainerF1Text:                           ; New trainer added by G-Dubs
+	text_asm
+	ld hl, Route4TrainerHeader0
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route4CooltrainerF1BattleText:
+	text_far _Route4CooltrainerF1BattleText
+	text_end
+
+Route4CooltrainerF1EndBattleText:
+	text_far _Route4CooltrainerF1EndBattleText
+	text_end
+
+Route4CooltrainerF1AfterBattleText:
+	text_far _Route4CooltrainerF1AfterBattleText
 	text_end
 
 Route4CooltrainerF2Text:
 	text_asm
-	ld hl, Route4TrainerHeader0
+	ld hl, Route4TrainerHeader1  ; Changed to TrainerHeader1 by G-Dubs 
 	call TalkToTrainer
 	jp TextScriptEnd
 

@@ -159,7 +159,7 @@ LassData:
 ; Viridian Forest (Again)
 	db 6, NIDORAN_F, NIDORAN_M, 0                                                         ; Lass 19              ; Yellow exclusive Lass in Viridian Forest (Poor coding)
 ; Route 4 (Again)
-    db $FF, 14, JIGGLYPUFF, 13, PARAS, 12, GEODUDE, 13, NIDORAN_F, 14, CLEFAIRY           ; Lass 20              ; New Trainer added by G-Dubs 
+    db $FF, 14, JIGGLYPUFF, 13, PARAS, 12, GEODUDE, 13, NIDORAN_F, 14, CLEFAIRY, 0        ; Lass 20              ; New Trainer added by G-Dubs 
 
 SailorData:
 ; SS Anne Stern
@@ -196,6 +196,7 @@ JrTrainerMData:
 	db 16, WEEPINBELL, 0                                                                  ; Jr. Trainer ♂ 10      ; Joe from the anime, exclusive to Yellow (Poor coding)
 ; Route 3
     db 12, DIGLETT, NIDORAN_M, RATTATA, EKANS, SANDSHREW, 0                               ; Jr. Trainer ♂ 11      ; New trainer added by G-Dubs
+	db 15, DIGLETT, SANDSHREW, 0                                                          ; Jr. Trainer ♂ 12      ; New trainer added by G-Dubs
 
 JrTrainerFData:
 ; Cerulean Gym
