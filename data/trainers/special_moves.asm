@@ -12,7 +12,7 @@ SpecialTrainerMoves:
 	  db 3, 2, TACKLE        ; Adding Tackle and String Shot on the Metapod            ; Added by G-Dubs
 	  db 3, 3, STRING_SHOT
 	  db 0
-  ; Viridian Forest (Again)
+
       db BUG_CATCHER, 3
 	  db 3, 2, TACKLE         ; Adding Tackle and String Shot on the Metapod           ; Added by G-Dubs
 	  db 3, 3, STRING_SHOT
@@ -40,11 +40,47 @@ SpecialTrainerMoves:
 	  db 1, 2, FURY_ATTACK    ; Adding a TCG exclusive move to this level 9 Weedle      ; Added by G-Dubs
 	  db 1, 4, PECK           ; Adding a TCG exclusive move to this level 9 Weedle      ; Added by G-Dubs
 	  db 0
-    /*
+    
 	  db BUG_CATCHER, 18
 	  db 1, 4, HEADBUTT       ; Adding a TCG exclusive move to this level 9 Caterpie    ; Added by G-Dubs
 	  db 0
-    */
+  ; Route 3
+      db BUG_CATCHER, 5
+	  db 2, 2, POISON_STING   ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna  ; Added by G-Dubs
+	  db 2, 3, STRING_SHOT
+	 ;db 2, 4, BUG_BITE
+	  db 4, 2, TACKLE         ; Adding Tackle, String Shot, and Bug Bite on Metapod     ; Added by G-Dubs
+	  db 4, 3, STRING_SHOT
+	 ;db 4, 4, BUG_BITE
+      db 0
+
+	  db BUG_CATCHER, 6
+	  db 2, 2, TACKLE         ; Adding Tackle, String Shot, and Bug Bite on Metapod     ; Added by G-Dubs
+	  db 2, 3, STRING_SHOT
+	 ;db 2, 4, BUG_BITE
+	  db 0
+  ; Mt. Moon
+      db BUG_CATCHER, 7
+      db 2, 2, POISON_STING   ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna  ; Added by G-Dubs
+	  db 2, 3, STRING_SHOT
+	 ;db 2, 4, BUG_BITE
+	 db 0
+
+	  db BUG_CATCHER, 8
+	  db 2, 2, TACKLE         ; Adding Tackle, String Shot, and Bug Bite on Metapod     ; Added by G-Dubs
+	  db 2, 3, STRING_SHOT
+	 ;db 2, 4, BUG_BITE
+	  db 0
+  ; Route 4
+      db BUG_CATCHER, 12
+	  db 3, 2, STRUGGLE       ; Adding Struggle, String Shot, and Bug Bite on Metapod   ; Added by G-Dubs
+	  db 3, 3, STRING_SHOT
+	 ;db 3, 4, BUG_BITE
+	  db 5, 2, POISON_STING   ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna  ; Added by G-Dubs
+	  db 5, 3, STRING_SHOT
+	 ;db 5, 4, BUG_BITE
+
+    
 ; Youngsters
   ; Route 9
 	  db YOUNGSTER, 14        ; A.J. from the Anime and his OP Sandshrew
