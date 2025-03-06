@@ -332,9 +332,9 @@ MtMoonB2FScript12:
 	ld hl, MtMoonB2FJessieJamesEndBattleText
 	ld de, MtMoonB2FJessieJamesEndBattleText
 	call SaveEndBattleTextPointers
-	ld a, OPP_ROCKET
+	ld a, OPP_JESSIE_JAMES
 	ld [wCurOpponent], a
-	ld a, $2a
+	ld a, $02
 	ld [wTrainerNo], a
 	xor a
 	ldh [hJoyHeld], a
