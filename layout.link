@@ -232,6 +232,9 @@ ROMX $40
 
 ROMX $41
     "Battle Engine 10"
+
+ROMX $42
+	"Text 1.5"
 	
 WRAM0
 	"Audio RAM"

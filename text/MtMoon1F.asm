@@ -1,19 +1,26 @@
-_MtMoon1FHikerBattleText::
-	text "WHOA! You shocked"
-	line "me! Oh, you're"
-	cont "just a kid!"
-	done
+_MtMoon1FHiker1BattleText::
+    text "Whoa there,"
+    line "traveler! MT."
+    cont "MOON is full of"
+    cont "tunnels, but" 
+    cont "first, you gotta"
+    cont "get past me!"
+    done
 
-_MtMoon1FHikerEndBattleText::
-	text "Wow!"
-	line "Shocked again!"
-	prompt
+_MtMoon1FHiker1EndBattleText::
+    text "Whoa! Guess"
+    line "I'm the one who"
+    cont "got blocked off!"
+    prompt
 
-_MtMoon1FHikerAfterBattleText::
-	text "Kids like you"
-	line "shouldn't be"
-	cont "here!"
-	done
+_MtMoon1FHiker1AfterBattleText::
+    text "Watch out for"
+    line "Zubat swarms in"
+    cont "the caves ahead."
+    cont "Those little guys"
+    cont "don't know when"
+    cont "to quit!"
+    done
 
 _MtMoon1FYoungster1BattleText::
 	text "Did you come to"

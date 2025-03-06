@@ -3,9 +3,6 @@ SECTION "Text 1", ROMX
 INCLUDE "data/text/text_1.asm"
 
 INCLUDE "text/ViridianForest.asm"
-INCLUDE "text/MtMoon1F.asm"
-INCLUDE "text/MtMoonB1F.asm"
-INCLUDE "text/MtMoonB2F.asm"
 INCLUDE "text/SSAnne1F.asm"
 INCLUDE "text/SSAnne2F.asm"
 INCLUDE "text/SSAnne3F.asm"
@@ -31,6 +28,11 @@ INCLUDE "text/SilphCo8F.asm"
 INCLUDE "text/SilphCo9F.asm"
 INCLUDE "text/SilphCo10F.asm"
 
+SECTION "Text 1.5", ROMX
+
+INCLUDE "text/MtMoon1F.asm"
+INCLUDE "text/MtMoonB1F.asm"
+INCLUDE "text/MtMoonB2F.asm"
 
 SECTION "Text 2", ROMX
 
