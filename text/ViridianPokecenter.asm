@@ -54,6 +54,7 @@ _ViridianPokecenterJessieEndBattleText::
 	done
 	
 _ViridianPokecenterJessieAfterBattleText::
-	text "And we are"
-	line "blasting off!"
+	text "TEAM ROCKET, blast"
+	line "off at the speed"
+	cont "of light!"
 	done
