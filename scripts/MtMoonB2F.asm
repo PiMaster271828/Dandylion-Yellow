@@ -417,9 +417,10 @@ MtMoonB2F_TextPointers:
 	def_text_pointers
 	dw_const MtMoonB2FSuperNerdText,                TEXT_MTMOONB2F_SUPER_NERD
 	dw_const MtMoonB2FJessieJamesText,              TEXT_MTMOONB2F_JESSIE
-	dw_const MtMoonB2FRocket1Text,                  TEXT_MTMOONB2F_ROCKET1
+	dw_const MtMoonB2FRocket1Text,                  TEXT_MTMOONB2F_ROCKET1                         ; Trainer from Red & Blue added by G-Dubs
 	dw_const MtMoonB2FRocket2Text,                  TEXT_MTMOONB2F_ROCKET2
 	dw_const MtMoonB2FRocket3Text,                  TEXT_MTMOONB2F_ROCKET3
+	dw_const MtMoonB2FRocket4Text,                  TEXT_MTMOONB2F_ROCKET4                         ; New trainer added by G-Dubs
 	dw_const MtMoonB2FJessieJamesText,              TEXT_MTMOONB2F_JAMES
 	dw_const MtMoonB2FDomeFossilText,               TEXT_MTMOONB2F_DOME_FOSSIL
 	dw_const MtMoonB2FHelixFossilText,              TEXT_MTMOONB2F_HELIX_FOSSIL
@@ -432,12 +433,15 @@ MtMoonB2F_TextPointers:
 
 MtMoon3TrainerHeaders:
 	def_trainers 3
+
 MtMoon3TrainerHeader0:
-	trainer EVENT_BEAT_MT_MOON_3_TRAINER_0, 4, MtMoonB2FRocket2BattleText, MtMoonB2FRocket2EndBattleText, MtMoonB2FRocket2AfterBattleText
+	trainer EVENT_BEAT_MT_MOON_3_TRAINER_0, 4, MtMoonB2FRocket1BattleText, MtMoonB2FRocket1EndBattleText, MtMoonB2FRocket1AfterBattleText
 MtMoon3TrainerHeader1:
-	trainer EVENT_BEAT_MT_MOON_3_TRAINER_1, 4, MtMoonB2FRocket3BattleText, MtMoonB2FRocket3EndBattleText, MtMoonB2FRocket3AfterBattleText
+	trainer EVENT_BEAT_MT_MOON_3_TRAINER_1, 4, MtMoonB2FRocket2BattleText, MtMoonB2FRocket2EndBattleText, MtMoonB2FRocket2AfterBattleText
 MtMoon3TrainerHeader2:
-	trainer EVENT_BEAT_MT_MOON_3_TRAINER_2, 4, MtMoonB2FRocket4BattleText, MtMoonB2FRocket4EndBattleText, MtMoonB2FRocket4AfterBattleText
+	trainer EVENT_BEAT_MT_MOON_3_TRAINER_2, 4, MtMoonB2FRocket3BattleText, MtMoonB2FRocket3EndBattleText, MtMoonB2FRocket3AfterBattleText
+MtMoon3TrainerHeader3:
+	trainer EVENT_BEAT_MT_MOON_3_TRAINER_3, 4, MtMoonB2FRocket4BattleText, MtMoonB2FRocket4EndBattleText, MtMoonB2FRocket4AfterBattleText
 	db -1 ; end
 
 MtMoonB2FJessieJamesText:
@@ -505,7 +509,7 @@ MtMoonB2FSuperNerdText:
 .done
 	jp TextScriptEnd
 
-MtMoonB2FRocket1Text:
+MtMoonB2FRocket1Text:                            ; Trainer from Red & Blue added by G-Dubs
 	text_asm
 	ld hl, MtMoon3TrainerHeader0
 	jr MtMoonB2FTalkToTrainer
@@ -518,6 +522,13 @@ MtMoonB2FRocket2Text:
 MtMoonB2FRocket3Text:
 	text_asm
 	ld hl, MtMoon3TrainerHeader2
+
+MtMoonB2FRocket4Text:                            ; Trainer from Red & Blue added by G-Dubs
+	text_asm
+	ld hl, MtMoon3TrainerHeader3
+	call TalkToTrainer
+	jp TextScriptEnd
+
 MtMoonB2FTalkToTrainer:
 	call TalkToTrainer
 	jp TextScriptEnd
@@ -615,6 +626,18 @@ MtMoonB2FSuperNerdTheresAPokemonLabText:
 MtMoonB2FSuperNerdThenThisIsMineText:
 	text_far _MtMoonB2FSuperNerdThenThisIsMineText
 	sound_get_key_item
+	text_end
+
+MtMoonB2FRocket1BattleText:                      ; Trainer from Red & Blue added by G-Dubs
+	text_far _MtMoonB2FRocket1BattleText
+	text_end
+
+MtMoonB2FRocket1EndBattleText:
+	text_far _MtMoonB2FRocket1EndBattleText
+	text_end
+
+MtMoonB2FRocket1AfterBattleText:
+	text_far _MtMoonB2FRocket1AfterBattleText
 	text_end
 
 MtMoonB2FRocket2BattleText:

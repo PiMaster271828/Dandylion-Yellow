@@ -100,6 +100,24 @@ _MtMoonB2FSuperNerdThenThisIsMineText::
 	line "this is mine!@"
 	text_end
 
+_MtMoonB2FRocket1BattleText::
+	text "TEAM ROCKET will"
+	line "find the fossils,"
+	cont "revive and sell"
+	cont "them for cash!"
+	done
+
+_MtMoonB2FRocket1EndBattleText::                 ; Trainer from Red & Blue added by G-Dubs
+	text "Urgh!"
+	line "Now I'm mad!"
+	prompt
+
+_MtMoonB2FRocket1AfterBattleText::
+	text "You made me mad!"
+	line "TEAM ROCKET will"
+	cont "blacklist you!"
+	done
+
 _MtMoonB2FRocket2BattleText::
 	text "We, TEAM ROCKET,"
 	line "are #MON"

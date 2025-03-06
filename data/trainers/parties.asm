@@ -584,22 +584,22 @@ ScientistData:
 
 GiovanniData:
 ; Rocket Hideout B4F
-	db $FF, 25, ONIX, 25, GRAVELER, 26, RHYHORN, 28, KINGLER, 29, KANGASKHAN, 30, PERSIAN, 0       ; Giovanni 1            ; Animeesque Pokémon added by G-Dubs
+	db $FF, 25, ONIX, 25, GRAVELER, 26, RHYHORN, 28, KINGLER, 29, KANGASKHAN, 30, PERSIAN, 0       ; Giovanni 1             ; Animeesque Pokémon added by G-Dubs
 ; Silph Co. 11F
-	db $FF, 37, NIDORINO, 35, PERSIAN, 36, GOLEM, 37, RHYHORN, 38, MACHAMP, 41, NIDOQUEEN, 0       ; Giovanni 2            ; Animeesque Pokémon added by G-Dubs
+	db $FF, 37, NIDORINO, 35, PERSIAN, 36, GOLEM, 37, RHYHORN, 38, MACHAMP, 41, NIDOQUEEN, 0       ; Giovanni 2             ; Animeesque Pokémon added by G-Dubs
 ; Viridian Gym (Badge Match)
-    db $FF, 50, DUGTRIO, 52, PINSIR, 54, PERSIAN, 56, NIDOQUEEN, 58, NIDOKING, 60, RHYDON, 0       ; Giovanni 3            ; Animeesque Pokémon added by G-Dubs	
+    db $FF, 50, DUGTRIO, 52, PINSIR, 54, PERSIAN, 56, NIDOQUEEN, 58, NIDOKING, 60, RHYDON, 0       ; Giovanni 3             ; Animeesque Pokémon added by G-Dubs	
 /*
 ; Viridian City Gym (Mewtwo Match)	
-    db $FF, 52, MACHAMP, 54, PERSIAN, 56, KINGLER, 58, NIDOKING, 60, RHYDON, 65, ARMOREDMEWTWO, 0  ; Giovanni 4            ; New trainer added by G-Dubs (Armored Mewtwo added by G-Dubs)
+    db $FF, 52, MACHAMP, 54, PERSIAN, 56, KINGLER, 58, NIDOKING, 60, RHYDON, 65, ARMOREDMEWTWO, 0  ; Giovanni 4             ; New trainer added by G-Dubs (Armored Mewtwo added by G-Dubs)
 */
 RocketData:
 ; Mt. Moon B2F
-	db 13, RATTATA, ZUBAT, 0				                                                       ; Rocket 1
-	db 11, SANDSHREW, RATTATA, ZUBAT, 0		                                                       ; Rocket 2
-	db 12, ZUBAT, EKANS, 0				                                                           ; Rocket 3
+	db 14, RATTATA, ZUBAT, 0				                                                       ; Rocket 1               ; Level changed from 12 to 14 by G-Dubs 
+	db 12, SANDSHREW, RATTATA, ZUBAT, 0		                                                       ; Rocket 2               ; Level changed from 11 to 12 by G-Dubs
+	db 14, ZUBAT, EKANS, 0				                                                           ; Rocket 3               ; Level changed from 12 to 14 by G-Dubs
 ; Previously Unused
-	db 16, RATICATE, 0					                                                           ; Rocket 4               ; Unused trainer from Red & Blue added by G-Dubs
+	db 16, RATICATE, 0					                                                           ; Rocket 4               ; Preciously Unused trainer from Red & Blue added by G-Dubs
 ; Cerulean City
 	db 17, MACHOP, DROWZEE, 0				                                                       ; Rocket Team 5
 ; Route 24
@@ -656,10 +656,11 @@ RocketData:
 ; Silph Co. 11F
 	db 25, RATTATA, RATTATA, ZUBAT, RATTATA, EKANS, 0	                                           ; Rocket Team 40
 ; Unused
-	db 32, CUBONE, DROWZEE, MAROWAK, 0                                                             ; Rocket Team 41
+	db 32, CUBONE, DROWZEE, MAROWAK, 0                                                             ; Rocket Team 41         ; (Unused)
+; Mt. Moon B2F (Formerly Jessie & James)
+	db 15, ZUBAT, RATTATA, KOFFING, 0                                                              ; Rocket 42              ; Previously Unused trainer added by G-Dubs
+ 	db 15, ZUBAT, RATTATA, GRIMER, 0                                                               ; Rocket 43              ; Previously Unused trainer added by G-Dubs
 ; Unused (Formerly Jessie & James)
-	db 15, EKANS, MEOWTH, KOFFING, 0                                                               ; Rocket 42              ; (Now Unused)
- 	db 25, KOFFING, MEOWTH, EKANS, WEEPINBELL, 0                                                   ; Rocket 43              ; (Now Unused)
 	db 30, ARBOK, MEOWTH, WEEZING, WEEPINBELL, 0                                                   ; Rocket 44              ; (Now Unused)
 	db 35, WEEZING, ARBOK, MEOWTH, VICTREEBEL, LICKITUNG, 0                                        ; Rocket 45              ; (Now Unused)
 ; Unused

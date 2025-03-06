@@ -543,17 +543,17 @@
 
 ; Viridian Forest events
 	const_next $560
-	const_skip 2								; Skips const_next and first NPC
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_0  ; Old NPC replaced with trainer added by G-Dubs
+	const_skip 2								 ; Skips const_next and first NPC
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_0   ; Old NPC replaced with trainer added by G-Dubs
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_1
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_2
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_3
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_4
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_5  
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_6  ; New trainer added by Vlad
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_7  ; New trainer added by G-Dubs
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_8  ; New trainer added by G-Dubs
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_9  ; New trainer added by G-Dubs (Left by Vlad)
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_6   ; New trainer added by Vlad
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_7   ; New trainer added by G-Dubs
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_8   ; New trainer added by G-Dubs
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_9   ; New trainer added by G-Dubs (Left by Vlad)
 
 ; Mt. Moon 1F events
 	const_next $570
@@ -565,10 +565,10 @@
 	const EVENT_BEAT_MT_MOON_1_TRAINER_4
 	const EVENT_BEAT_MT_MOON_1_TRAINER_5
 	const EVENT_BEAT_MT_MOON_1_TRAINER_6
-	const EVENT_BEAT_MT_MOON_1_TRAINER_7        ; New trainer added by G-Dubs
-	const EVENT_BEAT_MT_MOON_1_TRAINER_8        ; New trainer added by G-Dubs
+	const EVENT_BEAT_MT_MOON_1_TRAINER_7         ; New trainer added by G-Dubs
+	const EVENT_BEAT_MT_MOON_1_TRAINER_8         ; New trainer added by G-Dubs
 
-; Mt. Moon B2F events
+; Mt. Moon B2F events                            ; New Section added by Vlad (How did this not break the game?!?)
 	const_next $590
 	const EVENT_GOT_DOME_FOSSIL
 	const EVENT_BEAT_MT_MOON_EXIT_SUPER_NERD
@@ -576,6 +576,7 @@
 	const EVENT_BEAT_MT_MOON_3_TRAINER_0
 	const EVENT_BEAT_MT_MOON_3_TRAINER_1
 	const EVENT_BEAT_MT_MOON_3_TRAINER_2
+	const EVENT_BEAT_MT_MOON_3_TRAINER_3         ; New trainer added by G-Dubs
 	const EVENT_57E
 	const EVENT_GOT_HELIX_FOSSIL
 

@@ -28,7 +28,7 @@ MtMoon1F_TextPointers:
 	dw_const PickUpItemText,            TEXT_MTMOON1F_MOON_STONE
 	dw_const PickUpItemText,            TEXT_MTMOON1F_RARE_CANDY
 	dw_const PickUpItemText,            TEXT_MTMOON1F_ESCAPE_ROPE
-;	dw_const PickUpItemText,            TEXT_MTMOON1F_POTION2             ; Moving potion to another location
+   ;dw_const PickUpItemText,            TEXT_MTMOON1F_POTION2             ; Moving potion to another location
 	dw_const PickUpItemText,            TEXT_MTMOON1F_TM_WATER_GUN
 	dw_const MtMoon1FBewareZubatSign,   TEXT_MTMOON1F_BEWARE_ZUBAT_SIGN
 
@@ -48,9 +48,9 @@ MtMoon1TrainerHeader5:
 	trainer EVENT_BEAT_MT_MOON_1_TRAINER_5, 3, MtMoon1FYoungster2BattleText, MtMoon1FYoungster2EndBattleText, MtMoon1FYoungster2AfterBattleText
 MtMoon1TrainerHeader6:
 	trainer EVENT_BEAT_MT_MOON_1_TRAINER_6, 3, MtMoon1FYoungster3BattleText, MtMoon1FYoungster3EndBattleText, MtMoon1FYoungster3AfterBattleText
-MtMoon1TrainerHeader7:         																															  ;New trainer added by G-Dubs	
+MtMoon1TrainerHeader7:         																															  ; New trainer added by G-Dubs	
 	trainer EVENT_BEAT_MT_MOON_1_TRAINER_7, 2, MtMoon1FHiker2BattleText, MtMoon1FHiker2EndBattleText, MtMoon1FHiker2AfterBattleText
-MtMoon1TrainerHeader8:         																															  ;New trainer added by G-Dubs	
+MtMoon1TrainerHeader8:         																															  ; New trainer added by G-Dubs	
 	trainer EVENT_BEAT_MT_MOON_1_TRAINER_8, 3, MtMoon1FHiker3BattleText, MtMoon1FHiker3EndBattleText, MtMoon1FHiker3AfterBattleText
 	db -1 ; end
 
