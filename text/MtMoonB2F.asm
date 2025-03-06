@@ -1,24 +1,52 @@
-_MtMoonJessieJamesText1::
+_MtMoonJessieJamesText1::          ; James before battle text
 	text "Stop right there!@"
 	text_end
 
-_MtMoonJessieJamesText2::
-	text "That fossil is"
+_MtMoonJessieJamesText2::          ; Jessie before battle text
+  /*para "Prepare for" 
+	line "trouble!"
+	cont "Make it double!"
+	para "To protect the"
+	line "world from"
+	cont "devastation!"
+	para "To unite all"
+	line "people within"
+	cont "our nation!"
+	para "To denounce"
+	line "the evils of"
+	cont "truth and love!"
+	para "To extend our"
+	line "reach to the"
+	cont "stars above!"
+	para ""
+	para "Jessie!"
+	para ""
+	para "James!"
+	para ""
+	para "Team Rocket"
+	line "blasts off at"
+	cont "the speed of"
+	cont "light!"
+	para "Surrender now,"
+	line "or prepare to"
+	cont "fight!"
+	para "Meowth:"
+	line "That's right!"
+	para ""
+  */text "That fossil is"
 	line "TEAM ROCKET's!"
-
-	para "Surrender now, or "
-	line "prepare to fight!"
 	done
 
-_MtMoonJessieJamesText3::
-	text "A"
-	line "brat beat us?"
+_MtMoonJessieJamesText3::          ; Battle defeat text
+	text "The"
+	line "twerp beat us!?"
+	cont "Again?!"
 	prompt
 
-_MtMoonJessieJamesText4::
-	text "TEAM ROCKET, blast"
-	line "off at the speed"
-	cont "of light!@"
+_MtMoonJessieJamesText4::          ; After battle text
+	text "And we are"
+	line "blasting off"
+	cont "again!@"
 	text_end
 
 _MtMoonB2FDomeFossilYouWantText::

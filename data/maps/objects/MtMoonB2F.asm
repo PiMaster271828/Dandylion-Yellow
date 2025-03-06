@@ -4,6 +4,7 @@
 	const_export MTMOONB2F_ROCKET1
 	const_export MTMOONB2F_ROCKET2
 	const_export MTMOONB2F_ROCKET3
+   ;const_export MTMOONB2F_ROCKET4
 	const_export MTMOONB2F_JAMES
 	const_export MTMOONB2F_DOME_FOSSIL
 	const_export MTMOONB2F_HELIX_FOSSIL
@@ -14,8 +15,8 @@ MtMoonB2F_Object:
 	db $3 ; border block
 
 	def_warp_events
-	warp_event 25,  9, MT_MOON_B1F, 2
-	warp_event 21, 17, MT_MOON_B1F, 5
+	warp_event 25,  5, MT_MOON_B1F, 2
+	warp_event 21, 15, MT_MOON_B1F, 5
 	warp_event 15, 27, MT_MOON_B1F, 6
 	warp_event  5,  7, MT_MOON_B1F, 7
 
@@ -25,12 +26,13 @@ MtMoonB2F_Object:
 	object_event 12,  8, SPRITE_SUPER_NERD, STAY, RIGHT, TEXT_MTMOONB2F_SUPER_NERD, OPP_SUPER_NERD, 2
 	object_event  9,  3, SPRITE_JESSIE, STAY, LEFT, TEXT_MTMOONB2F_JESSIE
 	object_event 15, 22, SPRITE_ROCKET, STAY, DOWN, TEXT_MTMOONB2F_ROCKET1, OPP_ROCKET, 2
-	object_event 29, 11, SPRITE_ROCKET, STAY, UP, TEXT_MTMOONB2F_ROCKET2, OPP_ROCKET, 3
-	object_event 29, 17, SPRITE_ROCKET, STAY, LEFT, TEXT_MTMOONB2F_ROCKET3, OPP_ROCKET, 1
+	object_event 29,  7, SPRITE_ROCKET, STAY, UP, TEXT_MTMOONB2F_ROCKET2, OPP_ROCKET, 3
+	object_event 29, 14, SPRITE_ROCKET, STAY, LEFT, TEXT_MTMOONB2F_ROCKET3, OPP_ROCKET, 4              ; Rocket changed to unused rocket from Red & Blue by G-Dubs 
+   ;object_event 30, 14, SPRITE_ROCKET, STAY, RIGHT, TEXT_MTMOONB2F_ROCKET4, OPP_ROCKET, 1             ; New trainer added by G-Dubs (Used above Rocket's old team)
 	object_event  9,  4, SPRITE_JAMES, STAY, LEFT, TEXT_MTMOONB2F_JAMES
 	object_event 12,  6, SPRITE_FOSSIL, STAY, NONE, TEXT_MTMOONB2F_DOME_FOSSIL
 	object_event 13,  6, SPRITE_FOSSIL, STAY, NONE, TEXT_MTMOONB2F_HELIX_FOSSIL
 	object_event 25, 21, SPRITE_POKE_BALL, STAY, NONE, TEXT_MTMOONB2F_HP_UP, HP_UP
-	object_event 29,  5, SPRITE_POKE_BALL, STAY, NONE, TEXT_MTMOONB2F_TM_MEGA_PUNCH, TM_MEGA_PUNCH
+	object_event 29,  1, SPRITE_POKE_BALL, STAY, NONE, TEXT_MTMOONB2F_TM_MEGA_PUNCH, TM_MEGA_PUNCH
 
 	def_warps_to MT_MOON_B2F

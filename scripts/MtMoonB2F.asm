@@ -332,9 +332,9 @@ MtMoonB2FScript12:
 	ld hl, MtMoonB2FJessieJamesEndBattleText
 	ld de, MtMoonB2FJessieJamesEndBattleText
 	call SaveEndBattleTextPointers
-	ld a, OPP_ROCKET
+	ld a, OPP_JESSIE_JAMES                       ; Opponent changed from Rocket to Jessie & James by G-Dubs
 	ld [wCurOpponent], a
-	ld a, $2a
+	ld a, $02                                    ; Changed from $2a to $02, because of the new trainer class by G-Dubs
 	ld [wTrainerNo], a
 	xor a
 	ldh [hJoyHeld], a
@@ -420,6 +420,7 @@ MtMoonB2F_TextPointers:
 	dw_const MtMoonB2FRocket1Text,                  TEXT_MTMOONB2F_ROCKET1
 	dw_const MtMoonB2FRocket2Text,                  TEXT_MTMOONB2F_ROCKET2
 	dw_const MtMoonB2FRocket3Text,                  TEXT_MTMOONB2F_ROCKET3
+   ;dw_const MtMoonB2FRocket4Text,                  TEXT_MTMOONB2F_ROCKET4
 	dw_const MtMoonB2FJessieJamesText,              TEXT_MTMOONB2F_JAMES
 	dw_const MtMoonB2FDomeFossilText,               TEXT_MTMOONB2F_DOME_FOSSIL
 	dw_const MtMoonB2FHelixFossilText,              TEXT_MTMOONB2F_HELIX_FOSSIL
@@ -431,7 +432,7 @@ MtMoonB2F_TextPointers:
 	dw_const MtMoonB2FText14,                       TEXT_MTMOONB2F_TEXT14
 
 MtMoon3TrainerHeaders:
-	def_trainers 3
+	def_trainers 4      ; Changed from 3 to 5 because two new trainers were added before these events
 MtMoon3TrainerHeader0:
 	trainer EVENT_BEAT_MT_MOON_3_TRAINER_0, 4, MtMoonB2FRocket2BattleText, MtMoonB2FRocket2EndBattleText, MtMoonB2FRocket2AfterBattleText
 MtMoon3TrainerHeader1:
@@ -518,6 +519,7 @@ MtMoonB2FRocket2Text:
 MtMoonB2FRocket3Text:
 	text_asm
 	ld hl, MtMoon3TrainerHeader2
+
 MtMoonB2FTalkToTrainer:
 	call TalkToTrainer
 	jp TextScriptEnd

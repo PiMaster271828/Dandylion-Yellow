@@ -6,6 +6,7 @@ INCLUDE "text/ViridianForest.asm"
 INCLUDE "text/MtMoon1F.asm"
 INCLUDE "text/MtMoonB1F.asm"
 INCLUDE "text/MtMoonB2F.asm"
+;INCLUDE "text/MtMoonB2F.asm"          ; Mt.Moon B2F text moved to Section 10 by G-Dubs
 INCLUDE "text/SSAnne1F.asm"
 INCLUDE "text/SSAnne2F.asm"
 INCLUDE "text/SSAnne3F.asm"
@@ -255,6 +256,13 @@ INCLUDE "text/SaffronCity.asm"
 
 INCLUDE "data/text/text_9.asm"
 
+/*
+SECTION "Text 10", ROMX                          ; Added a new text section, for Jessie & James, because their motto is too long (Added by G-Dubs)
+
+INCLUDE "data/text/text_10.asm"
+
+INCLUDE "text/MtMoonB2F.asm"           ; Mt. Moon B2F text moved from Section 1 to Section 10 by G-Dubs
+*/
 
 SECTION "Pokédex Text", ROMX
 

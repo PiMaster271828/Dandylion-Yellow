@@ -558,21 +558,24 @@
 ; Mt. Moon events
 	const_next $570
 	const_skip
-	const EVENT_BEAT_MT_MOON_1_TRAINER_0
-	const EVENT_BEAT_MT_MOON_1_TRAINER_1
-	const EVENT_BEAT_MT_MOON_1_TRAINER_2
-	const EVENT_BEAT_MT_MOON_1_TRAINER_3
-	const EVENT_BEAT_MT_MOON_1_TRAINER_4
-	const EVENT_BEAT_MT_MOON_1_TRAINER_5
-	const EVENT_BEAT_MT_MOON_1_TRAINER_6
-	const EVENT_GOT_DOME_FOSSIL
-	const EVENT_BEAT_MT_MOON_EXIT_SUPER_NERD
-	const EVENT_BEAT_MT_MOON_3_JESSIE_JAMES
-	const EVENT_BEAT_MT_MOON_3_TRAINER_0
-	const EVENT_BEAT_MT_MOON_3_TRAINER_1
-	const EVENT_BEAT_MT_MOON_3_TRAINER_2
-	const EVENT_57E
-	const EVENT_GOT_HELIX_FOSSIL
+	const EVENT_BEAT_MT_MOON_1_TRAINER_0     ; 571
+	const EVENT_BEAT_MT_MOON_1_TRAINER_1     ; 572
+	const EVENT_BEAT_MT_MOON_1_TRAINER_2     ; 573
+	const EVENT_BEAT_MT_MOON_1_TRAINER_3     ; 574
+	const EVENT_BEAT_MT_MOON_1_TRAINER_4     ; 575
+	const EVENT_BEAT_MT_MOON_1_TRAINER_5     ; 576
+	const EVENT_BEAT_MT_MOON_1_TRAINER_6     ; 577
+	const EVENT_BEAT_MT_MOON_1_TRAINER_7     ; 578  ; New trainer added by G-Dubs (Added here, and changed the number of def_trainers in Mt. Moon B2F to allow the Jessie James event to still work)
+   ;const EVENT_BEAT_MT_MOON_1_TRAINER_8     ; 579  ; New trainer added by G-Dubs (Added here, and changed the number of def_trainers in Mt. Moon B2F to allow the Jessie James event to still work)
+	const EVENT_GOT_DOME_FOSSIL              ; 57A
+	const EVENT_BEAT_MT_MOON_EXIT_SUPER_NERD ; 57B
+	const EVENT_BEAT_MT_MOON_3_JESSIE_JAMES  ; 57C 
+	const EVENT_BEAT_MT_MOON_3_TRAINER_0     ; 57D
+	const EVENT_BEAT_MT_MOON_3_TRAINER_1     ; 57E
+	const EVENT_BEAT_MT_MOON_3_TRAINER_2     ; 57F
+	const EVENT_57E                          ; 580
+	const EVENT_GOT_HELIX_FOSSIL             ; 581
+	
 
 ; S.S. Anne events
 	const_next $5C0
