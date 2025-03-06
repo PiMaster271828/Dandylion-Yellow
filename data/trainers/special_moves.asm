@@ -64,7 +64,7 @@ SpecialTrainerMoves:
       db 2, 2, POISON_STING   ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna  ; Added by G-Dubs
 	  db 2, 3, STRING_SHOT
 	 ;db 2, 4, BUG_BITE
-	 db 0
+	  db 0
 
 	  db BUG_CATCHER, 8
 	  db 2, 2, TACKLE         ; Adding Tackle, String Shot, and Bug Bite on Metapod     ; Added by G-Dubs
@@ -79,6 +79,7 @@ SpecialTrainerMoves:
 	  db 5, 2, POISON_STING   ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna  ; Added by G-Dubs
 	  db 5, 3, STRING_SHOT
 	 ;db 5, 4, BUG_BITE
+	  db 0
 
     
 ; Youngsters
