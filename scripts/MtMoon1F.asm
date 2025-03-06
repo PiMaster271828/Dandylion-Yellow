@@ -22,6 +22,7 @@ MtMoon1F_TextPointers:
 	dw_const MtMoon1FCooltrainerF2Text, TEXT_MTMOON1F_COOLTRAINER_F2
 	dw_const MtMoon1FYoungster2Text,    TEXT_MTMOON1F_YOUNGSTER2
 	dw_const MtMoon1FYoungster3Text,    TEXT_MTMOON1F_YOUNGSTER3
+	dw_const MtMoon1FHiker2Text,        TEXT_MTMOON1F_HIKER2			  ;New trainer added by G-Dubs
 	dw_const PickUpItemText,            TEXT_MTMOON1F_POTION1
 	dw_const PickUpItemText,            TEXT_MTMOON1F_MOON_STONE
 	dw_const PickUpItemText,            TEXT_MTMOON1F_RARE_CANDY
@@ -46,6 +47,8 @@ MtMoon1TrainerHeader5:
 	trainer EVENT_BEAT_MT_MOON_1_TRAINER_5, 3, MtMoon1FYoungster2BattleText, MtMoon1FYoungster2EndBattleText, MtMoon1FYoungster2AfterBattleText
 MtMoon1TrainerHeader6:
 	trainer EVENT_BEAT_MT_MOON_1_TRAINER_6, 3, MtMoon1FYoungster3BattleText, MtMoon1FYoungster3EndBattleText, MtMoon1FYoungster3AfterBattleText
+MtMoon1TrainerHeader7:         																															  ;New trainer added by G-Dubs	
+	trainer EVENT_BEAT_MT_MOON_1_TRAINER_7, 2, MtMoon1FHiker2BattleText, MtMoon1FHiker2EndBattleText, MtMoon1FHiker2AfterBattleText
 	db -1 ; end
 
 MtMoon1FHiker1Text:
@@ -81,6 +84,13 @@ MtMoon1FYoungster2Text:
 MtMoon1FYoungster3Text:
 	text_asm
 	ld hl, MtMoon1TrainerHeader6
+	jr MtMoon1TalkToTrainer
+
+MtMoon1FHiker2Text:								 ; New trainer added by G-Dubs
+	text_asm
+	ld hl, MtMoon1TrainerHeader7
+	jr MtMoon1TalkToTrainer
+
 MtMoon1TalkToTrainer:
 	call TalkToTrainer
 	jp TextScriptEnd
@@ -167,6 +177,18 @@ MtMoon1FYoungster3EndBattleText:
 
 MtMoon1FYoungster3AfterBattleText:
 	text_far _MtMoon1FYoungster3AfterBattleText
+	text_end
+
+MtMoon1FHiker2BattleText:                             ; New trainer added by G-Dubs
+	text_far _MtMoon1FHiker2BattleText
+	text_end
+
+MtMoon1FHiker2EndBattleText:
+	text_far _MtMoon1FHiker2EndBattleText
+	text_end
+
+MtMoon1FHiker2AfterBattleText:
+	text_far _MtMoon1FHiker2AfterBattleText
 	text_end
 
 MtMoon1FBewareZubatSign:

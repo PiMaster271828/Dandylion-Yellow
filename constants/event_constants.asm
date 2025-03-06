@@ -555,7 +555,7 @@
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_8  ; New trainer added by G-Dubs
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_9  ; New trainer added by G-Dubs (Left by Vlad)
 
-; Mt. Moon events
+; Mt. Moon 1F events
 	const_next $570
 	const_skip
 	const EVENT_BEAT_MT_MOON_1_TRAINER_0
@@ -565,6 +565,10 @@
 	const EVENT_BEAT_MT_MOON_1_TRAINER_4
 	const EVENT_BEAT_MT_MOON_1_TRAINER_5
 	const EVENT_BEAT_MT_MOON_1_TRAINER_6
+	const EVENT_BEAT_MT_MOON_1_TRAINER_7
+
+; Mt. Moon B2F events
+	const_next $590
 	const EVENT_GOT_DOME_FOSSIL
 	const EVENT_BEAT_MT_MOON_EXIT_SUPER_NERD
 	const EVENT_BEAT_MT_MOON_3_JESSIE_JAMES

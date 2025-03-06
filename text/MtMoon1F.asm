@@ -120,6 +120,27 @@ _MtMoon1FYoungster3AfterBattleText::
 	cont "catch one."
 	done
 
+_MtMoon1FHiker2BattleText::                           ; New trainer added by G-Dubs
+	text "WHOA! I thought"
+    line "you were another"
+    cont "ZUBAT, for a"
+    cont "second, but you're"
+    cont "just a kid!"
+    done
+
+_MtMoon1FHiker2EndBattleText::
+    text "Wow!"
+    line "You're good!"
+    cont "For a kid!"
+    prompt
+
+_MtMoon1FHiker2AfterBattleText::
+    text "Kids like you"
+    line "should be"
+    cont "careful!  ZUBAT"
+    cont "can be dangerous!"
+    done
+
 _MtMoon1FBewareZubatSign::
 	text "Beware! ZUBAT is"
 	line "a bloodsucker!"
