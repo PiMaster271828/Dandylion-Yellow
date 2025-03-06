@@ -1,25 +1,18 @@
-_MtMoon1FHiker1BattleText::            ; Text changed and given to Hiker 3 by G-Dubs
-	text "Whoa there,"
-	line "traveler! MT."
-	cont "MOON is full of"
-	cont "tunnels, but" 
-	cont "first, you gotta"
-	cont "get past me!"
+_MtMoon1FHikerBattleText::
+	text "WHOA! You shocked"
+	line "me! Oh, you're"
+	cont "just a kid!"
 	done
 
-_MtMoon1FHiker1EndBattleText::
-	text "Whoa! Guess"
-	line "I'm the one who"
-	cont "got blocked off!"
+_MtMoon1FHikerEndBattleText::
+	text "Wow!"
+	line "Shocked again!"
 	prompt
 
-_MtMoon1FHiker1AfterBattleText::
-	text "Watch out for"
-	line "Zubat swarms in"
-	cont "the caves ahead."
-	cont "Those little guys"
-	cont "don't know when"
-	cont "to quit!"
+_MtMoon1FHikerAfterBattleText::
+	text "Kids like you"
+	line "shouldn't be"
+	cont "here!"
 	done
 
 _MtMoon1FYoungster1BattleText::
@@ -120,44 +113,6 @@ _MtMoon1FYoungster3AfterBattleText::
 	cont "catch one."
 	done
 
-_MtMoon1FHiker2BattleText::            ; New trainer added by G-Dubs
-	text "WHOA! I thought"
-	line "you were another"
-	cont "ZUBAT, for a"
-	cont "second, but you're"
-	cont "just a kid!"
-	done
-
-_MtMoon1FHiker2EndBattleText::
-	text "Wow!"
-	line "You're good!"
-	cont "For a kid!"
-	prompt
-
-_MtMoon1FHiker2AfterBattleText::
-	text "Kids like you"
-	line "should be"
-	cont "careful!  ZUBAT"
-	cont "can be dangerous!"
-	done
-/*
-_MtMoon1FHiker3BattleText::            ; New trainer added by G-Dubs
-	text "WHOA! You startled"
-	line "me! Oh, you're"
-	cont "just a kid!"
-	done
-
-_MtMoon1FHiker3EndBattleText::
-	text "Wow!"
-	line "Startled again!"
-	prompt
-
-_MtMoon1FHiker3AfterBattleText::
-	text "Kids like you"
-	line "shouldn't be"
-	cont "here!"
-	done
-*/
 _MtMoon1FBewareZubatSign::
 	text "Beware! ZUBAT is"
 	line "a bloodsucker!"

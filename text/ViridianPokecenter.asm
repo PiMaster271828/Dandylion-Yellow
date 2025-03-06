@@ -15,11 +15,10 @@ _ViridianPokecenterCooltrainerMText::
 	line "any money either!"
 	done
 
-_ViridianPokecenterRocketText1::            ; James before battle text
+_ViridianPokecenterRocketText1::
 	text "Stop right there!@"
 	text_end
-	
-_ViridianPokecenterJessieBattleText::       ; Jessie before battle text
+_ViridianPokecenterJessieBattleText::
 	text "Prepare for" 
 	line "trouble!"
 	cont "Make it double!"
@@ -35,11 +34,8 @@ _ViridianPokecenterJessieBattleText::       ; Jessie before battle text
 	para "To extend our"
 	line "reach to the"
 	cont "stars above!"
-	para ""
 	para "Jessie!"
-	para ""
 	para "James!"
-	para ""
 	para "Team Rocket"
 	line "blasts off at"
 	cont "the speed of"
@@ -50,16 +46,14 @@ _ViridianPokecenterJessieBattleText::       ; Jessie before battle text
 	para "Meowth:"
 	line "That's right!"
 	done
+	
 
 _ViridianPokecenterJessieEndBattleText::
-	text "A"
-	line "twerp beat us!?"
+	text ""
+	line "A twerp beat us!?"
 	done
 	
 _ViridianPokecenterJessieAfterBattleText::
-	text "TEAM ROCKET, blast"
-	line "off at the speed"
-	cont "of light!"
+	text "And we are"
+	line "blasting off!"
 	done
-
-	
