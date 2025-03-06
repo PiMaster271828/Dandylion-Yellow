@@ -565,7 +565,8 @@
 	const EVENT_BEAT_MT_MOON_1_TRAINER_4
 	const EVENT_BEAT_MT_MOON_1_TRAINER_5
 	const EVENT_BEAT_MT_MOON_1_TRAINER_6
-	const EVENT_BEAT_MT_MOON_1_TRAINER_7
+	const EVENT_BEAT_MT_MOON_1_TRAINER_7        ; New trainer added by G-Dubs
+	const EVENT_BEAT_MT_MOON_1_TRAINER_8        ; New trainer added by G-Dubs
 
 ; Mt. Moon B2F events
 	const_next $590

@@ -1,17 +1,18 @@
 	object_const_def
-	const_export MTMOON1F_HIKER1                ;Renamed Hiker to Hiker1
+	const_export MTMOON1F_HIKER1            ;Renamed Hiker to Hiker1
 	const_export MTMOON1F_YOUNGSTER1
 	const_export MTMOON1F_COOLTRAINER_F1
 	const_export MTMOON1F_SUPER_NERD
 	const_export MTMOON1F_COOLTRAINER_F2
 	const_export MTMOON1F_YOUNGSTER2
 	const_export MTMOON1F_YOUNGSTER3
-	const_export MTMOON1F_HIKER2
+	const_export MTMOON1F_HIKER2            ; New trainer added by G-Dubs
+	const_export MTMOON1F_HIKER3            ; New trainer added by G-Dubs
 	const_export MTMOON1F_POTION1
 	const_export MTMOON1F_MOON_STONE
 	const_export MTMOON1F_RARE_CANDY
 	const_export MTMOON1F_ESCAPE_ROPE
-	const_export MTMOON1F_POTION2
+;	const_export MTMOON1F_POTION2
 	const_export MTMOON1F_TM_WATER_GUN
 
 MtMoon1F_Object:
@@ -35,12 +36,13 @@ MtMoon1F_Object:
 	object_event 16, 23, SPRITE_COOLTRAINER_F, STAY, DOWN, TEXT_MTMOON1F_COOLTRAINER_F2, OPP_LASS, 6
 	object_event  7, 22, SPRITE_YOUNGSTER, STAY, DOWN, TEXT_MTMOON1F_YOUNGSTER2, OPP_BUG_CATCHER, 7
 	object_event 30, 27, SPRITE_YOUNGSTER, STAY, RIGHT, TEXT_MTMOON1F_YOUNGSTER3, OPP_BUG_CATCHER, 8
-	object_event 17,  8, SPRITE_HIKER, STAY, LEFT, TEXT_MTMOON1F_HIKER2, OPP_HIKER, 16
+	object_event 17,  8, SPRITE_HIKER, STAY, LEFT, TEXT_MTMOON1F_HIKER2, OPP_HIKER, 16                ; New trainer added by G-Dubs
+	object_event 37, 12, SPRITE_HIKER, STAY, LEFT, TEXT_MTMOON1F_HIKER3, OPP_HIKER, 15                ; New trainer added by G-Dubs
 	object_event  2, 20, SPRITE_POKE_BALL, STAY, NONE, TEXT_MTMOON1F_POTION1, POTION
 	object_event  2,  2, SPRITE_POKE_BALL, STAY, NONE, TEXT_MTMOON1F_MOON_STONE, MOON_STONE
 	object_event 35, 31, SPRITE_POKE_BALL, STAY, NONE, TEXT_MTMOON1F_RARE_CANDY, RARE_CANDY
 	object_event 36, 23, SPRITE_POKE_BALL, STAY, NONE, TEXT_MTMOON1F_ESCAPE_ROPE, ESCAPE_ROPE
-	object_event 20, 33, SPRITE_POKE_BALL, STAY, NONE, TEXT_MTMOON1F_POTION2, POTION
+;	object_event 20, 33, SPRITE_POKE_BALL, STAY, NONE, TEXT_MTMOON1F_POTION2, POTION                  ; Moving potion to another location
 	object_event  5, 32, SPRITE_POKE_BALL, STAY, NONE, TEXT_MTMOON1F_TM_WATER_GUN, TM_WATER_GUN
 
 	def_warps_to MT_MOON_1F

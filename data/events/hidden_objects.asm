@@ -163,7 +163,7 @@ ViridianForestHiddenObjects:
 
 MtMoon3HiddenObjects:
 	hidden_object 18, 12, MOON_STONE, HiddenItems
-	hidden_object 33,  9, ETHER, HiddenItems
+	hidden_object 33,  5, ETHER, HiddenItems
 	db -1 ; end
 
 SSAnne10HiddenObjects:

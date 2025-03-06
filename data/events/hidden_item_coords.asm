@@ -19,7 +19,7 @@ HiddenItemCoords:
 	hidden_item VIRIDIAN_FOREST,                1,  18
 	hidden_item VIRIDIAN_FOREST,               16,  42
 	hidden_item MT_MOON_B2F,                   18,  12
-	hidden_item MT_MOON_B2F,                   33,   9
+	hidden_item MT_MOON_B2F,                   33,   5
 	hidden_item SS_ANNE_B1F_ROOMS,              3,   1
 	hidden_item SS_ANNE_KITCHEN,               13,   9
 	hidden_item UNDERGROUND_PATH_NORTH_SOUTH,   3,   4

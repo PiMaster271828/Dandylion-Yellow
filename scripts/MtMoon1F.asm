@@ -22,12 +22,13 @@ MtMoon1F_TextPointers:
 	dw_const MtMoon1FCooltrainerF2Text, TEXT_MTMOON1F_COOLTRAINER_F2
 	dw_const MtMoon1FYoungster2Text,    TEXT_MTMOON1F_YOUNGSTER2
 	dw_const MtMoon1FYoungster3Text,    TEXT_MTMOON1F_YOUNGSTER3
-	dw_const MtMoon1FHiker2Text,        TEXT_MTMOON1F_HIKER2			  ;New trainer added by G-Dubs
+	dw_const MtMoon1FHiker2Text,        TEXT_MTMOON1F_HIKER2			  ; New trainer added by G-Dubs
+	dw_const MtMoon1FHiker3Text,        TEXT_MTMOON1F_HIKER3              ; New trainer added by G-Dubs
 	dw_const PickUpItemText,            TEXT_MTMOON1F_POTION1
 	dw_const PickUpItemText,            TEXT_MTMOON1F_MOON_STONE
 	dw_const PickUpItemText,            TEXT_MTMOON1F_RARE_CANDY
 	dw_const PickUpItemText,            TEXT_MTMOON1F_ESCAPE_ROPE
-	dw_const PickUpItemText,            TEXT_MTMOON1F_POTION2
+;	dw_const PickUpItemText,            TEXT_MTMOON1F_POTION2             ; Moving potion to another location
 	dw_const PickUpItemText,            TEXT_MTMOON1F_TM_WATER_GUN
 	dw_const MtMoon1FBewareZubatSign,   TEXT_MTMOON1F_BEWARE_ZUBAT_SIGN
 
@@ -49,6 +50,8 @@ MtMoon1TrainerHeader6:
 	trainer EVENT_BEAT_MT_MOON_1_TRAINER_6, 3, MtMoon1FYoungster3BattleText, MtMoon1FYoungster3EndBattleText, MtMoon1FYoungster3AfterBattleText
 MtMoon1TrainerHeader7:         																															  ;New trainer added by G-Dubs	
 	trainer EVENT_BEAT_MT_MOON_1_TRAINER_7, 2, MtMoon1FHiker2BattleText, MtMoon1FHiker2EndBattleText, MtMoon1FHiker2AfterBattleText
+MtMoon1TrainerHeader8:         																															  ;New trainer added by G-Dubs	
+	trainer EVENT_BEAT_MT_MOON_1_TRAINER_8, 3, MtMoon1FHiker3BattleText, MtMoon1FHiker3EndBattleText, MtMoon1FHiker3AfterBattleText
 	db -1 ; end
 
 MtMoon1FHiker1Text:
@@ -89,6 +92,11 @@ MtMoon1FYoungster3Text:
 MtMoon1FHiker2Text:								 ; New trainer added by G-Dubs
 	text_asm
 	ld hl, MtMoon1TrainerHeader7
+	jr MtMoon1TalkToTrainer
+
+MtMoon1FHiker3Text:								 ; New trainer added by G-Dubs
+	text_asm
+	ld hl, MtMoon1TrainerHeader8
 	jr MtMoon1TalkToTrainer
 
 MtMoon1TalkToTrainer:
@@ -189,6 +197,18 @@ MtMoon1FHiker2EndBattleText:
 
 MtMoon1FHiker2AfterBattleText:
 	text_far _MtMoon1FHiker2AfterBattleText
+	text_end
+
+MtMoon1FHiker3BattleText:                             ; New trainer added by G-Dubs
+	text_far _MtMoon1FHiker3BattleText
+	text_end
+
+MtMoon1FHiker3EndBattleText:
+	text_far _MtMoon1FHiker3EndBattleText
+	text_end
+
+MtMoon1FHiker3AfterBattleText:
+	text_far _MtMoon1FHiker3AfterBattleText
 	text_end
 
 MtMoon1FBewareZubatSign:

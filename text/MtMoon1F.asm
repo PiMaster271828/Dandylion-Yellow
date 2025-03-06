@@ -141,6 +141,23 @@ _MtMoon1FHiker2AfterBattleText::
     cont "can be dangerous!"
     done
 
+_MtMoon1FHiker3BattleText::                           ; New trainer added by G-Dubs
+    text "WHOA! You startled"
+    line "me! Oh, you're"
+    cont "just a kid!"
+    done
+
+_MtMoon1FHiker3EndBattleText::
+    text "Wow!"
+    line "Startled again!"
+    prompt
+
+_MtMoon1FHiker3AfterBattleText::
+    text "Kids like you"
+    line "shouldn't be"
+    cont "here!"
+    done
+
 _MtMoon1FBewareZubatSign::
 	text "Beware! ZUBAT is"
 	line "a bloodsucker!"
