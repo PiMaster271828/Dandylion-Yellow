@@ -36,6 +36,9 @@
 *.ss6
 *.ss7
 
+# cheats
+.cheats
+
 
 #Vlad's personal files
 
@@ -43,4 +46,3 @@
 .windsurfrules
 wiki/
 .vscode/
-pokeyellow.ss5
