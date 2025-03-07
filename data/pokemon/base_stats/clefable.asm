@@ -1,9 +1,9 @@
 	db DEX_CLEFABLE ; pokedex id
 
-	db  95,  70,  73,  60,  85
-	;   hp  atk  def  spd  spc
+	db  95,  70,  75,  60,  95 ; 490
+	;   hp  atk  def  spd  spc   tot
 
-	db NORMAL, NORMAL ; type
+	db NORMAL, SOUND ; type
 	db 25 ; catch rate
 	db 129 ; base exp
 
@@ -16,11 +16,17 @@
 	; tm/hm learnset
 	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
 	     DOUBLE_EDGE,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
-	     HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
-	     SOLARBEAM,    THUNDERBOLT,  THUNDER,      PSYCHIC_M,    TELEPORT,     \
-	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         METRONOME,    \
-	     FIRE_BLAST,   SKULL_BASH,   REST,         THUNDER_WAVE, PSYWAVE,      \
-	     TRI_ATTACK,   SUBSTITUTE,   STRENGTH,     FLASH
+	     PAY_DAY,      SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
+		 SOLARBEAM,    THUNDERBOLT,  THUNDER,      PSYCHIC_M,    TELEPORT,     \
+		 MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         METRONOME,    \
+		 FIRE_BLAST,   SWIFT,        SKULL_BASH, /*LIGHT_SCREEN*/REST,         \
+		 DREAM_EATER,  THUNDER_WAVE, PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   \
+         STRENGTH,     FLASH	   
+	   /*FLAMETHROWER, FIRE_PUNCH,   THUNDERPUNCH, GIGA_IMPACT,  DARK_PULSE,   \
+		 ICE_PUNCH,    HYPER_VOICE,  HEADBUTT,     IRON_TAIL,    SHADOW_BALL,  \
+		 ICY_WIND,     ALURINGVOICE, WILD_CHARGE,  MIRROR_COAT,  FLASH_CANNON, \
+		 SHOCK_WAVE,   ROCK_SMASH,   MAGICALGLEAM, PLAY_ROUGH,   DRAIN_PUNCH,  \ 
+	   */
 	; end
 
 	db 0 ; padding
