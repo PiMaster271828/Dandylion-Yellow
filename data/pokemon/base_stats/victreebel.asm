@@ -16,8 +16,8 @@
 	; tm/hm learnset
 	tmhm SWORDS_DANCE, TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         \
 	     MEGA_DRAIN,   SOLARBEAM,    MIMIC,        DOUBLE_TEAM,  REFLECT,      \
-	     BIDE,         REST,         SUBSTITUTE,   /*SLUDGE_BOMB, GIGA_IMPACT, \
-	 	 SEED_BOMB,    SLUDGE_WAVE,  GIGA_DRAIN,   POISON_JAB, */CUT
+	     BIDE,         REST,         SUBSTITUTE, /*SLUDGE_BOMB, GIGA_IMPACT, */\
+	   /*SEED_BOMB,    SLUDGE_WAVE,  GIGA_DRAIN,   POISON_JAB, */CUT
 	; end
 
 	db 0 ; padding
