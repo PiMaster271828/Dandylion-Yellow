@@ -260,12 +260,27 @@ ClefairyEvosMoves:
 	db EVOLVE_ITEM, MOON_STONE, 1, CLEFABLE
 	db 0
 ; Learnset
-	db 13, SING
-	db 18, DOUBLESLAP
-	db 24, MINIMIZE
-	db 31, METRONOME
-	db 39, DEFENSE_CURL
-	db 48, LIGHT_SCREEN
+	db 1, POUND
+	db 2, GROWL
+	db 3, SING
+   ;db 4, COPYCAT
+	db 5, DEFENSE_CURL
+   ;db 8, SWEET_KISS
+	db 13, DOUBLESLAP
+	db 15, SUPERSONIC
+	db 18, SWIFT
+	db 20, METRONOME
+	db 22, REFLECT
+   ;db 24, DRAIN_KISS
+	db 26, LIGHT_SCREEN
+   ;db 28, NATURAL_GIFT
+	db 31, MINIMIZE
+   ;db 36, ALURINGVOICE
+   ;db 39, WISH
+   ;db 40, MAGICALGLEAM
+	db 44, AMNESIA
+   ;db 48, PLAY_ROUGH
+   ;db 52, HYPER_VOICE
 	db 0
 
 SpearowEvosMoves:
@@ -516,10 +531,18 @@ GyaradosEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 1, SPLASH
+	db 5, ROAR
+    db 10, RAGE
+    db 15, TACKLE	
 	db 20, BITE
+	db 22, LEER
 	db 25, DRAGON_RAGE
-	db 32, LEER
-	db 41, HYDRO_PUMP
+	db 28, WATERFALL
+	db 32, CRUNCH
+	db 36, SLAM
+	db 40, HYDRO_PUMP
+	db 48, THRASH	
 	db 52, HYPER_BEAM
 	db 0
 
@@ -823,14 +846,25 @@ ChanseyEvosMoves:
 
 MachokeEvosMoves:
 ; Evolutions
-	db EVOLVE_TRADE, 1, MACHAMP
+	db EVOLVE_LEVEL, 38, MACHAMP
 	db 0
 ; Learnset
-	db 20, LOW_KICK
-	db 25, LEER
-	db 36, FOCUS_ENERGY
+	db 1, TACKLE
+	db 4, LEER
+    db 8, LOW_KICK
+	db 12, FOCUS_ENERGY
+	db 16, KARATE_CHOP
+   ;db 20, FAINT_ATTACK
+   ;db 24, MACH_PUNCH
+    db 27, HEADBUTT 
+	db 28, MEGA_PUNCH
+	db 31, MEDITATE
+	db 34, SLAM
+	db 39, TAKE_DOWN
 	db 44, SEISMIC_TOSS
-	db 52, SUBMISSION
+	db 49, SUBMISSION
+   ;db 54, CROSS_CHOP
+	db 59, DOUBLE_EDGE
 	db 0
 
 MrMimeEvosMoves:
@@ -1001,12 +1035,21 @@ MagnetonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 21, SONICBOOM
-	db 25, THUNDERSHOCK
-	db 29, SUPERSONIC
-	db 38, THUNDER_WAVE
-	db 46, SWIFT
-	db 54, SCREECH
+    db 1, TACKLE
+	db 5, THUNDERSHOCK
+	db 9, SONICBOOM
+	db 13, SUPERSONIC
+	db 17, VICEGRIP
+	db 21, THUNDER_WAVE
+   ;db 25, MAGNET_BOMB
+   ;db 29, SPARK
+    db 30, TRI_ATTACK
+	db 35, SWIFT
+	db 38, SCREECH
+	db 46, THUNDERBOLT
+	db 49, LIGHT_SCREEN
+	db 54, THUNDER
+   ;db 60, THUNDERSTRIKE
 	db 0
 
 KoffingEvosMoves:
@@ -1045,11 +1088,11 @@ MankeyEvosMoves:
    ;db 12, FAINT_ATTACK
 	db 15, KARATE_CHOP
 	db 17, SEISMIC_TOSS
-	db 21, FURY_SWIPES
-   ;db 22, CROSS_CHOP
+	db 20, FURY_SWIPES
+    db 22, JUMP_KICK
 	db 25, SLASH
 	db 27, FOCUS_ENERGY
-	db 33, JUMP_KICK
+   ;db 33, CROSS_CHOP
 	db 36, RAGE
 	db 39, THRASH
    ;db 40, RAGE_FIST
@@ -1634,19 +1677,51 @@ JigglypuffEvosMoves:
 	db EVOLVE_ITEM, MOON_STONE, 1, WIGGLYTUFF
 	db 0
 ; Learnset
-	db 9, POUND
+	db 1, SING
+	db 2, POUND
+	db 3, SUPERSONIC
+   ;db 4, COPYCAT
+	db 5, DEFENSE_CURL
+	db 6, SING
+   ;db 7, SWEET_KISS
+   ;db 8, FAINT_ATTACK
+    db 9, SING
+	db 10, LOVELY_KISS
+	db 11, SING
+	db 12, DOUBLESLAP
 	db 14, DISABLE
-	db 19, DEFENSE_CURL
-	db 24, DOUBLESLAP
+	db 19, TAKE_DOWN
+   ;db 24, DRAIN_KISS
+   ;db 26, ALURINGVOICE
 	db 29, REST
+   ;db 32, MAGICALGLEAM
 	db 34, BODY_SLAM
+   ;db 36, PLAY_ROUGH
 	db 39, DOUBLE_EDGE
+   ;db 44, HYPER_VOICE
 	db 0
 
 WigglytuffEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+    db 1, SING
+	db 2, POUND
+	db 3, SUPERSONIC
+   ;db 4, COPYCAT
+	db 5, DEFENSE_CURL
+	db 6, SING
+   ;db 7, SWEET_KISS
+   ;db 8, FAINT_ATTACK
+    db 9, SING
+    db 10, LOVELY_KISS
+	db 11, GROWL
+	db 12, DOUBLESLAP
+	db 24, HEADBUTT
+   ;db 36, ALURINGVOICE
+	db 39, REST
+	db 45, DREAM_EATER
+   ;db 54, HYPER_VOICE
 	db 0
 
 EeveeEvosMoves:
@@ -1656,55 +1731,79 @@ EeveeEvosMoves:
 	db EVOLVE_ITEM, WATER_STONE, 1, VAPOREON
 	db 0
 ; Learnset
-	db 8, SAND_ATTACK
-	db 16, GROWL
-	db 23, QUICK_ATTACK
-	db 30, BITE
-	db 36, FOCUS_ENERGY
-	db 42, TAKE_DOWN
+	db 2, TACKLE
+	db 4, TAIL_WHIP
+	db 6, SAND_ATTACK
+	db 8, GROWL
+	db 10, QUICK_ATTACK
+   ;db 15, COPYCAT
+	db 20, SWIFT 
+	db 25, BITE
+	db 30, FOCUS_ENERGY
+	db 35, MIMIC
+	db 40, TAKE_DOWN
+   ;db 45, DRAIN_KISS
+	db 50, DOUBLE_EDGE
 	db 0
 
 FlareonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 8, SAND_ATTACK
-	db 16, EMBER
-	db 23, QUICK_ATTACK
-	db 30, BITE
-	db 36, FIRE_SPIN
-	db 42, SMOG
-	db 47, LEER
-	db 52, FLAMETHROWER
+	db 1, EMBER
+	db 2, TACKLE
+	db 4, TAIL_WHIP
+	db 6, SAND_ATTACK
+	db 8, GROWL
+	db 10, QUICK_ATTACK
+   ;db 15, COPYCAT
+	db 20, LEER
+	db 25, BITE
+	db 30, FOCUS_ENERGY
+	db 35, FIRE_SPIN
+	db 40, SMOG
+	db 45, FLAMETHROWER
+	db 50, FIRE_BLAST
 	db 0
 
 JolteonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 8, SAND_ATTACK
-	db 16, THUNDERSHOCK
-	db 23, QUICK_ATTACK
-	db 30, DOUBLE_KICK
-	db 36, PIN_MISSILE
-	db 42, THUNDER_WAVE
-	db 47, AGILITY
-	db 52, THUNDER
+	db 1, THUNDERSHOCK
+	db 2, TACKLE
+	db 4, TAIL_WHIP
+	db 6, SAND_ATTACK
+	db 8, GROWL
+	db 10, QUICK_ATTACK
+   ;db 15, COPYCAT
+	db 20, THUNDER_WAVE
+	db 25, DOUBLE_KICK
+   ;db 30, SPARK
+	db 35, PIN_MISSILE
+	db 40, THUNDERBOLT
+	db 45, AGILITY
+	db 50, THUNDER
 	db 0
 
 VaporeonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 8, SAND_ATTACK
-	db 16, WATER_GUN
-	db 23, QUICK_ATTACK
+	db 1, BUBBLE
+	db 2, TACKLE
+	db 4, TAIL_WHIP
+	db 6, SAND_ATTACK
+	db 8, GROWL
+	db 10, QUICK_ATTACK
+   ;db 15, COPYCAT
+	db 20, WATER_GUN
 	db 30, BITE
-	db 36, AURORA_BEAM
-	db 42, HAZE
-	db 42, MIST
-	db 47, ACID_ARMOR
-	db 52, HYDRO_PUMP
+	db 30, AURORA_BEAM
+	db 35, BUBBLEBEAM
+	db 40, MIST
+	db 45, ACID_ARMOR
+	db 50, HYDRO_PUMP
 	db 0
 
 MachopEvosMoves:
@@ -1712,11 +1811,20 @@ MachopEvosMoves:
 	db EVOLVE_LEVEL, 28, MACHOKE
 	db 0
 ; Learnset
-	db 20, LOW_KICK
-	db 25, LEER
-	db 32, FOCUS_ENERGY
-	db 39, SEISMIC_TOSS
-	db 46, SUBMISSION
+	db 1, TACKLE
+	db 4, LEER
+    db 8, LOW_KICK
+	db 12, FOCUS_ENERGY
+	db 16, KARATE_CHOP
+   ;db 20, FAINT_ATTACK
+   ;db 24, MACH_PUNCH
+	db 28, HEADBUTT
+	db 32, SLAM
+	db 36, TAKE_DOWN
+	db 40, SEISMIC_TOSS
+	db 44, SUBMISSION
+   ;db 48, CROSS_CHOP
+	db 52, DOUBLE_EDGE
 	db 0
 
 ZubatEvosMoves:
@@ -1881,12 +1989,12 @@ PrimeapeEvosMoves:
    ;db 12, FAINT_ATTACK
 	db 15, KARATE_CHOP
 	db 17, SEISMIC_TOSS
-	db 21, FURY_SWIPES
-   ;db 22, CROSS_CHOP
+	db 20, FURY_SWIPES
+    db 22, JUMP_KICK
 	db 25, SLASH
 	db 27, FOCUS_ENERGY
 	db 30, ROLLING_KICK
-	db 35, JUMP_KICK
+   ;db 35, CROSS_CHOP
 	db 39, RAGE
 	db 40, THRASH
    ;db 44, RAGE_FIST
@@ -2031,11 +2139,23 @@ MachampEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 20, LOW_KICK
-	db 25, LEER
-	db 36, FOCUS_ENERGY
-	db 44, SEISMIC_TOSS
-	db 52, SUBMISSION
+	db 1, TACKLE
+	db 4, LEER
+    db 8, LOW_KICK
+	db 12, FOCUS_ENERGY
+	db 16, KARATE_CHOP
+   ;db 20, FAINT_ATTACK
+   ;db 24, MACH_PUNCH
+	db 27, HEADBUTT 
+	db 28, MEGA_PUNCH
+	db 31, MEDITATE
+	db 36, SLAM
+	db 37, MEGA_KICK
+	db 42, TAKE_DOWN
+	db 48, SEISMIC_TOSS
+	db 54, SUBMISSION
+   ;db 60, CROSS_CHOP
+	db 66, DOUBLE_EDGE
 	db 0
 
 MissingNo7FEvosMoves:
@@ -2130,7 +2250,13 @@ MagikarpEvosMoves:
 	db EVOLVE_LEVEL, 20, GYARADOS
 	db 0
 ; Learnset
+	db 1, SPLASH
 	db 15, TACKLE
+	db 30, BOUNCE
+	db 45, BUBBLE
+	db 60, FIN_SLAP
+	db 75, HYDRO_PUMP
+	db 90, DRAGON_RAGE
 	db 0
 
 MissingNo86EvosMoves:
@@ -2225,6 +2351,21 @@ ClefableEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+    db 1, POUND
+	db 2, GROWL
+	db 3, SING
+   ;db 4, COPYCAT
+	db 5, DEFENSE_CURL
+   ;db 8, SWEET_KISS
+	db 13, DOUBLESLAP
+	db 15, SUPERSONIC
+	db 18, SWIFT
+	db 20, METRONOME
+   ;db 31, TAIL_SLAP
+   ;db 40, ALURINGVOICE
+   ;db 44, WISH
+    db 52, DOUBLE_EDGE
+   ;db 60, HYPER_VOICE
 	db 0
 
 WeezingEvosMoves:
@@ -2668,12 +2809,20 @@ MagnemiteEvosMoves:
 	db EVOLVE_LEVEL, 30, MAGNETON
 	db 0
 ; Learnset
-	db 21, SONICBOOM
-	db 25, THUNDERSHOCK
-	db 29, SUPERSONIC
-	db 35, THUNDER_WAVE
-	db 41, SWIFT
-	db 47, SCREECH
+	db 1, TACKLE
+	db 5, THUNDERSHOCK
+	db 9, SONICBOOM
+	db 13, SUPERSONIC
+	db 17, VICEGRIP
+	db 21, THUNDER_WAVE
+   ;db 25, MAGNET_BOMB
+   ;db 29, SPARK
+	db 33, SWIFT
+	db 37, SCREECH
+	db 41, THUNDERBOLT
+	db 45, LIGHT_SCREEN
+	db 49, THUNDER
+   ;db 51, THUNDERSTRIKE
 	db 0
 
 MissingNoAEEvosMoves:

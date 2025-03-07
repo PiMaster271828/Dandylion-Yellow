@@ -1,6 +1,6 @@
 	db DEX_WIGGLYTUFF ; pokedex id
 
-	db 140,  70,  45,  45,  50 ; 400
+	db 140,  70,  65,  45,  60 ; 440
 	;   hp  atk  def  spd  spc   tot
 
 	db FAIRY, SOUND ; type
@@ -18,8 +18,8 @@
 	     DOUBLE_EDGE,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
 	     PAY_DAY,      SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
 		 SOLARBEAM,    THUNDERBOLT,  THUNDER,      PSYCHIC_M,    TELEPORT,     \
-		 MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         METRONOME     \
-		 FIRE_BLAST,   SWIFT,        SKULL_BASH,   LIGHT_SCREEN, DREAM_EATER,  \
+		 MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         METRONOME,    \
+		 FIRE_BLAST,   SWIFT,        SKULL_BASH,/*LIGHT_SCREEN,*/DREAM_EATER,  \
 		 REST,         THUNDER_WAVE, PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   \
 	     STRENGTH,     FLASH
 	   /*FLAMETHROWER, FIRE_PUNCH,   THUNDERPUNCH, GIGA_IMPACT,  ICE_PUNCH,    \
