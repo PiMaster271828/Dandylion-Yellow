@@ -1,6 +1,6 @@
 	db DEX_NIDOQUEEN ; pokedex id
 
-	db  90,  82,  87,  76,  75 ; 
+	db  90,  90, 100,  75,  85 ; 525 
 	;   hp  atk  def  spd  spc   tot
 
 	db POISON, GROUND ; type
@@ -18,9 +18,15 @@
 	     TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     \
 	     BLIZZARD,     HYPER_BEAM,   PAY_DAY,      SUBMISSION,   COUNTER,      \
 	     SEISMIC_TOSS, RAGE,         THUNDERBOLT,  THUNDER,      EARTHQUAKE,   \
-	     FISSURE,      MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
-	     FIRE_BLAST,   SKULL_BASH,   REST,         ROCK_SLIDE,   SUBSTITUTE,   \
-	     SURF,         STRENGTH
+	     FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  REFLECT,      \
+		 BIDE,         FIRE_BLAST,   SKULL_BASH,   REST,         ROCK_SLIDE,   \
+		 SUBSTITUTE, /*SLUDGE_BOMB,  FLAMETHROWER, FIRE_PUNCH,  THUNDERPUNCH,*/\
+		 CUT,          SURF,         STRENGTH
+	   /*GIGA_IMPACT,  ICE_PUNCH,    HYPER_VOICE,  HEADBUTT,     IRON_TAIL,    \
+		 ICY_WIND,     ALURINGVOICE, WILD_CHARGE,  STONE_EDGE,   SEARING_SAND, \
+		 SHOCK_WAVE,   DRAGON_CLAW,  SHADOW_CLAW,  MUD-SLAP,     SLUDGE_WAVE,  \
+		 ROCK_SMASH,   EARTH_POWER,  PLAY_ROUGH,   DRAIN_PUNCH,  POISON_JAB,   \
+		 ROCK_TOMB,  */  
 	; end
 
 	db 0 ; padding

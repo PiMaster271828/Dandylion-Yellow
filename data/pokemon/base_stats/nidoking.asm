@@ -1,6 +1,6 @@
 	db DEX_NIDOKING ; pokedex id
 
-	db  81,  92,  77,  85,  75 ;
+	db  90, 105,  85,  85,  75 ; 515 
 	;   hp  atk  def  spd  spc   tot
 
 	db POISON, GROUND ; type
@@ -18,9 +18,14 @@
 	     TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     \
 	     BLIZZARD,     HYPER_BEAM,   PAY_DAY,      SUBMISSION,   COUNTER,      \
 	     SEISMIC_TOSS, RAGE,         THUNDERBOLT,  THUNDER,      EARTHQUAKE,   \
-	     FISSURE,      MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
-	     FIRE_BLAST,   SKULL_BASH,   REST,         ROCK_SLIDE,   SUBSTITUTE,   \
-	     SURF,         STRENGTH
+	     FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  REFLECT,      \
+		 BIDE,         FIRE_BLAST,   SKULL_BASH,   REST,         ROCK_SLIDE,   \
+		 SUBSTITUTE, /*SLUDGE_BOMB,  FLAMETHROWER, FIRE_PUNCH,  THUNDERPUNCH,*/\
+		 SURF,         STRENGTH
+	   /*GIGA_IMPACT,  ICE_PUNCH,    HEADBUTT,     IRON_TAIL,    ICY_WIND,     \
+		 WILD_CHARGE,  STONE_EDGE,   SEARING_SAND, SHOCK_WAVE,   MUD-SLAP,     \
+		 SLUDGE_WAVE,  ROCK_SMASH,   EARTH_POWER,  PLAY_ROUGH,   DRAIN_PUNCH,  \
+		 POISON_JAB,   ROCK_TOMB,  */  
 	; end
 
 	db 0 ; padding
