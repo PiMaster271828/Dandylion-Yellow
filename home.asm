@@ -86,4 +86,4 @@ INCLUDE "home/predef_text.asm"
 
 Section "Home 2", ROMX
 
-INCLUDE "home/trainers3.asm"
+INCLUDE "home/alt_trainer_sprites.asm"
