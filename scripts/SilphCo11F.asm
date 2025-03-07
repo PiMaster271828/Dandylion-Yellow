@@ -389,9 +389,9 @@ SilphCo11FScript11:
 	ld hl, SilphCo11FText_624c2
 	ld de, SilphCo11FText_624c2
 	call SaveEndBattleTextPointers
-	ld a, OPP_ROCKET
+	ld a, OPP_JESSIE_JAMES
 	ld [wCurOpponent], a
-	ld a, $2d
+	ld a, $06
 	ld [wTrainerNo], a
 	xor a
 	ldh [hJoyHeld], a
