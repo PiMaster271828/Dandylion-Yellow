@@ -539,7 +539,7 @@ GyaradosEvosMoves:
 	db 22, LEER
 	db 25, DRAGON_RAGE
 	db 28, WATERFALL
-	db 32, CRUNCH
+   ;db 32, CRUNCH
 	db 36, SLAM
 	db 40, HYDRO_PUMP
 	db 48, THRASH	
@@ -2252,9 +2252,9 @@ MagikarpEvosMoves:
 ; Learnset
 	db 1, SPLASH
 	db 15, TACKLE
-	db 30, BOUNCE
+   ;db 30, BOUNCE
 	db 45, BUBBLE
-	db 60, FIN_SLAP
+   ;db 60, FIN_SLAP
 	db 75, HYDRO_PUMP
 	db 90, DRAGON_RAGE
 	db 0
