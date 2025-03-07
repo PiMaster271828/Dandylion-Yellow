@@ -83,3 +83,7 @@ INCLUDE "home/bankswitch2.asm"
 INCLUDE "home/predef.asm"
 INCLUDE "home/hidden_objects.asm"
 INCLUDE "home/predef_text.asm"
+
+Section "Home 2", ROMX
+
+INCLUDE "home/trainers3.asm"

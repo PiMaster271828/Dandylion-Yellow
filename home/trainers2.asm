@@ -22,7 +22,8 @@ GetTrainerInformation::
 	inc de
 	ld a, [hli]
 	ld [de], a
-	call IsFightingJessieJames
+;	call IsFightingJessieJames
+	farcall IsFightingSwimmer
 	jp BankswitchBack
 .linkBattle
 	ld hl, wTrainerPicPointer
@@ -32,23 +33,23 @@ GetTrainerInformation::
 	ld [hl], d
 	ret
 
-IsFightingJessieJames::
-	ld a, [wTrainerClass]
-	cp ROCKET
-	ret nz
-	ld a, [wTrainerNo]
-	cp $2a
-	ret c
-	ld de, JessieJamesPic
-	cp $2e
-	jr c, .dummy
-	ld de, JessieJamesPic ; possibly meant to add another pic
-.dummy
-	ld hl, wTrainerPicPointer
-	ld a, e
-	ld [hli], a
-	ld [hl], d
-	ret
+;IsFightingJessieJames::
+;	ld a, [wTrainerClass]
+;	cp ROCKET
+;	ret nz
+;	ld a, [wTrainerNo]
+;	cp $2a
+;	ret c
+;	ld de, JessieJamesPic
+;	cp $2e
+;	jr c, .dummy
+;	ld de, JessieJamesPic ; possibly meant to add another pic
+;.dummy
+;	ld hl, wTrainerPicPointer
+;	ld a, e
+;	ld [hli], a
+;	ld [hl], d
+;	ret
 
 GetTrainerName::
 	farjp GetTrainerName_

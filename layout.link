@@ -235,6 +235,9 @@ ROMX $41
 
 ROMX $42
 	"Text 1.5"
+
+ROMX $43
+	"Home 2"
 	
 WRAM0
 	"Audio RAM"
