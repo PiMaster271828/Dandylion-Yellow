@@ -100,14 +100,14 @@ _MtMoonB2FSuperNerdThenThisIsMineText::
 	line "this is mine!@"
 	text_end
 
-_MtMoonB2FRocket1BattleText::
+_MtMoonB2FRocket1BattleText::                    ; Trainer from Red & Blue added by G-Dubs
 	text "TEAM ROCKET will"
 	line "find the fossils,"
 	cont "revive and sell"
 	cont "them for cash!"
 	done
 
-_MtMoonB2FRocket1EndBattleText::                 ; Trainer from Red & Blue added by G-Dubs
+_MtMoonB2FRocket1EndBattleText::                 
 	text "Urgh!"
 	line "Now I'm mad!"
 	prompt
@@ -152,7 +152,7 @@ _MtMoonB2FRocket3AfterBattleText::
 	cont "to me and scram!"
 	done
 
-_MtMoonB2FRocket4BattleText::
+_MtMoonB2FRocket4BattleText::                    ; Trainer from Red & Blue added by G-Dubs
 	text "Little kids"
 	line "should leave"
 	cont "grown-ups alone!"
@@ -167,4 +167,67 @@ _MtMoonB2FRocket4AfterBattleText::
 	text "#MON lived"
 	line "here long before"
 	cont "people came."
+	done
+
+_MtMoonB2FRocket5BattleText::                    ; New trainer added by G-Dubs
+	text "Tch! You think"
+	line "you can just" 
+	cont "waltz through MT."
+	cont " MOON? This place"
+	cont "belongs to TEAM" 
+	cont "ROCKET now, kid!"
+	done
+
+_MtMoonB2FRocket5EndBattleText::
+	text "What?!"
+	line "Beaten by a runt"
+	cont "like you? The"
+	cont "boss ain't gonna"
+	cont "like this..."
+	prompt
+
+_MtMoonB2FRocket5AfterBattleText::
+	text "Hmph! You got"
+	line "lucky! But TEAM"
+	cont "ROCKET's got big"
+	cont "plans, and a"
+	cont "little brat like"
+	cont "you won't stop"
+	cont "us!"
+	done
+
+_MtMoonB2FRocket6BattleText::                    ; New trainer added by G-Dubs
+	text "Heh, you got guts"
+	line "wandering in"
+	cont "here, kid!  TEAM"
+	cont "ROCKET is gonna"
+	cont "claim all the"
+	cont "rare fossils in" 
+	cont "this cave, and we"
+	cont "don't need nosy"
+	cont "brats like you"
+	cont "getting in our"
+	cont "way!"
+	done
+
+_MtMoonB2FRocket6EndBattleText::
+	text "What?!"
+	line "You're tougher"
+	cont "than you look..."
+	cont "This ain't over!"
+	cont ""
+	prompt
+
+_MtMoonB2FRocket6AfterBattleText::
+	text "Hey...  I swear I"
+	line "saw a fossil"
+	cont " right here..."
+	cont "..."
+	cont "Oh! ... Uhh..."
+	cont "Tch... Fine, take"
+	cont "your little"
+	cont "stroll, but the"
+	cont "boss is gonna love"
+	cont "what we dig up"
+	cont "here!  You'll see!"
 	done

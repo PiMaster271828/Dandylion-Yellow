@@ -573,10 +573,12 @@
 	const EVENT_GOT_DOME_FOSSIL
 	const EVENT_BEAT_MT_MOON_EXIT_SUPER_NERD
 	const EVENT_BEAT_MT_MOON_3_JESSIE_JAMES
-	const EVENT_BEAT_MT_MOON_3_TRAINER_0
+	const EVENT_BEAT_MT_MOON_3_TRAINER_0         ; Trainer from Red & Blue added by G-Dubs
 	const EVENT_BEAT_MT_MOON_3_TRAINER_1
 	const EVENT_BEAT_MT_MOON_3_TRAINER_2
-	const EVENT_BEAT_MT_MOON_3_TRAINER_3         ; New trainer added by G-Dubs
+	const EVENT_BEAT_MT_MOON_3_TRAINER_3         ; Trainer from Red & Blue added by G-Dubs
+	const EVENT_BEAT_MT_MOON_3_TRAINER_4         ; New trainer added by G-Dubs
+	const EVENT_BEAT_MT_MOON_3_TRAINER_5         ; New trainer added by G-Dubs
 	const EVENT_57E
 	const EVENT_GOT_HELIX_FOSSIL
 
