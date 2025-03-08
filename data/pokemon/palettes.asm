@@ -196,10 +196,11 @@ TrainerPalettes:
 	db PAL_MEWMON               ;BLAINE         
 	db PAL_MEWMON               ;SABRINA        
 	db PAL_MEWMON               ;GENTLEMAN      
-	db PAL_MEWMON               ;RIVAL2         
+	db PAL_MEWMON               ;RIVAL2          
 	db PAL_MEWMON               ;RIVAL3         
 	db PAL_MEWMON               ;LORELEI        
 	db PAL_MEWMON               ;CHANNELER      
 	db PAL_MEWMON               ;AGATHA         
 	db PAL_MEWMON               ;LANCE          
-	db PAL_MEWMON               ;JESSIE_JAMES   ;New trainer class for Team Rocket
+	db PAL_BLUEMON              ;JESSIE_JAMES   ;New trainer class for Team Rocket
+	db PAL_MEWMON                  
