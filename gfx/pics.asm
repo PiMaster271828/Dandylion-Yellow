@@ -351,7 +351,7 @@ BirdKeeperPic::    INCBIN "gfx/trainers/birdkeeper.pic"
 BlackbeltPic::     INCBIN "gfx/trainers/blackbelt.pic"
 Rival1Pic::        INCBIN "gfx/trainers/rival1.pic"
 ;Swimmer2Pic::      INCBIN "gfx/trainers/swimmer_female_12.pic"
-Swimmer2Pic::      INCBIN "gfx/trainers/rocket_grunt.pic"
+Swimmer2Pic::      INCBIN "gfx/trainers/aroma_lady.pic"
 
 SECTION "Trainer Pics 2", ROMX
 ProfOakPic::       INCBIN "gfx/trainers/prof.oak.pic"
