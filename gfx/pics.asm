@@ -353,8 +353,9 @@ Rival1Pic::        INCBIN "gfx/trainers/rival1.pic"
 ;GypsyJugglerPic::  INCBIN "gfx/trainers/gypsy_juggler.pic"
 ;Swimmer2Pic::      INCBIN "gfx/trainers/swimmer_female_12.pic"
 ;Beauty2Pic::       INCBIN "gfx/trainers/beauty_2_97.pic"
-Swimmer2Pic::      INCBIN "gfx/trainers/triathlete_biker_female.pic"
+;Swimmer2Pic::      INCBIN "gfx/trainers/triathlete_biker_female.pic"
 ;Swimmer2Pic::      INCBIN "gfx/trainers/cooltrainer_male_alt.pic"
+Swimmer2Pic::       INCBIN "gfx/trainers/office_worker_female.pic"
 
 SECTION "Trainer Pics 2", ROMX
 ProfOakPic::       INCBIN "gfx/trainers/prof.oak.pic"
