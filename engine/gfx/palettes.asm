@@ -39,10 +39,10 @@ SetPal_Battle:
 	ld bc, wPartyMon2 - wPartyMon1
 	call AddNTimes
 .asm_71ef9
-	call DeterminePaletteID
+	call DeterminePaletteIDBack
 	ld b, a
 	ld hl, wEnemyMonSpecies2
-	call DeterminePaletteID
+	call DeterminePaletteIDFront
 	ld c, a
 	ld hl, wPalPacket + 1
 	ld a, [wPlayerHPBarColor]
@@ -294,24 +294,38 @@ BadgeBlkDataLengths:
 	db 6     ; Volcano Badge
 	db 6     ; Earth Badge
 
-DeterminePaletteID:
+DeterminePaletteIDFront:
 	ld a, [hl]
 DeterminePaletteIDOutOfBattle:
 	ld [wPokedexNum], a
 	and a ; is the mon index 0?
-	jr z, .skipDexNumConversion
+	ld a, [wTrainerClass]
+	ld hl, TrainerPalettes
+	jr z, GetPalID ; if so, this is a trainer
+GetMonPalID:
 	push bc
 	predef IndexToPokedex
 	pop bc
 	ld a, [wPokedexNum]
-.skipDexNumConversion
+	ld hl, MonsterPalettes
+GetPalID:
 	ld e, a
 	ld d, 0
-	ld hl, MonsterPalettes ; not just for Pokemon, Trainers use it too
 	add hl, de
 	ld a, [hl]
 	ret
 
+DeterminePaletteIDBack:
+	ld a, [hl]
+	ld [wPokedexNum], a
+	and a
+	jp nz, GetMonPalID
+	ld a, [wBattleType]
+	cp BATTLE_TYPE_PIKACHU
+	ld a, PAL_MEWMON ;Pal for Oak
+	ret z
+	ld a, PAL_MEWMON  ;Pal for Player
+	ret
 YellowIntroPaletteAction::
 	ld a, e
 	and a

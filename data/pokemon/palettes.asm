@@ -153,3 +153,54 @@ MonsterPalettes:
 	db PAL_MEWMON    ; MEWTWO
 	db PAL_MEWMON    ; MEW
 	assert_table_length NUM_POKEMON + 1
+
+TrainerPalettes:
+	db PAL_MEWMON               ;PLAYER (NOBODY)         
+	db PAL_MEWMON               ;YOUNGSTER      
+	db PAL_MEWMON               ;BUG_CATCHER    
+	db PAL_MEWMON               ;LASS           
+	db PAL_MEWMON               ;SAILOR         
+	db PAL_MEWMON               ;JR_TRAINER_M   
+	db PAL_MEWMON               ;JR_TRAINER_F   
+	db PAL_MEWMON               ;POKEMANIAC     
+	db PAL_MEWMON               ;SUPER_NERD     
+	db PAL_MEWMON               ;HIKER          
+	db PAL_MEWMON               ;BIKER          
+	db PAL_MEWMON               ;BURGLAR        
+	db PAL_MEWMON               ;ENGINEER       
+	db PAL_MEWMON               ;UNUSED_JUGGLER 
+	db PAL_MEWMON               ;FISHER         
+	db PAL_MEWMON               ;SWIMMER        
+	db PAL_MEWMON               ;CUE_BALL       
+	db PAL_MEWMON               ;GAMBLER        
+	db PAL_MEWMON               ;BEAUTY         
+	db PAL_MEWMON               ;PSYCHIC_TR     
+	db PAL_MEWMON               ;ROCKER         
+	db PAL_MEWMON               ;JUGGLER        
+	db PAL_MEWMON               ;TAMER          
+	db PAL_MEWMON               ;BIRD_KEEPER    
+	db PAL_MEWMON               ;BLACKBELT      
+	db PAL_MEWMON               ;PROF_OAK       
+	db PAL_MEWMON               ;CHIEF          
+	db PAL_MEWMON               ;SCIENTIST      
+	db PAL_MEWMON               ;GIOVANNI       
+	db PAL_MEWMON               ;ROCKET         
+	db PAL_MEWMON               ;COOLTRAINER_M  
+	db PAL_MEWMON               ;COOLTRAINER_F  
+	db PAL_MEWMON               ;BRUNO          
+	db PAL_MEWMON               ;BROCK          
+	db PAL_MEWMON               ;MISTY          
+	db PAL_MEWMON               ;LT_SURGE       
+	db PAL_MEWMON               ;ERIKA          
+	db PAL_MEWMON               ;KOGA           
+	db PAL_MEWMON               ;BLAINE         
+	db PAL_MEWMON               ;SABRINA        
+	db PAL_MEWMON               ;GENTLEMAN      
+	db PAL_MEWMON               ;RIVAL2          
+	db PAL_MEWMON               ;RIVAL3         
+	db PAL_MEWMON               ;LORELEI        
+	db PAL_MEWMON               ;CHANNELER      
+	db PAL_MEWMON               ;AGATHA         
+	db PAL_MEWMON               ;LANCE          
+	db PAL_BLUEMON              ;JESSIE_JAMES   ;New trainer class for Team Rocket
+	db PAL_MEWMON                  
