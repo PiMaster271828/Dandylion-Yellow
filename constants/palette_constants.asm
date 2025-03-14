@@ -64,21 +64,22 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_PINKMON              ; $18
 	const PAL_YELLOWMON            ; $19
 	const PAL_GRAYMON              ; $1A
-	const PAL_MEWTWO               ; $1B
-	const PAL_ORANGEMON            ; $1C
-	const PAL_INDIGOMON            ; $1D
-	const PAL_SLOTS1               ; $1E
-	const PAL_SLOTS2               ; $1F
-	const PAL_SLOTS3               ; $20
-	const PAL_SLOTS4               ; $21
-	const PAL_BLACK                ; $22
-	const PAL_GREENBAR             ; $23
-	const PAL_YELLOWBAR            ; $24
-	const PAL_REDBAR               ; $25
-	const PAL_BADGE                ; $26
-	const PAL_CAVE                 ; $27
-	const PAL_GAMEFREAK            ; $28
-	const PAL_PIKACHUS_BEACH       ; $29
-	const PAL_PIKACHU_PORTRAIT     ; $2A
-	const PAL_PIKACHUS_BEACH_TITLE ; $2B
+	const PAL_MEWTWO               ; $1B ; New Mewtwo Palette
+	const PAL_ORANGEMON            ; $1C ; New Orange Palette
+	const PAL_INDIGOMON            ; $1D ; New Indigo Palette
+	const PAL_REDBLUEMON           ; $1E ; New Red/Blue Palette
+	const PAL_SLOTS1               ; $1F
+	const PAL_SLOTS2               ; $20
+	const PAL_SLOTS3               ; $21
+	const PAL_SLOTS4               ; $22
+	const PAL_BLACK                ; $23
+	const PAL_GREENBAR             ; $24
+	const PAL_YELLOWBAR            ; $25
+	const PAL_REDBAR               ; $26
+	const PAL_BADGE                ; $27
+	const PAL_CAVE                 ; $28
+	const PAL_GAMEFREAK            ; $29
+	const PAL_PIKACHUS_BEACH       ; $2A
+	const PAL_PIKACHU_PORTRAIT     ; $2B
+	const PAL_PIKACHUS_BEACH_TITLE ; $2C
 DEF NUM_SGB_PALS EQU const_value

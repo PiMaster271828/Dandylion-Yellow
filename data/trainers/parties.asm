@@ -538,7 +538,7 @@ BlackbeltData:
 
 Rival1Data:
 ; Oak's Lab
-	db 5, STARMIE, 0						                                                           ; Rival 1 1
+	db 5, EEVEE 0						                                                           ; Rival 1 1
 ; Route 22
     db $FF, 9, PIDGEY, 8, RATTATA, 8, SPEAROW, 9, EEVEE, 0                                         ; Rival 1 2             ; Pidgey & Rattata added by G-Dubs
    ;db $FF, 9, SPEAROW, 8, EEVEE, 0		; Rival 1 Team 2

@@ -44,8 +44,8 @@ MonsterPalettes:
 	db PAL_BLUEMON                     ; ZUBAT
 	db PAL_BLUEMON                     ; GOLBAT
 	db PAL_GREENMON                    ; ODDISH
-	db PAL_REDMON                      ; GLOOM
-	db PAL_REDMON                      ; VILEPLUME
+	db PAL_REDBLUEMON                  ; GLOOM
+	db PAL_REDBLUEMON                  ; VILEPLUME
 	db PAL_REDMON                      ; PARAS
 	db PAL_REDMON                      ; PARASECT
 	db PAL_PURPLEMON                   ; VENONAT
