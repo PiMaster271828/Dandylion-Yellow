@@ -111,8 +111,8 @@ MonsterPalettes:
 	db PAL_PINKMON                     ; LICKITUNG
 	db PAL_PURPLEMON                   ; KOFFING
 	db PAL_PURPLEMON                   ; WEEZING
-	db PAL_GRAYMON                     ; RHYHORN
-	db PAL_GRAYMON                     ; RHYDON
+	db PAL_DEFAULTMON                  ; RHYHORN
+	db PAL_DEFAULTMON                  ; RHYDON
 	db PAL_PINKMON                     ; CHANSEY
 	db PAL_BLUEMON                     ; TANGELA
 	db PAL_BROWNMON                    ; KANGASKHAN
