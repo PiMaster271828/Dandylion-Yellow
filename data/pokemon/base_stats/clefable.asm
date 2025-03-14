@@ -3,7 +3,7 @@
 	db  95,  70,  75,  60,  95 ; 490
 	;   hp  atk  def  spd  spc   tot
 
-	db NORMAL, SOUND ; type
+	db FAIRY, SOUND ; type
 	db 25 ; catch rate
 	db 129 ; base exp
 
