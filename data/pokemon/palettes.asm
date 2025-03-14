@@ -26,7 +26,7 @@ MonsterPalettes:
 	db PAL_PURPLEMON                   ; EKANS
 	db PAL_PURPLEMON                   ; ARBOK
 	db PAL_YELLOWMON                   ; PIKACHU
-	db PAL_YELLOWMON                   ; RAICHU
+	db PAL_RAICHU                 ; RAICHU
 	db PAL_BROWNMON                    ; SANDSHREW
 	db PAL_BROWNMON                    ; SANDSLASH
 	db PAL_BLUEMON                     ; NIDORAN_F
@@ -150,8 +150,8 @@ MonsterPalettes:
 	db PAL_CYANMON                     ; DRATINI
 	db PAL_BLUEMON                     ; DRAGONAIR
 	db PAL_BROWNMON                    ; DRAGONITE
-	db PAL_MEWMON                      ; MEWTWO
-	db PAL_MEWMON                      ; MEW
+	db PAL_MEWTWO                      ; MEWTWO
+	db PAL_PINKMON                     ; MEW
 	assert_table_length NUM_POKEMON + 1
 
 TrainerPalettes:
