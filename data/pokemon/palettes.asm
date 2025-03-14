@@ -26,7 +26,7 @@ MonsterPalettes:
 	db PAL_PURPLEMON                   ; EKANS
 	db PAL_PURPLEMON                   ; ARBOK
 	db PAL_YELLOWMON                   ; PIKACHU
-	db PAL_RAICHU                 ; RAICHU
+	db PAL_RAICHU                      ; RAICHU
 	db PAL_BROWNMON                    ; SANDSHREW
 	db PAL_BROWNMON                    ; SANDSLASH
 	db PAL_BLUEMON                     ; NIDORAN_F
