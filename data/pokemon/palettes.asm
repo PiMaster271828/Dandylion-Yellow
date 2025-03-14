@@ -19,8 +19,8 @@ MonsterPalettes:
 	db PAL_BROWNMON  ; PIDGEY
 	db PAL_BROWNMON  ; PIDGEOTTO
 	db PAL_BROWNMON  ; PIDGEOT
-	db PAL_GRAYMON   ; RATTATA
-	db PAL_GRAYMON   ; RATICATE
+	db PAL_PURPLEMON ; RATTATA
+	db PAL_BROWNMON  ; RATICATE
 	db PAL_BROWNMON  ; SPEAROW
 	db PAL_BROWNMON  ; FEAROW
 	db PAL_PURPLEMON ; EKANS
@@ -100,12 +100,12 @@ MonsterPalettes:
 	db PAL_YELLOWMON ; HYPNO
 	db PAL_REDMON    ; KRABBY
 	db PAL_REDMON    ; KINGLER
-	db PAL_YELLOWMON ; VOLTORB
-	db PAL_YELLOWMON ; ELECTRODE
+	db PAL_REDMON    ; VOLTORB
+	db PAL_REDMON    ; ELECTRODE
 	db PAL_PINKMON   ; EXEGGCUTE
 	db PAL_GREENMON  ; EXEGGUTOR
-	db PAL_GRAYMON   ; CUBONE
-	db PAL_GRAYMON   ; MAROWAK
+	db PAL_BROWNMON  ; CUBONE
+	db PAL_BROWNMON  ; MAROWAK
 	db PAL_BROWNMON  ; HITMONLEE
 	db PAL_BROWNMON  ; HITMONCHAN
 	db PAL_PINKMON   ; LICKITUNG
@@ -128,7 +128,7 @@ MonsterPalettes:
 	db PAL_YELLOWMON ; ELECTABUZZ
 	db PAL_REDMON    ; MAGMAR
 	db PAL_BROWNMON  ; PINSIR
-	db PAL_GRAYMON   ; TAUROS
+	db PAL_BROWNMON  ; TAUROS
 	db PAL_REDMON    ; MAGIKARP
 	db PAL_BLUEMON   ; GYARADOS
 	db PAL_CYANMON   ; LAPRAS
@@ -143,11 +143,11 @@ MonsterPalettes:
 	db PAL_BROWNMON  ; KABUTO
 	db PAL_BROWNMON  ; KABUTOPS
 	db PAL_GRAYMON   ; AERODACTYL
-	db PAL_PINKMON   ; SNORLAX
+	db PAL_BROWNMON  ; SNORLAX
 	db PAL_BLUEMON   ; ARTICUNO
 	db PAL_YELLOWMON ; ZAPDOS
 	db PAL_REDMON    ; MOLTRES
-	db PAL_GRAYMON   ; DRATINI
+	db PAL_CYANMON   ; DRATINI
 	db PAL_BLUEMON   ; DRAGONAIR
 	db PAL_BROWNMON  ; DRAGONITE
 	db PAL_MEWMON    ; MEWTWO
@@ -170,13 +170,13 @@ TrainerPalettes:
 	db PAL_MEWMON               ;ENGINEER       
 	db PAL_MEWMON               ;UNUSED_JUGGLER 
 	db PAL_MEWMON               ;FISHER         
-	db PAL_MEWMON               ;SWIMMER        
-	db PAL_MEWMON               ;CUE_BALL       
+	db PAL_BROWNMON             ;SWIMMER        
+    db PAL_MEWMON               ;CUE_BALL        
 	db PAL_MEWMON               ;GAMBLER        
 	db PAL_MEWMON               ;BEAUTY         
 	db PAL_MEWMON               ;PSYCHIC_TR     
 	db PAL_MEWMON               ;ROCKER         
-	db PAL_MEWMON               ;JUGGLER        
+	db PAL_MEWMON               ;JUGGLER       
 	db PAL_MEWMON               ;TAMER          
 	db PAL_MEWMON               ;BIRD_KEEPER    
 	db PAL_MEWMON               ;BLACKBELT      
