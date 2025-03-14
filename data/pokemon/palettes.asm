@@ -66,9 +66,9 @@ MonsterPalettes:
 	db PAL_YELLOWMON                   ; ABRA
 	db PAL_YELLOWMON                   ; KADABRA
 	db PAL_YELLOWMON                   ; ALAKAZAM
-	db PAL_GRAYMON                     ; MACHOP
-	db PAL_GRAYMON                     ; MACHOKE
-	db PAL_GRAYMON                     ; MACHAMP
+	db PAL_DEFAULTMON                  ; MACHOP
+	db PAL_DEFAULTMON                  ; MACHOKE
+	db PAL_DEFAULTMON                  ; MACHAMP
 	db PAL_GREENMON                    ; BELLSPROUT
 	db PAL_GREENMON                    ; WEEPINBELL
 	db PAL_GREENMON                    ; VICTREEBEL
@@ -81,8 +81,8 @@ MonsterPalettes:
 	db PAL_REDMON                      ; RAPIDASH
 	db PAL_PINKMON                     ; SLOWPOKE
 	db PAL_PINKMON                     ; SLOWBRO
-	db PAL_GRAYMON                     ; MAGNEMITE
-	db PAL_GRAYMON                     ; MAGNETON
+	db PAL_DEFAULTMON                  ; MAGNEMITE
+	db PAL_DEFAULTMON                  ; MAGNETON
 	db PAL_BROWNMON                    ; FARFETCHD
 	db PAL_BROWNMON                    ; DODUO
 	db PAL_BROWNMON                    ; DODRIO
