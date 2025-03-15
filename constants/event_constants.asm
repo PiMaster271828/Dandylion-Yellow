@@ -68,6 +68,7 @@
 	const_skip 17
 	const EVENT_BEAT_CERULEAN_GYM_TRAINER_0
 	const EVENT_BEAT_CERULEAN_GYM_TRAINER_1
+	const EVENT_BEAT_CERULEAN_GYM_TRAINER_2      ; New trainer added by G-Dubs
 	const_skip 2
 	const EVENT_GOT_TM11
 	const EVENT_BEAT_MISTY

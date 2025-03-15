@@ -1277,19 +1277,19 @@ PoliwagEvosMoves:
 	db 1, SPLASH
 	db 3, BUBBLE
 	db 6, POUND
-	db 9, FIN_SLAP
-	db 12, MUD-SLAP
-	db 15, WATER_GON
-	db 18, MUD_SHOT 
+   ;db 9, FIN_SLAP
+   ;db 12, MUD-SLAP
+	db 15, WATER_GUN
+   ;db 18, MUD_SHOT 
 	db 21, HYPNOSIS 
 	db 24, BUBBLEBEAM 
 	db 27, DOUBLESLAP
-	db 30, WHIRLPOOL
+   ;db 30, WHIRLPOOL
 	db 33, BODY_SLAM
-	db 36, TAIL_SLAP
-	db 39, MUD_BOMB
+   ;db 36, TAIL_SLAP
+   ;db 39, MUD_BOMB
 	db 42, TAKE_DOWN  
-	db 45, EARTH_POWER
+   ;db 45, EARTH_POWER
 	db 48, AMNESIA
 	db 51, HYDRO_PUMP
 	db 54, DOUBLE_EDGE
@@ -1941,18 +1941,18 @@ PoliwhirlEvosMoves:
 	db 3, BUBBLE
 	db 6, POUND
 	db 9, DISABLE
-	db 12, MUD-SLAP
-	db 15, WATER_GON
-	db 18, MUD_SHOT 
+   ;db 12, MUD-SLAP
+	db 15, WATER_GUN
+   ;db 18, MUD_SHOT 
 	db 21, HYPNOSIS 
 	db 24, BUBBLEBEAM 
 	db 28, DOUBLESLAP
-	db 32, WHIRLPOOL
-	db 36, HYPER_VOICE
+   ;db 32, WHIRLPOOL
+   ;db 36, HYPER_VOICE
 	db 40, BODY_SLAM
-	db 44, MUD_BOMB
+   ;db 44, MUD_BOMB
 	db 48, TAKE_DOWN  
-	db 52, EARTH_POWER
+   ;db 52, EARTH_POWER
 	db 56, AMNESIA
 	db 60, HYDRO_PUMP
 	db 64, DOUBLE_EDGE
@@ -1966,16 +1966,16 @@ PoliwrathEvosMoves:
 	db 3, BUBBLE
 	db 6, HEADBUTT
 	db 9, LOW_KICK
-	db 12, MUD-SLAP
-	db 15, WATER_GON
-	db 18, MUD_SHOT 
+   ;db 12, MUD-SLAP
+	db 15, WATER_GUN
+   ;db 18, MUD_SHOT 
 	db 21, HYPNOSIS 
 	db 24, BUBBLEBEAM 
 	db 28, DOUBLESLAP
 	db 32, ICE_PUNCH
 	db 36, MEGA_PUNCH
 	db 40, BODY_SLAM
-	db 44, MUD_BOMB
+   ;db 44, MUD_BOMB
 	db 48, SUBMISSION  
 	db 52, MEGA_KICK
 	db 56, MEDITATE

@@ -67,7 +67,7 @@ CeruleanGymReceiveTM11:
 	set BIT_CASCADEBADGE, [hl]
 
 	; deactivate gym trainers
-	SetEvents EVENT_BEAT_CERULEAN_GYM_TRAINER_0, EVENT_BEAT_CERULEAN_GYM_TRAINER_1
+	SetEvents EVENT_BEAT_CERULEAN_GYM_TRAINER_0, EVENT_BEAT_CERULEAN_GYM_TRAINER_1, EVENT_BEAT_CERULEAN_GYM_TRAINER_2
 
 	jp CeruleanGymResetScripts
 
@@ -75,7 +75,8 @@ CeruleanGym_TextPointers:
 	def_text_pointers
 	dw_const CeruleanGymMistyText,                 TEXT_CERULEANGYM_MISTY
 	dw_const CeruleanGymCooltrainerFText,          TEXT_CERULEANGYM_COOLTRAINER_F
-	dw_const CeruleanGymSwimmerText,               TEXT_CERULEANGYM_SWIMMER
+	dw_const CeruleanGymSwimmer1Text,              TEXT_CERULEANGYM_SWIMMER1
+	dw_const CeruleanGymBeauty1Text,               TEXT_CERULEANGYM_BEAUTY1                        ; New trainer added by G-Dubs
 	dw_const CeruleanGymGymGuideText,              TEXT_CERULEANGYM_GYM_GUIDE
 	dw_const CeruleanGymMistyCascadeBadgeInfoText, TEXT_CERULEANGYM_MISTY_CASCADE_BADGE_INFO
 	dw_const CeruleanGymMistyReceivedTM11Text,     TEXT_CERULEANGYM_MISTY_RECEIVED_TM11
@@ -87,6 +88,8 @@ CeruleanGymTrainerHeader0:
 	trainer EVENT_BEAT_CERULEAN_GYM_TRAINER_0, 3, CeruleanGymBattleText1, CeruleanGymEndBattleText1, CeruleanGymAfterBattleText1
 CeruleanGymTrainerHeader1:
 	trainer EVENT_BEAT_CERULEAN_GYM_TRAINER_1, 3, CeruleanGymBattleText2, CeruleanGymEndBattleText2, CeruleanGymAfterBattleText2
+CeruleanGymTrainerHeader2:
+	trainer EVENT_BEAT_CERULEAN_GYM_TRAINER_2, 1, CeruleanGymBattleText3, CeruleanGymEndBattleText3, CeruleanGymAfterBattleText3
 	db -1 ; end
 
 CeruleanGymMistyText:
@@ -167,7 +170,7 @@ CeruleanGymAfterBattleText1:
 	text_far _CeruleanGymAfterBattleText1
 	text_end
 
-CeruleanGymSwimmerText:
+CeruleanGymSwimmer1Text:
 	text_asm
 	ld hl, CeruleanGymTrainerHeader1
 	call TalkToTrainer
@@ -183,6 +186,24 @@ CeruleanGymEndBattleText2:
 
 CeruleanGymAfterBattleText2:
 	text_far _CeruleanGymAfterBattleText2
+	text_end
+
+CeruleanGymBeauty1Text:
+	text_asm
+	ld hl, CeruleanGymTrainerHeader2
+	call TalkToTrainer
+	jp TextScriptEnd
+
+CeruleanGymBattleText3:
+	text_far _CeruleanGymBattleText3
+	text_end
+
+CeruleanGymEndBattleText3:
+	text_far _CeruleanGymEndBattleText3
+	text_end
+
+CeruleanGymAfterBattleText3:
+	text_far _CeruleanGymAfterBattleText3
 	text_end
 
 CeruleanGymGymGuideText:

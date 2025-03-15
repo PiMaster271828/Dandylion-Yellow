@@ -95,8 +95,9 @@ _CeruleanGymBattleText2::
 	done
 
 _CeruleanGymEndBattleText2::
-	text "That"
-	line "can't be!"
+	text "Gah!"
+	line "Guess I sank"
+	cont "instead of swam..."
 	prompt
 
 _CeruleanGymAfterBattleText2::
@@ -106,6 +107,95 @@ _CeruleanGymAfterBattleText2::
 	para "She won't lose to"
 	line "someone like you!"
 	done
+
+_CeruleanGymBattleText3::                   ; New trainer added by G-Dubs
+	text "Did you know Misty"
+	line "is like a real-life"
+	cont "mermaid? Elegant,"
+    cont "powerful, and"
+    cont "totally unbeatable!"
+	cont "I bet you can't"
+	cont "even handle my"
+	cont "waves!"
+	done
+
+_CeruleanGymEndBattleText3::
+	text "Ugh,"
+	line "now my makeup's"
+	cont "running... I guess"
+	cont "even mermaids can"
+	cont "have an off day..."
+	prompt
+
+_CeruleanGymAfterBattleText3::
+	text "Misty's the true"
+	line "star of this Gym!"
+	cont "If you think"
+	cont "beating me was"
+	cont "tough, just wait"
+	cont "until you face her!"
+	done
+
+/*
+_CeruleanGymBattleText4::                   ; New trainer added by G-Dubs
+	text "Oh, you think you"
+	line "can just splash in"
+	cont "here and challenge"
+    cont "Misty? Let's see"
+    cont "if you can even"
+	cont "get past me first!"
+	done
+
+_CeruleanGymEndBattleText4::
+	text "Ugh,"
+	line "now my makeup's"
+	cont "running... Maybe I"
+	cont "should have used"
+	cont "WATER GUN instead!"
+	prompt
+
+_CeruleanGymAfterBattleText4::
+	text "Misty's not just a"
+	line "pretty face, she's"
+	cont "got serious skill!"
+	cont "Hope you're ready"
+	cont "for a real wave"
+	cont "of trouble!"
+	done
+*/
+/*
+_CeruleanGymBattleText5::                   ; New trainer added by G-Dubs
+	text "Welcome to"
+	line "Cerulean's Water"
+	cont "Stage! Misty is"
+    cont "the star in the"
+    cont "Misty Mermaid"
+	cont "show, and I'm her"
+	cont "opening act."
+	cont "Let's see if you"
+	cont "can swim with the"
+	cont "best, like a"
+	cont "real-life mermaid!"
+	done
+
+_CeruleanGymEndBattleText5::
+	text "Oh-No!"
+	line "My act ended up"
+	cont "sinking... Maybe I"
+	cont "should have used"
+	cont "WATER GUN instead!"
+	prompt
+
+_CeruleanGymAfterBattleText5::
+	text "Misty is like a"
+	line "mermaid princess,"
+	cont "and I'm just one"
+	cont "of her loyal fans!"
+	cont "But don't think"
+	cont "that means she'll"
+	cont "go easy on you!"
+	done
+*/
 
 _CeruleanGymGymGuideChampInMakingText::
 	text "Yo! Champ in"

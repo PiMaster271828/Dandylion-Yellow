@@ -385,7 +385,7 @@ FisherData:
 
 SwimmerData:
 ; Cerulean Gym
-	db 16, HORSEA, SHELLDER, 0			; Swimmer Team 1
+	db 16, HORSEA, SHELLDER, 0			                                                           ; Swimmer 1
 ; Route 19
 	db 30, TENTACOOL, SHELLDER, 0			; Swimmer Team 2
 	db 29, GOLDEEN, HORSEA, STARYU, 0		; Swimmer Team 3
@@ -432,10 +432,16 @@ GamblerData:
 	db 24, GROWLITHE, VULPIX, 0			; Gambler Team 7
 
 BeautyData:
+/*	
 ; Celadon Gym
-	db 21, ODDISH, BELLSPROUT, ODDISH, BELLSPROUT, 0	; Beauty Team 1
-	db 24, BELLSPROUT, BELLSPROUT, 0		; Beauty Team 2
-	db 26, EXEGGCUTE, 0					; Beauty Team 3
+	db 21, ODDISH, BELLSPROUT, ODDISH, BELLSPROUT, 0	                                           ; Beauty 1
+	db 24, BELLSPROUT, BELLSPROUT, 0		                                                       ; Beauty 2
+	db 26, EXEGGCUTE, 0					                                                           ; Beauty 3
+*/
+; Cerulean Gym (Formerly Celadon Gym)
+	db 17, PSYDUCK, POLIWAG, 0	                                                                   ; Beauty 1               ; Party and level changed by G-Dubs
+	db 24, TENTACOOL, KRABBY, 0		                                                               ; Beauty 2               ; Party and level changed by G-Dubs
+	db 18, SQUIRTLE, WARTORTLE, 0					                                               ; Beauty 3               ; Party and level changed by G-Dubs
 ; Route 13
 	db 27, RATTATA, VULPIX, RATTATA, 0	; Beauty Team 4
 	db 29, CLEFAIRY, MEOWTH, 0			; Beauty Team 5
