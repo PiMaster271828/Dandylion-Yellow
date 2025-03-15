@@ -109,11 +109,14 @@ _CeruleanGymAfterBattleText2::
 	done
 
 _CeruleanGymBattleText3::                   ; New trainer added by G-Dubs
-	text "Did you know Misty"
-	line "is like a real-life"
-	cont "mermaid? Elegant,"
-    cont "powerful, and"
-    cont "totally unbeatable!"
+	text "Did you know"
+	line "Misty is like a"
+	cont "real-life"
+    cont "mermaid?" 
+	cont "Strong, elegant,"
+    cont "serene, fierce,"
+	cont "and totally"
+	cont "unbeatable!"
 	cont "I bet you can't"
 	cont "even handle my"
 	cont "waves!"
@@ -122,60 +125,70 @@ _CeruleanGymBattleText3::                   ; New trainer added by G-Dubs
 _CeruleanGymEndBattleText3::
 	text "Ugh,"
 	line "now my makeup's"
-	cont "running... I guess"
-	cont "even mermaids can"
-	cont "have an off day..."
+	cont "running... I"
+	cont "guess even"
+	cont "mermaids can" 
+	cont "have an off day."
 	prompt
 
 _CeruleanGymAfterBattleText3::
-	text "Misty's the true"
-	line "star of this Gym!"
-	cont "If you think"
-	cont "beating me was"
-	cont "tough, just wait"
-	cont "until you face her!"
+	text "Everything I said"
+	line "about Misty is"
+	cont "totally true!"
+	cont "I've even heard"
+	cont "someone say she"
+	cont "has something"
+	cont "called"
+	cont "SERENE GRACE!"
+	
+	para "Misty's the true"
+	line "star of this"
+	cont "Gym! If you"
+	cont "thought beating"
+	cont "me was tough,"
+	cont "just wait until"
+	cont "you face her!"
 	done
 
-/*
 _CeruleanGymBattleText4::                   ; New trainer added by G-Dubs
 	text "Oh, you think you"
-	line "can just splash in"
-	cont "here and challenge"
-    cont "Misty? Let's see"
-    cont "if you can even"
-	cont "get past me first!"
+	line "can just splash"
+	cont "in here and"
+    cont "challenge Misty?"
+    cont "Let's see if you" 
+	cont "can even get past" 
+	cont "me first!"
 	done
 
 _CeruleanGymEndBattleText4::
-	text "Ugh,"
-	line "now my makeup's"
-	cont "running... Maybe I"
-	cont "should have used"
-	cont "WATER GUN instead!"
+	text "Ohh!"
+	line "I got swept away"
+	cont "already..." 
 	prompt
 
 _CeruleanGymAfterBattleText4::
-	text "Misty's not just a"
-	line "pretty face, she's"
-	cont "got serious skill!"
-	cont "Hope you're ready"
-	cont "for a real wave"
-	cont "of trouble!"
+	text "Misty's not just"
+	line "a pretty face,"
+	cont "she's got serious"
+	cont "skill! Hope"
+	cont "you're ready for"
+	cont "a real wave of" 
+	cont "trouble!"
 	done
-*/
-/*
+
 _CeruleanGymBattleText5::                   ; New trainer added by G-Dubs
 	text "Welcome to"
 	line "Cerulean's Water"
 	cont "Stage! Misty is"
     cont "the star in the"
     cont "Misty Mermaid"
-	cont "show, and I'm her"
-	cont "opening act."
+	cont "show, and I'm"
+	cont "her opening act."
 	cont "Let's see if you"
-	cont "can swim with the"
-	cont "best, like a"
-	cont "real-life mermaid!"
+	cont "can swim with"
+	cont "the best, like"
+	cont "a real-life" 
+	cont "mermaid!"
 	done
 
 _CeruleanGymEndBattleText5::
@@ -195,7 +208,76 @@ _CeruleanGymAfterBattleText5::
 	cont "that means she'll"
 	cont "go easy on you!"
 	done
-*/
+
+_CeruleanGymBattleText6::                   ; New trainer added by G-Dubs
+    text "I'm not just some"
+    line "random angler. I" 
+	cont "help the Misty"
+	cont "Mermaid show run"
+	cont "smoothly!"
+	
+	para "Caught all my"
+	line "#MON back at"
+	cont "the famous LAKE"
+	cont "OF RAGE. Think"
+	cont "you can handle" 
+	cont "em?"
+	done
+
+_CeruleanGymEndBattleText6::
+    text "Blub-"
+	line "blub... Guess"
+	cont "I'm the one"
+	cont "floundering now!"
+	prompt
+
+_CeruleanGymAfterBattleText6::
+    text "That LAKE OF"
+	line "RAGE is something"
+	cont "else... The"
+	cont "water's wild, the"
+	cont "Magikarp are HUGE,"
+	cont "and if you're"
+	cont "lucky, you might"
+	cont "just see a real"
+	cont "legend lurking"
+	cont "beneath the" 
+	cont "surface!"
+
+	para "It has some of"
+	line "the strongest"
+	cont "WATER type"
+	cont "#MON from"
+	cont "JOHTO region!"
+	done
+
+_CeruleanGymBattleText7::                   ; New trainer added by G-Dubs
+    text "Misty's like a"
+	line "mermaid..."
+	cont "So graceful,"
+    cont "but don't let" 
+	cont "that fool you!"
+	cont "She'll wash away"
+	cont "any challengers"
+	cont "like high tide!"
+	cont "Think you can"
+	cont "handle it?"
+	done
+
+_CeruleanGymEndBattleText7::
+    text "Gah!"
+	line "I got washed away"
+	cont "instead..." 
+    prompt
+
+_CeruleanGymAfterBattleText7::
+    text "Misty's gonna put" 
+	line "on a show you"
+	cont "won't forget!"
+	cont "Too bad for you,"
+	cont "it's gonna end"
+	cont "with a big splash!"
+	done
 
 _CeruleanGymGymGuideChampInMakingText::
 	text "Yo! Champ in"

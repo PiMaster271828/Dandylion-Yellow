@@ -67,16 +67,20 @@ CeruleanGymReceiveTM11:
 	set BIT_CASCADEBADGE, [hl]
 
 	; deactivate gym trainers
-	SetEvents EVENT_BEAT_CERULEAN_GYM_TRAINER_0, EVENT_BEAT_CERULEAN_GYM_TRAINER_1, EVENT_BEAT_CERULEAN_GYM_TRAINER_2
+	SetEvents EVENT_BEAT_CERULEAN_GYM_TRAINER_0, EVENT_BEAT_CERULEAN_GYM_TRAINER_1, EVENT_BEAT_CERULEAN_GYM_TRAINER_2, EVENT_BEAT_CERULEAN_GYM_TRAINER_3, EVENT_BEAT_CERULEAN_GYM_TRAINER_4, EVENT_BEAT_CERULEAN_GYM_TRAINER_5, EVENT_BEAT_CERULEAN_GYM_TRAINER_6 
 
 	jp CeruleanGymResetScripts
 
 CeruleanGym_TextPointers:
 	def_text_pointers
 	dw_const CeruleanGymMistyText,                 TEXT_CERULEANGYM_MISTY
-	dw_const CeruleanGymCooltrainerFText,          TEXT_CERULEANGYM_COOLTRAINER_F
+	dw_const CeruleanGymCooltrainerF1Text,         TEXT_CERULEANGYM_COOLTRAINER_F1
 	dw_const CeruleanGymSwimmer1Text,              TEXT_CERULEANGYM_SWIMMER1
 	dw_const CeruleanGymBeauty1Text,               TEXT_CERULEANGYM_BEAUTY1                        ; New trainer added by G-Dubs
+	dw_const CeruleanGymBeauty2Text,               TEXT_CERULEANGYM_BEAUTY2                        ; New trainer added by G-Dubs
+	dw_const CeruleanGymBeauty3Text,               TEXT_CERULEANGYM_BEAUTY3                        ; New trainer added by G-Dubs
+	dw_const CeruleanGymFisherText,                TEXT_CERULEANGYM_FISHER                         ; New trainer added by G-Dubs
+	dw_const CeruleanGymCooltrainerF2Text,         TEXT_CERULEANGYM_COOLTRAINER_F2                 ; New trainer added by G-Dubs
 	dw_const CeruleanGymGymGuideText,              TEXT_CERULEANGYM_GYM_GUIDE
 	dw_const CeruleanGymMistyCascadeBadgeInfoText, TEXT_CERULEANGYM_MISTY_CASCADE_BADGE_INFO
 	dw_const CeruleanGymMistyReceivedTM11Text,     TEXT_CERULEANGYM_MISTY_RECEIVED_TM11
@@ -90,6 +94,14 @@ CeruleanGymTrainerHeader1:
 	trainer EVENT_BEAT_CERULEAN_GYM_TRAINER_1, 3, CeruleanGymBattleText2, CeruleanGymEndBattleText2, CeruleanGymAfterBattleText2
 CeruleanGymTrainerHeader2:
 	trainer EVENT_BEAT_CERULEAN_GYM_TRAINER_2, 1, CeruleanGymBattleText3, CeruleanGymEndBattleText3, CeruleanGymAfterBattleText3
+CeruleanGymTrainerHeader3:
+	trainer EVENT_BEAT_CERULEAN_GYM_TRAINER_3, 1, CeruleanGymBattleText4, CeruleanGymEndBattleText4, CeruleanGymAfterBattleText4
+CeruleanGymTrainerHeader4:
+	trainer EVENT_BEAT_CERULEAN_GYM_TRAINER_4, 1, CeruleanGymBattleText5, CeruleanGymEndBattleText5, CeruleanGymAfterBattleText5
+CeruleanGymTrainerHeader5:
+	trainer EVENT_BEAT_CERULEAN_GYM_TRAINER_5, 1, CeruleanGymBattleText6, CeruleanGymEndBattleText6, CeruleanGymAfterBattleText6
+CeruleanGymTrainerHeader6:
+	trainer EVENT_BEAT_CERULEAN_GYM_TRAINER_6, 1, CeruleanGymBattleText7, CeruleanGymEndBattleText7, CeruleanGymAfterBattleText7
 	db -1 ; end
 
 CeruleanGymMistyText:
@@ -152,7 +164,7 @@ CeruleanGymMistyReceivedCascadeBadgeText:
 	text_far _CeruleanGymMistyReceivedCascadeBadgeText
 	text_end
 
-CeruleanGymCooltrainerFText:
+CeruleanGymCooltrainerF1Text:
 	text_asm
 	ld hl, CeruleanGymTrainerHeader0
 	call TalkToTrainer
@@ -204,6 +216,78 @@ CeruleanGymEndBattleText3:
 
 CeruleanGymAfterBattleText3:
 	text_far _CeruleanGymAfterBattleText3
+	text_end
+
+CeruleanGymBeauty2Text:
+	text_asm
+	ld hl, CeruleanGymTrainerHeader3
+	call TalkToTrainer
+	jp TextScriptEnd
+
+CeruleanGymBattleText4:
+	text_far _CeruleanGymBattleText4
+	text_end
+
+CeruleanGymEndBattleText4:
+	text_far _CeruleanGymEndBattleText4
+	text_end
+
+CeruleanGymAfterBattleText4:
+	text_far _CeruleanGymAfterBattleText4
+	text_end
+
+CeruleanGymBeauty3Text:
+	text_asm
+	ld hl, CeruleanGymTrainerHeader4
+	call TalkToTrainer
+	jp TextScriptEnd
+
+CeruleanGymBattleText5:
+	text_far _CeruleanGymBattleText5
+	text_end
+
+CeruleanGymEndBattleText5:
+	text_far _CeruleanGymEndBattleText5
+	text_end
+
+CeruleanGymAfterBattleText5:
+	text_far _CeruleanGymAfterBattleText5
+	text_end
+
+CeruleanGymFisherText:
+	text_asm
+	ld hl, CeruleanGymTrainerHeader5
+	call TalkToTrainer
+	jp TextScriptEnd
+
+CeruleanGymBattleText6:
+	text_far _CeruleanGymBattleText6
+	text_end
+
+CeruleanGymEndBattleText6:
+	text_far _CeruleanGymEndBattleText6
+	text_end
+
+CeruleanGymAfterBattleText6:
+	text_far _CeruleanGymAfterBattleText6
+	text_end
+
+CeruleanGymCooltrainerF2Text:
+	text_asm
+	ld hl, CeruleanGymTrainerHeader6
+	call TalkToTrainer
+	jp TextScriptEnd
+
+CeruleanGymBattleText7:
+	text_far _CeruleanGymBattleText7
+	text_end
+
+CeruleanGymEndBattleText7:
+	text_far _CeruleanGymEndBattleText7
+	text_end
+
+CeruleanGymAfterBattleText7:
+	text_far _CeruleanGymAfterBattleText7
 	text_end
 
 CeruleanGymGymGuideText:

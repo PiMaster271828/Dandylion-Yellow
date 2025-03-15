@@ -242,10 +242,13 @@ JrTrainerFData:
 	db 30, TENTACOOL, HORSEA, SEEL, 0                                                              ; Jr. Trainer ♀ 24       ; Added to the Route 20 section not in order due to poor coding
 ; Route 6 (Again)
 	db 20, CUBONE, 0                                                                               ; Jr. Trainer ♀ 25       ; Giselle from the anime, exclusive to Yellow (Poor coding)
-/*
+
 ; Route 14 (New Trainer)
     db 29, PIKACHU, RAICHU, 0                                                                      ; Jr. Trainer ♀ 26       ; Girl with Pikachu & Raichu from Red/Blue added by G-Dubs
-*/
+
+; Cerulean Gym (Again)
+    db 17, SLOWPOKE, SEEL, 0                                                                       ; Jr. Trainer ♀ 27       ; New trainer added by G-Dubs
+
 PokemaniacData:
 ; Route 10
 	db 30, RHYHORN, LICKITUNG, 0                                                                   ; Pokémaniac 1
@@ -382,6 +385,8 @@ FisherData:
 	db 33, SEAKING, GOLDEEN, 0			; Fisher Team 10
 ; Route 12
 	db 24, MAGIKARP, MAGIKARP, 0			; Fisher Team 11
+; Cerulean Gym
+    db 15, MAGIKARP, GYARADOS, MAGIKARP, 0                                                         ; Fisher 12              ; New trainer added by G-Dubs
 
 SwimmerData:
 ; Cerulean Gym
@@ -440,7 +445,7 @@ BeautyData:
 */
 ; Cerulean Gym (Formerly Celadon Gym)
 	db 17, PSYDUCK, POLIWAG, 0	                                                                   ; Beauty 1               ; Party and level changed by G-Dubs
-	db 24, TENTACOOL, KRABBY, 0		                                                               ; Beauty 2               ; Party and level changed by G-Dubs
+	db 16, TENTACOOL, KRABBY, 0		                                                               ; Beauty 2               ; Party and level changed by G-Dubs
 	db 18, SQUIRTLE, WARTORTLE, 0					                                               ; Beauty 3               ; Party and level changed by G-Dubs
 ; Route 13
 	db 27, RATTATA, VULPIX, RATTATA, 0	; Beauty Team 4
