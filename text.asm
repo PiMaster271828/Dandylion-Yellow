@@ -28,11 +28,12 @@ INCLUDE "text/SilphCo8F.asm"
 INCLUDE "text/SilphCo9F.asm"
 INCLUDE "text/SilphCo10F.asm"
 
-SECTION "Text 1.5", ROMX
+SECTION "Text 1.5", ROMX                         ; Made a new Text Bank and added these files because they were too big for their original Text Bank
 
 INCLUDE "text/MtMoon1F.asm"
 INCLUDE "text/MtMoonB1F.asm"
 INCLUDE "text/MtMoonB2F.asm"
+INCLUDE "text/CeruleanGym.asm"
 
 SECTION "Text 2", ROMX
 
@@ -156,7 +157,7 @@ INCLUDE "text/PewterPokecenter.asm"
 INCLUDE "text/CeruleanTrashedHouse.asm"
 INCLUDE "text/CeruleanMelaniesHouse.asm"
 INCLUDE "text/CeruleanPokecenter.asm"
-INCLUDE "text/CeruleanGym.asm"
+;INCLUDE "text/CeruleanGym.asm"
 INCLUDE "text/BikeShop.asm"
 INCLUDE "text/CeruleanMart.asm"
 INCLUDE "text/CeruleanBadgeHouse.asm"
