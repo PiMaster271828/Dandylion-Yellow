@@ -644,12 +644,27 @@ BlastoiseEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 8, BUBBLE
-	db 15, WATER_GUN
-	db 24, BITE
-	db 31, WITHDRAW
-	db 42, SKULL_BASH
-	db 52, HYDRO_PUMP
+	db 1, TACKLE
+	db 4, TAIL_WHIP
+	db 7, BUBBLE
+	db 10, WITHDRAW
+	db 13, WATER_GUN
+   ;db 17, GNAW
+	db 21, DEFENSE_CURL
+	db 25, BITE
+	db 29, BUBBLEBEAM
+	db 33, HEADBUTT
+   ;db 36, SNIPE_SHOT
+   ;db 39, ROCK_BLAST
+   ;db 41, WHIRLPOOL
+	db 43, HARDEN
+   ;db 45, CRUNCH
+   ;db 50, RAZOR_SHELL
+	db 55, SKULL_BASH
+	db 60, HYDRO_PUMP
+   ;db 65, FLASH_CANNON
+   ;db 70, HEAD_SMASH
+   ;db 75, HYDRO_CANNON
 	db 0
 
 PinsirEvosMoves:
@@ -1259,12 +1274,25 @@ PoliwagEvosMoves:
 	db EVOLVE_LEVEL, 25, POLIWHIRL
 	db 0
 ; Learnset
-	db 16, HYPNOSIS
-	db 19, WATER_GUN
-	db 25, DOUBLESLAP
-	db 31, BODY_SLAM
-	db 38, AMNESIA
-	db 45, HYDRO_PUMP
+	db 1, SPLASH
+	db 3, BUBBLE
+	db 6, POUND
+	db 9, FIN_SLAP
+	db 12, MUD-SLAP
+	db 15, WATER_GON
+	db 18, MUD_SHOT 
+	db 21, HYPNOSIS 
+	db 24, BUBBLEBEAM 
+	db 27, DOUBLESLAP
+	db 30, WHIRLPOOL
+	db 33, BODY_SLAM
+	db 36, TAIL_SLAP
+	db 39, MUD_BOMB
+	db 42, TAKE_DOWN  
+	db 45, EARTH_POWER
+	db 48, AMNESIA
+	db 51, HYDRO_PUMP
+	db 54, DOUBLE_EDGE
 	db 0
 
 JynxEvosMoves:
@@ -1337,11 +1365,21 @@ KrabbyEvosMoves:
 	db EVOLVE_LEVEL, 28, KINGLER
 	db 0
 ; Learnset
-	db 20, VICEGRIP
-	db 25, GUILLOTINE
-	db 30, STOMP
-	db 35, CRABHAMMER
-	db 40, HARDEN
+	db 1, BUBBLE
+	db 2, LEER
+   ;db 3, MUD-SLAP
+   ;db 4, METAL_CLAW
+	db 8, WATER_GUN
+   ;db 12, MUD_SHOT
+	db 16, HARDEN
+    db 20, BUBBLEBEAM 
+	db 24, VICEGRIP
+	db 29, STOMP  
+   ;db 32, RAZOR_SHELL
+    db 36, SLAM
+    db 40, SWORDS_DANCE
+	db 44, CRABHAMMER
+	db 48, GUILLOTINE
 	db 0
 
 MissingNo4FEvosMoves:
@@ -1899,20 +1937,50 @@ PoliwhirlEvosMoves:
 	db EVOLVE_ITEM, WATER_STONE, 1, POLIWRATH
 	db 0
 ; Learnset
-	db 16, HYPNOSIS
-	db 19, WATER_GUN
-	db 26, DOUBLESLAP
-	db 33, BODY_SLAM
-	db 41, AMNESIA
-	db 49, HYDRO_PUMP
+    db 1, TACKLE
+	db 3, BUBBLE
+	db 6, POUND
+	db 9, DISABLE
+	db 12, MUD-SLAP
+	db 15, WATER_GON
+	db 18, MUD_SHOT 
+	db 21, HYPNOSIS 
+	db 24, BUBBLEBEAM 
+	db 28, DOUBLESLAP
+	db 32, WHIRLPOOL
+	db 36, HYPER_VOICE
+	db 40, BODY_SLAM
+	db 44, MUD_BOMB
+	db 48, TAKE_DOWN  
+	db 52, EARTH_POWER
+	db 56, AMNESIA
+	db 60, HYDRO_PUMP
+	db 64, DOUBLE_EDGE
 	db 0
 
 PoliwrathEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 16, HYPNOSIS
-	db 19, WATER_GUN
+	db 1, POUND
+	db 3, BUBBLE
+	db 6, HEADBUTT
+	db 9, LOW_KICK
+	db 12, MUD-SLAP
+	db 15, WATER_GON
+	db 18, MUD_SHOT 
+	db 21, HYPNOSIS 
+	db 24, BUBBLEBEAM 
+	db 28, DOUBLESLAP
+	db 32, ICE_PUNCH
+	db 36, MEGA_PUNCH
+	db 40, BODY_SLAM
+	db 44, MUD_BOMB
+	db 48, SUBMISSION  
+	db 52, MEGA_KICK
+	db 56, MEDITATE
+	db 60, HYDRO_PUMP
+	db 64, DOUBLE_EDGE
 	db 0
 
 WeedleEvosMoves:
@@ -2293,11 +2361,22 @@ KinglerEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 20, VICEGRIP
-	db 25, GUILLOTINE
-	db 34, STOMP
-	db 42, CRABHAMMER
-	db 49, HARDEN
+	db 1, BUBBLE
+	db 2, LEER
+   ;db 3, MUD-SLAP
+   ;db 4, METAL_CLAW
+	db 8, WATER_GUN
+   ;db 12, MUD_SHOT
+	db 16, HARDEN
+    db 20, BUBBLEBEAM 
+	db 24, VICEGRIP
+	db 28, CLAMP
+	db 32, STOMP  
+   ;db 36, RAZOR_SHELL
+    db 42, SLAM
+    db 48, SWORDS_DANCE
+	db 54, CRABHAMMER
+	db 60, GUILLOTINE
 	db 0
 
 CloysterEvosMoves:
@@ -2855,12 +2934,21 @@ SquirtleEvosMoves:
 	db EVOLVE_LEVEL, 16, WARTORTLE
 	db 0
 ; Learnset
-	db 8, BUBBLE
-	db 15, WATER_GUN
+	db 1, TACKLE
+	db 4, TAIL_WHIP
+	db 7, BUBBLE
+	db 10, WITHDRAW
+	db 13, WATER_GUN
+   ;db 16, GNAW
+	db 19, DEFENSE_CURL
 	db 22, BITE
-	db 28, WITHDRAW
-	db 35, SKULL_BASH
-	db 42, HYDRO_PUMP
+	db 25, BUBBLEBEAM
+	db 28, HEADBUTT
+   ;db 31, WHIRLPOOL
+	db 34, HARDEN
+   ;db 37, RAZOR_SHELL
+	db 40, SKULL_BASH
+	db 43, HYDRO_PUMP
 	db 0
 
 CharmeleonEvosMoves:
@@ -2881,12 +2969,21 @@ WartortleEvosMoves:
 	db EVOLVE_LEVEL, 36, BLASTOISE
 	db 0
 ; Learnset
-	db 8, BUBBLE
-	db 15, WATER_GUN
-	db 24, BITE
-	db 31, WITHDRAW
-	db 39, SKULL_BASH
-	db 47, HYDRO_PUMP
+	db 1, TACKLE
+	db 4, TAIL_WHIP
+	db 7, BUBBLE
+	db 10, WITHDRAW
+	db 13, WATER_GUN
+   ;db 17, GNAW
+	db 21, DEFENSE_CURL
+	db 25, BITE
+	db 29, BUBBLEBEAM
+	db 33, HEADBUTT
+   ;db 37, WHIRLPOOL
+	db 41, HARDEN
+   ;db 45, RAZOR_SHELL
+	db 49, SKULL_BASH
+	db 51, HYDRO_PUMP
 	db 0
 
 CharizardEvosMoves:

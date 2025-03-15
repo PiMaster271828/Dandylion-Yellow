@@ -1,7 +1,7 @@
 	db DEX_SQUIRTLE ; pokedex id
 
-	db  44,  48,  65,  43,  50
-	;   hp  atk  def  spd  spc
+	db  45,  50,  65,  45,  65 ; 335
+	;   hp  atk  def  spd  spc   tot
 
 	db WATER, WATER ; type
 	db 45 ; catch rate
@@ -17,8 +17,11 @@
 	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
 	     DOUBLE_EDGE,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
 	     SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         DIG,          \
-	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         SKULL_BASH,   \
-	     REST,         SUBSTITUTE,   SURF,         STRENGTH
+	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         METRONOME,    \
+		 SKULL_BASH,   REST,         SUBSTITUTE, /*ICE_PUNCH,    HEADBUTT,   */\
+		 SURF,         STRENGTH
+	   /*IRON_TAIL,    ICY_WIND,     MUD-SLAP,     ROCK_SMASH,   PLAY_ROUGH,   \
+	   */	 
 	; end
 
 	db 0 ; padding

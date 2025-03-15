@@ -1,7 +1,7 @@
 	db DEX_KRABBY ; pokedex id
 
-	db  30, 105,  90,  50,  25
-	;   hp  atk  def  spd  spc
+	db  30, 105,  90,  50,  25 ; 325
+	;   hp  atk  def  spd  spc   tot
 
 	db WATER, WATER ; type
 	db 225 ; catch rate
@@ -16,8 +16,11 @@
 	; tm/hm learnset
 	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
 	     BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     RAGE,         \
-	     MIMIC,        DOUBLE_TEAM,  BIDE,         REST,         SUBSTITUTE,   \
-	     CUT,          SURF,         STRENGTH
+		 DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         SKULL_BASH,   \
+		 REST,         SUBSTITUTE, /*AERIAL_ACE,   HEADBUTT,     ICY_WIND,   */\
+		 CUT,          SURF,         STRENGTH
+	   /*SHADOW_CLAW,  MUD-SLAP,     ROCK_SMASH,   ROCK_TOMB,    SPIN_SLASH,   \
+	   */
 	; end
 
 	db 0 ; padding
