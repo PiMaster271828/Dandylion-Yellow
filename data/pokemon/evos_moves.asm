@@ -532,15 +532,16 @@ GyaradosEvosMoves:
 	db 0
 ; Learnset
 	db 1, SPLASH
-	db 5, ROAR
-    db 10, RAGE
+	db 4, TACKLE
+	db 8, ROAR
+    db 12, LEER
     db 15, TACKLE	
 	db 20, BITE
-	db 22, LEER
-	db 25, DRAGON_RAGE
+   ;db 22, WHIRLPOOL 
+	db 24, DRAGON_RAGE
 	db 28, WATERFALL
    ;db 32, CRUNCH
-	db 36, SLAM
+	db 36, RAGE
 	db 40, HYDRO_PUMP
 	db 48, THRASH	
 	db 52, HYPER_BEAM
