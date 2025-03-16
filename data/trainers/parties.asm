@@ -699,18 +699,20 @@ CooltrainerMData:
 
 CooltrainerFData:
 ; Celadon Gym
-	db 24, WEEPINBELL, GLOOM, IVYSAUR, 0		; CooltrainerF Team 1
+	db 24, WEEPINBELL, GLOOM, IVYSAUR, 0		                                                   ; Cooltrainer ♀ 1
 ; Victory Road 3F
-	db 43, BELLSPROUT, WEEPINBELL, VICTREEBEL, 0	; CooltrainerF Team 2
-	db 43, PARASECT, DEWGONG, CHANSEY, 0		; CooltrainerF Team 3
+	db 43, BELLSPROUT, WEEPINBELL, VICTREEBEL, 0	                                               ; Cooltrainer ♀ 2
+	db 43, PARASECT, DEWGONG, CHANSEY, 0		                                                   ; Cooltrainer ♀ 3
 ; Unused
-	db 46, VILEPLUME, BUTTERFREE, 0			; CooltrainerF Team 4
+	db 46, VILEPLUME, BUTTERFREE, 0			                                                       ; Cooltrainer ♀ 4        ; (Unused)
 ; Victory Road 1F
-	db 44, PERSIAN, NINETALES, 0			; CooltrainerF Team 5
+	db 44, PERSIAN, NINETALES, 0			                                                       ; Cooltrainer ♀ 5
 ; Unused
-	db 45, IVYSAUR, VENUSAUR, 0			; CooltrainerF Team 6
-	db 45, NIDORINA, NIDOQUEEN, 0			; CooltrainerF Team 7
-	db 43, PERSIAN, NINETALES, RAICHU, 0		; CooltrainerF Team 8
+	db 45, IVYSAUR, VENUSAUR, 0			                                                           ; Cooltrainer ♀ 6        ; (Unused)
+	db 45, NIDORINA, NIDOQUEEN, 0			                                                       ; Cooltrainer ♀ 7        ; (Unused)
+	db 43, PERSIAN, NINETALES, RAICHU, 0		                                                   ; Cooltrainer ♀ 8        ; (Unused)
+; Route 24
+    db 15, LAPRAS, 0                                                                               ; Cooltrainer ♀ 9        ; New trainer added by G-Dubs 
 
 BrunoData:
     db $FF, 57, ONIX, 56, PRIMEAPE, 55, HITMONCHAN, 55, HITMONLEE, 58, POLIWRATH, 60, MACHAMP, 0   ; Bruno 1                ; Levels changed and Poliwrath added by G-Dubs
