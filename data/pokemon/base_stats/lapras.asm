@@ -1,7 +1,7 @@
 	db DEX_LAPRAS ; pokedex id
 
-	db 130,  85,  80,  60,  95
-	;   hp  atk  def  spd  spc
+	db 150,  85,  80,  60,  95 ; 555
+	;   hp  atk  def  spd  spc   tot
 
 	db WATER, ICE ; type
 	db 45 ; catch rate
@@ -17,9 +17,12 @@
 	tmhm TOXIC,        HORN_DRILL,   BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
 	     BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   \
 	     RAGE,         SOLARBEAM,    DRAGON_RAGE,  THUNDERBOLT,  THUNDER,      \
-	     PSYCHIC_M,    MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
-	     SKULL_BASH,   REST,         PSYWAVE,      SUBSTITUTE,   SURF,         \
-	     STRENGTH
+	     EARTHQUAKE,   FISSURE,      PSYCHIC_M,    TELEPORT,     MIMIC,        \
+		 DOUBLE_TEAM,  REFLECT,      BIDE,         SWIFT,        SKULL_BASH,   \
+      /*LIGHT_SCREEN,*/ REST,        THUNDER_WAVE, PSYWAVE,      SUBSTITUTE,   \
+		 SURF,         STRENGTH
+	   /*GIGA_IMPACT,  HYPER_VOICE,  HEADBUTT,     ICY_WIND,     ALURINGVOICE, \
+		 MIRROR_COAT,  ROCK_SMASH, */
 	; end
 
 	db 0 ; padding

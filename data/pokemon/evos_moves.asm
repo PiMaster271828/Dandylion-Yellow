@@ -503,12 +503,23 @@ LaprasEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 16, SING
-	db 20, MIST
-	db 25, BODY_SLAM
-	db 31, CONFUSE_RAY
-	db 38, ICE_BEAM
-	db 46, HYDRO_PUMP
+	db 1, WATER_GUN
+	db 2, GROWL
+	db 4, MIST 
+   ;db 8, FIN_SLAP
+   ;db 12, POWDER_SNOW
+	db 16, CONFUSE_RAY
+	db 20, SING
+	db 24, BUBBLEBEAM 
+	db 27, BODY_SLAM
+	db 31, AURORA_BEAM
+   ;db 38, DRAGONBREATH
+	db 42, ICE_BEAM
+	db 46, SCREECH
+	db 50, HYDRO_PUMP
+	db 55, BLIZZARD
+	db 60, HYPER_BEAM
+   ;db 65, SHEER_COLD
 	db 0
 
 ArcanineEvosMoves:
