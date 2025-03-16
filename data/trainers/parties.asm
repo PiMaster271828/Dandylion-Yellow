@@ -242,10 +242,8 @@ JrTrainerFData:
 	db 30, TENTACOOL, HORSEA, SEEL, 0                                                              ; Jr. Trainer ♀ 24       ; Added to the Route 20 section not in order due to poor coding
 ; Route 6 (Again)
 	db 20, CUBONE, 0                                                                               ; Jr. Trainer ♀ 25       ; Giselle from the anime, exclusive to Yellow (Poor coding)
-
 ; Route 14 (New Trainer)
     db 29, PIKACHU, RAICHU, 0                                                                      ; Jr. Trainer ♀ 26       ; Girl with Pikachu & Raichu from Red/Blue added by G-Dubs
-
 ; Cerulean Gym (Again)
     db 17, SLOWPOKE, SEEL, 0                                                                       ; Jr. Trainer ♀ 27       ; New trainer added by G-Dubs
 
