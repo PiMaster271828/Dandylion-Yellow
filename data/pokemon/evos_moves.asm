@@ -643,13 +643,14 @@ StaryuEvosMoves:
 	db 12, HARDEN
 	db 16, MINIMIZE
 	db 20, SWIFT
-	db 24, CONFUSE_RAY
-	db 28, BUBBLEBEAM
-	db 32, LIGHT_SCREEN
-	db 36, RECOVER
+	db 24, BUBBLEBEAM
+	db 28, CONFUSE_RAY
+   ;db 32, SIGNAL_BEAM
+	db 36, REFLECT
    ;db 40, ANCIENTPOWER
-	db 44, REFLECT
-	db 56, HYDRO_PUMP
+    db 44, RECOVER
+	db 56, LIGHT_SCREEN
+	db 60, HYDRO_PUMP
 	db 0
 
 BlastoiseEvosMoves:
@@ -1137,10 +1138,10 @@ SeelEvosMoves:
 	db 5, GROWL,
    ;db 9, FIN_SLAP
    ;db 13, POWDER_SNOW
-   ;db 17, SIGNAL_BEAM
-	db 21, BUBBLEBEAM
+	db 17, HORN_ATTACK
+    db 21, BUBBLEBEAM
    ;db 23, ICY_WIND
-	db 27, HORN_ATTACK
+   ;db 27, SIGNAL_BEAM
 	db 31, REST
 	db 33, AURORA_BEAM
 	db 39, BODY_SLAM
@@ -2143,12 +2144,13 @@ DewgongEvosMoves:
 	db 5, GROWL,
    ;db 9, FIN_SLAP
    ;db 13, POWDER_SNOW
-   ;db 17, SIGNAL_BEAM
-	db 21, BUBBLEBEAM
+	db 17, HORN_ATTACK
+    db 21, BUBBLEBEAM
    ;db 23, ICY_WIND
-	db 27, HORN_ATTACK
+   ;db 27, SIGNAL_BEAM
 	db 31, REST
 	db 33, AURORA_BEAM
+   ;db 35, TAIL_SLAP
 	db 41, BODY_SLAM
    ;db 44, WHIRLPOOL
 	db 49, TAKE_DOWN
@@ -2587,19 +2589,23 @@ StarmieEvosMoves:
 ; Learnset
 	db 1, TACKLE
 	db 4, WITHDRAW
-	db 8, CONFUSION
+	db 8, WATER_GUN
+	db 10, PSYWAVE
 	db 12, HARDEN
 	db 16, MINIMIZE
 	db 20, SWIFT
-	db 24, CONFUSE_RAY
-	db 28, PSYBEAM
-	db 32, BUBBLEBEAM
-	db 36, RECOVER
+	db 24, BUBBLEBEAM
+	db 28, CONFUSE_RAY
+	db 30, PSYBEAM
+   ;db 32, SIGNAL_BEAM
+	db 36, REFLECT
    ;db 40, ANCIENTPOWER
-	db 44, PSYCHIC_M
-	db 48, GROWTH
-	db 52, LIGHT_SCREEN
-	db 56, HYDRO_PUMP
+	db 44, RECOVER 
+	db 48, PSYCHIC_M
+	db 52, GROWTH
+	db 56, LIGHT_SCREEN
+	db 60, HYDRO_PUMP
+	db 0
 
 BulbasaurEvosMoves:
 ; Evolutions

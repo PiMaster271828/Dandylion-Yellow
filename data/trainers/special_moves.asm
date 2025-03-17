@@ -109,7 +109,7 @@ SpecialTrainerMoves:
 	  db 3, 3, GUST
 	  db 3, 4, LEECH_LIFE    
 	  db 4, 1, TACKLE         ; Brock's Vulpix
-	  db 4, 2, EMBER /*KINDLE*/
+	  db 4, 2, EMBER ; KINDLE
 	  db 4, 3, TAIL_WHIP
 	  db 4, 4, QUICK_ATTACK
 	  db 5, 1, CONSTRICT      ; Brock's Omanyte
@@ -124,13 +124,30 @@ SpecialTrainerMoves:
   ; Cerulean City Gym
 	; Misty
 	  db MISTY, 1
-	  db 1, 2, BUBBLEBEAM     ; Misty's Horsea
-	  db 2, 2, BUBBLEBEAM     ; Misty's Seel
-	  db 3, 3, TACKLE         ; Misty's Staryu
-	  db 4, 2, PECK           ; Misty's Goldeen
-      db 5, 1, WATER_GUN      ; Misty's Psyduck
-      db 5, 4, TAIL_WHIP
-	  db 6, 3, BUBBLEBEAM     ; Misty's Starmie
+	  db 1, 1, SMOKESCREEN    ; Misty's Horsea
+	  db 1, 2, BUBBLEBEAM
+	  db 1, 3, LEER ; FIN_SLAP
+      db 1, 4, WATER_GUN 
+	  db 2, 1, HEADBUTT       ; Misty's Seel
+	  db 2, 2, GROWL ; FIN_SLAP
+	  db 2, 3, HORN_ATTACK
+	  db 2, 4, BUBBLEBEAM     
+	  db 3, 1, TACKLE         ; Misty's Staryu
+      db 3, 2, HARDEN
+	  db 3, 3, WATER_GUN
+	  db 3, 4, SWIFT
+	  db 4, 1, PECK           ; Misty's Goldeen
+	  db 4, 2, TAIL_WHIP ; FIN_SLAP
+	  db 4, 3, HORN_ATTACK
+	  db 4, 4, SUPERSONIC
+      db 5, 1, HEADBUTT       ; Misty's Psyduck
+	  db 5, 2, WATER_GUN
+	  db 5, 3, DISABLE
+      db 5, 4, CONFUSION
+	  db 6, 1, SWIFT          ; Misty's Starmie 
+	  db 6, 2, WATER_GUN
+	  db 6, 3, CONFUSION
+	  db 6, 4, BUBBLEBEAM    
 	  db 0
   ; Vermillion City Gym
 	; Lt. Surge
@@ -155,8 +172,8 @@ SpecialTrainerMoves:
 	  db 2, 2, MEGA_DRAIN     ; Erika's Parasect
 	  db 3, 4, MEGA_DRAIN     ; Erika's Butterfree
 	  db 4, 1, BIND           ; Erika's Tangela
-      db 4, 2,  MEGA_DRAIN                            ; Will have Natural Gift
- 	  db 5, 2,  MEGA_DRAIN    ; Erika's Exeggutor
+      db 4, 2, MEGA_DRAIN ; NATURAL GIFT                            
+ 	  db 5, 2, MEGA_DRAIN     ; Erika's Exeggutor
 	  db 6, 2, STUN_SPORE     ; Erika's Vileplume
 	  db 6, 3, MEGA_DRAIN
       db 6, 4, PETAL_DANCE
