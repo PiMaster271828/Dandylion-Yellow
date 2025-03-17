@@ -515,17 +515,17 @@
 
 ; Route 24 events
 	const_next $540
-	const EVENT_GOT_NUGGET
-	const EVENT_BEAT_ROUTE24_ROCKET
-	const EVENT_BEAT_ROUTE_24_TRAINER_0
-	const EVENT_BEAT_ROUTE_24_TRAINER_1
-	const EVENT_BEAT_ROUTE_24_TRAINER_2
-	const EVENT_BEAT_ROUTE_24_TRAINER_3
-	const EVENT_BEAT_ROUTE_24_TRAINER_4
-	const EVENT_BEAT_ROUTE_24_TRAINER_5
-	const EVENT_BEAT_ROUTE_24_TRAINER_6          ; New trainer added by G-Dubs
-   ;const_skip
-	const EVENT_NUGGET_REWARD_AVAILABLE
+	const EVENT_GOT_NUGGET                                                          ; 540
+	const EVENT_BEAT_ROUTE24_ROCKET                                                 ; 541
+	const EVENT_BEAT_ROUTE_24_TRAINER_0                                             ; 542
+	const EVENT_BEAT_ROUTE_24_TRAINER_1                                             ; 543
+	const EVENT_BEAT_ROUTE_24_TRAINER_2                                             ; 544
+	const EVENT_BEAT_ROUTE_24_TRAINER_3                                             ; 545
+	const EVENT_BEAT_ROUTE_24_TRAINER_4                                             ; 546
+	const EVENT_BEAT_ROUTE_24_TRAINER_5                                             ; 547
+	const EVENT_BEAT_ROUTE_24_TRAINER_6          ; New trainer added by G-Dubs      ; 548
+    const_skip                                                                      ; 549
+	const EVENT_NUGGET_REWARD_AVAILABLE                                             ; 54A
 
 ; Route 25 events
 	const_next $550 - 1

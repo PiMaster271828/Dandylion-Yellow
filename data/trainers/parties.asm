@@ -159,7 +159,9 @@ LassData:
 ; Viridian Forest (Again)
 	db 6, NIDORAN_F, NIDORAN_M, 0                                                                  ; Lass 19                ; Yellow exclusive Lass in Viridian Forest (Poor coding)
 ; Route 4 (Again)
-    db $FF, 14, JIGGLYPUFF, 13, PARAS, 12, GEODUDE, 13, NIDORAN_F, 14, CLEFAIRY, 0                 ; Lass 20                ; New Trainer added by G-Dubs 
+    db $FF, 14, JIGGLYPUFF, 13, PARAS, 12, GEODUDE, 13, NIDORAN_F, 14, CLEFAIRY, 0                 ; Lass 20                ; New Trainer added by G-Dubs
+; Route 24
+    db 15, LAPRAS, 0                                                                               ; Lass 21                ; New trainer added by G-Dubs 
 
 SailorData:
 ; SS Anne Stern
@@ -547,7 +549,7 @@ BlackbeltData:
 
 Rival1Data:
 ; Oak's Lab
-	db 5, RHYHORN, RHYDON, CLEFABLE, 0						                                                           ; Rival 1 1
+	db 5, EEVEE, 0						                                                           ; Rival 1 1
 ; Route 22
     db $FF, 9, PIDGEY, 8, RATTATA, 8, SPEAROW, 9, EEVEE, 0                                         ; Rival 1 2             ; Pidgey & Rattata added by G-Dubs
    ;db $FF, 9, SPEAROW, 8, EEVEE, 0		; Rival 1 Team 2
@@ -711,47 +713,37 @@ CooltrainerFData:
 	db 45, IVYSAUR, VENUSAUR, 0			                                                           ; Cooltrainer ♀ 6        ; (Unused)
 	db 45, NIDORINA, NIDOQUEEN, 0			                                                       ; Cooltrainer ♀ 7        ; (Unused)
 	db 43, PERSIAN, NINETALES, RAICHU, 0		                                                   ; Cooltrainer ♀ 8        ; (Unused)
-; Route 24
-    db 15, LAPRAS, 0                                                                               ; Cooltrainer ♀ 9        ; New trainer added by G-Dubs 
 
 BrunoData:
     db $FF, 57, ONIX, 56, PRIMEAPE, 55, HITMONCHAN, 55, HITMONLEE, 58, POLIWRATH, 60, MACHAMP, 0   ; Bruno 1                ; Levels changed and Poliwrath added by G-Dubs
-  ; db $FF, 53, ONIX, 55, HITMONCHAN, 55, HITMONLEE, 56, ONIX, 58, MACHAMP, 0
 
 BrockData:
 ; Badge Match
 	db $FF, 12, GEODUDE, 13, KABUTO, 12, ZUBAT, 12, VULPIX, 13, OMANYTE, 14, ONIX, 0               ; Brock 1                ; Animeesque Pokémon added by G-Dubs
-  ; db $FF, 10, GEODUDE, 12, ONIX, 0
-
-MistyData:
+ 
+ MistyData:
 ; Badge Match
     db $FF, 19, HORSEA, 19, SEEL, 20, STARYU, 20, GOLDEEN, 21, PSYDUCK , 21, STARMIE, 0            ; Misty 1                ; Animeesque Pokémon added by G-Dubs	
-  ; db $FF, 18, STARYU, 21, STARMIE, 0
 
 LtSurgeData:
 ; Badge Match
     db $FF, 24, RATICATE, 26, ELECTRODE, 26, MAGNETON, 28, FEAROW, 28, ELECTABUZZ, 30, RAICHU, 0   ; Lt. Surge 1            ; Animeesque Pokémon added by G-Dubs	
-  ; db $FF, 28, RAICHU, 0
 
 ErikaData:
 ; Badge Match
 	db $FF, 34, VICTREEBEL, 33, PARASECT, 32, BUTTERFREE, 33, TANGELA, 33, EXEGGUTOR, 34, VILEPLUME, 0  ; Erika 1           ; Animeesque Pokémon added by G-Dubs	
-  ; db $FF, 30, TANGELA, 32, WEEPINBELL, 32, GLOOM, 0
 
 KogaData:
 ; Badge Match
     db $FF, 45, VENONAT, 46, GOLBAT, 47, SCYTHER, 48, ARBOK, 49, WEEZING, 50, VENOMOTH, 0          ; Koga 1                 ; Animeesque Pokémon added by G-Dubs	
-  ; db $FF, 44, VENONAT, 46, VENONAT, 48, VENONAT, 50, VENOMOTH, 0
 
 BlaineData:
 ; Badge Match
     db $FF, 48, NINETALES, 48, TAUROS, 50, RAPIDASH, 52, CHARIZARD, 54, ARCANINE, 58, MAGMAR, 0    ; Blaine 1               ; Animeesque Pokémon added by G-Dubs (Charizard will be Charizard_Y)
-  ; db $FF, 48, NINETALES, 50, RAPIDASH, 54, ARCANINE, 0
 
 SabrinaData:
 ; Badge Match
     db $FF, 44, GOLDUCK, 46, MR_MIME, 46, HAUNTER, 48, HYPNO, 48, SLOWBRO, 50, ALAKAZAM, 0         ; Sabrina 1               ; Animeesque Pokémon added by G-Dubs	
-  ; db $FF, 50, ABRA, 50, KADABRA, 50, ALAKAZAM, 0
 
 GentlemanData:
 ; SS Anne 1F Rooms
