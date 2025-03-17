@@ -43,7 +43,7 @@ ViridianCityCheckGymOpenScript:
 	cp 8
 	ret nz
 	ld a, [wXCoord]
-	cp 32
+	cp 34
 	ret nz
 	ld a, TEXT_VIRIDIANCITY_GYM_LOCKED
 	ldh [hTextID], a
