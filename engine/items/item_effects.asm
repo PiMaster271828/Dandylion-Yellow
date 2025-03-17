@@ -3177,6 +3177,8 @@ CheckMapForMon:
 	ld a, c
 	ld [de], a
 	inc de
+	inc hl ; Added two lines to improve the PokeDex Area feature 
+	ret
 .nextEntry
 	inc hl
 	inc hl
