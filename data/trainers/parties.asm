@@ -610,9 +610,9 @@ RocketData:
 	db 12, SANDSHREW, RATTATA, ZUBAT, 0		                                                       ; Rocket 2               ; Level changed from 11 to 12 by G-Dubs
 	db 14, ZUBAT, EKANS, 0				                                                           ; Rocket 3               ; Level changed from 12 to 14 by G-Dubs
 ; Previously Unused
-	db 16, RATICATE, 0					                                                           ; Rocket 4               ; Preciously Unused trainer from Red & Blue added by G-Dubs
+	db 16, RATICATE, 0					                                                           ; Rocket 4               ; Previously Unused trainer from Red & Blue added by G-Dubs
 ; Cerulean City
-	db 17, MACHOP, DROWZEE, 0				                                                       ; Rocket Team 5
+	db 17, MACHOP, DROWZEE, 0				                                                       ; Rocket 5
 ; Route 24
 	db 15, EKANS, ZUBAT, 0				                                                           ; Rocket Team 6
 ; Game Corner
