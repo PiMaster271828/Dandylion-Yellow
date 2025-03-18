@@ -1464,14 +1464,15 @@ PikachuEvosMoves:
 	db 13, DOUBLE_TEAM
 	db 15, SWIFT
    ;db 20, SPARK
-	db 23, SLAM
+	db 23, THUNDERPUNCH
 	db 26, THUNDERBOLT
    ;db 28, IRON_TAIL
    ;db 31, ZIPPY_ZAP
     db 33, AGILITY
 	db 41, THUNDER
 	db 50, LIGHT_SCREEN
-   ;db 58, PIKA_PAPOW
+    db 57, SLAM
+   ;db 60, PIKA_PAPOW
 	db 0
 
 RaichuEvosMoves:
@@ -1494,7 +1495,8 @@ RaichuEvosMoves:
 	db 33, AGILITY
 	db 41, MEGA_KICK
 	db 50, LIGHT_SCREEN
-	db 58, THUNDER
+	db 57, SLAM
+	db 60, THUNDER
 
 MissingNo56EvosMoves:
 ; Evolutions
