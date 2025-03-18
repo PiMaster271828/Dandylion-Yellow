@@ -23,37 +23,37 @@ MACRO door_tiles
 ENDM
 
 .OverworldDoorTileIDs:
-	door_tiles $1B, $58
+	door_tiles $1B, $58, $AD
 
 .ForestDoorTileIDs:
-	door_tiles $3a
+	door_tiles $3A
 
 .MartDoorTileIDs:
-	door_tiles $5e
+	door_tiles $5E
 
 .HouseDoorTileIDs:
 	door_tiles $54
 
 .TilesetMuseumDoorTileIDs:
-	door_tiles $3b
+	door_tiles $3B
 
 .ShipDoorTileIDs:
-	door_tiles $1e
+	door_tiles $1E
 
 .LobbyDoorTileIDs:
-	door_tiles $1c, $38, $1a
+	door_tiles $1C, $38, $1A
 
 .MansionDoorTileIDs:
-	door_tiles $1a, $1c, $53
+	door_tiles $1A, $1C, $53
 
 .LabDoorTileIDs:
 	door_tiles $34
 
 .FacilityDoorTileIDs:
-	door_tiles $43, $58, $1b
+	door_tiles $43, $58, $1B
 
 .PlateauDoorTileIDs:
-	door_tiles $3b, $1b
+	door_tiles $3B, $1B
 
 .InteriorDoorTileIDs:
 	door_tiles $04, $15

@@ -12,6 +12,11 @@ _CeruleanTrashedHouseFishingGuruTheyStoleATMText::
 
 	para "That cost me a"
 	line "bundle, it did!"
+	
+	para "It might be"
+	line "weeks before we"
+	cont "can reopen our"
+	cont "Guest House!!!"
 	done
 
 _CeruleanTrashedHouseFishingGuruWhatsLostIsLostText::

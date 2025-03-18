@@ -107,8 +107,8 @@ _CeruleanCityCooltrainerMText::
 	done
 
 _CeruleanCitySuperNerd1Text::
-	text "That bush in"
-	line "front of the shop"
+	text "That bush at the"
+	line "SOUTH end of town"
 	cont "is in the way."
 
 	para "There might be a"
@@ -143,18 +143,70 @@ _CeruleanCityCooltrainerF1ElectrodeUseSonicboomText::
 	cont "pay attention!"
 	done
 
-_CeruleanCityCooltrainerF1ElectrodePunchText::
+_CeruleanCityCooltrainerF1ElectrodeUseTackleText::
 	text "ELECTRODE, TACKLE!"
 	line "No! You blew it"
 	cont "again!"
 	done
 
-_CeruleanCityCooltrainerF1ElectrodeWithdrawText::
+_CeruleanCityCooltrainerF1ElectrodeUseLightScreenText::
+    text "ELECTRODE, Use"
+	line "LIGHT SCREEN!"
+	cont "... No, Not ..."
+	cont "SELF DESTRUCT!"
+	cont "... BOOM!!! ..."
+	cont "Not again!  Ugh,"
+	cont "that's the third"
+	cont "time this week!"
+
+	para "Ahhh! Someone's"
+    line "gonna have to pay"
+	cont "for that fence!"
+	done
+
+_CeruleanCityCooltrainerF1ElectrodeUseSwiftText::
 	text "ELECTRODE, SWIFT!"
 	line "No! That's wrong!"
 
 	para "Training #MON"
 	line "is difficult!"
+
+	para "Maybe I should"
+	line "try using a TM"
+	cont "or something"
+	cont "before trying"
+	cont "again..."
+	done
+
+_CeruleanCityCooltrainerF1SlowbroUseMeditateText::
+	text "OK! SLOWBRO!"
+	line "Use MEDITATE!"
+	cont "Come on, SLOWBRO"
+	cont "pay attention!"
+	done
+
+_CeruleanCityCooltrainerF1SlowbroUseIcePunchText::
+	text "SLOWBRO Use ICE"
+	line "PUNCH! No! You"
+	cont "blew it again!"
+	done
+
+_CeruleanCityCooltrainerF1SlowbroUseWaterGunText::
+    text "SLOWBRO, Use"
+	line "WATER GUN!"
+	cont "No, don't break"
+	cont "the fence again!"
+	cont "... Ugh! ..."
+	cont "I should probably"
+	cont "get some insurance!"
+	done
+
+_CeruleanCityCooltrainerF1SlowbroUseWithdrawText::
+	text "SLOWBRO, WITHDRAW!"
+	line "No! That's wrong!"
+
+	para "It's so hard to"
+	line "control #MON!"
 
 	para "Your #MON's"
 	line "obedience depends"
@@ -179,6 +231,26 @@ _CeruleanCityElectrodeTurnedAwayText::
 
 _CeruleanCityElectrodeIgnoredOrdersText::
 	text "ELECTRODE"
+	line "ignored orders..."
+	done
+
+_CeruleanCitySlowbroTookASnoozeText::
+	text "SLOWBRO took a"
+	line "snooze..."
+	done
+
+_CeruleanCitySlowbroIsLoafingAroundText::
+	text "SLOWBRO is"
+	line "loafing around..."
+	done
+
+_CeruleanCitySlowbroTurnedAwayText::
+	text "SLOWBRO turned"
+	line "away..."
+	done
+
+_CeruleanCitySlowbroIgnoredOrdersText::
+	text "SLOWBRO"
 	line "ignored orders..."
 	done
 
@@ -219,17 +291,28 @@ _CeruleanCityTrainerTipsText::
 	cont "process."
 	done
 
-_CeruleanCityBikeShopSign::
+_CeruleanCityBikeShopSignText::
 	text "Grass and caves"
 	line "handled easily!"
 	cont "BIKE SHOP"
 	done
 
-_CeruleanCityGymSign::
+_CeruleanCityGymSignText::
 	text "CERULEAN CITY"
 	line "#MON GYM"
 	cont "LEADER: MISTY"
 
 	para "The Tomboyish"
 	line "Mermaid!"
+	done
+
+	_CeruleanCityGuestHouseSignText::
+	text "CERULEAN CITY"
+	line "GUEST HOUSE,"
+	cont "A place for"
+	cont "travellers to"
+	cont "to rest before"
+	cont "heading EAST on"
+    cont "ROUTE 9 or SOUTH"
+	cont "on ROUTE 5."
 	done

@@ -215,23 +215,25 @@ CeruleanCityRivalCleanupScript:
 
 CeruleanCity_TextPointers:
 	def_text_pointers
-	dw_const CeruleanCityRivalText,         TEXT_CERULEANCITY_RIVAL
-	dw_const CeruleanCityRocketText,        TEXT_CERULEANCITY_ROCKET
-	dw_const CeruleanCityCooltrainerMText,  TEXT_CERULEANCITY_COOLTRAINER_M
-	dw_const CeruleanCitySuperNerd1Text,    TEXT_CERULEANCITY_SUPER_NERD1
-	dw_const CeruleanCitySuperNerd2Text,    TEXT_CERULEANCITY_SUPER_NERD2
-	dw_const CeruleanCityGuardText,         TEXT_CERULEANCITY_GUARD1
-	dw_const CeruleanCityCooltrainerF1Text, TEXT_CERULEANCITY_COOLTRAINER_F1
-	dw_const CeruleanCityElectrodeText,     TEXT_CERULEANCITY_ELECTRODE
-	dw_const CeruleanCityCooltrainerF2Text, TEXT_CERULEANCITY_COOLTRAINER_F2
-	dw_const CeruleanCitySuperNerd3Text,    TEXT_CERULEANCITY_SUPER_NERD3
-	dw_const CeruleanCityGuardText,         TEXT_CERULEANCITY_GUARD2
-	dw_const CeruleanCitySignText,          TEXT_CERULEANCITY_SIGN
-	dw_const CeruleanCityTrainerTipsText,   TEXT_CERULEANCITY_TRAINER_TIPS
-	dw_const MartSignText,                  TEXT_CERULEANCITY_MART_SIGN
-	dw_const PokeCenterSignText,            TEXT_CERULEANCITY_POKECENTER_SIGN
-	dw_const CeruleanCityBikeShopSign,      TEXT_CERULEANCITY_BIKESHOP_SIGN
-	dw_const CeruleanCityGymSign,           TEXT_CERULEANCITY_GYM_SIGN
+	dw_const CeruleanCityRivalText,          TEXT_CERULEANCITY_RIVAL
+	dw_const CeruleanCityRocketText,         TEXT_CERULEANCITY_ROCKET
+	dw_const CeruleanCityCooltrainerMText,   TEXT_CERULEANCITY_COOLTRAINER_M
+	dw_const CeruleanCitySuperNerd1Text,     TEXT_CERULEANCITY_SUPER_NERD1
+	dw_const CeruleanCitySuperNerd2Text,     TEXT_CERULEANCITY_SUPER_NERD2
+	dw_const CeruleanCityGuardText,          TEXT_CERULEANCITY_GUARD1
+	dw_const CeruleanCityCooltrainerF1Text,  TEXT_CERULEANCITY_COOLTRAINER_F1
+	dw_const CeruleanCityElectrodeText,      TEXT_CERULEANCITY_ELECTRODE
+	dw_const CeruleanCityCooltrainerF2Text,  TEXT_CERULEANCITY_COOLTRAINER_F2
+	dw_const CeruleanCitySuperNerd3Text,     TEXT_CERULEANCITY_SUPER_NERD3
+	dw_const CeruleanCityGuardText,          TEXT_CERULEANCITY_GUARD2
+	dw_const CeruleanCitySlowbroText,        TEXT_CERULEANCITY_SLOWBRO              ; Slowbro from Red & Blue added by G-Dubs
+	dw_const CeruleanCitySignText,           TEXT_CERULEANCITY_SIGN
+	dw_const CeruleanCityTrainerTipsText,    TEXT_CERULEANCITY_TRAINER_TIPS
+	dw_const MartSignText,                   TEXT_CERULEANCITY_MART_SIGN
+	dw_const PokeCenterSignText,             TEXT_CERULEANCITY_POKECENTER_SIGN
+	dw_const CeruleanCityBikeShopSignText,   TEXT_CERULEANCITY_BIKESHOP_SIGN
+	dw_const CeruleanCityGymSignText,        TEXT_CERULEANCITY_GYM_SIGN
+	dw_const CeruleanCityGuestHouseSignText, TEXT_CERULEANCITY_GUEST_HOUSE_SIGN     ; New sign added by G-Dubs
 
 CeruleanCityRivalText:
 	text_asm
@@ -339,7 +341,7 @@ CeruleanCitySuperNerd2Text:
 CeruleanCityGuardText:
 	text_far _CeruleanCityGuardText
 	text_end
-
+/*
 CeruleanCityCooltrainerF1Text:
 	text_asm
 	ldh a, [hRandomAdd]
@@ -372,48 +374,181 @@ CeruleanCityCooltrainerF1Text:
 .ElectrodeWithdrawText:
 	text_far _CeruleanCityCooltrainerF1ElectrodeWithdrawText
 	text_end
+*/
+CeruleanCityCooltrainerF1Text:
+	text_asm
+	ldh a, [hRandomAdd]  ; Load a random number (0–255) into A
+	cp 224  ; 32/256 chance of 1st dialogue
+	jr c, .notFirstText
+	ld hl, .ElectrodeUseSonicboomText
+	call PrintText
+	jr .end
+
+.notFirstText
+	cp 192  ; 32/256 chance of 2nd dialogue
+	jr c, .notSecondText
+	ld hl, .ElectrodeUseTackleText
+	call PrintText
+	jr .end
+
+.notSecondText
+	cp 160  ; 32/256 chance of 3rd dialogue
+	jr c, .notThirdText
+	ld hl, .ElectrodeUseLightScreenText
+	call PrintText
+	jr .end
+
+.notThirdText
+	cp 128  ; 32/256 chance of 4th dialogue
+	jr c, .notFourthText
+	ld hl, .ElectrodeUseSwiftText
+	call PrintText
+	jr .end
+
+.notFourthText
+	cp 96   ; 32/256 chance of 5th dialogue
+	jr c, .notFifthText
+	ld hl, .SlowbroUseMeditateText
+	call PrintText
+	jr .end
+
+.notFifthText
+	cp 64   ; 32/256 chance of 6th dialogue
+	jr c, .notSixthText
+	ld hl, .SlowbroUseIcePunchText
+	call PrintText
+	jr .end
+
+.notSixthText
+	cp 32   ; 32/256 chance of 7th dialogue
+	jr c, .notSeventhText
+	ld hl, .SlowbroUseWaterGunText
+	call PrintText
+	jr .end
+
+.notSeventhText
+	; Default case (remaining 32/256 chance) 8th dialogue
+	ld hl, .SlowbroUseWithdrawText
+	call PrintText
+.end
+	jp TextScriptEnd
+
+.ElectrodeUseSonicboomText:
+	text_far _CeruleanCityCooltrainerF1ElectrodeUseSonicboomText
+	text_end
+
+.ElectrodeUseTackleText:
+	text_far _CeruleanCityCooltrainerF1ElectrodeUseTackleText
+	text_end
+
+.ElectrodeUseLightScreenText:                                             ; Electrode using Light Screen added by G-Dubs
+	text_far _CeruleanCityCooltrainerF1ElectrodeUseLightScreenText    
+	text_end
+
+.ElectrodeUseSwiftText:
+	text_far _CeruleanCityCooltrainerF1ElectrodeUseSwiftText
+	text_end
+
+.SlowbroUseMeditateText:                                                  ; Slowbro from Red & Blue added by G-Dubs
+	text_far _CeruleanCityCooltrainerF1SlowbroUseMeditateText
+	text_end
+
+.SlowbroUseIcePunchText:
+	text_far _CeruleanCityCooltrainerF1SlowbroUseIcePunchText
+	text_end
+
+.SlowbroUseWaterGunText:                                                  ; Slowbro using Water Gun added by G-Dubs
+	text_far _CeruleanCityCooltrainerF1SlowbroUseWaterGunText
+	text_end
+
+.SlowbroUseWithdrawText:
+	text_far _CeruleanCityCooltrainerF1SlowbroUseWithdrawText
+	text_end
 
 CeruleanCityElectrodeText:
 	text_asm
 	ldh a, [hRandomAdd]
 	cp 180 ; 76/256 chance of 1st dialogue
 	jr c, .notFirstText
-	ld hl, .TookASnoozeText
+	ld hl, .ElectrodeTookASnoozeText
 	call PrintText
 	jr .end
 .notFirstText
 	cp 120 ; 60/256 chance of 2nd dialogue
 	jr c, .notSecondText
-	ld hl, .IsLoafingAroundText
+	ld hl, .ElectrodeIsLoafingAroundText
 	call PrintText
 	jr .end
 .notSecondText
 	cp 60 ; 60/256 chance of 3rd dialogue
 	jr c, .notThirdText
-	ld hl, .TurnedAwayText
+	ld hl, .ElectrodeTurnedAwayText
 	call PrintText
 	jr .end
 .notThirdText
 	; 60/256 chance of 4th dialogue
-	ld hl, .IgnoredOrdersText
+	ld hl, .ElectrodeIgnoredOrdersText
 	call PrintText
 .end
 	jp TextScriptEnd
 
-.TookASnoozeText:
+.ElectrodeTookASnoozeText:
 	text_far _CeruleanCityElectrodeTookASnoozeText
 	text_end
 
-.IsLoafingAroundText:
+.ElectrodeIsLoafingAroundText:
 	text_far _CeruleanCityElectrodeIsLoafingAroundText
 	text_end
 
-.TurnedAwayText:
+.ElectrodeTurnedAwayText:
 	text_far _CeruleanCityElectrodeTurnedAwayText
 	text_end
 
-.IgnoredOrdersText:
+.ElectrodeIgnoredOrdersText:
 	text_far _CeruleanCityElectrodeIgnoredOrdersText
+	text_end
+
+CeruleanCitySlowbroText:                                                  ; Slowbro from Red & Blue added by G-Dubs
+	text_asm
+	ldh a, [hRandomAdd]
+	cp 180 ; 76/256 chance of 1st dialogue
+	jr c, .notFirstText
+	ld hl, .SlowbroTookASnoozeText
+	call PrintText
+	jr .end
+.notFirstText
+	cp 120 ; 60/256 chance of 2nd dialogue
+	jr c, .notSecondText
+	ld hl, .SlowbroIsLoafingAroundText
+	call PrintText
+	jr .end
+.notSecondText
+	cp 60 ; 60/256 chance of 3rd dialogue
+	jr c, .notThirdText
+	ld hl, .SlowbroTurnedAwayText
+	call PrintText
+	jr .end
+.notThirdText
+	; 60/256 chance of 4th dialogue
+	ld hl, .SlowbroIgnoredOrdersText
+	call PrintText
+.end
+	jp TextScriptEnd
+
+.SlowbroTookASnoozeText:
+	text_far _CeruleanCitySlowbroTookASnoozeText
+	text_end
+
+.SlowbroIsLoafingAroundText:
+	text_far _CeruleanCitySlowbroIsLoafingAroundText
+	text_end
+
+.SlowbroTurnedAwayText:
+	text_far _CeruleanCitySlowbroTurnedAwayText
+	text_end
+
+.SlowbroIgnoredOrdersText:
+	text_far _CeruleanCitySlowbroIgnoredOrdersText
 	text_end
 
 CeruleanCityCooltrainerF2Text:
@@ -432,10 +567,14 @@ CeruleanCityTrainerTipsText:
 	text_far _CeruleanCityTrainerTipsText
 	text_end
 
-CeruleanCityBikeShopSign:
-	text_far _CeruleanCityBikeShopSign
+CeruleanCityBikeShopSignText:
+	text_far _CeruleanCityBikeShopSignText
 	text_end
 
-CeruleanCityGymSign:
-	text_far _CeruleanCityGymSign
+CeruleanCityGymSignText:
+	text_far _CeruleanCityGymSignText
+	text_end
+
+CeruleanCityGuestHouseSignText:
+	text_far _CeruleanCityGuestHouseSignText
 	text_end
