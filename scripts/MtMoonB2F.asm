@@ -432,6 +432,8 @@ MtMoonB2F_TextPointers:
 	dw_const MtMoonB2FText12,                       TEXT_MTMOONB2F_TEXT12
 	dw_const MtMoonB2FText13,                       TEXT_MTMOONB2F_TEXT13
 	dw_const MtMoonB2FText14,                       TEXT_MTMOONB2F_TEXT14
+	dw_const MtMoonB2FMoonStoneSign,                TEXT_MTMOONB2F_MOON_STONE_SIGN                ; New sign added by G-Dubs
+	dw_const MtMoonB2FWantedSign,                   TEXT_MTMOONB2F_WANTED_SIGN                    ; New sign added by G-Dubs
 
 MtMoon3TrainerHeaders:
 	def_trainers 3
@@ -720,4 +722,12 @@ MtMoonB2FRocket6EndBattleText:
 
 MtMoonB2FRocket6AfterBattleText:
 	text_far _MtMoonB2FRocket6AfterBattleText
+	text_end
+
+MtMoonB2FMoonStoneSign:                          ; New sign added by G-Dubs
+	text_far _MtMoonB2FMoonStoneSign
+	text_end
+
+MtMoonB2FWantedSign:                             ; New sign added by G-Dubs
+	text_far _MtMoonB2FWantedSign
 	text_end

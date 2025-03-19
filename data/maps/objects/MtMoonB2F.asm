@@ -21,11 +21,13 @@ MtMoonB2F_Object:
 	warp_event 21, 15, MT_MOON_B1F,  5 ; Warp Event 2
 	warp_event 15, 27, MT_MOON_B1F,  6 ; Warp Event 3
 	warp_event  5,  7, MT_MOON_B1F,  7 ; Warp Event 4
-	warp_event 37, 33, MT_MOON_B1F,  9 ; Warp Event 5
-	warp_event  3, 33, MT_MOON_B1F, 10 ; Warp Event 6
+	warp_event 37, 33, MT_MOON_B1F,  9 ; Warp Event 5      ; New ladder added by G-Dubs
+	warp_event  3, 33, MT_MOON_B1F, 10 ; Warp Event 6      ; New ladder added by G-Dubs
 
 	def_bg_events
-
+	bg_event 22,  1, TEXT_MTMOONB2F_MOON_STONE_SIGN        ; New sign added by G-Dubs
+	bg_event 38,  1, TEXT_MTMOONB2F_WANTED_SIGN            ; New sign added by G-Dubs
+	
 	def_object_events
 	object_event 12,  8, SPRITE_SUPER_NERD, STAY, RIGHT, TEXT_MTMOONB2F_SUPER_NERD, OPP_SUPER_NERD, 2
 	object_event  9,  3, SPRITE_JESSIE, STAY, LEFT, TEXT_MTMOONB2F_JESSIE
@@ -34,7 +36,7 @@ MtMoonB2F_Object:
 	object_event 29,  7, SPRITE_ROCKET, STAY, UP, TEXT_MTMOONB2F_ROCKET3, OPP_ROCKET, 3
 	object_event 29, 15, SPRITE_ROCKET, STAY, LEFT, TEXT_MTMOONB2F_ROCKET4, OPP_ROCKET, 4
 	object_event 30, 15, SPRITE_ROCKET, STAY, RIGHT, TEXT_MTMOONB2F_ROCKET5, OPP_ROCKET, 42             ; New trainer added by G-Dubs
-    object_event  1, 12, SPRITE_ROCKET, STAY, DOWN, TEXT_MTMOONB2F_ROCKET6, OPP_ROCKET, 43              ; New trainer added by G-Dubs
+	object_event  1, 12, SPRITE_ROCKET, STAY, DOWN, TEXT_MTMOONB2F_ROCKET6, OPP_ROCKET, 43              ; New trainer added by G-Dubs
 	object_event  9,  4, SPRITE_JAMES, STAY, LEFT, TEXT_MTMOONB2F_JAMES
 	object_event 12,  6, SPRITE_FOSSIL, STAY, NONE, TEXT_MTMOONB2F_DOME_FOSSIL
 	object_event 13,  6, SPRITE_FOSSIL, STAY, NONE, TEXT_MTMOONB2F_HELIX_FOSSIL

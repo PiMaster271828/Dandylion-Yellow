@@ -46,8 +46,6 @@ SECTION "Tilesets 3", ROMX
 
 Cemetery_GFX::      INCBIN "gfx/tilesets/cemetery.2bpp"
 Cemetery_Block::    INCBIN "gfx/blocksets/cemetery.bst"
-Cavern_GFX::        INCBIN "gfx/tilesets/cavern.2bpp"
-Cavern_Block::      INCBIN "gfx/blocksets/cavern.bst"
 Lobby_GFX::         INCBIN "gfx/tilesets/lobby.2bpp"
 Lobby_Block::       INCBIN "gfx/blocksets/lobby.bst"
 Ship_GFX::          INCBIN "gfx/tilesets/ship.2bpp"
@@ -58,14 +56,19 @@ Club_GFX::          INCBIN "gfx/tilesets/club.2bpp"
 Club_Block::        INCBIN "gfx/blocksets/club.bst"
 Underground_GFX::   INCBIN "gfx/tilesets/underground.2bpp"
 Underground_Block:: INCBIN "gfx/blocksets/underground.bst"
-
-
-SECTION "Tilesets 4", ROMX
-
 BeachHouse_GFX::    INCBIN "gfx/tilesets/beach_house.2bpp"
 	ds 384
 BeachHouse_Block::  INCBIN "gfx/blocksets/beach_house.bst"
 
+
+SECTION "Tilesets 4", ROMX                                      ; Section repurposed for adding bigger tilesets/blocksets by G-Dubs
+
 Overworld_GFX::     INCBIN "gfx/tilesets/overworld.2bpp"
 	ds 32
 Overworld_Block::   INCBIN "gfx/blocksets/overworld.bst"
+
+
+SECTION "Tilesets 5", ROMX                                      ; New section added for adding bigger tilesets/blocksets by G-Dubs
+
+Cavern_GFX::        INCBIN "gfx/tilesets/cavern.2bpp"
+Cavern_Block::      INCBIN "gfx/blocksets/cavern.bst"

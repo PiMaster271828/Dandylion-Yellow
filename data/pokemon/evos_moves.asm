@@ -1645,7 +1645,8 @@ SandshrewEvosMoves:
 	db 3, DEFENSE_CURL
 	db 5, POISON_STING
 	db 10, SAND_ATTACK
-   ;db 15, METAL_CLAW
+   ;db 13, MUD-SLAP
+   ;db 16, METAL_CLAW
 	db 19, SLASH
 	db 24, SWIFT
 	db 27, AGILITY
@@ -1663,7 +1664,8 @@ SandslashEvosMoves:
 	db 3, DEFENSE_CURL
 	db 5, POISON_STING
 	db 10, SAND_ATTACK
-   ;db 15, METAL_CLAW
+   ;db 13, MUD-SLAP
+   ;db 16, METAL_CLAW
 	db 19, SLASH
 	db 22, PIN_MISSILE
 	db 26, SWIFT
@@ -2211,7 +2213,7 @@ ButterfreeEvosMoves:
 	db 18, GUST
    ;db 20, SWEET_KISS
 	db 23, LOVELY_KISS
-   ;db 28, DRAINING_KISS
+   ;db 28, DRAIN_KISS
 	db 34, PSYBEAM
    ;db 36, NATURAL_GIFT
 	db 40, LEECH_LIFE
