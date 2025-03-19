@@ -374,7 +374,7 @@ _MtMoonB2FWantedSign::                           ; New sign added by G-Dubs
 	line "do not approach!"
 	cont "Report any"
 	cont "sightings to"
-	cont "Officer Jenny"
+	cont "OFFICER JENNY"
 	cont "immediately!"
 	done
    

@@ -198,7 +198,8 @@ _CeruleanCityCooltrainerF1SlowbroUseWaterGunText::
 	cont "the fence again!"
 	cont "... Ugh! ..."
 	cont "I should probably"
-	cont "get some insurance!"
+	cont "get some" 
+	cont "insurance!"
 	done
 
 _CeruleanCityCooltrainerF1SlowbroUseWithdrawText::
