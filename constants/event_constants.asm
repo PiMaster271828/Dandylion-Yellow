@@ -268,7 +268,8 @@
 	const EVENT_BOUGHT_MAGIKARP
 
 ; Route 5 events                            ; Route 5 events section added by G-Dubs
-    const_next $405
+    const_next $408
+	const_skip 1
     const EVENT_BEAT_ROUTE_5_TRAINER_0      ; New trainer added by G-Dubs
 
 ; Route 6 events
@@ -820,7 +821,12 @@ DEF INDIGO_PLATEAU_EVENTS_END EQU const_value - 1
 	const EVENT_SEAFOAM4_BOULDER2_DOWN_HOLE
 	const_skip 8
 	const EVENT_BEAT_ARTICUNO
-
+/*
+; Route 5 events                            ; Route 5 events section added by G-Dubs
+    const_next $9F0
+	const_skip 1
+    const EVENT_BEAT_ROUTE_5_TRAINER_0      ; New trainer added by G-Dubs
+*/
 ; End of events
 	const_next $A00
 DEF NUM_EVENTS EQU const_value

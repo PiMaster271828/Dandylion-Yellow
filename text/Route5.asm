@@ -29,7 +29,7 @@ _Route5PokefanF1AfterBattleText::
 	cont "#MON!"
 	
 	para "Win or lose,"
-	cont "loving your"
+	line "loving your"
 	cont "#MON is what"
 	cont "really matters!"
 	done

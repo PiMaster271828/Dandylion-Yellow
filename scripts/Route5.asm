@@ -19,7 +19,7 @@ Route5_TextPointers:
 	dw_const Route5UndergroundPathSignText, TEXT_ROUTE5_UNDERGROUND_PATH_SIGN
 
 Route5TrainerHeaders:
-	def_trainers 5
+	def_trainers
 Route5TrainerHeader0:    
 	trainer EVENT_BEAT_ROUTE_5_TRAINER_0, 2, Route5PokefanF1BattleText, Route5PokefanF1EndBattleText, Route5PokefanF1AfterBattleText  ; New trainer added by G-Dubs
 
