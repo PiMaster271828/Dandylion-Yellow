@@ -2163,14 +2163,11 @@ wPalletTownCurScript:: db
 	ds 1
 wBluesHouseCurScript:: db
 wViridianCityCurScript:: db
-   ;ds 2                          ; ds 2 readded and commented out by G-Dubs
 wViridianPokeCenterCurScript:: db ; Viridian PokeCenter Script added by Vlad for Jessie & James battle
-    ds 1                          ; ds 1 added by Vlad
 wPewterCityCurScript:: db
 wRoute3CurScript:: db
 wRoute4CurScript:: db
 wRoute5CurScript:: db             ; Route 5 script added by G-Dubs
-    ds 1                          ; ds 1 added by G-Dubs
 wPokemonFanClubCurScript:: db
 wViridianGymCurScript:: db
 wPewterGymCurScript:: db
@@ -2193,7 +2190,7 @@ wRedsHouse2FCurScript:: db
 wViridianMartCurScript:: db
 wRoute22GateCurScript:: db
 wCeruleanCityCurScript:: db
-	ds 4                          ; Changed from to 4 by G-Dubs to make room for other scripts  
+	ds 7                          ; Changed from to 4 by G-Dubs to make room for other scripts  
 wSSAnneBowCurScript:: db
 wViridianForestCurScript:: db
 wMuseum1FCurScript:: db
