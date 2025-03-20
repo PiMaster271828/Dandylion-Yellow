@@ -42,8 +42,8 @@ _ViridianCityYoungster1Text::
 
 	para "It's great that"
 	line "you can carry and"
-	cont "use #MON any-"
-	cont "time, anywhere!"
+	cont "use #MON anytime,"
+	cont "anywhere!"
 	done
 
 _ViridianCityGambler1GymAlwaysClosedText::
@@ -192,11 +192,19 @@ _ViridianCityGymSignText::
 _ViridianCityGymLockedText::
 	text "The GYM's doors"
 	line "are locked..."
+	cont "Better to try"
+	cont "again later..."
 	done
 
 _ViridianCityOfficerJennyText::
-	text "Team Rocket is"
-	line "stealing Pokemon"
+	text "TEAM ROCKET is"
+	line "stealing #MON"
 	cont "from the" 
-	cont "Pokemon Center!"
+	cont "#MON Center!"
+	
+	para "I'm waiting for"
+	line "backup while"
+	cont "protecting the"
+	cont "people in the"
+	cont "#MON MART."
 	done
