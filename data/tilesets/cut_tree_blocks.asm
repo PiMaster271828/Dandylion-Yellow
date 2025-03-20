@@ -10,9 +10,9 @@ CutTreeBlockSwaps:
 	db $3C, $35
 	db $3F, $35
 	db $3D, $36
-	db $80, $84
-	db $82, $86
-	db $83, $6F
-	db $8C, $90
-	db $98, $4C
+	db $80, $84    ; New cut tree block added by G-Dubs
+	db $82, $86    ; New cut tree block added by G-Dubs
+	db $83, $6F    ; New cut tree block added by G-Dubs
+	db $8C, $90    ; New cut tree block added by G-Dubs
+	db $98, $4C    ; New cut tree block added by G-Dubs
 	db -1 ; end

@@ -150,7 +150,80 @@ _Route25Hiker3AfterBattleText::
 	cont "CERULEAN CITY."
 	done
 
+_Route25CooltrainerF3Text::                 ; New NPC added by G-Dubs
+	text "They say"
+	line "CERULEAN CAPE"
+	cont "is a great place"
+	cont "for a date!"
+	cont "I wonder if"
+	cont "anyone from the"
+	cont "CERULEAN GYM"
+	cont "has ever come"
+	cont "here with someone"
+	cont "special..."
+	cont "Maybe even MISTY,"
+	cont "the real-life"
+	cont "mermaid, herself?"
+	done
+
+_Route25SignText::                          ; Sign text changed by G-Dubs
+	text "ROUTE 25"
+	line "EAST to"
+	cont "CERULEAN CAPE"
+	cont "WEST to ROUTE 24"
+
+	para "SEA BREEZE"
+	line "LOOKOUT and"
+	cont "BILL'S HOUSE"
+	cont "ahead."
+	done
+
 _Route25BillSignText::
 	text "SEA COTTAGE"
-	line "BILL lives here!"
+	line "BILL'S HOUSE"                     ; Sign text changed by G-Dubs
+	
+	para "BILL lives here!"
 	done
+
+_Route25CeruleanCapeSignText::              ; New sign added by G-Dubs
+	text "WELCOME TO"
+	line "CERULEAN CAPE"
+	cont "A scenic getaway"
+	cont "NORTH of"
+	cont "CERULEAN CITY,"
+	cont "known for its"
+	cont "breathtaking"
+	cont "ocean views and"
+	cont "gentle sea"
+	cont "breeze, making it"
+	cont "a place for where"
+	cont "many trainers"
+	cont "come to relax,"
+	cont "reflect, or share"
+	cont "a special moment"
+	cont "with their"
+	cont "#MON."
+	done 
+
+_Route25SeaBreezeLookoutSignText::          ; New sign added by G-Dubs
+	text "WELCOME TO SEA"
+	line "BREEZE LOOKOUT"
+	cont "Locals say that"
+	cont "on clear nights,"
+	cont "the stars shine"
+	cont "brightest from"
+	cont "this very spot."
+	cont "Some people even"
+	cont "believe that"
+	cont "people and "
+	cont "#MON alike"
+	cont "are drawn here"
+	cont "by fate..."
+	
+	para "Please keep the"
+	line "area clean and"
+	cont "respect the"
+	cont "natural beauty"
+	cont "of Cerulean Cape!"
+	done
+    

@@ -23,7 +23,7 @@ MACRO door_tiles
 ENDM
 
 .OverworldDoorTileIDs:
-	door_tiles $1B, $58, $AD
+	door_tiles $1B, $58, $AD      ; New door tile added by G-Dubs
 
 .ForestDoorTileIDs:
 	door_tiles $3A

@@ -53,17 +53,21 @@ Route25_ScriptPointers:
 
 Route25_TextPointers:
 	def_text_pointers
-	dw_const Route25Youngster1Text,    TEXT_ROUTE25_YOUNGSTER1
-	dw_const Route25Youngster2Text,    TEXT_ROUTE25_YOUNGSTER2
-	dw_const Route25CooltrainerMText,  TEXT_ROUTE25_COOLTRAINER_M
-	dw_const Route25CooltrainerF1Text, TEXT_ROUTE25_COOLTRAINER_F1
-	dw_const Route25Youngster3Text,    TEXT_ROUTE25_YOUNGSTER3
-	dw_const Route25CooltrainerF2Text, TEXT_ROUTE25_COOLTRAINER_F2
-	dw_const Route25Hiker1Text,        TEXT_ROUTE25_HIKER1
-	dw_const Route25Hiker2Text,        TEXT_ROUTE25_HIKER2
-	dw_const Route25Hiker3Text,        TEXT_ROUTE25_HIKER3
-	dw_const PickUpItemText,           TEXT_ROUTE25_TM_SEISMIC_TOSS
-	dw_const Route25BillSignText,      TEXT_ROUTE25_BILL_SIGN
+	dw_const Route25Youngster1Text,                 TEXT_ROUTE25_YOUNGSTER1
+	dw_const Route25Youngster2Text,                 TEXT_ROUTE25_YOUNGSTER2
+	dw_const Route25CooltrainerMText,               TEXT_ROUTE25_COOLTRAINER_M
+	dw_const Route25CooltrainerF1Text,              TEXT_ROUTE25_COOLTRAINER_F1
+	dw_const Route25Youngster3Text,                 TEXT_ROUTE25_YOUNGSTER3
+	dw_const Route25CooltrainerF2Text,              TEXT_ROUTE25_COOLTRAINER_F2
+	dw_const Route25Hiker1Text,                     TEXT_ROUTE25_HIKER1
+	dw_const Route25Hiker2Text,                     TEXT_ROUTE25_HIKER2
+	dw_const Route25Hiker3Text,                     TEXT_ROUTE25_HIKER3
+	dw_const PickUpItemText,                        TEXT_ROUTE25_TM_SEISMIC_TOSS
+	dw_const Route25CooltrainerF3Text,              TEXT_ROUTE25_COOLTRAINER_F3               ; New NPC added by G-Dubs
+	dw_const Route25SignText,                       TEXT_ROUTE25_SIGN                         ; New sign added by G-Dubs
+	dw_const Route25BillSignText,                   TEXT_ROUTE25_BILL_SIGN
+	dw_const Route25CeruleanCapeSignText,           TEXT_ROUTE25_CERULEAN_CAPE_SIGN           ; New sign added by G-Dubs
+	dw_const Route25SeaBreezeLookoutSignText,       TEXT_ROUTE25_SEA_BREEZE_LOOKOUT_SIGN      ; New sign added by G-Dubs
 
 Route25TrainerHeaders:
 	def_trainers
@@ -249,6 +253,22 @@ Route25Hiker3AfterBattleText:
 	text_far _Route25Hiker3AfterBattleText
 	text_end
 
+Route25CooltrainerF3Text:                                  ; New NPC added by G-Dubs
+	text_far _Route25CooltrainerF3Text
+	text_end	
+
+Route25SignText:                                           ; New sign added by G-Dubs
+    text_far _Route25SignText
+	text_end
+
 Route25BillSignText:
 	text_far _Route25BillSignText
+	text_end
+
+Route25CeruleanCapeSignText:                               ; New sign added by G-Dubs
+	text_far _Route25CeruleanCapeSignText
+	text_end
+
+Route25SeaBreezeLookoutSignText:                           ; New sign added by G-Dubs
+	text_far _Route25SeaBreezeLookoutSignText
 	text_end

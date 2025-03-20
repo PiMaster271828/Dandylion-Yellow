@@ -46,7 +46,7 @@ Route24DefaultScript:
 	ret
 
 .PlayerCoordsArray:
-	dbmapcoord 10, 15
+	dbmapcoord 10, 13
 	db -1 ; end
 
 Route24PlayerMovingScript:
@@ -89,6 +89,7 @@ Route24_TextPointers:
 	dw_const Route24CooltrainerF3Text, TEXT_ROUTE24_COOLTRAINER_F3        ; New trainer added by G-Dubs
 	dw_const PickUpItemText,           TEXT_ROUTE24_TM_THUNDER_WAVE
 	dw_const Route24CooltrainerM4Text, TEXT_ROUTE24_COOLTRAINER_M4
+    dw_const Route24SignText,          TEXT_ROUTE24_SIGN                  ; New sign added by G-Dubs
 
 Route24TrainerHeaders:
 	def_trainers 2
@@ -357,4 +358,8 @@ Route24Text_515e9:
 
 Route24Text_515ee:
 	text_far _Route24DamianText4
+	text_end
+
+Route24SignText:                                           ; New sign added by G-Dubs
+    text_far _Route24SignText
 	text_end

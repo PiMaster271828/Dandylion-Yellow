@@ -152,7 +152,7 @@ _Route24Youngster2AfterBattleText::
 	line "have no regrets!"
 	done
 
-_Route24CooltrainerF3BattleText::                  ; New trainer added by G-Dubs
+_Route24CooltrainerF3BattleText::                     ; New trainer added by G-Dubs
 	text "This is NUGGET"
 	line "BRIDGE! Beat all"
 	cont "trainers and win"
@@ -210,4 +210,11 @@ _Route24DamianText3::
 _Route24DamianText4::
 	text "How's CHARMANDER"
 	line "doing?"
+	done
+
+_Route24SignText::                                    ; Sign text changed by G-Dubs
+	text "ROUTE 24"
+	line "EAST to ROUTE 25"                          
+	cont "SOUTH to"
+	cont "CERULEAN CITY"
 	done
