@@ -13,6 +13,7 @@
 	const SPRITESET_CYCLING_ROAD    ; 09
 	const SPRITESET_FUCHSIA         ; 0a
 	const SPRITESET_CINNABAR_ISLAND ; 0b
+	const SPRITESET_NEW_SPRITE_SET  ; 0c    ; New sprite set added by G-Dubs
 DEF NUM_SPRITE_SETS EQU const_value - 1
 
 ; split sprite set ids
