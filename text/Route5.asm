@@ -1,4 +1,4 @@
-_Route5PokefanF1BattleText::          ; New trainer replaced the NPC added by G-Dubs 
+_Route5PokefanF1BattleText::           ; New trainer added by G-Dubs 
 	text "Oh my gosh!"
 	line "Aren't my"
 	cont "#MON just"
@@ -34,7 +34,34 @@ _Route5PokefanF1AfterBattleText::
 	cont "really matters!"
 	done
 
-_Route5UndergroundPathSignText::
+_Route5PokefanM1BattleText::           ; New trainer added by G-Dubs 
+	text "Cute #MON"
+	line "aren't just for"
+	cont "kids! I train the"
+	cont "most adorable"
+	cont "team around!"
+	cont "Mine also"
+	cont "happen to be"
+	cont "super strong!"
+	done
+
+_Route5PokefanM1EndBattleText::
+    text "Guess"
+	line "being cute isn't"
+	cont "everything..."
+	cont "but it sure"
+	cont "helps!"
+	prompt
+
+_Route5PokefanM1AfterBattleText::
+    text "A real trainer"
+	line "knows, when it"
+	cont "comes to #MON,"
+	cont "cute and strong"
+	cont "go hand in hand!"
+	done
+
+_Route5UndergroundPathSignText::       ; Original Route 5 Sign
 	text "UNDERGROUND PATH"
 	line "CERULEAN CITY -"
 	cont "VERMILION CITY"

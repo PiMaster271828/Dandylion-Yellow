@@ -1,5 +1,6 @@
 object_const_def
 	const_export ROUTE5_POKEFAN_F1
+	const_export ROUTE5_POKEFAN_M1
 
 Route5_Object:
 	db $a ; border block
@@ -16,5 +17,6 @@ Route5_Object:
 
 	def_object_events
 	object_event 18,  4, SPRITE_MIDDLE_AGED_WOMAN, STAY, LEFT, TEXT_ROUTE5_POKEFAN_F1, OPP_POKEFAN_F, 1     ; New trainer added by G-Dubs
+	object_event 1 ,  4, SPRITE_MIDDLE_AGED_MAN, STAY, RIGHT, TEXT_ROUTE5_POKEFAN_M1, OPP_POKEFAN_M, 3      ; New trainer added by G-Dubs
 
 	def_warps_to ROUTE_5
