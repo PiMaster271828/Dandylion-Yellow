@@ -1,9 +1,47 @@
 Route5_Script:
-	jp EnableAutoTextBoxDrawing
+call EnableAutoTextBoxDrawing
+	ld hl, Route5TrainerHeaders
+	ld de, Route5_ScriptPointers
+	ld a, [wRoute5CurScript]
+	call ExecuteCurMapScriptInTable
+	ld [wRoute5CurScript], a
+	ret
+
+Route5_ScriptPointers:
+	def_script_pointers
+	dw_const CheckFightingMapTrainers,              SCRIPT_ROUTE5_DEFAULT
+	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_ROUTE5_START_BATTLE
+	dw_const EndTrainerBattle,                      SCRIPT_ROUTE5_END_BATTLE
 
 Route5_TextPointers:
 	def_text_pointers
+	dw_const Route5PokefanF1Text, TEXT_ROUTE5_POKEFAN_F1                            ; New trainer added by G-Dubs
 	dw_const Route5UndergroundPathSignText, TEXT_ROUTE5_UNDERGROUND_PATH_SIGN
+
+Route5TrainerHeaders:
+	def_trainers 5
+Route5TrainerHeader0:    
+	trainer EVENT_BEAT_ROUTE_5_TRAINER_0, 2, Route5PokefanF1BattleText, Route5PokefanF1EndBattleText, Route5PokefanF1AfterBattleText  ; New trainer added by G-Dubs
+
+    db -1 ; end
+
+Route5PokefanF1Text:                             ; New trainer added by G-Dubs
+	text_asm
+	ld hl, Route5TrainerHeader0
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route5PokefanF1BattleText:
+	text_far _Route5PokefanF1BattleText
+	text_end
+
+Route5PokefanF1EndBattleText:
+	text_far _Route5PokefanF1EndBattleText
+	text_end
+
+Route5PokefanF1AfterBattleText:
+	text_far _Route5PokefanF1AfterBattleText
+	text_end
 
 Route5UndergroundPathSignText:
 	text_far _Route5UndergroundPathSignText

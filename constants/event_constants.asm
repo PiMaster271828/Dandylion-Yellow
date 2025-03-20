@@ -254,18 +254,22 @@
 	const EVENT_BEAT_ROUTE_3_TRAINER_5
 	const EVENT_BEAT_ROUTE_3_TRAINER_6
 	const EVENT_BEAT_ROUTE_3_TRAINER_7
-	const EVENT_BEAT_ROUTE_3_TRAINER_8  ; New trainer added by G-Dubs
-	const EVENT_BEAT_ROUTE_3_TRAINER_9  ; New trainer added by G-Dubs
+	const EVENT_BEAT_ROUTE_3_TRAINER_8      ; New trainer added by G-Dubs
+	const EVENT_BEAT_ROUTE_3_TRAINER_9      ; New trainer added by G-Dubs
 
 ; Route 4 events
 	const_next $3F0
 	const_skip 1
-	const EVENT_BEAT_ROUTE_4_TRAINER_0  ; New trainer added by G-Dubs
+	const EVENT_BEAT_ROUTE_4_TRAINER_0      ; New trainer added by G-Dubs
     const EVENT_BEAT_ROUTE_4_TRAINER_1
-	const EVENT_BEAT_ROUTE_4_TRAINER_2  ; New trainer added by G-Dubs
-	const EVENT_BEAT_ROUTE_4_TRAINER_3  ; New trainer added by G-Dubs  
+	const EVENT_BEAT_ROUTE_4_TRAINER_2      ; New trainer added by G-Dubs
+	const EVENT_BEAT_ROUTE_4_TRAINER_3      ; New trainer added by G-Dubs  
 	const_skip 12
 	const EVENT_BOUGHT_MAGIKARP
+
+; Route 5 events                            ; Route 5 events section added by G-Dubs
+    const_next $405
+    const EVENT_BEAT_ROUTE_5_TRAINER_0      ; New trainer added by G-Dubs
 
 ; Route 6 events
 	const_next $410

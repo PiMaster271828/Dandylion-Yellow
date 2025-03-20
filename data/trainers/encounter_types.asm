@@ -3,6 +3,8 @@ FemaleTrainerList::
 	db OPP_JR_TRAINER_F
 	db OPP_BEAUTY
 	db OPP_COOLTRAINER_F
+    db OPP_POKEFAN_F
+   ;db TWINS
 	db -1 ; end
 
 EvilTrainerList::
@@ -14,5 +16,5 @@ EvilTrainerList::
 	db OPP_SCIENTIST
 	db OPP_GIOVANNI
 	db OPP_ROCKET
-	db OPP_JESSIE_JAMES ;New Trainer Class Jessie_James
+	db OPP_JESSIE_JAMES ; New Trainer Class Jessie_James
 	db -1 ; end

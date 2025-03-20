@@ -28,12 +28,13 @@ INCLUDE "text/SilphCo8F.asm"
 INCLUDE "text/SilphCo9F.asm"
 INCLUDE "text/SilphCo10F.asm"
 
-SECTION "Text 1.5", ROMX                         ; Made a new Text Bank and added these files because they were too big for their original Text Bank
+SECTION "Text 1.5", ROMX                         ; Made a new Text Bank and added these files because they were too big for their original Text Banks
 
-INCLUDE "text/MtMoon1F.asm"
-INCLUDE "text/MtMoonB1F.asm"
-INCLUDE "text/MtMoonB2F.asm"
-INCLUDE "text/CeruleanGym.asm"
+INCLUDE "text/MtMoon1F.asm"                      ; Moved from Text 1 by G-Dubs to avoid the Text Bank growing too big
+INCLUDE "text/MtMoonB1F.asm"                     ; Moved from Text 1 by G-Dubs to avoid the Text Bank growing too big
+INCLUDE "text/MtMoonB2F.asm"                     ; Moved from Text 1 by G-Dubs to avoid the Text Bank growing too big
+INCLUDE "text/CeruleanGym.asm"                   ; Moved from Text 5 by G-Dubs to avoid the Text Bank growing too big
+INCLUDE "text/Route5.asm"                        ; Moved from Text 3 by G-Dubs to avoid the Text Bank growing too big
 
 SECTION "Text 2", ROMX
 
@@ -104,7 +105,7 @@ INCLUDE "text/Route1.asm"
 INCLUDE "text/Route2.asm"
 INCLUDE "text/Route3.asm"
 INCLUDE "text/Route4.asm"
-INCLUDE "text/Route5.asm"
+
 INCLUDE "text/Route6.asm"
 INCLUDE "text/Route7.asm"
 INCLUDE "text/Route8.asm"
