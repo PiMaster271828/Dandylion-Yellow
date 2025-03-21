@@ -171,7 +171,7 @@ _Route24CooltrainerF3EndBattleText::
 
 _Route24CooltrainerF3AfterBattleText::
 	text "I used to be a"
-	line "Mermaid in"
+	line "Mermaid in the"
 	cont "CERULEAN GYM!"
 	cont "Why'd I give that"
 	cont "up, just to stand"

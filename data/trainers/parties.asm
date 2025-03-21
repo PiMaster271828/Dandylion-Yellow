@@ -710,6 +710,8 @@ CooltrainerFData:
 	db 45, IVYSAUR, VENUSAUR, 0			                                                                     ; Cooltrainer ♀ 6        ; (Unused)
 	db 45, NIDORINA, NIDOQUEEN, 0			                                                                 ; Cooltrainer ♀ 7        ; (Unused)
 	db 43, PERSIAN, NINETALES, RAICHU, 0		                                                             ; Cooltrainer ♀ 8        ; (Unused)
+; Route 24
+    db 15, LAPRAS, 0                                                                                         ; Cooltrainer ♀ 9        ; New trainer added by G-Dubs
 
 BrunoData:
 ; First Battle
@@ -870,6 +872,10 @@ LanceData:
     db $FF, 59, GYARADOS, 58, DRAGONAIR, 58, DRAGONAIR, 60, CHARIZARD, 62, AERODACTYL, 64, DRAGONITE, 0      ; Lance 1                ; Animeesque Pokémon added by G-Dubs
 ; Rematch
 	db $FF, 73, ARCANINE, 73, ELECTABUZZ, 74, SNORLAX, 74, CHARIZARD, 72, KANGASKHAN, 75, DRAGONITE, 0       ; Lance 2                ; Lance Rematch from Yellow Legacy
+
+/**************************************************************************************************************************************************************************************************************************
+All new trainers added by Vlad and George
+***************************************************************************************************************************************************************************************************************************/
 
 JessieJamesData:
 ; Viridian City Pokémon Center

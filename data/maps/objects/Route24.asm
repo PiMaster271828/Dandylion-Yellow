@@ -27,7 +27,7 @@ Route24_Object:
 	object_event 10, 22, SPRITE_YOUNGSTER, STAY, RIGHT, TEXT_ROUTE24_YOUNGSTER1, OPP_YOUNGSTER, 4                 ; Nugget Bridge Trainer 4 (Moved from #3 by G-Dubs)
 	object_event 11, 25, SPRITE_COOLTRAINER_F, STAY, LEFT, TEXT_ROUTE24_COOLTRAINER_F2, OPP_LASS, 8               ; Nugget Bridge Trainer 3 (Moved from #2 by G-Dubs)
 	object_event 10, 28, SPRITE_YOUNGSTER, STAY, RIGHT, TEXT_ROUTE24_YOUNGSTER2, OPP_BUG_CATCHER, 9               ; Nugget Bridge Trainer 2 (Moved from #1 by G-Dubs)
-	object_event 11, 31, SPRITE_COOLTRAINER_F, STAY, LEFT, TEXT_ROUTE24_COOLTRAINER_F3, OPP_LASS, 21              ; Nugget Bridge Trainer 1 (New trainer added by G-Dubs)
+	object_event 11, 31, SPRITE_COOLTRAINER_F, STAY, LEFT, TEXT_ROUTE24_COOLTRAINER_F3, OPP_COOLTRAINER_F, 9      ; Nugget Bridge Trainer 1 (New trainer added by G-Dubs)
 	object_event 10,  5, SPRITE_POKE_BALL, STAY, NONE, TEXT_ROUTE24_TM_THUNDER_WAVE, TM_THUNDER_WAVE
 	object_event  6,  5, SPRITE_COOLTRAINER_M, STAY, DOWN, TEXT_ROUTE24_COOLTRAINER_M4
 
