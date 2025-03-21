@@ -17,6 +17,7 @@ Route5_TextPointers:
 	def_text_pointers
 	dw_const Route5PokefanF1Text, TEXT_ROUTE5_POKEFAN_F1                            ; New trainer added by G-Dubs
 	dw_const Route5PokefanM1Text, TEXT_ROUTE5_POKEFAN_M1                            ; New trainer added by G-Dubs
+	dw_const Route5PokefanF2Text, TEXT_ROUTE5_POKEFAN_F2                            ; New trainer added by G-Dubs
 	dw_const Route5UndergroundPathSignText, TEXT_ROUTE5_UNDERGROUND_PATH_SIGN
 
 Route5TrainerHeaders:
@@ -25,6 +26,8 @@ Route5TrainerHeader0:
 	trainer EVENT_BEAT_ROUTE_5_TRAINER_0, 2, Route5PokefanF1BattleText, Route5PokefanF1EndBattleText, Route5PokefanF1AfterBattleText  ; New trainer added by G-Dubs
 Route5TrainerHeader1:
     trainer EVENT_BEAT_ROUTE_5_TRAINER_1, 2, Route5PokefanM1BattleText, Route5PokefanM1EndBattleText, Route5PokefanM1AfterBattleText  ; New trainer added by G-Dubs
+Route5TrainerHeader2:    
+	trainer EVENT_BEAT_ROUTE_5_TRAINER_2, 2, Route5PokefanF2BattleText, Route5PokefanF2EndBattleText, Route5PokefanF2AfterBattleText  ; New trainer added by G-Dubs
 
     db -1 ; end
 
@@ -62,6 +65,24 @@ Route5PokefanM1EndBattleText:
 
 Route5PokefanM1AfterBattleText:
 	text_far _Route5PokefanM1AfterBattleText
+	text_end
+
+Route5PokefanF2Text:                             ; New trainer added by G-Dubs
+	text_asm
+	ld hl, Route5TrainerHeader2
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route5PokefanF2BattleText:
+	text_far _Route5PokefanF2BattleText
+	text_end
+
+Route5PokefanF2EndBattleText:
+	text_far _Route5PokefanF2EndBattleText
+	text_end
+
+Route5PokefanF2AfterBattleText:
+	text_far _Route5PokefanF2AfterBattleText
 	text_end
 
 Route5UndergroundPathSignText:                   ; Original Route 5 Sign

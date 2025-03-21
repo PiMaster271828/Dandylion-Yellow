@@ -61,6 +61,37 @@ _Route5PokefanM1AfterBattleText::
 	cont "go hand in hand!"
 	done
 
+_Route5PokefanF2BattleText::           ; New trainer added by G-Dubs 
+	text "I just love the"
+	line "Kanto starter"
+	cont "#MON!"
+	cont "They're adorable"
+	cont "and strong, let"
+	cont "me show you!"
+	done
+
+_Route5PokefanF2EndBattleText::
+    text "Oh no!"
+	line "I still have"
+	cont "the best starter"
+	cont "#MON ever!"
+	prompt
+
+_Route5PokefanF2AfterBattleText::
+    text "PROF. OAK keeps"
+	line "going on and on"
+	cont "about calling"
+	cont "the starters,"
+	cont "First Partner"
+	cont "#MON!"
+	
+	para "No matter what,"
+	line "I'll always cheer"
+	cont "for Bulbasaur,"
+	cont "Charmander,"
+	cont "and Squirtle!"
+	done
+
 _Route5UndergroundPathSignText::       ; Original Route 5 Sign
 	text "UNDERGROUND PATH"
 	line "CERULEAN CITY -"

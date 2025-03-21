@@ -272,6 +272,10 @@
 	const_skip 1
     const EVENT_BEAT_ROUTE_5_TRAINER_0      ; New trainer added by G-Dubs
 	const EVENT_BEAT_ROUTE_5_TRAINER_1      ; New trainer added by G-Dubs
+	const EVENT_BEAT_ROUTE_5_TRAINER_2      ; New trainer added by G-Dubs
+	;const EVENT_BEAT_ROUTE_5_TRAINER_3
+	;const EVENT_BEAT_ROUTE_5_TRAINER_4
+	;const EVENT_BEAT_ROUTE_5_TRAINER_5
 
 ; Route 6 events
 	const_next $410
