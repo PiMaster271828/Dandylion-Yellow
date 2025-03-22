@@ -14,11 +14,12 @@ SetDebugNewGameParty: ; unreferenced except in _DEBUG
 
 DebugNewGameParty: ; unreferenced except in _DEBUG
 	db SNORLAX, 80
-	db CATERPIE, 8
-	db MANKEY, 9
-	db NIDORAN_M, 12
-	db NIDORAN_F, 12
 	db STARTER_PIKACHU, 15
+	db CHANSEY, 100
+   ;db MANKEY, 9
+   ;db NIDORAN_M, 12
+   ;db NIDORAN_F, 12
+	
 	db -1 ; end
 
 PrepareNewGameDebug: ; dummy except in _DEBUG
@@ -37,13 +38,8 @@ IF DEF(_DEBUG)
 
 	call SetDebugNewGameParty
 
-	; Pikachu gets Surf.
-	ld a, SURF
-	ld hl, wPartyMon4Moves + 2
-	ld [hl], a
-
-	; Snorlax gets four HM moves.
-	ld hl, wPartyMon1Moves
+    ; Snorlax gets four HM moves.
+	ld hl, wPartyMon1Moves        ; Snorlax must be in the first slot  
 	ld a, FLY
 	ld [hli], a
 	ld a, CUT
@@ -51,6 +47,31 @@ IF DEF(_DEBUG)
 	ld a, SURF
 	ld [hli], a
 	ld a, STRENGTH
+	ld [hl], a
+
+	; Pikachu gets Surf & Flash.
+	ld hl, wPartyMon2Moves        ; Pikachu must be in the first slot
+	ld a, THUNDERSHOCK
+	ld [hli], a
+	ld a, QUICK_ATTACK
+	ld [hli], a
+	ld a, SURF
+	ld [hli], a
+	ld a, FLASH
+	ld [hl], a
+	
+    ; Use this to test new moves  ; The PokeMon with the new move must be in the third slot
+    ld a, BONEMERANG
+    ld hl, wPartyMon3Moves        ; Replaces the move in the first slot with the above move
+    ld [hl], a
+    ld a, TWINEEDLE
+	ld hl, wPartyMon3Moves + 1    ; Replaces the move in the second slot with the above move
+	ld [hl], a
+	ld a, PIN_MISSILE
+	ld hl, wPartyMon3Moves + 2    ; Replaces the move in the third slot with the above move
+	ld [hl], a
+	ld a, SPIKE_CANNON
+	ld hl, wPartyMon3Moves + 3    ; Replaces the move in the fourth slot with the above move
 	ld [hl], a
 
 	; Get some debug items.
