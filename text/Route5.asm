@@ -92,6 +92,28 @@ _Route5PokefanF2AfterBattleText::
 	cont "and Squirtle!"
 	done
 
+	_Route5PokefanM2BattleText::           ; New trainer added by G-Dubs 
+	text "The Kanto Starter"
+	line "#MON are the"
+	cont "best! You can't"
+	cont "beat their charm"
+	cont "and power!"
+	done
+
+_Route5PokefanM2EndBattleText::
+    text "Whoa..."
+	line "looks like I still"
+	cont "have some training"
+	cont "to do."
+	prompt
+
+_Route5PokefanM2AfterBattleText::
+    text "Win or lose,"
+	line "these three will"
+	cont "always be my"
+	cont "favorite #MON!"
+	done
+	
 _Route5UndergroundPathSignText::       ; Original Route 5 Sign
 	text "UNDERGROUND PATH"
 	line "CERULEAN CITY -"
