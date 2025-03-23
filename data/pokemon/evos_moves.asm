@@ -573,9 +573,11 @@ ShellderEvosMoves:
 	db 28, CLAMP
 	db 32, AURORA_BEAM
 	db 36, ACID_ARMOR
-	db 40, ICE_BEAM
+	db 40, RAZOR_SHELL
 	db 44, BARRAGE
-	db 48, HYDRO_PUMP
+	db 48, ICE_BEAM
+	db 50, 
+	db 55, HYDRO_PUMP
 	db 0
 
 TentacoolEvosMoves:
@@ -2409,13 +2411,33 @@ CloysterEvosMoves:
 	db 20, WATER_GUN
 	db 24, MIST
 	db 28, CLAMP
-	db 32, WATERFALL
-	db 36, FURY_ATTACK
-	db 40, ICE_BEAM
+	db 30, FURY_ATTACK
+   ;db 31, ICY_WIND
+	db 32, TWINEEDLE
+   ;db 33, WHIRLPOOL
+   ;db 34, SIGNAL_BEAM
+   ;db 35, ROCK_BLAST
+	db 36, WATERFALL
+   ;db 40, RAZOR_SHELL
 	db 44, PIN_MISSILE
-	db 48, BLIZZARD
+	db 48, ICE_BEAM
 	db 50, SPIKE_CANNON
+	db 55, BLIZZARD
 	db 0
+
+   
+	
+	
+	
+	
+	
+   
+	
+	db 32, AURORA_BEAM
+	db 36, ACID_ARMOR
+	db 40, ICE_BEAM
+	db 44, BARRAGE
+	db 48, HYDRO_PUMP
 
 MissingNo8CEvosMoves:
 ; Evolutions
