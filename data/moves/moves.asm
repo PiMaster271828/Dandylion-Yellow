@@ -192,7 +192,7 @@ Moves:
 	move IRON_TAIL,     DEFENSE_DOWN_SIDE_EFFECT,   100, STEEL,         75, 15                                                                       ; Move #173
     move METAL_CLAW,    METAL_CLAW_EFFECT,           50, STEEL,         95, 35 ; 10% Raise user's Attack                                             ; Move #174
 	move HYPER_VOICE,   SPECIAL_DOWN_SIDE_EFFECT,    90, SOUND,        100, 10                                                                       ; Move #175
-	move HOWL,          ATTACK_UP1_EFFECT,            0, SOUND,        100, 30                                                                       ; Move #176
+	
 	move SHADOW_BALL,   SPECIAL_DOWN_SIDE_EFFECT,    90, GHOST,        100, 10                                                                       ; Move #177
 	move BONE_RUSH,     TWO_TO_FIVE_ATTACKS_EFFECT,  25, GROUND,        90, 10                                                                       ; Move #178
     move POWDER_SNOW,   FREEZE_SIDE_EFFECT,          40, ICE,          100, 25                                                                       ; Move #179 
@@ -243,7 +243,6 @@ Moves:
     move DUAL_CHOP,     ATTACK_TWICE_EFFECT,         40, FIGHTING,     100, 15 ; High Crit. rate                                                     ; Move #222
 	move TAIL_SLAP,     TWO_TO_FIVE_ATTACKS_EFFECT,  25, NORMAL,        95, 15                                                                       ; Move #223
 	move AXE_KICK,      AXE_KICK_EFFECT,            120, FIGHTING,      90, 10 ; 30% Confuse, 30% Finch, Fixed Jump Kick Effect                      ; Move #224
-	move ACCELEROCK,    NO_ADDITIONAL_EFFECT,        40, ROCK,         100, 30 ; Priority +1                                                         ; Move #225
 	move HYPER_DRILL,   NO_ADDITIONAL_EFFECT,       100, NORMAL,       100, 10 ; High Crit. rate                                                     ; Move #226
     move DRILL_RUN,     NO_ADDITIONAL_EFFECT,        80, GROUND,        95, 10 ; High Crit. rate                                                     ; Move #227
 	move DRAIN_PUNCH,   DRAIN_HP_EFFECT,             75, FIGHTING,     100, 10                                                                       ; Move #228
@@ -266,7 +265,6 @@ Moves:
 	move FLASH_CANNON,  SPECIAL_DOWN_SIDE_EFFECT,    90, STEEL,        100, 10                                                                       ; Move #245
     move SEARING_SAND,  BURN_SIDE_EFFECT1,           70, GROUND,       100, 10	                                                                     ; Move #246
     move MAGICALGLEAM,  ACCURACY_DOWN_SIDE_EFFECT1,  80, FAIRY,        100, 10 ; Lowers opponent's Accuracy 10%                                      ; Move #247
-   ;move RAGING_BULL,   FLINCH_SIDE_EFFECT1,         90, NORMAL,       100, 10  
 	move HIHORSEPOWER,  NO_ADDITIONAL_EFFECT,        95, GROUND,        95, 10                                                                       ; Move #248
    ;move NUZZLE,        AUTO_PARALYZE_SIDE_EFFECT,   20, ELECTRIC,     100, 20 ; Always paralyzes opponent
 	move STONE_EDGE,    NO_ADDITIONAL_EFFECT,       100, ROCK,          85, 10 ; High Crit. rate                                                     ; Move #249
