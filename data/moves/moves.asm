@@ -210,15 +210,11 @@ Moves:
 	move DRAIN_KISS,    DRAIN_HP_EFFECT,             50, FAIRY,        100, 10                                                                       ; Move #190
 	move MYSTICALFIRE,  SPECIAL_DOWN_SIDE_EFFECT,    70, FIRE,         100, 10                                                                       ; Move #191
 	move BOLT_BEAK,     BOLT_BEAK_EFFECT,            85, ELECTRIC,     100, 10 ; Priority +1, 30% Paralyze                                           ; Move #192
-   ;move ICY_WINGS,     ICY_WINGS_EFFECT,            45, ICE,          100, 10 ; Hits twice, 10% Freeze                                              
-   ;move FLAME_TALON,   FLAME_TALON_EFFECT,          75, FIRE,         100, 10 ; Lowers opponent's Special, 30% Burn                                   
+   ;move ICY_WINGS,     ICY_WINGS_EFFECT,            45, ICE,          100, 10 ; Hits twice, 10% Freeze                                                                                
 	move DUALWINGBEAT,  ATTACK_TWICE_EFFECT,         40, FLYING,        90, 10                                                                       ; Move #193
     move MAKE_IT_RAIN,  PAY_DAY_EFFECT,             120, STEEL,        100,  5 ; Drop user's Special after using                                     ; Move #194
     move RAGE_FIST,     RAGE_FIST_EFFECT,            50, GHOST,        100, 50 ; Raise user's Attack after using                                     ; Move #195
 	move ALURINGVOICE,  CONFUSION_SIDE_EFFECT,       80, SOUND,        100, 10                                                                       ; Move #196
-   ;move FREEZE_GLARE,  FREEZING_GLARE_SIDE_EFFECT,  90, PSYCHIC_TYPE, 100, 10 ; 10% Freeze, 10% Lower opponent's Special
-   ;move THUNDER_KICK,  THUNDEROUS_KICK_SIDE_EFFECT, 90, FIGHTING,     100, 10 ; 10% Paralyze, 10% Lower opponent's Defense
-   ;move FIREY_WRATH,   FIREY_WRATH_SIDE_EFFECT,     90, DARK,         100, 10 ; 10% Burn, 10% Flinch
     move WISH,          HEAL_EFFECT,                  0, FAIRY,        100, 10                                                                       ; Move #197
     move NATURAL_GIFT,  NO_ADDITIONAL_EFFECT,        60, FAIRY,        100, 20                                                                       ; Move #198
     move COPYCAT,       MIRROR_MOVE_EFFECT,           0, FAIRY,        100, 20                                                                       ; Move #199
