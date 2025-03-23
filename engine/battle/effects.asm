@@ -1012,17 +1012,6 @@ TwoToFiveAttacksEffect:
 	ld a, POISON_SIDE_EFFECT1          
 	ld [hl], a                         ; Set Twineedle's effect to poison effect (We believe this value is 2, so it also makes it so that Twineedle hits twice)
 	jr .saveNumberOfHits
-.pinMissile
-    ld a, POISON_SIDE_EFFECT1
-	ld [hl], a                         ; Set Pin Missile's effect to poison effect
-	; for TWO_TO_FIVE_ATTACKS_EFFECT 3/8 chance for 2 and 3 hits, and 1/8 chance for 4 and 5 hits
-	call BattleRandom                  ; Call the BattleRandom function
-	and $3                             ; Mask the result to get a value between 0 and 3
-	cp $2                              ; Compare the result with 2
-	jr c, .gotNumHits                  ; If the result is less than 2, jump to .gotNumHits (2 or 3 hits)
-    ; if the number of hits was greater than 2, re-roll again for a lower chance
-	call BattleRandom                  ; Call BattleRandom again for a lower chance at 4 or 5 hits
-	and $3                             ; Mask the result again
 
 FlinchSideEffect:
 	call CheckTargetSubstitute
