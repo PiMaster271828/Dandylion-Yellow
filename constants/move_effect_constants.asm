@@ -34,7 +34,7 @@
 	const THRASH_PETAL_DANCE_EFFECT  ; $1B
 	const SWITCH_AND_TELEPORT_EFFECT ; $1C
 	const TWO_TO_FIVE_ATTACKS_EFFECT ; $1D
-	const EFFECT_1E                  ; $1E unused
+	const PIN_MISSILE_EFFECT         ; $1E Previously Unused, now used for Pin Missile
 	const FLINCH_SIDE_EFFECT1        ; $1F
 	const SLEEP_EFFECT               ; $20
 	const POISON_SIDE_EFFECT2        ; $21
@@ -90,5 +90,5 @@
 	const METRONOME_EFFECT           ; $53
 	const LEECH_SEED_EFFECT          ; $54
 	const SPLASH_EFFECT              ; $55
-	const DISABLE_EFFECT             ; $56
+	const DISABLE_EFFECT             ; $56 
 DEF NUM_MOVE_EFFECTS EQU const_value - 1

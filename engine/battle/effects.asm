@@ -958,51 +958,71 @@ WasBlownAwayText:
 	text_far _WasBlownAwayText
 	text_end
 
+/***********************************************************************************************************
+Version of TwoToFiveAttacksEffect modified by G-Dubs to add a poison chance to Pin Missile
+************************************************************************************************************/
 TwoToFiveAttacksEffect:
-	ld hl, wPlayerBattleStatus1
-	ld de, wPlayerNumAttacksLeft
-	ld bc, wPlayerNumHits
-	ldh a, [hWhoseTurn]
-	and a
-	jr z, .twoToFiveAttacksEffect
-	ld hl, wEnemyBattleStatus1
-	ld de, wEnemyNumAttacksLeft
-	ld bc, wEnemyNumHits
+	ld hl, wPlayerBattleStatus1        
+	ld de, wPlayerNumAttacksLeft       
+	ld bc, wPlayerNumHits             
+	ldh a, [hWhoseTurn]                ; Load whose turn it is (player or enemy) into a
+	and a                              ; Check if it's the player's turn (sets z flag if a is 0)
+	jr z, .twoToFiveAttacksEffect           
+	ld hl, wEnemyBattleStatus1        
+	ld de, wEnemyNumAttacksLeft        
+	ld bc, wEnemyNumHits               
 .twoToFiveAttacksEffect
-	bit ATTACKING_MULTIPLE_TIMES, [hl] ; is mon attacking multiple times?
-	ret nz
-	set ATTACKING_MULTIPLE_TIMES, [hl] ; mon is now attacking multiple times
-	ld hl, wPlayerMoveEffect
-	ldh a, [hWhoseTurn]
-	and a
-	jr z, .setNumberOfHits
-	ld hl, wEnemyMoveEffect
+	bit ATTACKING_MULTIPLE_TIMES, [hl] ; Check if the Pokémon is already attacking multiple times
+	ret nz                                  ; If it is, return (prevent reapplying effect)
+	set ATTACKING_MULTIPLE_TIMES, [hl] ; Set the flag indicating the Pokémon is now attacking multiple times
+	ld hl, wPlayerMoveEffect                      
+	ldh a, [hWhoseTurn]                ; Check whose turn it is
+    and a                              ; If it's the player's turn, hl is correct
+	jr z, .setNumberOfHits                  ; If it's the player's turn, jump to .setNumberOfHits
+	ld hl, wEnemyMoveEffect            ; Otherwise, load the enemy's move effect address into hl
 .setNumberOfHits
-	ld a, [hl]
-	cp TWINEEDLE_EFFECT
-	jr z, .twineedle
-	cp ATTACK_TWICE_EFFECT
-	ld a, $2 ; number of hits it's always 2 for ATTACK_TWICE_EFFECT
-	jr z, .saveNumberOfHits
-; for TWO_TO_FIVE_ATTACKS_EFFECT 3/8 chance for 2 and 3 hits, and 1/8 chance for 4 and 5 hits
-	call BattleRandom
-	and $3
-	cp $2
-	jr c, .gotNumHits
-; if the number of hits was greater than 2, re-roll again for a lower chance
-	call BattleRandom
-	and $3
+	ld a, [hl]   
+	cp PIN_MISSILE_EFFECT              ; Put Pin Missile check before Twineedle check
+	jr nz, .notpinmissile              ; If it's not Pin Missile, continue running the code
+	ld [hl], POISON_SIDE_EFFECT1       ; Set Pin Missile's effect to poison effect
+	jr .determinenumberOfHits
+.notpinmissile                      
+	cp TWINEEDLE_EFFECT                
+	jr z, .twineedle                                            
+	cp ATTACK_TWICE_EFFECT             
+	ld a, $2                                ; Number of hits it's always 2 for ATTACK_TWICE_EFFECT (This is also the smallest number for multi-hit attacks)
+	jr z, .saveNumberOfHits                 
+; For TWO_TO_FIVE_ATTACKS_EFFECT 3/8 chance for 2 and 3 hits, and 1/8 chance for 4 and 5 hits
+.determinenumberOfHits
+	call BattleRandom                  
+	and $3                             ; Mask the result to get a value between 0 and 3
+	cp $2                              ; Compare the result with 2
+	jr c, .gotNumHits                       ; If the result is less than 2, jump to .gotNumHits (2 or 3 hits)
+    ; if the number of hits was greater than 2, re-roll again for a lower chance
+	call BattleRandom                  ; Call BattleRandom again for a lower chance at 4 or 5 hits
+	and $3                             ; Mask the result again
 .gotNumHits
-	inc a
-	inc a
+	inc a                              ; Increment the number of hits (A) by 1
+    inc a                              ; Increment the number of hits (A) again
 .saveNumberOfHits
-	ld [de], a
-	ld [bc], a
+	ld [de], a                         ; Store the number of hits into remaining attacks counter
+	ld [bc], a                         ; Store the number of hits into total hits counter
 	ret
 .twineedle
-	ld a, POISON_SIDE_EFFECT1
-	ld [hl], a ; set Twineedle's effect to poison effect
+	ld a, POISON_SIDE_EFFECT1          
+	ld [hl], a                         ; Set Twineedle's effect to poison effect (We believe this value is 2, so it also makes it so that Twineedle hits twice)
 	jr .saveNumberOfHits
+.pinMissile
+    ld a, POISON_SIDE_EFFECT1
+	ld [hl], a                         ; Set Pin Missile's effect to poison effect
+	; for TWO_TO_FIVE_ATTACKS_EFFECT 3/8 chance for 2 and 3 hits, and 1/8 chance for 4 and 5 hits
+	call BattleRandom                  ; Call the BattleRandom function
+	and $3                             ; Mask the result to get a value between 0 and 3
+	cp $2                              ; Compare the result with 2
+	jr c, .gotNumHits                  ; If the result is less than 2, jump to .gotNumHits (2 or 3 hits)
+    ; if the number of hits was greater than 2, re-roll again for a lower chance
+	call BattleRandom                  ; Call BattleRandom again for a lower chance at 4 or 5 hits
+	and $3                             ; Mask the result again
 
 FlinchSideEffect:
 	call CheckTargetSubstitute

@@ -52,7 +52,7 @@ Moves:
 	move TAIL_WHIP,    DEFENSE_DOWN1_EFFECT,         0, NORMAL,       100, 30
 	move POISON_STING, POISON_SIDE_EFFECT1,         35, POISON,       100, 35 ; Buffed power 
 	move TWINEEDLE,    TWINEEDLE_EFFECT,            40, BUG,          100, 20 ; Buffed power
-	move PIN_MISSILE,  TWO_TO_FIVE_ATTACKS_EFFECT,  25, BUG,           90, 20 ; Buffed accuracy (Poison side effect to be added)
+	move PIN_MISSILE,  PIN_MISSILE_EFFECT,          25, BUG,           90, 20 ; Buffed accuracy (Poison side effect to be added)
 	move LEER,         DEFENSE_DOWN1_EFFECT,         0, DARK,         100, 30 ; Changed to Dark type
 	move BITE,         FLINCH_SIDE_EFFECT1,         60, DARK,         100, 25 ; Changed to Dark type
 	move GROWL,        ATTACK_DOWN1_EFFECT,          0, SOUND,        100, 40 ; Changed to Sound type
@@ -130,7 +130,7 @@ Moves:
 	move BIDE,         BIDE_EFFECT,                  0, NORMAL,       100, 10
 	move METRONOME,    METRONOME_EFFECT,             0, NORMAL,       100, 10
 	move MIRROR_MOVE,  MIRROR_MOVE_EFFECT,           0, FLYING,       100, 20
-	move SELFDESTRUCT, EXPLODE_EFFECT,             200, NORMAL,       100,  5 ; Buffed power (Defense halving effect to be added)
+	move SELFDESTRUCT, EXPLODE_EFFECT,             200, NORMAL,       100,  5 ; Buffed power
 	move EGG_BOMB,     NO_ADDITIONAL_EFFECT,       100, GRASS,         95, 10 ; Changed to Grass type, & buffed accuracy, and made a high Crit. rate (What is this OP trash?)
 	move LICK,         PARALYZE_SIDE_EFFECT2,       40, GHOST,        100, 30 ; Buffed power
 	move SMOG,         POISON_SIDE_EFFECT2,         40, POISON,        95, 20 ; Buffed power & accuracy
