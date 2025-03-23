@@ -573,7 +573,7 @@ ShellderEvosMoves:
 	db 28, CLAMP
 	db 32, AURORA_BEAM
 	db 36, ACID_ARMOR
-	db 40, RAZOR_SHELL
+   ;db 40, RAZOR_SHELL
 	db 44, BARRAGE
 	db 48, ICE_BEAM
 	db 50, 
