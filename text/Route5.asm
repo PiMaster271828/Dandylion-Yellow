@@ -102,9 +102,9 @@ _Route5PokefanF2AfterBattleText::
 
 _Route5PokefanM2EndBattleText::
     text "Whoa..."
-	line "looks like I still"
-	cont "have some training"
-	cont "to do."
+	line "looks like I"
+	cont "still have some"
+	cont "training to do."
 	prompt
 
 _Route5PokefanM2AfterBattleText::
@@ -113,7 +113,7 @@ _Route5PokefanM2AfterBattleText::
 	cont "always be my"
 	cont "favorite #MON!"
 	done
-	
+
 _Route5UndergroundPathSignText::       ; Original Route 5 Sign
 	text "UNDERGROUND PATH"
 	line "CERULEAN CITY -"
