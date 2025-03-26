@@ -92,7 +92,7 @@ _Route5PokefanF2AfterBattleText::
 	cont "and Squirtle!"
 	done
 
-	_Route5PokefanM2BattleText::           ; New trainer added by G-Dubs 
+_Route5PokefanM2BattleText::           ; New trainer added by G-Dubs 
 	text "The Kanto Starter"
 	line "#MON are the"
 	cont "best! You can't"
@@ -114,8 +114,66 @@ _Route5PokefanM2AfterBattleText::
 	cont "favorite #MON!"
 	done
 
-_Route5UndergroundPathSignText::       ; Original Route 5 Sign
+_Route5PokefanF3BattleText::           ; New trainer added by G-Dubs 
+	text "I adore my"
+	line "#MON! They're"
+	cont "the cutest"
+	cont "little darlings"
+	cont "just wait till"
+	cont "you see them!"
+	done
+
+_Route5PokefanF3EndBattleText::
+    text "Oh no!"
+	line "At least my"
+	cont "#MON are still"
+	cont "as lovable as"
+	cont "ever!"
+	prompt
+
+_Route5PokefanF3AfterBattleText::
+    text "Winning isn't"
+	line "everything. As"
+	cont "long as my"
+	cont "#MON are happy,"
+	cont "I'm happy too!"
+	done
+
+_Route5PokefanM3BattleText::           ; New trainer added by G-Dubs 
+	text "Strong? Tough?"
+	line "Who cares ?!? My"
+	cont "#MON are the"
+	cont "most lovable"
+	cont "#MON around!"
+	done
+
+_Route5PokefanM3EndBattleText::
+    text "Well..."
+	line "They may not be"
+	cont "the strongest,"
+	cont "but they're"
+	cont "still the best"
+	cont "#MON to me!"
+	prompt
+
+_Route5PokefanM3AfterBattleText::
+    text "A true trainer"
+	line "knows that love"
+	cont "for #MON is"
+	cont "more important"
+	cont "than winning!"
+	done
+
+_Route5UndergroundPathSignText::       ; Original Route 5 Sign (Underground Path)
 	text "UNDERGROUND PATH"
 	line "CERULEAN CITY -"
 	cont "VERMILION CITY"
 	done
+
+/*
+_Route5SignText::                      ; New sign added by G-Dubs (Route 5 Sign)
+    text "ROUTE 5"
+	line "SAFFRON CITY -"
+	cont "CERULEAN CITY"
+	done
+*/
