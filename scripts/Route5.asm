@@ -19,10 +19,10 @@ Route5_TextPointers:
 	dw_const Route5PokefanM1Text,           TEXT_ROUTE5_POKEFAN_M1                  ; New trainer added by G-Dubs
 	dw_const Route5PokefanF2Text,           TEXT_ROUTE5_POKEFAN_F2                  ; New trainer added by G-Dubs
 	dw_const Route5PokefanM2Text,           TEXT_ROUTE5_POKEFAN_M2                  ; New trainer added by G-Dubs
-	dw_const Route5PokefanF1Text,           TEXT_ROUTE5_POKEFAN_F3                  ; New trainer added by G-Dubs
-	dw_const Route5PokefanM1Text,           TEXT_ROUTE5_POKEFAN_M3                  ; New trainer added by G-Dubs
+	dw_const Route5PokefanF3Text,           TEXT_ROUTE5_POKEFAN_F3                  ; New trainer added by G-Dubs
+	dw_const Route5PokefanM3Text,           TEXT_ROUTE5_POKEFAN_M3                  ; New trainer added by G-Dubs
 	dw_const Route5UndergroundPathSignText, TEXT_ROUTE5_UNDERGROUND_PATH_SIGN
-	;dw_const Route5SignText,               TEXT_ROUTE5_SIGN                         ; New sign added by G-Dubs
+	dw_const Route5SignText,                TEXT_ROUTE5_SIGN                         ; New sign added by G-Dubs
 
 Route5TrainerHeaders:
 	def_trainers
@@ -152,8 +152,7 @@ Route5PokefanM3AfterBattleText:
 Route5UndergroundPathSignText:                   ; Original Route 5 Sign (Underground Path)
 	text_far _Route5UndergroundPathSignText
 	text_end
-/*
-Route5UndergroundPathSignText:                   ; New sign added by G-Dubs (Route 5 Sign)
-	text_far _Route5UndergroundPathSignText
+
+Route5SignText:                                  ; New sign added by G-Dubs (Route 5 Sign)
+	text_far _Route5SignText
 	text_end
-*/

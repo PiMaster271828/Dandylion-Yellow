@@ -170,10 +170,8 @@ _Route5UndergroundPathSignText::       ; Original Route 5 Sign (Underground Path
 	cont "VERMILION CITY"
 	done
 
-/*
 _Route5SignText::                      ; New sign added by G-Dubs (Route 5 Sign)
     text "ROUTE 5"
 	line "SAFFRON CITY -"
 	cont "CERULEAN CITY"
 	done
-*/

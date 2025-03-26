@@ -18,6 +18,7 @@ Route5_Object:
 
 	def_bg_events
 	bg_event 15, 32, TEXT_ROUTE5_UNDERGROUND_PATH_SIGN
+	bg_event  4, 32, TEXT_ROUTE5_SIGN
 
 	def_object_events
 	object_event 18,  4, SPRITE_MIDDLE_AGED_WOMAN, STAY, LEFT, TEXT_ROUTE5_POKEFAN_F1, OPP_POKEFAN_F, 1     ; New trainer added by G-Dubs
