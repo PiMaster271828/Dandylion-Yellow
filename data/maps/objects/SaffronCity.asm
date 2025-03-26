@@ -13,7 +13,7 @@
 	const_export SAFFRONCITY_PIDGEOT
 	const_export SAFFRONCITY_ROCKER
 	const_export SAFFRONCITY_ROCKET8
-	const_export SAFFRONCITY_ROCKET9 ; removed in yellow, but still referenced in data/maps/hide_show_data.asm
+	const_export SAFFRONCITY_ROCKET9                  ; Removed in yellow, but still referenced in data/maps/hide_show_data.asm
 
 SaffronCity_Object:
 	db $f ; border block
@@ -27,6 +27,8 @@ SaffronCity_Object:
 	warp_event 18, 21, SILPH_CO_1F, 1
 	warp_event  9, 29, SAFFRON_POKECENTER, 1
 	warp_event 29, 29, MR_PSYCHICS_HOUSE, 1
+	warp_event 19, 34, ROUTE_6_GATE, 3                ; New warp event added by G-Dubs
+	warp_event 20, 34, ROUTE_6_GATE, 3                ; New warp event added by G-Dubs
 
 	def_bg_events
 	bg_event 17,  5, TEXT_SAFFRONCITY_SIGN
