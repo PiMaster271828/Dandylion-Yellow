@@ -10,10 +10,10 @@ Route6_Object:
 	db $f ; border block
 
 	def_warp_events
-	warp_event  9,  0, ROUTE_6_GATE, 3
-	warp_event 10,  0, ROUTE_6_GATE, 3
-	warp_event 10,  5, ROUTE_6_GATE, 1
-	warp_event 17, 13, UNDERGROUND_PATH_ROUTE_6, 1
+   ;warp_event  9,  0, ROUTE_6_GATE, 3
+   ;warp_event 10,  0, ROUTE_6_GATE, 3
+	warp_event 10,  5, ROUTE_6_GATE, 1                ; Warp Event 1
+	warp_event 17, 13, UNDERGROUND_PATH_ROUTE_6, 1    ; Warp Event 2
 
 	def_bg_events
 	bg_event 19, 15, TEXT_ROUTE6_UNDERGROUND_PATH_SIGN
