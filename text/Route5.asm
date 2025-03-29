@@ -141,7 +141,7 @@ _Route5PokefanF3AfterBattleText::
 
 _Route5PokefanM3BattleText::           ; New trainer added by G-Dubs 
 	text "Strong? Tough?"
-	line "Who cares ?!? My"
+	line "Who cares?!? My"
 	cont "#MON are the"
 	cont "most lovable"
 	cont "#MON around!"
