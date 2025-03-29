@@ -10,8 +10,8 @@ MtMoonB1F_Object:
 	warp_event  1, 27, MT_MOON_B2F, 3  ; Warp event 6
 	warp_event 19,  3, MT_MOON_B2F, 4  ; Warp event 7
 	warp_event 27,  3, LAST_MAP, 3     ; Warp Event 8
-	warp_event 19, 21, MT_MOON_B2F, 5  ; Warp event 9
-	warp_event  1, 19, MT_MOON_B2F, 6  ; Warp event 10
+	warp_event 19, 21, MT_MOON_B2F, 5  ; Warp event 9      ; New ladder added by G-Dubs
+	warp_event  1, 19, MT_MOON_B2F, 6  ; Warp event 10     ; New ladder added by G-Dubs
 
 	def_bg_events
 
