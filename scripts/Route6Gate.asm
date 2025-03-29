@@ -40,8 +40,8 @@ Route6GateDefaultScript:
 	jp DisplayTextID
 
 .PlayerInCoordsArray:
-	dbmapcoord  3,  2
-	dbmapcoord  4,  2
+	dbmapcoord  3,  3
+	dbmapcoord  4,  3
 	db -1 ; end
 
 Route6GatePlayerMovingScript:

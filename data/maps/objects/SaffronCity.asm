@@ -13,22 +13,22 @@
 	const_export SAFFRONCITY_PIDGEOT
 	const_export SAFFRONCITY_ROCKER
 	const_export SAFFRONCITY_ROCKET8
-	const_export SAFFRONCITY_ROCKET9                  ; Removed in yellow, but still referenced in data/maps/hide_show_data.asm
+	const_export SAFFRONCITY_ROCKET9             ; Removed in yellow, but still referenced in data/maps/hide_show_data.asm
 
 SaffronCity_Object:
 	db $f ; border block
 
 	def_warp_events
-	warp_event  7,  5, COPYCATS_HOUSE_1F, 1
-	warp_event 26,  3, FIGHTING_DOJO, 1
-	warp_event 34,  3, SAFFRON_GYM, 1
-	warp_event 13, 11, SAFFRON_PIDGEY_HOUSE, 1
-	warp_event 25, 11, SAFFRON_MART, 1
-	warp_event 18, 21, SILPH_CO_1F, 1
-	warp_event  9, 29, SAFFRON_POKECENTER, 1
-	warp_event 29, 29, MR_PSYCHICS_HOUSE, 1
-	warp_event 19, 34, ROUTE_6_GATE, 3                ; New warp event added by G-Dubs
-	warp_event 20, 34, ROUTE_6_GATE, 3                ; New warp event added by G-Dubs
+	warp_event  7,  5, COPYCATS_HOUSE_1F, 1      ; Warp Event 1
+	warp_event 26,  3, FIGHTING_DOJO, 1          ; Warp Event 2
+	warp_event 34,  3, SAFFRON_GYM, 1            ; Warp Event 3
+	warp_event 13, 11, SAFFRON_PIDGEY_HOUSE, 1   ; Warp Event 4
+	warp_event 25, 11, SAFFRON_MART, 1           ; Warp Event 5
+	warp_event 18, 21, SILPH_CO_1F, 1            ; Warp Event 6
+	warp_event  9, 29, SAFFRON_POKECENTER, 1     ; Warp Event 7
+	warp_event 29, 29, MR_PSYCHICS_HOUSE, 1      ; Warp Event 8
+	warp_event 19, 34, ROUTE_6_GATE, 3           ; Warp Event 9      ; New warp event added by G-Dubs
+	warp_event 20, 34, ROUTE_6_GATE, 3           ; Warp Event 10     ; New warp event added by G-Dubs
 
 	def_bg_events
 	bg_event 17,  5, TEXT_SAFFRONCITY_SIGN
