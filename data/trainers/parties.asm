@@ -89,31 +89,33 @@ YoungsterData:
 
 BugCatcherData:
 ; Viridian Forest
-	db 7, CATERPIE, WEEDLE, 0                                                                                ; Bug Catcher 1          ; Weedle added by G-Dubs
- 	db 6, METAPOD, CATERPIE, METAPOD, 0                                                                      ; Bug Catcher 2
+	db 8, CATERPIE, WEEDLE, 0                                                                                ; Bug Catcher 1          ; Weedle added by G-Dubs (Level chaned from 7 to 8 by G-Dubs)
+ 	db 7, METAPOD, CATERPIE, METAPOD, 0                                                                      ; Bug Catcher 2          ; Level changed from 6 to 7 by G-Dubs
 	db 10, CATERPIE, WEEDLE, METAPOD, KAKUNA, BUTTERFREE, BEEDRILL, 0                                        ; Bug Catcher 3          ; Weedle added by G-Dubs (Other PokéMon suggested by Vlad)
 ; Route 3    
 	db 11, CATERPIE, WEEDLE, CATERPIE, 0                                                                     ; Bug Catcher 4          ; Level from 10 changed to 11, for Bug Bite by G-Dubs
 	db 11, WEEDLE, KAKUNA, CATERPIE, METAPOD, 0                                                              ; Bug Catcher 5          ; Level from 10 changed to 11, for Bug Bite by G-Dubs
-	db 11, CATERPIE, METAPOD, 0                                                                              ; Bug Catcher 6
+	db 11, CATERPIE, METAPOD, 0                                                                              ; Bug Catcher 6          ; Only Bug Catcher unchanged by G-Dubs
 ; Mt. Moon 1F
 	db 11, WEEDLE, KAKUNA, CATERPIE, 0                                                                       ; Bug Catcher 7          ; Caterpie added by G-Dubs
 	db 11, CATERPIE, METAPOD, WEEDLE, 0                                                                      ; Bug Catcher 8          ; 2nd Caterpie changed to Weedle, & level changed from 10 to 11 for Bug Bite by G-Dubs
 ; Route 24
 	db 15, CATERPIE, WEEDLE, 0                                                                               ; Bug Catcher 9          ; Level changed from 14 to 15 by G-Dubs 
 ; Route 6
-	db 16, WEEDLE, CATERPIE, WEEDLE, 0                                                                       ; Bug Catcher 10
-	db 20, BUTTERFREE, 0                                                                                     ; Bug Catcher 11
+	db 20, WEEDLE, CATERPIE, WEEDLE, 0                                                                       ; Bug Catcher 10         ; Level changed from 18 to 20 by G-Dubs
+	db 20, BUTTERFREE, 0                                                                                     ; Bug Catcher 11         ; Level changed from 16 to 18 by G-Dubs
 ; Route 4 (Previously Unused)
 	db 18, PARAS, WEEDLE, METAPOD, CATERPIE, KAKUNA, VENONAT, 0                                              ; Bug Catcher 12         ; Trainer unused in any version added by G-Dubs (PokéMon added by G-Dubs)
 ; Route 9
-	db 19, BEEDRILL, BEEDRILL, 0                                                                             ; Bug Catcher 13
-	db 20, CATERPIE, WEEDLE, VENONAT, 0                                                                      ; Bug Catcher 14
+	db 20, BEEDRILL, BEEDRILL, 0                                                                             ; Bug Catcher 13         ; Level changed from 19 to 20 by G-Dubs
+	db 25, CATERPIE, WEEDLE, VENONAT, 0                                                                      ; Bug Catcher 14         ; Level changed from 20 to 25 by G-Dubs
 ; Viridian Forest (Again)
 	db 8, CATERPIE, METAPOD, 0                                                                               ; Bug Catcher 15         ; Yellow exclusive Bug Catcher in Viridian Forest (Poor coding)
-	db 6, KAKUNA, WEEDLE, KAKUNA, 0                                                                          ; Bug Catcher 16         ; Trainer from Red/Blue added by G-Dubs
+	db 7, KAKUNA, WEEDLE, KAKUNA, 0                                                                          ; Bug Catcher 16         ; Trainer from Red/Blue added by G-Dubs
 	db 9, WEEDLE, 0                                                                                          ; Bug Catcher 17         ; Trainer from Red/Blue added by G-Dubs
 	db 9, CATERPIE, 0                                                                                        ; Bug Catcher 18         ; Trainer from Red/Blue added by G-Dubs
+; Route 6 (Again)
+    db 20, CATERPIE, VENONAT, PARAS, WEEDLE, 0                                                               ; Bug Catcher 19         ; New trainer added by G-Dubs
 /*
 ; Route 13
     db 30, BUTTERFREE, BEEDRILL, VENOMOTH, 0                                                                 ; Bug Catcher 19         ; New Trainer added by G-Dubs
@@ -189,10 +191,9 @@ JrTrainerMData:
 	db 14, NIDORAN_M, RATTATA, EKANS, 0                                                                      ; Jr. Trainer ♂ 2        ; Nidoran♂ added by G-Dubs
  ; Route 24
 	db 18, NIDORAN_M, SANDSHREW, MANKEY, 0                                                                   ; Jr. Trainer ♂ 3        ; Nidoran♂ & Sandshrew added by G-Dubs
-; Unused
-	db 20, SQUIRTLE, 0					                                                                     ; Jr. Trainer ♂ 4        ; (Unused)
-; Route 6   
-	db 16, SPEAROW, NIDORAN_M ,RATICATE, 0                                                                   ; Jr. Trainer ♂ 5        ; Nidoran♂ added by G-Dubs
+; Route 6
+	db 22, SQUIRTLE, 0					                                                                     ; Jr. Trainer ♂ 4        ; Previously Unused (Level changed from 20 to 22 by G-Dubs)   
+	db 20, SPEAROW, NIDORAN_M ,RATICATE, 0                                                                   ; Jr. Trainer ♂ 5        ; Nidoran♂ added by G-Dubs (Level changed from 16 to 20 by G-Dubs)
 ; Unused
 	db 18, DIGLETT, DIGLETT, SANDSHREW, 0	                                                                 ; Jr. Trainer ♂ 6        ; (Unused)
 	db 21, GROWLITHE, CHARMANDER, 0		                                                                     ; Jr. Trainer ♂ 7        ; (Unused)
@@ -201,7 +202,7 @@ JrTrainerMData:
 ; Route 12
 	db 29, NIDORAN_M, NIDORINO, 0                                                                            ; Jr. Trainer ♂ 9
 ; Route 6 (Again)
-	db 16, WEEPINBELL, 0                                                                                     ; Jr. Trainer ♂ 10       ; Joe from the anime, exclusive to Yellow (Poor coding)
+	db 20, WEEPINBELL, 0                                                                                     ; Jr. Trainer ♂ 10       ; Joe from the anime, exclusive to Yellow (Level changed from 16 to 20 by G-Dubs)
 ; Route 3 (Again)
     db 12, DIGLETT, NIDORAN_M, RATTATA, EKANS, SANDSHREW, 0                                                  ; Jr. Trainer ♂ 11       ; New trainer added by G-Dubs
 	db 15, DIGLETT, SANDSHREW, 0                                                                             ; Jr. Trainer ♂ 12       ; New trainer added by G-Dubs
@@ -213,8 +214,7 @@ JrTrainerFData:
 	db 16, ODDISH, BELLSPROUT, 0                                                                             ; Jr. Trainer ♀ 2        ; Trainer unused in any version added by G-Dubs
 ; Route 6
 	db 16, PIDGEY, PIDGEY, PIDGEY, 0		                                                                 ; Jr. Trainer ♀ 3
-; Unused
-	db 22, BULBASAUR, 0					                                                                     ; Jr. Trainer ♀ 4        ; (Unused)
+	db 22, BULBASAUR, 0					                                                                     ; Jr. Trainer ♀ 4        ; Previously Unused (Trainer from Red & Blue added by G-Dubs)
 ; Route 9
 	db 18, ODDISH, BELLSPROUT, ODDISH, BELLSPROUT, 0                                                         ; Jr. Trainer ♀ 5
 	db 23, MEOWTH, 0                                                                                         ; Jr. Trainer ♀ 6  

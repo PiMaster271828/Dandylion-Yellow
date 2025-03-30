@@ -97,8 +97,103 @@ _Route6Youngster2AfterBattleText::
 	cont "just bad?"
 	done
 
+_Route6CooltrainerM3BattleText::
+	text "She thinks she's"
+	line "better off"
+	cont "without me? Ha!"
+	cont "I'll show her who"
+	cont "the real winner"
+	cont "is!"
+	done
+
+_Route6CooltrainerM3EndBattleText::
+	text "Tch.."
+	line "first she dumps"
+	cont "me, now I lose to"
+	cont "you? This day"
+	cont "just keeps"
+	cont "getting worse."
+	prompt
+
+_Route6CooltrainerM3AfterBattleText::
+	text "Whatever. She can"      
+	line "flirt with"
+	cont "whoever she"
+	cont "wants. I'll just"
+	cont "focus on getting"
+	cont "stronger. I will"
+	cont "also strengthen"
+	cont "my #MON!"
+	done
+
+_Route6CooltrainerF3BattleText::
+	text "Oh, you're cute!"
+	line "Way better"
+	cont "company than my"
+	cont "ex-boyfriend over"
+	cont "there. Let's"
+	cont "battle!"
+	done
+
+_Route6CooltrainerF3EndBattleText::
+	text "Wow.."
+	line "Cute and strong!"
+	cont "Maybe I should"
+	cont "trade up! Like"
+	cont "how I traded"
+	cont "#MON!"
+	prompt
+
+_Route6CooltrainerF3AfterBattleText::
+	text "Don't mind my ex-"
+	line "boyfriend he's"
+	cont "just sulking."
+	cont "Say, you wouldn't" 
+	cont "mind a rematch"
+	cont "sometime, would"
+	cont "you?"
+	done
+
+_Route6Youngster3BattleText::
+	text "Man, my friends,"
+	line "those two up"
+	cont "there, make"
+	cont "things way too"
+	cont "complicated."
+	cont "Why stress over"
+	cont "love when you can"
+	cont "just catch bugs,"
+	cont "and do #MON"
+	cont "battles?"
+	done
+
+_Route6Youngster3EndBattleText::
+	text "Huh."
+	line "Maybe I should"
+	cont "have focused"
+	cont "more on battling"
+	cont "and less on"
+	cont "Caterpie..."
+	prompt
+
+_Route6Youngster3AfterBattleText::
+	text "Seriously,"
+	line "relationships"
+	cont "seem like a lot"
+	cont "of drama. At"
+	cont "least my bug"
+	cont "#MON will never"
+    cont "break up with me!"
+	done
+
 _Route6UndergroundPathSignText::
 	text "UNDERGROUND PATH"
 	line "CERULEAN CITY -"
+	cont "VERMILION CITY"
+	done
+
+_Route6SignText::
+	text "ROUTE 6"
+	line "SAFFRON CITY -"
 	cont "VERMILION CITY"
 	done

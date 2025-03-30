@@ -21,7 +21,11 @@ Route6_TextPointers:
 	dw_const Route6CooltrainerM2Text,       TEXT_ROUTE6_COOLTRAINER_M2
 	dw_const Route6CooltrainerF2Text,       TEXT_ROUTE6_COOLTRAINER_F2
 	dw_const Route6Youngster2Text,          TEXT_ROUTE6_YOUNGSTER2
+	dw_const Route6CooltrainerM3Text,       TEXT_ROUTE6_COOLTRAINER_M3              ; New trainer added by G-Dubs
+	dw_const Route6CooltrainerF3Text,       TEXT_ROUTE6_COOLTRAINER_F3              ; New trainer added by G-Dubs
+	dw_const Route6Youngster3Text,          TEXT_ROUTE6_YOUNGSTER3                  ; New trainer added by G-Dubs
 	dw_const Route6UndergroundPathSignText, TEXT_ROUTE6_UNDERGROUND_PATH_SIGN
+    dw_const Route6SignText,                TEXT_ROUTE6_SIGN                        ; New sign added by G-Dubs
 
 Route6TrainerHeaders:
 	def_trainers
@@ -37,6 +41,12 @@ Route6TrainerHeader4:
 	trainer EVENT_BEAT_ROUTE_6_TRAINER_4, 3, Route6CooltrainerF2BattleText, Route6CooltrainerF2EndBattleText, Route6CooltrainerF2AfterBattleText
 Route6TrainerHeader5:
 	trainer EVENT_BEAT_ROUTE_6_TRAINER_5, 3, Route6Youngster2BattleText, Route6Youngster2EndBattleText, Route6Youngster2AfterBattleText
+Route6TrainerHeader6:
+	trainer EVENT_BEAT_ROUTE_6_TRAINER_6, 2, Route6CooltrainerM3BattleText, Route6CooltrainerM3EndBattleText, Route6CooltrainerM3AfterBattleText     ; New trainer added by G-Dubs
+Route6TrainerHeader7:
+	trainer EVENT_BEAT_ROUTE_6_TRAINER_7, 2, Route6CooltrainerF3BattleText, Route6CooltrainerF3EndBattleText, Route6CooltrainerF3AfterBattleText     ; New trainer added by G-Dubs
+Route6TrainerHeader8:
+	trainer EVENT_BEAT_ROUTE_6_TRAINER_8, 3, Route6Youngster3BattleText, Route6Youngster3EndBattleText, Route6Youngster3AfterBattleText              ; New trainer added by G-Dubs
 	db -1 ; end
 
 Route6CooltrainerM1Text:
@@ -147,6 +157,64 @@ Route6Youngster2AfterBattleText:
 	text_far _Route6Youngster2AfterBattleText
 	text_end
 
+Route6CooltrainerM3Text:                              ; New trainer added by G-Dubs
+	text_asm
+	ld hl, Route6TrainerHeader6
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route6CooltrainerM3BattleText:
+	text_far _Route6CooltrainerM3BattleText
+	text_end
+
+Route6CooltrainerM3EndBattleText:
+	text_far _Route6CooltrainerM3EndBattleText
+	text_end
+
+Route6CooltrainerM3AfterBattleText:
+	text_far _Route6CooltrainerM3AfterBattleText
+	text_end
+
+Route6CooltrainerF3Text:                              ; New trainer added by G-Dubs
+	text_asm
+	ld hl, Route6TrainerHeader7
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route6CooltrainerF3BattleText:
+	text_far _Route6CooltrainerF3BattleText
+	text_end
+
+Route6CooltrainerF3EndBattleText:
+	text_far _Route6CooltrainerF3EndBattleText
+	text_end
+
+Route6CooltrainerF3AfterBattleText:
+	text_far _Route6CooltrainerF3AfterBattleText
+	text_end
+
+Route6Youngster3Text:
+	text_asm
+	ld hl, Route6TrainerHeader8
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route6Youngster3BattleText:
+	text_far _Route6Youngster3BattleText
+	text_end
+
+Route6Youngster3EndBattleText:
+	text_far _Route6Youngster3EndBattleText
+	text_end
+
+Route6Youngster3AfterBattleText:
+	text_far _Route6Youngster3AfterBattleText
+	text_end
+
 Route6UndergroundPathSignText:
 	text_far _Route6UndergroundPathSignText
+	text_end
+
+Route6SignText:                                       ; New sign added by G-Dubs
+	text_far _Route6SignText
 	text_end
