@@ -1,12 +1,12 @@
 WildDataPointers:
 	table_width 2
-	dw NothingWildMons         ; PALLET_TOWN
-	dw NothingWildMons         ; VIRIDIAN_CITY
+	dw PalletTownWildMons      ; PALLET_TOWN          ; Wild PokéMon enabled by G-Dubs
+	dw ViridianCityWildMons    ; VIRIDIAN_CITY        ; Wild PokéMon enabled by G-Dubs
 	dw NothingWildMons         ; PEWTER_CITY
-	dw NothingWildMons         ; CERULEAN_CITY
+	dw CeruleanCityWildMons    ; CERULEAN_CITY        ; Wild PokéMon enabled by G-Dubs
 	dw NothingWildMons         ; LAVENDER_TOWN
-	dw NothingWildMons         ; VERMILION_CITY
-	dw NothingWildMons         ; CELADON_CITY
+	dw VermillionCityWildMons  ; VERMILION_CITY       ; Wild PokéMon enabled by G-Dubs
+	dw CeladonCityWildMons     ; CELADON_CITY         ; Wild PokéMon enabled by G-Dubs
 	dw NothingWildMons         ; FUCHSIA_CITY
 	dw NothingWildMons         ; CINNABAR_ISLAND
 	dw NothingWildMons         ; INDIGO_PLATEAU
@@ -323,3 +323,8 @@ INCLUDE "data/wild/maps/VictoryRoad2F.asm"
 INCLUDE "data/wild/maps/VictoryRoad3F.asm"
 INCLUDE "data/wild/maps/VictoryRoad1F.asm"
 INCLUDE "data/wild/maps/DiglettsCave.asm"
+INCLUDE "data/wild/maps/PalletTown.asm"               ; New WildMons file added by G-Dubs
+INCLUDE "data/wild/maps/ViridianCity.asm"             ; New WildMons file added by G-Dubs
+INCLUDE "data/wild/maps/CeruleanCity.asm"             ; New WildMons file added by G-Dubs
+INCLUDE "data/wild/maps/VermillionCity.asm"           ; New WildMons file added by G-Dubs
+INCLUDE "data/wild/maps/CeladonCity.asm"              ; New WildMons file added by G-Dubs
