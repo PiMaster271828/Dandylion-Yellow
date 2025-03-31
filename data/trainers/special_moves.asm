@@ -10,7 +10,7 @@ SpecialTrainerMoves:
 	  db 1, 2, TACKLE        ; Adding Tackle and String Shot on the Metapod              ; Added by G-Dubs
 	  db 1, 3, STRING_SHOT
 	  db 3, 2, TACKLE        ; Adding Tackle and String Shot on the Metapod              ; Added by G-Dubs
-	  db 3, 3, STRING_SHOT
+	  db 3, 3, STRING_SHOT   
 	  db 0
 
       db BUG_CATCHER, 3
@@ -80,43 +80,49 @@ SpecialTrainerMoves:
 	  db 5, 3, STRING_SHOT
 	 ;db 5, 4, BUG_BITE
 	  db 0
+; Route 6
+      db BUG_CATCHER, 20
+	  db 1, 1, TACKLE 
+	  db 1, 2, HARDEN
+	  db 1, 3, STRUGGLE
+	 ;db 1, 4, BUG_BITE
 
 ; Youngsters
   ; Route 9
-	  db YOUNGSTER, 14        ; A.J. from the Anime and his OP Sandshrew
+	  db YOUNGSTER, 14       ; A.J. from the Anime and his OP Sandshrew
 	  db 1, 4, FISSURE
 	  db 0
 
 ; Team Rocket
   ; Cerulean City
-      db ROCKET, 5            ; Rocket who stole TM28 from Cerulean City
-	  db 1, 1, DIG            ; Adding Dig to Machop                                     ; Added by G-Dubs            
+      db ROCKET, 5           ; Rocket who stole TM28 from Cerulean City
+	  db 1, 1, DIG           ; Adding Dig to Machop                                     ; Added by G-Dubs            
 
 ; Gym Leaders
   ; Pewter City Gym
     ; Brock
 	  db BROCK, 1
-	  db 1, 1, TACKLE         ; Brock's Geodude 
+	  db 1, 1, TACKLE        ; Brock's Geodude 
 	  db 1, 2, DEFENSE_CURL
 	  db 1, 3, ROCK_THROW
 	  db 1, 4, BIDE
-	  db 2, 1, SCRATCH        ; Brock's Kabuto
+	  db 2, 1, SCRATCH       ; Brock's Kabuto
 	  db 2, 2, ABSORB
 	  db 2, 3, BIDE
 	  db 2, 4, HARDEN
-	  db 3, 1, ABSORB         ; Brock's Zubat
+	  db 3, 1, ABSORB        ; Brock's Zubat
 	  db 3, 2, SUPERSONIC        
 	  db 3, 3, GUST
 	  db 3, 4, LEECH_LIFE    
-	  db 4, 1, TACKLE         ; Brock's Vulpix
+	  db 4, 1, TACKLE        ; Brock's Vulpix
 	  db 4, 2, EMBER ; KINDLE
 	  db 4, 3, TAIL_WHIP
 	  db 4, 4, QUICK_ATTACK
-	  db 5, 1, CONSTRICT      ; Brock's Omanyte
+	  db 5, 1, CONSTRICT     ; Brock's Omanyte
 	  db 5, 2, BIND  
 	  db 5, 3, WITHDRAW      
 	  db 5, 4, BIDE       
-	  db 6, 1, TACKLE         ; Brock's Onix 
+	  db 6, 1, TACKLE        ; Brock's Onix 
 	  db 6, 2, SCREECH
 	  db 6, 3, BIND  
 	  db 6, 4, BIDE           
@@ -124,15 +130,15 @@ SpecialTrainerMoves:
   ; Cerulean City Gym
 	; Misty
 	  db MISTY, 1
-	  db 1, 1, SMOKESCREEN    ; Misty's Horsea
+	  db 1, 1, SMOKESCREEN   ; Misty's Horsea
 	  db 1, 2, BUBBLEBEAM
 	  db 1, 3, LEER ; FIN_SLAP
       db 1, 4, WATER_GUN 
-	  db 2, 1, HEADBUTT       ; Misty's Seel
+	  db 2, 1, HEADBUTT      ; Misty's Seel
 	  db 2, 2, GROWL ; FIN_SLAP
 	  db 2, 3, HORN_ATTACK
 	  db 2, 4, BUBBLEBEAM     
-	  db 3, 1, TACKLE         ; Misty's Staryu
+	  db 3, 1, TACKLE        ; Misty's Staryu
       db 3, 2, HARDEN
 	  db 3, 3, WATER_GUN
 	  db 3, 4, SWIFT
@@ -153,15 +159,28 @@ SpecialTrainerMoves:
 	; Lt. Surge
 	  db LT_SURGE, 1
 	  db 1, 1, QUICK_ATTACK   ; Lt. Surge's Raticate
+	  db 1, 2, HYPER_FANG
+	  db 1, 3, BITE
 	  db 1, 4, THUNDERBOLT
 	  db 2, 1, SONICBOOM      ; Lt. Surge's Electrode
 	  db 2, 2, THUNDERBOLT
-	  db 3, 1, THUNDERPUNCH   ; Lt. Surge's Magneton    ; Will have Spark
+	  db 2, 3, REFLECT
+	  db 2, 4, THUNDER_WAVE
+	  db 3, 1, THUNDERBOLT    ; Lt. Surge's Magneton
+	  db 3, 2, SUPERSONIC
+	  db 3, 3, VICEGRIP  ; MAGNET_BOMB
+	  db 3, 4, TRI_ATTACK
 	  db 4, 1, THUNDERBOLT    ; Lt. Surge's Fearow      ; Will have Bolt Beak
-	  db 4, 2, SWIFT     
-	  db 5, 3, THUNDERPUNCH   ; Lt. surge's Electabuzz	
+	  db 4, 2, WING_ATTACK  ; DUALWINGBEAT
+	  db 4, 3, MIRROR_MOVE
+	  db 4, 4, SWIFT  ; AERIAL_ACE
+	  db 5, 1, KARATE_CHOP    ; Lt. surge's Electabuzz
+	  db 5, 2, SWIFT     
+	  db 5, 3, THUNDERPUNCH
+	  db 5, 4, SCREECH  	
 	  db 6, 1, MEGA_PUNCH     ; Lt. Surge's Raichu
 	  db 6, 2, MEGA_KICK
+	  db 6, 3, THUNDERBOLT
 	  db 6, 4, GROWL
 	  db 0
   ; Celadon City Gym
@@ -173,8 +192,8 @@ SpecialTrainerMoves:
 	  db 3, 4, MEGA_DRAIN     ; Erika's Butterfree
 	  db 4, 1, BIND           ; Erika's Tangela
       db 4, 2, MEGA_DRAIN ; NATURAL GIFT                            
- 	  db 5, 2, MEGA_DRAIN     ; Erika's Exeggutor
-	  db 6, 2, STUN_SPORE     ; Erika's Vileplume
+ 	  db 5, 2, MEGA_DRAIN    ; Erika's Exeggutor
+	  db 6, 2, STUN_SPORE    ; Erika's Vileplume
 	  db 6, 3, MEGA_DRAIN
       db 6, 4, PETAL_DANCE
 	  db 0
@@ -187,40 +206,40 @@ SpecialTrainerMoves:
 	  db 2, 2, SLUDGE         ; Koga's Golbat   ; Will have Poison Fang
       db 2, 3, HYPNOSIS	  
 	  db 2, 4, TOXIC
-	  db 3, 2, SLASH           ; Koga's Scyther 
-	  db 4, 1, GLARE           ; Koga's Arbok  
+	  db 3, 2, SLASH         ; Koga's Scyther 
+	  db 4, 1, GLARE         ; Koga's Arbok  
 	  db 4, 4, TOXIC
-	  db 5, 1, NIGHT_SHADE     ; Koga's Weezing
-	  db 6, 2, TOXIC           ; Koga's Venomoth
+	  db 5, 1, NIGHT_SHADE    ; Koga's Weezing
+	  db 6, 2, TOXIC          ; Koga's Venomoth
 	  db 6, 3, DOUBLE_TEAM
 	  db 0 
   ; Cinnibar Island Gym	
 	; Blaine
 	  db BLAINE, 1
-	  db 1, 2, FLAMETHROWER    ; Blaine's Ninetales
-	  db 2, 2, FIRE_BLAST      ; Blaine's Tauros
-      db 3, 1, FIRE_SPIN       ; Blaine's Rapidash
+	  db 1, 2, FLAMETHROWER  ; Blaine's Ninetales
+	  db 2, 2, FIRE_BLAST    ; Blaine's Tauros
+      db 3, 1, FIRE_SPIN     ; Blaine's Rapidash
 	  db 3, 2, EARTHQUAKE
 	  db 3, 3, THUNDERBOLT
-	  db 4, 4, FIRE_BLAST      ; Blaine's Charizard Y
-	  db 5, 3, BITE            ; Blaine's Arcanine
-      db 6, 1, FIRE_SPIN       ; Blaine's Magmar
+	  db 4, 4, FIRE_BLAST    ; Blaine's Charizard Y
+	  db 5, 3, BITE          ; Blaine's Arcanine
+      db 6, 1, FIRE_SPIN     ; Blaine's Magmar
 	  db 6, 2, THUNDERPUNCH
 	  db 0
 
   ; Saffron City Gym	
     ; Sabrina
 	  db SABRINA, 1
-	  db 1, 2, PSYWAVE        ; Sabrina's Golduck
+	  db 1, 2, PSYWAVE       ; Sabrina's Golduck
 	  db 1, 4, PSYCHIC_M    
-	  db 2, 1, SUBSTITUTE	  ; Sabrina's Mr. Mime
+	  db 2, 1, SUBSTITUTE	 ; Sabrina's Mr. Mime
 	  db 2, 2, PSYWAVE
-	  db 3, 2, NIGHT_SHADE    ; Sabrina's Haunter
-	  db 4, 2, HYPNOSIS       ; Sabrina's Hypno
+	  db 3, 2, NIGHT_SHADE   ; Sabrina's Haunter
+	  db 4, 2, HYPNOSIS      ; Sabrina's Hypno
       db 4, 3, PSYWAVE        
-	  db 5, 1, PSYWAVE        ; Sabrina's Slowbro
+	  db 5, 1, PSYWAVE       ; Sabrina's Slowbro
 	  db 5, 2, HEADBUTT
-	  db 6, 1, PSYWAVE        ; Sabrina's Alakazam
+	  db 6, 1, PSYWAVE       ; Sabrina's Alakazam
 	  db 6, 1, REFLECT
 	  db 0
 

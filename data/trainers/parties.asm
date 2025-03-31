@@ -116,19 +116,18 @@ BugCatcherData:
 	db 9, CATERPIE, 0                                                                                        ; Bug Catcher 18         ; Trainer from Red/Blue added by G-Dubs
 ; Route 6 (Again)
     db 20, CATERPIE, VENONAT, PARAS, WEEDLE, 0                                                               ; Bug Catcher 19         ; New trainer added by G-Dubs
+    db 25, METAPOD, KAKUNA, 0                                                                                ; Bug Catcher 20         ; New trainer added by G-Dubs
 /*
 ; Route 13
-    db 30, BUTTERFREE, BEEDRILL, VENOMOTH, 0                                                                 ; Bug Catcher 19         ; New Trainer added by G-Dubs
-; Route 15
-    db $FF, 33, VENONAT, 36, VENOMOTH, 0                                                                     ; Bug Catcher 20         ; New Trainer added by G-Dubs
+    db 30, BUTTERFREE, BEEDRILL, VENOMOTH, 0                                                                 ; Bug Catcher 21         ; New Trainer added by G-Dubs
 ; Route 16
-    db $FF, 34, VENONAT, 36, VENONAT, 38, VENONAT, 40, VENOMOTH, 0                                           ; Bug Catcher 21         ; New Trainer added by G-Dubs
+    db $FF, 34, VENONAT, 36, VENONAT, 38, VENONAT, 40, VENOMOTH, 0                                           ; Bug Catcher 22         ; New Trainer added by G-Dubs
 ; Safari Zone Area 1 Rest House
-    db $FF, 32, PARAS, 36, PARASECT, 0                                                                       ; Bug Catcher 22         ; New Trainer added by G-Dubs
+    db $FF, 32, PARAS, 36, PARASECT, 0                                                                       ; Bug Catcher 23         ; New Trainer added by G-Dubs
 ; Safari Zone Area 3 Rest House	
-	db 33, SCYTHER, PINSIR, 0                                                                                ; Bug Catcher 23         ; New Trainer added by G-Dubs
+	db 33, SCYTHER, PINSIR, 0                                                                                ; Bug Catcher 24         ; New Trainer added by G-Dubs
 ; Safari Zone Area 4 Rest House
-   db $FF, 32, VENONAT, 36, VENOMOTH, 0                                                                      ; Bug Catcher 24         ; New Trainer added by G-Dubs
+   db $FF, 32, VENONAT, 36, VENOMOTH, 0                                                                      ; Bug Catcher 25         ; New Trainer added by G-Dubs
 ; Victory Road  
     db 50, BUTTERFREE, PARASECT, BEEDRILL, VENOMOTH, 0                                                       ; Bug Catcher 25         ; New Trainer added by G-Dubs
 */
@@ -356,8 +355,8 @@ BurglarData:
 	db 34, GROWLITHE, PONYTA, 0			                                                                     ; Burglar 9
 
 EngineerData:
-; Unused
-	db 21, VOLTORB, MAGNEMITE, 0			                                                                 ; Engineer 1             ; (Unused)
+; Route 6/Route 9
+	db 21, VOLTORB, MAGNEMITE, 0			                                                                 ; Engineer 1             ; Previously Unused (Now used in two different locations)
 ; Route 11
 	db 21, MAGNEMITE, 0                                                                                      ; Engineer 2
 	db 18, MAGNEMITE, MAGNEMITE, MAGNETON, 0                                                                 ; Engineer 3
@@ -773,7 +772,7 @@ GentlemanData:
 	db 18, GROWLITHE, GROWLITHE, 0			                                                                 ; Gentleman 1
 	db 19, NIDORAN_M, NIDORAN_F, 0			                                                                 ; Gentleman 2
 ; SS Anne 2F Rooms/Vermilion Gym
-	db 22, VOLTORB, MAGNEMITE, 0			                                                                 ; Gentleman 3            ; Party used multiple times
+	db 22, VOLTORB, MAGNEMITE, 0			                                                                 ; Gentleman 3            ; Party had been used multiple times
 ; Unused
 	db 48, PRIMEAPE, 0				                                                                         ; Gentleman 4            ; (Unused)
 ; SS Anne 2F Rooms

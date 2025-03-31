@@ -24,6 +24,8 @@ Route6_TextPointers:
 	dw_const Route6CooltrainerM3Text,       TEXT_ROUTE6_COOLTRAINER_M3              ; New trainer added by G-Dubs
 	dw_const Route6CooltrainerF3Text,       TEXT_ROUTE6_COOLTRAINER_F3              ; New trainer added by G-Dubs
 	dw_const Route6Youngster3Text,          TEXT_ROUTE6_YOUNGSTER3                  ; New trainer added by G-Dubs
+    dw_const Route6SuperNerdText,           TEXT_ROUTE6_SUPER_NERD                  ; New trainer added by G-Dubs
+	dw_const Route6Youngster4Text,          TEXT_ROUTE6_YOUNGSTER4                  ; New trainer added by G-Dubs
 	dw_const Route6UndergroundPathSignText, TEXT_ROUTE6_UNDERGROUND_PATH_SIGN
     dw_const Route6SignText,                TEXT_ROUTE6_SIGN                        ; New sign added by G-Dubs
 
@@ -36,9 +38,9 @@ Route6TrainerHeader1:
 Route6TrainerHeader2:
 	trainer EVENT_BEAT_ROUTE_6_TRAINER_2, 4, Route6Youngster1BattleText, Route6Youngster1EndBattleText, Route6Youngster1AfterBattleText
 Route6TrainerHeader3:
-	trainer EVENT_BEAT_ROUTE_6_TRAINER_3, 3, Route6CooltrainerM2BattleText, Route6CooltrainerM2EndBattleText, Route6CooltrainerM2AfterBattleText
+	trainer EVENT_BEAT_ROUTE_6_TRAINER_3, 2, Route6CooltrainerM2BattleText, Route6CooltrainerM2EndBattleText, Route6CooltrainerM2AfterBattleText
 Route6TrainerHeader4:
-	trainer EVENT_BEAT_ROUTE_6_TRAINER_4, 3, Route6CooltrainerF2BattleText, Route6CooltrainerF2EndBattleText, Route6CooltrainerF2AfterBattleText
+	trainer EVENT_BEAT_ROUTE_6_TRAINER_4, 2, Route6CooltrainerF2BattleText, Route6CooltrainerF2EndBattleText, Route6CooltrainerF2AfterBattleText
 Route6TrainerHeader5:
 	trainer EVENT_BEAT_ROUTE_6_TRAINER_5, 3, Route6Youngster2BattleText, Route6Youngster2EndBattleText, Route6Youngster2AfterBattleText
 Route6TrainerHeader6:
@@ -46,7 +48,11 @@ Route6TrainerHeader6:
 Route6TrainerHeader7:
 	trainer EVENT_BEAT_ROUTE_6_TRAINER_7, 2, Route6CooltrainerF3BattleText, Route6CooltrainerF3EndBattleText, Route6CooltrainerF3AfterBattleText     ; New trainer added by G-Dubs
 Route6TrainerHeader8:
-	trainer EVENT_BEAT_ROUTE_6_TRAINER_8, 3, Route6Youngster3BattleText, Route6Youngster3EndBattleText, Route6Youngster3AfterBattleText              ; New trainer added by G-Dubs
+	trainer EVENT_BEAT_ROUTE_6_TRAINER_8, 4, Route6Youngster3BattleText, Route6Youngster3EndBattleText, Route6Youngster3AfterBattleText              ; New trainer added by G-Dubs
+Route6TrainerHeader9:
+	trainer EVENT_BEAT_ROUTE_6_TRAINER_9, 2, Route6SuperNerdBattleText, Route6SuperNerdEndBattleText, Route6SuperNerdAfterBattleText                 ; New trainer added by G-Dubs
+Route6TrainerHeader10:
+	trainer EVENT_BEAT_ROUTE_6_TRAINER_10, 2, Route6Youngster4BattleText, Route6Youngster4EndBattleText, Route6Youngster4AfterBattleText             ; New trainer added by G-Dubs
 	db -1 ; end
 
 Route6CooltrainerM1Text:
@@ -193,7 +199,7 @@ Route6CooltrainerF3AfterBattleText:
 	text_far _Route6CooltrainerF3AfterBattleText
 	text_end
 
-Route6Youngster3Text:
+Route6Youngster3Text:                                 ; New trainer added by G-Dubs
 	text_asm
 	ld hl, Route6TrainerHeader8
 	call TalkToTrainer
@@ -209,6 +215,42 @@ Route6Youngster3EndBattleText:
 
 Route6Youngster3AfterBattleText:
 	text_far _Route6Youngster3AfterBattleText
+	text_end
+
+Route6SuperNerdText:                                  ; New trainer added by G-Dubs
+	text_asm
+	ld hl, Route6TrainerHeader9
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route6SuperNerdBattleText:
+	text_far _Route6SuperNerdBattleText
+	text_end
+
+Route6SuperNerdEndBattleText:
+	text_far _Route6SuperNerdEndBattleText
+	text_end
+
+Route6SuperNerdAfterBattleText:
+	text_far _Route6SuperNerdAfterBattleText
+	text_end
+
+Route6Youngster4Text:                                 ; New trainer added by G-Dubs
+	text_asm
+	ld hl, Route6TrainerHeader10
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route6Youngster4BattleText:
+	text_far _Route6Youngster4BattleText
+	text_end
+
+Route6Youngster4EndBattleText:
+	text_far _Route6Youngster4EndBattleText
+	text_end
+
+Route6Youngster4AfterBattleText:
+	text_far _Route6Youngster4AfterBattleText
 	text_end
 
 Route6UndergroundPathSignText:

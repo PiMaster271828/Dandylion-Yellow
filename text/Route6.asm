@@ -181,9 +181,60 @@ _Route6Youngster3AfterBattleText::
 	line "relationships"
 	cont "seem like a lot"
 	cont "of drama. At"
-	cont "least my bug"
-	cont "#MON will never"
-    cont "break up with me!"
+	cont "least my BUG"
+	cont "type #MON will"
+    cont "never break up"
+	cont "with me!"
+	done
+
+_Route6SuperNerdBattleText::
+	text "Finally, a break"
+	line "from all that"
+	cont "wiring! Let's see"
+	cont "if my battling"
+	cont "skills are as"
+	cont "sharp as my"
+	cont "tools."
+	done
+
+_Route6SuperNerdEndBattleText::
+	text "Guess"
+	line "I need a tune-up."
+	cont "Maybe I've been"
+	cont "working too much."
+	prompt
+
+_Route6SuperNerdAfterBattleText::
+	text "Back to work for"
+	line "me. SURGE runs a"
+	cont "tight ship, and I"
+	cont "can't slack off"
+	cont "forever!"
+    done
+
+_Route6Youngster4BattleText::
+	text "Other trainers"
+	line "don't get it!"
+	cont "BUG type #MON"
+	cont "are all about"
+	cont "patience and"
+	cont "persistence!"
+	cont "Just watch!"
+	done
+
+_Route6Youngster4EndBattleText::
+	text "What?"
+	line "But my bugs have"
+	cont "hardened"
+	cont "themselves"
+	cont "for this moment!"
+	prompt
+
+_Route6Youngster4AfterBattleText::
+	text "Real bug trainers"
+	line "know-great things"
+	cont "come to those who"
+	cont "wait. You'll see!"
 	done
 
 _Route6UndergroundPathSignText::
