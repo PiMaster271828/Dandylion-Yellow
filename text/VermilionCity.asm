@@ -167,3 +167,22 @@ _VermilionCityGymSignText::
 _VermilionCityHarborSignText::
 	text "VERMILION HARBOR"
 	done
+
+_VermilionCityDiglettsCaveSignText::        ; New sign added by G-Dubs
+	text "DIGLETT'S CAVE"
+	line "Ahead"
+	done
+
+_VermilionCityFishingNoticeSignText::        ; New sign added by G-Dubs
+	text "NOTICE!"
+	
+	para "The waters near"
+	line "the VERMILLION"
+	cont "HARBOR are home"
+	cont "to aggressive" 
+	cont "TENTACOOL. Fish" 
+	cont "at your own risk!"
+
+    para "VERMILION CITY"
+	line "PORT AUTHORITY"
+	done

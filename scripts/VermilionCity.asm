@@ -87,7 +87,7 @@ VermilionCityDefaultScript:
 	ret
 
 SSAnneTicketCheckCoords:
-	dbmapcoord 18, 30
+	dbmapcoord 18, 31
 	db -1 ; end
 
 VermilionCityPlayerAllowedToPassScript:
@@ -148,6 +148,8 @@ VermilionCity_TextPointers:
 	dw_const VermilionCityPokemonFanClubSignText, TEXT_VERMILIONCITY_POKEMON_FAN_CLUB_SIGN
 	dw_const VermilionCityGymSignText,            TEXT_VERMILIONCITY_GYM_SIGN
 	dw_const VermilionCityHarborSignText,         TEXT_VERMILIONCITY_HARBOR_SIGN
+	dw_const VermilionCityDiglettsCaveSignText,   TEXT_VERMILIONCITY_DIGLETTS_CAVE_SIGN       ; New sign added by G-Dubs
+	dw_const VermilionCityFishingNoticeSignText,  TEXT_VERMILIONCITY_FISHING_NOTICE_SIGN      ; New sign added by G-Dubs
 
 VermilionCityBeautyText:
 	text_far _VermilionCityBeautyText
@@ -212,8 +214,8 @@ VermilionCitySailor1Text:
 	jp TextScriptEnd
 
 .inFrontOfOrBehindGuardCoords
-	dbmapcoord 19, 29 ; in front of guard
-	dbmapcoord 19, 31 ; behind guard
+	dbmapcoord 19, 31 ; in front of guard
+	dbmapcoord 19, 33 ; behind guard
 	db -1 ; end
 
 .WelcomeToSSAnneText:
@@ -280,6 +282,16 @@ VermilionCityGymSignText:
 VermilionCityHarborSignText:
 	text_asm
 	farcall VermilionCityPrintHarborSignText
+	jp TextScriptEnd
+
+VermilionCityDiglettsCaveSignText:                         ; New sign added by G-Dubs
+	text_asm
+	farcall VermilionCityPrintDiglettsCaveSignText
+	jp TextScriptEnd
+
+VermilionCityFishingNoticeSignText:                        ; New sign added by G-Dubs
+	text_asm
+	farcall VermilionCityPrintFishingNoticeSignText
 	jp TextScriptEnd
 
 VermilionCityOfficerJennyText:

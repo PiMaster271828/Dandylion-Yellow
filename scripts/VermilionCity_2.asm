@@ -109,3 +109,22 @@ VermilionCityPrintHarborSignText::
 .text
 	text_far _VermilionCityHarborSignText
 	text_end
+
+
+VermilionCityPrintDiglettsCaveSignText::                   ; New sign added by G-Dubs
+	ld hl, .text
+	call PrintText
+	ret
+
+.text
+	text_far _VermilionCityDiglettsCaveSignText
+	text_end
+
+VermilionCityPrintFishingNoticeSignText::                   ; New sign added by G-Dubs
+	ld hl, .text
+	call PrintText
+	ret
+
+.text
+	text_far _VermilionCityFishingNoticeSignText
+	text_end
