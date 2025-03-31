@@ -63,12 +63,18 @@ BeachHouse_Block::  INCBIN "gfx/blocksets/beach_house.bst"
 
 SECTION "Tilesets 4", ROMX                                      ; Section repurposed for adding bigger tilesets/blocksets by G-Dubs
 
-Overworld_GFX::     INCBIN "gfx/tilesets/overworld.2bpp"
+Overworld_GFX::     INCBIN "gfx/tilesets/overworld.2bpp"        ; Moved from Section 1 to make space for 256 tileset by G-Dubs
 	ds 32
-Overworld_Block::   INCBIN "gfx/blocksets/overworld.bst"
+Overworld_Block::   INCBIN "gfx/blocksets/overworld.bst"        ; Moved from Section 1 to make space for 256 blockset by G-Dubs
 
 
 SECTION "Tilesets 5", ROMX                                      ; New section added for adding bigger tilesets/blocksets by G-Dubs
 
-Cavern_GFX::        INCBIN "gfx/tilesets/cavern.2bpp"
-Cavern_Block::      INCBIN "gfx/blocksets/cavern.bst"
+Cavern_GFX::        INCBIN "gfx/tilesets/cavern.2bpp"           ; Moved from Section 3 to make space for the Beach House tileset by G-Dubs
+Cavern_Block::      INCBIN "gfx/blocksets/cavern.bst"           ; Moved from Section 3 to make space for the Beach House blockset by G-Dubs
+
+
+SECTION "Tilesets 6", ROMX                                      ; New section added for adding bigger tilesets/blocksets by G-Dubs
+
+Overworld2_GFX::     INCBIN "gfx/tilesets/overworld2.2bpp"      ; New tileset added by G-Dubs
+Overworld2_Block::   INCBIN "gfx/blocksets/overworld2.bst"      ; New blockset added by G-Dubs

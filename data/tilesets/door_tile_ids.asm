@@ -13,6 +13,7 @@ DoorTileIDPointers:
 	dbw FACILITY,    .FacilityDoorTileIDs
 	dbw PLATEAU,     .PlateauDoorTileIDs
 	dbw INTERIOR,    .InteriorDoorTileIDs
+	dbw OVERWORLD2,   .Overworld2DoorTileIDs          ; New tileset added by G-Dubs
 	db -1 ; end
 
 MACRO door_tiles
@@ -23,6 +24,7 @@ MACRO door_tiles
 ENDM
 
 .OverworldDoorTileIDs:
+.Overworld2DoorTileIDs:                               ; New tileset added by G-Dubs
 	door_tiles $1B, $58, $AD      ; New door tile added by G-Dubs
 
 .ForestDoorTileIDs:

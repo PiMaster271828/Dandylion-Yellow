@@ -9,6 +9,7 @@ WaterTilesets:
 	db CAVERN
 	db FACILITY
 	db PLATEAU
+	db OVERWORLD2       ; New tileset added by G-Dubs
 	db -1 ; end
 
 ; tiles that allow surfing and fishing,

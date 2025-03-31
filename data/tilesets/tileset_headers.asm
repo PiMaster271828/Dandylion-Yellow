@@ -34,4 +34,5 @@ Tilesets:
 	tileset Facility,    $12, -1, -1,  -1, TILEANIM_WATER
 	tileset Plateau,      -1, -1, -1, $45, TILEANIM_WATER
 	tileset BeachHouse,   -1, -1, -1,  -1, TILEANIM_NONE
+	tileset Overworld2,   -1, -1, -1, $52, TILEANIM_WATER_FLOWER     ; New tileset added by G-Dubs
 	assert_table_length NUM_TILESETS

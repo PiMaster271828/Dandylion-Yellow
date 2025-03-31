@@ -26,4 +26,5 @@
 	const FACILITY     ; 22
 	const PLATEAU      ; 23
 	const BEACH_HOUSE  ; 24
+	const OVERWORLD2   ; 25       ; New tileset added by G-Dubs
 DEF NUM_TILESETS EQU const_value
