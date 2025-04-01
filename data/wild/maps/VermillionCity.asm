@@ -8,7 +8,7 @@ VermillionCityWildMons:
 	db 19, RATTATA        ; 10%
 	db 16, VOLTORB        ;  5%
 	db 16, MAGNEMITE      ;  5%
-	db 10, PIDGEOTTO      ;  4%
+	db 20, PIDGEOTTO      ;  4%
 	db 20, PIKACHU        ;  1%
 	end_grass_wildmons
 
