@@ -173,7 +173,7 @@ _MtMoonB2FRocket5BattleText::                    ; New trainer added by G-Dubs
 	text "Tch! You think"
 	line "you can just" 
 	cont "waltz through MT."
-	cont " MOON? This place"
+	cont "MOON? This place"
 	cont "belongs to TEAM" 
 	cont "ROCKET now, kid!"
 	done
