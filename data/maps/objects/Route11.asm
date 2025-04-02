@@ -9,6 +9,8 @@
 	const_export ROUTE11_YOUNGSTER3
 	const_export ROUTE11_SUPER_NERD2
 	const_export ROUTE11_YOUNGSTER4
+	const_export ROUTE11_SUPER_NERD3        ; New trainer added by G-Dubs
+	const_export ROUTE11_YOUNGSTER5         ; New trainer added by G-Dubs       
 
 Route11_Object:
 	db $f ; border block
@@ -34,5 +36,7 @@ Route11_Object:
 	object_event 43,  5, SPRITE_YOUNGSTER, STAY, RIGHT, TEXT_ROUTE11_YOUNGSTER3, OPP_YOUNGSTER, 11
 	object_event 45, 16, SPRITE_SUPER_NERD, STAY, LEFT, TEXT_ROUTE11_SUPER_NERD2, OPP_ENGINEER, 3
 	object_event 22, 12, SPRITE_YOUNGSTER, STAY, UP, TEXT_ROUTE11_YOUNGSTER4, OPP_YOUNGSTER, 12
+	object_event 55, 14, SPRITE_SUPER_NERD, STAY, LEFT, TEXT_ROUTE11_SUPER_NERD3, OPP_ENGINEER, 4       ; New trainer added by G-Dubs
+    object_event 58,  3, SPRITE_YOUNGSTER, STAY, LEFT, TEXT_ROUTE11_YOUNGSTER5, OPP_BUG_CATCHER, 21
 
 	def_warps_to ROUTE_11

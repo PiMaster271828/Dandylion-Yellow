@@ -348,20 +348,22 @@
 	const EVENT_BEAT_ZAPDOS
 
 ; Route 11 events
-	const_next $470
-	const_skip
-	const EVENT_BEAT_ROUTE_11_TRAINER_0
-	const EVENT_BEAT_ROUTE_11_TRAINER_1
-	const EVENT_BEAT_ROUTE_11_TRAINER_2
-	const EVENT_BEAT_ROUTE_11_TRAINER_3
-	const EVENT_BEAT_ROUTE_11_TRAINER_4
-	const EVENT_BEAT_ROUTE_11_TRAINER_5
-	const EVENT_BEAT_ROUTE_11_TRAINER_6
-	const EVENT_BEAT_ROUTE_11_TRAINER_7
-	const EVENT_BEAT_ROUTE_11_TRAINER_8
-	const EVENT_BEAT_ROUTE_11_TRAINER_9
-	const_skip 4
-	const EVENT_GOT_ITEMFINDER
+	const_next $470                                                            ; $470
+	const_skip                                                                 ; $471
+	const EVENT_BEAT_ROUTE_11_TRAINER_0                                        ; $472
+	const EVENT_BEAT_ROUTE_11_TRAINER_1                                        ; $473
+	const EVENT_BEAT_ROUTE_11_TRAINER_2                                        ; $474
+	const EVENT_BEAT_ROUTE_11_TRAINER_3                                        ; $475
+	const EVENT_BEAT_ROUTE_11_TRAINER_4                                        ; $476
+	const EVENT_BEAT_ROUTE_11_TRAINER_5                                        ; $477
+	const EVENT_BEAT_ROUTE_11_TRAINER_6                                        ; $478
+	const EVENT_BEAT_ROUTE_11_TRAINER_7                                        ; $479
+	const EVENT_BEAT_ROUTE_11_TRAINER_8                                        ; $47A
+	const EVENT_BEAT_ROUTE_11_TRAINER_9                                        ; $47B
+	const EVENT_BEAT_ROUTE_11_TRAINER_10    ; New trainer added by G-Dubs      ; $47C
+	const EVENT_BEAT_ROUTE_11_TRAINER_11    ; New trainer added by G-Dubs      ; $47D
+	const_skip                              ; Formerly const_skip 4            ; $47E  
+	const EVENT_GOT_ITEMFINDER                                                 ; $47F
 
 ; Route 12 events
 	const_next $480

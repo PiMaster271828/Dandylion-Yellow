@@ -157,6 +157,55 @@ _Route11Youngster4AfterBattleText::
 	line "stronger ones!"
 	done
 
+_Route11SuperNerd3BattleText::
+	text "I just got hired"
+	line "at the VERMILION"
+	cont "GYM! Thought I'd"
+	cont "test my skills"
+	cont "out here before"
+	cont "heading back to"
+	cont "work."
+	done
+
+_Route11SuperNerd3EndBattleText::
+	text "Looks"
+	line "like I need to"
+	cont "recalibrate my"
+	cont "strategy..."
+	prompt
+
+_Route11SuperNerd3AfterBattleText::
+	text "I hear SURGE runs"
+	line "a tight ship. If I"
+	cont "don't step up my"
+	cont "game, I'll be"
+	cont "stuck rewiring"
+	cont "light panels all"
+	cont "day!"
+	done
+
+_Route11Youngster5BattleText::
+	text "I've trained my"
+	line "bug #MON to"
+	cont "be the best! You"
+	cont "won't squash my"
+	cont "dreams so easily!"
+	done
+
+_Route11Youngster5EndBattleText::
+	text "Looks"
+	line "like I got caught"
+	cont "in my own web..."
+	prompt
+
+_Route11Youngster5AfterBattleText::
+	text "Maybe I should"
+	line "visit FUCHSIA"
+	cont "CITY I hear real"
+	cont "Bug Masters train"
+	cont "there!"
+	done
+
 _Route11DiglettsCaveSignText::
 	text "DIGLETT's CAVE"
 	done
