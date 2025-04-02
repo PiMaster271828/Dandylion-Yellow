@@ -15,7 +15,7 @@ _MtMoon1FHiker1EndBattleText::
 
 _MtMoon1FHiker1AfterBattleText::
     text "Watch out for"
-    line "Zubat swarms in"
+    line "ZUBAT swarms in"
     cont "the caves ahead."
     cont "Those little guys"
     cont "don't know when"
