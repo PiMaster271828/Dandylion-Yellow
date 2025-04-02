@@ -18,12 +18,12 @@ Route11_Object:
 	def_warp_events
 	warp_event 50,  8, ROUTE_11_GATE_1F, 1
 	warp_event 50,  9, ROUTE_11_GATE_1F, 1
-	warp_event 59,  8, ROUTE_11_GATE_1F, 3
 	warp_event 59,  9, ROUTE_11_GATE_1F, 3
+	warp_event 59,  8, ROUTE_11_GATE_1F, 3
 	warp_event  4,  5, DIGLETTS_CAVE_ROUTE_11, 1
 
 	def_bg_events
-	bg_event  1,  5, TEXT_ROUTE11_DIGLETTSCAVE_SIGN
+	bg_event  8,  5, TEXT_ROUTE11_DIGLETTSCAVE_SIGN
 
 	def_object_events
 	object_event 10, 14, SPRITE_GAMBLER, STAY, DOWN, TEXT_ROUTE11_GAMBLER1, OPP_GAMBLER, 1
@@ -37,6 +37,6 @@ Route11_Object:
 	object_event 45, 16, SPRITE_SUPER_NERD, STAY, LEFT, TEXT_ROUTE11_SUPER_NERD2, OPP_ENGINEER, 3
 	object_event 22, 12, SPRITE_YOUNGSTER, STAY, UP, TEXT_ROUTE11_YOUNGSTER4, OPP_YOUNGSTER, 12
 	object_event 55, 14, SPRITE_SUPER_NERD, STAY, LEFT, TEXT_ROUTE11_SUPER_NERD3, OPP_ENGINEER, 4       ; New trainer added by G-Dubs
-    object_event 58,  3, SPRITE_YOUNGSTER, STAY, LEFT, TEXT_ROUTE11_YOUNGSTER5, OPP_BUG_CATCHER, 21
+	object_event 58,  3, SPRITE_YOUNGSTER, STAY, LEFT, TEXT_ROUTE11_YOUNGSTER5, OPP_BUG_CATCHER, 21
 
 	def_warps_to ROUTE_11
