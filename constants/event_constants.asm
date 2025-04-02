@@ -60,23 +60,23 @@
 	const EVENT_BEAT_BROCK
 
 ; Cerulean City events
-	const_next $98
-	const EVENT_BEAT_CERULEAN_RIVAL
-	const_skip 14
-	const EVENT_BEAT_CERULEAN_ROCKET_THIEF
-	const EVENT_GOT_BULBASAUR_IN_CERULEAN
-	const_skip 17
-	const EVENT_BEAT_CERULEAN_GYM_TRAINER_0
-	const EVENT_BEAT_CERULEAN_GYM_TRAINER_1
-	const EVENT_BEAT_CERULEAN_GYM_TRAINER_2      ; New trainer added by G-Dubs
-	const EVENT_BEAT_CERULEAN_GYM_TRAINER_3      ; New trainer added by G-Dubs
-	const EVENT_BEAT_CERULEAN_GYM_TRAINER_4      ; New trainer added by G-Dubs
-	const EVENT_BEAT_CERULEAN_GYM_TRAINER_5      ; New trainer added by G-Dubs
-	const EVENT_BEAT_CERULEAN_GYM_TRAINER_6      ; New trainer added by G-Dubs
-	const_skip 2
-	const EVENT_GOT_TM11
-	const EVENT_BEAT_MISTY
-	const EVENT_GOT_BICYCLE
+	const_next $98                                 
+	const EVENT_BEAT_CERULEAN_RIVAL                                                                ; $98
+	const_skip 14                                                                                  ; $99 - $A6
+	const EVENT_BEAT_CERULEAN_ROCKET_THIEF                                                         ; $A7
+	const EVENT_GOT_BULBASAUR_IN_CERULEAN                                                          ; $A8
+	const_skip 17                                                                                  ; $A9 - $B9
+	const EVENT_BEAT_CERULEAN_GYM_TRAINER_0                                                        ; $BA
+	const EVENT_BEAT_CERULEAN_GYM_TRAINER_1                                                        ; $BB
+	const EVENT_BEAT_CERULEAN_GYM_TRAINER_2      ; New trainer added by G-Dubs                     ; $BC
+	const EVENT_BEAT_CERULEAN_GYM_TRAINER_3      ; New trainer added by G-Dubs                     ; $BD
+	const EVENT_BEAT_CERULEAN_GYM_TRAINER_4      ; New trainer added by G-Dubs                     ; $BE
+	const EVENT_BEAT_CERULEAN_GYM_TRAINER_5      ; New trainer added by G-Dubs                     ; $BF
+	const EVENT_BEAT_CERULEAN_GYM_TRAINER_6      ; New trainer added by G-Dubs                     ; $C0
+	const_skip 2                                                                                   ; $C1 - $C2
+	const EVENT_GOT_TM11                                                                           ; $C3
+	const EVENT_BEAT_MISTY                                                                         ; $C4
+	const EVENT_GOT_BICYCLE                                                                        ; $C5
 
 ; Lavender Town events
 	const_next $F0 - 2
@@ -367,16 +367,16 @@
 
 ; Route 12 events
 	const_next $480
-	const EVENT_GOT_TM39
-	const_skip
-	const EVENT_BEAT_ROUTE_12_TRAINER_0
-	const EVENT_BEAT_ROUTE_12_TRAINER_1
-	const EVENT_BEAT_ROUTE_12_TRAINER_2
-	const EVENT_BEAT_ROUTE_12_TRAINER_3
-	const EVENT_BEAT_ROUTE_12_TRAINER_4
-	const EVENT_BEAT_ROUTE_12_TRAINER_5
-	const EVENT_BEAT_ROUTE_12_TRAINER_6
-	const_skip 5
+	const EVENT_GOT_TM39                                                       ; $481
+	const_skip                                                                 ; $482
+	const EVENT_BEAT_ROUTE_12_TRAINER_0                                        ; $483
+	const EVENT_BEAT_ROUTE_12_TRAINER_1                                        ; $484
+	const EVENT_BEAT_ROUTE_12_TRAINER_2                                        ; $485
+	const EVENT_BEAT_ROUTE_12_TRAINER_3                                        ; $486
+	const EVENT_BEAT_ROUTE_12_TRAINER_4                                        ; $487
+	const EVENT_BEAT_ROUTE_12_TRAINER_5                                        ; $488
+	const EVENT_BEAT_ROUTE_12_TRAINER_6                                        ; $489
+	const_skip 5                                                               ; $48A - 
 	const EVENT_FIGHT_ROUTE12_SNORLAX
 	const EVENT_BEAT_ROUTE12_SNORLAX
 
