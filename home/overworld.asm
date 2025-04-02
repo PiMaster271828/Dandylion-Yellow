@@ -686,9 +686,11 @@ PlayMapChangeSound::
 CheckIfInOutsideMap::
 ; If the player is in an outside map (a town or route), set the z flag
 	ld a, [wCurMapTileset]
-	and a ; most towns/routes have tileset 0 (OVERWORLD)
+	cp OVERWORLD  ; most towns/routes have tileset 0 (OVERWORLD)
 	ret z
-	cp PLATEAU ; Route 23 / Indigo Plateau
+	cp OVERWORLD2 ; Make sure overworld2 counts as an outside map
+	ret z
+	cp PLATEAU    ; Route 23 / Indigo Plateau
 	ret
 
 ; this function is an extra check that sometimes has to pass in order to warp, beyond just standing on a warp
@@ -710,7 +712,9 @@ ExtraWarpCheck::
 	cp ROCK_TUNNEL_1F
 	jr z, .useFunction2
 	ld a, [wCurMapTileset]
-	and a ; outside tileset (OVERWORLD)
+	cp OVERWORLD  ; outside tileset (OVERWORLD)
+	jr z, .useFunction2
+	cp OVERWORLD2 ; Make sure overworld2 is also treated as outdoor
 	jr z, .useFunction2
 	cp SHIP ; S.S. Anne tileset
 	jr z, .useFunction2

@@ -5,11 +5,11 @@ UsedCut:
 	and a ; OVERWORLD
 	jr z, .overworld
 	cp GYM
-	jr nz, .nothingToCut
-	ld a, [wTileInFrontOfPlayer]
-	cp $50 ; gym cut tree
-	jr nz, .nothingToCut
-	jr .canCut
+	jr z, .gym
+	cp OVERWORLD2 ; check for new overworld tileset
+	jr z, .overworld
+	jr .nothingToCut
+
 .overworld
 	dec a
 	ld a, [wTileInFrontOfPlayer]
@@ -17,6 +17,12 @@ UsedCut:
 	jr z, .canCut
 	cp $52 ; grass
 	jr z, .canCut
+.gym                                   ; New function added for cut trees in gyms
+	ld a, [wTileInFrontOfPlayer]
+	cp $50 ; gym cut tree
+	jr nz, .nothingToCut
+	jr .canCut
+
 .nothingToCut
 	ld hl, .NothingToCutText
 	jp PrintText

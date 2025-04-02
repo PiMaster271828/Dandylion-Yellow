@@ -136,8 +136,12 @@ LoadSpecialWarpData:
 	inc de
 	dec c
 	jr nz, .copyWarpDataLoop2
-	xor a ; OVERWORLD
-	ld [wCurMapTileset], a
+	; Ensure overworld2 tileset (ID 25) is not reset to 0
+	ld a, [wCurMapTileset]    
+    cp OVERWORLD2 ; overworld2 (2)
+    jr z, .done
+    xor a         ; Otherwise, default to OVERWORLD (0)
+    ld [wCurMapTileset], a
 .done
 	ld [wYOffsetSinceLastSpecialWarp], a
 	ld [wXOffsetSinceLastSpecialWarp], a
