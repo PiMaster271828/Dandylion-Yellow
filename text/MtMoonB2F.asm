@@ -199,7 +199,7 @@ _MtMoonB2FRocket5AfterBattleText::
 _MtMoonB2FRocket6BattleText::                    ; New trainer added by G-Dubs
 	text "Heh, you got guts"
 	line "wandering in"
-	cont "here, kid!  TEAM"
+	cont "here, kid! TEAM"
 	cont "ROCKET is gonna"
 	cont "claim all the"
 	cont "rare fossils in" 
@@ -215,21 +215,21 @@ _MtMoonB2FRocket6EndBattleText::
 	line "You're tougher"
 	cont "than you look..."
 	cont "This ain't over!"
-	cont ""
 	prompt
 
 _MtMoonB2FRocket6AfterBattleText::
 	text "Hey...  I swear I"
 	line "saw a fossil"
-	cont " right here..."
-	cont "..."
+	cont "right here..."
+	cont "... ... ... ..."
 	cont "Oh! ... Uhh..."
 	cont "Tch... Fine, take"
 	cont "your little"
 	cont "stroll, but the"
-	cont "boss is gonna love"
-	cont "what we dig up"
-	cont "here!  You'll see!"
+	cont "boss is gonna"
+	cont "love what we dig"
+	cont "up here!  You'll"
+	cont "see!"
 	done
 
 _MtMoonB2FMoonStoneSign::                        ; New sign added by G-Dubs
@@ -272,8 +272,8 @@ _MtMoonB2FMoonStoneSign::                        ; New sign added by G-Dubs
 	cont "possibly part of"
 	cont "a meteorite!"
 	cont "Certain #MON,"
-	cont "like Clefairy"
-	cont "and Nidorino,"
+	cont "like CLEFAIRY"
+	cont "and NIDORINO,"
 	cont "are rumored to"
 	cont "evolve when"
 	cont "exposed to its"
@@ -313,7 +313,7 @@ _MtMoonB2FWantedSign::                           ; New sign added by G-Dubs
 	cont "members who have"
 	cont "been sighted"
 	cont "causing trouble"
-	cont "across Kanto."
+	cont "across KANTO."
 	cont "They are known"
 	cont "for attempting"
 	cont "to steal rare"
@@ -322,7 +322,7 @@ _MtMoonB2FWantedSign::                           ; New sign added by G-Dubs
 	cont "#MON trainers."
 	
 	para "Suspect No.1 - "
-	line "Name: Jessie"
+	line "Name: JESSIE"
 	cont "A woman with long"
 	cont "red hair, known"
 	cont "for her sharp"
@@ -337,7 +337,7 @@ _MtMoonB2FWantedSign::                           ; New sign added by G-Dubs
 	cont "very dangerous!"
 
 	para "Suspect No.2 - "
-	line "Name: James"
+	line "Name: JAMES"
 	cont "A tall man with"
 	cont "blue hair, often"
 	cont "seen wearing a"

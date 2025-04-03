@@ -151,7 +151,7 @@ _Route12Fisher6AfterBattleText::
 	cont "train my other"
 	cont "#MON as much"
 	cont "as I train my"
-	cont "casting"
+	cont "rod casting"
 	cont "technique..."
 	done
 
