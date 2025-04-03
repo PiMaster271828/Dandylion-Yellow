@@ -67,10 +67,11 @@ Route12_TextPointers:
 	dw_const Route12Fisher1Text,           TEXT_ROUTE12_FISHER1
 	dw_const Route12Fisher2Text,           TEXT_ROUTE12_FISHER2
 	dw_const Route12CooltrainerMText,      TEXT_ROUTE12_COOLTRAINER_M
-	dw_const Route12SuperNerdText,         TEXT_ROUTE12_SUPER_NERD
+	dw_const Route12SuperNerd1Text,        TEXT_ROUTE12_SUPER_NERD1
 	dw_const Route12Fisher3Text,           TEXT_ROUTE12_FISHER3
 	dw_const Route12Fisher4Text,           TEXT_ROUTE12_FISHER4
 	dw_const Route12Fisher5Text,           TEXT_ROUTE12_FISHER5
+	dw_const Route12Fisher6Text,           TEXT_ROUTE12_FISHER6                ; New trainer added by G-Dubs
 	dw_const PickUpItemText,               TEXT_ROUTE12_TM_PAY_DAY
 	dw_const PickUpItemText,               TEXT_ROUTE12_IRON
 	dw_const Route12SignText,              TEXT_ROUTE12_SIGN
@@ -87,13 +88,15 @@ Route12TrainerHeader1:
 Route12TrainerHeader2:
 	trainer EVENT_BEAT_ROUTE_12_TRAINER_2, 4, Route12CooltrainerMBattleText, Route12CooltrainerMEndBattleText, Route12CooltrainerMAfterBattleText
 Route12TrainerHeader3:
-	trainer EVENT_BEAT_ROUTE_12_TRAINER_3, 4, Route12SuperNerdBattleText, Route12SuperNerdEndBattleText, Route12SuperNerdAfterBattleText
+	trainer EVENT_BEAT_ROUTE_12_TRAINER_3, 4, Route12SuperNerd1BattleText, Route12SuperNerd1EndBattleText, Route12SuperNerd1AfterBattleText
 Route12TrainerHeader4:
 	trainer EVENT_BEAT_ROUTE_12_TRAINER_4, 4, Route12Fisher3BattleText, Route12Fisher3EndBattleText, Route12Fisher3AfterBattleText
 Route12TrainerHeader5:
 	trainer EVENT_BEAT_ROUTE_12_TRAINER_5, 4, Route12Fisher4BattleText, Route12Fisher4EndBattleText, Route12Fisher4AfterBattleText
 Route12TrainerHeader6:
 	trainer EVENT_BEAT_ROUTE_12_TRAINER_6, 1, Route12Fisher5BattleText, Route12Fisher5EndBattleText, Route12Fisher5AfterBattleText
+Route12TrainerHeader7:
+	trainer EVENT_BEAT_ROUTE_12_TRAINER_7, 2, Route12Fisher6BattleText, Route12Fisher6EndBattleText, Route12Fisher6AfterBattleText                        ; New trainer added by G-Dubs
 	db -1 ; end
 
 Route12SnorlaxText:
@@ -162,22 +165,22 @@ Route12CooltrainerMAfterBattleText:
 	text_far _Route12CooltrainerMAfterBattleText
 	text_end
 
-Route12SuperNerdText:
+Route12SuperNerd1Text:
 	text_asm
 	ld hl, Route12TrainerHeader3
 	call TalkToTrainer
 	jp TextScriptEnd
 
-Route12SuperNerdBattleText:
-	text_far _Route12SuperNerdBattleText
+Route12SuperNerd1BattleText:
+	text_far _Route12SuperNerd1BattleText
 	text_end
 
-Route12SuperNerdEndBattleText:
-	text_far _Route12SuperNerdEndBattleText
+Route12SuperNerd1EndBattleText:
+	text_far _Route12SuperNerd1EndBattleText
 	text_end
 
-Route12SuperNerdAfterBattleText:
-	text_far _Route12SuperNerdAfterBattleText
+Route12SuperNerd1AfterBattleText:
+	text_far _Route12SuperNerd1AfterBattleText
 	text_end
 
 Route12Fisher3Text:
@@ -232,6 +235,24 @@ Route12Fisher5EndBattleText:
 
 Route12Fisher5AfterBattleText:
 	text_far _Route12Fisher5AfterBattleText
+	text_end
+
+Route12Fisher6Text:                                   ; New trainer added by G-Dubs
+	text_asm
+	ld hl, Route12TrainerHeader7
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route12Fisher6BattleText:
+	text_far _Route12Fisher6BattleText
+	text_end
+
+Route12Fisher6EndBattleText:
+	text_far _Route12Fisher6EndBattleText
+	text_end
+
+Route12Fisher6AfterBattleText:
+	text_far _Route12Fisher6AfterBattleText
 	text_end
 
 Route12SignText:

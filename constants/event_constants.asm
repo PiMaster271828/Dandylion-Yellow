@@ -133,32 +133,32 @@
 
 ; Celadon City events
 	const_next $180
-	const EVENT_GOT_TM41
-	const_skip 11
-	const EVENT_GOT_TM13
-	const EVENT_GOT_TM48
-	const EVENT_GOT_TM49
-	const EVENT_GOT_TM18
-	const_skip 24
-	const EVENT_GOT_TM21
-	const EVENT_BEAT_ERIKA
-	const EVENT_BEAT_CELADON_GYM_TRAINER_0
-	const EVENT_BEAT_CELADON_GYM_TRAINER_1
-	const EVENT_BEAT_CELADON_GYM_TRAINER_2
-	const EVENT_BEAT_CELADON_GYM_TRAINER_3
-	const EVENT_BEAT_CELADON_GYM_TRAINER_4
-	const EVENT_BEAT_CELADON_GYM_TRAINER_5
-	const EVENT_BEAT_CELADON_GYM_TRAINER_6
-	const_skip 7
-	const EVENT_1B8 ; ???
-	const EVENT_FOUND_ROCKET_HIDEOUT
-	const EVENT_GOT_10_COINS
-	const EVENT_GOT_20_COINS
-	const EVENT_GOT_20_COINS_2
-	const_skip 2
-	const EVENT_1BF ; ???
-	const_skip 32
-	const EVENT_GOT_COIN_CASE
+	const EVENT_GOT_TM41                                                                           ; $180
+	const_skip 11                                                                                  ; $181 - $18B
+	const EVENT_GOT_TM13                                                                           ; $18C
+	const EVENT_GOT_TM48                                                                           ; $18D
+	const EVENT_GOT_TM49                                                                           ; $18E
+	const EVENT_GOT_TM18                                                                           ; $18F
+	const_skip 24                                                                                  ; $190 - $1A7
+	const EVENT_GOT_TM21                                                                           ; $1A8
+	const EVENT_BEAT_ERIKA                                                                         ; $1A9
+	const EVENT_BEAT_CELADON_GYM_TRAINER_0                                                         ; $1AA
+	const EVENT_BEAT_CELADON_GYM_TRAINER_1                                                         ; $1AB
+	const EVENT_BEAT_CELADON_GYM_TRAINER_2                                                         ; $1AC
+	const EVENT_BEAT_CELADON_GYM_TRAINER_3                                                         ; $1AD
+	const EVENT_BEAT_CELADON_GYM_TRAINER_4                                                         ; $1AE
+	const EVENT_BEAT_CELADON_GYM_TRAINER_5                                                         ; $1AF
+	const EVENT_BEAT_CELADON_GYM_TRAINER_6                                                         ; $1B0
+	const_skip 7                                                                                   ; $1B1 - $1B7
+	const EVENT_1B8 ; ???                                                                          ; $1B8
+	const EVENT_FOUND_ROCKET_HIDEOUT                                                               ; $1B9
+	const EVENT_GOT_10_COINS                                                                       ; $1BA
+	const EVENT_GOT_20_COINS                                                                       ; $1BB
+	const EVENT_GOT_20_COINS_2                                                                     ; $1BC
+	const_skip 2                                                                                   ; $1BD - $1BE
+	const EVENT_1BF ; ???                                                                          ; $1BF
+	const_skip 32                                                                                  ; $1C0 - $1DF
+	const EVENT_GOT_COIN_CASE                                                                      ; $1E0
 
 ; Fuchsia City events
 	const_next $238
@@ -179,34 +179,34 @@
 
 ; Cinnabar Island events
 	const_next $278
-	const EVENT_MANSION_SWITCH_ON
-	const_skip 16
-	const EVENT_BEAT_MANSION_1_TRAINER_0
-	const_skip 14
-	const EVENT_GOT_TM38
-	const EVENT_BEAT_BLAINE
-	const EVENT_BEAT_CINNABAR_GYM_TRAINER_0
-	const EVENT_BEAT_CINNABAR_GYM_TRAINER_1
-	const EVENT_BEAT_CINNABAR_GYM_TRAINER_2
-	const EVENT_BEAT_CINNABAR_GYM_TRAINER_3
-	const EVENT_BEAT_CINNABAR_GYM_TRAINER_4
-	const EVENT_BEAT_CINNABAR_GYM_TRAINER_5
-	const EVENT_BEAT_CINNABAR_GYM_TRAINER_6
-	const_skip 6
-	const EVENT_2A7 ; ???
-	const EVENT_CINNABAR_GYM_GATE0_UNLOCKED
-	const EVENT_CINNABAR_GYM_GATE1_UNLOCKED
-	const EVENT_CINNABAR_GYM_GATE2_UNLOCKED
-	const EVENT_CINNABAR_GYM_GATE3_UNLOCKED
-	const EVENT_CINNABAR_GYM_GATE4_UNLOCKED
-	const EVENT_CINNABAR_GYM_GATE5_UNLOCKED
-	const EVENT_CINNABAR_GYM_GATE6_UNLOCKED
-	const_skip 40
-	const EVENT_GOT_TM35
-	const_skip 8
-	const EVENT_GAVE_FOSSIL_TO_LAB
-	const EVENT_LAB_STILL_REVIVING_FOSSIL
-	const EVENT_LAB_HANDING_OVER_FOSSIL_MON
+	const EVENT_MANSION_SWITCH_ON                                                                  ; $278
+	const_skip 16                                                                                  ; $279 - $288
+	const EVENT_BEAT_MANSION_1_TRAINER_0                                                           ; $289
+	const_skip 14                                                                                  ; $28A - $297
+	const EVENT_GOT_TM38                                                                           ; $298
+	const EVENT_BEAT_BLAINE                                                                        ; $299
+	const EVENT_BEAT_CINNABAR_GYM_TRAINER_0                                                        ; $29A
+	const EVENT_BEAT_CINNABAR_GYM_TRAINER_1                                                        ; $29B
+	const EVENT_BEAT_CINNABAR_GYM_TRAINER_2                                                        ; $29C
+	const EVENT_BEAT_CINNABAR_GYM_TRAINER_3                                                        ; $29D
+	const EVENT_BEAT_CINNABAR_GYM_TRAINER_4                                                        ; $29E
+	const EVENT_BEAT_CINNABAR_GYM_TRAINER_5                                                        ; $29F
+	const EVENT_BEAT_CINNABAR_GYM_TRAINER_6                                                        ; $2A0
+	const_skip 6                                                                                   ; $2A1 - $2A6
+	const EVENT_2A7 ; ???                                                                          ; $2A7
+	const EVENT_CINNABAR_GYM_GATE0_UNLOCKED                                                        ; $2A8  
+    const EVENT_CINNABAR_GYM_GATE1_UNLOCKED                                                        ; $2A9  
+    const EVENT_CINNABAR_GYM_GATE2_UNLOCKED                                                        ; $2AA  
+    const EVENT_CINNABAR_GYM_GATE3_UNLOCKED                                                        ; $2AB  
+    const EVENT_CINNABAR_GYM_GATE4_UNLOCKED                                                        ; $2AC  
+    const EVENT_CINNABAR_GYM_GATE5_UNLOCKED                                                        ; $2AD  
+    const EVENT_CINNABAR_GYM_GATE6_UNLOCKED                                                        ; $2AE  
+	const_skip 40                                                                                  ; $2AF - $2D6
+	const EVENT_GOT_TM35                                                                           ; $2D7
+	const_skip 8                                                                                   ; $2D8 - $2DF
+	const EVENT_GAVE_FOSSIL_TO_LAB                                                                 ; $2E0
+	const EVENT_LAB_STILL_REVIVING_FOSSIL                                                          ; $2E1
+	const EVENT_LAB_HANDING_OVER_FOSSIL_MON                                                        ; $2E2
 
 ; Saffron City events
 	const_next $340
@@ -236,62 +236,61 @@
 	const EVENT_GOT_TM29
 
 ; Route 1 events
-	const_next $3C0
-	const EVENT_GOT_POTION_SAMPLE
+	const_next $3C0                                                                                
+	const EVENT_GOT_POTION_SAMPLE                                                                  ; $3C0
 
 ; Route 2 events
-	const_next $3D8
-	const EVENT_GOT_HM05
+	const_next $3D8                                                                                
+	const EVENT_GOT_HM05                                                                           ; $3D8
 
 ; Route 3 events
 	const_next $3E0
-	const_skip 2
-	const EVENT_BEAT_ROUTE_3_TRAINER_0
-	const EVENT_BEAT_ROUTE_3_TRAINER_1
-	const EVENT_BEAT_ROUTE_3_TRAINER_2
-	const EVENT_BEAT_ROUTE_3_TRAINER_3
-	const EVENT_BEAT_ROUTE_3_TRAINER_4
-	const EVENT_BEAT_ROUTE_3_TRAINER_5
-	const EVENT_BEAT_ROUTE_3_TRAINER_6
-	const EVENT_BEAT_ROUTE_3_TRAINER_7
-	const EVENT_BEAT_ROUTE_3_TRAINER_8      ; New trainer added by G-Dubs
-	const EVENT_BEAT_ROUTE_3_TRAINER_9      ; New trainer added by G-Dubs
+	const_skip 2                                                                                   ; $3E0
+	const EVENT_BEAT_ROUTE_3_TRAINER_0                                                             ; $3E1
+	const EVENT_BEAT_ROUTE_3_TRAINER_1                                                             ; $3E2
+	const EVENT_BEAT_ROUTE_3_TRAINER_2                                                             ; $3E3
+	const EVENT_BEAT_ROUTE_3_TRAINER_3                                                             ; $3E4
+	const EVENT_BEAT_ROUTE_3_TRAINER_4                                                             ; $3E5
+	const EVENT_BEAT_ROUTE_3_TRAINER_5                                                             ; $3E6
+	const EVENT_BEAT_ROUTE_3_TRAINER_6                                                             ; $3E7
+	const EVENT_BEAT_ROUTE_3_TRAINER_7                                                             ; $3E8
+	const EVENT_BEAT_ROUTE_3_TRAINER_8      ; New trainer added by G-Dubs                          ; $3E9
+	const EVENT_BEAT_ROUTE_3_TRAINER_9      ; New trainer added by G-Dubs                          ; $3EA
 
 ; Route 4 events
 	const_next $3F0
-	const_skip 1
-	const EVENT_BEAT_ROUTE_4_TRAINER_0      ; New trainer added by G-Dubs
-    const EVENT_BEAT_ROUTE_4_TRAINER_1
-	const EVENT_BEAT_ROUTE_4_TRAINER_2      ; New trainer added by G-Dubs
-	const EVENT_BEAT_ROUTE_4_TRAINER_3      ; New trainer added by G-Dubs  
-	const_skip 12
-	const EVENT_BOUGHT_MAGIKARP
+	const_skip                                                                                     ; $3F0                                                                           
+	const EVENT_BEAT_ROUTE_4_TRAINER_0      ; New trainer added by G-Dubs                          ; $3F1
+    const EVENT_BEAT_ROUTE_4_TRAINER_1                                                             ; $3F2
+	const EVENT_BEAT_ROUTE_4_TRAINER_2      ; New trainer added by G-Dubs                          ; $3F3
+	const EVENT_BEAT_ROUTE_4_TRAINER_3      ; New trainer added by G-Dubs                          ; $3F4
+	const_skip 12                                                                                  ; $3F5 - $400
+	const EVENT_BOUGHT_MAGIKARP                                                                    ; $401
 
 ; Route 5 events                            ; Route 5 events section added by G-Dubs
     const_next $408
-	const_skip 1                                                           ; $409
-    const EVENT_BEAT_ROUTE_5_TRAINER_0      ; New trainer added by G-Dubs  ; $40A
-	const EVENT_BEAT_ROUTE_5_TRAINER_1      ; New trainer added by G-Dubs  ; $40B
-	const EVENT_BEAT_ROUTE_5_TRAINER_2      ; New trainer added by G-Dubs  ; $40C
-	const EVENT_BEAT_ROUTE_5_TRAINER_3      ; New trainer added by G-Dubs  ; $40D
-	const EVENT_BEAT_ROUTE_5_TRAINER_4      ; New trainer added by G-Dubs  ; $40E
-	const EVENT_BEAT_ROUTE_5_TRAINER_5      ; New trainer added by G-Dubs  ; $40F
+	const_skip                                                                                     ; $408
+    const EVENT_BEAT_ROUTE_5_TRAINER_0      ; New trainer added by G-Dubs                          ; $409
+	const EVENT_BEAT_ROUTE_5_TRAINER_1      ; New trainer added by G-Dubs                          ; $40A
+	const EVENT_BEAT_ROUTE_5_TRAINER_2      ; New trainer added by G-Dubs                          ; $40B
+	const EVENT_BEAT_ROUTE_5_TRAINER_3      ; New trainer added by G-Dubs                          ; $40C
+	const EVENT_BEAT_ROUTE_5_TRAINER_4      ; New trainer added by G-Dubs                          ; $40D
+	const EVENT_BEAT_ROUTE_5_TRAINER_5      ; New trainer added by G-Dubs                          ; $40E
 
 ; Route 6 events
 	const_next $410
 	const_skip
-	const EVENT_BEAT_ROUTE_6_TRAINER_0
-	const EVENT_BEAT_ROUTE_6_TRAINER_1
-	const EVENT_BEAT_ROUTE_6_TRAINER_2
-	const EVENT_BEAT_ROUTE_6_TRAINER_3
-	const EVENT_BEAT_ROUTE_6_TRAINER_4
-	const EVENT_BEAT_ROUTE_6_TRAINER_5
-	const EVENT_BEAT_ROUTE_6_TRAINER_6      ; New trainer added by G-Dubs
-	const EVENT_BEAT_ROUTE_6_TRAINER_7      ; New trainer added by G-Dubs
-	const EVENT_BEAT_ROUTE_6_TRAINER_8      ; New trainer added by G-Dubs
-	const EVENT_BEAT_ROUTE_6_TRAINER_9      ; New trainer added by G-Dubs
-	const EVENT_BEAT_ROUTE_6_TRAINER_10     ; New trainer added by G-Dubs
-
+	const EVENT_BEAT_ROUTE_6_TRAINER_0                                                             ; $410
+	const EVENT_BEAT_ROUTE_6_TRAINER_1                                                             ; $411
+	const EVENT_BEAT_ROUTE_6_TRAINER_2                                                             ; $412
+	const EVENT_BEAT_ROUTE_6_TRAINER_3                                                             ; $413
+	const EVENT_BEAT_ROUTE_6_TRAINER_4                                                             ; $414
+	const EVENT_BEAT_ROUTE_6_TRAINER_5                                                             ; $415
+	const EVENT_BEAT_ROUTE_6_TRAINER_6      ; New trainer added by G-Dubs                          ; $416
+	const EVENT_BEAT_ROUTE_6_TRAINER_7      ; New trainer added by G-Dubs                          ; $417
+	const EVENT_BEAT_ROUTE_6_TRAINER_8      ; New trainer added by G-Dubs                          ; $418
+	const EVENT_BEAT_ROUTE_6_TRAINER_9      ; New trainer added by G-Dubs                          ; $419
+	const EVENT_BEAT_ROUTE_6_TRAINER_10     ; New trainer added by G-Dubs                          ; $41A
 
 ; Route 8 events
 	const_next $430
@@ -348,37 +347,38 @@
 	const EVENT_BEAT_ZAPDOS
 
 ; Route 11 events
-	const_next $470                                                            ; $470
-	const_skip                                                                 ; $471
-	const EVENT_BEAT_ROUTE_11_TRAINER_0                                        ; $472
-	const EVENT_BEAT_ROUTE_11_TRAINER_1                                        ; $473
-	const EVENT_BEAT_ROUTE_11_TRAINER_2                                        ; $474
-	const EVENT_BEAT_ROUTE_11_TRAINER_3                                        ; $475
-	const EVENT_BEAT_ROUTE_11_TRAINER_4                                        ; $476
-	const EVENT_BEAT_ROUTE_11_TRAINER_5                                        ; $477
-	const EVENT_BEAT_ROUTE_11_TRAINER_6                                        ; $478
-	const EVENT_BEAT_ROUTE_11_TRAINER_7                                        ; $479
-	const EVENT_BEAT_ROUTE_11_TRAINER_8                                        ; $47A
-	const EVENT_BEAT_ROUTE_11_TRAINER_9                                        ; $47B
-	const EVENT_BEAT_ROUTE_11_TRAINER_10    ; New trainer added by G-Dubs      ; $47C
-	const EVENT_BEAT_ROUTE_11_TRAINER_11    ; New trainer added by G-Dubs      ; $47D
-	const_skip                              ; Formerly const_skip 4            ; $47E  
-	const EVENT_GOT_ITEMFINDER                                                 ; $47F
+	const_next $470                                                           
+	const_skip                                                                                     ; $470
+	const EVENT_BEAT_ROUTE_11_TRAINER_0                                                            ; $471
+	const EVENT_BEAT_ROUTE_11_TRAINER_1                                                            ; $472
+	const EVENT_BEAT_ROUTE_11_TRAINER_2                                                            ; $473
+	const EVENT_BEAT_ROUTE_11_TRAINER_3                                                            ; $474
+	const EVENT_BEAT_ROUTE_11_TRAINER_4                                                            ; $475
+	const EVENT_BEAT_ROUTE_11_TRAINER_5                                                            ; $476
+	const EVENT_BEAT_ROUTE_11_TRAINER_6                                                            ; $477
+	const EVENT_BEAT_ROUTE_11_TRAINER_7                                                            ; $478
+	const EVENT_BEAT_ROUTE_11_TRAINER_8                                                            ; $479
+	const EVENT_BEAT_ROUTE_11_TRAINER_9                                                            ; $47A
+	const EVENT_BEAT_ROUTE_11_TRAINER_10    ; New trainer added by G-Dubs                          ; $47B
+	const EVENT_BEAT_ROUTE_11_TRAINER_11    ; New trainer added by G-Dubs                          ; $47C
+	const_skip 2                            ; Formerly const_skip 4                                ; $47D - $47E 
+	const EVENT_GOT_ITEMFINDER                                                                     ; $47F
 
 ; Route 12 events
 	const_next $480
-	const EVENT_GOT_TM39                                                       ; $481
-	const_skip                                                                 ; $482
-	const EVENT_BEAT_ROUTE_12_TRAINER_0                                        ; $483
-	const EVENT_BEAT_ROUTE_12_TRAINER_1                                        ; $484
-	const EVENT_BEAT_ROUTE_12_TRAINER_2                                        ; $485
-	const EVENT_BEAT_ROUTE_12_TRAINER_3                                        ; $486
-	const EVENT_BEAT_ROUTE_12_TRAINER_4                                        ; $487
-	const EVENT_BEAT_ROUTE_12_TRAINER_5                                        ; $488
-	const EVENT_BEAT_ROUTE_12_TRAINER_6                                        ; $489
-	const_skip 5                                                               ; $48A - 
-	const EVENT_FIGHT_ROUTE12_SNORLAX
-	const EVENT_BEAT_ROUTE12_SNORLAX
+	const EVENT_GOT_TM39                                                                           ; $480
+	const_skip                                                                                     ; $481
+	const EVENT_BEAT_ROUTE_12_TRAINER_0                                                            ; $482
+	const EVENT_BEAT_ROUTE_12_TRAINER_1                                                            ; $483
+	const EVENT_BEAT_ROUTE_12_TRAINER_2                                                            ; $484
+	const EVENT_BEAT_ROUTE_12_TRAINER_3                                                            ; $485
+	const EVENT_BEAT_ROUTE_12_TRAINER_4                                                            ; $486
+	const EVENT_BEAT_ROUTE_12_TRAINER_5                                                            ; $487
+	const EVENT_BEAT_ROUTE_12_TRAINER_6                                                            ; $488
+	const EVENT_BEAT_ROUTE_12_TRAINER_7     ; New trainer added by G-Dubs                          ; $489
+	const_skip 4                            ; Formerly const_skip 5                                ; $490 - $48D 
+	const EVENT_FIGHT_ROUTE12_SNORLAX                                                              ; $48E
+	const EVENT_BEAT_ROUTE12_SNORLAX                                                               ; $48F
 
 ; Route 13 events
 	const_next $490
@@ -533,17 +533,17 @@
 
 ; Route 24 events
 	const_next $540
-	const EVENT_GOT_NUGGET                                                          ; 540
-	const EVENT_BEAT_ROUTE24_ROCKET                                                 ; 541
-	const EVENT_BEAT_ROUTE_24_TRAINER_0                                             ; 542
-	const EVENT_BEAT_ROUTE_24_TRAINER_1                                             ; 543
-	const EVENT_BEAT_ROUTE_24_TRAINER_2                                             ; 544
-	const EVENT_BEAT_ROUTE_24_TRAINER_3                                             ; 545
-	const EVENT_BEAT_ROUTE_24_TRAINER_4                                             ; 546
-	const EVENT_BEAT_ROUTE_24_TRAINER_5                                             ; 547
-	const EVENT_BEAT_ROUTE_24_TRAINER_6          ; New trainer added by G-Dubs      ; 548
-    const_skip                                                                      ; 549
-	const EVENT_NUGGET_REWARD_AVAILABLE                                             ; 54A
+	const EVENT_GOT_NUGGET                                                                         ; 540
+	const EVENT_BEAT_ROUTE24_ROCKET                                                                ; 541
+	const EVENT_BEAT_ROUTE_24_TRAINER_0                                                            ; 542
+	const EVENT_BEAT_ROUTE_24_TRAINER_1                                                            ; 543
+	const EVENT_BEAT_ROUTE_24_TRAINER_2                                                            ; 544
+	const EVENT_BEAT_ROUTE_24_TRAINER_3                                                            ; 545
+	const EVENT_BEAT_ROUTE_24_TRAINER_4                                                            ; 546
+	const EVENT_BEAT_ROUTE_24_TRAINER_5                                                            ; 547
+	const EVENT_BEAT_ROUTE_24_TRAINER_6          ; New trainer added by G-Dubs                     ; 548
+    const_skip                                                                                     ; 549
+	const EVENT_NUGGET_REWARD_AVAILABLE                                                            ; 54A
 
 ; Route 25 events
 	const_next $550 - 1
@@ -567,44 +567,44 @@
 
 ; Viridian Forest events
 	const_next $560
-	const_skip 2								 ; Skips const_next and first NPC
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_0   ; Old NPC replaced with trainer added by G-Dubs
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_1
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_2
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_3
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_4
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_5  
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_6   ; New trainer added by Vlad
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_7   ; New trainer added by G-Dubs
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_8   ; New trainer added by G-Dubs
-	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_9   ; New trainer added by G-Dubs (Left by Vlad)
+	const_skip 2								 ; Skips const_next and first NPC                  ; $560 - $561
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_0   ; Old NPC replaced with trainer added by G-Dubs   ; $562
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_1                                                     ; $563
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_2                                                     ; $564
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_3                                                     ; $565
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_4                                                     ; $566
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_5                                                     ; $567
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_6   ; New trainer added by Vlad                       ; $568
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_7   ; New trainer added by G-Dubs                     ; $569
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_8   ; New trainer added by G-Dubs                     ; $56A
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_9   ; New trainer added by G-Dubs (Left by Vlad)      ; $56B
 
 ; Mt. Moon 1F events
 	const_next $570
-	const_skip
-	const EVENT_BEAT_MT_MOON_1_TRAINER_0
-	const EVENT_BEAT_MT_MOON_1_TRAINER_1
-	const EVENT_BEAT_MT_MOON_1_TRAINER_2
-	const EVENT_BEAT_MT_MOON_1_TRAINER_3
-	const EVENT_BEAT_MT_MOON_1_TRAINER_4
-	const EVENT_BEAT_MT_MOON_1_TRAINER_5
-	const EVENT_BEAT_MT_MOON_1_TRAINER_6
-	const EVENT_BEAT_MT_MOON_1_TRAINER_7         ; New trainer added by G-Dubs
-	const EVENT_BEAT_MT_MOON_1_TRAINER_8         ; New trainer added by G-Dubs
+	const_skip                                                                                     ; $570
+	const EVENT_BEAT_MT_MOON_1_TRAINER_0                                                           ; $571  
+	const EVENT_BEAT_MT_MOON_1_TRAINER_1                                                           ; $572
+	const EVENT_BEAT_MT_MOON_1_TRAINER_2                                                           ; $573
+	const EVENT_BEAT_MT_MOON_1_TRAINER_3                                                           ; $574
+	const EVENT_BEAT_MT_MOON_1_TRAINER_4                                                           ; $575
+	const EVENT_BEAT_MT_MOON_1_TRAINER_5                                                           ; $576
+	const EVENT_BEAT_MT_MOON_1_TRAINER_6                                                           ; $577
+	const EVENT_BEAT_MT_MOON_1_TRAINER_7         ; New trainer added by G-Dubs                     ; $578
+	const EVENT_BEAT_MT_MOON_1_TRAINER_8         ; New trainer added by G-Dubs                     ; $579
 
 ; Mt. Moon B2F events                            ; New Section added by Vlad (How did this not break the game?!?)
 	const_next $590
-	const EVENT_GOT_DOME_FOSSIL
-	const EVENT_BEAT_MT_MOON_EXIT_SUPER_NERD
-	const EVENT_BEAT_MT_MOON_3_JESSIE_JAMES
-	const EVENT_BEAT_MT_MOON_3_TRAINER_0         ; Trainer from Red & Blue added by G-Dubs
-	const EVENT_BEAT_MT_MOON_3_TRAINER_1
-	const EVENT_BEAT_MT_MOON_3_TRAINER_2
-	const EVENT_BEAT_MT_MOON_3_TRAINER_3         ; Trainer from Red & Blue added by G-Dubs
-	const EVENT_BEAT_MT_MOON_3_TRAINER_4         ; New trainer added by G-Dubs
-	const EVENT_BEAT_MT_MOON_3_TRAINER_5         ; New trainer added by G-Dubs
-	const EVENT_57E
-	const EVENT_GOT_HELIX_FOSSIL
+	const EVENT_GOT_DOME_FOSSIL                                                                    ; $57A
+	const EVENT_BEAT_MT_MOON_EXIT_SUPER_NERD                                                       ; $57B
+	const EVENT_BEAT_MT_MOON_3_JESSIE_JAMES                                                        ; $57C
+	const EVENT_BEAT_MT_MOON_3_TRAINER_0         ; Trainer from Red & Blue added by G-Dubs         ; $57D
+	const EVENT_BEAT_MT_MOON_3_TRAINER_1                                                           ; $57E
+	const EVENT_BEAT_MT_MOON_3_TRAINER_2                                                           ; $57F
+	const EVENT_BEAT_MT_MOON_3_TRAINER_3         ; Trainer from Red & Blue added by G-Dubs         ; $580
+	const EVENT_BEAT_MT_MOON_3_TRAINER_4         ; New trainer added by G-Dubs                     ; $581
+	const EVENT_BEAT_MT_MOON_3_TRAINER_5         ; New trainer added by G-Dubs                     ; $582
+	const EVENT_57E                                                                                ; $583
+	const EVENT_GOT_HELIX_FOSSIL                                                                   ; $584
 
 ; S.S. Anne events
 	const_next $5C0
@@ -834,12 +834,7 @@ DEF INDIGO_PLATEAU_EVENTS_END EQU const_value - 1
 	const EVENT_SEAFOAM4_BOULDER2_DOWN_HOLE
 	const_skip 8
 	const EVENT_BEAT_ARTICUNO
-/*
-; Route 5 events                            ; Route 5 events section added by G-Dubs
-    const_next $9F0
-	const_skip 1
-    const EVENT_BEAT_ROUTE_5_TRAINER_0      ; New trainer added by G-Dubs
-*/
+
 ; End of events
 	const_next $A00
 DEF NUM_EVENTS EQU const_value

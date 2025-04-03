@@ -388,10 +388,12 @@ FisherData:
 	db 31, SHELLDER, CLOYSTER, 0			                                                                 ; Fisher 8
 	db 27, MAGIKARP, MAGIKARP, MAGIKARP, MAGIKARP, MAGIKARP, MAGIKARP, 0	                                 ; Fisher 9
 	db 33, SEAKING, GOLDEEN, 0			                                                                     ; Fisher 10
-; Route 12
+; Route 12 (Again)
 	db 24, MAGIKARP, MAGIKARP, 0			                                                                 ; Fisher 11
 ; Cerulean Gym
     db 15, MAGIKARP, GYARADOS, MAGIKARP, 0                                                                   ; Fisher 12              ; New trainer added by G-Dubs
+; Route 12 (Again)
+    db 25, MAGIKARP, GYARADOS, MAGIKARP, GYARADOS, MAGIKARP, 0                                               ; Fisher 13              ; New trainer added by G-Dubs
 
 SwimmerData:
 ; Cerulean Gym

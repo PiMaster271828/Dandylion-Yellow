@@ -64,16 +64,16 @@ _Route12CooltrainerMAfterBattleText::
 	cont "with MOON STONE!"
 	done
 
-_Route12SuperNerdBattleText::
+_Route12SuperNerd1BattleText::
 	text "Electricity is my"
 	line "specialty!"
 	done
 
-_Route12SuperNerdEndBattleText::
+_Route12SuperNerd1EndBattleText::
 	text "Unplugged!"
 	prompt
 
-_Route12SuperNerdAfterBattleText::
+_Route12SuperNerd1AfterBattleText::
 	text "Water conducts"
 	line "electricity, so"
 	cont "you should zap"
@@ -127,6 +127,32 @@ _Route12Fisher5AfterBattleText::
 	text "I catch MAGIKARP"
 	line "all the time, but"
 	cont "they're so weak!"
+	done
+
+_Route12Fisher6BattleText::                 ; New trainer added by G-Dubs
+	text "Fishing isn't"
+	line "just about"
+	cont "patience - it's"
+	cont "about knowing"
+	cont "when to reel in"
+	cont "a real challenge!"
+	done
+
+_Route12Fisher6EndBattleText::
+	text "Looks"
+	line "like I let this"
+	cont "one get away..."
+	prompt
+
+_Route12Fisher6AfterBattleText::
+	text "I catch a lot of"
+	line "MAGIKARP, but"
+	cont "Maybe I should"
+	cont "train my other"
+	cont "#MON as much"
+	cont "as I train my"
+	cont "casting"
+	cont "technique..."
 	done
 
 _Route12SignText::
