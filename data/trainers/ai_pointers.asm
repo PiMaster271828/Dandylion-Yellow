@@ -55,4 +55,5 @@ TrainerAIPointers:
 	dbw 3, GenericAI         ; Jessie & James
 	dbw 3, GenericAI         ; PokéFan ♂
 	dbw 3, GenericAI         ; PokéFan ♀
+	dbw 3, GenericAI         ; Guitarist
 	assert_table_length NUM_TRAINERS

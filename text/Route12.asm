@@ -155,6 +155,30 @@ _Route12Fisher6AfterBattleText::
 	cont "technique..."
 	done
 
+_Route12SuperNerd2BattleText::              ; New trainer added by G-Dubs
+	text "I was heading to"
+	line "a gig, but this"
+	cont "SNORLAX blocked"
+	cont "the road! Guess"
+	cont "I'll kill time"
+	cont "with a battle!"
+	done
+
+_Route12SuperNerd2EndBattleText::
+	text "Whoa!"
+	line "You just turned"
+	cont "my amp way down."
+	prompt
+
+_Route12SuperNerd2AfterBattleText::
+	text "Maybe I should"
+	line "write a song"
+	cont "about SNORLAX..."
+	cont "'The Roadblock"
+	cont "Blues' has a nice"
+	cont "ring to it!"
+	done
+
 _Route12SignText::
 	text "ROUTE 12 "
 	line "North to LAVENDER"

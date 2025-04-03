@@ -47,9 +47,10 @@ TrainerDataPointers:
 	dw ChannelerData
 	dw AgathaData
 	dw LanceData
-	dw JessieJamesData
-	dw PokeFanMData
-	dw PokeFanFData
+	dw JessieJamesData       ; New trainer class added by Vlad
+	dw PokeFanMData          ; New trainer class added by G-Dubs
+	dw PokeFanFData          ; New trainer class added by G-Dubs
+	dw GuitaristData         ; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS
 
 ; if first byte != $FF, then
@@ -478,7 +479,8 @@ RockerData:
 ; Vermilion Gym
 	db 20, VOLTORB, VOLTORB, MAGNEMITE, VOLTORB, 0                                                           ; Rocker 1               ; Magnemite from Red/Blue added by G-Dubs
 ; Route 12
-	db 29, VOLTORB, ELECTRODE, 0                                                                             ; Rocker 2
+	db 29, VOLTORB, MAGNEMITE, ELECTRODE, 0                                                                  ; Rocker 2               ; Magnemite added by G-Dubs
+	db 25, VOLTORB, MAGNEMITE, 0                                                                             ; Rocker 3               ; New trainer added by G-Dubs
 
 JugglerData:
 ; Silph Co. 5F
@@ -817,9 +819,6 @@ Rival3Data:                                                                     
    ;db $FF, 61, SANDSLASH, 59, ALAKAZAM, 61, EXEGGUTOR, 61, MAGNETON, 63, CLOYSTER, 65, FLAREON, 0           
 	db $FF, 61, PIDGEOT, 60, MACHAMP, 63, ALAKAZAM, 62, NINETALES, 62, VICTREEBEL, 65, VAPOREON, 0           ; Rival 2 Vaporeon 3
    ;db $FF, 61, SANDSLASH, 59, ALAKAZAM, 61, EXEGGUTOR, 61, NINETALES, 63, MAGNETON, 65, VAPOREON, 0         
-	
-	
-	
 
 LoreleiData:
 ; First Battle
@@ -901,18 +900,46 @@ JessieJamesData:
 
 PokeFanMData:
 ; Route 5
-    db 16, PIKACHU, BULBASAUR, CHARMANDER, SQUIRTLE, EEVEE, 0                                                ; PokéFan ♂ 1            ; New trainer added by G-Dubs
-	db 18, MEOWTH, PSYDUCK, EEVEE, 0                                                                         ; PokéFan ♂ 2            ; New trainer added by G-Dubs
-	db 20, PIKACHU, PIKACHU, PIKACHU, 0                                                                      ; PokéFan ♂ 3            ; New trainer added by G-Dubs
+    db 16, PIKACHU, BULBASAUR, CHARMANDER, SQUIRTLE, EEVEE, 0                                                ; PokéFan ♂ 1            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+	db 18, MEOWTH, PSYDUCK, EEVEE, 0                                                                         ; PokéFan ♂ 2            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+	db 20, PIKACHU, PIKACHU, PIKACHU, 0                                                                      ; PokéFan ♂ 3            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
  
 ; Route ??
-   ;db ??, NIDOKING, KINGLER, SEAKING, KINGDRA, 0                                                            ; PokéFan ♂ ?            ; New trainer added by G-Dubs
+   ;db ??, NIDOKING, KINGLER, SEAKING, KINGDRA, 0                                                            ; PokéFan ♂ ?            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 
 PokeFanFData:
 ; Route 5
-    db 17, JIGGLYPUFF, PIKACHU, CLEFAIRY, 0                                                                  ; PokéFan ♀ 1            ; New trainer added by G-Dubs
-	db 19, POLIWAG, ODDISH, CUBONE, 0                                                                        ; PokéFan ♀ 2            ; New trainer added by G-Dubs
-	db 16, BULBASAUR, CHARMANDER, SQUIRTLE, 0                                                                ; PokéFan ♀ 3            ; New trainer added by G-Dubs  
+    db 17, JIGGLYPUFF, PIKACHU, CLEFAIRY, 0                                                                  ; PokéFan ♀ 1            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+	db 19, POLIWAG, ODDISH, CUBONE, 0                                                                        ; PokéFan ♀ 2            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+	db 16, BULBASAUR, CHARMANDER, SQUIRTLE, 0                                                                ; PokéFan ♀ 3            ; New trainer added by G-Dubs  (New Trainer Class added by G-Dubs) 
+
+GuitaristData:
+/*************
+Guitarist 1
+*************/
+; Vermilion Gym
+	db 22, VOLTORB, MAGNEMITE, VOLTORB, 0                                                                    ; Guitarist 1            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+ ; Route 12	
+	db 25, ZUBAT, VOLTORB, ZUBAT, 0                                                                          ; Guitarist 2            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+    db 30, MAGNETON, ELECTRODE, 0 	                                                                         ; Guitarist 3            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+
+/*************
+Guitarist 2
+*************/
+; Route ??
+   ;db                                                                                                       ; Guitarist 4            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+   ;db                                                                                                       ; Guitarist 5            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+   ;db                                                                                                       ; Guitarist 6            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+
+/*************
+Guitarist 3
+*************/
+; Route ??
+   ;db                                                                                                       ; Guitarist 7            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+   ;db                                                                                                       ; Guitarist 8            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+   ;db                                                                                                       ; Guitarist 9            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)  
+
+
 /*
 Former Beauty Data
 	

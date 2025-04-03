@@ -54,7 +54,8 @@ TrainerPicAndMoneyPointers::
 	pic_money ChannelerPic,    3000
 	pic_money AgathaPic,       9900
 	pic_money LancePic,        9900
-	pic_money JessieJamesPic,  3000
-	pic_money PokeFanMPic,     3500
-	pic_money PokeFanFPic,     3500
+	pic_money JessieJamesPic,  2000    ; New trainer class added by Vlad
+	pic_money PokeFanMPic,     3000    ; New trainer class added by G-Dubs
+	pic_money PokeFanFPic,     3000    ; New trainer class added by G-Dubs
+	pic_money Guitarist1Pic,   1000    ; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS

@@ -203,6 +203,7 @@ TrainerPalettes:
 	db PAL_MEWMON                      ; CHANNELER      
 	db PAL_MEWMON                      ; AGATHA         
 	db PAL_MEWMON                      ; LANCE          
-	db PAL_MEWMON                      ; JESSIE & JAMES    ; New trainer class for Team Rocket
-	db PAL_GRAYMON                     ; POKÉFAN ♂
-	db PAL_LAVENDERMON                 ; POKÉFAN ♀
+	db PAL_MEWMON                      ; JESSIE & JAMES    ; New trainer class for Team Rocket added by Vlad
+	db PAL_GRAYMON                     ; POKÉFAN ♂         ; New trainer class added by G-Dubs
+	db PAL_LAVENDERMON                 ; POKÉFAN ♀         ; New trainer class added by G-Dubs
+	db PAL_MEWMON                      ; GUITARIST         ; New trainer class added by G-Dubs

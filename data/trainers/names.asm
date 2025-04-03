@@ -47,7 +47,8 @@ TrainerNames::
 	li "CHANNELER"
 	li "AGATHA"
 	li "LANCE"
-	li "JESSIE×JAMES"                  ; New trainer added by Vlad
-	li "POKéFAN♂"                      ; New trainer added by G-Dubs
-	li "POKéFAN♀"                      ; New trainer added by G-Dubs
+	li "JESSIE×JAMES"                  ; New trainer class added by Vlad
+	li "POKéFAN♂"                      ; New trainer class added by G-Dubs
+	li "POKéFAN♀"                      ; New trainer class added by G-Dubs
+	li "GUITARIST"                     ; New trainer class added by G-Dubs
 	assert_list_length NUM_TRAINERS

@@ -381,11 +381,14 @@ LoreleiPic::       INCBIN "gfx/trainers/lorelei.pic"
 ChannelerPic::     INCBIN "gfx/trainers/channeler.pic"
 AgathaPic::        INCBIN "gfx/trainers/agatha.pic"
 LancePic::         INCBIN "gfx/trainers/lance.pic"
-JessieJamesPic::   INCBIN "gfx/trainers/jessiejames.pic"
-;Rival4Pic::      INCBIN "gfx/trainers/rival4.pic"
-PokeFanMPic::      INCBIN "gfx/trainers/poke_fan_male.pic"
-PokeFanFPic::      INCBIN "gfx/trainers/poke_fan_female.pic"
+JessieJamesPic::   INCBIN "gfx/trainers/jessiejames.pic"        ; New trainer sprite added by G-Dubs
+PokeFanMPic::      INCBIN "gfx/trainers/poke_fan_male.pic"      ; New trainer sprite added by G-Dubs
+PokeFanFPic::      INCBIN "gfx/trainers/poke_fan_female.pic"    ; New trainer sprite added by G-Dubs
+Guitarist1Pic::    INCBIN "gfx/trainers/guitarist_1.pic"        ; New trainer sprite added by G-Dubs
+;Guitarist2Pic::    INCBIN "gfx/trainers/guitarist_2.pic"        ; New trainer sprite added by G-Dubs
+;Guitarist3Pic::    INCBIN "gfx/trainers/guitarist_3.pic"        ; New trainer sprite added by G-Dubs
 
+;Rival4Pic::      INCBIN "gfx/trainers/rival4.pic"
 
 SECTION "Pics 7", ROMX
 

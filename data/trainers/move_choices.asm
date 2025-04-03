@@ -59,5 +59,6 @@ TrainerClassMoveChoiceModifications:
 	move_choices 1       ; JESSIE & JAMES
 	move_choices 1       ; POKÉFAN ♂
 	move_choices 1       ; POKÉFAN ♀
+	move_choices 1       ; GUITARIST
 
 	assert_list_length NUM_TRAINERS

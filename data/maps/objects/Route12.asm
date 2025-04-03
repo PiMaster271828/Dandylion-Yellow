@@ -8,6 +8,7 @@
 	const_export ROUTE12_FISHER4
 	const_export ROUTE12_FISHER5
 	const_export ROUTE12_FISHER6            ; New trainer added by G-Dubs
+	const_export ROUTE12_SUPER_NERD2        ; New trainer added by G-Dubs
 	const_export ROUTE12_TM_PAY_DAY
 	const_export ROUTE12_IRON
 
@@ -34,6 +35,7 @@ Route12_Object:
 	object_event  9, 52, SPRITE_FISHER, STAY, RIGHT, TEXT_ROUTE12_FISHER4, OPP_FISHER, 6
 	object_event  4, 87, SPRITE_FISHER, STAY, DOWN, TEXT_ROUTE12_FISHER5, OPP_FISHER, 11
 	object_event 17, 12, SPRITE_FISHER, STAY, LEFT, TEXT_ROUTE12_FISHER6, OPP_FISHER, 13                     ; New trainer added by G-Dubs
+	object_event 15, 62, SPRITE_SUPER_NERD, STAY, LEFT, TEXT_ROUTE12_SUPER_NERD2, OPP_GUITARIST, 3           ; New trainer added by G-Dubs
 	object_event 14, 35, SPRITE_POKE_BALL, STAY, NONE, TEXT_ROUTE12_TM_PAY_DAY, TM_PAY_DAY
 	object_event  3, 89, SPRITE_POKE_BALL, STAY, NONE, TEXT_ROUTE12_IRON, IRON
 

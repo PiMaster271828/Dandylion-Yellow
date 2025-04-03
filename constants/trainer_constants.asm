@@ -62,7 +62,8 @@ ENDM
 	trainer_const CHANNELER      ; $2D
 	trainer_const AGATHA         ; $2E
 	trainer_const LANCE          ; $2F
-	trainer_const JESSIE_JAMES   ; $30 ; New trainer class for Team Rocket
+	trainer_const JESSIE_JAMES   ; $30 ; New trainer class for Team Rocket added by Vlad
     trainer_const POKEFAN_M      ; $31 ; New trainer class added by G-Dubs
     trainer_const POKEFAN_F      ; $32 ; New trainer class added by G-Dubs
+	trainer_const GUITARIST      ; $33 ; New trainer class added by G-Dubs
 DEF NUM_TRAINERS EQU const_value - 1
