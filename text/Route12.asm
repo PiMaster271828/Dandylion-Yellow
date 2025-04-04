@@ -164,7 +164,7 @@ _Route12SuperNerd2BattleText::              ; New trainer added by G-Dubs
 	cont "with a battle!"
 	done
 
-_Route12SuperNerd2EndBattleText::
+_Route12SuperNerd2EndBattleText::           
 	text "Whoa!"
 	line "You just turned"
 	cont "my amp way down."
@@ -179,8 +179,67 @@ _Route12SuperNerd2AfterBattleText::
 	cont "ring to it!"
 	done
 
+_Route12SuperNerd3BattleText::               ; New trainer added by G-Dubs
+	text "The road's long,"
+	line "but my music"
+	cont "keeps me going!"
+	cont "Let's see if you"
+	cont "can keep up with"
+	cont "my sick rhythms!"
+	done
+
+_Route12SuperNerd3EndBattleText::
+	text "I'm"
+	line "out of tune!"
+	cont "Guess I hit a"
+	cont "wrong note..."
+	prompt
+
+_Route12SuperNerd3AfterBattleText::
+	text "LAVENDER TOWN's"
+	line "got a spooky vibe"
+	cont "Maybe I should"
+	cont "write a ghostly"
+	cont "ballad next!"
+	done
+
+_Route12CooltrainerFBattleText::
+    text "I came here to"
+	line "clear my mind..."
+	cont "I lost my dear"
+	cont "ARCANINE"
+	cont "recently. But"
+	cont "battling helps me"
+	cont "stay strong."
+    done
+
+_Route12CooltrainerFEndBattleText::
+	text "That"
+	line "felt..."
+	cont "refreshing. Thank"
+	cont "you."
+	prompt
+
+_Route12CooltrainerFAfterBattleText::
+	text "I used to travel"
+	line "everywhere with"
+	cont "my ARCANINE..."
+	cont "But now, it's"	
+    cont "just memories and"
+	cont "the open road."
+	cont "ARCANINE was"
+	cont "always so full of"
+	cont "energy... I'll"
+	cont "always cherish"
+	cont "the memories we"
+	cont "had together..."
+	cont "And I know they'd"
+	cont "want me to keep"
+	cont "moving forward."
+	done
+
 _Route12SignText::
-	text "ROUTE 12 "
+	text "ROUTE 12"
 	line "North to LAVENDER"
 	done
 

@@ -73,6 +73,8 @@ Route12_TextPointers:
 	dw_const Route12Fisher5Text,           TEXT_ROUTE12_FISHER5
 	dw_const Route12Fisher6Text,           TEXT_ROUTE12_FISHER6                ; New trainer added by G-Dubs
 	dw_const Route12SuperNerd2Text,        TEXT_ROUTE12_SUPER_NERD2            ; New trainer added by G-Dubs
+	dw_const Route12SuperNerd3Text,        TEXT_ROUTE12_SUPER_NERD3            ; New trainer added by G-Dubs
+	dw_const Route12CooltrainerFText,      TEXT_ROUTE12_COOLTRAINER_F          ; New trainer added by G-Dubs
 	dw_const PickUpItemText,               TEXT_ROUTE12_TM_PAY_DAY
 	dw_const PickUpItemText,               TEXT_ROUTE12_IRON
 	dw_const Route12SignText,              TEXT_ROUTE12_SIGN
@@ -99,7 +101,11 @@ Route12TrainerHeader6:
 Route12TrainerHeader7:
 	trainer EVENT_BEAT_ROUTE_12_TRAINER_7, 2, Route12Fisher6BattleText, Route12Fisher6EndBattleText, Route12Fisher6AfterBattleText                        ; New trainer added by G-Dubs
 Route12TrainerHeader8:
-	trainer EVENT_BEAT_ROUTE_12_TRAINER_8, 1, Route12SuperNerd2BattleText, Route12SuperNerd2EndBattleText, Route12SuperNerd2AfterBattleText               ; New trainer added by G-Dubs
+	trainer EVENT_BEAT_ROUTE_12_TRAINER_8, 2, Route12SuperNerd2BattleText, Route12SuperNerd2EndBattleText, Route12SuperNerd2AfterBattleText               ; New trainer added by G-Dubs
+Route12TrainerHeader9:	
+	trainer EVENT_BEAT_ROUTE_12_TRAINER_9, 4, Route12SuperNerd3BattleText, Route12SuperNerd3EndBattleText, Route12SuperNerd3AfterBattleText               ; New trainer added by G-Dubs
+Route12TrainerHeader10:
+    trainer EVENT_BEAT_ROUTE_12_TRAINER_10, 3, Route12CooltrainerFBattleText, Route12CooltrainerFEndBattleText, Route12CooltrainerFAfterBattleText        ; New trainer added by G-Dubs
 	db -1 ; end
 
 Route12SnorlaxText:
@@ -274,6 +280,42 @@ Route12SuperNerd2EndBattleText:
 
 Route12SuperNerd2AfterBattleText:
 	text_far _Route12SuperNerd2AfterBattleText
+	text_end
+
+Route12SuperNerd3Text:                                ; New trainer added by G-Dubs
+	text_asm
+	ld hl, Route12TrainerHeader9
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route12SuperNerd3BattleText:
+	text_far _Route12SuperNerd3BattleText
+	text_end
+
+Route12SuperNerd3EndBattleText:
+	text_far _Route12SuperNerd3EndBattleText
+	text_end
+
+Route12SuperNerd3AfterBattleText:
+	text_far _Route12SuperNerd3AfterBattleText
+	text_end
+
+Route12CooltrainerFText:
+    text_asm
+	ld hl, Route12TrainerHeader10
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route12CooltrainerFBattleText:
+	text_far _Route12CooltrainerFBattleText
+	text_end
+
+Route12CooltrainerFEndBattleText:
+	text_far _Route12CooltrainerFEndBattleText
+	text_end
+
+Route12CooltrainerFAfterBattleText:
+	text_far _Route12CooltrainerFAfterBattleText
 	text_end
 
 Route12SignText:

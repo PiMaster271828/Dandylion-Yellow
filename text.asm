@@ -36,6 +36,7 @@ INCLUDE "text/MtMoonB2F.asm"                     ; Moved from Text 1 by G-Dubs t
 INCLUDE "text/CeruleanGym.asm"                   ; Moved from Text 5 by G-Dubs to avoid the Text Bank from growing too big
 INCLUDE "text/Route5.asm"                        ; Moved from Text 3 by G-Dubs to avoid the Text Bank from growing too big
 INCLUDE "text/Route6.asm"                        ; Moved from Text 3 by G-Dubs to avoid the Text Bank from growing too big
+INCLUDE "text/Route12.asm"                       ; Moved from Text 4 by G-Dubs to avoid the Text Bank from growing too big
 
 SECTION "Text 2", ROMX
 
@@ -110,13 +111,11 @@ INCLUDE "text/Route7.asm"
 INCLUDE "text/Route8.asm"
 INCLUDE "text/Route9.asm"
 
-
 SECTION "Text 4", ROMX
 
 INCLUDE "text/Route9_2.asm"
 INCLUDE "text/Route10.asm"
 INCLUDE "text/Route11.asm"
-INCLUDE "text/Route12.asm"
 INCLUDE "text/Route13.asm"
 INCLUDE "text/Route14.asm"
 INCLUDE "text/Route15.asm"

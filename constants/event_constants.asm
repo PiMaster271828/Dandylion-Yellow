@@ -376,10 +376,12 @@
 	const EVENT_BEAT_ROUTE_12_TRAINER_5                                                            ; $487
 	const EVENT_BEAT_ROUTE_12_TRAINER_6                                                            ; $488
 	const EVENT_BEAT_ROUTE_12_TRAINER_7     ; New trainer added by G-Dubs                          ; $489
-	const EVENT_BEAT_ROUTE_12_TRAINER_8     ; New trainer added by G-Dubs                          ; $490
-	const_skip 3                            ; Formerly const_skip 5                                ; $491 - $49D 
+	const EVENT_BEAT_ROUTE_12_TRAINER_8     ; New trainer added by G-Dubs                          ; $48A
+	const EVENT_BEAT_ROUTE_12_TRAINER_9     ; New trainer added by G-Dubs                          ; $48B
+	const EVENT_BEAT_ROUTE_12_TRAINER_10    ; New trainer added by G-Dubs                          ; $48C
+	const_skip                              ; Formerly const_skip 5                                ; $48D 
 	const EVENT_FIGHT_ROUTE12_SNORLAX                                                              ; $49E
-	const EVENT_BEAT_ROUTE12_SNORLAX                                                               ; $49F
+	const EVENT_BEAT_ROUTE12_SNORLAX                                                               ; $48F
 
 ; Route 13 events
 	const_next $490

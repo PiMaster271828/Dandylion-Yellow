@@ -719,6 +719,8 @@ CooltrainerFData:
 	db 43, PERSIAN, NINETALES, RAICHU, 0		                                                             ; Cooltrainer ♀ 8        ; (Unused)
 ; Route 24
     db 15, LAPRAS, 0                                                                                         ; Cooltrainer ♀ 9        ; New trainer added by G-Dubs
+; Route 12
+    db 28, POLIWHIRL, GLOOM, NINETALES, 0                                                                    ; Cooltrainer ♀ 10       ; New trainer added by G-Dubs
 
 BrunoData:
 ; First Battle
@@ -903,7 +905,6 @@ PokeFanMData:
     db 16, PIKACHU, BULBASAUR, CHARMANDER, SQUIRTLE, EEVEE, 0                                                ; PokéFan ♂ 1            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 	db 18, MEOWTH, PSYDUCK, EEVEE, 0                                                                         ; PokéFan ♂ 2            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 	db 20, PIKACHU, PIKACHU, PIKACHU, 0                                                                      ; PokéFan ♂ 3            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
- 
 ; Route ??
    ;db ??, NIDOKING, KINGLER, SEAKING, KINGDRA, 0                                                            ; PokéFan ♂ ?            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 
@@ -926,16 +927,18 @@ Guitarist 1
 /*************
 Guitarist 2
 *************/
-; Route ??
+; Vermillion Gym
    ;db                                                                                                       ; Guitarist 4            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+; Circus   
    ;db                                                                                                       ; Guitarist 5            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
    ;db                                                                                                       ; Guitarist 6            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 
 /*************
 Guitarist 3
 *************/
-; Route ??
+; Vermillion Gym
    ;db                                                                                                       ; Guitarist 7            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+; Power Plant   
    ;db                                                                                                       ; Guitarist 8            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
    ;db                                                                                                       ; Guitarist 9            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)  
 
