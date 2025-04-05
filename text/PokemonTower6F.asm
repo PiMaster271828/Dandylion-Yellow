@@ -51,8 +51,26 @@ _PokemonTower6FChanneler3EndBattleText::
 	prompt
 
 _PokemonTower6FChanneler3AfterBattleText::
-	text "What's going on"
-	line "here?"
+	text "What's 
+	line "going on here?"
+	done
+
+_PokemonTower6FChanneler4BattleText::            ; New trainer added by G-Dubs
+	text "The spirits..."
+	line "they whisper of"
+	cont "sorrow..."
+	done
+
+_PokemonTower6FChanneler4EndBattleText::
+	text "The" 
+	line "voices... have" 
+	cont "quieted."
+	prompt
+
+_PokemonTower6FChanneler4AfterBattleText::
+	text "Be careful. Not"
+	line "all spirits rest"
+	cont "peacefully here."
 	done
 
 _PokemonTower6FBeGoneText::

@@ -60,7 +60,7 @@ PokemonTower5F_TextPointers:
 	dw_const PokemonTower5FPurifiedZoneText, TEXT_POKEMONTOWER5F_PURIFIEDZONE
 
 PokemonTower5TrainerHeaders:
-	def_trainers 2
+	def_trainers
 PokemonTower5TrainerHeader0:
 	trainer EVENT_BEAT_POKEMONTOWER_5_TRAINER_0, 2, PokemonTower5FChanneler2BattleText, PokemonTower5FChanneler2EndBattleText, PokemonTower5FChanneler2AfterBattleText
 PokemonTower5TrainerHeader1:

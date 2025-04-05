@@ -101,19 +101,22 @@ PokemonTower6F_TextPointers:
 	dw_const PokemonTower6FChanneler1Text,      TEXT_POKEMONTOWER6F_CHANNELER1
 	dw_const PokemonTower6FChanneler2Text,      TEXT_POKEMONTOWER6F_CHANNELER2
 	dw_const PokemonTower6FChanneler3Text,      TEXT_POKEMONTOWER6F_CHANNELER3
+	dw_const PokemonTower6FChanneler4Text,      TEXT_POKEMONTOWER6F_CHANNELER4           ; New trainer added by G-Dubs
 	dw_const PickUpItemText,                    TEXT_POKEMONTOWER6F_RARE_CANDY
 	dw_const PickUpItemText,                    TEXT_POKEMONTOWER6F_X_ACCURACY
 	dw_const PokemonTower6FBeGoneText,          TEXT_POKEMONTOWER6F_BEGONE
 	dw_const PokemonTower6FMarowakDepartedText, TEXT_POKEMONTOWER6F_MAROWAK_DEPARTED
 
 PokemonTower6TrainerHeaders:
-	def_trainers
+	def_trainers 
 PokemonTower6TrainerHeader0:
 	trainer EVENT_BEAT_POKEMONTOWER_6_TRAINER_0, 3, PokemonTower6FChanneler1BattleText, PokemonTower6FChanneler1EndBattleText, PokemonTower6FChanneler1AfterBattleText
 PokemonTower6TrainerHeader1:
 	trainer EVENT_BEAT_POKEMONTOWER_6_TRAINER_1, 3, PokemonTower6FChanneler2BattleText, PokemonTower6FChanneler2EndBattleText, PokemonTower6FChanneler2AfterBattleText
 PokemonTower6TrainerHeader2:
 	trainer EVENT_BEAT_POKEMONTOWER_6_TRAINER_2, 2, PokemonTower6FChanneler3BattleText, PokemonTower6FChanneler3EndBattleText, PokemonTower6FChanneler3AfterBattleText
+PokemonTower6TrainerHeader3:
+	trainer EVENT_BEAT_POKEMONTOWER_6_TRAINER_3, 2, PokemonTower6FChanneler4BattleText, PokemonTower6FChanneler4EndBattleText, PokemonTower6FChanneler4AfterBattleText   ; New trainer added by G-Dubs
 	db -1 ; end
 
 PokemonTower6FChanneler1Text:
@@ -131,6 +134,12 @@ PokemonTower6FChanneler2Text:
 PokemonTower6FChanneler3Text:
 	text_asm
 	ld hl, PokemonTower6TrainerHeader2
+	call TalkToTrainer
+	jp TextScriptEnd
+
+PokemonTower6FChanneler4Text:	                           ; New trainer added by G-Dubs
+	text_asm
+	ld hl, PokemonTower6TrainerHeader3
 	call TalkToTrainer
 	jp TextScriptEnd
 
@@ -189,6 +198,18 @@ PokemonTower6FChanneler3EndBattleText:
 
 PokemonTower6FChanneler3AfterBattleText:
 	text_far _PokemonTower6FChanneler3AfterBattleText
+	text_end
+
+PokemonTower6FChanneler4BattleText:                        ; New trainer added by G-Dubs
+	text_far _PokemonTower6FChanneler4BattleText
+	text_end
+	
+PokemonTower6FChanneler4EndBattleText:
+	text_far _PokemonTower6FChanneler4EndBattleText
+	text_end
+
+PokemonTower6FChanneler4AfterBattleText:
+	text_far _PokemonTower6FChanneler4AfterBattleText
 	text_end
 
 PokemonTower6FBeGoneText:

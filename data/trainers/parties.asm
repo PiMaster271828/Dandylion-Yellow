@@ -834,31 +834,31 @@ ChannelerData:
 	db 24, GASTLY, 0                                                                                         ; Channeler 2            ; (Unused)
 	db 23, GASTLY, GASTLY, 0                                                                                 ; Channeler 3            ; (Unused)
 	db 24, GASTLY, 0                                                                                         ; Channeler 4            ; (Unused)
-; Pokémon Tower 3F
+; PokéMon Tower 3F
 	db 23, GASTLY, 0                                                                                         ; Channeler 5
 	db 24, GASTLY, 0                                                                                         ; Channeler 6
-; Unused
-	db 24, HAUNTER, 0                                                                                        ; Channeler 7            ; (Unused)
-; Pokémon Tower 3F
+; PokéMon Tower 6F (Previously Unused)
+	db 25, CUBONE, HAUNTER, 0                                                                                ; Channeler 7            ; Trainer unused in any version added by G-Dubs (Cubone added and level changed from 24 to 25 by G-Dubs)
+; PokéMon Tower 3F
 	db 22, GASTLY, 0                                                                                         ; Channeler 8
-; Pokémon Tower 4F
+; PokéMon Tower 4F
 	db 24, GASTLY, 0 	                                                                                     ; Channeler 9
 	db 23, GASTLY, GASTLY, 0                                                                                 ; Channeler 10
 ; Unused
 	db 24, GASTLY, 0                                                                                         ; Channeler 11           ; (Unused)
-; Pokémon Tower 4F
+; PokéMon Tower 4F
 	db 22, GASTLY, 0                                                                                         ; Channeler 12
 ; Unused
 	db 24, GASTLY, 0                                                                                         ; Channeler 13           ; (Unused)
-; Pokémon Tower 5F
+; PokéMon Tower 5F
 	db 23, HAUNTER, 0                                                                                        ; Channeler 14
 ; Unused
 	db 24, GASTLY, 0                                                                                         ; Channeler 15           ; (Unused)
-; Pokémon Tower 5F
-	db 22, GASTLY, 0                                                                                         ; Channeler 16
+; PokéMon Tower 5F
+	db 22, GASTLY, CUBONE, 0                                                                                 ; Channeler 16           ; Cubone added by G-Dubs
 	db 24, GASTLY, 0                                                                                         ; Channeler 17
 	db 22, HAUNTER, 0                                                                                        ; Channeler 18
-; Pokémon Tower 6F
+; PokéMon Tower 6F
 	db 22, GASTLY, GASTLY, GASTLY, 0                                                                         ; Channeler 19
 	db 24, GASTLY, 0                                                                                         ; Channeler 20
 	db 24, GASTLY, 0                                                                                         ; Channeler 21
