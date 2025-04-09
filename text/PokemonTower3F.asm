@@ -43,3 +43,39 @@ _PokemonTower3FChanneler3AfterBattleText::
 	text "My friends were"
 	line "possessed too!"
 	done
+
+_PokemonTower3FChanneler4BattleText::                 ; New trainer added by G-Dubs
+	text "The spirits wish"
+	line "to test you!"
+	done
+
+_PokemonTower3FChanneler4EndBattleText::
+	text "Their"
+	line "energy..."
+	cont "subsides..."
+	prompt
+
+_PokemonTower3FChanneler4AfterBattleText::
+	text "Respect the"
+	line "fallen..."
+	cont "or suffer their"
+	cont "wrath..."
+	done
+
+_PokemonTower3FChanneler5BattleText::                 ; New trainer added by G-Dubs
+	text "Feel their"
+	line "sorrow! Share"
+	cont "their pain!"
+	done
+
+_PokemonTower3FChanneler5EndBattleText::
+	text "The"
+	line "darkness..."
+	cont "lingers..."
+	prompt
+
+_PokemonTower3FChanneler5AfterBattleText::
+	text "Find peace..."
+	line "for them..."
+	cont "and yourself..."
+	done

@@ -37,6 +37,7 @@ INCLUDE "text/CeruleanGym.asm"                   ; Moved from Text 5 by G-Dubs t
 INCLUDE "text/Route5.asm"                        ; Moved from Text 3 by G-Dubs to avoid the Text Bank from growing too big
 INCLUDE "text/Route6.asm"                        ; Moved from Text 3 by G-Dubs to avoid the Text Bank from growing too big
 INCLUDE "text/Route12.asm"                       ; Moved from Text 4 by G-Dubs to avoid the Text Bank from growing too big
+INCLUDE "text/PokemonTower7F.asm"                ; Moved from Text 5 by G-Dubs to avoid the Text Bank from growing too big
 
 SECTION "Text 2", ROMX
 
@@ -171,7 +172,6 @@ INCLUDE "text/PokemonTower3F.asm"
 INCLUDE "text/PokemonTower4F.asm"
 INCLUDE "text/PokemonTower5F.asm"
 INCLUDE "text/PokemonTower6F.asm"
-INCLUDE "text/PokemonTower7F.asm"
 INCLUDE "text/MrFujisHouse.asm"
 INCLUDE "text/LavenderMart.asm"
 INCLUDE "text/LavenderCuboneHouse.asm"

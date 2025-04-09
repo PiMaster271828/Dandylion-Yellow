@@ -127,19 +127,22 @@ DebugSetPokedexEntries:
 
 DebugItemsList:
 	db MASTER_BALL, 99
+    db RARE_CANDY, 99
+	db FULL_RESTORE, 99
+	db REVIVE, 99
+	db FULL_HEAL, 99
+	db FRESH_WATER, 99
+	db ESCAPE_ROPE, 99
+	db POKE_FLUTE, 1
 	db TOWN_MAP, 1
 	db BICYCLE, 1
-	db FULL_RESTORE, 99
-	db ESCAPE_ROPE, 99
-	db RARE_CANDY, 99
 	db SECRET_KEY, 1
 	db CARD_KEY, 1
-	db FULL_HEAL, 99
-	db REVIVE, 99
-	db FRESH_WATER, 99
 	db S_S_TICKET, 1
 	db LIFT_KEY, 1
-	db PP_UP, 99
+	db SILPH_SCOPE, 1
+	db COIN_CASE, 1
+	db GOLD_TEETH, 1
 	db -1 ; end
 
 DebugUnusedList:
@@ -148,7 +151,7 @@ DebugUnusedList:
 	db HELIX_FOSSIL, 1
 	db X_ACCURACY, 99
 	db DIRE_HIT, 99
-	db FRESH_WATER, 1
+	db FRESH_WATER, 99
 	db S_S_TICKET, 1
 	db GOLD_TEETH, 1
 	db COIN_CASE, 1

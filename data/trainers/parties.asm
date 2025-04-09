@@ -637,11 +637,11 @@ RocketData:
 	db 23, EKANS, SANDSHREW, ARBOK, 0		                                                                 ; Rocket Team 17         ; (Unused)
 ; Rocket Hideout B4F
 	db 21, KOFFING, ZUBAT, 0				                                                                 ; Rocket Team 18
-; Unused
-	db 25, ZUBAT, ZUBAT, GOLBAT, 0			                                                                 ; Rocket Team 19         ; (Unused)
-	db 26, KOFFING, DROWZEE, 0				                                                                 ; Rocket Team 20         ; (Unused)
-	db 23, ZUBAT, RATTATA, RATICATE, ZUBAT, 0	                                                             ; Rocket Team 21         ; (Unused)
-	db 26, DROWZEE, KOFFING, 0			      	                                                             ; Rocket Team 22         ; (Unused)
+; PokéMon Tower 7F (Previously Unused)
+	db 25, ZUBAT, ZUBAT, GOLBAT, 0			                                                                 ; Rocket Team 19         ; Trainer from Red/Blue added by G-Dubs
+	db 26, KOFFING, DROWZEE, 0				                                                                 ; Rocket Team 20         ; Trainer from Red/Blue added by G-Dubs
+	db 23, ZUBAT, RATTATA, RATICATE, ZUBAT, 0	                                                             ; Rocket Team 21         ; Trainer from Red/Blue added by G-Dubs
+    db 26, DROWZEE, KOFFING, 0			      	                                                             ; Rocket Team 22         ; Trainer from Red/Blue added by G-Dubs
 ; Silph Co. 2F
 	db 29, CUBONE, ZUBAT, 0				                                                                     ; Rocket Team 23
 	db 25, GOLBAT, ZUBAT, ZUBAT, RATICATE, ZUBAT, 0	                                                         ; Rocket Team 24
@@ -829,43 +829,35 @@ LoreleiData:
 	db $FF, 70, WIGGLYTUFF, 71, STARMIE, 71, CLOYSTER, 70, OMASTAR, 70, EXEGGUTOR, 72, LAPRAS, 0             ; Lorelei 2              ; Lorelei Rematch from Yellow Legacy
 
 ChannelerData:
-; Unused
-	db 22, GASTLY, 0                                                                                         ; Channeler 1            ; (Unused)
-	db 24, GASTLY, 0                                                                                         ; Channeler 2            ; (Unused)
-	db 23, GASTLY, GASTLY, 0                                                                                 ; Channeler 3            ; (Unused)
-	db 24, GASTLY, 0                                                                                         ; Channeler 4            ; (Unused)
-; PokéMon Tower 3F
-	db 23, GASTLY, 0                                                                                         ; Channeler 5
-	db 24, GASTLY, 0                                                                                         ; Channeler 6
-; PokéMon Tower 6F (Previously Unused)
-	db 25, CUBONE, HAUNTER, 0                                                                                ; Channeler 7            ; Trainer unused in any version added by G-Dubs (Cubone added and level changed from 24 to 25 by G-Dubs)
-; PokéMon Tower 3F
-	db 22, GASTLY, 0                                                                                         ; Channeler 8
+; PokéMon Tower 3F or (Previously Unused)
+	db 22, GASTLY, 0                                                                                         ; Channeler 1            ; Trainer unused in any version added by G-Dubs
+	db 23, GASTLY, 0                                                                                         ; Channeler 2
+	db 24, GASTLY, 0                                                                                         ; Channeler 3
+	db 22, GASTLY, 0                                                                                         ; Channeler 4
+	db 23, GASTLY, GASTLY, 0                                                                                 ; Channeler 5            ; Trainer unused in any version added by G-Dubs
 ; PokéMon Tower 4F
-	db 24, GASTLY, 0 	                                                                                     ; Channeler 9
-	db 23, GASTLY, GASTLY, 0                                                                                 ; Channeler 10
-; Unused
-	db 24, GASTLY, 0                                                                                         ; Channeler 11           ; (Unused)
-; PokéMon Tower 4F
-	db 22, GASTLY, 0                                                                                         ; Channeler 12
-; Unused
-	db 24, GASTLY, 0                                                                                         ; Channeler 13           ; (Unused)
+	db 24, GASTLY, 0 	                                                                                     ; Channeler 6
+	db 23, GASTLY, GASTLY, 0                                                                                 ; Channeler 7
+	db 22, GASTLY, CUBONE, GASTLY, 0                                                                         ; Channeler 8            ; Cubone and Gastly added by G-Dubs
+	db 24, GASTLY, 0                                                                                         ; Channeler 9            ; Trainer unused in any version added by G-Dubs
+	db 24, GASTLY, 0                                                                                         ; Channeler 10           ; Trainer unused in any version added by G-Dubs
 ; PokéMon Tower 5F
-	db 23, HAUNTER, 0                                                                                        ; Channeler 14
-; Unused
-	db 24, GASTLY, 0                                                                                         ; Channeler 15           ; (Unused)
-; PokéMon Tower 5F
-	db 22, GASTLY, CUBONE, 0                                                                                 ; Channeler 16           ; Cubone added by G-Dubs
+	db 23, HAUNTER, CUBONE, 0                                                                                ; Channeler 11           ; Cubone added by G-Dubs
+	db 24, GASTLY, CUBONE, 0                                                                                 ; Channeler 12           ; Trainer unused in any version added by G-Dubs (Cubone added by G-Dubs)
+	db 25, VULPIX, GASTLY, CUBONE, 0                                                                         ; Channeler 13           ; Cubone and Vulpix added by G-Dubs (Level changed from 22 to 25 by G-Dubs)
+	db 24, GASTLY, 0                                                                                         ; Channeler 14
+	db 22, HAUNTER, 0                                                                                        ; Channeler 15
+; PokéMon Tower 6F or (Previously Unused)
+	db 22, GASTLY, GASTLY, GASTLY, 0                                                                         ; Channeler 16
 	db 24, GASTLY, 0                                                                                         ; Channeler 17
-	db 22, HAUNTER, 0                                                                                        ; Channeler 18
-; PokéMon Tower 6F
-	db 22, GASTLY, GASTLY, GASTLY, 0                                                                         ; Channeler 19
-	db 24, GASTLY, 0                                                                                         ; Channeler 20
-	db 24, GASTLY, 0                                                                                         ; Channeler 21
+	db 24, GASTLY, 0                                                                                         ; Channeler 18
+	db 25, HAUNTER, NINETALES, 0                                                                             ; Channeler 19           ; Trainer unused in any version added by G-Dubs (Ninetales added and level changed from 24 to 25 by G-Dubs)
+    db 28, GENGAR, 0                                                                                         ; Channeler 20           ; Trainer unused in any version added by G-Dubs (Gastly changed to Gengar and level changed from 24 to 28 by G-Dubs) 
 ; Saffron Gym
+    db 24, GASTLY, 0                                                                                         ; Channeler 21           ; (Unused)
 	db 34, GASTLY, HAUNTER, 0                                                                                ; Channeler 22
 	db 38, HAUNTER, 0                                                                                        ; Channeler 23
-	db 33, GASTLY, GASTLY, HAUNTER, 0                                                                        ; Channeler 24
+	db 33, GASTLY, HAUNTER, GENGAR, 0                                                                        ; Channeler 24           ; Gastly changed to Gengar by G-Dubs
 
 AgathaData:
 ; First Battle    

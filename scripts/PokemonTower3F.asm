@@ -18,6 +18,8 @@ PokemonTower3F_TextPointers:
 	dw_const PokemonTower3FChanneler1Text, TEXT_POKEMONTOWER3F_CHANNELER1
 	dw_const PokemonTower3FChanneler2Text, TEXT_POKEMONTOWER3F_CHANNELER2
 	dw_const PokemonTower3FChanneler3Text, TEXT_POKEMONTOWER3F_CHANNELER3
+	dw_const PokemonTower3FChanneler4Text, TEXT_POKEMONTOWER3F_CHANNELER4      ; New trainer added by G-Dubs
+	dw_const PokemonTower3FChanneler5Text, TEXT_POKEMONTOWER3F_CHANNELER5      ; New trainer added by G-Dubs
 	dw_const PickUpItemText,               TEXT_POKEMONTOWER3F_ESCAPE_ROPE
 
 PokemonTower3TrainerHeaders:
@@ -28,6 +30,10 @@ PokemonTower3TrainerHeader1:
 	trainer EVENT_BEAT_POKEMONTOWER_3_TRAINER_1, 3, PokemonTower3FChanneler2BattleText, PokemonTower3FChanneler2EndBattleText, PokemonTower3FChanneler2AfterBattleText
 PokemonTower3TrainerHeader2:
 	trainer EVENT_BEAT_POKEMONTOWER_3_TRAINER_2, 2, PokemonTower3FChanneler3BattleText, PokemonTower3FChanneler3EndBattleText, PokemonTower3FChanneler3AfterBattleText
+PokemonTower3TrainerHeader3:
+	trainer EVENT_BEAT_POKEMONTOWER_3_TRAINER_3, 2, PokemonTower3FChanneler4BattleText, PokemonTower3FChanneler4EndBattleText, PokemonTower3FChanneler4AfterBattleText   ; New trainer added by G-Dubs
+PokemonTower3TrainerHeader4:
+	trainer EVENT_BEAT_POKEMONTOWER_3_TRAINER_4, 1, PokemonTower3FChanneler5BattleText, PokemonTower3FChanneler5EndBattleText, PokemonTower3FChanneler5AfterBattleText   ; New trainer added by G-Dubs      
 	db -1 ; end
 
 PokemonTower3FChanneler1Text:
@@ -45,6 +51,18 @@ PokemonTower3FChanneler2Text:
 PokemonTower3FChanneler3Text:
 	text_asm
 	ld hl, PokemonTower3TrainerHeader2
+	call TalkToTrainer
+	jp TextScriptEnd
+
+PokemonTower3FChanneler4Text:                              ; New trainer added by G-Dubs
+	text_asm
+	ld hl, PokemonTower3TrainerHeader3
+	call TalkToTrainer
+	jp TextScriptEnd
+
+PokemonTower3FChanneler5Text:                              ; New trainer added by G-Dubs
+	text_asm
+	ld hl, PokemonTower3TrainerHeader4
 	call TalkToTrainer
 	jp TextScriptEnd
 
@@ -82,4 +100,28 @@ PokemonTower3FChanneler3EndBattleText:
 
 PokemonTower3FChanneler3AfterBattleText:
 	text_far _PokemonTower3FChanneler3AfterBattleText
+	text_end
+
+PokemonTower3FChanneler4BattleText:                        ; New trainer added by G-Dubs
+	text_far _PokemonTower3FChanneler4BattleText
+	text_end
+
+PokemonTower3FChanneler4EndBattleText:
+	text_far _PokemonTower3FChanneler4EndBattleText		
+	text_end
+
+PokemonTower3FChanneler4AfterBattleText:
+	text_far _PokemonTower3FChanneler4AfterBattleText
+	text_end
+
+PokemonTower3FChanneler5BattleText:                        ; New trainer added by G-Dubs
+	text_far _PokemonTower3FChanneler5BattleText
+	text_end
+	
+PokemonTower3FChanneler5EndBattleText:
+	text_far _PokemonTower3FChanneler5EndBattleText
+	text_end 
+
+PokemonTower3FChanneler5AfterBattleText:
+	text_far _PokemonTower3FChanneler5AfterBattleText	
 	text_end

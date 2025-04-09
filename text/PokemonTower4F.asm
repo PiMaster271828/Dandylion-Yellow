@@ -43,3 +43,40 @@ _PokemonTower4FChanneler3AfterBattleText::
 	line "souls of #MON"
 	cont "rest in peace..."
 	done
+
+_PokemonTower4FChanneler4BattleText::                 ; New trainer added by G-Dubs
+	text "The departed seek" 
+	line "solace! Can you"
+	cont "provide it?"
+	done
+
+_PokemonTower4FChanneler4EndBattleText::
+	text "The"
+	line "veil... thins..."
+	prompt
+
+_PokemonTower4FChanneler4AfterBattleText::
+	text "Guide them"
+	line "onward... or they"
+	cont "will remain"
+	cont "trapped here..."
+	done
+
+_PokemonTower4FChanneler5BattleText::                 ; New trainer added by G-Dubs
+	text "In JOHTO they"
+	line "call me a medium!"
+	cont "Let's battle!"
+	done
+
+_PokemonTower4FChanneler5EndBattleText::
+	text "I'm..."
+	line "defeated!"
+	prompt
+
+_PokemonTower4FChanneler5AfterBattleText::
+	text "I hear they have"
+	line "a #MON TOWER"
+	cont "in JOHTO too..."
+	cont "I wonder if it's"
+	cont "like this one..."
+	done

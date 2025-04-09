@@ -51,7 +51,7 @@ _PokemonTower6FChanneler3EndBattleText::
 	prompt
 
 _PokemonTower6FChanneler3AfterBattleText::
-	text "What's 
+	text "What's" 
 	line "going on here?"
 	done
 
@@ -76,4 +76,33 @@ _PokemonTower6FChanneler4AfterBattleText::
 _PokemonTower6FBeGoneText::
 	text "Be gone..."
 	line "Intruders..."
+	done
+
+_PokemonTower6FChanneler5BattleText::            ; New trainer added by G-Dubs
+	text "In JOHTO, the"
+	line "Mediums battle"
+	cont "using BELLSPROUT"
+	cont "in SPROUT TOWER,"
+	cont "but here, the"
+	cont "spirits battle"
+	cont "in POKEMON TOWER."
+	done
+	
+_PokemonTower6FChanneler5EndBattleText::
+	text "I"
+	line "underestimated"
+	cont "you..."	
+	prompt
+
+_PokemonTower6FChanneler5AfterBattleText::
+	text "The spirits"
+	line "have power..."
+	cont "in the tower..."
+	cont "... ... ... ..."
+	cont "This is sacred"
+	cont "ground! Leave"
+	cont "now, before you"
+	cont "disturb those who"
+	cont "rest here..."
+	cont "permanently!"
 	done

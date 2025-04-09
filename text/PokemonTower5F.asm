@@ -62,6 +62,26 @@ _PokemonTower5FChanneler5AfterBattleText::
 	cont "my training!"
 	done
 
+_PokemonTower5FChanneler6BattleText::            ; New trainer added by G-Dubs
+	text "The spirits call"
+	line "to me... and"
+	cont "they want to"
+	cont "battle!"
+	done
+
+_PokemonTower5FChanneler6EndBattleText::
+	text "The"
+	line "connection"
+	cont "fades..."
+	prompt
+
+_PokemonTower5FChanneler6AfterBattleText::
+	text "The spirits"
+	line "are restless..."
+	cont "please, bring"
+	cont "them peace."
+	done
+
 _PokemonTower5FPurifiedZoneText::
 	text "Entered purified,"
 	line "protected zone!"

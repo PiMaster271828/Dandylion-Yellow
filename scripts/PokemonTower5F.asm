@@ -56,11 +56,12 @@ PokemonTower5F_TextPointers:
 	dw_const PokemonTower5FChanneler3Text,   TEXT_POKEMONTOWER5F_CHANNELER3
 	dw_const PokemonTower5FChanneler4Text,   TEXT_POKEMONTOWER5F_CHANNELER4
 	dw_const PokemonTower5FChanneler5Text,   TEXT_POKEMONTOWER5F_CHANNELER5
+	dw_const PokemonTower5FChanneler6Text,   TEXT_POKEMONTOWER5F_CHANNELER6         ; New trainer added by G-Dubs
 	dw_const PickUpItemText,                 TEXT_POKEMONTOWER5F_NUGGET
 	dw_const PokemonTower5FPurifiedZoneText, TEXT_POKEMONTOWER5F_PURIFIEDZONE
 
 PokemonTower5TrainerHeaders:
-	def_trainers
+	def_trainers 2
 PokemonTower5TrainerHeader0:
 	trainer EVENT_BEAT_POKEMONTOWER_5_TRAINER_0, 2, PokemonTower5FChanneler2BattleText, PokemonTower5FChanneler2EndBattleText, PokemonTower5FChanneler2AfterBattleText
 PokemonTower5TrainerHeader1:
@@ -69,6 +70,8 @@ PokemonTower5TrainerHeader2:
 	trainer EVENT_BEAT_POKEMONTOWER_5_TRAINER_2, 2, PokemonTower5FChanneler4BattleText, PokemonTower5FChanneler4EndBattleText, PokemonTower5FChanneler4AfterBattleText
 PokemonTower5TrainerHeader3:
 	trainer EVENT_BEAT_POKEMONTOWER_5_TRAINER_3, 2, PokemonTower5FChanneler5BattleText, PokemonTower5FChanneler5EndBattleText, PokemonTower5FChanneler5AfterBattleText
+PokemonTower5TrainerHeader4:
+	trainer EVENT_BEAT_POKEMONTOWER_5_TRAINER_4, 2, PokemonTower5FChanneler6BattleText, PokemonTower5FChanneler6EndBattleText, PokemonTower5FChanneler6AfterBattleText   ; New trainer added by G-Dubs
 	db -1 ; end
 
 PokemonTower5FChanneler1Text:
@@ -145,6 +148,24 @@ PokemonTower5FChanneler5EndBattleText:
 
 PokemonTower5FChanneler5AfterBattleText:
 	text_far _PokemonTower5FChanneler5AfterBattleText
+	text_end
+
+PokemonTower5FChanneler6Text:                                        ; New trainer added by G-Dubs
+	text_asm
+	ld hl, PokemonTower5TrainerHeader4
+	call TalkToTrainer
+	jp TextScriptEnd
+
+PokemonTower5FChanneler6BattleText:
+	text_far _PokemonTower5FChanneler6BattleText
+	text_end
+
+PokemonTower5FChanneler6EndBattleText:
+	text_far _PokemonTower5FChanneler6EndBattleText
+	text_end
+
+PokemonTower5FChanneler6AfterBattleText:
+	text_far _PokemonTower5FChanneler6AfterBattleText
 	text_end
 
 PokemonTower5FPurifiedZoneText:

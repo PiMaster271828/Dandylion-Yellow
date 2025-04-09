@@ -86,33 +86,43 @@
 	const EVENT_BEAT_POKEMONTOWER_3_TRAINER_0	                                                   ; $F1
 	const EVENT_BEAT_POKEMONTOWER_3_TRAINER_1	                                                   ; $F2
 	const EVENT_BEAT_POKEMONTOWER_3_TRAINER_2	                                                   ; $F3
-	const_skip 5	                                                                               ; $F4 - $F8
+	const EVENT_BEAT_POKEMONTOWER_3_TRAINER_3	                                                   ; $F4
+	const EVENT_BEAT_POKEMONTOWER_3_TRAINER_4	                                                   ; $F5
+	const_skip 3 	                                       ; Formerly const_skip 5                 ; $F6 - $F8
 	const EVENT_BEAT_POKEMONTOWER_4_TRAINER_0	                                                   ; $F9
 	const EVENT_BEAT_POKEMONTOWER_4_TRAINER_1	                                                   ; $FA
 	const EVENT_BEAT_POKEMONTOWER_4_TRAINER_2	                                                   ; $FB
-	const_skip 5	                                       ; Formerly const_skip 6                 ; $FC - $100
-	const EVENT_BEAT_POKEMONTOWER_5_TRAINER_0		                                               ; $101
-	const EVENT_BEAT_POKEMONTOWER_5_TRAINER_1	                                                   ; $102
-	const EVENT_BEAT_POKEMONTOWER_5_TRAINER_2		                                               ; $103
-	const EVENT_BEAT_POKEMONTOWER_5_TRAINER_3	                                                   ; $104
-	const_skip	                                                                                   ; $105
-	const EVENT_IN_PURIFIED_ZONE	                                                               ; $106
-	const_skip 2	                                       ; Formerly const_skip                   ; $107 - $108
-	const EVENT_BEAT_POKEMONTOWER_6_TRAINER_0	                                                   ; $109
-	const EVENT_BEAT_POKEMONTOWER_6_TRAINER_1	                                                   ; $10A
-	const EVENT_BEAT_POKEMONTOWER_6_TRAINER_2	                                                   ; $10B
-	const EVENT_BEAT_POKEMONTOWER_6_TRAINER_3              ; New trainer added by G-Dubs           ; $10C
-	const_skip 3		                                                                           ; $10D - $10F
-	const EVENT_BEAT_GHOST_MAROWAK	                                                               ; $110
-	const_skip	                                                                                   ; $111
-	const EVENT_BEAT_POKEMONTOWER_7_JESSIE_JAMES	                                               ; $112
-	const EVENT_POKEMONTOWER_7_JESSIE_JAMES_ON_LEFT	                                               ; $113
-	const_skip 4	                                                                               ; $114 - $117
-	const EVENT_RESCUED_MR_FUJI_2	                                                               ; $118
-	const_skip 16	                                                                               ; $119 - $128
-	const EVENT_GOT_POKE_FLUTE		                                                               ; $129
-	const_skip 30	                                                                               ; $12A - $147
-	const EVENT_GOT_SQUIRTLE_FROM_OFFICER_JENNY	                                                   ; $148
+	const EVENT_BEAT_POKEMONTOWER_4_TRAINER_3	           ; New trainer added by G-Dubs           ; $FC
+	const EVENT_BEAT_POKEMONTOWER_4_TRAINER_4	           ; New trainer added by G-Dubs           ; $FD
+	const_skip 4 	                                       ; Formerly const_skip 6                 ; $FE - $101
+	const EVENT_BEAT_POKEMONTOWER_5_TRAINER_0		                                               ; $102
+	const EVENT_BEAT_POKEMONTOWER_5_TRAINER_1	                                                   ; $103
+	const EVENT_BEAT_POKEMONTOWER_5_TRAINER_2		                                               ; $104
+	const EVENT_BEAT_POKEMONTOWER_5_TRAINER_3	                                                   ; $105
+	const EVENT_BEAT_POKEMONTOWER_5_TRAINER_4	           ; New trainer added by G-Dubs           ; $106
+	const_skip                                                                                     ; $107
+	const EVENT_IN_PURIFIED_ZONE	                                                               ; $108
+	const_skip 8                                           ; Formerly const_skip                   ; $109 - $10F  	                                                                                   ; $109
+	const EVENT_BEAT_POKEMONTOWER_6_TRAINER_0	                                                   ; $110
+	const EVENT_BEAT_POKEMONTOWER_6_TRAINER_1	                                                   ; $111
+	const EVENT_BEAT_POKEMONTOWER_6_TRAINER_2	                                                   ; $112
+	const EVENT_BEAT_POKEMONTOWER_6_TRAINER_3              ; New trainer added by G-Dubs           ; $113
+	const EVENT_BEAT_POKEMONTOWER_6_TRAINER_4              ; New trainer added by G-Dubs           ; $114
+	const_skip		                                       ; Formerly const_skip 3                 ; $115
+	const EVENT_BEAT_GHOST_MAROWAK	                                                               ; $116
+	const_skip	                                                                                   ; $117
+	const EVENT_BEAT_POKEMONTOWER_7_JESSIE_JAMES	                                               ; $118
+  /*const EVENT_POKEMONTOWER_7_JESSIE_JAMES_ON_LEFT	                                               ; $119
+	const EVENT_BEAT_POKEMONTOWER_7_TRAINER_0                                                      ; $11A
+	const EVENT_BEAT_POKEMONTOWER_7_TRAINER_1                                                      ; $11B
+	const EVENT_BEAT_POKEMONTOWER_7_TRAINER_2                                                      ; $11C
+	const EVENT_BEAT_POKEMONTOWER_7_TRAINER_3                                                      ; $11D
+  */const_skip	                                                                                   ; $11E 
+	const EVENT_RESCUED_MR_FUJI_2	                                                               ; $11F
+	const_skip 15	                                                                               ; $120 - $12E
+	const EVENT_GOT_POKE_FLUTE		                                                               ; $12F
+	const_skip 30	                                                                               ; $130 - $14E
+	const EVENT_GOT_SQUIRTLE_FROM_OFFICER_JENNY	                                                   ; $14F
 
 ; Vermilion City events
 	const_next $150
