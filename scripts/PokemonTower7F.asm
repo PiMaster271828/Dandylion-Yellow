@@ -130,6 +130,7 @@ PokemonTower7FMovementData_60d7a:
 PokemonTower7FMovementData_60d7b:
 	db NPC_MOVEMENT_UP
 	db NPC_MOVEMENT_UP
+	db NPC_MOVEMENT_UP
 	db $FF
 
 PokemonTower7FScript1:
@@ -333,9 +334,9 @@ PokemonTower7FWarpToMrFujiHouseScript:
 PokemonTower7FRocketLeaveMovementScript:
 	ld hl, PokemonTower7FNPCCoordMovementTable
 	ld a, [wSpriteIndex]
-	cp 3
+	cp 2
 	ret c
-	sub 3
+	sub 2
 	dec a
 	swap a
 	ld d, $0
