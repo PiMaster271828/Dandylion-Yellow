@@ -112,8 +112,8 @@
 	const EVENT_BEAT_GHOST_MAROWAK	                                                               ; $116
 	const_skip	                                                                                   ; $117
 	const EVENT_BEAT_POKEMONTOWER_7_JESSIE_JAMES	                                               ; $118
-  /*const EVENT_POKEMONTOWER_7_JESSIE_JAMES_ON_LEFT	                                               ; $119
-	const EVENT_BEAT_POKEMONTOWER_7_TRAINER_0                                                      ; $11A
+ 	const EVENT_POKEMONTOWER_7_JESSIE_JAMES_ON_LEFT	                                               ; $119
+   /*const EVENT_BEAT_POKEMONTOWER_7_TRAINER_0                                                      ; $11A
 	const EVENT_BEAT_POKEMONTOWER_7_TRAINER_1                                                      ; $11B
 	const EVENT_BEAT_POKEMONTOWER_7_TRAINER_2                                                      ; $11C
 	const EVENT_BEAT_POKEMONTOWER_7_TRAINER_3                                                      ; $11D
