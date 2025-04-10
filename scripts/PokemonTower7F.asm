@@ -1,8 +1,11 @@
 PokemonTower7F_Script:
 	call EnableAutoTextBoxDrawing
-	ld hl, PokemonTower7F_ScriptPointers
+	ld hl, PokemonTower7FTrainerHeaders
+	ld de, PokemonTower7F_ScriptPointers
 	ld a, [wPokemonTower7FCurScript]
-	call CallFunctionInTable
+	call ExecuteCurMapScriptInTable
+	ld [wPokemonTower7FCurScript], a
+;	call CallFunctionInTable
 	ret
 
 PokemonTower7FSetDefaultScript:
@@ -10,11 +13,14 @@ PokemonTower7FSetDefaultScript:
 	ld [wJoyIgnore], a
 PokemonTower7FSetScript:
 	ld [wPokemonTower7FCurScript], a
+	ld [wCurMapScript], a
 	ret
 
 PokemonTower7F_ScriptPointers:
 	def_script_pointers
 	dw_const PokemonTower7FScript0,                 SCRIPT_POKEMONTOWER7F_SCRIPT0
+	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_POKEMONTOWER7F_START_BATTLE
+	dw_const PokemonTower7FEndBattleScript,         SCRIPT_POKEMONTOWER7F_END_BATTLE
 	dw_const PokemonTower7FScript1,                 SCRIPT_POKEMONTOWER7F_SCRIPT1
 	dw_const PokemonTower7FScript2,                 SCRIPT_POKEMONTOWER7F_SCRIPT2
 	dw_const PokemonTower7FScript3,                 SCRIPT_POKEMONTOWER7F_SCRIPT3
@@ -25,6 +31,7 @@ PokemonTower7F_ScriptPointers:
 	dw_const PokemonTower7FScript8,                 SCRIPT_POKEMONTOWER7F_SCRIPT8
 	dw_const PokemonTower7FScript9,                 SCRIPT_POKEMONTOWER7F_SCRIPT9
 	dw_const PokemonTower7FScript10,                SCRIPT_POKEMONTOWER7F_SCRIPT10
+	dw_const PokemonTower7FHideNPCScript,           SCRIPT_POKEMONTOWER7F_HIDE_NPC
 	dw_const PokemonTower7FWarpToMrFujiHouseScript, SCRIPT_POKEMONTOWER7F_WARP_TO_MR_FUJI_HOUSE
 
 PokemonTower7FScript0:
@@ -32,13 +39,41 @@ IF DEF(_DEBUG)
 	call DebugPressedOrHeldB
 	ret nz
 ENDC
+;	ld hl, PokemonTower7FJessieJamesCoords
+;	call ArePlayerCoordsInArray
+;	jp nc, CheckFightingMapTrainers
+	CheckEvent EVENT_BEAT_POKEMONTOWER_7_TRAINER_3
+	jp z, CheckFightingMapTrainers
 	CheckEvent EVENT_BEAT_POKEMONTOWER_7_JESSIE_JAMES
 	call z, PokemonTower7FScript_60d2a
 	ret
 
+;PokemonTower7FJessieJamesCoords:
+;	dbmapcoord 10, 4
+;	dbmapcoord 11, 4
+;	db -1 ; end
+
+PokemonTower7FEndBattleScript:
+	ld hl, wMiscFlags
+	res BIT_SEEN_BY_TRAINER, [hl]
+	ld a, [wIsInBattle]
+	cp $ff
+	jp z, PokemonTower7FSetDefaultScript
+	call EndTrainerBattle
+	ld a, D_RIGHT | D_LEFT | D_UP | D_DOWN
+	ld [wJoyIgnore], a
+	ld a, [wSpriteIndex]
+	ldh [hSpriteIndex], a
+	call DisplayTextID
+	call PokemonTower7FRocketLeaveMovementScript
+	ld a, SCRIPT_POKEMONTOWER7F_HIDE_NPC
+	ld [wPokemonTower7FCurScript], a
+	ld [wCurMapScript], a
+	ret
+
 PokemonTower7FScript_60d2a:
 	ld a, [wYCoord]
-	cp $c
+	cp $4
 	ret nz
 	ResetEvent EVENT_POKEMONTOWER_7_JESSIE_JAMES_ON_LEFT
 	ld a, [wXCoord]
@@ -66,18 +101,35 @@ PokemonTower7FScript_60d2a:
 	ld a, TEXT_POKEMONTOWER7F_TEXT4
 	ldh [hTextID], a
 	call DisplayTextID
+;Having Player move down 1 (so we don't have to move pikachu because it's just a little trash)
+	xor a
+	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
+	ld a, $1
+	ld [wSimulatedJoypadStatesIndex], a
+	ld a, D_DOWN
+	ld [wSimulatedJoypadStatesEnd], a
+	call StartSimulatingJoypadStates
+;End of moving down
 	ld a, A_BUTTON | B_BUTTON | SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a
 	ld a, SCRIPT_POKEMONTOWER7F_SCRIPT1
 	call PokemonTower7FSetScript
 	ret
 
-PokemonTower7FMovementData_60d7a:
+/*PokemonTower7FMovementData_60d7a:
 	db $4
 PokemonTower7FMovementData_60d7b:
 	db $4
 	db $4
 	db $4
+	db $FF
+*/
+
+PokemonTower7FMovementData_60d7a:
+	db NPC_MOVEMENT_UP
+PokemonTower7FMovementData_60d7b:
+	db NPC_MOVEMENT_UP
+	db NPC_MOVEMENT_UP
 	db $FF
 
 PokemonTower7FScript1:
@@ -102,7 +154,7 @@ PokemonTower7FScript2:
 	bit BIT_SCRIPTED_NPC_MOVEMENT, a
 	ret nz
 PokemonTower7FScript3:
-	ld a, SPRITE_FACING_DOWN
+	ld a, SPRITE_FACING_UP
 	ld [wSprite01StateData1FacingDirection], a
 	CheckEvent EVENT_POKEMONTOWER_7_JESSIE_JAMES_ON_LEFT
 	jr z, .asm_60dba
@@ -139,7 +191,7 @@ PokemonTower7FScript6:
 	ld [wSprite02StateData1FacingDirection], a
 	CheckEvent EVENT_POKEMONTOWER_7_JESSIE_JAMES_ON_LEFT
 	jr z, .asm_60dff
-	ld a, SPRITE_FACING_DOWN
+	ld a, SPRITE_FACING_UP
 	ld [wSprite02StateData1FacingDirection], a
 .asm_60dff
 	call Delay3
@@ -234,6 +286,30 @@ PokemonTower7FScript_HideObject:
 	predef HideObject
 	ret
 
+PokemonTower7FHideNPCScript:
+	ld a, [wStatusFlags5]
+	bit BIT_SCRIPTED_NPC_MOVEMENT, a
+	ret nz
+	ld hl, wMissableObjectList
+	ld a, [wSpriteIndex]
+	ld b, a
+.missableObjectsListLoop
+	ld a, [hli]
+	cp b            ; search for sprite ID in missing objects list
+	ld a, [hli]
+	jr nz, .missableObjectsListLoop
+	ld [wMissableObjectIndex], a   ; remove missable object
+	predef HideObject
+	xor a
+	ld [wJoyIgnore], a
+	ld [wSpriteIndex], a
+	ld [wTrainerHeaderFlagBit], a
+	ld [wOpponentAfterWrongAnswer], a ; not used here; likely a mistake copied from maps/CinnabarGym.asm
+	ld a, SCRIPT_POKEMONTOWER7F_SCRIPT0
+	ld [wPokemonTower7FCurScript], a
+	ld [wCurMapScript], a
+	ret
+
 PokemonTower7FWarpToMrFujiHouseScript:
 	ld a, A_BUTTON | B_BUTTON | SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a
@@ -254,15 +330,151 @@ PokemonTower7FWarpToMrFujiHouseScript:
 	ld [wPokemonTower7FCurScript], a
 	ret
 
+PokemonTower7FRocketLeaveMovementScript:
+	ld hl, PokemonTower7FNPCCoordMovementTable
+	ld a, [wSpriteIndex]
+	cp 3
+	ret c
+	sub 3
+	dec a
+	swap a
+	ld d, $0
+	ld e, a
+	add hl, de
+	ld a, [wYCoord]
+	ld b, a
+	ld a, [wXCoord]
+	ld c, a
+.loop
+	ld a, [hli]
+	cp b
+	jr nz, .inc_and_skip
+	ld a, [hli]
+	cp c
+	jr nz, .skip
+	ld a, [hli]
+	ld d, [hl]
+	ld e, a
+	ld a, [wSpriteIndex]
+	ldh [hSpriteIndex], a
+	jp MoveSprite
+.inc_and_skip
+	inc hl
+.skip
+	inc hl
+	inc hl
+	jr .loop
+
+PokemonTower7FNPCCoordMovementTable:
+	map_coord_movement  9, 12, PokemonTower7FRocket1ExitRightDownMovement
+	map_coord_movement 10, 11, PokemonTower7FRocket1ExitDownRightMovement
+	map_coord_movement 11, 11, PokemonTower7FRocketExitDownMovement
+	map_coord_movement 12, 11, PokemonTower7FRocketExitDownMovement
+	map_coord_movement 12, 10, PokemonTower7FRocket2ExitLeftDownMovement
+	map_coord_movement 11,  9, PokemonTower7FRocket2ExitDownLeftMovement
+	map_coord_movement 10,  9, PokemonTower7FRocketExitDownMovement
+	map_coord_movement  9,  9, PokemonTower7FRocketExitDownMovement
+	map_coord_movement  9,  8, PokemonTower7FRocket3ExitRightDownMovement
+	map_coord_movement 10,  7, PokemonTower7FRocketExitDownMovement
+	map_coord_movement 11,  7, PokemonTower7FRocketExitDownMovement
+	map_coord_movement 12,  7, PokemonTower7FRocketExitDownMovement
+	map_coord_movement 12,  6, PokemonTower7FRocket4ExitLeftDownMovement
+	map_coord_movement 11,  5, PokemonTower7FRocketExitDownMovement
+	map_coord_movement 10,  5, PokemonTower7FRocketExitDownMovement
+	map_coord_movement  9,  5, PokemonTower7FRocketExitDownMovement
+
+PokemonTower7FRocket1ExitRightDownMovement:
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_LEFT
+	db -1 ; end
+
+PokemonTower7FRocket1ExitDownRightMovement:
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db -1 ; end
+
+PokemonTower7FRocketExitDownMovement:
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db -1 ; end
+
+PokemonTower7FRocket2ExitLeftDownMovement:
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db -1 ; end
+
+PokemonTower7FRocket2ExitDownLeftMovement:
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db -1 ; end
+
+PokemonTower7FRocket3ExitRightDownMovement:
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db -1 ; end
+
+PokemonTower7FRocket4ExitLeftDownMovement:
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db -1 ; end
+
 PokemonTower7F_TextPointers:
 	def_text_pointers
 	dw_const PokemonTower7FJessieJamesText, TEXT_POKEMONTOWER7F_JESSIE
 	dw_const PokemonTower7FJessieJamesText, TEXT_POKEMONTOWER7F_JAMES
 	dw_const PokemonTower7FMrFujiText,      TEXT_POKEMONTOWER7F_MR_FUJI
+	dw_const PokemonTower7FRocket1Text,     TEXT_POKEMONTOWER7F_ROCKET1
+	dw_const PokemonTower7FRocket2Text,     TEXT_POKEMONTOWER7F_ROCKET2
+	dw_const PokemonTower7FRocket3Text,     TEXT_POKEMONTOWER7F_ROCKET3
+	dw_const PokemonTower7FRocket4Text,     TEXT_POKEMONTOWER7F_ROCKET4
 	dw_const PokemonTower7FText4,           TEXT_POKEMONTOWER7F_TEXT4
 	dw_const PokemonTower7FText5,           TEXT_POKEMONTOWER7F_TEXT5
 	dw_const PokemonTower7FText6,           TEXT_POKEMONTOWER7F_TEXT6
 
+PokemonTower7FTrainerHeaders:
+	def_trainers 3
+
+PokemonTower7FTrainerHeader0:
+	trainer EVENT_BEAT_POKEMONTOWER_7_TRAINER_0, 3, PokemonTower7FRocket1BattleText, PokemonTower7FRocket1EndBattleText, PokemonTower7FRocket1AfterBattleText
+PokemonTower7TrainerHeader1:
+	trainer EVENT_BEAT_POKEMONTOWER_7_TRAINER_1, 3, PokemonTower7FRocket2BattleText, PokemonTower7FRocket2EndBattleText, PokemonTower7FRocket2AfterBattleText  ; New trainer added by G-Dubs
+PokemonTower7TrainerHeader2:
+	trainer EVENT_BEAT_POKEMONTOWER_7_TRAINER_2, 3, PokemonTower7FRocket3BattleText, PokemonTower7FRocket3EndBattleText, PokemonTower7FRocket3AfterBattleText  ; New trainer added by G-Dubs
+PokemonTower7TrainerHeader3:
+	trainer EVENT_BEAT_POKEMONTOWER_7_TRAINER_3, 3, PokemonTower7FRocket4BattleText, PokemonTower7FRocket4EndBattleText, PokemonTower7FRocket4AfterBattleText  ; New trainer added by G-Dubs
+	db -1 ; end
 PokemonTower7FJessieJamesText:
 	text_end
 
@@ -271,7 +483,9 @@ PokemonTower7FText4:
 	text_asm
 	ld c, 10
 	call DelayFrames
-	ld a, PLAYER_DIR_UP
+;	ld hl, PikachuMovementData_1              ;Pikachu Move Trash to figure out.  Table in pikachu_movement.asm
+;	call ApplyPikachuMovementData
+	ld a, PLAYER_DIR_DOWN
 	ld [wPlayerMovingDirection], a
 	ld a, $0
 	ld [wEmotionBubbleSpriteIndex], a
@@ -281,6 +495,11 @@ PokemonTower7FText4:
 	ld c, 20
 	call DelayFrames
 	jp TextScriptEnd
+
+;PikachuMovementData_1:
+;	db $00
+;	db $35
+;	db $3f
 
 PokemonTower7FText5:
 	text_far _PokemonTowerJessieJamesText2
@@ -319,3 +538,77 @@ PokemonTower7FMrFujiText:
 .RescueText:
 	text_far _PokemonTower7FMrFujiRescueText
 	text_end
+
+PokemonTower7FRocket1Text:
+	text_asm
+	ld hl, PokemonTower7FTrainerHeader0
+	call TalkToTrainer
+	jp TextScriptEnd
+
+PokemonTower7FRocket2Text:                       ; New trainer added by G-Dubs
+	text_asm
+	ld hl, PokemonTower7TrainerHeader1
+	call TalkToTrainer
+	jp TextScriptEnd
+
+PokemonTower7FRocket3Text:                       ; New trainer added by G-Dubs
+	text_asm
+	ld hl, PokemonTower7TrainerHeader2
+	call TalkToTrainer
+	jp TextScriptEnd
+
+PokemonTower7FRocket4Text:                       ; New trainer added by G-Dubs
+    text_asm
+	ld hl, PokemonTower7TrainerHeader3
+	call TalkToTrainer
+	jp TextScriptEnd
+
+PokemonTower7FRocket1BattleText:
+	text_far _PokemonTower7FRocket1BattleText
+	text_end
+
+PokemonTower7FRocket1EndBattleText:
+	text_far _PokemonTower7FRocket1EndBattleText
+	text_end
+
+PokemonTower7FRocket1AfterBattleText:
+	text_far _PokemonTower7FRocket1AfterBattleText
+	text_end
+
+PokemonTower7FRocket2BattleText:                 ; New trainer added by G-Dubs
+	text_far _PokemonTower7FRocket2BattleText
+	text_end
+
+PokemonTower7FRocket2EndBattleText:
+	text_far _PokemonTower7FRocket2EndBattleText
+	text_end
+
+PokemonTower7FRocket2AfterBattleText:
+	text_far _PokemonTower7FRocket2AfterBattleText
+	text_end
+
+PokemonTower7FRocket3BattleText:                 ; New trainer added by G-Dubs
+	text_far _PokemonTower7FRocket3BattleText
+	text_end
+
+PokemonTower7FRocket3EndBattleText:
+	text_far _PokemonTower7FRocket3EndBattleText
+	text_end
+
+PokemonTower7FRocket3AfterBattleText:
+	text_far _PokemonTower7FRocket3AfterBattleText
+	text_end
+
+PokemonTower7FRocket4BattleText:                 ; New trainer added by G-Dubs
+	text_far _PokemonTower7FRocket4BattleText
+	text_end
+
+PokemonTower7FRocket4EndBattleText:
+	text_far _PokemonTower7FRocket4EndBattleText
+	text_end
+
+PokemonTower7FRocket4AfterBattleText:
+	text_far _PokemonTower7FRocket4AfterBattleText
+	text_end
+	
+	

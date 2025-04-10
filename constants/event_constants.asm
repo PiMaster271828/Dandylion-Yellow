@@ -113,11 +113,11 @@
 	const_skip	                                                                                   ; $117
 	const EVENT_BEAT_POKEMONTOWER_7_JESSIE_JAMES	                                               ; $118
  	const EVENT_POKEMONTOWER_7_JESSIE_JAMES_ON_LEFT	                                               ; $119
-   /*const EVENT_BEAT_POKEMONTOWER_7_TRAINER_0                                                      ; $11A
+    const EVENT_BEAT_POKEMONTOWER_7_TRAINER_0                                                      ; $11A
 	const EVENT_BEAT_POKEMONTOWER_7_TRAINER_1                                                      ; $11B
 	const EVENT_BEAT_POKEMONTOWER_7_TRAINER_2                                                      ; $11C
 	const EVENT_BEAT_POKEMONTOWER_7_TRAINER_3                                                      ; $11D
-  */const_skip	                                                                                   ; $11E 
+  	const_skip	                                                                                   ; $11E 
 	const EVENT_RESCUED_MR_FUJI_2	                                                               ; $11F
 	const_skip 15	                                                                               ; $120 - $12E
 	const EVENT_GOT_POKE_FLUTE		                                                               ; $12F
