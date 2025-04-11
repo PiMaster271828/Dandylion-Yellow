@@ -10,7 +10,7 @@ DEF SHOW EQU $15
 	const HS_LYING_OLD_MAN                 ; 01
 	const HS_OLD_MAN_1                     ; 02
 	const HS_OLD_MAN_2                     ; 03
-	const HS_OFFICER_JENNY                 ; 04  ;New
+	const HS_OFFICER_JENNY                 ; 04  ; New hide/show constant added by Vlad
 	const HS_MUSEUM_GUY                    ; 05
 	const HS_GYM_GUY                       ; 06
 	const HS_CERULEAN_RIVAL                ; 07
@@ -56,8 +56,8 @@ DEF SHOW EQU $15
 	const HS_POKEDEX_1                     ; 2F
 	const HS_POKEDEX_2                     ; 30
 	const HS_OAKS_LAB_OAK_2                ; 31
-	const HS_VIRIDIANPOKECENTER_JESSIE     ; 32 ;New
-	const HS_VIRIDIANPOKECENTER_JAMES      ; 33 ;New
+	const HS_VIRIDIANPOKECENTER_JESSIE     ; 32 ; New hide/show constant added by Vlad
+	const HS_VIRIDIANPOKECENTER_JAMES      ; 33 ; New hide/show constant added by Vlad
 	const HS_VIRIDIAN_GYM_GIOVANNI         ; 34
 	const HS_VIRIDIAN_GYM_ITEM             ; 35
 	const HS_OLD_AMBER                     ; 36

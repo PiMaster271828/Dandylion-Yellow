@@ -18,16 +18,16 @@ _PokemonTowerJessieJamesText2::
     para "To extend our"
     line "reach to the"
     cont "stars above!"
-    para "Jessie!"
-    para "James!"
-    para "Team Rocket"
+    para "JESSIE!"
+    para "JAMES!"
+    para "TEAM ROCKET"
     line "blasts off at"
     cont "the speed of"
     cont "light!"
     para "Surrender now,"
     line "or prepare to"
     cont "fight!"
-    para "Meowth:"
+    para "MEOWTH:"
     line "That's right!"
 	
 	para "Grampa here wanted"
@@ -135,10 +135,11 @@ _PokemonTower7FRocket3AfterBattleText::
 
 _PokemonTower7FRocket4BattleText::          ; New trainer added by G-Dubs
 	text "This tower's full"
-	line "of creepy vibes."	
+	line "of creepy vibes,"	
 	cont "but we've got a"
-	cont "job to do. Stay"
-	cont "out of our way!"
+	cont "job to do,  so"
+	cont "stay out of our"
+	cont "way, kid!"
 	done
 
 _PokemonTower7FRocket4EndBattleText::

@@ -80,7 +80,7 @@ _PokemonTower6FBeGoneText::
 
 _PokemonTower6FChanneler5BattleText::            ; New trainer added by G-Dubs
 	text "In JOHTO, the"
-	line "Mediums battle"
+	line "MEDIUMs battle"
 	cont "using BELLSPROUT"
 	cont "in SPROUT TOWER,"
 	cont "but here, the"
