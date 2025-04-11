@@ -46,7 +46,6 @@ IsFightingGuitarist::
 /*******************************************************************
 Function added by G-Dubs to let the Pokémaniac have multiple sprites
 ********************************************************************/
-/*
 IsFightingPokemaniac::
 	ld a, [wTrainerClass]
 	cp POKEMANIAC
@@ -64,4 +63,3 @@ IsFightingPokemaniac::
 	ld [hli], a
 	ld [hl], d
 	ret
-*/

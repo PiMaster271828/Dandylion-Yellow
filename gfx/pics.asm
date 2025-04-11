@@ -350,7 +350,7 @@ TamerPic::         INCBIN "gfx/trainers/tamer.pic"
 BirdKeeperPic::    INCBIN "gfx/trainers/birdkeeper.pic"
 BlackbeltPic::     INCBIN "gfx/trainers/blackbelt.pic"
 Rival1Pic::        INCBIN "gfx/trainers/rival1.pic"
-;Pokemaniac2Pic::   INCBIN "gfx/trainers/pokemaniac_alt.pic"               ; New trainer sprite added by G-Dubs
+Pokemaniac2Pic::   INCBIN "gfx/trainers/pokemaniac_alt.pic"               ; New trainer sprite added by G-Dubs
 ;GypsyJugglerPic::  INCBIN "gfx/trainers/gypsy_juggler.pic"
 ;Swimmer2Pic::      INCBIN "gfx/trainers/swimmer_female_12.pic"
 ;Beauty2Pic::       INCBIN "gfx/trainers/beauty_2_97.pic"

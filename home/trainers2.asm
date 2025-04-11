@@ -25,7 +25,7 @@ GetTrainerInformation::
 ;	call IsFightingJessieJames
 	farcall IsFightingSwimmer     ; Function added by Vlad to let the Swimmer have multiple sprites
 	farcall IsFightingGuitarist   ; Function added by G-Dubs to let the Guitarist have multiple sprites
-   ;farcall IsFightingPokemaniac  ; Function added by G-Dubs to let the Pokemaniac have multiple sprites
+    farcall IsFightingPokemaniac  ; Function added by G-Dubs to let the Pokemaniac have multiple sprites
    ;farcall IsFightingBrock      ; Function added by G-Dubs to let the Gym Leaders have multiple sprites (for rematches)
    ;farcall IsFightingMisty
    ;farcall IsFightingLtSurge
