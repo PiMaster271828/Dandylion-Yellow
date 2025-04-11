@@ -31,7 +31,7 @@ PokemonTower7F_ScriptPointers:
 	dw_const PokemonTower7FScript8,                 SCRIPT_POKEMONTOWER7F_SCRIPT8
 	dw_const PokemonTower7FScript9,                 SCRIPT_POKEMONTOWER7F_SCRIPT9
 	dw_const PokemonTower7FScript10,                SCRIPT_POKEMONTOWER7F_SCRIPT10
-	dw_const PokemonTower7FHideNPCScript,           SCRIPT_POKEMONTOWER7F_HIDE_NPC
+	dw_const PokemonTower7FHideNPCScript,           SCRIPT_POKEMONTOWER7F_HIDE_NPC                 ; New script added by Vlad
 	dw_const PokemonTower7FWarpToMrFujiHouseScript, SCRIPT_POKEMONTOWER7F_WARP_TO_MR_FUJI_HOUSE
 
 PokemonTower7FScript0:
@@ -468,7 +468,7 @@ PokemonTower7FTrainerHeaders:
 	def_trainers 3
 
 PokemonTower7FTrainerHeader0:
-	trainer EVENT_BEAT_POKEMONTOWER_7_TRAINER_0, 3, PokemonTower7FRocket1BattleText, PokemonTower7FRocket1EndBattleText, PokemonTower7FRocket1AfterBattleText
+	trainer EVENT_BEAT_POKEMONTOWER_7_TRAINER_0, 3, PokemonTower7FRocket1BattleText, PokemonTower7FRocket1EndBattleText, PokemonTower7FRocket1AfterBattleText  ; New trainer added by G-Dubs
 PokemonTower7TrainerHeader1:
 	trainer EVENT_BEAT_POKEMONTOWER_7_TRAINER_1, 3, PokemonTower7FRocket2BattleText, PokemonTower7FRocket2EndBattleText, PokemonTower7FRocket2AfterBattleText  ; New trainer added by G-Dubs
 PokemonTower7TrainerHeader2:
@@ -484,7 +484,7 @@ PokemonTower7FText4:
 	text_asm
 	ld c, 10
 	call DelayFrames
-;	ld hl, PikachuMovementData_1              ;Pikachu Move Trash to figure out.  Table in pikachu_movement.asm
+;	ld hl, PikachuMovementData_1       ; Pikachu Move Trash to figure out.  Table in pikachu_movement.asm
 ;	call ApplyPikachuMovementData
 	ld a, PLAYER_DIR_DOWN
 	ld [wPlayerMovingDirection], a
@@ -540,7 +540,7 @@ PokemonTower7FMrFujiText:
 	text_far _PokemonTower7FMrFujiRescueText
 	text_end
 
-PokemonTower7FRocket1Text:
+PokemonTower7FRocket1Text:                       ; New trainer added by G-Dubs
 	text_asm
 	ld hl, PokemonTower7FTrainerHeader0
 	call TalkToTrainer
@@ -564,7 +564,7 @@ PokemonTower7FRocket4Text:                       ; New trainer added by G-Dubs
 	call TalkToTrainer
 	jp TextScriptEnd
 
-PokemonTower7FRocket1BattleText:
+PokemonTower7FRocket1BattleText:	             ; New trainer added by G-Dubs 
 	text_far _PokemonTower7FRocket1BattleText
 	text_end
 
