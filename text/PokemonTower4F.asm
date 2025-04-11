@@ -64,7 +64,7 @@ _PokemonTower4FChanneler4AfterBattleText::
 
 _PokemonTower4FChanneler5BattleText::                 ; New trainer added by G-Dubs
 	text "In JOHTO they"
-	line "call me a medium!"
+	line "call me a MEDIUM!"
 	cont "Let's battle!"
 	done
 

@@ -5,7 +5,7 @@ PrintBeginningBattleText:
 	ld a, [wCurMap]
 	cp POKEMON_TOWER_3F
 	jr c, .notPokemonTower
-	cp POKEMON_TOWER_7F + 1
+	cp POKEMON_TOWER_7F      ; + 1 removed by G-Dubs to exclude the 7th floor from the Pokemon Tower logic
 	jr c, .pokemonTower
 .notPokemonTower
 	ld a, [wBattleType]

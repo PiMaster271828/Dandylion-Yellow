@@ -18,9 +18,9 @@ PokemonTower7FSetScript:
 
 PokemonTower7F_ScriptPointers:
 	def_script_pointers
-	dw_const PokemonTower7FScript0,                 SCRIPT_POKEMONTOWER7F_SCRIPT0
-	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_POKEMONTOWER7F_START_BATTLE
-	dw_const PokemonTower7FEndBattleScript,         SCRIPT_POKEMONTOWER7F_END_BATTLE
+	dw_const PokemonTower7FScript0,                 SCRIPT_POKEMONTOWER7F_SCRIPT0                  ; Script edited by Vlad
+	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_POKEMONTOWER7F_START_BATTLE             ; New script added by Vlad
+	dw_const PokemonTower7FEndBattleScript,         SCRIPT_POKEMONTOWER7F_END_BATTLE               ; New script added by Vlad
 	dw_const PokemonTower7FScript1,                 SCRIPT_POKEMONTOWER7F_SCRIPT1
 	dw_const PokemonTower7FScript2,                 SCRIPT_POKEMONTOWER7F_SCRIPT2
 	dw_const PokemonTower7FScript3,                 SCRIPT_POKEMONTOWER7F_SCRIPT3
@@ -31,7 +31,7 @@ PokemonTower7F_ScriptPointers:
 	dw_const PokemonTower7FScript8,                 SCRIPT_POKEMONTOWER7F_SCRIPT8
 	dw_const PokemonTower7FScript9,                 SCRIPT_POKEMONTOWER7F_SCRIPT9
 	dw_const PokemonTower7FScript10,                SCRIPT_POKEMONTOWER7F_SCRIPT10
-	dw_const PokemonTower7FHideNPCScript,           SCRIPT_POKEMONTOWER7F_HIDE_NPC
+	dw_const PokemonTower7FHideNPCScript,           SCRIPT_POKEMONTOWER7F_HIDE_NPC                 ; New script added by Vlad
 	dw_const PokemonTower7FWarpToMrFujiHouseScript, SCRIPT_POKEMONTOWER7F_WARP_TO_MR_FUJI_HOUSE
 
 PokemonTower7FScript0:
@@ -305,7 +305,7 @@ PokemonTower7FHideNPCScript:
 	ld [wJoyIgnore], a
 	ld [wSpriteIndex], a
 	ld [wTrainerHeaderFlagBit], a
-	ld [wOpponentAfterWrongAnswer], a ; not used here; likely a mistake copied from maps/CinnabarGym.asm
+   ;ld [wOpponentAfterWrongAnswer], a ; not used here; likely a mistake copied from maps/CinnabarGym.asm
 	ld a, SCRIPT_POKEMONTOWER7F_SCRIPT0
 	ld [wPokemonTower7FCurScript], a
 	ld [wCurMapScript], a
@@ -456,10 +456,10 @@ PokemonTower7F_TextPointers:
 	dw_const PokemonTower7FJessieJamesText, TEXT_POKEMONTOWER7F_JESSIE
 	dw_const PokemonTower7FJessieJamesText, TEXT_POKEMONTOWER7F_JAMES
 	dw_const PokemonTower7FMrFujiText,      TEXT_POKEMONTOWER7F_MR_FUJI
-	dw_const PokemonTower7FRocket1Text,     TEXT_POKEMONTOWER7F_ROCKET1
-	dw_const PokemonTower7FRocket2Text,     TEXT_POKEMONTOWER7F_ROCKET2
-	dw_const PokemonTower7FRocket3Text,     TEXT_POKEMONTOWER7F_ROCKET3
-	dw_const PokemonTower7FRocket4Text,     TEXT_POKEMONTOWER7F_ROCKET4
+	dw_const PokemonTower7FRocket1Text,     TEXT_POKEMONTOWER7F_ROCKET1   ; New trainer added by G-Dubs
+	dw_const PokemonTower7FRocket2Text,     TEXT_POKEMONTOWER7F_ROCKET2   ; New trainer added by G-Dubs
+	dw_const PokemonTower7FRocket3Text,     TEXT_POKEMONTOWER7F_ROCKET3   ; New trainer added by G-Dubs
+	dw_const PokemonTower7FRocket4Text,     TEXT_POKEMONTOWER7F_ROCKET4   ; New trainer added by G-Dubs
 	dw_const PokemonTower7FText4,           TEXT_POKEMONTOWER7F_TEXT4
 	dw_const PokemonTower7FText5,           TEXT_POKEMONTOWER7F_TEXT5
 	dw_const PokemonTower7FText6,           TEXT_POKEMONTOWER7F_TEXT6
@@ -468,7 +468,7 @@ PokemonTower7FTrainerHeaders:
 	def_trainers 3
 
 PokemonTower7FTrainerHeader0:
-	trainer EVENT_BEAT_POKEMONTOWER_7_TRAINER_0, 3, PokemonTower7FRocket1BattleText, PokemonTower7FRocket1EndBattleText, PokemonTower7FRocket1AfterBattleText
+	trainer EVENT_BEAT_POKEMONTOWER_7_TRAINER_0, 3, PokemonTower7FRocket1BattleText, PokemonTower7FRocket1EndBattleText, PokemonTower7FRocket1AfterBattleText  ; New trainer added by G-Dubs
 PokemonTower7TrainerHeader1:
 	trainer EVENT_BEAT_POKEMONTOWER_7_TRAINER_1, 3, PokemonTower7FRocket2BattleText, PokemonTower7FRocket2EndBattleText, PokemonTower7FRocket2AfterBattleText  ; New trainer added by G-Dubs
 PokemonTower7TrainerHeader2:
@@ -484,7 +484,7 @@ PokemonTower7FText4:
 	text_asm
 	ld c, 10
 	call DelayFrames
-;	ld hl, PikachuMovementData_1              ;Pikachu Move Trash to figure out.  Table in pikachu_movement.asm
+;	ld hl, PikachuMovementData_1       ; Pikachu Move Trash to figure out.  Table in pikachu_movement.asm
 ;	call ApplyPikachuMovementData
 	ld a, PLAYER_DIR_DOWN
 	ld [wPlayerMovingDirection], a
@@ -540,7 +540,7 @@ PokemonTower7FMrFujiText:
 	text_far _PokemonTower7FMrFujiRescueText
 	text_end
 
-PokemonTower7FRocket1Text:
+PokemonTower7FRocket1Text:                       ; New trainer added by G-Dubs
 	text_asm
 	ld hl, PokemonTower7FTrainerHeader0
 	call TalkToTrainer
@@ -564,7 +564,7 @@ PokemonTower7FRocket4Text:                       ; New trainer added by G-Dubs
 	call TalkToTrainer
 	jp TextScriptEnd
 
-PokemonTower7FRocket1BattleText:
+PokemonTower7FRocket1BattleText:	             ; New trainer added by G-Dubs 
 	text_far _PokemonTower7FRocket1BattleText
 	text_end
 
@@ -611,5 +611,4 @@ PokemonTower7FRocket4EndBattleText:
 PokemonTower7FRocket4AfterBattleText:
 	text_far _PokemonTower7FRocket4AfterBattleText
 	text_end
-	
-	
+		

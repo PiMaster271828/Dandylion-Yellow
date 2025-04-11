@@ -86,8 +86,8 @@
 	const EVENT_BEAT_POKEMONTOWER_3_TRAINER_0	                                                   ; $F1
 	const EVENT_BEAT_POKEMONTOWER_3_TRAINER_1	                                                   ; $F2
 	const EVENT_BEAT_POKEMONTOWER_3_TRAINER_2	                                                   ; $F3
-	const EVENT_BEAT_POKEMONTOWER_3_TRAINER_3	                                                   ; $F4
-	const EVENT_BEAT_POKEMONTOWER_3_TRAINER_4	                                                   ; $F5
+	const EVENT_BEAT_POKEMONTOWER_3_TRAINER_3	           ; New trainer added by G-Dubs           ; $F4
+	const EVENT_BEAT_POKEMONTOWER_3_TRAINER_4	           ; New trainer added by G-Dubs           ; $F5
 	const_skip 3 	                                       ; Formerly const_skip 5                 ; $F6 - $F8
 	const EVENT_BEAT_POKEMONTOWER_4_TRAINER_0	                                                   ; $F9
 	const EVENT_BEAT_POKEMONTOWER_4_TRAINER_1	                                                   ; $FA
@@ -119,28 +119,28 @@
 	const EVENT_BEAT_POKEMONTOWER_7_TRAINER_3                                                      ; $11D
   	const_skip	                                                                                   ; $11E 
 	const EVENT_RESCUED_MR_FUJI_2	                                                               ; $11F
-	const_skip 15	                                                                               ; $120 - $12E
+	const_skip 15	                                       ; Formerly const_skip 16                ; $120 - $12E
 	const EVENT_GOT_POKE_FLUTE		                                                               ; $12F
 	const_skip 30	                                                                               ; $130 - $14E
 	const EVENT_GOT_SQUIRTLE_FROM_OFFICER_JENNY	                                                   ; $14F
 
 ; Vermilion City events
 	const_next $150
-	const_skip
-	const EVENT_GOT_BIKE_VOUCHER
-	const EVENT_LEFT_FANCLUB_AFTER_BIKE_VOUCHER
-	const_skip 3
-	const EVENT_SEEL_FAN_BOAST
-	const EVENT_PIKACHU_FAN_BOAST
-	const_skip 8
-	const EVENT_2ND_LOCK_OPENED
-	const EVENT_1ST_LOCK_OPENED
-	const EVENT_BEAT_VERMILION_GYM_TRAINER_0
-	const EVENT_BEAT_VERMILION_GYM_TRAINER_1
-	const EVENT_BEAT_VERMILION_GYM_TRAINER_2
-	const_skip
-	const EVENT_GOT_TM24
-	const EVENT_BEAT_LT_SURGE
+	const_skip                                                                                     ; $150
+	const EVENT_GOT_BIKE_VOUCHER                                                                   ; $151
+	const EVENT_LEFT_FANCLUB_AFTER_BIKE_VOUCHER                                                    ; $152
+	const_skip 3                                                                                   ; $153 - $155
+	const EVENT_SEEL_FAN_BOAST                                                                     ; $156
+	const EVENT_PIKACHU_FAN_BOAST                                                                  ; $157
+	const_skip 8                                                                                   ; $158 - $15F
+	const EVENT_2ND_LOCK_OPENED                                                                    ; $160
+	const EVENT_1ST_LOCK_OPENED                                                                    ; $161
+	const EVENT_BEAT_VERMILION_GYM_TRAINER_0                                                       ; $162
+	const EVENT_BEAT_VERMILION_GYM_TRAINER_1                                                       ; $163
+	const EVENT_BEAT_VERMILION_GYM_TRAINER_2                                                       ; $164
+	const_skip                                                                                     ; $165
+	const EVENT_GOT_TM24                                                                           ; $166
+	const EVENT_BEAT_LT_SURGE                                                                      ; $167
 
 ; Celadon City events
 	const_next $180

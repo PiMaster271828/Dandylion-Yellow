@@ -1,10 +1,10 @@
 	object_const_def
 	const_export POKEMONTOWER7F_JESSIE
 	const_export POKEMONTOWER7F_JAMES
-	const_export POKEMONTOWER7F_ROCKET1
-	const_export POKEMONTOWER7F_ROCKET2
-	const_export POKEMONTOWER7F_ROCKET3
-	const_export POKEMONTOWER7F_ROCKET4
+	const_export POKEMONTOWER7F_ROCKET1     ; New trainer added by G-Dubs
+	const_export POKEMONTOWER7F_ROCKET2	    ; New trainer added by G-Dubs
+	const_export POKEMONTOWER7F_ROCKET3     ; New trainer added by G-Dubs
+	const_export POKEMONTOWER7F_ROCKET4     ; New trainer added by G-Dubs
 	const_export POKEMONTOWER7F_MR_FUJI
 
 
@@ -24,7 +24,5 @@ PokemonTower7F_Object:
 	object_event  9,  7, SPRITE_ROCKET, STAY, RIGHT, TEXT_POKEMONTOWER7F_ROCKET3, OPP_ROCKET, 21   ; New trainer added by G-Dubs
 	object_event 12,  5, SPRITE_ROCKET, STAY, LEFT, TEXT_POKEMONTOWER7F_ROCKET4, OPP_ROCKET, 22    ; New trainer added by G-Dubs
 	object_event 10,  3, SPRITE_MR_FUJI, STAY, DOWN, TEXT_POKEMONTOWER7F_MR_FUJI
-
-
 
 	def_warps_to POKEMON_TOWER_7F
