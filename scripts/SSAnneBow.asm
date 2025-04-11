@@ -22,28 +22,44 @@ SSAnneBow_TextPointers:
 	dw_const SSAnneBowSailor3Text,      TEXT_SSANNEBOW_SAILOR3
 
 SSAnne5TrainerHeaders:
-	def_trainers 4
+	def_trainers 3      ; Changed from def_trainers 4 by G-Dubs
 SSAnne5TrainerHeader0:
-	trainer EVENT_BEAT_SS_ANNE_5_TRAINER_0, 3, SSAnneBowSailor2BattleText, SSAnneBowSailor2EndBattleText, SSAnneBowSailor2AfterBattleText
+	trainer EVENT_BEAT_SS_ANNE_5_TRAINER_0, 3, SSAnneBowSailor1BattleText, SSAnneBowSailor1EndBattleText, SSAnneBowSailor1AfterBattleText  ; NPC changed to trainer by G-Dubs
 SSAnne5TrainerHeader1:
-	trainer EVENT_BEAT_SS_ANNE_5_TRAINER_1, 3, SSAnneBowSailor3BattleText, SSAnneBowSailor3EndBattleText, SSAnneBowSailor3AfterBattleText
+	trainer EVENT_BEAT_SS_ANNE_5_TRAINER_1, 3, SSAnneBowSailor2BattleText, SSAnneBowSailor2EndBattleText, SSAnneBowSailor2AfterBattleText
+SSAnne5TrainerHeader2:
+	trainer EVENT_BEAT_SS_ANNE_5_TRAINER_2, 3, SSAnneBowSailor3BattleText, SSAnneBowSailor3EndBattleText, SSAnneBowSailor3AfterBattleText
 	db -1 ; end
 
 SSAnneBowSuperNerdText:
 	text_far _SSAnneBowSuperNerdText
 	text_end
 
-SSAnneBowSailor1Text:
-	text_far _SSAnneBowSailor1Text
-	text_end
-
 SSAnneBowCooltrainerMText:
 	text_far _SSAnneBowCooltrainerMText
 	text_end
 
-SSAnneBowSailor2Text:
+SSAnneBowSailor1Text:				             ; New trainer added by G-Dubs
 	text_asm
 	ld hl, SSAnne5TrainerHeader0
+	call TalkToTrainer
+	jp TextScriptEnd
+
+SSAnneBowSailor1BattleText:
+	text_far _SSAnneBowSailor1BattleText	
+	text_end
+
+SSAnneBowSailor1EndBattleText:
+	text_far _SSAnneBowSailor1EndBattleText
+	text_end
+
+SSAnneBowSailor1AfterBattleText:
+	text_far _SSAnneBowSailor1AfterBattleText
+	text_end
+
+SSAnneBowSailor2Text:
+	text_asm
+	ld hl, SSAnne5TrainerHeader1
 	call TalkToTrainer
 	jp TextScriptEnd
 
@@ -61,7 +77,7 @@ SSAnneBowSailor2AfterBattleText:
 
 SSAnneBowSailor3Text:
 	text_asm
-	ld hl, SSAnne5TrainerHeader1
+	ld hl, SSAnne5TrainerHeader2
 	call TalkToTrainer
 	jp TextScriptEnd
 

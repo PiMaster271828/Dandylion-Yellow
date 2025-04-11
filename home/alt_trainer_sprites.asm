@@ -1,3 +1,6 @@
+/**************************************************************
+Function added by Vlad to let the Swimmer have multiple sprites
+***************************************************************/
 IsFightingSwimmer::
 	ld a, [wTrainerClass]
 	cp SWIMMER
@@ -16,6 +19,9 @@ IsFightingSwimmer::
 	ld [hl], d
 	ret
 
+/******************************************************************
+Function added by G-Dubs to let the Guitarist have multiple sprites
+*******************************************************************/
 IsFightingGuitarist::
 	ld a, [wTrainerClass]
 	cp GUITARIST
@@ -37,3 +43,25 @@ IsFightingGuitarist::
 	ld [hli], a
 	ld [hl], d
 	ret
+/*******************************************************************
+Function added by G-Dubs to let the Pokémaniac have multiple sprites
+********************************************************************/
+/*
+IsFightingPokemaniac::
+	ld a, [wTrainerClass]
+	cp POKEMANIAC
+	ret nz
+	ld a, [wTrainerNo]
+	cp $08
+	ret c
+	ld de, Pokemaniac2Pic
+	cp $0B
+	jr c, .dummy
+	ld de, Pokemaniac2Pic ; possibly meant to add another pic
+.dummy
+	ld hl, wTrainerPicPointer
+	ld a, e
+	ld [hli], a
+	ld [hl], d
+	ret
+*/

@@ -183,11 +183,10 @@ SailorData:
 	db 20, MACHOP, KRABBY, 0                                                                                 ; Sailor 7               ; Krabby added by G-Dubs
 ; Vermilion Gym
 	db 21, PIKACHU, MACHOP, PIKACHU, MAGNEMITE, 0                                                            ; Sailor 8               ; Pikachu from Red/Blue, and Machop with Thunderpunch added by G-Dubs
-/*
 ; SS Anne Stern (Again)
-    db 16, MACHOP, STARYU, 0                                                                                 ; Sailor 9               ; New trainer added by G-Dubs
+    db 21, MACHOP, STARYU, 0                                                                                 ; Sailor 9               ; New trainer added by G-Dubs
 	db 19, MACHOP, HORSEA, 0                                                                                 ; Sailor 10              ; New trainer added by G-Dubs 
-*/
+
 JrTrainerMData:
 ; Pewter Gym
 	db 11, DIGLETT, SANDSHREW, 0                                                                             ; Jr. Trainer ♂ 1        ; Changed from level 9 to 11 to match Red/Blue by G-Dubs
@@ -267,14 +266,18 @@ PokemaniacData:
 	db 45, CHARIZARD, LAPRAS, LICKITUNG, 0                                                                   ; Pokémaniac 6           ; Level changed from 40 to 45, and Charmeleon changed to Charizard by G-Dubs
 ; Rock Tunnel 1F
 	db 23, CUBONE, SLOWPOKE, 0                                                                               ; Pokémaniac 7
+/**************************
+Pokémaniac Alternate Sprite
+***************************/
 ; Route 4
     db 35, CUBONE, NIDORINO, RHYHORN, NIDOQUEEN, 0                                                           ; Pokémaniac 8           ; New trainer added by G-Dubs
-/*
+; S.S. Anne Bow
+    db 19, NIDORINO, SLOWPOKE, NIDORINA, 0                                                                   ; Pokémaniac 9           ; New trainer added by G-Dubs
 ; Route 23
-    db 45, NIDOKING, KANGASKHAN, CHARIZARD, SLOWBRO, LICKITUNG, LAPRAS, 0                                    ; Pokémaniac 9           ; New trainer added by G-Dubs
+    db 45, NIDOKING, KANGASKHAN, CHARIZARD, SLOWBRO, LICKITUNG, LAPRAS, 0                                    ; Pokémaniac 10          ; New trainer added by G-Dubs
 ; Safari Zone Area 2 Rest House
-    db 33, RHYHORN, PINSIR, TANGELA, KANGASKHAN, SCYTHER, MAROWAK, 0                                         ; Pokémaniac 10          ; New trainer added by G-Dubs
-*/
+    db 33, RHYHORN, PINSIR, TANGELA, KANGASKHAN, SCYTHER, MAROWAK, 0                                         ; Pokémaniac 11          ; New trainer added by G-Dubs
+
 SuperNerdData:
 ; Mt. Moon 1F
 	db 12, MAGNEMITE, VOLTORB, 0			                                                                 ; Super Nerd 1           ; Level changed from 11 to 12 by G-Dubs 

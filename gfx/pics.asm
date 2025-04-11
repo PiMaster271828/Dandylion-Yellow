@@ -350,6 +350,7 @@ TamerPic::         INCBIN "gfx/trainers/tamer.pic"
 BirdKeeperPic::    INCBIN "gfx/trainers/birdkeeper.pic"
 BlackbeltPic::     INCBIN "gfx/trainers/blackbelt.pic"
 Rival1Pic::        INCBIN "gfx/trainers/rival1.pic"
+;Pokemaniac2Pic::   INCBIN "gfx/trainers/pokemaniac_alt.pic"               ; New trainer sprite added by G-Dubs
 ;GypsyJugglerPic::  INCBIN "gfx/trainers/gypsy_juggler.pic"
 ;Swimmer2Pic::      INCBIN "gfx/trainers/swimmer_female_12.pic"
 ;Beauty2Pic::       INCBIN "gfx/trainers/beauty_2_97.pic"
@@ -381,13 +382,13 @@ LoreleiPic::       INCBIN "gfx/trainers/lorelei.pic"
 ChannelerPic::     INCBIN "gfx/trainers/channeler.pic"
 AgathaPic::        INCBIN "gfx/trainers/agatha.pic"
 LancePic::         INCBIN "gfx/trainers/lance.pic"
-JessieJamesPic::   INCBIN "gfx/trainers/jessiejames.pic"        ; New trainer sprite added by G-Dubs
-PokeFanMPic::      INCBIN "gfx/trainers/poke_fan_male.pic"      ; New trainer sprite added by G-Dubs
-PokeFanFPic::      INCBIN "gfx/trainers/poke_fan_female.pic"    ; New trainer sprite added by G-Dubs
-Guitarist1Pic::    INCBIN "gfx/trainers/guitarist_1.pic"        ; New trainer sprite added by G-Dubs
-Guitarist2Pic::    INCBIN "gfx/trainers/guitarist_2.pic"        ; New trainer sprite added by G-Dubs
-Guitarist3Pic::    INCBIN "gfx/trainers/guitarist_3.pic"        ; New trainer sprite added by G-Dubs
-SoldierPic::       INCBIN "gfx/trainers/soldier.pic"            ; New trainer sprite added by G-Dubs
+JessieJamesPic::   INCBIN "gfx/trainers/jessie_james_meowth_alt.pic"      ; New trainer sprite added by G-Dubs
+PokeFanMPic::      INCBIN "gfx/trainers/poke_fan_male.pic"                ; New trainer sprite added by G-Dubs
+PokeFanFPic::      INCBIN "gfx/trainers/poke_fan_female.pic"              ; New trainer sprite added by G-Dubs
+Guitarist1Pic::    INCBIN "gfx/trainers/guitarist_1.pic"                  ; New trainer sprite added by G-Dubs
+Guitarist2Pic::    INCBIN "gfx/trainers/guitarist_2.pic"                  ; New trainer sprite added by G-Dubs
+Guitarist3Pic::    INCBIN "gfx/trainers/guitarist_3.pic"                  ; New trainer sprite added by G-Dubs
+SoldierPic::       INCBIN "gfx/trainers/soldier.pic"                      ; New trainer sprite added by G-Dubs
 
 ;Rival4Pic::      INCBIN "gfx/trainers/rival4.pic"
 

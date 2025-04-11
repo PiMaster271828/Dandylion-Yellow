@@ -294,18 +294,18 @@
 
 ; Route 6 events
 	const_next $410
-	const_skip
-	const EVENT_BEAT_ROUTE_6_TRAINER_0                                                             ; $410
-	const EVENT_BEAT_ROUTE_6_TRAINER_1                                                             ; $411
-	const EVENT_BEAT_ROUTE_6_TRAINER_2                                                             ; $412
-	const EVENT_BEAT_ROUTE_6_TRAINER_3                                                             ; $413
-	const EVENT_BEAT_ROUTE_6_TRAINER_4                                                             ; $414
-	const EVENT_BEAT_ROUTE_6_TRAINER_5                                                             ; $415
-	const EVENT_BEAT_ROUTE_6_TRAINER_6      ; New trainer added by G-Dubs                          ; $416
-	const EVENT_BEAT_ROUTE_6_TRAINER_7      ; New trainer added by G-Dubs                          ; $417
-	const EVENT_BEAT_ROUTE_6_TRAINER_8      ; New trainer added by G-Dubs                          ; $418
-	const EVENT_BEAT_ROUTE_6_TRAINER_9      ; New trainer added by G-Dubs                          ; $419
-	const EVENT_BEAT_ROUTE_6_TRAINER_10     ; New trainer added by G-Dubs                          ; $41A
+	const_skip																					   ; $410
+	const EVENT_BEAT_ROUTE_6_TRAINER_0                                                             ; $411
+	const EVENT_BEAT_ROUTE_6_TRAINER_1                                                             ; $412
+	const EVENT_BEAT_ROUTE_6_TRAINER_2                                                             ; $413
+	const EVENT_BEAT_ROUTE_6_TRAINER_3                                                             ; $414
+	const EVENT_BEAT_ROUTE_6_TRAINER_4                                                             ; $415
+	const EVENT_BEAT_ROUTE_6_TRAINER_5                                                             ; $416
+	const EVENT_BEAT_ROUTE_6_TRAINER_6      ; New trainer added by G-Dubs                          ; $417
+	const EVENT_BEAT_ROUTE_6_TRAINER_7      ; New trainer added by G-Dubs                          ; $418
+	const EVENT_BEAT_ROUTE_6_TRAINER_8      ; New trainer added by G-Dubs                          ; $419
+	const EVENT_BEAT_ROUTE_6_TRAINER_9      ; New trainer added by G-Dubs                          ; $41A
+	const EVENT_BEAT_ROUTE_6_TRAINER_10     ; New trainer added by G-Dubs                          ; $41B
 
 ; Route 8 events
 	const_next $430
@@ -454,7 +454,7 @@
 	const EVENT_BEAT_ROUTE16_SNORLAX
 	const_skip 4
 	const EVENT_GOT_HM02
-	const EVENT_RESCUED_MR_FUJI
+	const EVENT_RESCUED_MR_FUJI             ; Why is this here?
 
 ; Route 17 events
 	const_next $4D0
@@ -565,23 +565,23 @@
 
 ; Route 25 events
 	const_next $550 - 1
-	const EVENT_54F
-	const EVENT_MET_BILL
-	const EVENT_BEAT_ROUTE_25_TRAINER_0
-	const EVENT_BEAT_ROUTE_25_TRAINER_1
-	const EVENT_BEAT_ROUTE_25_TRAINER_2
-	const EVENT_BEAT_ROUTE_25_TRAINER_3
-	const EVENT_BEAT_ROUTE_25_TRAINER_4
-	const EVENT_BEAT_ROUTE_25_TRAINER_5
-	const EVENT_BEAT_ROUTE_25_TRAINER_6
-	const EVENT_BEAT_ROUTE_25_TRAINER_7
-	const EVENT_BEAT_ROUTE_25_TRAINER_8
-	const_skip
-	const EVENT_USED_CELL_SEPARATOR_ON_BILL
-	const EVENT_GOT_SS_TICKET
-	const EVENT_MET_BILL_2
-	const EVENT_BILL_SAID_USE_CELL_SEPARATOR
-	const EVENT_LEFT_BILLS_HOUSE_AFTER_HELPING
+	const EVENT_54F                              ; $550 - 1 (lol)                                  ; $54F 
+	const EVENT_MET_BILL	                                                                       ; $550
+	const EVENT_BEAT_ROUTE_25_TRAINER_0                                                            ; $551
+	const EVENT_BEAT_ROUTE_25_TRAINER_1                                                            ; $552
+	const EVENT_BEAT_ROUTE_25_TRAINER_2                                                            ; $553
+	const EVENT_BEAT_ROUTE_25_TRAINER_3                                                            ; $554
+	const EVENT_BEAT_ROUTE_25_TRAINER_4                                                            ; $555
+	const EVENT_BEAT_ROUTE_25_TRAINER_5                                                            ; $556
+	const EVENT_BEAT_ROUTE_25_TRAINER_6                                                            ; $557
+	const EVENT_BEAT_ROUTE_25_TRAINER_7                                                            ; $558
+	const EVENT_BEAT_ROUTE_25_TRAINER_8                                                            ; $559
+	const_skip                                                                                     ; $55A
+	const EVENT_USED_CELL_SEPARATOR_ON_BILL                                                        ; $55B
+	const EVENT_GOT_SS_TICKET                                                                      ; $55C
+	const EVENT_MET_BILL_2                                                                         ; $55D
+	const EVENT_BILL_SAID_USE_CELL_SEPARATOR                                                       ; $55E
+	const EVENT_LEFT_BILLS_HOUSE_AFTER_HELPING                                                     ; $55F
 
 ; Viridian Forest events
 	const_next $560
@@ -624,35 +624,51 @@
 	const EVENT_57E                                                                                ; $583
 	const EVENT_GOT_HELIX_FOSSIL                                                                   ; $584
 
-; S.S. Anne events
+; S.S. Bow Anne events
 	const_next $5C0
-	const_skip 4
-	const EVENT_BEAT_SS_ANNE_5_TRAINER_0
-	const EVENT_BEAT_SS_ANNE_5_TRAINER_1
-	const_skip 26
-	const EVENT_GOT_HM01
-	const EVENT_RUBBED_CAPTAINS_BACK
-	const EVENT_SS_ANNE_LEFT
-	const EVENT_WALKED_PAST_GUARD_AFTER_SS_ANNE_LEFT
-	const EVENT_STARTED_WALKING_OUT_OF_DOCK
-	const EVENT_WALKED_OUT_OF_DOCK
-	const_skip 11
-	const EVENT_BEAT_SS_ANNE_8_TRAINER_0
-	const EVENT_BEAT_SS_ANNE_8_TRAINER_1
-	const EVENT_BEAT_SS_ANNE_8_TRAINER_2
-	const EVENT_BEAT_SS_ANNE_8_TRAINER_3
-	const_skip 12
-	const EVENT_BEAT_SS_ANNE_9_TRAINER_0
-	const EVENT_BEAT_SS_ANNE_9_TRAINER_1
-	const EVENT_BEAT_SS_ANNE_9_TRAINER_2
-	const EVENT_BEAT_SS_ANNE_9_TRAINER_3
-	const_skip 12
-	const EVENT_BEAT_SS_ANNE_10_TRAINER_0
-	const EVENT_BEAT_SS_ANNE_10_TRAINER_1
-	const EVENT_BEAT_SS_ANNE_10_TRAINER_2
-	const EVENT_BEAT_SS_ANNE_10_TRAINER_3
-	const EVENT_BEAT_SS_ANNE_10_TRAINER_4
-	const EVENT_BEAT_SS_ANNE_10_TRAINER_5
+	const_skip 3                                                                                   ; $5C0 - $5C2
+	const EVENT_BEAT_SS_ANNE_5_TRAINER_0		 ; NPC changed to trainer by G-Dubs				   ; $5C3
+	const EVENT_BEAT_SS_ANNE_5_TRAINER_1                                                           ; $5C4
+	const EVENT_BEAT_SS_ANNE_5_TRAINER_2                                                           ; $5C5
+	const_skip 26                                ; Formerly const_skip 26                          ; $5C6 - $5DF
+
+; S.S. Anne 2F/Dock Events	                     ; Section added by G-Dubs 
+	const_next $5E0
+	const EVENT_GOT_HM01                                                                           ; $5E0
+	const EVENT_RUBBED_CAPTAINS_BACK                                                               ; $5E1
+	const EVENT_SS_ANNE_LEFT                                                                       ; $5E2
+	const EVENT_WALKED_PAST_GUARD_AFTER_SS_ANNE_LEFT                                               ; $5E3
+	const EVENT_STARTED_WALKING_OUT_OF_DOCK                                                        ; $5E4
+	const EVENT_WALKED_OUT_OF_DOCK                                                                 ; $5E5
+	const_skip 10                                ; Formerly const_skip 11                          ; $5E6 - $5EF
+	
+; S.S. Anne 1F Rooms Events                      ; Section added by G-Dubs
+    const_next $5F0
+	const_skip	                                 ; const_skip added by G-Dubs                      ; $5F0                                               
+	const EVENT_BEAT_SS_ANNE_8_TRAINER_0                                                           ; $5F1
+	const EVENT_BEAT_SS_ANNE_8_TRAINER_1                                                           ; $5F2
+	const EVENT_BEAT_SS_ANNE_8_TRAINER_2                                                           ; $5F3
+	const EVENT_BEAT_SS_ANNE_8_TRAINER_3                                                           ; $5F4
+	const_skip 11                                ; Formerly const_skip 12                          ; $5F5 - $5FF 
+	
+; S.S. Anne 2F Rooms Events                      ; Section added by G-Dubs
+    const_next $600
+	const_skip                                   ; const_skip added by G-Dubs                      ; $600
+	const EVENT_BEAT_SS_ANNE_9_TRAINER_0                                                           ; $601
+	const EVENT_BEAT_SS_ANNE_9_TRAINER_1                                                           ; $602
+	const EVENT_BEAT_SS_ANNE_9_TRAINER_2                                                           ; $603
+	const EVENT_BEAT_SS_ANNE_9_TRAINER_3                                                           ; $604
+	const_skip 11                                ; Formerly const_skip 12                          ; $605 - $60F
+
+; S.S. Anne B1F Rooms Events                     ; Section added by G-Dubs
+    const_next $610
+	const_skip                                   ; const_skip added by G-Dubs                      ; $610	
+	const EVENT_BEAT_SS_ANNE_10_TRAINER_0                                                          ; $611
+	const EVENT_BEAT_SS_ANNE_10_TRAINER_1                                                          ; $612
+	const EVENT_BEAT_SS_ANNE_10_TRAINER_2                                                          ; $613
+	const EVENT_BEAT_SS_ANNE_10_TRAINER_3                                                          ; $614
+	const EVENT_BEAT_SS_ANNE_10_TRAINER_4                                                          ; $615
+	const EVENT_BEAT_SS_ANNE_10_TRAINER_5                                                          ; $616
 
 ; Victory Road 3F events
 	const_next $660

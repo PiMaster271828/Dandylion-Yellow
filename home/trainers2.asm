@@ -23,8 +23,22 @@ GetTrainerInformation::
 	ld a, [hli]
 	ld [de], a
 ;	call IsFightingJessieJames
-	farcall IsFightingSwimmer
-	farcall IsFightingGuitarist
+	farcall IsFightingSwimmer     ; Function added by Vlad to let the Swimmer have multiple sprites
+	farcall IsFightingGuitarist   ; Function added by G-Dubs to let the Guitarist have multiple sprites
+   ;farcall IsFightingPokemaniac  ; Function added by G-Dubs to let the Pokemaniac have multiple sprites
+   ;farcall IsFightingBrock      ; Function added by G-Dubs to let the Gym Leaders have multiple sprites (for rematches)
+   ;farcall IsFightingMisty
+   ;farcall IsFightingLtSurge
+   ;farcall IsFightingErika
+   ;farcall IsFightingSabrina
+   ;farcall IsFightingKoga
+   ;farcall IsFightingJanine
+   ;farcall IsFightingBlaine	
+   ;farcall IsFightingGiovanni
+   ;farcall IsFightingLorelei
+   ;farcall IsFightingBruno
+   ;farcall IsFightingAgatha
+   ;farcall IsFightingLance
 	jp BankswitchBack
 .linkBattle
 	ld hl, wTrainerPicPointer

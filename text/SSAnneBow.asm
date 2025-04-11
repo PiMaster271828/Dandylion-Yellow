@@ -4,17 +4,34 @@ _SSAnneBowSuperNerdText::
 	cont "departing soon."
 	done
 
-_SSAnneBowSailor1Text::
-	text "Scrubbing decks"
-	line "is hard work!"
-	done
-
 _SSAnneBowCooltrainerMText::
 	text "Urf. I feel ill."
 
 	para "I stepped out to"
 	line "get some air."
 	done
+
+_SSAnneBowSailor1BattleText::
+	text "Scrubbing decks"
+	line "is hard work!"
+	cont "Time for a battle"
+	cont "break!"
+	done	
+
+_SSAnneBowSailor1EndBattleText::
+	text "Blimey,"
+	line "you're strong!"
+	prompt
+
+_SSAnneBowSailor1AfterBattleText::
+	text "Guess I'd better"
+	line "get back to work."
+	cont "The deck ain't"
+	cont "gonna scrub"
+	cont "itself."
+	done
+
+/*This boat's too crowded. Go bother someone else.*/
 
 _SSAnneBowSailor2BattleText::
 	text "Hey matey!"
