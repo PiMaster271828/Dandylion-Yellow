@@ -56,4 +56,5 @@ TrainerAIPointers:
 	dbw 3, GenericAI         ; PokéFan ♂
 	dbw 3, GenericAI         ; PokéFan ♀
 	dbw 3, GenericAI         ; Guitarist
+	dbw 3, GenericAI         ; Soldier
 	assert_table_length NUM_TRAINERS

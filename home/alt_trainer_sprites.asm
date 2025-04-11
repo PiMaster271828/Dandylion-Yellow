@@ -15,3 +15,25 @@ IsFightingSwimmer::
 	ld [hli], a
 	ld [hl], d
 	ret
+
+IsFightingGuitarist::
+	ld a, [wTrainerClass]
+	cp GUITARIST
+	ret nz
+	ld a, [wTrainerNo]
+	cp $04
+	ret c
+	cp $07
+	ld de, Guitarist2Pic
+	jr c, .dummy
+	cp $0A
+	ld de, Guitarist3Pic
+	jr c, .dummy
+	ld de, Guitarist3Pic ; possibly meant to add another pic
+	ret
+.dummy
+	ld hl, wTrainerPicPointer
+	ld a, e
+	ld [hli], a
+	ld [hl], d
+	ret

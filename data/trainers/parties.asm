@@ -51,6 +51,7 @@ TrainerDataPointers:
 	dw PokeFanMData          ; New trainer class added by G-Dubs
 	dw PokeFanFData          ; New trainer class added by G-Dubs
 	dw GuitaristData         ; New trainer class added by G-Dubs
+	dw SoldierData           ; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS
 
 ; if first byte != $FF, then
@@ -919,21 +920,23 @@ Guitarist 1
 /*************
 Guitarist 2
 *************/
-; Vermillion Gym
-   ;db                                                                                                       ; Guitarist 4            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-; Circus   
-   ;db                                                                                                       ; Guitarist 5            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-   ;db                                                                                                       ; Guitarist 6            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+; Dummy list
+    db 25, PIKACHU, CLEFAIRY, /* TOXTRICITY, */ 0                                                            ; Guitarist 4            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs) 
+    db 1, VOLTORB, 0                                                                                         ; Guitarist 5            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+    db 1, ELECTABUZZ, 0                                                                                      ; Guitarist 6            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 
 /*************
 Guitarist 3
 *************/
 ; Vermillion Gym
-   ;db                                                                                                       ; Guitarist 7            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+   db 25, ELECTABUZZ, 0                                                                                      ; Guitarist 7            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 ; Power Plant   
    ;db                                                                                                       ; Guitarist 8            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
    ;db                                                                                                       ; Guitarist 9            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)  
 
+SoldierData:
+; Vermillion Gym
+	db 23, MAGNEMITE, MACHOP, VOLTORB, 0                                                                     ; Soldier 1	          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 
 /*
 Former Beauty Data

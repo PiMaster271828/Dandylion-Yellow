@@ -66,4 +66,5 @@ ENDM
     trainer_const POKEFAN_M      ; $31 ; New trainer class added by G-Dubs
     trainer_const POKEFAN_F      ; $32 ; New trainer class added by G-Dubs
 	trainer_const GUITARIST      ; $33 ; New trainer class added by G-Dubs
+	trainer_const SOLDIER        ; $34 ; New trainer class added by G-Dubs
 DEF NUM_TRAINERS EQU const_value - 1

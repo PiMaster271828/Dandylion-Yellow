@@ -53,7 +53,8 @@ TrainerNamePointers:
 	dw .JessieJamesName      ; New trainer class added by Vlad
 	dw .PokeFanMName         ; New trainer class added by G-Dubs
 	dw .PokeFanFName         ; New trainer class added by G-Dubs
-	dw .GuitaristName        ; New trainer class added by G-Dubs
+	dw .GuitaristName        ; New trainer class added by G-Dubs	
+	dw .SoldierName          ; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS
 
 .YoungsterName:     db "YOUNGSTER@"
@@ -80,4 +81,5 @@ TrainerNamePointers:
 .JessieJamesName:   db "JESSIE×JAMES@"      ; New trainer class added by Vlad
 .PokeFanMName:      db "POKéFAN♂@"          ; New trainer class added by G-Dubs
 .PokeFanFName:      db "POKéFAN♀@"          ; New trainer class added by G-Dubs
-.GuitaristName:     db "GUITARIST@"         ; New trainer class added by G-Dubs       
+.GuitaristName:     db "GUITARIST@"         ; New trainer class added by G-Dubs	
+.SoldierName:       db "SOLDIER@"           ; New trainer class added by G-Dubs

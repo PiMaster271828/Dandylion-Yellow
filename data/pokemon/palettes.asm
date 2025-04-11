@@ -155,6 +155,7 @@ MonsterPalettes:
 	assert_table_length NUM_POKEMON + 1
 
 TrainerPalettes:
+    table_width 1
 	db PAL_MEWMON                      ; PLAYER (NOBODY)         
 	db PAL_MEWMON                      ; YOUNGSTER      
 	db PAL_MEWMON                      ; BUG CATCHER    
@@ -196,7 +197,7 @@ TrainerPalettes:
 	db PAL_MEWMON                      ; KOGA           
 	db PAL_MEWMON                      ; BLAINE         
 	db PAL_MEWMON                      ; SABRINA        
-	db PAL_MEWMON                      ; GENTLEMAN      
+	db PAL_BROWNMON                    ; GENTLEMAN      
 	db PAL_MEWMON                      ; RIVAL 2          
 	db PAL_MEWMON                      ; RIVAL 3         
 	db PAL_MEWMON                      ; LORELEI        
@@ -207,3 +208,5 @@ TrainerPalettes:
 	db PAL_GRAYMON                     ; POKÉFAN ♂         ; New trainer class added by G-Dubs
 	db PAL_LAVENDERMON                 ; POKÉFAN ♀         ; New trainer class added by G-Dubs
 	db PAL_MEWMON                      ; GUITARIST         ; New trainer class added by G-Dubs
+	db PAL_GRAYMON                     ; SOLDIER           ; New trainer class added by G-Dubs         
+	assert_table_length NUM_TRAINERS + 1

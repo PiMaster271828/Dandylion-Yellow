@@ -93,6 +93,15 @@ SpecialTrainerMoves:
 	  db 1, 4, FISSURE
 	  db 0
 
+; Sailors
+  ; Vermillion City Gym
+      db SAILOR, 8            ; Added Machop to a Sailor in Lt. Surge's gym         ; Added by G-Dubs
+	  db 2, 1, THUNDERPUNCH   ; Adding Thunderpunch to a Machop                     ; Added by G-Dubs
+	  db 2, 2, LEER
+	  db 2, 3, KARATE_CHOP
+	  db 2, 4, FOCUS_ENERGY
+	  db 0
+
 ; Team Rocket
   ; Cerulean City
       db ROCKET, 5           ; Rocket who stole TM28 from Cerulean City
@@ -336,5 +345,14 @@ SpecialTrainerMoves:
 	db 6, 1, AURORA_BEAM
 	db 6, 3, QUICK_ATTACK
 	db 0
+
+; Soldiers
+  ; Vermillion City Gym
+      db SOLDIER, 1           ; Added Machop to a Soldier in Lt. Surge's gym        ; Added by G-Dubs
+	  db 2, 1, THUNDERPUNCH   ; Adding Thunderpunch to a Machop                     ; Added by G-Dubs
+	  db 2, 2, LEER
+	  db 2, 3, KARATE_CHOP
+	  db 2, 4, FOCUS_ENERGY
+	  db 0
 
 	db -1 ; end

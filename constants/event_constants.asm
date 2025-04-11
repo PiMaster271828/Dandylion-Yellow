@@ -138,9 +138,13 @@
 	const EVENT_BEAT_VERMILION_GYM_TRAINER_0                                                       ; $162
 	const EVENT_BEAT_VERMILION_GYM_TRAINER_1                                                       ; $163
 	const EVENT_BEAT_VERMILION_GYM_TRAINER_2                                                       ; $164
-	const_skip                                                                                     ; $165
-	const EVENT_GOT_TM24                                                                           ; $166
-	const EVENT_BEAT_LT_SURGE                                                                      ; $167
+	const EVENT_BEAT_VERMILION_GYM_TRAINER_3     ; New trainer added by G-Dubs                     ; $165
+	const EVENT_BEAT_VERMILION_GYM_TRAINER_4     ; New trainer added by G-Dubs                     ; $166
+	const EVENT_BEAT_VERMILION_GYM_TRAINER_5     ; New trainer added by G-Dubs                     ; $167
+    const EVENT_BEAT_VERMILION_GYM_TRAINER_6     ; New trainer added by G-Dubs                     ; $168
+	const_skip                                                                                     ; $169
+	const EVENT_GOT_TM24                                                                           ; $16A
+	const EVENT_BEAT_LT_SURGE                                                                      ; $16B
 
 ; Celadon City events
 	const_next $180

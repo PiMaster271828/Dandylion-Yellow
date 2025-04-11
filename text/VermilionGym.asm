@@ -96,17 +96,17 @@ _VermilionGymGentlemanAfterBattleText::
 	line "was cautious!"
 	done
 
-_VermilionGymSuperNerdBattleText::
+_VermilionGymSuperNerd1BattleText::
 	text "I'm a lightweight,"
 	line "but I'm good with"
 	cont "electricity!"
 	done
 
-_VermilionGymSuperNerdEndBattleText::
+_VermilionGymSuperNerd1EndBattleText::
 	text "Fried!"
 	prompt
 
-_VermilionGymSuperNerdAfterBattleText::
+_VermilionGymSuperNerd1AfterBattleText::
 	text "OK, I'll talk!"
 
 	para "LT.SURGE said he"
@@ -114,17 +114,17 @@ _VermilionGymSuperNerdAfterBattleText::
 	cont "inside something!"
 	done
 
-_VermilionGymSailorBattleText::
+_VermilionGymSailor1BattleText::
 	text "This is no place"
 	line "for kids!"
 	done
 
-_VermilionGymSailorEndBattleText::
+_VermilionGymSailor1EndBattleText::
 	text "Wow!"
 	line "Surprised me!"
 	prompt
 
-_VermilionGymSailorAfterBattleText::
+_VermilionGymSailor1AfterBattleText::
 	text "LT.SURGE set up"
 	line "double locks!"
 	cont "Here's a hint!"
@@ -133,6 +133,97 @@ _VermilionGymSailorAfterBattleText::
 	line "1st lock, the 2nd"
 	cont "lock is right"
 	cont "next to it!"
+	done
+
+_VermilionGymSuperNerd2BattleText::             ; New trainer added by G-Dubs
+	text "Let's see how you"
+	line "conduct yourself"	
+	cont "in this battle!"	
+	done
+
+_VermilionGymSuperNerd2EndBattleText::
+	text "You've"
+	line "got good rhythm."
+	cont "Keep practicing!"
+	prompt
+
+_VermilionGymSuperNerd2AfterBattleText::
+	text "The switches..."		
+	
+	para "They resonate"		
+	line "like a finely"				
+	cont "tuned instrument."
+	cont "Try to find the"
+	cont "right frequency."	
+	done
+
+_VermilionGymCooltrainerFBattleText::            ; New trainer added by G-Dubs
+	text "I've electrified"
+	line "audiences"
+	cont "everywhere! Now"
+	cont "it's your turn to"
+	cont "feel the voltage!"
+	done
+
+_VermilionGymCooltrainerFEndBattleText::
+	text "My"
+	line "Set... is over?"
+	cont "Guess... you're"
+	cont "the headliner"
+	cont "now..."
+	prompt
+
+_VermilionGymCooltrainerFAfterBattleText::	
+	text "The power..."	
+	line "it flows in"
+	cont "a sequence..."
+	cont "like a chord"
+	cont "progression."
+	cont "Find the right"
+	cont "notes, the right"
+	cont "order, to unlock"
+	cont "the stage..."
+	done	
+
+_VermilionGymSuperNerd3BattleText::              ; New trainer added by G-Dubs	
+	text "Yo. Guitar time!"
+	line "Ready for a sound"
+	cont "check? My"
+	cont "ELECTRIC types"
+	cont "are tuned up."
+	cont "Let's see what"
+	cont "you got!"
+	done
+
+_VermilionGymSuperNerd3EndBattleText::
+	text "Bummer..."	
+	line "wiped out."	
+	prompt
+
+_VermilionGymSuperNerd3AfterBattleText::
+	text "Power flows..."
+	line "same as music..."
+	cont "gotta get the"
+	cont "order right."
+	done
+
+_VermilionGymSoldierBattleText::                 ; New trainer added by G-Dubs	
+	text "I'm LT.SURGE's"
+	line "right-hand man!"
+	cont "You're not"
+	cont "allowed in here!"
+	done
+
+_VermilionGymSoldierEndBattleText::
+	text "You"
+	line "beat me!"
+	prompt
+	
+_VermilionGymSoldierAfterBattleText::
+	text "I'm just here"
+	line "to guard LT."
+	cont "SURGE. He's"
+	cont "my hero!"	
 	done
 
 _VermilionGymGymGuideChampInMakingText::

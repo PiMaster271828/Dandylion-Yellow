@@ -24,6 +24,7 @@ GetTrainerInformation::
 	ld [de], a
 ;	call IsFightingJessieJames
 	farcall IsFightingSwimmer
+	farcall IsFightingGuitarist
 	jp BankswitchBack
 .linkBattle
 	ld hl, wTrainerPicPointer
