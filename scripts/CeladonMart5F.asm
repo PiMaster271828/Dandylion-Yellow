@@ -21,3 +21,9 @@ CeladonMart5FSailorText:
 CeladonMart5FCurrentFloorSignText:
 	text_far _CeladonMart5FCurrentFloorSignText
 	text_end
+
+CeladonMart5FClerk1Text:		                                     ; New text added by G-Dubs (Followed tutorial to free up space in the home bank)
+	script_mart X_ACCURACY, GUARD_SPEC, DIRE_HIT, X_ATTACK, X_DEFEND, X_SPEED, X_SPECIAL
+
+CeladonMart5FClerk2Text:		                                     ; New text added by G-Dubs (Followed tutorial to free up space in the home bank)
+	script_mart HP_UP, PROTEIN, IRON, CARBOS, CALCIUM

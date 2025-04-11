@@ -1,13 +1,13 @@
 MACRO farcall
 	ld b, BANK(\1)
 	ld hl, \1
-	call Bankswitch
+	rst _Bankswitch     ; Added from tutorial to free up some space in the home bank (changed call to rst to save 3 bytes per use of farcall) 
 ENDM
 
 MACRO callfar
 	ld hl, \1
 	ld b, BANK(\1)
-	call Bankswitch
+	rst _Bankswitch     ; Added from tutorial to free up some space in the home bank (changed call to rst to save 3 bytes per use of farcall)
 ENDM
 
 MACRO farjp

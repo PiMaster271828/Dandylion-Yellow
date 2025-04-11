@@ -109,3 +109,6 @@ ViridianMartYoungsterText:
 ViridianMartCooltrainerMText:
 	text_far _ViridianMartCooltrainerMText
 	text_end
+
+ViridianMartClerkText:                                               ; New text added by G-Dubs (Followed tutorial to free up space in the home bank)
+    script_mart POKE_BALL, ANTIDOTE, PARLYZ_HEAL, BURN_HEAL

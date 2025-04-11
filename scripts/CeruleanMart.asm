@@ -14,3 +14,6 @@ CeruleanMartCooltrainerMText:
 CeruleanMartCooltrainerFText:
 	text_far _CeruleanMartCooltrainerFText
 	text_end
+
+CeruleanMartClerkText:                                               ; New text added by G-Dubs (Followed tutorial to free up space in the home bank)
+    script_mart POKE_BALL, POTION, REPEL, ANTIDOTE, BURN_HEAL, AWAKENING, PARLYZ_HEAL

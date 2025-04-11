@@ -1,8 +1,9 @@
 ; rst vectors (unused)
 
 SECTION "rst0", ROM0[$0000]
-	rst $38
-
+_Bankswitch::     ; Added from tutorial to free up some space in the home bank
+    jp Bankswitch
+	
 	ds $08 - @, 0 ; unused
 
 SECTION "rst8", ROM0[$0008]

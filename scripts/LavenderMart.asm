@@ -31,3 +31,6 @@ LavenderMartCooltrainerMText:
 .NuggetText
 	text_far _LavenderMartCooltrainerMNuggetText
 	text_end
+
+LavenderMartClerkText: 			                                     ; New text added by G-Dubs (Followed tutorial to free up space in the home bank)
+	script_mart GREAT_BALL, SUPER_POTION, REVIVE, ESCAPE_ROPE, SUPER_REPEL, ANTIDOTE, BURN_HEAL, ICE_HEAL, PARLYZ_HEAL
