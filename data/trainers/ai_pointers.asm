@@ -45,7 +45,7 @@ TrainerAIPointers:
 	dbw 2, KogaAI            ; Koga
 	dbw 2, BlaineAI          ; Blaine
 	dbw 1, SabrinaAI         ; Sabrina
-	dbw 3, GenericAI         ; Gentleman
+	dbw 3, LadyAI            ; Gentleman
 	dbw 1, Rival2AI          ; Rival 2
 	dbw 1, Rival3AI          ; Rival 3
 	dbw 2, LoreleiAI         ; Lorelei
@@ -57,4 +57,5 @@ TrainerAIPointers:
 	dbw 3, GenericAI         ; PokéFan ♀
 	dbw 3, GenericAI         ; Guitarist
 	dbw 3, GenericAI         ; Soldier
+	dbw 3, LadyAI            ; Lady
 	assert_table_length NUM_TRAINERS

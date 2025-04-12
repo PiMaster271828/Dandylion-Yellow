@@ -399,7 +399,7 @@ BlaineAI:
 	ld a, 10
 	call AICheckIfHPBelowFraction
 	ret nc
-	jp AIUseSuperPotion
+	jp AIUseHyperPotion                ; Super Potion changed to Super Potion by G-Dubs
 
 SabrinaAI:
 	cp 25 percent + 1
@@ -412,7 +412,7 @@ Rival2AI:
 	ld a, 5
 	call AICheckIfHPBelowFraction
 	ret nc
-	jp AIUsePotion
+	jp AIUseSuperPotion                ; Potion changed to Super Potion by G-Dubs
 
 Rival3AI:
 	cp 13 percent - 1
@@ -428,7 +428,7 @@ LoreleiAI:
 	ld a, 5
 	call AICheckIfHPBelowFraction
 	ret nc
-	jp AIUseSuperPotion
+	jp AIUseHyperPotion                ; Super Potion changed to Super Potion by G-Dubs
 
 BrunoAI:
 	cp 25 percent + 1
@@ -443,7 +443,7 @@ AgathaAI:
 	ld a, 4
 	call AICheckIfHPBelowFraction
 	ret nc
-	jp AIUseSuperPotion
+	jp AIUseHyperPotion                ; Super Potion changed to Super Potion by G-Dubs
 
 LanceAI:
 	cp 50 percent + 1
@@ -451,7 +451,19 @@ LanceAI:
 	ld a, 5
 	call AICheckIfHPBelowFraction
 	ret nc
-	jp AIUseHyperPotion
+	jp AIUseMaxPotion                  ; Hyper Potion changed to Max Potion by G-Dubs
+
+LadyAI:
+    ld a, [wEnemyMonStatus]
+	and a
+	ret z
+	jp AIUseFullRestore
+	cp 13 percent - 1
+	ret nc
+	ld a, 5
+	call AICheckIfHPBelowFraction
+	ret nc
+	jp AIUseFullRestore
 
 GenericAI:
 	and a ; clear carry
@@ -510,6 +522,30 @@ AIUseHyperPotion:
 	ld a, HYPER_POTION
 	ld b, 200
 	; fallthrough
+
+AIUseMaxPotion:                                            ; New AI function added by G-Dubs
+; enemy trainer heals his monster fully with a max potion        
+    ld a, MAX_POTION
+	ld [wAIItem], a
+	ld de, wHPBarOldHP
+	ld hl, wEnemyMonHP + 1
+	ld a, [hld]
+	ld [de], a
+	inc de
+	ld a, [hl]
+	ld [de], a
+	inc de
+	ld hl, wEnemyMonMaxHP + 1
+	ld a, [hld]
+	ld [de], a
+	inc de
+	ld [wHPBarMaxHP], a
+	ld [wEnemyMonHP + 1], a
+	ld a, [hl]
+	ld [de], a
+	ld [wHPBarMaxHP+1], a
+	ld [wEnemyMonHP], a
+	jr AIPrintItemUseAndUpdateHPBar
 
 AIRecoverHP:
 ; heal b HP and print "trainer used $(a) on pokemon!"

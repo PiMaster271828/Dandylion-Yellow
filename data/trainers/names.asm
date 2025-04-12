@@ -52,4 +52,5 @@ TrainerNames::
 	li "POKéFAN♀"                      ; New trainer class added by G-Dubs
 	li "GUITARIST"                     ; New trainer class added by G-Dubs	
 	li "SOLDIER"                       ; New trainer class added by G-Dubs
+	li "LADY"                          ; New trainer class added by G-Dubs
 	assert_list_length NUM_TRAINERS

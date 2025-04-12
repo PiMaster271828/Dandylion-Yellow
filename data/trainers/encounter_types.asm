@@ -4,6 +4,7 @@ FemaleTrainerList::
 	db OPP_BEAUTY
 	db OPP_COOLTRAINER_F
     db OPP_POKEFAN_F
+	db OPP_LADY
    ;db TWINS
 	db -1 ; end
 

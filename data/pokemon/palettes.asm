@@ -163,7 +163,7 @@ TrainerPalettes:
 	db PAL_MEWMON                      ; SAILOR         
 	db PAL_MEWMON                      ; JR. TRAINER ♂   
 	db PAL_MEWMON                      ; JR. TRAINER ♀   
-	db PAL_MEWMON                      ; POKÉMANIAC     
+	db PAL_LAVENDERMON                 ; POKÉMANIAC     
 	db PAL_MEWMON                      ; SUPER NERD     
 	db PAL_MEWMON                      ; HIKER          
 	db PAL_MEWMON                      ; BIKER          
@@ -208,5 +208,6 @@ TrainerPalettes:
 	db PAL_GRAYMON                     ; POKÉFAN ♂         ; New trainer class added by G-Dubs
 	db PAL_LAVENDERMON                 ; POKÉFAN ♀         ; New trainer class added by G-Dubs
 	db PAL_MEWMON                      ; GUITARIST         ; New trainer class added by G-Dubs
-	db PAL_GRAYMON                     ; SOLDIER           ; New trainer class added by G-Dubs         
+	db PAL_GRAYMON                     ; SOLDIER           ; New trainer class added by G-Dubs
+	db PAL_LAVENDERMON                 ; LADY              ; New trainer class added by G-Dubs       
 	assert_table_length NUM_TRAINERS + 1

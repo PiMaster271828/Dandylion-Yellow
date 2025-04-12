@@ -61,4 +61,5 @@ TrainerClassMoveChoiceModifications:
 	move_choices 1       ; POKÉFAN ♀
 	move_choices 1       ; GUITARIST
 	move_choices 1       ; SOLDIER
+	move_choices 1       ; LADY
 	assert_list_length NUM_TRAINERS

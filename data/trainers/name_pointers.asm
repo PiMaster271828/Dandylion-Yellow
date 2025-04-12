@@ -55,6 +55,7 @@ TrainerNamePointers:
 	dw .PokeFanFName         ; New trainer class added by G-Dubs
 	dw .GuitaristName        ; New trainer class added by G-Dubs	
 	dw .SoldierName          ; New trainer class added by G-Dubs
+	dw .LadyName             ; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS
 
 .YoungsterName:     db "YOUNGSTER@"
@@ -83,3 +84,4 @@ TrainerNamePointers:
 .PokeFanFName:      db "POKéFAN♀@"          ; New trainer class added by G-Dubs
 .GuitaristName:     db "GUITARIST@"         ; New trainer class added by G-Dubs	
 .SoldierName:       db "SOLDIER@"           ; New trainer class added by G-Dubs
+.LadyName:          db "LADY@"              ; New trainer class added by G-Dubs
