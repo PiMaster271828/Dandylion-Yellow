@@ -25,7 +25,7 @@ SSAnneBow_TextPointers:
 	dw_const SSAnneBowSailor4Text,      TEXT_SSANNEBOW_SAILOR4		      ; New trainer added by G-Dubs
 
 SSAnne5TrainerHeaders:
-	def_trainers 2      ; Changed from def_trainers 4 by G-Dubs
+	def_trainers 3      ; Changed from def_trainers 4 by G-Dubs
 SSAnne5TrainerHeader0:
 	trainer EVENT_BEAT_SS_ANNE_5_TRAINER_0, 0, SSAnneBowSailor1BattleText, SSAnneBowSailor1EndBattleText, SSAnneBowSailor1AfterBattleText            ; NPC changed to trainer by G-Dubs
 SSAnne5TrainerHeader1:
