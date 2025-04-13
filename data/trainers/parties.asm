@@ -181,7 +181,7 @@ SailorData:
 	db 17, HORSEA, SHELLDER, TENTACOOL, 0                                                                    ; Sailor 4
 	db 18, TENTACOOL, STARYU, 0                                                                              ; Sailor 5
 	db 17, HORSEA, HORSEA, HORSEA, 0                                                                         ; Sailor 6
-	db 20, MACHOP, KRABBY, 0                                                                                 ; Sailor 7               ; Krabby added by G-Dubs
+	db 20, MACHOP, KRABBY, 0                                                                                 ; Sailor 7               ; Krabby added by G-Dubs (Party used twice)
 ; Vermilion Gym
 	db 21, PIKACHU, MACHOP, PIKACHU, MAGNEMITE, 0                                                            ; Sailor 8               ; Pikachu from Red/Blue, and Machop with Thunderpunch added by G-Dubs
 ; SS Anne Stern (Again)

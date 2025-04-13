@@ -15,17 +15,19 @@ SSAnneBow_ScriptPointers:
 
 SSAnneBow_TextPointers:
 	def_text_pointers
-	dw_const SSAnneBowSuperNerdText,    TEXT_SSANNEBOW_SUPER_NERD
-	dw_const SSAnneBowSailor1Text,      TEXT_SSANNEBOW_SAILOR1
 	dw_const SSAnneBowCooltrainerMText, TEXT_SSANNEBOW_COOLTRAINER_M
+	dw_const SSAnneBowCooltrainerFText, TEXT_SSANNEBOW_COOLTRAINER_F	  ; NPC added by G-Dubs	
+	dw_const SSAnneBowSuperNerdText,    TEXT_SSANNEBOW_SUPER_NERD	      ; NPC changed to trainer by G-Dubs
+	dw_const SSAnneBowSailor1Text,      TEXT_SSANNEBOW_SAILOR1		      ; NPC changed to trainer by G-Dubs
 	dw_const SSAnneBowSailor2Text,      TEXT_SSANNEBOW_SAILOR2
 	dw_const SSAnneBowSailor3Text,      TEXT_SSANNEBOW_SAILOR3
-	dw_const SSAnneBowGirlText,         TEXT_SSANNEBOW_GIRL
+	dw_const SSAnneBowGirlText,         TEXT_SSANNEBOW_GIRL			      ; New trainer added by G-Dubs
+	dw_const SSAnneBowSailor4Text,      TEXT_SSANNEBOW_SAILOR4		      ; New trainer added by G-Dubs
 
 SSAnne5TrainerHeaders:
 	def_trainers 2      ; Changed from def_trainers 4 by G-Dubs
 SSAnne5TrainerHeader0:
-	trainer EVENT_BEAT_SS_ANNE_5_TRAINER_0, 1, SSAnneBowSailor1BattleText, SSAnneBowSailor1EndBattleText, SSAnneBowSailor1AfterBattleText            ; NPC changed to trainer by G-Dubs
+	trainer EVENT_BEAT_SS_ANNE_5_TRAINER_0, 0, SSAnneBowSailor1BattleText, SSAnneBowSailor1EndBattleText, SSAnneBowSailor1AfterBattleText            ; NPC changed to trainer by G-Dubs
 SSAnne5TrainerHeader1:
 	trainer EVENT_BEAT_SS_ANNE_5_TRAINER_1, 0, SSAnneBowSuperNerdBattleText, SSAnneBowSuperNerdEndBattleText, SSAnneBowSuperNerdAfterBattleText      ; NPC changed to trainer by G-Dubs
 SSAnne5TrainerHeader2:
@@ -34,10 +36,34 @@ SSAnne5TrainerHeader3:
 	trainer EVENT_BEAT_SS_ANNE_5_TRAINER_3, 3, SSAnneBowSailor3BattleText, SSAnneBowSailor3EndBattleText, SSAnneBowSailor3AfterBattleText
 SSAnne5TrainerHeader4:	
 	trainer EVENT_BEAT_SS_ANNE_5_TRAINER_4, 0, SSAnneBowGirlBattleText, SSAnneBowGirlEndBattleText, SSAnneBowGirlAfterBattleText                     ; New trainer added by G-Dubs
+SSAnne5TrainerHeader5:	
+	trainer EVENT_BEAT_SS_ANNE_5_TRAINER_5, 4, SSAnneBowSailor4BattleText, SSAnneBowSailor4EndBattleText, SSAnneBowSailor4AfterBattleText            ; New trainer added by G-Dubs
 	db -1 ; end
 
 SSAnneBowCooltrainerMText:
 	text_far _SSAnneBowCooltrainerMText
+	text_end
+	
+SSAnneBowCooltrainerFText:	                     ; New NPC added by G-Dubs
+	text_asm
+	ldh a, [hRandomAdd]
+	bit 0, a                  ; Check bit 0 (least significant bit) for 50/50 chance
+	jr nz, .SecondTextLabel   ; If bit is 1, go to second dialogue
+	ld hl, .FirstText
+	call PrintText
+	jr .end
+.SecondTextLabel:
+	ld hl, .SecondText
+	call PrintText
+.end:
+	jp TextScriptEnd
+
+.FirstText:
+	text_far _SSAnneBowCooltrainerFText1
+	text_end
+
+.SecondText:
+	text_far _SSAnneBowCooltrainerFText2
 	text_end
 
 SSAnneBowSailor1Text:				             ; New trainer added by G-Dubs
@@ -128,4 +154,22 @@ SSAnneBowGirlEndBattleText:
 	
 SSAnneBowGirlAfterBattleText:
 	text_far _SSAnneBowGirlAfterBattleText
+	text_end
+
+SSAnneBowSailor4Text:                               ; New trainer added by G-Dubs	
+	text_asm
+	ld hl, SSAnne5TrainerHeader5
+	call TalkToTrainer
+	jp TextScriptEnd
+
+SSAnneBowSailor4BattleText:		                 	
+	text_far _SSAnneBowSailor4BattleText	
+	text_end
+
+SSAnneBowSailor4EndBattleText:
+	text_far _SSAnneBowSailor4EndBattleText
+	text_end
+
+SSAnneBowSailor4AfterBattleText:
+	text_far _SSAnneBowSailor4AfterBattleText	
 	text_end

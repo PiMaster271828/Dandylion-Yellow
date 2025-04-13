@@ -5,6 +5,40 @@ _SSAnneBowCooltrainerMText::
 	line "get some air."
 	done
 
+_SSAnneBowCooltrainerFText1::
+	text "I'm trying to"
+	line "capture the"
+	cont "essence of WATER"		
+	cont "type #MON in"
+	cont "my art. Their"
+	cont "power and beauty"
+	cont "are so inspiring."
+	cont "Have you seen the"
+	cont "TENTACOOL around"
+	cont "here? They're so"
+	cont "graceful in the"
+	cont "water! I'd love"
+	cont "to capture their"
+	cont "movement on my"
+	cont "canvas!"
+	done
+
+_SSAnneBowCooltrainerFText2::
+	text "I'm trying to"
+	line "capture the"
+	cont "essence of WATER"		
+	cont "type #MON in"
+	cont "my art. Their"
+	cont "power and beauty"
+	cont "are so inspiring."
+	cont "Imagine a"
+	cont "GYARADOS leaping"
+	cont "out of the water!"
+	cont "That would be an"
+	cont "amazing sight to"
+	cont "paint!"
+	done
+
 _SSAnneBowSailor1BattleText::	                 ; New trainer added by G-Dubs
 	text "Scrubbing decks"
 	line "is hard work!"
@@ -24,8 +58,6 @@ _SSAnneBowSailor1AfterBattleText::
 	cont "gonna scrub"
 	cont "itself."
 	done
-
-/*This boat's too crowded. Go bother someone else.*/
 
 _SSAnneBowSuperNerdBattleText::	                 ; New trainer added by G-Dubs
 	text "Legend has it,"
@@ -109,4 +141,29 @@ _SSAnneBowGirlAfterBattleText::
 	cont "Perhaps you will"
 	cont "be a part of"
 	cont "them..."
+	done	
+_SSAnneBowSailor4BattleText::	                     ; New trainer added by G-Dubs
+	text "Legends say that"	
+	line "it is bad luck"
+	cont "to cross a SAILOR"
+	cont "before noon!"
+	cont "But I'm not very"
+	cont "superstitious, so"
+	cont "I'll battle you"
+	cont "anyway!"
 	done
+
+_SSAnneBowSailor4EndBattleText::
+	text "Okay,"
+	line "okay, you got"
+	cont "lucky! I'll get"
+	cont "you next time!"
+	prompt
+
+_SSAnneBowSailor4AfterBattleText::	
+    text "Keep an eye out"	
+	line "for TENTACOOL."	
+	cont "They're"
+	cont "everywhere around"
+	cont "here!"
+	done	

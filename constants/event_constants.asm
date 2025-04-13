@@ -631,8 +631,9 @@
 	const EVENT_BEAT_SS_ANNE_5_TRAINER_1		 ; NPC changed to trainer by G-Dubs				   ; $5C3
 	const EVENT_BEAT_SS_ANNE_5_TRAINER_2                                                           ; $5C4
 	const EVENT_BEAT_SS_ANNE_5_TRAINER_3                                                           ; $5C5
-	const EVENT_BEAT_SS_ANNE_5_TRAINER_4                                                           ; $5C6
-	const_skip 25                                ; Formerly const_skip 26                          ; $5C7 - $5DF
+	const EVENT_BEAT_SS_ANNE_5_TRAINER_4         ; New trainer added by G-Dubs                     ; $5C6
+	const EVENT_BEAT_SS_ANNE_5_TRAINER_5                                                           ; $5C7
+	const_skip 24                                ; Formerly const_skip 26                          ; $5C8 - $5DF
 
 ; S.S. Anne 2F/Dock Events	                     ; Section added by G-Dubs 
 	const_next $5E0
