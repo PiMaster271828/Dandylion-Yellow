@@ -241,15 +241,12 @@ Moves:
 	move SLUDGE_WAVE,    POISON_SIDE_EFFECT2,        120, POISON,        85, 10                                                                       ; Move #222
 	move BUG_BUZZ,	     SPECIAL_DOWN_SIDE_EFFECT,    90, BUG,          100, 10                                                                       ; Move #223
 	move SIGNAL_BEAM,    CONFUSION_SIDE_EFFECT,       75, BUG,          100, 15                                                                       ; Move #224 
-	
-; Unanimated moves
-	move PSYCHIC_ARMOR,  DEFENSE_UP2_EFFECT,           0, PSYCHIC_TYPE, 100, 40 ; Barrier effect + Reflect                                            ; Move #225  (Armored Mewtwo's signature move)
-	move RADAR_EYES,     EVASION_DOWN_SIDE_EFFECT,    35, BUG,          100, 20 ; This move can't miss, and always lowers the foe's evasion           ; Move #???  (Venonat's signature move)
 	move RAZOR_SHELL,    DEFENSE_DOWN_SIDE_EFFECT,    75, WATER,         95, 10 ; High Crit. rate                                                     ; Move #226
-	move BLOOM_DOOM,     EXPLODE_EFFECT,             175, GRASS,        100,  5                                                                       ; Move #???
- 	move POWER_WHIP,     DEFENSE_DOWN_SIDE_EFFECT,    80, GRASS,        100, 10 ; High Crit. rate                                                     ; Move #???  (Venusaur's signature move)
-	move MAX_WILDFIRE,   ALWAYS_BURN_SIDE_EFFECT      80, FIRE,         100  10                                                                       ; Move #???  (Charizard's signature move)
+    move PSYCHIC_ARMOR,  DEFENSE_UP2_EFFECT,           0, PSYCHIC_TYPE, 100, 40 ; Barrier effect + Reflect & Light Screen                             ; Move #225  (Armored Mewtwo's signature move)
 
+; Unanimated moves
+	
+	
 ; Struggle
 	move STRUGGLE,       RECOIL_EFFECT,               50, STRUGGLE,     100, 10                                                                       ; Move #240  (Always last move number)
 
@@ -261,6 +258,11 @@ Moves:
 	move SNIPE_SHOT,     NO_ADDITIONAL_EFFECT,        80, WATER,        100, 15 ; High Crit. rate                                                     ; Move #231  (Blastoise's signature move)
 	move SEARING_SAND,   BURN_SIDE_EFFECT1,           70, GROUND,       100, 10	                                                                      ; Move #232
 	move GNAW,           FLINCH_SIDE_EFFECT2,         60, NORMAL,       100, 25                                                                       ; Move #233  (TCG exclusive move)
+    move RADAR_EYES,     EVASION_DOWN_SIDE_EFFECT,    35, BUG,          100, 20 ; This move can't miss, and always lowers the foe's evasion           ; Move #???  (Venonat's signature move)
+	move BLOOM_DOOM,     EXPLODE_EFFECT,             175, GRASS,        100,  5                                                                       ; Move #???
+ 	move POWER_WHIP,     DEFENSE_DOWN_SIDE_EFFECT,    80, GRASS,        100, 10 ; High Crit. rate                                                     ; Move #???  (Venusaur's signature move)
+	move MAX_WILDFIRE,   ALWAYS_BURN_SIDE_EFFECT      80, FIRE,         100  10                                                                       ; Move #???  (Charizard's signature move)
+	move SUPERBLOOM,     SPECIAL_DOWN_SIDE_EFFECT,    90, GRASS,        100, 10                                                                       ; Move #???  (Vileplume's signature move)
 
 ; Moves that are a maybe
     move AERIAL_ACE,     SWIFT_EFFECT,                60, FLYING,       100, 20                                                                       ; Move #???

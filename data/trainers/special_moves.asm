@@ -5,7 +5,7 @@
 
 SpecialTrainerMoves:
 ; Bug Catchers
-  ; Viridian Forest
+   ; Viridian Forest
       db BUG_CATCHER, 2
 	  db 1, 2, TACKLE        ; Adding Tackle and String Shot on the Metapod              ; Added by G-Dubs
 	  db 1, 3, STRING_SHOT
@@ -44,7 +44,7 @@ SpecialTrainerMoves:
 	  db BUG_CATCHER, 18
 	  db 1, 4, HEADBUTT       ; Adding a TCG exclusive move to this level 9 Caterpie     ; Added by G-Dubs
 	  db 0
-  ; Route 3
+   ; Route 3
       db BUG_CATCHER, 5
 	  db 2, 2, POISON_STING   ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna   ; Added by G-Dubs
 	  db 2, 3, STRING_SHOT
@@ -59,7 +59,7 @@ SpecialTrainerMoves:
 	  db 2, 3, STRING_SHOT
 	 ;db 2, 4, BUG_BITE
 	  db 0
-  ; Mt. Moon
+   ; Mt. Moon
       db BUG_CATCHER, 7
       db 2, 2, POISON_STING   ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna   ; Added by G-Dubs
 	  db 2, 3, STRING_SHOT
@@ -71,7 +71,7 @@ SpecialTrainerMoves:
 	  db 2, 3, STRING_SHOT
 	 ;db 2, 4, BUG_BITE
 	  db 0
-  ; Route 4
+   ; Route 4
       db BUG_CATCHER, 12
 	  db 3, 2, STRUGGLE       ; Adding Struggle, String Shot, and Bug Bite on Metapod    ; Added by G-Dubs
 	  db 3, 3, STRING_SHOT
@@ -80,7 +80,7 @@ SpecialTrainerMoves:
 	  db 5, 3, STRING_SHOT
 	 ;db 5, 4, BUG_BITE
 	  db 0
-; Route 6
+   ; Route 6
       db BUG_CATCHER, 20
 	  db 1, 1, TACKLE 
 	  db 1, 2, HARDEN
@@ -88,13 +88,13 @@ SpecialTrainerMoves:
 	 ;db 1, 4, BUG_BITE
 
 ; Youngsters
-  ; Route 9
+   ; Route 9
 	  db YOUNGSTER, 14       ; A.J. from the Anime and his OP Sandshrew
 	  db 1, 4, FISSURE
 	  db 0
 
 ; Sailors
-  ; Vermillion City Gym
+   ; Vermillion City Gym
       db SAILOR, 8            ; Added Machop to a Sailor in Lt. Surge's gym         ; Added by G-Dubs
 	  db 2, 1, THUNDERPUNCH   ; Adding Thunderpunch to a Machop                     ; Added by G-Dubs
 	  db 2, 2, LEER
@@ -103,14 +103,30 @@ SpecialTrainerMoves:
 	  db 0
 
 ; Team Rocket
-  ; Cerulean City
+   ; Cerulean City
       db ROCKET, 5           ; Rocket who stole TM28 from Cerulean City
 	  db 1, 1, DIG           ; Adding Dig to Machop                                     ; Added by G-Dubs            
 
-; Gym Leaders
-  ; Pewter City Gym
-    ; Brock
-	  db BROCK, 1
+/*****************************************************************************************************
+New trainers added by Vlad and George
+******************************************************************************************************/
+; Soldiers
+   ; Vermillion City Gym
+      db SOLDIER, 1           ; Added Machop to a Soldier in Lt. Surge's gym        ; Added by G-Dubs
+	  db 2, 1, THUNDERPUNCH   ; Adding Thunderpunch to a Machop                     ; Added by G-Dubs
+	  db 2, 2, LEER
+	  db 2, 3, KARATE_CHOP
+	  db 2, 4, FOCUS_ENERGY
+	  db 0
+
+	db -1 ; end
+
+/*****************************************************************************************************
+Gym Leaders
+******************************************************************************************************/
+; Pewter City Gym
+   ; Brock
+      db BROCK, 1
 	  db 1, 1, TACKLE        ; Brock's Geodude 
 	  db 1, 2, DEFENSE_CURL
 	  db 1, 3, ROCK_THROW
@@ -136,8 +152,8 @@ SpecialTrainerMoves:
 	  db 6, 3, BIND  
 	  db 6, 4, BIDE           
 	  db 0
-  ; Cerulean City Gym
-	; Misty
+; Cerulean City Gym
+   ; Misty
 	  db MISTY, 1
 	  db 1, 1, SMOKESCREEN   ; Misty's Horsea
 	  db 1, 2, BUBBLEBEAM
@@ -164,8 +180,8 @@ SpecialTrainerMoves:
 	  db 6, 3, CONFUSION
 	  db 6, 4, BUBBLEBEAM    
 	  db 0
-  ; Vermillion City Gym
-	; Lt. Surge
+; Vermillion City Gym
+   ; Lt. Surge
 	  db LT_SURGE, 1
 	  db 1, 1, QUICK_ATTACK   ; Lt. Surge's Raticate
 	  db 1, 2, HYPER_FANG
@@ -192,8 +208,8 @@ SpecialTrainerMoves:
 	  db 6, 3, THUNDERBOLT
 	  db 6, 4, GROWL
 	  db 0
-  ; Celadon City Gym
-    ; Erika 
+; Celadon City Gym
+   ; Erika 
 	  db ERIKA, 1
 	  db 1, 1, RAZOR_LEAF     ; Erika's Victreebel
 	  db 1, 3, WRAP
@@ -206,8 +222,8 @@ SpecialTrainerMoves:
 	  db 6, 3, MEGA_DRAIN
       db 6, 4, PETAL_DANCE
 	  db 0
-  ; Fuchsia City Gym
-    ; Koga
+; Fuchsia City Gym
+   ; Koga
 	  db KOGA, 1
 	  db 1, 1, SLUDGE         ; Koga's Venonat  ; Will have Poison Fang
 	  db 1, 2, SLEEP_POWDER
@@ -222,22 +238,8 @@ SpecialTrainerMoves:
 	  db 6, 2, TOXIC          ; Koga's Venomoth
 	  db 6, 3, DOUBLE_TEAM
 	  db 0 
-  ; Cinnibar Island Gym	
-	; Blaine
-	  db BLAINE, 1
-	  db 1, 2, FLAMETHROWER  ; Blaine's Ninetales
-	  db 2, 2, FIRE_BLAST    ; Blaine's Tauros
-      db 3, 1, FIRE_SPIN     ; Blaine's Rapidash
-	  db 3, 2, EARTHQUAKE
-	  db 3, 3, THUNDERBOLT
-	  db 4, 4, FIRE_BLAST    ; Blaine's Charizard Y
-	  db 5, 3, BITE          ; Blaine's Arcanine
-      db 6, 1, FIRE_SPIN     ; Blaine's Magmar
-	  db 6, 2, THUNDERPUNCH
-	  db 0
-
-  ; Saffron City Gym	
-    ; Sabrina
+; Saffron City Gym	
+   ; Sabrina
 	  db SABRINA, 1
 	  db 1, 2, PSYWAVE       ; Sabrina's Golduck
 	  db 1, 4, PSYCHIC_M    
@@ -251,108 +253,119 @@ SpecialTrainerMoves:
 	  db 6, 1, PSYWAVE       ; Sabrina's Alakazam
 	  db 6, 1, REFLECT
 	  db 0
-
-	db GIOVANNI, 3
-	db 1, 3, FISSURE
-	db 2, 2, DOUBLE_TEAM
-	db 3, 1, EARTHQUAKE
-	db 3, 3, THUNDER
-	db 4, 1, EARTHQUAKE
-	db 4, 2, LEER
-	db 4, 3, THUNDER
-	db 5, 1, ROCK_SLIDE
-	db 5, 4, EARTHQUAKE
-	db 0
-
-	db LORELEI, 1
-	db 1, 1, BUBBLEBEAM
-	db 2, 3, ICE_BEAM
-	db 3, 1, PSYCHIC_M
-	db 3, 2, SURF
-	db 4, 3, LOVELY_KISS
-	db 5, 3, BLIZZARD
-	db 0
-
-	db BRUNO, 1
-	db 1, 1, ROCK_SLIDE
-	db 1, 2, SCREECH
-	db 1, 4, DIG
-	db 2, 3, FIRE_PUNCH
-	db 2, 4, DOUBLE_TEAM
-	db 3, 1, DOUBLE_KICK
-	db 3, 2, MEGA_KICK
-	db 3, 4, DOUBLE_TEAM
-	db 4, 1, ROCK_SLIDE
-	db 4, 2, SCREECH
-	db 4, 4, EARTHQUAKE
-	db 5, 2, KARATE_CHOP
-	db 5, 3, STRENGTH
-	db 0
-
-	db AGATHA, 1
-	db 1, 2, SUBSTITUTE
-	db 1, 3, LICK
-	db 1, 4, MEGA_DRAIN
-	db 2, 2, TOXIC
-	db 2, 4, LEECH_LIFE
-	db 3, 2, LICK
-	db 4, 1, WRAP
-	db 5, 2, PSYCHIC_M
-	db 0
-
-	db LANCE, 1
-	db 1, 1, DRAGON_RAGE
-	db 2, 1, THUNDER_WAVE
-	db 2, 3, THUNDERBOLT
-	db 3, 1, BUBBLEBEAM
-	db 3, 2, WRAP
-	db 3, 3, ICE_BEAM
-	db 4, 1, WING_ATTACK
-	db 4, 2, SWIFT
-	db 4, 3, FLY
-	db 5, 1, BLIZZARD
-	db 5, 2, FIRE_BLAST
-	db 5, 3, THUNDER
-	db 0
-
-	db RIVAL3, 1
-	db 1, 3, EARTHQUAKE
-	db 2, 4, KINESIS
-	db 3, 4, LEECH_SEED
-	db 4, 1, ICE_BEAM
-	db 5, 1, CONFUSE_RAY
-	db 5, 4, FIRE_SPIN
-	db 6, 3, QUICK_ATTACK
-	db 0
-
-	db RIVAL3, 2
-	db 1, 3, EARTHQUAKE
-	db 2, 4, KINESIS
-	db 3, 4, LEECH_SEED
-	db 4, 1, THUNDERBOLT
-	db 5, 1, ICE_BEAM
-	db 6, 2, REFLECT
-	db 6, 3, QUICK_ATTACK
-	db 0
-
-	db RIVAL3, 3
-	db 1, 3, EARTHQUAKE
-	db 2, 4, KINESIS
-	db 3, 4, LEECH_SEED
-	db 4, 1, CONFUSE_RAY
-	db 4, 4, FIRE_SPIN
-	db 5, 1, THUNDERBOLT
-	db 6, 1, AURORA_BEAM
-	db 6, 3, QUICK_ATTACK
-	db 0
-
-; Soldiers
-  ; Vermillion City Gym
-      db SOLDIER, 1           ; Added Machop to a Soldier in Lt. Surge's gym        ; Added by G-Dubs
-	  db 2, 1, THUNDERPUNCH   ; Adding Thunderpunch to a Machop                     ; Added by G-Dubs
-	  db 2, 2, LEER
-	  db 2, 3, KARATE_CHOP
-	  db 2, 4, FOCUS_ENERGY
+; Cinnibar Island Gym	
+   ; Blaine
+	  db BLAINE, 1
+	  db 1, 2, FLAMETHROWER  ; Blaine's Ninetales
+	  db 2, 2, FIRE_BLAST    ; Blaine's Tauros
+      db 3, 1, FIRE_SPIN     ; Blaine's Rapidash
+	  db 3, 2, EARTHQUAKE
+	  db 3, 3, THUNDERBOLT
+	  db 4, 4, FIRE_BLAST    ; Blaine's Charizard Y
+	  db 5, 3, BITE          ; Blaine's Arcanine
+      db 6, 1, FIRE_SPIN     ; Blaine's Magmar
+	  db 6, 2, THUNDERPUNCH
 	  db 0
-
-	db -1 ; end
+; Viridian City Gym	
+   ; Giovanni
+	  db GIOVANNI, 3
+	  db 1, 3, FISSURE
+	  db 2, 2, DOUBLE_TEAM
+	  db 3, 1, EARTHQUAKE
+	  db 3, 3, THUNDER
+	  db 4, 1, EARTHQUAKE
+	  db 4, 2, LEER
+	  db 4, 3, THUNDER
+	  db 5, 1, ROCK_SLIDE
+	  db 5, 4, EARTHQUAKE
+	  db 0
+/*****************************************************************************************************
+Elite Four
+******************************************************************************************************/
+; Lorelei's Room	
+   ; Lorelei	
+	  db LORELEI, 1
+	  db 1, 1, BUBBLEBEAM
+	  db 2, 3, ICE_BEAM
+	  db 3, 1, PSYCHIC_M
+	  db 3, 2, SURF
+	  db 4, 3, LOVELY_KISS
+	  db 5, 3, BLIZZARD
+	  db 0
+; Bruno's Room	
+   ; Bruno
+	  db BRUNO, 1
+	  db 1, 1, ROCK_SLIDE
+	  db 1, 2, SCREECH
+	  db 1, 4, DIG
+	  db 2, 3, FIRE_PUNCH
+	  db 2, 4, DOUBLE_TEAM
+	  db 3, 1, DOUBLE_KICK
+	  db 3, 2, MEGA_KICK
+	  db 3, 4, DOUBLE_TEAM
+	  db 4, 1, ROCK_SLIDE
+	  db 4, 2, SCREECH
+	  db 4, 4, EARTHQUAKE
+	  db 5, 2, KARATE_CHOP
+	  db 5, 3, STRENGTH
+	  db 0
+; Agatha's Room	
+   ; Agatha
+	  db AGATHA, 1
+	  db 1, 2, SUBSTITUTE
+	  db 1, 3, LICK
+	  db 1, 4, MEGA_DRAIN
+	  db 2, 2, TOXIC
+	  db 2, 4, LEECH_LIFE
+	  db 3, 2, LICK
+	  db 4, 1, WRAP
+	  db 5, 2, PSYCHIC_M
+	  db 0
+; Lance's Room	
+   ; Lance
+	  db LANCE, 1
+	  db 1, 1, DRAGON_RAGE
+	  db 2, 1, THUNDER_WAVE
+	  db 2, 3, THUNDERBOLT
+	  db 3, 1, BUBBLEBEAM
+	  db 3, 2, WRAP
+	  db 3, 3, ICE_BEAM
+	  db 4, 1, WING_ATTACK
+	  db 4, 2, SWIFT
+	  db 4, 3, FLY
+	  db 5, 1, BLIZZARD
+	  db 5, 2, FIRE_BLAST
+	  db 5, 3, THUNDER
+	  db 0
+; Champion's Room	
+   ; Rival 3 (Flareon)
+	  db RIVAL3, 1
+	  db 1, 3, EARTHQUAKE
+	  db 2, 4, KINESIS
+	  db 3, 4, LEECH_SEED
+	  db 4, 1, ICE_BEAM
+	  db 5, 1, CONFUSE_RAY
+	  db 5, 4, FIRE_SPIN
+	  db 6, 3, QUICK_ATTACK
+	  db 0
+   ; Rival 3 (Jolteon)
+	  db RIVAL3, 2
+	  db 1, 3, EARTHQUAKE
+	  db 2, 4, KINESIS
+	  db 3, 4, LEECH_SEED
+	  db 4, 1, THUNDERBOLT
+	  db 5, 1, ICE_BEAM
+	  db 6, 2, REFLECT
+	  db 6, 3, QUICK_ATTACK
+	  db 0
+   ; Rival 3 (Vaporeon)
+	  db RIVAL3, 3
+	  db 1, 3, EARTHQUAKE
+	  db 2, 4, KINESIS
+	  db 3, 4, LEECH_SEED
+	  db 4, 1, CONFUSE_RAY
+	  db 4, 4, FIRE_SPIN
+	  db 5, 1, THUNDERBOLT
+	  db 6, 1, AURORA_BEAM
+	  db 6, 3, QUICK_ATTACK
+	  db 0
