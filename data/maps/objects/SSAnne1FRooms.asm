@@ -15,14 +15,18 @@ SSAnne1FRooms_Object:
 	db $c ; border block
 
 	def_warp_events
-	warp_event  0,  0, SS_ANNE_1F, 3
-	warp_event 10,  0, SS_ANNE_1F, 4
-	warp_event 20,  0, SS_ANNE_1F, 5
-	warp_event  0, 10, SS_ANNE_1F, 6
-	warp_event 10, 10, SS_ANNE_1F, 7
-	warp_event 20, 10, SS_ANNE_1F, 8
+	warp_event  0,  0, SS_ANNE_1F, 3   ; Warp event 1
+	warp_event 10,  0, SS_ANNE_1F, 4   ; Warp event 2
+	warp_event 20,  0, SS_ANNE_1F, 5   ; Warp event 3
+	warp_event  0, 10, SS_ANNE_1F, 6   ; Warp event 4
+	warp_event 10, 10, SS_ANNE_1F, 7   ; Warp event 5
+	warp_event 20, 10, SS_ANNE_1F, 8   ; Warp event 6
+	warp_event 30,  0, SS_ANNE_1F, 9   ; Warp event 7	 ; New warp event added by G-Dubs
+	warp_event 30, 10, SS_ANNE_1F, 10  ; Warp event 8	 ; New warp event added by G-Dubs
 
 	def_bg_events
+	bg_event 33, 14, TEXT_SSANNE1FROOMS_BED              ; Healing bed added by G-Dubs
+	bg_event 33, 15, TEXT_SSANNE1FROOMS_BED              ; Healing bed added by G-Dubs
 
 	def_object_events
 	object_event  2,  3, SPRITE_GENTLEMAN, STAY, LEFT, TEXT_SSANNE1FROOMS_GENTLEMAN1, OPP_GENTLEMAN, 1
@@ -36,5 +40,5 @@ SSAnne1FRooms_Object:
 	object_event 10, 13, SPRITE_GIRL, STAY, RIGHT, TEXT_SSANNE1FROOMS_GIRL2
 	object_event 12, 15, SPRITE_POKE_BALL, STAY, NONE, TEXT_SSANNE1FROOMS_TM_BODY_SLAM, TM_BODY_SLAM
 	object_event 21, 13, SPRITE_GENTLEMAN, WALK, LEFT_RIGHT, TEXT_SSANNE1FROOMS_GENTLEMAN3
-
+	
 	def_warps_to SS_ANNE_1F_ROOMS

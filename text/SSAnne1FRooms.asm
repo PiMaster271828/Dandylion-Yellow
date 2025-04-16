@@ -103,3 +103,13 @@ _SSAnne1FRoomsGentleman3Text::
 	para "I'm on the trail"
 	line "of TEAM ROCKET!"
 	done
+
+_SSAnne1FRoomsBedText1::               ; Healing bed added by G-Dubs
+    text "A comfy bed!"
+	line "Time to sleep…"
+	done
+
+_SSAnne1FRoomsBedText2::               ; Healing bed added by G-Dubs
+	text "Ah, refreshed and"
+	line "restored!"
+	done

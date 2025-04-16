@@ -26,6 +26,7 @@ SSAnne1FRooms_TextPointers:
 	dw_const SSAnne1FRoomsGirl2Text,         TEXT_SSANNE1FROOMS_GIRL2
 	dw_const PickUpItemText,                 TEXT_SSANNE1FROOMS_TM_BODY_SLAM
 	dw_const SSAnne1FRoomsGentleman3Text,    TEXT_SSANNE1FROOMS_GENTLEMAN3
+    dw_const SSAnne1FRoomsBedText,           TEXT_SSANNE1FROOMS_BED                 ; Healing bed added by G-Dubs
 
 SSAnne8TrainerHeaders:
 	def_trainers
@@ -69,6 +70,31 @@ SSAnne1FRoomsWigglytuffText:
 	ld a, WIGGLYTUFF
 	call PlayCry
 	jp TextScriptEnd
+
+SSAnne1FRoomsBedText:
+	text_asm
+	ld hl, .SSAnneBedText1
+	call PrintText
+	predef HealParty
+	call GBFadeOutToWhite
+	call Delay3
+	call Delay3
+	call Delay3
+	call GBFadeInFromWhite
+	ld hl, .SSAnneBedText2
+	call PrintText
+	jr .text_script_end
+
+.text_script_end
+	jp TextScriptEnd
+
+.SSAnneBedText1
+	text_far _SSAnne1FRoomsBedText1
+	text_end
+	
+.SSAnneBedText2
+	text_far _SSAnne1FRoomsBedText2	
+	text_end
 
 SSAnne1FRoomsGentleman1BattleText:
 	text_far _SSAnne1FRoomsGentleman1BattleText
@@ -137,3 +163,4 @@ SSAnne1FRoomsGirl2Text:
 SSAnne1FRoomsGentleman3Text:
 	text_far _SSAnne1FRoomsGentleman3Text
 	text_end
+

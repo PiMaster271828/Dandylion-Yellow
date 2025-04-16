@@ -16,6 +16,7 @@ ENDM
 ; Each map also has associated data in maps.asm.
 ; Order: towns/cities, then routes, then indoor/dungeon maps
 	const_def
+; First Town Map
 	map_const PALLET_TOWN,                   10,  9 ; $00
 	map_const VIRIDIAN_CITY,                 20, 18 ; $01
 	map_const PEWTER_CITY,                   20, 18 ; $02
@@ -121,7 +122,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const SS_ANNE_BOW,                   10,  7 ; $63
 	map_const SS_ANNE_KITCHEN,                7,  8 ; $64
 	map_const SS_ANNE_CAPTAINS_ROOM,          3,  4 ; $65
-	map_const SS_ANNE_1F_ROOMS,              12,  8 ; $66
+	map_const SS_ANNE_1F_ROOMS,              17,  8 ; $66  ; Map expanded by G-Dubs
 	map_const SS_ANNE_2F_ROOMS,              12,  8 ; $67
 	map_const SS_ANNE_B1F_ROOMS,             12,  8 ; $68
 	map_const UNUSED_MAP_69,                  0,  0 ; $69
@@ -138,7 +139,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const UNUSED_MAP_74,                  0,  0 ; $74
 	map_const UNUSED_MAP_75,                  0,  0 ; $75
 	map_const HALL_OF_FAME,                   5,  4 ; $76
-	map_const UNDERGROUND_PATH_NORTH_SOUTH,   4, 24 ; $77 ; UndergroundPathNorthSouth.blk is actually 4x23
+	map_const UNDERGROUND_PATH_NORTH_SOUTH,   4, 24 ; $77  ; UndergroundPathNorthSouth.blk is actually 4 x 23
 	map_const CHAMPIONS_ROOM,                 4,  4 ; $78
 	map_const UNDERGROUND_PATH_WEST_EAST,    25,  4 ; $79
 	map_const CELADON_MART_1F,               10,  4 ; $7A
