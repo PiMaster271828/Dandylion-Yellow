@@ -19,13 +19,13 @@ SSAnne1FRooms_TextPointers:
 	dw_const SSAnne1FRoomsGentleman2Text,    TEXT_SSANNE1FROOMS_GENTLEMAN2
 	dw_const SSAnne1FRoomsYoungsterText,     TEXT_SSANNE1FROOMS_YOUNGSTER
 	dw_const SSAnne1FRoomsCooltrainerFText,  TEXT_SSANNE1FROOMS_COOLTRAINER_F
+	dw_const SSAnne1FRoomsGentleman3Text,    TEXT_SSANNE1FROOMS_GENTLEMAN3          ; NPC changed to trainer by G-Dubs
 	dw_const SSAnne1FRoomsGirl1Text,         TEXT_SSANNE1FROOMS_GIRL1
 	dw_const SSAnne1FRoomsMiddleAgedManText, TEXT_SSANNE1FROOMS_MIDDLE_AGED_MAN
 	dw_const SSAnne1FRoomsLittleGirlText,    TEXT_SSANNE1FROOMS_LITTLE_GIRL
 	dw_const SSAnne1FRoomsWigglytuffText,    TEXT_SSANNE1FROOMS_WIGGLYTUFF
 	dw_const SSAnne1FRoomsGirl2Text,         TEXT_SSANNE1FROOMS_GIRL2
 	dw_const PickUpItemText,                 TEXT_SSANNE1FROOMS_TM_BODY_SLAM
-	dw_const SSAnne1FRoomsGentleman3Text,    TEXT_SSANNE1FROOMS_GENTLEMAN3
     dw_const SSAnne1FRoomsBedText,           TEXT_SSANNE1FROOMS_BED                 ; Healing bed added by G-Dubs
 
 SSAnne8TrainerHeaders:
@@ -38,6 +38,10 @@ SSAnne8TrainerHeader2:
 	trainer EVENT_BEAT_SS_ANNE_8_TRAINER_2, 2, SSAnne1FRoomsYoungsterBattleText, SSAnne1FRoomsYoungsterEndBattleText, SSAnne1FRoomsYoungsterAfterBattleText
 SSAnne8TrainerHeader3:
 	trainer EVENT_BEAT_SS_ANNE_8_TRAINER_3, 2, SSAnne1FRoomsCooltrainerFBattleText, SSAnne1FRoomsCooltrainerFEndBattleText, SSAnne1FRoomsCooltrainerFAfterBattleText
+SSAnne8TrainerHeader4:
+	trainer EVENT_BEAT_SS_ANNE_8_TRAINER_4, 2, SSAnne1FRoomsGentleman3BattleText, SSAnne1FRoomsGentleman3EndBattleText, SSAnne1FRoomsGentleman3AfterBattleText           ; NPC changed to trainer by G-Dubs
+SSAnne8TrainerHeader5:	
+	trainer EVENT_BEAT_SS_ANNE_8_TRAINER_5, 2, SSAnne1FRoomsGirl1BattleText, SSAnne1FRoomsGirl1EndBattleText, SSAnne1FRoomsGirl1AfterBattleText                          ; NPC changed to trainer by G-Dubs
 	db -1 ; end
 
 SSAnne1FRoomsGentleman1Text:
@@ -61,6 +65,18 @@ SSAnne1FRoomsYoungsterText:
 SSAnne1FRoomsCooltrainerFText:
 	text_asm
 	ld hl, SSAnne8TrainerHeader3
+	call TalkToTrainer
+	jp TextScriptEnd
+
+SSAnne1FRoomsGentleman3Text:                     ; NPC changed to trainer by G-Dubs
+	text_asm
+	ld hl, SSAnne8TrainerHeader4
+	call TalkToTrainer
+	jp TextScriptEnd
+
+SSAnne1FRoomsGirl1Text:                          ; NPC changed to trainer by G-Dubs
+	text_asm
+	ld hl, SSAnne8TrainerHeader5
 	call TalkToTrainer
 	jp TextScriptEnd
 
@@ -144,8 +160,28 @@ SSAnne1FRoomsCooltrainerFAfterBattleText:
 	text_far _SSAnne1FRoomsCooltrainerFAfterBattleText
 	text_end
 
-SSAnne1FRoomsGirl1Text:
-	text_far _SSAnne1FRoomsGirl1Text
+SSAnne1FRoomsGentleman3BattleText:                         ; NPC changed to trainer by G-Dubs
+	text_far _SSAnne1FRoomsGentleman3BattleText
+	text_end
+
+SSAnne1FRoomsGentleman3EndBattleText:
+	text_far _SSAnne1FRoomsGentleman3EndBattleText
+	text_end
+
+SSAnne1FRoomsGentleman3AfterBattleText:
+	text_far _SSAnne1FRoomsGentleman3AfterBattleText
+	text_end
+
+SSAnne1FRoomsGirl1BattleText:					           ; NPC changed to trainer by G-Dubs
+	text_far _SSAnne1FRoomsGirl1BattleText
+	text_end
+
+SSAnne1FRoomsGirl1EndBattleText:	
+	text_far _SSAnne1FRoomsGirl1EndBattleText	
+	text_end
+
+SSAnne1FRoomsGirl1AfterBattleText:
+	text_far _SSAnne1FRoomsGirl1AfterBattleText
 	text_end
 
 SSAnne1FRoomsMiddleAgedManText:
@@ -159,8 +195,3 @@ SSAnne1FRoomsLittleGirlText:
 SSAnne1FRoomsGirl2Text:
 	text_far _SSAnne1FRoomsGirl2Text
 	text_end
-
-SSAnne1FRoomsGentleman3Text:
-	text_far _SSAnne1FRoomsGentleman3Text
-	text_end
-

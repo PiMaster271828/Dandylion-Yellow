@@ -75,10 +75,57 @@ _SSAnne1FRoomsCooltrainerFAfterBattleText::
 	cont "#MON CENTER!"
 	done
 
-_SSAnne1FRoomsGirl1Text::
+_SSAnne1FRoomsGentleman3BattleText::
+	text "Ssh! I'm a GLOBAL"
+	line "POLICE agent!"
+
+	para "I'm on the trail"
+	line "of TEAM ROCKET!"
+	done	
+
+_SSAnne1FRoomsGentleman3EndBattleText::
+	text "Not bad"
+	line "Not bad at all."
+	prompt
+
+_SSAnne1FRoomsGentleman3AfterBattleText::
+	text "I'm sorry, but I"
+	line "thought you"
+	cont "looked a bit"
+	cont "suspicious..." 
+	done
+
+_SSAnne1FRoomsGirl1BattleText::
 	text "Waiter, I would"
 	line "like a cherry pie"
 	cont "please!"
+
+	para "Oh!  You're a"
+	line "trainer, not a"
+	cont "waiter. Let's"
+	cont "battle then."
+	done
+
+_SSAnne1FRoomsGirl1EndBattleText::
+	text "Oh no!"
+	line "I went around the"
+	cont "world for these"
+	cont "#MON!"	
+	prompt
+
+_SSAnne1FRoomsGirl1AfterBattleText::
+	text "Though your"
+	line "#MON battling"
+	cont "skills are"
+	cont "impressive, I"
+	cont "doubt you'd"
+	cont "understand the"
+	cont "nuances of a"
+	cont "truly exquisite"
+	cont "cherry pie. It"
+	cont "requires a"
+	cont "certain..."
+	cont "je ne sais quoi."
 	done
 
 _SSAnne1FRoomsMiddleAgedManText::
@@ -94,14 +141,6 @@ _SSAnne1FRoomsLittleGirlText::
 _SSAnne1FRoomsGirl2Text::
 	text "We are cruising"
 	line "around the world."
-	done
-
-_SSAnne1FRoomsGentleman3Text::
-	text "Ssh! I'm a GLOBAL"
-	line "POLICE agent!"
-
-	para "I'm on the trail"
-	line "of TEAM ROCKET!"
 	done
 
 _SSAnne1FRoomsBedText1::               ; Healing bed added by G-Dubs

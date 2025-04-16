@@ -792,6 +792,8 @@ GentlemanData:
 	db 48, PRIMEAPE, 0				                                                                         ; Gentleman 4            ; (Unused)
 ; SS Anne 2F Rooms
 	db 17, GROWLITHE, PONYTA, 0			                                                                     ; Gentleman 5
+; SS Anne 1F Rooms (Again)
+    db 17, GROWLITHE, PIDGEOTTO, MAGNEMITE, 0                                                                ; Gentleman 6            ; New trainer added by G-Dubs
 
 Rival2Data:                                                                                                  ; Rival 2 Parties based on Yellow Legacy Parties
 ; SS Anne 2F
@@ -945,6 +947,8 @@ SoldierData:
 LadyData:
 ; S.S. Anne Bow
     db 18, GOLDEEN, GLOOM, SHELLDER, PIDGEOTTO, 0                                                            ; Lady 1                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+; S.S. Anne 1F Rooms
+    db 20, NIDORINA, GLOOM, PIDGEOTTO, 0                                                                     ; Lady 2                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 
 /*
 Former Beauty Data
