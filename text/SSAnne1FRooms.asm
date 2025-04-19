@@ -102,8 +102,9 @@ _SSAnne1FRoomsGirl1BattleText::
 
 	para "Oh!  You're a"
 	line "trainer, not a"
-	cont "waiter. Let's"
-	cont "battle then."
+	cont "waiter. I"
+	cont "suppose I'll"
+	cont "battle you then."
 	done
 
 _SSAnne1FRoomsGirl1EndBattleText::
@@ -128,9 +129,31 @@ _SSAnne1FRoomsGirl1AfterBattleText::
 	cont "je ne sais quoi."
 	done
 
-_SSAnne1FRoomsMiddleAgedManText::
+_SSAnne1FRoomsMiddleAgedManBattleText::
 	text "A cruise is so"
 	line "elegant yet cozy!"
+	cont "... ... ... ..."
+	cont "Oh.  You're a"
+	cont "#MON trainer."
+	cont "Let's battle!"
+	done
+
+_SSAnne1FRoomsMiddleAgedManEndBattleText::
+	text "You're"
+	line "very skilled!"
+	cont "I'm impressed!"
+	prompt
+
+_SSAnne1FRoomsMiddleAgedManAfterBattleText::
+	text "The bond between"
+	line "trainer and"
+	cont "#MON is magical!"
+	cont "#MON battles"	
+	cont "are a great way"
+	cont "to bond with"
+	cont "family! It"
+	cont "really brings us"
+	cont "together."
 	done
 
 _SSAnne1FRoomsLittleGirlText::

@@ -904,6 +904,9 @@ PokeFanMData:
     db 16, PIKACHU, BULBASAUR, CHARMANDER, SQUIRTLE, EEVEE, 0                                                ; PokéFan ♂ 1            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 	db 18, MEOWTH, PSYDUCK, EEVEE, 0                                                                         ; PokéFan ♂ 2            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 	db 20, PIKACHU, PIKACHU, PIKACHU, 0                                                                      ; PokéFan ♂ 3            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+; S.S. Anne 1F Rooms
+    db 22, PIKACHU, CLEFAIRY, MEOWTH, 0	 	                                                                 ; PokéFan ♂ 4            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+
 ; Route ??
    ;db ??, NIDOKING, KINGLER, SEAKING, KINGDRA, 0                                                            ; PokéFan ♂ ?            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 
