@@ -52,10 +52,11 @@ TrainerAIPointers:
 	dbw 3, GenericAI         ; Channeler
 	dbw 2, AgathaAI          ; Agatha
 	dbw 1, LanceAI           ; Lance
-	dbw 3, GenericAI         ; Jessie & James
-	dbw 3, GenericAI         ; PokéFan ♂
-	dbw 3, GenericAI         ; PokéFan ♀
-	dbw 3, GenericAI         ; Guitarist
-	dbw 3, GenericAI         ; Soldier
-	dbw 3, LadyAI            ; Lady
+	dbw 3, GenericAI         ; Jessie & James	; New trainer class for Team Rocket added by Vlad
+	dbw 3, GenericAI         ; PokéFan ♂		; New trainer class added by G-Dubs
+	dbw 3, GenericAI         ; PokéFan ♀		; New trainer class added by G-Dubs
+	dbw 3, GenericAI         ; Guitarist		; New trainer class added by G-Dubs
+	dbw 3, GenericAI         ; Soldier			; New trainer class added by G-Dubs
+	dbw 3, LadyAI            ; Lady				; New trainer class added by G-Dubs
+	dbw 3, GenericAI         ; Waiter			; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS

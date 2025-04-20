@@ -56,10 +56,11 @@ TrainerClassMoveChoiceModifications:
 	move_choices 1       ; CHANNELER
 	move_choices 1       ; AGATHA
 	move_choices 1, 3    ; LANCE
-	move_choices 1       ; JESSIE & JAMES
-	move_choices 1       ; POKÉFAN ♂
-	move_choices 1       ; POKÉFAN ♀
-	move_choices 1       ; GUITARIST
-	move_choices 1       ; SOLDIER
-	move_choices 1       ; LADY
+	move_choices 1       ; JESSIE & JAMES	; New trainer class for Team Rocket added by Vlad
+	move_choices 1       ; POKÉFAN ♂		; New trainer class added by G-Dubs
+	move_choices 1       ; POKÉFAN ♀		; New trainer class added by G-Dubs
+	move_choices 1       ; GUITARIST		; New trainer class added by G-Dubs
+	move_choices 1       ; SOLDIER			; New trainer class added by G-Dubs
+	move_choices 1       ; LADY				; New trainer class added by G-Dubs
+	move_choices 1       ; WAITER			; New trainer class added by G-Dubs
 	assert_list_length NUM_TRAINERS

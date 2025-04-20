@@ -75,7 +75,7 @@ _SSAnne1FRoomsCooltrainerFAfterBattleText::
 	cont "#MON CENTER!"
 	done
 
-_SSAnne1FRoomsGentleman3BattleText::
+_SSAnne1FRoomsGentleman3BattleText::             ; NPC changed to trainer by G-Dubs
 	text "Ssh! I'm a GLOBAL"
 	line "POLICE agent!"
 
@@ -95,7 +95,7 @@ _SSAnne1FRoomsGentleman3AfterBattleText::
 	cont "suspicious..." 
 	done
 
-_SSAnne1FRoomsGirl1BattleText::
+_SSAnne1FRoomsGirl1BattleText::			         ; NPC changed to trainer by G-Dubs
 	text "Waiter, I would"
 	line "like a cherry pie"
 	cont "please!"
@@ -129,12 +129,12 @@ _SSAnne1FRoomsGirl1AfterBattleText::
 	cont "je ne sais quoi."
 	done
 
-_SSAnne1FRoomsMiddleAgedManBattleText::
+_SSAnne1FRoomsMiddleAgedManBattleText::		     ; NPC changed to trainer by G-Dubs
 	text "A cruise is so"
 	line "elegant yet cozy!"
-	cont "... ... ... ..."
-	cont "Oh.  You're a"
-	cont "#MON trainer."
+	
+	para "Oh.  You're a"
+	line "#MON trainer."
 	cont "Let's battle!"
 	done
 

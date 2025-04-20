@@ -390,6 +390,8 @@ Guitarist2Pic::    INCBIN "gfx/trainers/guitarist_2.pic"                  ; New 
 Guitarist3Pic::    INCBIN "gfx/trainers/guitarist_3.pic"                  ; New trainer sprite added by G-Dubs
 SoldierPic::       INCBIN "gfx/trainers/soldier.pic"                      ; New trainer sprite added by G-Dubs
 LadyPic::          INCBIN "gfx/trainers/lady.pic"                         ; New trainer sprite added by G-Dubs
+WaiterPic::        INCBIN "gfx/trainers/waiter.pic"                       ; New trainer sprite added by G-Dubs
+
 ;Rival4Pic::      INCBIN "gfx/trainers/rival4.pic"
 
 SECTION "Pics 7", ROMX

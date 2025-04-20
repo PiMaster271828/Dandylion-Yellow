@@ -53,6 +53,7 @@ TrainerDataPointers:
 	dw GuitaristData         ; New trainer class added by G-Dubs
 	dw SoldierData           ; New trainer class added by G-Dubs
 	dw LadyData              ; New trainer class added by G-Dubs
+	dw WaiterData            ; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS
 
 ; if first byte != $FF, then
@@ -952,6 +953,10 @@ LadyData:
     db 18, GOLDEEN, GLOOM, SHELLDER, PIDGEOTTO, 0                                                            ; Lady 1                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 ; S.S. Anne 1F Rooms
     db 20, NIDORINA, GLOOM, PIDGEOTTO, 0                                                                     ; Lady 2                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+
+WaiterData:
+    db 21, SHELLDER, PIKACHU, PIDGEY, 0                                                                      ; Waiter 1               ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+
 
 /*
 Former Beauty Data

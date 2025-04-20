@@ -643,7 +643,13 @@
 	const EVENT_WALKED_PAST_GUARD_AFTER_SS_ANNE_LEFT                                               ; $5E3
 	const EVENT_STARTED_WALKING_OUT_OF_DOCK                                                        ; $5E4
 	const EVENT_WALKED_OUT_OF_DOCK                                                                 ; $5E5
-	const_skip 10                                ; Formerly const_skip 11                          ; $5E6 - $5EF
+	const_skip 2                                 ; Formerly const_skip 11                          ; $5E6 - $5E7
+
+; S.S. Anne 1F Events                            ; New section added by G-Dubs
+	const_next $5E8
+	const_skip                                                                                     ; $5E8
+	const EVENT_BEAT_SS_ANNE_7_TRAINER_0                                                           ; $5E9
+	const_skip 6                                                                                   ; $5EA - $5EF
 	
 ; S.S. Anne 1F Rooms Events                      ; Section added by G-Dubs
     const_next $5F0

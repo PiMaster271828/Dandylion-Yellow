@@ -1,4 +1,4 @@
-_SSAnne1FWaiterText::
+_SSAnne1FWaiterBattleText::	      ; NPC changed to trainer by G-Dubs
 	text "Bonjour!"
 	line "I am le waiter on"
 	cont "this ship!"
@@ -9,6 +9,19 @@ _SSAnne1FWaiterText::
 
 	para "Ah! Le strong"
 	line "silent type!"
+	done
+
+_SSAnne1FWaiterEndBattleText::
+	text "You"
+	line "are very strong!"
+	prompt
+
+_SSAnne1FWaiterAfterBattleText::
+	text "I'd be happy to"	
+	line "serve you anyway."
+	cont "Anything you ask,"
+	cont "is my job to try"
+	cont "to get for you!"
 	done
 
 _SSAnne1FSailorText::

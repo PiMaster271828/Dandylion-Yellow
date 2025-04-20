@@ -209,5 +209,6 @@ TrainerPalettes:
 	db PAL_LAVENDERMON                 ; POKÉFAN ♀         ; New trainer class added by G-Dubs
 	db PAL_MEWMON                      ; GUITARIST         ; New trainer class added by G-Dubs
 	db PAL_GRAYMON                     ; SOLDIER           ; New trainer class added by G-Dubs
-	db PAL_LAVENDERMON                 ; LADY              ; New trainer class added by G-Dubs       
+	db PAL_LAVENDERMON                 ; LADY              ; New trainer class added by G-Dubs
+	db PAL_GRAYMON                     ; WAITER            ; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS + 1

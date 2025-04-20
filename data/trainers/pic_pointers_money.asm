@@ -60,4 +60,5 @@ TrainerPicAndMoneyPointers::
 	pic_money Guitarist1Pic,   1000    ; New trainer class added by G-Dubs	
 	pic_money SoldierPic,      1000    ; New trainer class added by G-Dubs
 	pic_money LadyPic,         7000    ; New trainer class added by G-Dubs
+	pic_money WaiterPic,       1000    ; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS
