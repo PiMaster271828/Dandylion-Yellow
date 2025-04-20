@@ -54,6 +54,7 @@ TrainerDataPointers:
 	dw SoldierData           ; New trainer class added by G-Dubs
 	dw LadyData              ; New trainer class added by G-Dubs
 	dw WaiterData            ; New trainer class added by G-Dubs
+	dw ChefData              ; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS
 
 ; if first byte != $FF, then
@@ -958,23 +959,23 @@ LadyData:
 WaiterData:
 ; S.S. Anne 1F
     db 21, SHELLDER, MEOWTH, BELLSPROUT, 0                                                                   ; Waiter 1               ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-/*
+
 ChefData:
 ; S.S Anne Kitchen
     db 18, MANKEY, MAGIKARP, FARFETCHD, SHELLDER, 0                                                          ; Chef 1                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-	db 19, GRIMER, KOFFING, GRIMER, 0
-	db 20, VENONAT, PONYTA, POLIWHIRL, 0
-	db 22, EXEGGCUTE, DIGLETT, PARAS, 0
-	db 23, DROWZEE, LICKITUNG, SLOWPOKE, 0
-	db 24, ODDISH, FARFETCHD, WEEPINBELL, 0
-	db 25, TANGELA, DRATINI, TAUROS, CHARMELEON, 0   
-*/
+	db 19, GRIMER, KOFFING, GRIMER, 0		                                                                 ; Chef 2                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+	db 20, VENONAT, PONYTA, POLIWHIRL, 0 	                                                                 ; Chef 3                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+	db 22, EXEGGCUTE, DIGLETT, PARAS, 0																		 ; Chef 4		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+	db 23, DROWZEE, LICKITUNG, SLOWPOKE, 0 	                                                                 ; Chef 5		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+	db 24, ODDISH, FARFETCHD, WEEPINBELL, 0                                                                  ; Chef 6		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+	db 25, TANGELA, DRATINI, TAUROS, CHARMELEON, 0                                                           ; Chef 7		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+
 
 /*
 Former Beauty Data
 	
 ; Celadon Gym
-	db 21, ODDISH, BELLSPROUT, ODDISH, BELLSPROUT, 0	                                                     ; Beauty 1
-	db 24, BELLSPROUT, BELLSPROUT, 0		                                                                 ; Beauty 2
-	db 26, EXEGGCUTE, 0					                                                                     ; Beauty 3
+	db 21, ODDISH, BELLSPROUT, ODDISH, BELLSPROUT, 0	                                                     ; Aroma Girl 1
+	db 24, BELLSPROUT, BELLSPROUT, 0		                                                                 ; Aroma Girl 2
+	db 26, EXEGGCUTE, 0					                                                                     ; Aroma Girl 3
 */

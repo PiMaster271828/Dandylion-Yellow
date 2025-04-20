@@ -59,4 +59,5 @@ TrainerAIPointers:
 	dbw 3, GenericAI         ; Soldier			; New trainer class added by G-Dubs
 	dbw 3, LadyAI            ; Lady				; New trainer class added by G-Dubs
 	dbw 3, GenericAI         ; Waiter			; New trainer class added by G-Dubs
+	dbw 3, GenericAI         ; Chef				; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS

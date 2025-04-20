@@ -39,7 +39,7 @@ TrainerPicAndMoneyPointers::
 	pic_money RocketPic,       3000
 	pic_money CooltrainerMPic, 3500
 	pic_money CooltrainerFPic, 3500
-	pic_money BrunoPic,        9900
+	pic_money BrunoPic,        9999
 	pic_money BrockPic,        9900
 	pic_money MistyPic,        9900
 	pic_money LtSurgePic,      9900
@@ -47,18 +47,19 @@ TrainerPicAndMoneyPointers::
 	pic_money KogaPic,         9900
 	pic_money BlainePic,       9900
 	pic_money SabrinaPic,      9900
-	pic_money GentlemanPic,    7000
+	pic_money GentlemanPic,    7500
 	pic_money Rival2Pic,       6500
 	pic_money Rival3Pic,       9900
-	pic_money LoreleiPic,      9900
+	pic_money LoreleiPic,      9999
 	pic_money ChannelerPic,    3000
-	pic_money AgathaPic,       9900
-	pic_money LancePic,        9900
+	pic_money AgathaPic,       9999
+	pic_money LancePic,        9999
 	pic_money JessieJamesPic,  2000    ; New trainer class added by Vlad
 	pic_money PokeFanMPic,     3000    ; New trainer class added by G-Dubs
 	pic_money PokeFanFPic,     3000    ; New trainer class added by G-Dubs
-	pic_money Guitarist1Pic,   1000    ; New trainer class added by G-Dubs	
-	pic_money SoldierPic,      1000    ; New trainer class added by G-Dubs
-	pic_money LadyPic,         7000    ; New trainer class added by G-Dubs
-	pic_money WaiterPic,       1000    ; New trainer class added by G-Dubs
+	pic_money Guitarist1Pic,   2500    ; New trainer class added by G-Dubs	
+	pic_money SoldierPic,      1250    ; New trainer class added by G-Dubs
+	pic_money LadyPic,         7500    ; New trainer class added by G-Dubs
+	pic_money WaiterPic,       1750    ; New trainer class added by G-Dubs
+	pic_money ChefPic,         1750    ; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS

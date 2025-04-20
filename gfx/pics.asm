@@ -392,6 +392,7 @@ Guitarist3Pic::    INCBIN "gfx/trainers/guitarist_3.pic"                  ; New 
 SoldierPic::       INCBIN "gfx/trainers/soldier.pic"                      ; New trainer sprite added by G-Dubs
 LadyPic::          INCBIN "gfx/trainers/lady.pic"                         ; New trainer sprite added by G-Dubs
 WaiterPic::        INCBIN "gfx/trainers/waiter.pic"                       ; New trainer sprite added by G-Dubs
+ChefPic::          INCBIN "gfx/trainers/chef.pic"                         ; New trainer sprite added by G-Dubs
 
 ;GypsyJugglerPic::  INCBIN "gfx/trainers/gypsy_juggler.pic"
 ;Rival4Pic::      INCBIN "gfx/trainers/rival4.pic"

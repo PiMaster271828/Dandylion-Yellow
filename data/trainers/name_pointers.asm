@@ -57,6 +57,7 @@ TrainerNamePointers:
 	dw .SoldierName          ; New trainer class added by G-Dubs
 	dw .LadyName             ; New trainer class added by G-Dubs
 	dw .WaiterName           ; New trainer class added by G-Dubs
+	dw .ChefName             ; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS
 
 .YoungsterName:     db "YOUNGSTER@"
@@ -87,3 +88,4 @@ TrainerNamePointers:
 .SoldierName:       db "SOLDIER@"           ; New trainer class added by G-Dubs
 .LadyName:          db "LADY@"              ; New trainer class added by G-Dubs
 .WaiterName:        db "WAITER@"            ; New trainer class added by G-Dubs
+.ChefName:          db "CHEF@"              ; New trainer class added by G-Dubs

@@ -211,4 +211,5 @@ TrainerPalettes:
 	db PAL_GRAYMON                     ; SOLDIER           ; New trainer class added by G-Dubs
 	db PAL_LAVENDERMON                 ; LADY              ; New trainer class added by G-Dubs
 	db PAL_GRAYMON                     ; WAITER            ; New trainer class added by G-Dubs
+	db PAL_MEWMON                      ; CHEF              ; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS + 1

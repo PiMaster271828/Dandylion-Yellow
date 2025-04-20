@@ -63,4 +63,5 @@ TrainerClassMoveChoiceModifications:
 	move_choices 1       ; SOLDIER			; New trainer class added by G-Dubs
 	move_choices 1       ; LADY				; New trainer class added by G-Dubs
 	move_choices 1       ; WAITER			; New trainer class added by G-Dubs
+	move_choices 1       ; CHEF				; New trainer class added by G-Dubs
 	assert_list_length NUM_TRAINERS
