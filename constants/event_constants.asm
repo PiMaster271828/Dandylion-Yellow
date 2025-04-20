@@ -648,7 +648,7 @@
 ; S.S. Anne 1F Events                            ; New section added by G-Dubs
 	const_next $5E8
 	const_skip                                                                                     ; $5E8
-	const EVENT_BEAT_SS_ANNE_7_TRAINER_0                                                           ; $5E9
+	const EVENT_BEAT_SS_ANNE_7_TRAINER_0         ; NPC changed to trainer by G-Dubs                ; $5E9
 	const_skip 6                                                                                   ; $5EA - $5EF
 	
 ; S.S. Anne 1F Rooms Events                      ; Section added by G-Dubs
@@ -658,7 +658,7 @@
 	const EVENT_BEAT_SS_ANNE_8_TRAINER_1                                                           ; $5F2
 	const EVENT_BEAT_SS_ANNE_8_TRAINER_2                                                           ; $5F3
 	const EVENT_BEAT_SS_ANNE_8_TRAINER_3                                                           ; $5F4
-	const EVENT_BEAT_SS_ANNE_8_TRAINER_4                                                           ; $5F5
+	const EVENT_BEAT_SS_ANNE_8_TRAINER_4         ; NPC changed to trainer by G-Dubs                ; $5F5
 	const EVENT_BEAT_SS_ANNE_8_TRAINER_5         ; NPC changed to trainer by G-Dubs                ; $5F6
 	const EVENT_BEAT_SS_ANNE_8_TRAINER_6         ; NPC changed to trainer by G-Dubs                ; $5F7
 	const EVENT_BEAT_SS_ANNE_8_TRAINER_7         ; NPC changed to trainer by G-Dubs                ; $5F8

@@ -6,9 +6,9 @@
 	const_export SSANNE1FROOMS_GENTLEMAN3        ; NPC changed to trainer by G-Dubs
 	const_export SSANNE1FROOMS_GIRL1             ; NPC changed to trainer by G-Dubs
 	const_export SSANNE1FROOMS_MIDDLE_AGED_MAN	 ; NPC changed to trainer by G-Dubs
+	const_export SSANNE1FROOMS_GIRL2		     ; NPC changed to trainer by G-Dubs
 	const_export SSANNE1FROOMS_LITTLE_GIRL
 	const_export SSANNE1FROOMS_WIGGLYTUFF
-	const_export SSANNE1FROOMS_GIRL2
 	const_export SSANNE1FROOMS_TM_BODY_SLAM
 	
 SSAnne1FRooms_Object:
@@ -36,9 +36,9 @@ SSAnne1FRooms_Object:
 	object_event 21, 13, SPRITE_GENTLEMAN, STAY, RIGHT, TEXT_SSANNE1FROOMS_GENTLEMAN3, OPP_GENTLEMAN, 6                ; NPC changed to trainer by G-Dubs
 	object_event 22,  3, SPRITE_GIRL, STAY, UP, TEXT_SSANNE1FROOMS_GIRL1, OPP_LADY, 2                                  ; NPC changed to trainer by G-Dubs
 	object_event  0, 14, SPRITE_MIDDLE_AGED_MAN, STAY, RIGHT, TEXT_SSANNE1FROOMS_MIDDLE_AGED_MAN, OPP_POKEFAN_M, 4	   ; NPC changed to trainer by G-Dubs
+	object_event 10, 13, SPRITE_GIRL, STAY, RIGHT, TEXT_SSANNE1FROOMS_GIRL2, OPP_LADY, 3                               ; NPC changed to trainer by G-Dubs
 	object_event  2, 11, SPRITE_LITTLE_GIRL, STAY, DOWN, TEXT_SSANNE1FROOMS_LITTLE_GIRL
 	object_event  3, 11, SPRITE_JIGGLYPUFF, STAY, DOWN, TEXT_SSANNE1FROOMS_WIGGLYTUFF
-	object_event 10, 13, SPRITE_GIRL, STAY, RIGHT, TEXT_SSANNE1FROOMS_GIRL2
 	object_event 12, 15, SPRITE_POKE_BALL, STAY, NONE, TEXT_SSANNE1FROOMS_TM_BODY_SLAM, TM_BODY_SLAM
 	
 	def_warps_to SS_ANNE_1F_ROOMS

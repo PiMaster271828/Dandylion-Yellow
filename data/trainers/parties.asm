@@ -78,7 +78,7 @@ YoungsterData:
 	db 17, SLOWPOKE, 0                                                                                       ; Youngster 6
 	db 14, EKANS, SANDSHREW, 0                                                                               ; Youngster 7
 ; SS Anne 1F Rooms    
-	db 21, NIDORAN_M, 0                                                                                      ; Youngster 8
+	db 24, NIDORAN_M, 0                                                                                      ; Youngster 8            ; Level changed from 21 to 24 by G-Dubs
 ; Route 11
 	db 21, EKANS, 0                                                                                          ; Youngster 9
 	db 19, NIDORAN_M, SANDSHREW, ZUBAT, 0                                                                    ; Youngster 10           ; Nidoran♂ added by G-Dubs
@@ -950,13 +950,25 @@ SoldierData:
 
 LadyData:
 ; S.S. Anne Bow
-    db 18, GOLDEEN, GLOOM, SHELLDER, PIDGEOTTO, 0                                                            ; Lady 1                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+    db 20, GOLDEEN, GLOOM, SHELLDER, PIDGEOTTO, 0                                                            ; Lady 1                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 ; S.S. Anne 1F Rooms
-    db 20, NIDORINA, GLOOM, PIDGEOTTO, 0                                                                     ; Lady 2                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+    db 21, NIDORINA, GLOOM, PIDGEOTTO, 0                                                                     ; Lady 2                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+    db 22, GLOOM, SEAKING, FARFETCHD, 0                                                                      ; Lady 3 	              ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 
 WaiterData:
-    db 21, SHELLDER, PIKACHU, PIDGEY, 0                                                                      ; Waiter 1               ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-
+; S.S. Anne 1F
+    db 21, SHELLDER, MEOWTH, BELLSPROUT, 0                                                                   ; Waiter 1               ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+/*
+ChefData:
+; S.S Anne Kitchen
+    db 18, MANKEY, MAGIKARP, FARFETCHD, SHELLDER, 0                                                          ; Chef 1                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+	db 19, GRIMER, KOFFING, GRIMER, 0
+	db 20, VENONAT, PONYTA, POLIWHIRL, 0
+	db 22, EXEGGCUTE, DIGLETT, PARAS, 0
+	db 23, DROWZEE, LICKITUNG, SLOWPOKE, 0
+	db 24, ODDISH, FARFETCHD, WEEPINBELL, 0
+	db 25, TANGELA, DRATINI, TAUROS, CHARMELEON, 0   
+*/
 
 /*
 Former Beauty Data

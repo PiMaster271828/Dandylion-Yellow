@@ -108,10 +108,9 @@ _SSAnne1FRoomsGirl1BattleText::			         ; NPC changed to trainer by G-Dubs
 	done
 
 _SSAnne1FRoomsGirl1EndBattleText::
-	text "Oh no!"
-	line "I went around the"
-	cont "world for these"
-	cont "#MON!"	
+	text "Oh,"
+	line "goodness, you're"
+	cont "very strong!"	
 	prompt
 
 _SSAnne1FRoomsGirl1AfterBattleText::
@@ -156,14 +155,23 @@ _SSAnne1FRoomsMiddleAgedManAfterBattleText::
 	cont "together."
 	done
 
+_SSAnne1FRoomsGirl2BattleText::			         ; NPC changed to trainer by G-Dubs
+	text "We are cruising"
+	line "around the world."
+	done
+
+_SSAnne1FRoomsGirl2EndBattleText::
+	text "I lost!"
+	prompt
+	
+_SSAnne1FRoomsGirl2AfterBattleText::	
+	text "I'm going to"
+	line "train harder!"
+	done
+
 _SSAnne1FRoomsLittleGirlText::
 	text "I always travel"
 	line "with WIGGLYTUFF!"
-	done
-
-_SSAnne1FRoomsGirl2Text::
-	text "We are cruising"
-	line "around the world."
 	done
 
 _SSAnne1FRoomsBedText1::               ; Healing bed added by G-Dubs

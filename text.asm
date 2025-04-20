@@ -9,7 +9,6 @@ INCLUDE "text/SSAnne3F.asm"
 INCLUDE "text/SSAnneBow.asm"
 INCLUDE "text/SSAnneKitchen.asm"
 INCLUDE "text/SSAnneCaptainsRoom.asm"
-INCLUDE "text/SSAnne1FRooms.asm"
 INCLUDE "text/SSAnne2FRooms.asm"
 INCLUDE "text/SSAnneB1FRooms.asm"
 INCLUDE "text/VictoryRoad3F.asm"
@@ -38,6 +37,7 @@ INCLUDE "text/Route5.asm"                        ; Moved from Text 3 by G-Dubs t
 INCLUDE "text/Route6.asm"                        ; Moved from Text 3 by G-Dubs to avoid the Text Bank from growing too big
 INCLUDE "text/Route12.asm"                       ; Moved from Text 4 by G-Dubs to avoid the Text Bank from growing too big
 INCLUDE "text/PokemonTower7F.asm"                ; Moved from Text 5 by G-Dubs to avoid the Text Bank from growing too big
+INCLUDE "text/SSAnne1FRooms.asm"                 ; Moved from Text 1 by G-Dubs to avoid the Text Bank from growing too big
 
 SECTION "Text 2", ROMX
 
