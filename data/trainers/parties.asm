@@ -796,6 +796,7 @@ GentlemanData:
 	db 17, GROWLITHE, PONYTA, 0			                                                                     ; Gentleman 5
 ; SS Anne 1F Rooms (Again)
     db 17, GROWLITHE, PIDGEOTTO, MAGNEMITE, 0                                                                ; Gentleman 6            ; New trainer added by G-Dubs
+	db 20, PIKACHU, PONYTA, FEAROW, 0                                                                        ; Gentleman 7            ; New trainer added by G-Dubs
 
 Rival2Data:                                                                                                  ; Rival 2 Parties based on Yellow Legacy Parties
 ; SS Anne 2F
@@ -955,6 +956,7 @@ LadyData:
 ; S.S. Anne 1F Rooms
     db 21, NIDORINA, GLOOM, PIDGEOTTO, 0                                                                     ; Lady 2                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
     db 22, GLOOM, SEAKING, FARFETCHD, 0                                                                      ; Lady 3 	              ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+    db 20, CLEFAIRY, NINETALES, WIGGLYTUFF, 0                                                                ; Lady 4                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs) 
 
 WaiterData:
 ; S.S. Anne 1F

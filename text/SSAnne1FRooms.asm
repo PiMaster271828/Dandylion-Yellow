@@ -161,13 +161,72 @@ _SSAnne1FRoomsGirl2BattleText::			         ; NPC changed to trainer by G-Dubs
 	done
 
 _SSAnne1FRoomsGirl2EndBattleText::
-	text "I lost!"
+	text "Oh"
+	line "goodness, you're"
+	cont "very strong!"
 	prompt
 	
 _SSAnne1FRoomsGirl2AfterBattleText::	
-	text "I'm going to"
-	line "train harder!"
+	text "Maintaining a"
+	line "strong #MON"
+	cont "team is an"
+	cont "expensive hobby,"
+	cont "you know. But it's"
+	cont "worth it!"
 	done
+
+_SSAnne1FRoomsGirl3BattleText::	                 ; New trainer added by G-Dubs
+	text "My dear and I are"
+	line "journeying across"
+	cont "the world, on"
+	cont "vacation... The"
+	cont "sights, the"
+	cont "culture, the"
+	cont "cuisine, it's all"
+	cont "so delightful!"
+	done
+
+_SSAnne1FRoomsGirl3EndBattleText::
+	text "Oh my,"	
+	line "how exciting!"
+	cont "You certainly"
+	cont "shook things up!"	
+	prompt
+
+_SSAnne1FRoomsGirl3AfterBattleText::
+	text "Traveling is so"	
+	line "much more fun"	
+	cont "with a partner..."	
+	cont "and a good rival"
+	cont "or two!"
+	done		
+
+_SSAnne1FRoomsGentleman4BattleText::             ; New trainer added by G-Dubs
+	text "There's no"
+	line "greater joy than"
+    cont "exploring the"
+	cont "world with"
+	cont "someone you love."
+	cont "Wouldn't you"
+	cont "agree?"
+	done	
+
+_SSAnne1FRoomsGentleman4EndBattleText::
+	text "A"
+	line "fine battle!"
+	cont "We'll be sure to"
+	cont "mention you in"
+	cont "our travel"
+	cont "journal."
+	prompt
+
+_SSAnne1FRoomsGentleman4AfterBattleText::
+	text "This voyage has"
+	line "been full of fine"
+	cont "memories and now,"
+	cont "one fine battle"
+	cont "more." 
+	done		
 
 _SSAnne1FRoomsLittleGirlText::
 	text "I always travel"
