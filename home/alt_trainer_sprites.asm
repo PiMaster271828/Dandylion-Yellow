@@ -10,15 +10,10 @@ IsFightingSwimmer::
 	ret c
 	ld de, Swimmer2Pic
 	cp $02
-	jr c, .dummy
-	ld de, Swimmer2Pic ; possibly meant to add another pic
-.dummy
-	ld hl, wTrainerPicPointer
-	ld a, e
-	ld [hli], a
-	ld [hl], d
+	call c, Dummy
+	ld de, SwimmerPic ; go back to using the default sprite
 	ret
-
+	
 /******************************************************************
 Function added by G-Dubs to let the Guitarist have multiple sprites
 *******************************************************************/
@@ -31,18 +26,13 @@ IsFightingGuitarist::
 	ret c
 	cp $07
 	ld de, Guitarist2Pic
-	jr c, .dummy
+	call c, Dummy
 	cp $0A
 	ld de, Guitarist3Pic
-	jr c, .dummy
+	call c, Dummy
 	ld de, Guitarist3Pic ; possibly meant to add another pic
 	ret
-.dummy
-	ld hl, wTrainerPicPointer
-	ld a, e
-	ld [hli], a
-	ld [hl], d
-	ret
+
 /*******************************************************************
 Function added by G-Dubs to let the Pokémaniac have multiple sprites
 ********************************************************************/
@@ -55,9 +45,33 @@ IsFightingPokemaniac::
 	ret c
 	ld de, Pokemaniac2Pic
 	cp $0B
-	jr c, .dummy
-	ld de, Pokemaniac2Pic ; possibly meant to add another pic
-.dummy
+	call c, Dummy
+	ld de, PokemaniacPic ; go back to using the default sprite
+	ret
+
+/***************************************************************
+Function added by G-Dubs to let the Beauty have multiple sprites
+****************************************************************/
+IsFightingBeauty::
+	ld a, [wTrainerClass]
+	cp BEAUTY
+	ret nz
+	ld a, [wTrainerNo]
+	cp $01
+	ret c
+	cp $02
+	ld de, Beauty2Pic
+	call c, Dummy
+	cp $04
+	ld de, Beauty3Pic
+	call c, Dummy
+	ld de, BeautyPic ; go back to using the default sprite
+	ret
+
+/******************************************************************************************
+Common Dummy Function added by G-Dubs to avoid each function using their own Dummy Function
+*******************************************************************************************/
+Dummy:
 	ld hl, wTrainerPicPointer
 	ld a, e
 	ld [hli], a

@@ -333,6 +333,7 @@ SailorPic::        INCBIN "gfx/trainers/sailor.pic"
 JrTrainerMPic::    INCBIN "gfx/trainers/jr.trainerm.pic"
 JrTrainerFPic::    INCBIN "gfx/trainers/jr.trainerf.pic"
 PokemaniacPic::    INCBIN "gfx/trainers/pokemaniac.pic"
+Pokemaniac2Pic::   INCBIN "gfx/trainers/pokemaniac_alt.pic"               ; Alt trainer sprite added by G-Dubs
 SuperNerdPic::     INCBIN "gfx/trainers/supernerd.pic"
 HikerPic::         INCBIN "gfx/trainers/hiker.pic"
 BikerPic::         INCBIN "gfx/trainers/biker.pic"
@@ -340,9 +341,15 @@ BurglarPic::       INCBIN "gfx/trainers/burglar.pic"
 EngineerPic::      INCBIN "gfx/trainers/engineer.pic"
 FisherPic::        INCBIN "gfx/trainers/fisher.pic"
 SwimmerPic::       INCBIN "gfx/trainers/swimmer.pic"
+Swimmer2Pic::       INCBIN "gfx/trainers/swimmer_female_10.pic"           ; Alt trainer sprite added by G-Dubs (Swimmer in Cerulean City Gym)
+;Swimmer3Pic::      INCBIN "gfx/trainers/swimmer_female_12.pic"
+;Swimmer4Pic::      INCBIN "gfx/trainers/triathlete_biker_female.pic"
+;Swimmer5Pic::      INCBIN "gfx/trainers/cooltrainer_male_alt.pic"
 CueBallPic::       INCBIN "gfx/trainers/cueball.pic"
 GamblerPic::       INCBIN "gfx/trainers/gambler.pic"
 BeautyPic::        INCBIN "gfx/trainers/beauty.pic"
+Beauty2Pic::       INCBIN "gfx/trainers/dream_girl.pic"                   ; Alt trainer sprite added by G-Dubs
+Beauty3Pic::       INCBIN "gfx/trainers/beauty_2_jp.pic"                  ; Alt trainer sprite added by G-Dubs
 PsychicPic::       INCBIN "gfx/trainers/psychic.pic"
 RockerPic::        INCBIN "gfx/trainers/rocker.pic"
 JugglerPic::       INCBIN "gfx/trainers/juggler.pic"
@@ -350,13 +357,7 @@ TamerPic::         INCBIN "gfx/trainers/tamer.pic"
 BirdKeeperPic::    INCBIN "gfx/trainers/birdkeeper.pic"
 BlackbeltPic::     INCBIN "gfx/trainers/blackbelt.pic"
 Rival1Pic::        INCBIN "gfx/trainers/rival1.pic"
-Pokemaniac2Pic::   INCBIN "gfx/trainers/pokemaniac_alt.pic"               ; New trainer sprite added by G-Dubs
-;GypsyJugglerPic::  INCBIN "gfx/trainers/gypsy_juggler.pic"
-;Swimmer2Pic::      INCBIN "gfx/trainers/swimmer_female_12.pic"
-;Beauty2Pic::       INCBIN "gfx/trainers/beauty_2_97.pic"
-;Swimmer2Pic::      INCBIN "gfx/trainers/triathlete_biker_female.pic"
-;Swimmer2Pic::      INCBIN "gfx/trainers/cooltrainer_male_alt.pic"
-Swimmer2Pic::       INCBIN "gfx/trainers/swimmer_female_10.pic"           ; Swimmer in Cerulean City Gym
+
 
 SECTION "Trainer Pics 2", ROMX
 
@@ -392,6 +393,7 @@ SoldierPic::       INCBIN "gfx/trainers/soldier.pic"                      ; New 
 LadyPic::          INCBIN "gfx/trainers/lady.pic"                         ; New trainer sprite added by G-Dubs
 WaiterPic::        INCBIN "gfx/trainers/waiter.pic"                       ; New trainer sprite added by G-Dubs
 
+;GypsyJugglerPic::  INCBIN "gfx/trainers/gypsy_juggler.pic"
 ;Rival4Pic::      INCBIN "gfx/trainers/rival4.pic"
 
 SECTION "Pics 7", ROMX

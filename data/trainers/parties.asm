@@ -452,8 +452,8 @@ GamblerData:
 
 BeautyData:
 ; Cerulean Gym (Formerly Celadon Gym)
-	db 17, PSYDUCK, POLIWAG, 0	                                                                             ; Beauty 1               ; Party and level changed by G-Dubs
-	db 16, TENTACOOL, KRABBY, 0		                                                                         ; Beauty 2               ; Party and level changed by G-Dubs
+	db 16, TENTACOOL, KRABBY, 0	                                                                             ; Beauty 1               ; Party and level changed by G-Dubs
+	db 17, PSYDUCK, POLIWAG, 0		                                                                         ; Beauty 2               ; Party and level changed by G-Dubs
 	db 18, SQUIRTLE, WARTORTLE, 0					                                                         ; Beauty 3               ; Party and level changed by G-Dubs
 ; Route 13
 	db 27, RATTATA, VULPIX, RATTATA, 0	                                                                     ; Beauty 4
