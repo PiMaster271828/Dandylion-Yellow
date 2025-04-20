@@ -356,7 +356,7 @@ Pokemaniac2Pic::   INCBIN "gfx/trainers/pokemaniac_alt.pic"               ; New 
 ;Beauty2Pic::       INCBIN "gfx/trainers/beauty_2_97.pic"
 ;Swimmer2Pic::      INCBIN "gfx/trainers/triathlete_biker_female.pic"
 ;Swimmer2Pic::      INCBIN "gfx/trainers/cooltrainer_male_alt.pic"
-Swimmer2Pic::       INCBIN "gfx/trainers/poke_fan_male.pic"
+Swimmer2Pic::       INCBIN "gfx/trainers/swimmer_female_10.pic"           ; Swimmer in Cerulean City Gym
 
 SECTION "Trainer Pics 2", ROMX
 
