@@ -763,7 +763,7 @@ OnixEvosMoves:
 	db 19, ROCK_THROW
 	db 24, RAGE
 	db 28, DIG
-	db 32, RAGE
+	db 32, TAKE_DOWN
 	db 36, SLAM
 	db 40, ROCK_SLIDE
 	db 44, EARTHQUAKE
@@ -1243,14 +1243,30 @@ VenonatEvosMoves:
 	db EVOLVE_LEVEL, 31, VENOMOTH
 	db 0
 ; Learnset
-	db 11, SUPERSONIC
-	db 19, CONFUSION
-	db 22, POISONPOWDER
-	db 27, LEECH_LIFE
-	db 30, STUN_SPORE
-	db 35, PSYBEAM
-	db 38, SLEEP_POWDER
-	db 43, PSYCHIC_M
+	db 1, TACKLE
+	db 3, DISABLE
+	db 5, POISON_STING
+	db 7, ABSORB
+   ;db 9, RADAR_EYES
+	db 11, CONFUSION
+   ;db 13, GNAW  
+	db 15, POISONPOWDER
+	db 17, SUPERSONIC
+   ;db 19, BUG_BITE
+	db 21, STUN_SPORE
+   ;db 23, POISON_FANG
+	db 25, MEGA_DRAIN
+    db 27, PSYBEAM
+    db 29, SLEEP_POWDER
+    db 31, SCREECH
+   ;db 33, SIGNAL_BEAM	
+	db 35, AGILITY
+	db 37, TOXIC
+   ;db 39, GIGA_DRAIN
+	db 41, LEECH_LIFE
+   ;db 43, SLUDGE_BOMB
+   ;db 45, BUG_BUZZ
+    db 47, PSYCHIC_M	
 	db 0
 
 DragoniteEvosMoves:
@@ -2128,12 +2144,12 @@ VenomothEvosMoves:
 	db 1, TACKLE
 	db 3, DISABLE
 	db 5, POISON_STING
-	db 7, SUPERSONIC
+	db 7, ABSORB
 	db 9, LEECH_LIFE
 	db 11, CONFUSION
    ;db 13, GNAW  
 	db 15, POISONPOWDER
-	db 17, ABSORB
+	db 17, SUPERSONIC
    ;db 19, BUG_BITE
 	db 21, STUN_SPORE
    ;db 23, POISON_FANG
