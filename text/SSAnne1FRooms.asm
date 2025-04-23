@@ -235,7 +235,7 @@ _SSAnne1FRoomsLittleGirlText::
 
 _SSAnne1FRoomsBedText1::               ; Healing bed added by G-Dubs
     text "A comfy bed!"
-	line "Time to sleep…"
+	line "Time to sleep..."
 	done
 
 _SSAnne1FRoomsBedText2::               ; Healing bed added by G-Dubs

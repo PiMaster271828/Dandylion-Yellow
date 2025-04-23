@@ -18,5 +18,5 @@ EvilTrainerList::
 	db OPP_SCIENTIST
 	db OPP_GIOVANNI
 	db OPP_ROCKET
-	db OPP_JESSIE_JAMES ; New Trainer Class Jessie_James
+	db OPP_JESSIE_JAMES ; New Trainer Class Jessie_James added by Vlad
 	db -1 ; end

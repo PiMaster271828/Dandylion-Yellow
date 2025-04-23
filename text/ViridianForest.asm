@@ -149,7 +149,7 @@ _ViridianForestYoungster8BattleText::          ; New trainer added by G-Dubs
 	line "different from"
 	cont "regular Weedle!"
     
-	para "It’s like my"
+	para "It's like my"
 	line "Weedle is in the"
 	cont "top percentage of"
 	cont "all Weedle!!!"
@@ -163,7 +163,7 @@ _ViridianForestYoungster8EndBattleText::
 
 _ViridianForestYoungster8AfterBattleText::
 	text "I got my Weedle"
-	line "from the #Mon"
+	line "from the #MON"
 	cont "TCG!"
 	done
 
