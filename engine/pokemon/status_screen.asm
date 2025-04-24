@@ -98,61 +98,6 @@ StatusScreen:
 	lb bc, BANK(BattleHudTiles3), 2
 	call CopyVideoDataDouble ; ─ ┘
 	; 4 lines removed by G-Dubs (Followed tutorial)
-	ld a, [wMonType]
-	cp MON_PARTY
-	jr z, .PartyMon
-	ld a, [wCurPartySpecies]
-	ld [wCurSpecies], a
-	ld hl, wPartyMon1Species
-	ld bc, wPartyMon2 - wPartyMon1
-	ld a, [wCurPartyMon]
-	call AddNTimes
-	ld a, [hl]
-	ld [wCurPartySpecies], a
-	ld a, [wCurPartyMon]
-	ld hl, wPartyMonOT
-	call SkipNames
-	ld de, wStringBuffer1
-	ld bc, NAME_LENGTH
-	call CopyData
-	ld a, [wCurPartyMon]
-	ld hl, wPartyMonNicknames
-	call SkipNames
-	ld de, wStringBuffer2
-	ld bc, NAME_LENGTH
-	call CopyData
-	ld a, [wCurPartyMon]
-	ld hl, wPartyMons
-	call GetPartyLocation
-	ld a, BANK(sPartyMail)
-	call GetSRAMBank
-	ld a, [hl]
-	and MAIL_MASK
-	ld [wPartyMonMail], a
-	call CloseSRAM
-	ld a, [wCurPartyMon]
-	ld hl, wPartyMon1Species
-	ld bc, wPartyMon2 - wPartyMon1
-	call AddNTimes
-	ld a, [hl]
-	ld [wCurSpecies], a
-	ld a, [wCurPartyMon]
-	ld hl, wPartyMon1
-	ld bc, wPartyMon2 - wPartyMon1
-	call AddNTimes
-	ld de, wCurPartyMon
-	ld bc, wPartyMon2 - wPartyMon1
-	call CopyData
-	jr .GotMonData
-.PartyMon
-	ld a, [wCurPartySpecies]
-	ld [wCurSpecies], a
-	ld hl, wPartyMonOT
-	ld bc, NAME_LENGTH
-	ld a, [wCurPartyMon]
-	call AddNTimes
-	ld de, wStringBuffer1
-	call CopyData
 	ldh a, [hTileAnimations]
 	push af
 	xor a
@@ -312,8 +257,6 @@ DrawLineBox:
 	jr nz, .PrintHorizLine
 	ld [hl], $6f ; ← (halfarrow ending)
 	ret
-
-PTile: INCBIN "gfx/font/P.1bpp"
 
 PrintStatsBox:
 	ld a, d
