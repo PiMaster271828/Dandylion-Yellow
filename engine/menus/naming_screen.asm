@@ -401,7 +401,7 @@ PrintNicknameAndUnderscores:
 .pokemon1
 	ld b, 10 ; pokemon max name length
 .playerOrRival1
-	ld a, $76 ; underscore tile id
+	ld a, $75 ; underscore tile id     ; Line edited by G-Dubs (Followed tutorial)
 .placeUnderscoreLoop
 	ld [hli], a
 	dec b
