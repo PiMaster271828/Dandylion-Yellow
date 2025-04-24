@@ -96,7 +96,8 @@ PlaceNextChar::
 	dict "<TM>",      TMChar
 	dict "<TRAINER>", TrainerChar
 	dict "<CONT>",    ContText
-	dict "<……>",      SixDotsChar
+    dict "<……>",      SixDotsChar ; Line kept because Vlad is trolling (Followed tutorial)
+   ;dict "<..>",      SixDotsChar ; Line edited by G-Dubs (Followed tutorial)
 	dict "<DONE>",    DoneText
 	dict "<PROMPT>",  PromptText
 	dict "<PKMN>",    PlacePKMN
@@ -181,7 +182,7 @@ TrainerCharText:: db "TRAINER@"
 PCCharText::      db "PC@"
 RocketCharText::  db "ROCKET@"
 PlacePOKeText::   db "POKé@"
-SixDotsCharText:: db "……@"
+SixDotsCharText:: db "..@"	 ; Line edited by G-Dubs (Followed tutorial)
 EnemyText::       db "Enemy @"
 PlacePKMNText::   db "<PK><MN>@"
 
@@ -562,7 +563,7 @@ TextCommandSounds::
 	db TX_SOUND_CRY_DEWGONG,          DEWGONG ; unused
 
 TextCommand_DOTS::
-; wait for button press or 30 frames while printing "…"s
+; wait for button press or 30 frames while printing "."s
 	pop hl
 	ld a, [hli]
 	ld d, a
@@ -571,7 +572,7 @@ TextCommand_DOTS::
 	ld l, c
 
 .loop
-	ld a, "…"
+	ld a, "."	; Line edited by G-Dubs (Followed tutorial)
 	ld [hli], a
 	push de
 	call Joypad
