@@ -18,6 +18,7 @@ _ViridianPokecenterCooltrainerMText::
 _ViridianPokecenterRocketText1::
 	text "Stop right there!@"
 	text_end
+	
 _ViridianPokecenterJessieBattleText::
 	text "Prepare for" 
 	line "trouble!"
@@ -47,11 +48,10 @@ _ViridianPokecenterJessieBattleText::
 	line "That's right!"
 	done
 	
-
 _ViridianPokecenterJessieEndBattleText::
 	text ""
 	line "A twerp beat us!?"
-	done
+	prompt
 	
 _ViridianPokecenterJessieAfterBattleText::
 	text "TEAM ROCKET, blast"
