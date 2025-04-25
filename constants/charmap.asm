@@ -27,33 +27,7 @@
 	charmap "<DEXEND>",  $5f
 
 ; Actual characters (from gfx/font/font_extra.png)
-
-	charmap "<BOLD_A>",  $60 ; unused
-	charmap "<BOLD_B>",  $61 ; unused
-	charmap "<BOLD_C>",  $62 ; unused
-	charmap "<BOLD_D>",  $63 ; unused
-	charmap "<BOLD_E>",  $64 ; unused
-	charmap "<BOLD_F>",  $65 ; unused
-	charmap "<BOLD_G>",  $66 ; unused
-	charmap "<BOLD_H>",  $67 ; unused
-	charmap "<BOLD_I>",  $68 ; unused
-	charmap "<BOLD_V>",  $69
-	charmap "<BOLD_S>",  $6a
-	charmap "<BOLD_L>",  $6b ; unused
-	charmap "<BOLD_M>",  $6c ; unused
-	charmap "<COLON>",   $6d ; colon with tinier dots than ":"
-	charmap "ぃ",         $6e ; hiragana small i, unused
-	charmap "ぅ",         $6f ; hiragana small u, unused
-	charmap "‘",         $70 ; opening single quote
-	charmap "’",         $71 ; closing single quote
-	charmap "“",         $72 ; opening quote
-	charmap "”",         $73 ; closing quote
-	charmap "·",         $74 ; middle dot, unused
-	charmap "…",         $75 ; ellipsis
-	charmap "ぁ",         $76 ; hiragana small a, unused
-	charmap "ぇ",         $77 ; hiragana small e, unused
-	charmap "ぉ",         $78 ; hiragana small o, unused
-
+    
 	charmap "┌",         $79
 	charmap "─",         $7a
 	charmap "┐",         $7b
@@ -68,7 +42,7 @@
 
 	charmap "<to>",      $70 ; narrow "to"
 
-	charmap "『",         $72 ; Japanese opening quote, unused
+	charmap "<BOLD_P>",  $72 ; needed for showing PP in batle menu
 	charmap "<ID>",      $73
 	charmap "№",         $74
 
@@ -78,8 +52,8 @@
 	charmap "′",         $60 ; gfx/pokedex/pokedex.png
 	charmap "″",         $61 ; gfx/pokedex/pokedex.png
 
-	; needed for StatusScreen (see engine/pokemon/status_screen.asm)
-	charmap "<BOLD_P>",  $72 ; gfx/font/P.1bpp
+	; character added by G-Dubs to make the "’" and "”" characters work in text
+	charmap "’",         $e0
 
 	; needed for LoadTownMap_Fly (see engine/items/town_map.asm)
 	charmap "▲",         $ed ; gfx/town_map/up_arrow.1bpp
@@ -169,9 +143,9 @@
 	charmap "!",         $e7
 	charmap ".",         $e8
 
-	charmap "ァ",         $e9 ; katakana small a, unused
-	charmap "ゥ",         $ea ; katakana small u, unused
-	charmap "ェ",         $eb ; katakana small e, unused
+	charmap "<COLON>",   $e9 ; Line added by G-Dubs (Followed tutorial)
+	charmap "<BOLD_V>",  $ea ; Line added by G-Dubs (Followed tutorial)
+	charmap "<BOLD_S>",  $eb ; Line added by G-Dubs (Followed tutorial)
 
 	charmap "▷",         $ec
 	charmap "▶",         $ed
@@ -179,7 +153,7 @@
 	charmap "♂",         $ef
 	charmap "¥",         $f0
 	charmap "×",         $f1
-	charmap "<DOT>",     $f2 ; decimal point; same as "." in English
+	charmap "&",         $f2 ; & symbol added by G-Dubs
 	charmap "/",         $f3
 	charmap ",",         $f4
 	charmap "♀",         $f5

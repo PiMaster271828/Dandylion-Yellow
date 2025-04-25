@@ -1,4 +1,4 @@
-DEF MAP_TILESET_SIZE EQU $60
+DEF MAP_TILESET_SIZE EQU $79  ; Tileset size changed from $60 to $79 by G-Dubs (Followed tutorial)
 
 UpdatePlayerSprite:
 	ld a, [wSpritePlayerStateData2WalkAnimationCounter]

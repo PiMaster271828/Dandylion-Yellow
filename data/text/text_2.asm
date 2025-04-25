@@ -136,7 +136,7 @@ _DexSeenOwnedText::
 	text_end
 
 _DexRatingText::
-	text "#DEX Rating<COLON>"
+	text "#DEX Rating:" ; Line edited by G-Dubs (Followed tutorial)
 	done
 
 _GymStatueText1::
@@ -923,6 +923,11 @@ _TrainerDefeatedText::
 	text "!"
 	prompt
 
+_TeamRocketDefeatedText::         ; Function added by G-Dubs to handle Jessie and James' text
+	text "<PLAYER> defeated"
+	line "JESSIE & JAMES!"
+	prompt
+
 _PlayerMonFaintedText::
 	text_ram wBattleMonNick
 	text_start
@@ -965,10 +970,28 @@ _TrainerAboutToUseText::
 	line "change #MON?"
 	done
 
+_TeamRocketAboutToUseText::  ; Function added by G-Dubs to handle Jessie and James' text
+	text "JESSIE & JAMES"
+	line "are about to use"
+	cont "@"
+	text_ram wEnemyMonNick
+	text "!"
+
+	para "Will <PLAYER>"
+	line "change #MON?"
+	done
+
 _TrainerSentOutText::
 	text_ram wTrainerName
 	text " sent"
 	line "out @"
+	text_ram wEnemyMonNick
+	text "!"
+	done
+
+_TeamRocketSentOutText::      ; Function added by G-Dubs to handle Jessie and James' text
+    text "JESSIE & JAMES"
+	line "sent out @"
 	text_ram wEnemyMonNick
 	text "!"
 	done

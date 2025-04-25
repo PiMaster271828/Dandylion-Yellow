@@ -65,12 +65,14 @@ NameRatersHouseNameRaterText:
 	call NameRatersHouseCheckMonOTScript
 	ld hl, .ATrulyImpeccableNameText
 	jr c, .done
+	call ReloadTilesetTilePatterns     ; Line added by G-Dubs (Followed tutorial)
 	ld hl, .GiveItANiceNameText
 	call NameRatersHouseYesNoScript
 	jr nz, .did_not_rename
 	ld hl, .WhatShouldWeNameItText
 	call PrintText
 	farcall DisplayNameRaterScreen
+	call ReloadTilesetTilePatterns     ; Line added by G-Dubs (Followed tutorial)
 	jr c, .did_not_rename
 	ld hl, .PokemonHasBeenRenamedText
 .done

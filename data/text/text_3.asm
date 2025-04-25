@@ -10,6 +10,11 @@ _TrainerWantsToFightText::
 	line "to fight!"
 	prompt
 
+_TeamRocketWantToFightText::      ; Function added by G-Dubs to handle Jessie and James' text
+    text "JESSIE & JAMES" 
+	line "want to fight!"
+	prompt
+		
 _UnveiledGhostText::
 	text "SILPH SCOPE"
 	line "unveiled the"

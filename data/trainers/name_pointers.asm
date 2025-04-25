@@ -81,7 +81,7 @@ TrainerNamePointers:
 .RocketName:        db "ROCKET@"
 .CooltrainerMName:  db "COOLTRAINER♂@"
 .CooltrainerFName:  db "COOLTRAINER♀@"
-.JessieJamesName:   db "JESSIE×JAMES@"      ; New trainer class added by Vlad
+.JessieJamesName:   db "JESSIE & JAMES"     ; New trainer class added by Vlad       ; Name changed by G-Dubs
 .PokeFanMName:      db "POKéFAN♂@"          ; New trainer class added by G-Dubs
 .PokeFanFName:      db "POKéFAN♀@"          ; New trainer class added by G-Dubs
 .GuitaristName:     db "GUITARIST@"         ; New trainer class added by G-Dubs	

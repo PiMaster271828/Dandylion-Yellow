@@ -47,7 +47,7 @@ TrainerNames::
 	li "CHANNELER"
 	li "AGATHA"
 	li "LANCE"
-	li "JESSIE×JAMES"                  ; New trainer class added by Vlad
+	li "JESSIE & JAMES"                ; New trainer class added by Vlad       ; Name changed by G-Dubs
 	li "POKéFAN♂"                      ; New trainer class added by G-Dubs
 	li "POKéFAN♀"                      ; New trainer class added by G-Dubs
 	li "GUITARIST"                     ; New trainer class added by G-Dubs	

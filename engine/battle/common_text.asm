@@ -33,7 +33,13 @@ PrintBeginningBattleText:
 	call .playSFX
 	ld c, 20
 	call DelayFrames
-	ld hl, TrainerWantsToFightText
+	ld a, [wCurOpponent]               ; Comparison added by G-Dubs to check for Jessie and James
+	cp OPP_JESSIE_JAMES
+	jr z, .TeamRocket                  ; Different text handler for Jessie and James than other trainers
+	ld hl, TrainerWantsToFightText      
+	jr .wildBattle                     ; This prevents fall-through to .TeamRocket (Basically jumps immediately to .WildBattle)
+.TeamRocket
+    ld hl, TeamRocketWantToFightText   ; No need to jump to .WildBattle, since it's the next instruction                    
 .wildBattle
 	ld a, [wBattleType]
 	and a
@@ -100,6 +106,10 @@ EnemyAppearedText:
 
 TrainerWantsToFightText:
 	text_far _TrainerWantsToFightText
+	text_end
+
+TeamRocketWantToFightText:		            ; Function added by G-Dubs to handle Jessie and James' text
+	text_far _TeamRocketWantToFightText
 	text_end
 
 UnveiledGhostText:

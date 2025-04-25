@@ -33,7 +33,7 @@ AskName:
 	and a
 	jr nz, .inBattle
 	call ReloadMapSpriteTilePatterns
-	;call ReloadTilesetTilePatterns     ; Line added by G-Dubs (Followed tutorial)
+	call ReloadTilesetTilePatterns     ; Line added by G-Dubs (Followed tutorial)
 .inBattle
 	call LoadScreenTilesFromBuffer1
 	pop hl
@@ -433,7 +433,7 @@ PrintNicknameAndUnderscores:
 	ld b, $0
 	hlcoord 10, 3
 	add hl, bc
-	ld [hl], $76 ; raised underscore tile id
+	ld [hl], $76 ; raised underscore tile id     ; Line edited by G-Dubs (Followed tutorial)
 	ret
 
 DakutensAndHandakutens:

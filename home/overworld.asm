@@ -868,7 +868,7 @@ LoadTilesetTilePatternData::
 	ld a, [wTilesetGfxPtr + 1]
 	ld h, a
 	ld de, vTileset
-	ld bc, $600
+	ld bc, $790              ; Tile limit changed from $600 to $790 by G-Dubs (Followed tutorial)
 	ld a, [wTilesetBank]
 	jp FarCopyData
 

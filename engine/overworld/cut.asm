@@ -43,6 +43,7 @@ UsedCut:
 	call GBPalWhiteOutWithDelay3
 	call ClearSprites
 	call RestoreScreenTilesAndReloadTilePatterns
+	call ReloadMapData                                ; Line added by G-Dubs (Followed tutorial)
 	ld a, SCREEN_HEIGHT_PX
 	ldh [hWY], a
 	call Delay3

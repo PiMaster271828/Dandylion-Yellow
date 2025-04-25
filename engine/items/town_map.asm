@@ -351,6 +351,7 @@ ExitTownMap:
 	call ClearSprites
 	call LoadPlayerSpriteGraphics
 	call LoadFontTilePatterns
+	call ReloadTilesetTilePatterns     ; Line added by G-Dubs (Followed tutorial)
 	call UpdateSprites
 	jp RunDefaultPaletteCommand
 

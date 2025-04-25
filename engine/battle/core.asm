@@ -945,7 +945,14 @@ TrainerBattleVictory:
 	cp LINK_STATE_BATTLING
 	ld a, b
 	call nz, PlayBattleVictoryMusic
-	ld hl, TrainerDefeatedText
+	ld a, [wCurOpponent]               ; Comparison added by G-Dubs to check for Jessie and James
+    cp OPP_JESSIE_JAMES
+	jr z, .TeamRocketDefeated          ; Different text handler for Jessie and James than other trainers
+	ld hl, TrainerDefeatedText           
+	jr .ContinueDefeat                 ; This prevents fall-through to .TeamRocketDefeated (Basically jumps immediately to .ContinueDefeat)
+.TeamRocketDefeated
+    ld hl, TeamRocketDefeatedText
+.ContinueDefeat                        ; This provides a jump point if skipping .TeamRocketDefeat
 	call PrintText
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
@@ -968,6 +975,10 @@ MoneyForWinningText:
 
 TrainerDefeatedText:
 	text_far _TrainerDefeatedText
+	text_end
+
+TeamRocketDefeatedText:
+	text_far _TeamRocketDefeatedText
 	text_end
 
 PlayBattleVictoryMusic:
@@ -1413,7 +1424,14 @@ EnemySendOutFirstMon:
 	ld a, [wOptions]
 	bit BIT_BATTLE_SHIFT, a
 	jr nz, .next4
-	ld hl, TrainerAboutToUseText
+	ld a, [wCurOpponent]               ; Comparison added by G-Dubs to check for Jessie and James
+	cp OPP_JESSIE_JAMES
+	jr z, .TeamRocketAbout             ; Different text handler for Jessie and James than other trainers
+	ld hl, TrainerAboutToUseText           
+	jr .ContinueAbout                  ; This prevents fall-through to .TeamRocketAbout (Basically jumps immediately to .ContinueAbout)
+.TeamRocketAbout
+    ld hl, TeamRocketAboutToUseText
+.ContinueAbout                         ; This provides a jump point if skipping .TeamRocketAbout
 	call PrintText
 	hlcoord 0, 7
 	lb bc, 8, 1
@@ -1456,7 +1474,14 @@ EnemySendOutFirstMon:
 	ld b, SET_PAL_BATTLE
 	call RunPaletteCommand
 	call GBPalNormal
-	ld hl, TrainerSentOutText
+	ld a, [wCurOpponent]               ; Comparison added by G-Dubs to check for Jessie and James
+	cp OPP_JESSIE_JAMES
+	jr z, .TeamRocketSend              ; Different text handler for Jessie and James than other trainers
+	ld hl, TrainerSentOutText           
+	jr .ContinueSend                   ; This prevents fall-through to .TeamRocketSend (Basically jumps immediately to .ContinueSend)
+.TeamRocketSend
+    ld hl, TeamRocketSentOutText
+.ContinueSend                          ; This provides a jump point if skipping .TeamRocketSend
 	call PrintText
 	ld a, [wEnemyMonSpecies2]
 	ld [wCurPartySpecies], a
@@ -1484,8 +1509,16 @@ TrainerAboutToUseText:
 	text_far _TrainerAboutToUseText
 	text_end
 
+TeamRocketAboutToUseText:                   ; Function added by G-Dubs to handle Jessie and James' text
+	text_far _TeamRocketAboutToUseText
+	text_end
+
 TrainerSentOutText:
 	text_far _TrainerSentOutText
+	text_end
+
+TeamRocketSentOutText:	                    ; Function added by G-Dubs to handle Jessie and James' text
+	text_far _TeamRocketSentOutText
 	text_end
 
 ; tests if the player has any pokemon that are not fainted
@@ -1967,7 +2000,7 @@ DrawEnemyHUDAndHPBar:
 	and a
 	jr z, .notOwned
 	hlcoord 1, 1
-	ld [hl], $72 ; replace this with your Poké Ball icon or other character
+	ld [hl], $72 ; replace this with your Poké Ball icon or other character (Originally used $72, but changed to $78 (The last tile on the font_battle_extra))
 .notOwned
 	pop hl
 	ld de, wEnemyMonNick
@@ -3072,6 +3105,10 @@ PrintMenuItem:
 	hlcoord 1, 9
 	ld de, TypeText
 	call PlaceString
+	hlcoord 1, 11       ; Line added by G-Dubs (Followed tutorial)
+	ld a, "<BOLD_P>"    ; Line added by G-Dubs (Followed tutorial)
+	ld [hli], a         ; Line added by G-Dubs (Followed tutorial)
+	ld [hl], "<BOLD_P>" ; Line added by G-Dubs (Followed tutorial)
 	hlcoord 7, 11
 	ld [hl], "/"
 	hlcoord 5, 9

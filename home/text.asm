@@ -182,7 +182,7 @@ TrainerCharText:: db "TRAINER@"
 PCCharText::      db "PC@"
 RocketCharText::  db "ROCKET@"
 PlacePOKeText::   db "POKé@"
-SixDotsCharText:: db "..@"	 ; Line edited by G-Dubs (Followed tutorial)
+SixDotsCharText:: db "..@"	      ; Line edited by G-Dubs (Followed tutorial)
 EnemyText::       db "Enemy @"
 PlacePKMNText::   db "<PK><MN>@"
 
