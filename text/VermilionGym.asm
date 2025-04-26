@@ -196,7 +196,8 @@ _VermilionGymSuperNerd3BattleText::              ; New trainer added by G-Dubs
 	done
 
 _VermilionGymSuperNerd3EndBattleText::
-	text "Bummer..."	
+	text " "
+	line "Bummer..."	
 	line "wiped out."	
 	prompt
 

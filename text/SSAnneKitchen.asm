@@ -1,4 +1,21 @@
-_SSAnneKitchenCook1Text::
+_SSAnneKitchenCook1BattleText::        ; NPC changed to trainer by G-Dubs
+	text "Sacre bleu! You"
+	line "dare interrupt my"
+	cont "culinary"
+	cont "masterpiece? En"
+	cont "garde, mon ami!"
+	done
+
+_SSAnneKitchenCook1EndBattleText::
+	text "Zut alors!"
+	line "My soufflé of a"
+	cont "team has just"
+	cont "collapsed! "
+	cont "Perhaps I added"
+	cont "too much spice..."	
+	prompt
+
+_SSAnneKitchenCook1AfterBattleText::
 	text "You, mon petit!"
 	line "We're busy here!"
 	cont "Out of the way!"

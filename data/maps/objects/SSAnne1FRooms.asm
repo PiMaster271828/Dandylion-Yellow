@@ -20,10 +20,10 @@ SSAnne1FRooms_Object:
 	warp_event  0,  0, SS_ANNE_1F, 3   ; Warp event 1
 	warp_event 10,  0, SS_ANNE_1F, 4   ; Warp event 2
 	warp_event 20,  0, SS_ANNE_1F, 5   ; Warp event 3
-	warp_event  0, 10, SS_ANNE_1F, 6   ; Warp event 4
-	warp_event 10, 10, SS_ANNE_1F, 7   ; Warp event 5
-	warp_event 20, 10, SS_ANNE_1F, 8   ; Warp event 6
-	warp_event 30,  0, SS_ANNE_1F, 9   ; Warp event 7	 ; New warp event added by G-Dubs
+	warp_event 30,  0, SS_ANNE_1F, 6   ; Warp event 4
+	warp_event  0, 10, SS_ANNE_1F, 7   ; Warp event 5
+	warp_event 10, 10, SS_ANNE_1F, 8   ; Warp event 6
+	warp_event 20, 10, SS_ANNE_1F, 9   ; Warp event 7	 ; New warp event added by G-Dubs
 	warp_event 30, 10, SS_ANNE_1F, 10  ; Warp event 8	 ; New warp event added by G-Dubs
 
 	def_bg_events

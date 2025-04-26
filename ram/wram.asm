@@ -2182,7 +2182,7 @@ wRoute9CurScript:: db
 wRoute10CurScript:: db
 wMtMoon1FCurScript:: db
 wMtMoonB2FCurScript:: db
-wSSAnne1FCurScript:: db	          ; SS Anne 1F script added (replaced ds 1) 
+wSSAnne1FCurScript:: db	          ; SS Anne 1F script added by G-Dubs (replaced ds 1) 
 wSSAnne1FRoomsCurScript:: db
 wSSAnne2FRoomsCurScript:: db
 wRoute22CurScript:: db
@@ -2191,8 +2191,9 @@ wRedsHouse2FCurScript:: db
 wViridianMartCurScript:: db
 wRoute22GateCurScript:: db
 wCeruleanCityCurScript:: db
-	ds 7                          ; Changed from 7 to 4 by G-Dubs to make room for other scripts  
+	ds 6                          ; Changed from 7 to 6 by G-Dubs to make room for other scripts  
 wSSAnneBowCurScript:: db
+wSSAnneKitchenCurScript:: db      ; SS Anne Kitchen script added by G-Dubs (reduced total ds by 1)
 wViridianForestCurScript:: db
 wMuseum1FCurScript:: db
 wRoute13CurScript:: db
