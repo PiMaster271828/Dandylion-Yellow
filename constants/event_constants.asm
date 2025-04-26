@@ -176,22 +176,22 @@
 	const EVENT_GOT_COIN_CASE                                                                      ; $1E0
 
 ; Fuchsia City events
-	const_next $238
-	const EVENT_GOT_HM04
-	const EVENT_GAVE_GOLD_TEETH
-	const_skip 20
-	const EVENT_SAFARI_GAME_OVER
-	const EVENT_IN_SAFARI_ZONE
-	const_skip 8
-	const EVENT_GOT_TM06
-	const EVENT_BEAT_KOGA
-	const EVENT_BEAT_FUCHSIA_GYM_TRAINER_0
-	const EVENT_BEAT_FUCHSIA_GYM_TRAINER_1
-	const EVENT_BEAT_FUCHSIA_GYM_TRAINER_2
-	const EVENT_BEAT_FUCHSIA_GYM_TRAINER_3
-	const EVENT_BEAT_FUCHSIA_GYM_TRAINER_4
-	const EVENT_BEAT_FUCHSIA_GYM_TRAINER_5
-
+	const_next $238	
+	const EVENT_GOT_HM04																		   ; $238
+	const EVENT_GAVE_GOLD_TEETH																	   ; $239
+	const_skip 20																				   ; $23A - $24D
+	const EVENT_SAFARI_GAME_OVER																   ; $24E
+	const EVENT_IN_SAFARI_ZONE																	   ; $24F
+	const_skip 8																				   ; $250 - $257
+	const EVENT_GOT_TM06																		   ; $258
+	const EVENT_BEAT_KOGA																		   ; $259
+	const EVENT_BEAT_FUCHSIA_GYM_TRAINER_0														   ; $25A
+	const EVENT_BEAT_FUCHSIA_GYM_TRAINER_1														   ; $25B
+	const EVENT_BEAT_FUCHSIA_GYM_TRAINER_2				                                           ; $25C		
+	const EVENT_BEAT_FUCHSIA_GYM_TRAINER_3														   ; $25D
+	const EVENT_BEAT_FUCHSIA_GYM_TRAINER_4														   ; $25E
+	const EVENT_BEAT_FUCHSIA_GYM_TRAINER_5														   ; $25F
+	
 ; Cinnabar Island events
 	const_next $278
 	const EVENT_MANSION_SWITCH_ON                                                                  ; $278
@@ -225,30 +225,30 @@
 
 ; Saffron City events
 	const_next $340
-	const EVENT_GOT_TM31
-	const_skip 15
-	const EVENT_DEFEATED_FIGHTING_DOJO
-	const EVENT_BEAT_KARATE_MASTER
-	const EVENT_BEAT_FIGHTING_DOJO_TRAINER_0
-	const EVENT_BEAT_FIGHTING_DOJO_TRAINER_1
-	const EVENT_BEAT_FIGHTING_DOJO_TRAINER_2
-	const EVENT_BEAT_FIGHTING_DOJO_TRAINER_3
-	const EVENT_GOT_HITMONLEE
-	const EVENT_GOT_HITMONCHAN
-	const_skip 8
-	const EVENT_GOT_TM46
-	const EVENT_BEAT_SABRINA
-	const EVENT_BEAT_SAFFRON_GYM_TRAINER_0
-	const EVENT_BEAT_SAFFRON_GYM_TRAINER_1
-	const EVENT_BEAT_SAFFRON_GYM_TRAINER_2
-	const EVENT_BEAT_SAFFRON_GYM_TRAINER_3
-	const EVENT_BEAT_SAFFRON_GYM_TRAINER_4
-	const EVENT_BEAT_SAFFRON_GYM_TRAINER_5
-	const EVENT_BEAT_SAFFRON_GYM_TRAINER_6
-	const_skip 46
-	const EVENT_SILPH_CO_RECEPTIONIST_AT_DESK
-	const_skip 24
-	const EVENT_GOT_TM29
+	const EVENT_GOT_TM31	                                                                       ; $340
+	const_skip 15	                                                                               ; $341 - $34F
+	const EVENT_DEFEATED_FIGHTING_DOJO		                                                       ; $350
+	const EVENT_BEAT_KARATE_MASTER		                                                           ; $351
+	const EVENT_BEAT_FIGHTING_DOJO_TRAINER_0		                                               ; $352
+	const EVENT_BEAT_FIGHTING_DOJO_TRAINER_1			                                           ; $353
+	const EVENT_BEAT_FIGHTING_DOJO_TRAINER_2			                                           ; $354
+	const EVENT_BEAT_FIGHTING_DOJO_TRAINER_3				                                       ; $355
+	const EVENT_GOT_HITMONLEE			                                                           ; $356
+	const EVENT_GOT_HITMONCHAN				                                                       ; $357
+	const_skip 8		                                                                           ; $358 - $35F
+	const EVENT_GOT_TM46                                                                           ; $360
+	const EVENT_BEAT_SABRINA	                                                                   ; $361
+	const EVENT_BEAT_SAFFRON_GYM_TRAINER_0	                                                       ; $362
+	const EVENT_BEAT_SAFFRON_GYM_TRAINER_1					                                       ; $363	
+	const EVENT_BEAT_SAFFRON_GYM_TRAINER_2	                                                       ; $364
+	const EVENT_BEAT_SAFFRON_GYM_TRAINER_3	                                                       ; $365
+	const EVENT_BEAT_SAFFRON_GYM_TRAINER_4	                                                       ; $366
+	const EVENT_BEAT_SAFFRON_GYM_TRAINER_5	                                                       ; $367
+	const EVENT_BEAT_SAFFRON_GYM_TRAINER_6	                                                       ; $368
+	const_skip 46	                                                                               ; $369 - $394
+	const EVENT_SILPH_CO_RECEPTIONIST_AT_DESK	                                                   ; $395
+	const_skip 24	                                                                               ; $396 - $3AD
+	const EVENT_GOT_TM29	                                                                       ; $3AE
 
 ; Route 1 events
 	const_next $3C0                                                                                
@@ -309,57 +309,57 @@
 
 ; Route 8 events
 	const_next $430
-	const_skip
-	const EVENT_BEAT_ROUTE_8_TRAINER_0
-	const EVENT_BEAT_ROUTE_8_TRAINER_1
-	const EVENT_BEAT_ROUTE_8_TRAINER_2
-	const EVENT_BEAT_ROUTE_8_TRAINER_3
-	const EVENT_BEAT_ROUTE_8_TRAINER_4
-	const EVENT_BEAT_ROUTE_8_TRAINER_5
-	const EVENT_BEAT_ROUTE_8_TRAINER_6
-	const EVENT_BEAT_ROUTE_8_TRAINER_7
-	const EVENT_BEAT_ROUTE_8_TRAINER_8
+	const_skip			                                                                           ; $430
+	const EVENT_BEAT_ROUTE_8_TRAINER_0			 	                                               ; $431
+	const EVENT_BEAT_ROUTE_8_TRAINER_1		                                                       ; $432
+	const EVENT_BEAT_ROUTE_8_TRAINER_2	                                                           ; $433
+	const EVENT_BEAT_ROUTE_8_TRAINER_3		                                                       ; $434
+	const EVENT_BEAT_ROUTE_8_TRAINER_4	                                                           ; $435
+	const EVENT_BEAT_ROUTE_8_TRAINER_5	                                                           ; $436
+	const EVENT_BEAT_ROUTE_8_TRAINER_6	                                                 	       ; $437
+	const EVENT_BEAT_ROUTE_8_TRAINER_7                                                             ; $438
+	const EVENT_BEAT_ROUTE_8_TRAINER_8                                                             ; $439
 
 ; Route 9 events
 	const_next $440
-	const_skip
-	const EVENT_BEAT_ROUTE_9_TRAINER_0
-	const EVENT_BEAT_ROUTE_9_TRAINER_1
-	const EVENT_BEAT_ROUTE_9_TRAINER_2
-	const EVENT_BEAT_ROUTE_9_TRAINER_3
-	const EVENT_BEAT_ROUTE_9_TRAINER_4
-	const EVENT_BEAT_ROUTE_9_TRAINER_5
-	const EVENT_BEAT_ROUTE_9_TRAINER_6
-	const EVENT_BEAT_ROUTE_9_TRAINER_7
-	const EVENT_BEAT_ROUTE_9_TRAINER_8
+	const_skip	                                                                                   ; $440
+	const EVENT_BEAT_ROUTE_9_TRAINER_0			                                  	               ; $441
+	const EVENT_BEAT_ROUTE_9_TRAINER_1		                                                       ; $442
+	const EVENT_BEAT_ROUTE_9_TRAINER_2	                                                           ; $443
+	const EVENT_BEAT_ROUTE_9_TRAINER_3                                                             ; $444
+	const EVENT_BEAT_ROUTE_9_TRAINER_4                                                             ; $445
+	const EVENT_BEAT_ROUTE_9_TRAINER_5                                                             ; $446
+	const EVENT_BEAT_ROUTE_9_TRAINER_6                                                             ; $447
+	const EVENT_BEAT_ROUTE_9_TRAINER_7                                                             ; $448
+	const EVENT_BEAT_ROUTE_9_TRAINER_8	                                                           ; $449
 
 ; Route 10 events
 	const_next $450
-	const_skip
-	const EVENT_BEAT_ROUTE_10_TRAINER_0
-	const EVENT_BEAT_ROUTE_10_TRAINER_1
-	const EVENT_BEAT_ROUTE_10_TRAINER_2
-	const EVENT_BEAT_ROUTE_10_TRAINER_3
-	const EVENT_BEAT_ROUTE_10_TRAINER_4
-	const EVENT_BEAT_ROUTE_10_TRAINER_5
-	const_skip 2
-	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_0
-	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_1
-	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_2
-	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_3
-	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_4
-	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_5
-	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_6
-	const_skip
-	const EVENT_BEAT_POWER_PLANT_VOLTORB_0
-	const EVENT_BEAT_POWER_PLANT_VOLTORB_1
-	const EVENT_BEAT_POWER_PLANT_VOLTORB_2
-	const EVENT_BEAT_POWER_PLANT_VOLTORB_3
-	const EVENT_BEAT_POWER_PLANT_VOLTORB_4
-	const EVENT_BEAT_POWER_PLANT_VOLTORB_5
-	const EVENT_BEAT_POWER_PLANT_VOLTORB_6
-	const EVENT_BEAT_POWER_PLANT_VOLTORB_7
-	const EVENT_BEAT_ZAPDOS
+	const_skip	                                                                                   ; $450
+	const EVENT_BEAT_ROUTE_10_TRAINER_0                                                            ; $451
+	const EVENT_BEAT_ROUTE_10_TRAINER_1                                                            ; $452
+	const EVENT_BEAT_ROUTE_10_TRAINER_2                                                            ; $453
+	const EVENT_BEAT_ROUTE_10_TRAINER_3                                                            ; $454
+	const EVENT_BEAT_ROUTE_10_TRAINER_4                                                            ; $455
+	const EVENT_BEAT_ROUTE_10_TRAINER_5                                                            ; $456
+	const_skip 2                                                                                   ; $457 - $458
+	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_0	                                                   ; $459
+	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_1                                                       ; $45A
+	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_2                                                       ; $45B
+	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_3                                                       ; $45C
+	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_4                                                       ; $45D
+	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_5                                                       ; $45E
+	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_6                                                       ; $45F
+	const_skip                                                                                     ; $460
+	const EVENT_BEAT_POWER_PLANT_VOLTORB_0                                                         ; $461
+	const EVENT_BEAT_POWER_PLANT_VOLTORB_1                                                         ; $462
+	const EVENT_BEAT_POWER_PLANT_VOLTORB_2                                                         ; $463
+	const EVENT_BEAT_POWER_PLANT_VOLTORB_3                                                         ; $464
+	const EVENT_BEAT_POWER_PLANT_VOLTORB_4                                                         ; $465
+	const EVENT_BEAT_POWER_PLANT_VOLTORB_5                                                         ; $466
+	const EVENT_BEAT_POWER_PLANT_VOLTORB_6                                                         ; $467
+	const EVENT_BEAT_POWER_PLANT_VOLTORB_7                                                         ; $468
+	const EVENT_BEAT_ZAPDOS                                                                        ; $469
 
 ; Route 11 events
 	const_next $470                                                           
@@ -685,6 +685,17 @@
 	const EVENT_BEAT_SS_ANNE_10_TRAINER_4                                                          ; $615
 	const EVENT_BEAT_SS_ANNE_10_TRAINER_5                                                          ; $616
 
+; S.S. Anne Kitchen Events                       ; Section added by G-Dubs
+	const_next $630
+	const_skip 	                                                                                   ; $630
+	const EVENT_BEAT_SS_ANNE_11_TRAINER_0        ; NPC changed to trainer by G-Dubs                ; $631
+  /*const EVENT_BEAT_SS_ANNE_11_TRAINER_1                                                          ; $632
+	const EVENT_BEAT_SS_ANNE_11_TRAINER_2                                                          ; $633
+	const EVENT_BEAT_SS_ANNE_11_TRAINER_3                                                          ; $634
+	const EVENT_BEAT_SS_ANNE_11_TRAINER_4                                                          ; $635
+	const EVENT_BEAT_SS_ANNE_11_TRAINER_5                                                          ; $636
+	const EVENT_BEAT_SS_ANNE_11_TRAINER_6                                                          ; $637
+  */
 ; Victory Road 3F events
 	const_next $660
 	const EVENT_VICTORY_ROAD_3_BOULDER_ON_SWITCH1
