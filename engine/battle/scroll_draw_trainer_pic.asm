@@ -11,25 +11,34 @@ _ScrollTrainerPicAfterBattle:
 .scrollLoop
 	inc c
 	ld a, c
-	cp 7
+	cp 10
 	ret z
 	ld d, $0
 	push bc
 	push hl
+	ld b, $0
 .drawTrainerPicLoop
-	call DrawTrainerPicColumn
-	inc hl
-	ld a, 7
-	add d
-	ld d, a
-	dec c
-	jr nz, .drawTrainerPicLoop
-	ld c, 4
-	call DelayFrames
-	pop hl
-	pop bc
-	dec hl
-	jr .scrollLoop
+    ld a, b
+    cp 7
+    jr c, .normal
+	call DrawTrainerPicColumnBlank
+	jr .blank
+.normal
+    call DrawTrainerPicColumn
+    ld a, 7
+    add d
+    ld d, a
+.blank
+    inc hl
+	inc b
+    dec c
+    jr nz, .drawTrainerPicLoop
+    ld c, 4
+    call DelayFrames
+    pop hl
+    pop bc
+    dec hl
+    jr .scrollLoop
 
 ; write one 7-tile column of the trainer pic to the tilemap
 DrawTrainerPicColumn:
@@ -48,3 +57,18 @@ DrawTrainerPicColumn:
 	pop de
 	pop hl
 	ret
+
+DrawTrainerPicColumnBlank:
+	push hl
+	push bc
+	ld e, 7
+.loop
+	ld [hl], $7F ; blank tile
+	ld bc, SCREEN_WIDTH
+	add hl, bc
+	dec e
+	jr nz, .loop
+	pop bc
+	pop hl
+	ret
+	
