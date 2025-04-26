@@ -871,13 +871,13 @@ Func_fed01:
 	jp Func_fe7ca
 
 Text_fed12:
-	db   "けんしろう@" ; "KENSHIROU@"
+	db   /*"けんしろう"*/"KENSHIROU@" ; "KENSHIROU@"
 
 Text_fed18:
-	db   "テスト ファイト@" ; "FIGHT TEST@"
+	db   /*"テスト ファイト"*/"FIGHT TEST@" ; "FIGHT TEST@"
 
 Text_fed21:
-	db   "№．  なまえ    レべル@" ; "№．  NAME  LEVEL@"
+	db   /*"なまえ    レべル"*/"№．  NAME  LEVEL@" ; "№．  NAME  LEVEL@"
 
 Text_fed30:
 	db   "１．▶０００ ーーーーー  ０００"
@@ -894,13 +894,13 @@ Text_feda2:
 	db   "ーーーーー@"
 
 Text_feda8:
-	db   "ワイルドモンスター@" ; "WILD #MON@"
+	db   /*"ワイルドモンスター"*/"WILD #MON@" ; "WILD #MON@"
 
 Text_fedb2:
-	db   "ディーラー    @" ; "TRAINER      @"
+	db   /*"ディーラー"*/"TRAINER    @" ; "TRAINER      @"
 
 Text_fedbc:
-	db   "№．  なまえ        レべル" ; "№．  NAME     LABEL"
+	db   /*"なまえ        レべル"*/"№．  NAME     LABEL" ; "№．  NAME     LABEL"
 	next ""
 Text_fedcf:
 	db   "０００ ーーーーーーーーーー ０００@"
@@ -1359,11 +1359,11 @@ Func_ff0c4:
 	ret
 
 Text_ff113:
-	db   "たいりき"  ; hp
-	next "こうげき"  ; attack
-	next "ぼうぎょ"  ; defense
-	next "すばやさ"  ; speed
-	next "とくしゅ@" ; special
+	db   /*"たいりき"*/"hp"  ; hp
+	next /*"こうげき"*/"attack"  ; attack
+	next /*"ぼうぎょ"*/"defense"  ; defense
+	next /*"すばやさ"*/"speed"  ; speed
+	next /*"とくしゅ"*/"special@" ; special
 
 Func_ff12c:
 	ld a, [wCurEnemyLevel]

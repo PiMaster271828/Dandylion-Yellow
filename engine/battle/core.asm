@@ -2000,7 +2000,7 @@ DrawEnemyHUDAndHPBar:
 	and a
 	jr z, .notOwned
 	hlcoord 1, 1
-	ld [hl], $72 ; replace this with your Poké Ball icon or other character (Originally used $72, but changed to $78 (The last tile on the font_battle_extra))
+	ld [hl], $9e ; replace this with your Poké Ball icon or other character (Originally used $72, but changed to $78 (The last tile on the font_battle_extra))
 .notOwned
 	pop hl
 	ld de, wEnemyMonNick
