@@ -21,9 +21,33 @@ _SSAnneKitchenCook1AfterBattleText::
 	cont "Out of the way!"
 	done
 
-_SSAnneKitchenCook2Text::
-	text "I saw an odd ball"
-	line "in the trash."
+_SSAnneKitchenCook2BattleText::			; NPC changed to trainer by G-Dubs
+	text "I'm behind on my"
+	line "prep work! Don't"
+	cont "bother me now!"
+	done
+
+_SSAnneKitchenCook2EndBattleText::
+	text "Now I'm"
+	line "really behind!"
+	prompt
+
+_SSAnneKitchenCook2AfterBattleText::
+	text "This kitchen is a"
+	line "madhouse! So much"
+	cont "to do, so little"
+    cont "time!"
+
+	para "Have you hear"
+	line "about SNORLAX?"
+
+	para "Rumor has it,"
+	line "that all it does"
+	cont "is eat and sleep!"
+
+	para "Ah!..."
+	line "That would be the"
+	cont "life!"
 	done
 
 _SSAnneKitchenCook3Text::
@@ -41,13 +65,14 @@ _SSAnneKitchenCook4Text::
 	done
 
 _SSAnneKitchenCook5Text::
-	text "Did you hear about"
-	line "SNORLAX?"
-
-	para "All it does is"
-	line "eat and sleep!"
+	text "I saw an odd ball"
+	line "in the trash."
 	done
-
+/*
+Battle Text: "You want to root through the garbage? You must defeat me first!"
+End Battle Text: "Maybe I should have thrown it back."
+After Battle Text: "I saw an odd ball in the trash."
+*/
 _SSAnneKitchenCook6Text::
 	text "Snivel...Sniff..."
 

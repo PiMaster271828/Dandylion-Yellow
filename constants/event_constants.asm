@@ -689,8 +689,8 @@
 	const_next $630
 	const_skip 	                                                                                   ; $630
 	const EVENT_BEAT_SS_ANNE_11_TRAINER_0        ; NPC changed to trainer by G-Dubs                ; $631
-  /*const EVENT_BEAT_SS_ANNE_11_TRAINER_1                                                          ; $632
-	const EVENT_BEAT_SS_ANNE_11_TRAINER_2                                                          ; $633
+    const EVENT_BEAT_SS_ANNE_11_TRAINER_1                                                          ; $632
+  /*const EVENT_BEAT_SS_ANNE_11_TRAINER_2                                                          ; $633
 	const EVENT_BEAT_SS_ANNE_11_TRAINER_3                                                          ; $634
 	const EVENT_BEAT_SS_ANNE_11_TRAINER_4                                                          ; $635
 	const EVENT_BEAT_SS_ANNE_11_TRAINER_5                                                          ; $636

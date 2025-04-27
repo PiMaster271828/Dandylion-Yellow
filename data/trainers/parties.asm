@@ -965,10 +965,10 @@ WaiterData:
 ChefData:
 ; S.S Anne Kitchen
     db 18, MANKEY, MAGIKARP, FARFETCHD, SHELLDER, 0                                                          ; Chef 1                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-	db 19, GRIMER, KOFFING, GRIMER, 0		                                                                 ; Chef 2                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+	db 19, PIDGEOTTO, SLOWPOKE, FARFETCHD, 0                                                                 ; Chef 2                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 	db 20, VENONAT, PONYTA, POLIWHIRL, 0 	                                                                 ; Chef 3                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 	db 22, EXEGGCUTE, DIGLETT, PARAS, 0																		 ; Chef 4		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-	db 23, DROWZEE, LICKITUNG, SLOWPOKE, 0 	                                                                 ; Chef 5		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+	db 23, GRIMER, KOFFING, GRIMER, 0    	                                                                 ; Chef 5		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 	db 24, ODDISH, FARFETCHD, WEEPINBELL, 0                                                                  ; Chef 6		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 	db 25, TANGELA, DRATINI, TAUROS, CHARMELEON, 0                                                           ; Chef 7		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 

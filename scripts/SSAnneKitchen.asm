@@ -16,10 +16,10 @@ SSAnneKitchen_ScriptPointers:
 SSAnneKitchen_TextPointers:
 	def_text_pointers
 	dw_const SSAnneKitchenCook1Text, TEXT_SSANNEKITCHEN_COOK1   ; NPC changed to trainer by G-Dubs
-	dw_const SSAnneKitchenCook2Text, TEXT_SSANNEKITCHEN_COOK2
+	dw_const SSAnneKitchenCook2Text, TEXT_SSANNEKITCHEN_COOK2	; NPC changed to trainer by G-Dubs
 	dw_const SSAnneKitchenCook3Text, TEXT_SSANNEKITCHEN_COOK3
 	dw_const SSAnneKitchenCook4Text, TEXT_SSANNEKITCHEN_COOK4
-	dw_const SSAnneKitchenCook5Text, TEXT_SSANNEKITCHEN_COOK5
+	dw_const SSAnneKitchenCook5Text, TEXT_SSANNEKITCHEN_COOK5	
 	dw_const SSAnneKitchenCook6Text, TEXT_SSANNEKITCHEN_COOK6
 	dw_const SSAnneKitchenCook7Text, TEXT_SSANNEKITCHEN_COOK7
 
@@ -27,9 +27,9 @@ SSAnne11TrainerHeaders:
 	def_trainers
 SSAnne11TrainerHeader0:
 	trainer EVENT_BEAT_SS_ANNE_11_TRAINER_0, 0, SSAnneKitchenCook1BattleText, SSAnneKitchenCook1EndBattleText, SSAnneKitchenCook1AfterBattleText     ; NPC changed to trainer by G-Dubs 
-/*
 SSAnne11TrainerHeader1:
 	trainer EVENT_BEAT_SS_ANNE_11_TRAINER_1, 0, SSAnneKitchenCook2BattleText, SSAnneKitchenCook2EndBattleText, SSAnneKitchenCook2AfterBattleText	 ; NPC changed to trainer by G-Dubs
+/*
 SSAnne11TrainerHeader2:
 	trainer EVENT_BEAT_SS_ANNE_11_TRAINER_2, 0, SSAnneKitchenCook3BattleText, SSAnneKitchenCook3EndBattleText, SSAnneKitchenCook3AfterBattleText	 ; NPC changed to trainer by G-Dubs
 SSAnne11TrainerHeader3:
@@ -41,6 +41,7 @@ SSAnne11TrainerHeader5:
 SSAnne11TrainerHeader6:
 	trainer EVENT_BEAT_SS_ANNE_11_TRAINER_6, 0, SSAnneKitchenCook7BattleText, SSAnneKitchenCook7EndBattleText, SSAnneKitchenCook7AfterBattleText	 ; NPC changed to trainer by G-Dubs
 */
+    db -1 ; end
 
 SSAnneKitchenCook1Text:		           ; NPC changed to trainer by G-Dubs
 	text_asm
@@ -48,9 +49,11 @@ SSAnneKitchenCook1Text:		           ; NPC changed to trainer by G-Dubs
 	call TalkToTrainer
 	jp TextScriptEnd
 
-SSAnneKitchenCook2Text:
-	text_far _SSAnneKitchenCook2Text
-	text_end
+SSAnneKitchenCook2Text:		           ; NPC changed to trainer by G-Dubs
+	text_asm
+	ld hl, SSAnne11TrainerHeader1
+	call TalkToTrainer
+	jp TextScriptEnd
 
 SSAnneKitchenCook3Text:
 	text_far _SSAnneKitchenCook3Text
@@ -104,7 +107,6 @@ SSAnneKitchenCook7Text:
 	text_far SSAnneKitchenCook7PrimeBeefSteakText
 	text_end
 
-
 SSAnneKitchenCook1BattleText:	                      ; NPC changed to trainer by G-Dubs
 	text_far _SSAnneKitchenCook1BattleText
 	text_end
@@ -114,6 +116,17 @@ SSAnneKitchenCook1EndBattleText:
 	text_end	
 
 SSAnneKitchenCook1AfterBattleText:	
-
 	text_far _SSAnneKitchenCook1AfterBattleText
+	text_end
+
+SSAnneKitchenCook2BattleText:	                      ; NPC changed to trainer by G-Dubs
+	text_far _SSAnneKitchenCook2BattleText
+	text_end
+
+SSAnneKitchenCook2EndBattleText:	
+	text_far _SSAnneKitchenCook2EndBattleText
+	text_end
+
+SSAnneKitchenCook2AfterBattleText:	
+	text_far _SSAnneKitchenCook2AfterBattleText
 	text_end
