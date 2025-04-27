@@ -18,6 +18,16 @@ UncompressMonSprite::
 ; $99 ≤ index:             bank $D ("Pics 5")
 	ld a, [wCurPartySpecies]
 	ld b, a
+/***************************/
+	ld a, [wTrainerClass]
+	cp JESSIE_JAMES
+	jr nz, .notRocket
+	ld a, [wCurPartySpecies]
+	cp MEOWTH
+	jr z, .Rocket
+/**********************/
+.notRocket
+	ld a, [wCurPartySpecies]
 	cp FOSSIL_KABUTOPS
 	ld a, BANK(FossilKabutopsPic)
 	jr z, .GotBank
@@ -38,6 +48,21 @@ UncompressMonSprite::
 	ld a, BANK("Pics 4")
 	jr c, .GotBank
 	ld a, BANK("Pics 5")
+	jp .GotBank
+
+/******************************/
+.Rocket
+; Load the low byte of the new sprite address
+ld a, LOW(RMeowthPicFront)
+ld [wSpriteInputPtr], a
+
+; Load the high byte of the new sprite address
+ld a, HIGH(RMeowthPicFront)
+ld [wSpriteInputPtr + 1], a
+; Load the bank
+ld a, BANK("Alt Pokemon Sprites")
+/******************************/
+
 .GotBank
 	jp UncompressSpriteData
 
