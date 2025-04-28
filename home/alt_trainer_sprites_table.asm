@@ -44,55 +44,57 @@ TrainerSpriteJumpTable: ; Index (Decimal), Class ID (Hex) Comment
 	dw DefaultTrainerSpriteHandler ; 3, $04: SAILOR
 	dw DefaultTrainerSpriteHandler ; 4, $05: JR_TRAINER_M
 	dw DefaultTrainerSpriteHandler ; 5, $06: JR_TRAINER_F
-	dw PokemaniacSpriteHandler    ; 6, $07: POKEMANIAC
-	dw DefaultTrainerSpriteHandler ; 7, $08: SUPER_NERD
+	dw PokemaniacSpriteHandler     ; 6, $07: POKEMANIAC              ; Has multiple sprites
+	dw DefaultTrainerSpriteHandler ; 7, $08: SUPER_NERD				 ; Has multiple sprites        ; Not implemented yet 
 	dw DefaultTrainerSpriteHandler ; 8, $09: HIKER
 	dw DefaultTrainerSpriteHandler ; 9, $0A: BIKER
 	dw DefaultTrainerSpriteHandler ; 10, $0B: BURGLAR
 	dw DefaultTrainerSpriteHandler ; 11, $0C: ENGINEER
 	dw DefaultTrainerSpriteHandler ; 12, $0D: UNUSED_JUGGLER
 	dw DefaultTrainerSpriteHandler ; 13, $0E: FISHER
-	dw SwimmerSpriteHandler        ; 14, $0F: SWIMMER
+	dw SwimmerSpriteHandler        ; 14, $0F: SWIMMER                ; Has multiple sprites
 	dw DefaultTrainerSpriteHandler ; 15, $10: CUE_BALL
 	dw DefaultTrainerSpriteHandler ; 16, $11: GAMBLER
-	dw BeautySpriteHandler        ; 17, $12: BEAUTY
-	dw DefaultTrainerSpriteHandler ; 18, $13: PSYCHIC_TR
+	dw BeautySpriteHandler         ; 17, $12: BEAUTY                 ; Has multiple sprites
+	dw DefaultTrainerSpriteHandler ; 18, $13: PSYCHIC_TR		     ; Has multiple sprites        ; Not implemented yet
 	dw DefaultTrainerSpriteHandler ; 19, $14: ROCKER
 	dw DefaultTrainerSpriteHandler ; 20, $15: JUGGLER
 	dw DefaultTrainerSpriteHandler ; 21, $16: TAMER
 	dw DefaultTrainerSpriteHandler ; 22, $17: BIRD_KEEPER
 	dw DefaultTrainerSpriteHandler ; 23, $18: BLACKBELT
 	dw DefaultTrainerSpriteHandler ; 24, $19: RIVAL1
-	dw DefaultTrainerSpriteHandler ; 25, $1A: PROF_OAK
+	dw DefaultTrainerSpriteHandler ; 25, $1A: PROF_OAK				 ; Has multiple sprites		   ; Not implemented yet
 	dw DefaultTrainerSpriteHandler ; 26, $1B: CHIEF
 	dw DefaultTrainerSpriteHandler ; 27, $1C: SCIENTIST
-	dw DefaultTrainerSpriteHandler ; 28, $1D: GIOVANNI
-	dw DefaultTrainerSpriteHandler ; 29, $1E: ROCKET
-	dw DefaultTrainerSpriteHandler ; 30, $1F: COOLTRAINER_M
-	dw DefaultTrainerSpriteHandler ; 31, $20: COOLTRAINER_F
-	dw DefaultTrainerSpriteHandler ; 32, $21: BRUNO
-	dw DefaultTrainerSpriteHandler ; 33, $22: BROCK
-	dw DefaultTrainerSpriteHandler ; 34, $23: MISTY
-	dw DefaultTrainerSpriteHandler ; 35, $24: LT_SURGE
-	dw DefaultTrainerSpriteHandler ; 36, $25: ERIKA
-	dw DefaultTrainerSpriteHandler ; 37, $26: KOGA
-	dw DefaultTrainerSpriteHandler ; 38, $27: BLAINE
-	dw DefaultTrainerSpriteHandler ; 39, $28: SABRINA
-	dw DefaultTrainerSpriteHandler ; 40, $29: GENTLEMAN
+	dw DefaultTrainerSpriteHandler ; 28, $1D: GIOVANNI				 ; Has multiple sprites		   ; Not implemented yet
+	dw DefaultTrainerSpriteHandler ; 29, $1E: ROCKET				 
+	dw DefaultTrainerSpriteHandler ; 30, $1F: COOLTRAINER_M			 ; Has multiple sprites		   ; Not implemented yet
+	dw DefaultTrainerSpriteHandler ; 31, $20: COOLTRAINER_F			 ; Has multiple sprites		   ; Not implemented yet
+	dw DefaultTrainerSpriteHandler ; 32, $21: BRUNO					 ; Has multiple sprites		   ; Not implemented yet
+	dw DefaultTrainerSpriteHandler ; 33, $22: BROCK					 ; Has multiple sprites		   ; Not implemented yet
+	dw DefaultTrainerSpriteHandler ; 34, $23: MISTY					 ; Has multiple sprites		   ; Not implemented yet
+	dw DefaultTrainerSpriteHandler ; 35, $24: LT_SURGE				 ; Has multiple sprites		   ; Not implemented yet
+	dw DefaultTrainerSpriteHandler ; 36, $25: ERIKA					 ; Has multiple sprites		   ; Not implemented yet
+	dw DefaultTrainerSpriteHandler ; 37, $26: KOGA					 ; Has multiple sprites		   ; Not implemented yet
+	dw DefaultTrainerSpriteHandler ; 38, $27: BLAINE			     ; Has multiple sprites		   ; Not implemented yet
+	dw DefaultTrainerSpriteHandler ; 39, $28: SABRINA				 ; Has multiple sprites		   ; Not implemented yet
+	dw DefaultTrainerSpriteHandler ; 40, $29: GENTLEMAN				 ; Has multiple sprites		   ; Not implemented yet
 	dw DefaultTrainerSpriteHandler ; 41, $2A: RIVAL2
 	dw DefaultTrainerSpriteHandler ; 42, $2B: RIVAL3
-	dw DefaultTrainerSpriteHandler ; 43, $2C: LORELEI
+	dw DefaultTrainerSpriteHandler ; 43, $2C: LORELEI				 ; Has multiple sprites		   ; Not implemented yet
 	dw DefaultTrainerSpriteHandler ; 44, $2D: CHANNELER
-	dw DefaultTrainerSpriteHandler ; 45, $2E: AGATHA
-	dw DefaultTrainerSpriteHandler ; 46, $2F: LANCE
+	dw DefaultTrainerSpriteHandler ; 45, $2E: AGATHA				 ; Has multiple sprites		   ; Not implemented yet
+	dw DefaultTrainerSpriteHandler ; 46, $2F: LANCE				     ; Has multiple sprites		   ; Not implemented yet
 	dw DefaultTrainerSpriteHandler ; 47, $30: JESSIE_JAMES
 	dw DefaultTrainerSpriteHandler ; 48, $31: POKEFAN_M
 	dw DefaultTrainerSpriteHandler ; 49, $32: POKEFAN_F
-	dw GuitaristSpriteHandler      ; 50, $33: GUITARIST  <--- Correctly at index $32 (51st entry)
+	dw GuitaristSpriteHandler      ; 50, $33: GUITARIST  			 ; Has multiple sprites		   
 	dw DefaultTrainerSpriteHandler ; 51, $34: SOLDIER
 	dw DefaultTrainerSpriteHandler ; 52, $35: LADY
 	dw DefaultTrainerSpriteHandler ; 53, $36: WAITER
 	dw DefaultTrainerSpriteHandler ; 54, $37: CHEF
+	dw TeacherSpriteHandler        ; 55, $38: TEACHER				 ; Has multiple sprites		   
+	dw SchoolKidSpriteHandler      ; 56, $39: SCHOOL_KID			 ; Has multiple sprites		   
 
 	; NOTE: Table has 55 entries (indices 0-54), correctly matching NUM_TRAINERS ($37 = 55)
 	; for classes $01-$37. Class $00 (NOBODY) is not handled by this table.
@@ -173,6 +175,32 @@ BeautySpriteHandler:
     call UpdateTrainerPicPointer
     ret ; Done for this range
 .BeautyDone:
+	ret
+
+; Handler for Teacher class ($13) - Index 18
+TeacherSpriteHandler:
+    ld a, [wTrainerNo]    
+    cp $02
+    jr nz, .TeacherDone ; If not 2, jump to TeacherDone (Use default sprite)
+    ; Trainer 2 only -> Use UnusedTeacherPic:
+    ld de, Teacher2Pic
+    call UpdateTrainerPicPointer
+    ret ; Done for this range
+.TeacherDone:
+    ret
+
+; Handler for SchoolKid class ($14) - Index 19
+SchoolKidSpriteHandler:
+	ld a, [wTrainerNo]
+	cp $01
+	ret c ; Trainers 0-1 -> Use default (SchoolKidPic) ( School Boy)
+	cp $04
+	jr nc, .SchoolKidDone ; Check if >= 4
+	; Trainers 1-3 -> Use SchoolKid2Pic (School Girl)
+	ld de, SchoolKid2Pic
+	call UpdateTrainerPicPointer
+	ret ; Done for this range
+.SchoolKidDone:
 	ret
 
 ; -----------------------------------------------------------------

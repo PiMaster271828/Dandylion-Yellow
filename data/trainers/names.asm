@@ -55,4 +55,6 @@ TrainerNames::
 	li "LADY"                          ; New trainer class added by G-Dubs
 	li "WAITER"                        ; New trainer class added by G-Dubs
 	li "CHEF"                          ; New trainer class added by G-Dubs
+	li "TEACHER"                       ; New trainer class added by G-Dubs
+	li "SCHOOL KID"                    ; New trainer class added by G-Dubs
 	assert_list_length NUM_TRAINERS

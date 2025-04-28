@@ -7,6 +7,9 @@ MACRO move_choices
 ENDM
 
 ; move choice modification methods that are applied for each trainer class
+; 1	Discourage redundant status moves.
+; 2 Encourage moves with stat boosting effects.
+; 3 Encourage moves that are effective against the player's mon (even if non-damaging).
 TrainerClassMoveChoiceModifications:
 	list_start
 	move_choices         ; YOUNGSTER
@@ -39,14 +42,14 @@ TrainerClassMoveChoiceModifications:
 	move_choices 1, 2    ; SCIENTIST
 	move_choices 1, 3    ; GIOVANNI
 	move_choices 1       ; ROCKET
-	move_choices 1, 3    ; COOLTRAINER ♂
-	move_choices 1, 3    ; COOLTRAINER ♀
+	move_choices 1, 3    ; COOLTRAINER ♂	
+	move_choices 1, 3    ; COOLTRAINER ♀	
 	move_choices 1       ; BRUNO
 	move_choices 1       ; BROCK
 	move_choices 1, 3    ; MISTY
 	move_choices 1       ; LT. SURGE
 	move_choices 1, 3    ; ERIKA
-	move_choices 1, 3    ; KOGA
+	move_choices 1, 3    ; KOGA				
 	move_choices 1       ; BLAINE
 	move_choices 1       ; SABRINA
 	move_choices 1, 2    ; GENTLEMAN
@@ -54,9 +57,9 @@ TrainerClassMoveChoiceModifications:
 	move_choices 1, 3    ; RIVAL 3
 	move_choices 1, 2, 3 ; LORELEI
 	move_choices 1       ; CHANNELER
-	move_choices 1       ; AGATHA
+	move_choices 1       ; AGATHA           
 	move_choices 1, 3    ; LANCE
-	move_choices 1       ; JESSIE & JAMES	; New trainer class for Team Rocket added by Vlad
+	move_choices         ; JESSIE & JAMES	; New trainer class for Team Rocket added by Vlad 
 	move_choices 1       ; POKÉFAN ♂		; New trainer class added by G-Dubs
 	move_choices 1       ; POKÉFAN ♀		; New trainer class added by G-Dubs
 	move_choices 1       ; GUITARIST		; New trainer class added by G-Dubs
@@ -64,4 +67,6 @@ TrainerClassMoveChoiceModifications:
 	move_choices 1       ; LADY				; New trainer class added by G-Dubs
 	move_choices 1       ; WAITER			; New trainer class added by G-Dubs
 	move_choices 1       ; CHEF				; New trainer class added by G-Dubs
+	move_choices 1       ; TEACHER   		; New trainer class added by G-Dubs
+	move_choices 1, 3    ; SCHOOL KID		; New trainer class added by G-Dubs
 	assert_list_length NUM_TRAINERS

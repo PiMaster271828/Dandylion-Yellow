@@ -55,6 +55,8 @@ TrainerDataPointers:
 	dw LadyData              ; New trainer class added by G-Dubs
 	dw WaiterData            ; New trainer class added by G-Dubs
 	dw ChefData              ; New trainer class added by G-Dubs
+	dw TeacherData			 ; New trainer class added by G-Dubs
+	dw SchoolKidData		 ; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS
 
 ; if first byte != $FF, then
@@ -304,7 +306,7 @@ HikerData:
 ; Mt. Moon 1F
 	db 10, GEODUDE, GEODUDE, ONIX, 0		                                                                 ; Hiker 1
 ; Route 25
-	db 15, MACHOP, GEODUDE, 0			                                                                     ; Hiker 2
+	db 15, MACHOP, ZUBAT, GEODUDE, 0	                                                                     ; Hiker 2                ; Zubat added by G-Dubs
 	db 13, GEODUDE, GEODUDE, MACHOP, GEODUDE, 0	                                                             ; Hiker 3
 	db 17, ONIX, 0						                                                                     ; Hiker 4
 ; Route 9
@@ -312,7 +314,7 @@ HikerData:
 	db 20, GEODUDE, MACHOP, GEODUDE, 0	                                                                     ; Hiker 6
 ; Route 10
 	db 21, GEODUDE, ONIX, 0				                                                                     ; Hiker 7
-	db 19, ONIX, GRAVELER, 0			                                                                     ; Hiker 8
+	db 19, ONIX, SANDSHREW, GRAVELER, 0	                                                                     ; Hiker 8                ; Sandshrew added by G-Dubs
 ; Rock Tunnel B1F
 	db 21, GEODUDE, GEODUDE, GRAVELER, 0	                                                                 ; Hiker 9                ; Hiker With Two Geodudes And A Graveler (HWTGAAG)
 	db 25, GEODUDE, 0					                                                                     ; Hiker 10
@@ -966,11 +968,38 @@ ChefData:
 ; S.S Anne Kitchen
     db 18, MANKEY, MAGIKARP, FARFETCHD, SHELLDER, 0                                                          ; Chef 1                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 	db 19, PIDGEOTTO, SLOWPOKE, FARFETCHD, 0                                                                 ; Chef 2                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-	db 20, VENONAT, PONYTA, POLIWHIRL, 0 	                                                                 ; Chef 3                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+	db 20, VENONAT, PSYDUCK, POLIWHIRL, 0 	                                                                 ; Chef 3                 ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 	db 22, EXEGGCUTE, DIGLETT, PARAS, 0																		 ; Chef 4		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 	db 23, GRIMER, KOFFING, GRIMER, 0    	                                                                 ; Chef 5		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 	db 24, ODDISH, FARFETCHD, WEEPINBELL, 0                                                                  ; Chef 6		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 	db 25, TANGELA, DRATINI, TAUROS, FARFETCHD, CHARMELEON, 0                                                ; Chef 7		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+
+TeacherData:
+; Viridian City Trainer's School
+	db 7, BELLSPROUT, SANDSHREW, 0      	                                                                 ; Teacher 1              ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+/********************
+Unused Teacher Sprite
+*********************/
+    db 7, SPEAROW, CHARMANDER, 0 		                                                                     ; Teacher 2              ;	New trainer added by G-Dubs (New Trainer Class added by G-Dubs) 
+
+SchoolKidData:
+/*****************
+School Girl Sprite
+******************/
+; Viridian City Trainer's School
+    db 5, NIDORAN_F, PIKACHU, 0                                                                              ; School Kid 1 	      ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+    db 5, PIDGEY, BULBASAUR, 0                                                                               ; School Kid 2 	      ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+; S.S. Anne 1F Rooms
+    db 22, WIGGLYTUFF, 0                                                                                     ; School Kid 3           ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs) 
+/****************
+School Boy Sprite
+*****************/ 
+; Viridian City Trainer's School (Again)
+    db 5, RATTATA, SQUIRTLE, 0	                                                                             ; School Kid 4            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+    db 5, NIDORAN_M, ODDISH, 0                                                                               ; School Kid 5            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+	
+    
+
 
 
 /*

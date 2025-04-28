@@ -5,8 +5,7 @@ FemaleTrainerList::
 	db OPP_COOLTRAINER_F
     db OPP_POKEFAN_F
 	db OPP_LADY
-   ;db WAITRESS
-   ;db TWINS
+    db OPP_TEACHER
 	db -1 ; end
 
 EvilTrainerList::

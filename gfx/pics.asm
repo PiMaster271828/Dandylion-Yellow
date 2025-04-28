@@ -397,6 +397,10 @@ SoldierPic::       INCBIN "gfx/trainers/soldier.pic"                      ; New 
 LadyPic::          INCBIN "gfx/trainers/lady.pic"                         ; New trainer sprite added by G-Dubs
 WaiterPic::        INCBIN "gfx/trainers/waiter.pic"                       ; New trainer sprite added by G-Dubs
 ChefPic::          INCBIN "gfx/trainers/chef.pic"                         ; New trainer sprite added by G-Dubs
+TeacherPic::       INCBIN "gfx/trainers/teacher.pic"                      ; New trainer sprite added by G-Dubs
+Teacher2Pic::      INCBIN "gfx/trainers/unused_teacher.pic"               ; New trainer sprite added by G-Dubs
+SchoolKidPic::     INCBIN "gfx/trainers/school_boy.pic"                   ; New trainer sprite added by G-Dubs
+SchoolKid2Pic::    INCBIN "gfx/trainers/school_girl.pic"                  ; New trainer sprite added by G-Dubs
 
 ;GypsyJugglerPic::  INCBIN "gfx/trainers/gypsy_juggler.pic"
 ;Rival4Pic::      INCBIN "gfx/trainers/rival4.pic"
