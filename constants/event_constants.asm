@@ -689,13 +689,13 @@
 	const_next $630
 	const_skip 	                                                                                   ; $630
 	const EVENT_BEAT_SS_ANNE_11_TRAINER_0        ; NPC changed to trainer by G-Dubs                ; $631
-    const EVENT_BEAT_SS_ANNE_11_TRAINER_1                                                          ; $632
-  /*const EVENT_BEAT_SS_ANNE_11_TRAINER_2                                                          ; $633
-	const EVENT_BEAT_SS_ANNE_11_TRAINER_3                                                          ; $634
-	const EVENT_BEAT_SS_ANNE_11_TRAINER_4                                                          ; $635
-	const EVENT_BEAT_SS_ANNE_11_TRAINER_5                                                          ; $636
-	const EVENT_BEAT_SS_ANNE_11_TRAINER_6                                                          ; $637
-  */
+    const EVENT_BEAT_SS_ANNE_11_TRAINER_1        ; NPC changed to trainer by G-Dubs                ; $632
+    const EVENT_BEAT_SS_ANNE_11_TRAINER_2        ; NPC changed to trainer by G-Dubs                ; $633
+    const EVENT_BEAT_SS_ANNE_11_TRAINER_3		 ; NPC changed to trainer by G-Dubs                ; $634
+    const EVENT_BEAT_SS_ANNE_11_TRAINER_4        ; NPC changed to trainer by G-Dubs                ; $635
+    const EVENT_BEAT_SS_ANNE_11_TRAINER_5        ; NPC changed to trainer by G-Dubs                ; $636
+    const EVENT_BEAT_SS_ANNE_11_TRAINER_6        ; NPC changed to trainer by G-Dubs                ; $637
+  
 ; Victory Road 3F events
 	const_next $660
 	const EVENT_VICTORY_ROAD_3_BOULDER_ON_SWITCH1

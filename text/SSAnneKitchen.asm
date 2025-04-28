@@ -50,61 +50,144 @@ _SSAnneKitchenCook2AfterBattleText::
 	cont "life!"
 	done
 
-_SSAnneKitchenCook3Text::
+_SSAnneKitchenCook3BattleText::			; NPC changed to trainer by G-Dubs
+	text "I've got orders"
+	line "piling up! Gotta"
+	cont "battle fast!"
+	done
+
+_SSAnneKitchenCook3EndBattleText::
+	text "Too much..."
+	line "pressure..."
+	cont "Everything's..."
+	cont "a blur..."
+	prompt
+
+_SSAnneKitchenCook3AfterBattleText::
 	text "I'm so busy I'm"
 	line "getting dizzy!"
 	done
 
-_SSAnneKitchenCook4Text::
-	text "Hum-de-hum-de-"
-	line "ho..."
+_SSAnneKitchenCook4BattleText::			; NPC changed to trainer by G-Dubs
+    text "Hum-de-hum-de-ho!"
 
 	para "I peel spuds"
 	line "every day!"
-	cont "Hum-hum..."
+	cont "Hum-de-hum-de-ho!"
+	
+	para "Time for a"
+	line "battle!"
+	cont "Hum-de-hum-de-ho!"
 	done
 
-_SSAnneKitchenCook5Text::
+_SSAnneKitchenCook4EndBattleText::	
+	text "My spuds..."
+	line "are ruined!"	
+	cont "Hum-de-hum-de-ho!"
+	prompt
+
+_SSAnneKitchenCook4AfterBattleText::
+	text "Hum-de-hum-de-"
+	line "ho..."
+
+	para "Back to peeling"
+	line "spuds every day!"
+	cont "Hum-hum..."
+	cont "Hum-de-hum-de-ho!"
+	done
+
+_SSAnneKitchenCook5BattleText::	       ; NPC changed to trainer by G-Dubs	
+	text "You want to root"
+	line "through the"
+	cont "garbage? You"
+	cont "must defeat me"
+	cont "first!"
+	done
+
+_SSAnneKitchenCook5EndBattleText::	
+	text "Maybe"	
+	line "I should have"
+	cont "thrown them back."
+	prompt
+
+_SSAnneKitchenCook5AfterBattleText::
 	text "I saw an odd ball"
 	line "in the trash."
 	done
-/*
-Battle Text: "You want to root through the garbage? You must defeat me first!"
-End Battle Text: "Maybe I should have thrown it back."
-After Battle Text: "I saw an odd ball in the trash."
-*/
-_SSAnneKitchenCook6Text::
-	text "Snivel...Sniff..."
+
+_SSAnneKitchenCook6BattleText::			; NPC changed to trainer by G-Dubs
+	text "Prepare to face"
+	line "the power of the"
+	cont "onion! It will"
+	cont "bring you to"
+	cont "tears!"
+	done
+_SSAnneKitchenCook6EndBattleText::
+	text "My"
+	line "onion-powered"
+	cont "team...defeated?"
+	prompt
+
+_SSAnneKitchenCook6AfterBattleText::
+	text "I'm so busy I'm"
+	line "Snivel...Sniff..."
 
 	para "I only get to"
 	line "peel onions..."
+	cont "They're making"
+	cont "my eyes water!"
 	cont "Snivel..."
 	done
 
-_SSAnneKitchenCook7MainCourseIsText::
-	text "Er-hem! Indeed I"
+_SSAnneKitchenCook7BattleText::			; NPC changed to trainer by G-Dubs
+    text "Er-hem! Indeed I"
 	line "am le CHEF!"
+	cont "I am the master"
+	cont "of this kitchen!"	
+	done
 
-	para "Le main course is"
+_SSAnneKitchenCook7EndBattleText::
+	text "You"
+	line "have potential"
+	cont "but you lack"
+	cont "focus!"
 	prompt
 
-SSAnneKitchenCook7SalmonDuSaladText::
-	text "Salade de Salmon!"
+_SSAnneKitchenCook7AfterBattleSalmonDuSaladText::
+	text "As le CHEF, allow"					
+	line "me to announce"
+	cont "today's meal!"
+	
+    para "Le main course is"
+
+    para "Salade de Salmon!"
 
 	para "Les guests may"
 	line "gripe it's fish"
 	cont "again, however!"
 	done
 
-SSAnneKitchenCook7EelsAuBarbecueText::
-	text "Eels au Barbecue!"
+_SSAnneKitchenCook7AfterBattleEelsAuBarbecueText::
+	text "As le CHEF, allow"					
+	line "me to announce"
+	cont "today's meal!"
+	
+    para "Le main course is"
+
+	para "Eels au Barbecue!"
 
 	para "Les guests will"
 	line "mutiny, I fear."
 	done
 
-SSAnneKitchenCook7PrimeBeefSteakText::
-	text "Prime Beef Steak!"
+_SSAnneKitchenCook7AfterBattlePrimeBeefSteakText::
+	text "As le CHEF, allow"					
+	line "me to announce"
+	cont "today's meal!"
+	
+    para "Le main course is"
+	
+	para "Prime Beef Steak!"
 
 	para "But, have I enough"
 	line "fillets du beef?"

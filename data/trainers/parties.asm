@@ -970,7 +970,7 @@ ChefData:
 	db 22, EXEGGCUTE, DIGLETT, PARAS, 0																		 ; Chef 4		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 	db 23, GRIMER, KOFFING, GRIMER, 0    	                                                                 ; Chef 5		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 	db 24, ODDISH, FARFETCHD, WEEPINBELL, 0                                                                  ; Chef 6		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-	db 25, TANGELA, DRATINI, TAUROS, CHARMELEON, 0                                                           ; Chef 7		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+	db 25, TANGELA, DRATINI, TAUROS, FARFETCHD, CHARMELEON, 0                                                ; Chef 7		          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 
 
 /*
