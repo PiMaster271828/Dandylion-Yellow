@@ -152,7 +152,7 @@
 	charmap "▶",          $ed
 	charmap "▼",          $ee
 	charmap "♂",          $ef
-	charmap "¥",          $f0
+	charmap "¥",          $f0 ; Localized to $ (Poké Dollar symbol can't render in VS Code)
 	charmap "×",          $f1
 	charmap "&",          $f2 ; & symbol added by G-Dubs
 	charmap "/",          $f3

@@ -110,7 +110,7 @@ _CeruleanGymAfterBattleText2::
 
 _CeruleanGymBattleText3::                   ; New trainer added by G-Dubs
 	text "Did you know"
-	line "Misty is like a"
+	line "MISTY is like a"
 	cont "real-life"
     cont "mermaid?" 
 	cont "Strong, elegant,"
@@ -141,9 +141,9 @@ _CeruleanGymAfterBattleText3::
 	cont "called"
 	cont "SERENE GRACE!"
 	
-	para "Misty's the true"
+	para "MISTY's the true"
 	line "star of this"
-	cont "Gym! If you"
+	cont "GYM! If you"
 	cont "thought beating"
 	cont "me was tough,"
 	cont "just wait until"
@@ -179,9 +179,9 @@ _CeruleanGymAfterBattleText4::
 _CeruleanGymBattleText5::                   ; New trainer added by G-Dubs
 	text "Welcome to"
 	line "Cerulean's Water"
-	cont "Stage! Misty is"
+	cont "Stage! MISTY is"
     cont "the star in the"
-    cont "Misty Mermaid"
+    cont "MISTY MERMAID"
 	cont "show, and I'm"
 	cont "her opening act."
 	cont "Let's see if you"
@@ -200,7 +200,7 @@ _CeruleanGymEndBattleText5::
 	prompt
 
 _CeruleanGymAfterBattleText5::
-	text "Misty is like a"
+	text "MISTY is like a"
 	line "mermaid princess,"
 	cont "and I'm just one"
 	cont "of her loyal fans!"
@@ -212,8 +212,8 @@ _CeruleanGymAfterBattleText5::
 _CeruleanGymBattleText6::                   ; New trainer added by G-Dubs
     text "I'm not just some"
     line "random angler. I" 
-	cont "help the Misty"
-	cont "Mermaid show run"
+	cont "help the MISTY"
+	cont "MERMAID show run"
 	cont "smoothly!"
 	
 	para "Caught all my"
@@ -252,7 +252,7 @@ _CeruleanGymAfterBattleText6::
 	done
 
 _CeruleanGymBattleText7::                   ; New trainer added by G-Dubs
-    text "Misty's like a"
+    text "MISTY's like a"
 	line "mermaid..."
 	cont "So graceful,"
     cont "but don't let" 
@@ -271,7 +271,7 @@ _CeruleanGymEndBattleText7::
     prompt
 
 _CeruleanGymAfterBattleText7::
-    text "Misty's gonna put" 
+    text "MISTY's gonna put" 
 	line "on a show you"
 	cont "won't forget!"
 	cont "Too bad for you,"

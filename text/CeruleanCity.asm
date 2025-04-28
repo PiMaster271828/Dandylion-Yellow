@@ -102,7 +102,7 @@ _CeruleanCityRocketIllReturnTheTMText::
 _CeruleanCityCooltrainerMText::
 	text "You're a trainer"
 	line "too? Collecting,"
-	cont "fighting, it's a"
+	cont "battling, it's a"
 	cont "tough life."
 	done
 
@@ -305,6 +305,13 @@ _CeruleanCityGymSignText::
 
 	para "The Tomboyish"
 	line "Mermaid!"
+	
+	para "Also the stage"
+	line "for the on and"
+	cont "only underwater"
+	cont "#MON dance"
+	cont "show, THE"
+	cont "MISTY MERMAID!"
 	done
 
 	_CeruleanCityGuestHouseSignText::

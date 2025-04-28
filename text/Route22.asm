@@ -6,7 +6,7 @@ _Route22Rival1DefeatedText::
 
 _Route22Rival1VictoryText::
 	text "<RIVAL>: What?"
-	line "Why do I have 2"
+	line "Why do I have 4"
 	cont "#MON?"
 
 	para "You should catch"

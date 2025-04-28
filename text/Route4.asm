@@ -47,8 +47,8 @@ _Route4CooltrainerF3BattleText::
 	text "I'm on my way to"
 	line "CERULEAN CITY"
 	cont "to audition to be"
-	cont "in the Misty"
-	cont "Mermaid!"
+	cont "in the MISTY"
+	cont "MERMAID!"
 	done
 
 _Route4CooltrainerF3EndBattleText::
@@ -59,7 +59,7 @@ _Route4CooltrainerF3EndBattleText::
 	prompt
 
 _Route4CooltrainerF3AfterBattleText::
-	text "The Misty Mermaid"
+	text "The MISTY MERMAID"
 	line "is the show put"
 	cont "on by the CERULEAN"
 	cont "CITY GYM."

@@ -109,7 +109,7 @@ _Route5PokefanM2EndBattleText::
 
 _Route5PokefanM2AfterBattleText::
     text "Win or lose,"
-	line "these three will"
+	line "these ones will"
 	cont "always be my"
 	cont "favorite #MON!"
 	done

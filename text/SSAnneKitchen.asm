@@ -122,6 +122,7 @@ _SSAnneKitchenCook6BattleText::			; NPC changed to trainer by G-Dubs
 	cont "bring you to"
 	cont "tears!"
 	done
+	
 _SSAnneKitchenCook6EndBattleText::
 	text "My"
 	line "onion-powered"

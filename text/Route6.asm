@@ -173,7 +173,7 @@ _Route6Youngster3EndBattleText::
 	cont "have focused"
 	cont "more on battling"
 	cont "and less on"
-	cont "Caterpie..."
+	cont "CATERPIE..."
 	prompt
 
 _Route6Youngster3AfterBattleText::

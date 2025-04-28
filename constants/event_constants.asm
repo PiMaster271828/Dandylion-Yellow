@@ -2,62 +2,62 @@
 
 ; Pallet Town events
 	const_def
-	const EVENT_FOLLOWED_OAK_INTO_LAB
-	const_skip 2
-	const EVENT_HALL_OF_FAME_DEX_RATING
-	const_skip
-	const EVENT_PLAYER_AT_RIGHT_EXIT_TO_PALLET_TOWN
-	const EVENT_PALLET_AFTER_GETTING_POKEBALLS
-	const_skip 17
-	const EVENT_GOT_TOWN_MAP
-	const EVENT_ENTERED_BLUES_HOUSE
-	const EVENT_DAISY_WALKING
-	const_skip 5
-	const EVENT_FOLLOWED_OAK_INTO_LAB_2
-	const EVENT_OAK_ASKED_TO_CHOOSE_MON
-	const EVENT_GOT_STARTER
-	const EVENT_BATTLED_RIVAL_IN_OAKS_LAB
-	const EVENT_GOT_POKEBALLS_FROM_OAK
-	const EVENT_GOT_POKEDEX
-	const EVENT_PALLET_AFTER_GETTING_POKEBALLS_2
-	const EVENT_OAK_APPEARED_IN_PALLET
+	const EVENT_FOLLOWED_OAK_INTO_LAB	                                                           ; $0
+	const_skip 2	                                                                               ; $1 - $2
+	const EVENT_HALL_OF_FAME_DEX_RATING		                                                       ; $3
+	const_skip	                                                                                   ; $4
+	const EVENT_PLAYER_AT_RIGHT_EXIT_TO_PALLET_TOWN	                                               ; $5
+	const EVENT_PALLET_AFTER_GETTING_POKEBALLS		                                               ; $6
+	const_skip 17	                                                                               ; $7 - $17
+	const EVENT_GOT_TOWN_MAP		                                                               ; $18
+	const EVENT_ENTERED_BLUES_HOUSE	                                                               ; $19
+	const EVENT_DAISY_WALKING		                                                               ; $1A
+	const_skip 5	                                                                               ; $1B - $1F
+	const EVENT_FOLLOWED_OAK_INTO_LAB_2		                                                       ; $20
+	const EVENT_OAK_ASKED_TO_CHOOSE_MON		                                                       ; $21	
+	const EVENT_GOT_STARTER	                                                                       ; $22
+	const EVENT_BATTLED_RIVAL_IN_OAKS_LAB	                                                       ; $23
+	const EVENT_GOT_POKEBALLS_FROM_OAK		                                                       ; $24
+	const EVENT_GOT_POKEDEX		 	                                                               ; $25
+	const EVENT_PALLET_AFTER_GETTING_POKEBALLS_2	                                               ; $26
+	const EVENT_OAK_APPEARED_IN_PALLET	                                                           ; $27
 
 ; Viridian City events
 	const_next $28
-	const EVENT_VIRIDIAN_GYM_OPEN                      
-	const EVENT_GOT_TM42                               
-	const_skip 2
-	const EVENT_SPAWNED_OLD_MAN_1
-	const EVENT_COMPLETED_CATCH_TRAINING
-	const EVENT_COMPLETED_CATCH_TRAINING_AGAIN
-	const EVENT_INITIAL_CATCH_TRAINING
-	const_skip 8
-	const EVENT_OAK_GOT_PARCEL
-	const EVENT_GOT_OAKS_PARCEL
-	const_skip 22
-	const EVENT_GOT_TM27
-	const EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI
-	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_0
-	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_1
-	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_2
-	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_3
-	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_4
-	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_5
-	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_6
-	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_7
-	const_skip 1
-	const EVENT_BEAT_JESSIE_1_TRAINER_0
-	const EVENT_3C
+	const EVENT_VIRIDIAN_GYM_OPEN  	                                                               ; $28                    
+	const EVENT_GOT_TM42                               	                                           ; $29                    
+	const_skip 2	                                                                               ; $2A - $2B              
+	const EVENT_SPAWNED_OLD_MAN_1	                                                               ; $2C                    
+	const EVENT_COMPLETED_CATCH_TRAINING	                                                       ; $2D                    
+	const EVENT_COMPLETED_CATCH_TRAINING_AGAIN	                                                   ; $2E                    
+	const EVENT_INITIAL_CATCH_TRAINING	                                                           ; $2F                    
+	const_skip 8	                                                                               ; $30 - $37              
+	const EVENT_OAK_GOT_PARCEL	                                                                   ; $38                    
+	const EVENT_GOT_OAKS_PARCEL	                                                                   ; $39                    
+	const_skip 22	                                                                               ; $3A - $4F              
+	const EVENT_GOT_TM27	                                                                       ; $50                    
+	const EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI	                                                       ; $51                    
+	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_0	                                                       ; $52                    
+	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_1	                                                       ; $53                    
+	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_2	                                                       ; $54                    
+	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_3	                                                       ; $55                    
+	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_4		                                                   ; $56                    
+	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_5	                                                       ; $57                    
+	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_6	                                                       ; $58                    
+	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_7	                                                       ; $59                    
+	const_skip 1	                                                                               ; $5A                    
+	const EVENT_BEAT_JESSIE_1_TRAINER_0	                                                           ; $5B                    
+	const EVENT_3C	                                                                               ; $5C                    
 
 ; Pewter City events
 	const_next $68
-	const EVENT_BOUGHT_MUSEUM_TICKET
-	const EVENT_GOT_OLD_AMBER
-	const_skip 8
-	const EVENT_BEAT_PEWTER_GYM_TRAINER_0
-	const_skip 3
-	const EVENT_GOT_TM34
-	const EVENT_BEAT_BROCK
+	const EVENT_BOUGHT_MUSEUM_TICKET	                                                           ; $68                    
+	const EVENT_GOT_OLD_AMBER	                                                                   ; $69                    
+	const_skip 8	                                                                               ; $6A - $71                
+	const EVENT_BEAT_PEWTER_GYM_TRAINER_0	                                                       ; $72                    
+	const_skip 3	                                                                               ; $73 - $75                
+	const EVENT_GOT_TM34		                                                                   ; $76                    
+	const EVENT_BEAT_BROCK	                                                                       ; $77                    
 
 ; Cerulean City events
 	const_next $98                                 

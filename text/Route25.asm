@@ -67,7 +67,7 @@ _Route25CooltrainerF1AfterBattleText::
 
 _Route25Youngster3BattleText::
 	text "I knew I had to"
-	line "fight you!"
+	line "battle you!"
 	done
 
 _Route25Youngster3EndBattleText::
@@ -112,7 +112,7 @@ _Route25Hiker1EndBattleText::
 
 _Route25Hiker1AfterBattleText::
 	text "Drat!"
-	line "A ZUBAT bit me"
+	line "My ZUBAT bit me"
 	cont "back in there."
 	done
 
@@ -224,6 +224,6 @@ _Route25SeaBreezeLookoutSignText::          ; New sign added by G-Dubs
 	line "area clean and"
 	cont "respect the"
 	cont "natural beauty"
-	cont "of Cerulean Cape!"
+	cont "of CERULEAN CAPE!"
 	done
     

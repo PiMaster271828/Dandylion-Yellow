@@ -9,7 +9,7 @@ _PewterGymBrockPreBattleText::
 
 	para "That's why my"
 	line "#MON are all"
-	cont "the rock-type!"
+	cont "the ROCK-type!"
 
 	para "Do you still want"
 	line "to challenge me?"
@@ -181,6 +181,6 @@ _PewterGymGuyText::
 
 	para "Electric attacks"
 	line "are harmless to"
-	cont "BROCK's ground-"
+	cont "BROCK's GROUND-"
 	cont "type #MON."
 	done

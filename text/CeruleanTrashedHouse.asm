@@ -16,7 +16,7 @@ _CeruleanTrashedHouseFishingGuruTheyStoleATMText::
 	para "It might be"
 	line "weeks before we"
 	cont "can reopen our"
-	cont "Guest House!!!"
+	cont "GUEST HOUSE!!!"
 	done
 
 _CeruleanTrashedHouseFishingGuruWhatsLostIsLostText::

@@ -177,7 +177,7 @@ _Route24CooltrainerF3AfterBattleText::
 	cont "up, just to stand"
 	cont "here?"
     cont "... ... ... ..."
-	cont "I mean ..."
+	cont "I mean ... ..."
 	cont "... ... ... ..."
 	cont "I did my best, I"
 	cont "have no regrets!"

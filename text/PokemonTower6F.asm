@@ -85,7 +85,7 @@ _PokemonTower6FChanneler5BattleText::            ; New trainer added by G-Dubs
 	cont "in SPROUT TOWER,"
 	cont "but here, the"
 	cont "spirits battle"
-	cont "in POKEMON TOWER."
+	cont "in #MON TOWER."
 	done
 	
 _PokemonTower6FChanneler5EndBattleText::

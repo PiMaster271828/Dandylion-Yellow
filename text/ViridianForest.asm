@@ -3,7 +3,7 @@ _ViridianForestYoungster1Text::
 	line "some friends!"
 
 	para "They're out for"
-	line "#MON fights!"
+	line "#MON battles!"
 	done
 
 _ViridianForestYoungster2BattleText::     ; New trainer added by G-Dubs
@@ -77,8 +77,8 @@ _ViridianForestYoungster5BattleText::
 _ViridianForestYoungster5EndBattleText::
 	text "Agh"
 	line "I can't evolve my"
-	cont "BUG #MON, if I"
-	cont "lose!"
+	cont "BUG type #MON,"
+	cont "if I lose!"
 	prompt
 
 _ViridianForestYoungster5AfterBattleText::
@@ -125,44 +125,43 @@ _ViridianForestYoungster6AfterBattleText::
 	cont "defense!"
 	done
 
-
 _ViridianForestYoungster7BattleText::           ; New trainer added by Vlad
-	text "Kakuna is the best" 
+	text "KAKUNA is the best" 
 	line "COCOON #MON!"
 	done
 
 _ViridianForestYoungster7EndBattleText::
 	text "At" 
-	line "least, Kakuna" 
+	line "least, KAKUNA" 
 	cont "is still better"
-	cont "than Metapod!"
+	cont "than METAPOD!"
 	prompt
 
 _ViridianForestYoungster7AfterBattleText::
 	text "Make sure to"
-	line "teach your Kakuna"
+	line "teach your KAKUNA"
 	cont "BUG BITE!"
 	done
 
 _ViridianForestYoungster8BattleText::          ; New trainer added by G-Dubs
-	text "My Weedle is"
+	text "My WEEDLE is"
 	line "different from"
-	cont "regular Weedle!"
+	cont "regular WEEDLE!"
     
 	para "It's like my"
-	line "Weedle is in the"
+	line "WEEDLE is in the"
 	cont "top percentage of"
-	cont "all Weedle!!!"
+	cont "all WEEDLE!!!"
 	done
 
 _ViridianForestYoungster8EndBattleText::
 	text "No!" 
 	line "Not my top"
-	cont "percentage Weedle!"
+	cont "percentage WEEDLE!"
 	prompt
 
 _ViridianForestYoungster8AfterBattleText::
-	text "I got my Weedle"
+	text "I got my WEEDLE"
 	line "from the #MON"
 	cont "TCG!"
 	done
@@ -263,7 +262,6 @@ _ViridianForestLeavingSignText::
 	line "VIRIDIAN FOREST"
 	cont "PEWTER CITY AHEAD"
 	done
-
 
 _ViridianForestUsePokeBallsSignText::
     text "Trainers should"  

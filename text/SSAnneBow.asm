@@ -142,6 +142,7 @@ _SSAnneBowGirlAfterBattleText::
 	cont "be a part of"
 	cont "them..."
 	done	
+	
 _SSAnneBowSailor4BattleText::	                     ; New trainer added by G-Dubs
 	text "Legends say that"	
 	line "it is bad luck"

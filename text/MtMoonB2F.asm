@@ -6,28 +6,37 @@ _MtMoonJessieJamesText2::
 	text "Prepare for" 
     line "trouble!"
     cont "Make it double!"
-    para "To protect the"
+    
+	para "To protect the"
     line "world from"
     cont "devastation!"
-    para "To unite all"
+    
+	para "To unite all"
     line "people within"
     cont "our nation!"
-    para "To denounce"
+    
+	para "To denounce"
     line "the evils of"
     cont "truth and love!"
-    para "To extend our"
+    
+	para "To extend our"
     line "reach to the"
     cont "stars above!"
-    para "Jessie!"
-    para "James!"
-    para "Team Rocket"
+    
+	para "JESSIE!"
+    
+	para "JAMES!"
+    
+	para "TEAM ROCKET"
     line "blasts off at"
     cont "the speed of"
     cont "light!"
-    para "Surrender now,"
+    
+	para "Surrender now,"
     line "or prepare to"
     cont "fight!"
-    para "Meowth:"
+    
+	para "MEOWTH:"
     line "That's right!"
 	done
 
@@ -362,7 +371,7 @@ _MtMoonB2FWantedSign::                           ; New sign added by G-Dubs
 	
 	para "Accomplice - "
 	line "#MON: MEOWTH"
-	cont "A Meowth that can"
+	cont "A MEOWTH that can"
 	cont "speak like a"
 	cont "human. Do not be"
 	cont "fooled by its"

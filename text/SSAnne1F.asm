@@ -19,7 +19,8 @@ _SSAnne1FWaiterEndBattleText::
 _SSAnne1FWaiterAfterBattleText::
 	text "I'd be happy to"	
 	line "serve you anyway."
-	cont "Anything you ask,"
+	
+	para "Anything you ask,"
 	cont "is my job to try"
 	cont "to get for you!"
 	done

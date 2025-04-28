@@ -186,7 +186,7 @@ _Route11SuperNerd3AfterBattleText::
 
 _Route11Youngster5BattleText::
 	text "I've trained my"
-	line "bug #MON to"
+	line "BUG type #MON to"
 	cont "be the best! You"
 	cont "won't squash my"
 	cont "dreams so easily!"
@@ -202,7 +202,7 @@ _Route11Youngster5AfterBattleText::
 	text "Maybe I should"
 	line "visit FUCHSIA"
 	cont "CITY I hear real"
-	cont "Bug Masters train"
+	cont "BUG MANIACS train"
 	cont "there!"
 	done
 

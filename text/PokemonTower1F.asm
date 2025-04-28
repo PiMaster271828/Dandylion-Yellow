@@ -26,6 +26,10 @@ _PokemonTower1FGirlText::
 
 _PokemonTower1FChannelerText::
 	text "I am a CHANNELER!"
-	line "There are spirits"
-	cont "up to mischief!"
+	line "I don't want to"
+	cont "battle now, but I"
+	cont "will tell you ..."
+	cont "There are spirits"
+	cont "up to mischief in"
+	cont "the #MON TOWER!"
 	done

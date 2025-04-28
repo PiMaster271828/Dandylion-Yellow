@@ -80,12 +80,12 @@ _PokemonTower7FMrFujiRescueText::
 	cont "of this tower."
 	done
 
-_PokemonTower7FRocket1BattleText::
+_PokemonTower7FRocket1BattleText::          ; Trainer from Red/Blue added by G-Dubs
 	text "What do you want?"
 	line "Why are you here?"
 	done
 	
-_PokemonTower7FRocket1EndBattleText::       ; New trainer added by G-Dubs
+_PokemonTower7FRocket1EndBattleText::       
 	text "I give up!"
 	prompt
 	
@@ -94,7 +94,7 @@ _PokemonTower7FRocket1AfterBattleText::
 	line "forget this!"
 	done
 
-_PokemonTower7FRocket2BattleText::          ; New trainer added by G-Dubs
+_PokemonTower7FRocket2BattleText::          ; Trainer from Red/Blue added by G-Dubs
 	text "This old guy came"
 	line "and complained"
 	cont "about us harming"
@@ -118,7 +118,7 @@ _PokemonTower7FRocket2AfterBattleText::
 	line "business!"
 	done
 
-_PokemonTower7FRocket3BattleText::          ; New trainer added by G-Dubs
+_PokemonTower7FRocket3BattleText::          ; Trainer from Red/Blue added by G-Dubs
 	text "You're not saving"
 	line "anyone, kid!"
 	done
@@ -144,7 +144,7 @@ _PokemonTower7FRocket4BattleText::          ; New trainer added by G-Dubs
 
 _PokemonTower7FRocket4EndBattleText::
 	text "Tch..."
-	line "these ghosts are"
+	line "these GHOSTs are"
 	cont "the least of my"
 	cont "problems now!"
 	prompt
@@ -152,7 +152,7 @@ _PokemonTower7FRocket4EndBattleText::
 _PokemonTower7FRocket4AfterBattleText::	
 	text "Why are we even"	
 	line "messing with"
-	cont "ghost #MON?"
+	cont "GHOST #MON?"
 	cont "This place gives"
 	cont "me the chills..."		
 	done

@@ -189,10 +189,10 @@ _VermilionGymSuperNerd3BattleText::              ; New trainer added by G-Dubs
 	text "Yo. Guitar time!"
 	line "Ready for a sound"
 	cont "check? My"
-	cont "ELECTRIC types"
-	cont "are tuned up."
-	cont "Let's see what"
-	cont "you got!"
+	cont "ELECTRIC type"
+	cont "#MON are tuned"
+	cont "up. Let's see"
+	cont "whatyou got!"
 	done
 
 _VermilionGymSuperNerd3EndBattleText::
@@ -238,9 +238,10 @@ _VermilionGymGymGuideChampInMakingText::
 	cont "American!"
 
 	para "He's an expert on"
-	line "electric #MON!"
+	line "ELECTRIC type" 
+	cont "#MON!"
 
-	para "Birds and water"
+	para "FLYING and WATER"
 	line "#MON are at"
 	cont "risk! Beware of"
 	cont "paralysis too!"
