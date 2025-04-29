@@ -1,5 +1,5 @@
 Route5_Script:
-call EnableAutoTextBoxDrawing
+    call EnableAutoTextBoxDrawing
 	ld hl, Route5TrainerHeaders
 	ld de, Route5_ScriptPointers
 	ld a, [wRoute5CurScript]
