@@ -45,7 +45,7 @@
     const EVENT_BEAT_VIRIDIAN_TRAINERS_SCHOOL_TRAINER_3	   ; New trainer added by G-Dubs           ; $44
     const EVENT_BEAT_VIRIDIAN_TRAINERS_SCHOOL_TRAINER_4	   ; New trainer added by G-Dubs           ; $45
 	const EVENT_BEAT_VIRIDIAN_TRAINERS_SCHOOL_TRAINER_5	   ; New trainer added by G-Dubs           ; $46
-  
+	const_skip 9	                                                                               ; $47 - $4F
 
 ; Viridian City Gym events		                                                                                           
 	const_next $50
