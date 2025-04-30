@@ -1,6 +1,6 @@
 ; divide hMoney by hDivideBCDDivisor
 ; return output in hDivideBCDQuotient (same as hDivideBCDDivisor)
-; used only to halve player money upon losing a fight
+; used only to halve player money upon losing a battle
 DivideBCDPredef::
 DivideBCDPredef2::
 DivideBCDPredef3:: ; only used function
