@@ -125,7 +125,7 @@ TalkToTrainer::
 	inc [hl]      ; increment map script index before StartTrainerBattle increments it again (next script function is usually EndTrainerBattle)
 	jp StartTrainerBattle
 
-; checks if any trainers are seeing the player and wanting to fight
+; checks if any trainers are seeing the player and wanting to battle
 CheckFightingMapTrainers::
 IF DEF(_DEBUG)
 	call DebugPressedOrHeldB

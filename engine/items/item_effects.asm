@@ -148,7 +148,7 @@ ItemUseBall:
 	ld hl, ItemUseText00
 	call PrintText
 
-; If the player is fighting an unidentified ghost, set the value that indicates
+; If the player is battling an unidentified ghost, set the value that indicates
 ; the Pokémon can't be caught and skip the capture calculations.
 	callfar IsGhostBattle
 	ld b, $10 ; can't be caught value

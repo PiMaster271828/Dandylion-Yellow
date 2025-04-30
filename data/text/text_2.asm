@@ -546,7 +546,7 @@ _ViridianSchoolNotebookText1::
 
 	para "People who raise"
 	line "and make #MON"
-	cont "fight are called"
+	cont "battle are called"
 	cont "#MON trainers."
 	prompt
 
@@ -569,7 +569,7 @@ _ViridianSchoolNotebookText3::
 	para "#MON trainers"
 	line "seek others to"
 	cont "engage in #MON"
-	cont "fights."
+	cont "battles."
 
 	para "Battles are"
 	line "constantly fought"
@@ -998,7 +998,7 @@ _TeamRocketSentOutText::      ; Function added by G-Dubs to handle Jessie and Ja
 
 _NoWillText::
 	text "There's no will"
-	line "to fight!"
+	line "to battle!"
 	prompt
 
 _CantEscapeText::

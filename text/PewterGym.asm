@@ -23,7 +23,7 @@ _PewterGymBrockPostBattleAdviceText::
 	cont "in the world!"
 
 	para "Some raise #MON"
-	line "for fights. Some"
+	line "for battles. Some"
 	cont "see them as pets."
 
 	para "I'm in training to"

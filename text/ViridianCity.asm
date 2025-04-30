@@ -57,6 +57,9 @@ _ViridianCityGambler1GymAlwaysClosedText::
 _ViridianCityGambler1GymLeaderReturnedText::
 	text "VIRIDIAN GYM's"
 	line "LEADER returned!"
+	cont "They must have"
+	cont "unlocked the"
+	cont "door to the GYM."
 	done
 
 _ViridianCityYoungster2YouWantToKnowAboutText::
@@ -167,7 +170,7 @@ _ViridianCityTrainerTips1Text::
 
 	para "The more you have,"
 	line "the easier it is"
-	cont "to fight!"
+	cont "to battle!"
 	done
 
 _ViridianCityTrainerTips2Text::

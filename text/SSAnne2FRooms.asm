@@ -28,7 +28,7 @@ _SSAnne2FRoomsGentleman1BattleText::
 
 _SSAnne2FRoomsGentleman1EndBattleText::
 	text "Good"
-	line "fight! Ah, I feel"
+	line "battle! Ah, I feel"
 	cont "young again!"
 	prompt
 

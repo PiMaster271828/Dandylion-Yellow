@@ -221,7 +221,7 @@ _CinnabarGymText_1::
 	cont "to see BLAINE."
 
 	para "You don't have to"
-	line "fight us if you"
+	line "battle us if you"
 	cont "get it right."
 	done
 

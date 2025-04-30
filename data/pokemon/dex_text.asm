@@ -39,8 +39,8 @@ _CharmanderDexEntry::
 	dex
 
 _CharmeleonDexEntry::
-	text "Tough fights could"
-	next "excite this"
+	text "Tough battles"
+	next "could excite this"
 	next "#MON. When"
 
 	page "excited, it may"
@@ -283,8 +283,8 @@ _NidoranFDexEntry::
 	next "#MON that does"
 	next "not like to"
 
-	page "fight. Beware, its"
-	next "small horns"
+	page "battle. Beware,"
+	next "its small horns"
 	next "secrete venom"
 	dex
 
@@ -1142,7 +1142,7 @@ _KangaskhanDexEntry::
 	next "in its belly"
 	next "pouch. Won't run"
 
-	page "from any fight"
+	page "from any battle"
 	next "to keep its young"
 	next "protected"
 	dex

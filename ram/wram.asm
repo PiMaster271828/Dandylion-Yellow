@@ -1732,7 +1732,7 @@ wCapturedMonSpecies:: db
 
 ; Non-zero when the first player mon and enemy mon haven't been sent out yet.
 ; It prevents the game from asking if the player wants to choose another mon
-; when the enemy sends out their first mon and suppresses the "no will to fight"
+; when the enemy sends out their first mon and suppresses the "no will to battle"
 ; message when the game searches for the first non-fainted mon in the party,
 ; which will be the first mon sent out.
 wFirstMonsNotOutYet:: db

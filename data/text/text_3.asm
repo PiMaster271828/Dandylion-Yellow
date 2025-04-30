@@ -7,12 +7,12 @@ _EnemyAppearedText::
 _TrainerWantsToFightText::
 	text_ram wTrainerName
 	text " wants"
-	line "to fight!"
+	line "to battle!"
 	prompt
 
 _TeamRocketWantToFightText::      ; Function added by G-Dubs to handle Jessie and James' text
     text "JESSIE & JAMES" 
-	line "want to fight!"
+	line "want to battle!"
 	prompt
 		
 _UnveiledGhostText::
@@ -458,7 +458,7 @@ _OakSpeechText2B::
 	text $51,"For some people,"
 	line "#MON are"
 	cont "pets. Others use"
-	cont "them for fights."
+	cont "them for battles."
 
 	para "Myself..."
 
@@ -524,7 +524,7 @@ _WillBeTradedText::
 
 _Colosseum3MonsText::
 	text "You need 3 #MON"
-	line "to fight!"
+	line "to battle!"
 	prompt
 
 _ColosseumMewText::

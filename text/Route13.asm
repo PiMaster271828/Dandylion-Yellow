@@ -59,7 +59,7 @@ _Route13CooltrainerF3EndBattleText::
 
 _Route13CooltrainerF3AfterBattleText::
 	text "You have to make"
-	line "#MON fight to"
+	line "#MON battle to"
 	cont "toughen them up!"
 	done
 

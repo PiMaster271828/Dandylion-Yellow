@@ -69,6 +69,6 @@ _RocketHideoutB1FRocket5BattleText::
 	done
 
 _RocketHideoutB1FRocket5AfterBattleText::
-	text "Uh-oh, that fight"
+	text "Uh-oh, that battle"
 	line "opened the door!"
 	done

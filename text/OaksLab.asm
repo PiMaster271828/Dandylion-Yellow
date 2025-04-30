@@ -35,7 +35,7 @@ _OaksLabOak1YourPokemonCanFightText::
 	text "OAK: If a wild"
 	line "#MON appears,"
 	cont "your #MON can"
-	cont "fight against it!"
+	cont "battle against it!"
 
 	para "Afterward, go on"
 	line "to the next town."
@@ -280,7 +280,7 @@ _OaksLabRivalAmIGreatOrWhatText::
 _OaksLabRivalSmellYouLaterText::
 	text "<RIVAL>: Okay!"
 	line "I'll make my"
-	cont "#MON fight to"
+	cont "#MON battle to"
 	cont "toughen it up!"
 
 	para "<PLAYER>! Gramps!"

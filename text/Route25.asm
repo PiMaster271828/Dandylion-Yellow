@@ -136,7 +136,7 @@ _Route25Hiker2AfterBattleText::
 _Route25Hiker3BattleText::
 	text "You're going to"
 	line "see BILL? First,"
-	cont "let's fight!"
+	cont "let's battle!"
 	done
 
 _Route25Hiker3EndBattleText::
