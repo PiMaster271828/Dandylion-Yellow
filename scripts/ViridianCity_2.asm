@@ -191,6 +191,15 @@ ViridianCityPrintGymSignText::
 	text_far _ViridianCityGymSignText
 	text_end
 
+ViridianCityPrintSchoolHouseSignText::      ; New sign added by G-Dubs
+	ld hl, .text
+	call PrintText
+	ret
+
+.text
+	text_far _ViridianCitySchoolHouseSignText
+	text_end
+
 ViridianCityPrintGymLockedText::
 	ld hl, .text
 	call PrintText
@@ -200,7 +209,7 @@ ViridianCityPrintGymLockedText::
 	text_far _ViridianCityGymLockedText
 	text_end
 
-ViridianCityPrintOfficerJennyText::
+ViridianCityPrintOfficerJennyText::         ; New NPC added by Vlad
 	ld hl, .text
 	call PrintText
 	ret

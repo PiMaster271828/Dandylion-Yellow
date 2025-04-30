@@ -1,3 +1,4 @@
+/*
 ViridianSchoolHousePrintLittleGirlText::
 	ld hl, .text
 	call PrintText
@@ -15,3 +16,4 @@ ViridianSchoolHousePrintCooltrainerFText::
 .text
 	text_far _ViridianSchoolHouseCooltrainerFText
 	text_end
+*/

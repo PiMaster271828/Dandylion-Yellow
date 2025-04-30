@@ -189,6 +189,13 @@ _ViridianCityGymSignText::
 	line "#MON GYM"
 	done
 
+_ViridianCitySchoolHouseSignText::	   ; New sign added by G-Dubs
+	text "VIRIDIAN CITY "
+	line "TRAINER'S SCHOOL"
+	cont "Learn the basics"
+	cont "of #MON, here."
+	done
+
 _ViridianCityGymLockedText::
 	text "The GYM's doors"
 	line "are locked..."
@@ -196,7 +203,7 @@ _ViridianCityGymLockedText::
 	cont "again later..."
 	done
 
-_ViridianCityOfficerJennyText::
+_ViridianCityOfficerJennyText::        ; New NPC added by Vlad
 	text "TEAM ROCKET is"
 	line "stealing #MON"
 	cont "from the" 

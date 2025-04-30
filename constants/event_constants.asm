@@ -34,7 +34,21 @@
 	const_skip 8	                                                                               ; $30 - $37              
 	const EVENT_OAK_GOT_PARCEL	                                                                   ; $38                    
 	const EVENT_GOT_OAKS_PARCEL	                                                                   ; $39                    
-	const_skip 22	                                                                               ; $3A - $4F              
+	const_skip 6                                           ; Formerly const_skip 22                ; $3A - $3F
+
+; Viridian City Trainer's School events
+    const_next $40
+	const_skip                                                                                     ; $40
+    const EVENT_BEAT_VIRIDIAN_TRAINERS_SCHOOL_TRAINER_0    ; NPC changed to trainer by G-Dubs      ; $41
+    const EVENT_BEAT_VIRIDIAN_TRAINERS_SCHOOL_TRAINER_1	   ; NPC changed to trainer by G-Dubs      ; $42
+    const EVENT_BEAT_VIRIDIAN_TRAINERS_SCHOOL_TRAINER_2	   ; New trainer added by G-Dubs           ; $43
+    const EVENT_BEAT_VIRIDIAN_TRAINERS_SCHOOL_TRAINER_3	   ; New trainer added by G-Dubs           ; $44
+    const EVENT_BEAT_VIRIDIAN_TRAINERS_SCHOOL_TRAINER_4	   ; New trainer added by G-Dubs           ; $45
+	const EVENT_BEAT_VIRIDIAN_TRAINERS_SCHOOL_TRAINER_5	   ; New trainer added by G-Dubs           ; $46
+  
+
+; Viridian City Gym events		                                                                                           
+	const_next $50
 	const EVENT_GOT_TM27	                                                                       ; $50                    
 	const EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI	                                                       ; $51                    
 	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_0	                                                       ; $52                    

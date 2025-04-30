@@ -2160,14 +2160,14 @@ wMissableObjectList:: ds 16 * 2 + 1
 wGameProgressFlags::
 wOaksLabCurScript:: db
 wPalletTownCurScript:: db
-	ds 1
 wBluesHouseCurScript:: db
 wViridianCityCurScript:: db
-wViridianPokeCenterCurScript:: db ; Viridian PokeCenter Script added by Vlad for Jessie & James battle
+wViridianSchoolHouseCurScript:: db     ; Viridian School House Script added by G-Dubs (Replaced ds 1)
+wViridianPokeCenterCurScript:: db      ; Viridian PokeCenter Script added by Vlad for Jessie & James battle
 wPewterCityCurScript:: db
 wRoute3CurScript:: db
 wRoute4CurScript:: db
-wRoute5CurScript:: db             ; Route 5 script added by G-Dubs
+wRoute5CurScript:: db                  ; Route 5 script added by G-Dubs
 wPokemonFanClubCurScript:: db
 wViridianGymCurScript:: db
 wPewterGymCurScript:: db
@@ -2182,18 +2182,17 @@ wRoute9CurScript:: db
 wRoute10CurScript:: db
 wMtMoon1FCurScript:: db
 wMtMoonB2FCurScript:: db
-wSSAnne1FCurScript:: db	          ; SS Anne 1F script added by G-Dubs (replaced ds 1) 
+wSSAnne1FCurScript:: db	               ; SS Anne 1F script added by G-Dubs (replaced ds 1) 
 wSSAnne1FRoomsCurScript:: db
 wSSAnne2FRoomsCurScript:: db
 wRoute22CurScript:: db
-								  ; ds 1 replaced by SS Anne 1F script 
 wRedsHouse2FCurScript:: db
 wViridianMartCurScript:: db
 wRoute22GateCurScript:: db
 wCeruleanCityCurScript:: db
-	ds 6                          ; Changed from 7 to 6 by G-Dubs to make room for other scripts  
+	ds 6                               ; Changed from 7 to 6 by G-Dubs to make room for other scripts  
 wSSAnneBowCurScript:: db
-wSSAnneKitchenCurScript:: db      ; SS Anne Kitchen script added by G-Dubs (reduced total ds by 1)
+wSSAnneKitchenCurScript:: db           ; SS Anne Kitchen script added by G-Dubs (reduced total ds by 1)
 wViridianForestCurScript:: db
 wMuseum1FCurScript:: db
 wRoute13CurScript:: db

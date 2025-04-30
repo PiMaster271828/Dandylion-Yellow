@@ -1232,7 +1232,7 @@ INCLUDE "scripts/Route1_2.asm"
 INCLUDE "scripts/Route22_2.asm"
 INCLUDE "scripts/RedsHouse1F_2.asm"
 INCLUDE "scripts/OaksLab_2.asm"
-INCLUDE "scripts/ViridianSchoolHouse_2.asm"
+;INCLUDE "scripts/ViridianSchoolHouse_2.asm"     ; I  believe we can remove this file
 INCLUDE "scripts/Museum1F_2.asm"
 INCLUDE "scripts/PewterPokecenter_2.asm"
 INCLUDE "scripts/PokemonTower2F_2.asm"

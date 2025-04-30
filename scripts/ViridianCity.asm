@@ -272,6 +272,7 @@ ViridianCity_TextPointers:
 	dw_const MartSignText,                                   TEXT_VIRIDIANCITY_MART_SIGN
 	dw_const PokeCenterSignText,                             TEXT_VIRIDIANCITY_POKECENTER_SIGN
 	dw_const ViridianCityGymSignText,                        TEXT_VIRIDIANCITY_GYM_SIGN
+	dw_const ViridianCitySchoolHouseSignText,                TEXT_VIRIDIANCITY_SCHOOLHOUSE_SIGN    ; New sign added by G-Dubs
 	dw_const ViridianCityGymLockedText,                      TEXT_VIRIDIANCITY_GYM_LOCKED
 	dw_const ViridianCityOldManYouNeedToWeakenTheTargetText, TEXT_VIRIDIANCITY_OLD_MAN_YOU_NEED_TO_WEAKEN_THE_TARGET
 
@@ -359,6 +360,11 @@ ViridianCityTrainerTips2Text:
 ViridianCityGymSignText:
 	text_asm
 	farcall ViridianCityPrintGymSignText
+	jp TextScriptEnd
+
+ViridianCitySchoolHouseSignText:
+	text_asm
+	farcall ViridianCityPrintSchoolHouseSignText
 	jp TextScriptEnd
 
 ViridianCityGymLockedText:
