@@ -678,7 +678,8 @@
 	const EVENT_BEAT_SS_ANNE_8_TRAINER_7         ; NPC changed to trainer by G-Dubs                ; $5F8
 	const EVENT_BEAT_SS_ANNE_8_TRAINER_8         ; New trainer added by G-Dubs                     ; $5F9
 	const EVENT_BEAT_SS_ANNE_8_TRAINER_9         ; New trainer added by G-Dubs                     ; $5FA
-	const_skip 5                                 ; Formerly const_skip 12                          ; $5FB - $5FF 
+	const EVENT_BEAT_SS_ANNE_8_TRAINER_10        ; NPC changed to trainer by G-Dubs                ; $5FB
+	const_skip 4                                 ; Formerly const_skip 12                          ; $5FC - $5FF 
 	
 ; S.S. Anne 2F Rooms Events                      ; Section added by G-Dubs
     const_next $600

@@ -228,17 +228,32 @@ _SSAnne1FRoomsGentleman4AfterBattleText::
 	cont "more." 
 	done		
 
-_SSAnne1FRoomsLittleGirlText::
-	text "I always travel"
-	line "with WIGGLYTUFF!"
+_SSAnne1FRoomsLittleGirlBattleText::             ; NPC changed to trainer by G-Dubs
+	text "WIGGLYTUFF and I"
+	line "are ready! Let's"
+	cont "have a fun battle!"
 	done
 
-_SSAnne1FRoomsBedText1::               ; Healing bed added by G-Dubs
+_SSAnne1FRoomsLittleGirlEndBattleText::
+	text "I"
+	line "lost!  It was a"
+	cont "fun battle"
+	cont "though!"
+	prompt
+
+_SSAnne1FRoomsLittleGirlAfterBattleText::
+	text "I always travel"
+	line "with WIGGLYTUFF!"
+	cont "It's my best"
+	cont "friend!"
+	done
+
+_SSAnne1FRoomsBedText1::                         ; Healing bed added by G-Dubs
     text "A comfy bed!"
 	line "Time to sleep..."
 	done
 
-_SSAnne1FRoomsBedText2::               ; Healing bed added by G-Dubs
+_SSAnne1FRoomsBedText2::                         ; Healing bed added by G-Dubs
 	text "Ah, refreshed and"
 	line "restored!"
 	done

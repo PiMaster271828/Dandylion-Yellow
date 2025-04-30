@@ -37,6 +37,9 @@ INCLUDE "text/Route5.asm"                        ; Moved from Text 3 by G-Dubs t
 INCLUDE "text/Route6.asm"                        ; Moved from Text 3 by G-Dubs to avoid the Text Bank from growing too big
 INCLUDE "text/Route12.asm"                       ; Moved from Text 4 by G-Dubs to avoid the Text Bank from growing too big
 INCLUDE "text/PokemonTower7F.asm"                ; Moved from Text 5 by G-Dubs to avoid the Text Bank from growing too big
+
+SECTION "Text 1.75", ROMX                        ; Made a new Text Bank and added these files because they were too big for their original Text Banks
+
 INCLUDE "text/SSAnne1FRooms.asm"                 ; Moved from Text 1 by G-Dubs to avoid the Text Bank from growing too big
 
 SECTION "Text 2", ROMX
