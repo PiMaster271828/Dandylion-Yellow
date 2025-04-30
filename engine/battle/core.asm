@@ -1085,7 +1085,7 @@ RemoveFaintedPlayerMon:
 	jr c, .regularFaint ; if so, deduct happiness regularly
 
 	cp 30 ; is the enemy 30 levels greater than us?
-	jr nc, .carelessTrainer ; if so, punish the player for being careless, as they shouldn't be fighting a very high leveled trainer with such a level difference
+	jr nc, .carelessTrainer ; if so, punish the player for being careless, as they shouldn't be battling a very high leveled trainer with such a level difference
 .regularFaint
 	callabd_ModifyPikachuHappiness PIKAHAPPY_FAINTED
 	ret
@@ -4949,6 +4949,18 @@ HandleCounterMove:
 	ld a, [de]
 	and a
 	ret z ; miss if the opponent's last selected move's Base Power is 0.
+/************************************************************************
+Modern counter mechanic added by G-Dubs 
+*************************************************************************/	
+	; check that opponent’s last move was a Gen-I PHYSICAL type
+	inc   de               ; DE → move’s TYPE byte
+	ld    a, [de]          ; A = typeID
+	cp    $0B              ; compare to 11
+	jr    c, .counterableType  ; if A < 11 (i.e. $00–$0A), it’s physical
+	; otherwise → miss
+	xor   a
+	ret
+/*	
 ; check if the move the target last selected was Normal or Fighting type
 	inc de
 	ld a, [de]
@@ -4959,6 +4971,7 @@ HandleCounterMove:
 ; if the move wasn't Normal or Fighting type, miss
 	xor a
 	ret
+*/
 .counterableType
 	ld hl, wDamage
 	ld a, [hli]
