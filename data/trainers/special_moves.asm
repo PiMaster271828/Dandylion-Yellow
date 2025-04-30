@@ -105,11 +105,15 @@ SpecialTrainerMoves:
 ; Team Rocket
    ; Cerulean City
       db ROCKET, 5           ; Rocket who stole TM28 from Cerulean City
-	  db 1, 1, DIG           ; Adding Dig to Machop                                     ; Added by G-Dubs            
+	  db 1, 1, DIG           ; Adding Dig to Machop                                 ; Added by G-Dubs
+	  db 1, 2, LEER
+	  db 1, 3, KARATE_CHOP
+	  db 1, 4, FOCUS_ENERGY
+	  db 0          
 
-/*****************************************************************************************************
+/****************************************************************************************************
 New trainers added by Vlad and George
-******************************************************************************************************/
+*****************************************************************************************************/
 ; Soldiers
    ; Vermillion City Gym
       db SOLDIER, 1           ; Added Machop to a Soldier in Lt. Surge's gym        ; Added by G-Dubs
@@ -119,7 +123,13 @@ New trainers added by Vlad and George
 	  db 2, 4, FOCUS_ENERGY
 	  db 0
 
-	db -1 ; end
+; Chefs 
+   ; S.S Anne Kitchen 
+      db CHEF, 5             
+	  db 2, 1, WATER_GUN     ; Chef's Psyduck
+	  db 2, 2, DISABLE
+	  db 2, 3, CONFUSION
+	  db 2, 4, DIZZY_PUNCH   ; Adding Dizzy Punch to the Chef's Psyduck             ; Added by G-Dubs 
 
 /*****************************************************************************************************
 Gym Leaders
@@ -279,6 +289,7 @@ Gym Leaders
 	  db 5, 1, ROCK_SLIDE
 	  db 5, 4, EARTHQUAKE
 	  db 0
+
 /*****************************************************************************************************
 Elite Four
 ******************************************************************************************************/
@@ -369,3 +380,5 @@ Elite Four
 	  db 6, 1, AURORA_BEAM
 	  db 6, 3, QUICK_ATTACK
 	  db 0
+      
+	   db -1 ; End of list
