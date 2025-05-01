@@ -19,15 +19,16 @@ SSAnne2FRooms_TextPointers:
 	dw_const SSAnne2FRoomsFisherText,       TEXT_SSANNE2FROOMS_FISHER
 	dw_const SSAnne2FRoomsGentleman2Text,   TEXT_SSANNE2FROOMS_GENTLEMAN2
 	dw_const SSAnne2FRoomsCooltrainerFText, TEXT_SSANNE2FROOMS_COOLTRAINER_F
+	dw_const SSAnne2FRoomsGentleman4Text,   TEXT_SSANNE2FROOMS_GENTLEMAN4      ; NPC changed to trainer by G-Dubs
+	
 	dw_const SSAnne2FRoomsGentleman3Text,   TEXT_SSANNE2FROOMS_GENTLEMAN3
-	dw_const PickUpItemText,                TEXT_SSANNE2FROOMS_MAX_ETHER
-	dw_const SSAnne2FRoomsGentleman4Text,   TEXT_SSANNE2FROOMS_GENTLEMAN4
 	dw_const SSAnne2FRoomsGrampsText,       TEXT_SSANNE2FROOMS_GRAMPS
-	dw_const PickUpItemText,                TEXT_SSANNE2FROOMS_RARE_CANDY
 	dw_const SSAnne2FRoomsGentleman5Text,   TEXT_SSANNE2FROOMS_GENTLEMAN5
 	dw_const SSAnne2FRoomsLittleBoyText,    TEXT_SSANNE2FROOMS_LITTLE_BOY
 	dw_const SSAnne2FRoomsBrunetteGirlText, TEXT_SSANNE2FROOMS_BRUNETTE_GIRL
 	dw_const SSAnne2FRoomsBeautyText,       TEXT_SSANNE2FROOMS_BEAUTY
+	dw_const PickUpItemText,                TEXT_SSANNE2FROOMS_MAX_ETHER
+	dw_const PickUpItemText,                TEXT_SSANNE2FROOMS_RARE_CANDY
 
 SSAnne9TrainerHeaders:
 	def_trainers
@@ -39,6 +40,8 @@ SSAnne9TrainerHeader2:
 	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_2, 3, SSAnne2FRoomsGentleman2BattleText, SSAnne2FRoomsGentleman2EndBattleText, SSAnne2FRoomsGentleman2AfterBattleText
 SSAnne9TrainerHeader3:
 	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_3, 2, SSAnne2FRoomsCooltrainerFBattleText, SSAnne2FRoomsCooltrainerFEndBattleText, SSAnne2FRoomsCooltrainerFAfterBattleText
+SSAnne9TrainerHeader4:
+	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_4, 3, SSAnne2FRoomsGentleman4BattleText, SSAnne2FRoomsGentleman4EndBattleText, SSAnne2FRoomsGentleman4AfterBattleText            ; NPC changed to trainer by G-Dubs
 	db -1 ; end
 
 SSAnne2FRoomsGentleman1Text:
@@ -65,6 +68,12 @@ SSAnne2FRoomsCooltrainerFText:
 	call TalkToTrainer
 	jp TextScriptEnd
 
+SSAnne2FRoomsGentleman4Text:			; NPC changed to trainer by G-Dubs
+	text_asm
+	ld hl, SSAnne9TrainerHeader4
+	call TalkToTrainer
+	jp TextScriptEnd
+
 SSAnne2FRoomsGentleman3Text:
 	text_asm
 	call SaveScreenTilesToBuffer1
@@ -77,16 +86,6 @@ SSAnne2FRoomsGentleman3Text:
 
 .Text:
 	text_far _SSAnne2FRoomsGentleman3Text
-	text_end
-
-SSAnne2FRoomsGentleman4Text:
-	text_asm
-	ld hl, .Text
-	call PrintText
-	jp TextScriptEnd
-
-.Text:
-	text_far _SSAnne2FRoomsGentleman4Text
 	text_end
 
 SSAnne2FRoomsGrampsText:
@@ -165,4 +164,14 @@ SSAnne2FRoomsCooltrainerFEndBattleText:
 
 SSAnne2FRoomsCooltrainerFAfterBattleText:
 	text_far _SSAnne2FRoomsCooltrainerFAfterBattleText
+	text_end
+
+SSAnne2FRoomsGentleman4BattleText:						   ; NPC changed to trainer by G-Dubs
+	text_far _SSAnne2FRoomsGentleman4BattleText
+	text_end
+SSAnne2FRoomsGentleman4EndBattleText:
+	text_far _SSAnne2FRoomsGentleman4EndBattleText
+	text_end
+SSAnne2FRoomsGentleman4AfterBattleText:
+	text_far _SSAnne2FRoomsGentleman4AfterBattleText
 	text_end

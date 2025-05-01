@@ -8,11 +8,25 @@ _SSAnne2FRoomsGentleman3Text::
 	line "like this!"
 	prompt
 
-_SSAnne2FRoomsGentleman4Text::
+_SSAnne2FRoomsGentleman4BattleText::	    ; NPC changed to trainer by G-Dubs
+	text "I go on cruises to"
+	line "observe #MON"
+	cont "that live in the"
+	cont "sea."
+	done
+
+_SSAnne2FRoomsGentleman4EndBattleText::
+	text "I"
+	line "am defeated!"
+	prompt
+
+_SSAnne2FRoomsGentleman4AfterBattleText::
 	text "Ah yes, I have"
 	line "seen some #MON"
 	cont "ferry people"
 	cont "across the water!"
+	cont "LAPRAS, I believe"
+	cont "It was called..."
 	done
 
 _SSAnne2FRoomsGrampsText::

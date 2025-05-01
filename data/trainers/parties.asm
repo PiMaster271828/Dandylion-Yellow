@@ -792,13 +792,14 @@ GentlemanData:
 	db 19, NIDORAN_M, NIDORAN_F, 0			                                                                 ; Gentleman 2
 ; SS Anne 2F Rooms/Vermilion Gym
 	db 22, VOLTORB, MAGNEMITE, 0			                                                                 ; Gentleman 3            ; Party had been used multiple times
-; Unused
-	db 48, PRIMEAPE, 0				                                                                         ; Gentleman 4            ; (Unused)
 ; SS Anne 2F Rooms
+    db 23, SEEL, FEAROW, SEAKING, 0
 	db 17, GROWLITHE, PONYTA, 0			                                                                     ; Gentleman 5
 ; SS Anne 1F Rooms (Again)
     db 17, GROWLITHE, PIDGEOTTO, MAGNEMITE, 0                                                                ; Gentleman 6            ; New trainer added by G-Dubs
 	db 20, PIKACHU, PONYTA, FEAROW, 0                                                                        ; Gentleman 7            ; New trainer added by G-Dubs
+; Unused
+	db 48, PRIMEAPE, 0				                                                                         ; Gentleman 4            ; (Unused)
 
 Rival2Data:                                                                                                  ; Rival 2 Parties based on Yellow Legacy Parties
 ; SS Anne 2F

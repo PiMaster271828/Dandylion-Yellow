@@ -6,7 +6,7 @@ SSAnne3F_Object:
 
 	def_warp_events
 	warp_event  0,  3, SS_ANNE_BOW, 1
-	warp_event 19,  3, SS_ANNE_2F, 8
+	warp_event 19,  3, SS_ANNE_2F, 10
 
 	def_bg_events
 

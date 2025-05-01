@@ -118,13 +118,13 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const SS_ANNE_1F,                    20,  9 ; $5F
 	map_const SS_ANNE_2F,                    20,  9 ; $60
 	map_const SS_ANNE_3F,                    10,  3 ; $61
-	map_const SS_ANNE_B1F,                   15,  4 ; $62
+	map_const SS_ANNE_B1F,                   17,  4 ; $62  ; Map expanded by G-Dubs
 	map_const SS_ANNE_BOW,                   10,  7 ; $63
 	map_const SS_ANNE_KITCHEN,                7,  8 ; $64
 	map_const SS_ANNE_CAPTAINS_ROOM,          3,  4 ; $65
 	map_const SS_ANNE_1F_ROOMS,              17,  8 ; $66  ; Map expanded by G-Dubs
-	map_const SS_ANNE_2F_ROOMS,              12,  8 ; $67
-	map_const SS_ANNE_B1F_ROOMS,             12,  8 ; $68
+	map_const SS_ANNE_2F_ROOMS,              17,  8 ; $67  ; Map expanded by G-Dubs
+	map_const SS_ANNE_B1F_ROOMS,             17,  8 ; $68  ; Map expanded by G-Dubs
 	map_const UNUSED_MAP_69,                  0,  0 ; $69
 	map_const UNUSED_MAP_6A,                  0,  0 ; $6A
 	map_const UNUSED_MAP_6B,                  0,  0 ; $6B

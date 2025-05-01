@@ -16,7 +16,7 @@ SSAnne1F_Object:
 	warp_event 25,  8, SS_ANNE_1F_ROOMS, 6		 ; Warp event 8
 	warp_event 29,  8, SS_ANNE_1F_ROOMS, 7		 ; Warp event 9 	 ; New warp event added by G-Dubs
 	warp_event 33,  8, SS_ANNE_1F_ROOMS, 8		 ; Warp event 10	 ; New warp event added by G-Dubs
-	warp_event  2,  6, SS_ANNE_2F, 7			 ; Warp event 11
+	warp_event  2,  6, SS_ANNE_2F, 9			 ; Warp event 11
 	warp_event 37, 15, SS_ANNE_B1F, 6			 ; Warp event 12
 	warp_event  3, 16, SS_ANNE_KITCHEN, 1		 ; Warp event 13
 
