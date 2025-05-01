@@ -160,7 +160,7 @@ LassData:
 ; SS Anne 1F Rooms
 	db 18, NIDORAN_F, PIDGEY, NIDORAN_F, 0                                                                   ; Lass 11                ; Nidoran♀ added by G-Dubs
 ; SS Anne 2F Rooms
-	db 20, RATTATA, PIKACHU, JIGGLYPUFF, 0                                                                   ; Lass 12                ; Rattata, and Pikachu from Red/Blue added by G-Dubs
+	db 20, MEOWTH, PIKACHU, JIGGLYPUFF, 0                                                                    ; Lass 12                ; Rattata, and Pikachu from Red/Blue added by G-Dubs (Rattata changed to Meowth by G-Dubs)
 ; Route 8
 	db 23, NIDORAN_F, NIDORINA, 0                                                                            ; Lass 13
 	db 24, MEOWTH, MEOWTH, MEOWTH, 0                                                                         ; Lass 14
@@ -273,7 +273,7 @@ PokemaniacData:
 	db 23, CUBONE, SLOWPOKE, 0                                                                               ; Pokémaniac 7
 /**************************
 Pokémaniac Alternate Sprite
-***************************/
+**************************/
 ; Route 4
     db 35, CUBONE, NIDORINO, RHYHORN, NIDOQUEEN, 0                                                           ; Pokémaniac 8           ; New trainer added by G-Dubs
 ; S.S. Anne Bow
@@ -406,8 +406,14 @@ FisherData:
     db 25, MAGIKARP, GYARADOS, MAGIKARP, GYARADOS, MAGIKARP, 0                                               ; Fisher 13              ; New trainer added by G-Dubs
 
 SwimmerData:
+/******************
+Swimmer ♀ 10 Sprite
+******************/
 ; Cerulean Gym
 	db 16, HORSEA, SHELLDER, 0			                                                                     ; Swimmer 1
+/******************
+Swimmer ♀ ?? Sprite
+******************/
 ; Route 19
 	db 30, TENTACOOL, SHELLDER, 0			                                                                 ; Swimmer 2
 	db 29, GOLDEEN, HORSEA, STARYU, 0		                                                                 ; Swimmer 3
@@ -454,28 +460,45 @@ GamblerData:
 	db 24, GROWLITHE, VULPIX, 0			                                                                     ; Gambler 7
 
 BeautyData:
+/****************
+Dream Girl Sprite
+****************/
 ; Cerulean Gym (Formerly Celadon Gym)
 	db 16, TENTACOOL, KRABBY, 0	                                                                             ; Beauty 1               ; Party and level changed by G-Dubs
+/*****************
+Beauty 2 Jp Sprite
+*****************/
+; Cerulean Gym (Formerly Celadon Gym)	
 	db 17, PSYDUCK, POLIWAG, 0		                                                                         ; Beauty 2               ; Party and level changed by G-Dubs
 	db 18, SQUIRTLE, WARTORTLE, 0					                                                         ; Beauty 3               ; Party and level changed by G-Dubs
+; S.S. Anne 2F Rooms
+    db 23, WIGGLYTUFF, CLEFABLE, 0                                                                           ; Beauty 4               ; New trainer added by G-Dubs 
+    db 24, SHELLDER, PERSIAN, STARYU, 0                                                                      ; Beauty 5               ; New trainer added by G-Dubs 
+    db 25, SEAKING, GLOOM, 0                                                                                 ; Beauty 6               ; New trainer added by G-Dubs
+/********************
+Beauty 2 Jp 97 Sprite
+********************/
 ; Route 13
-	db 27, RATTATA, VULPIX, RATTATA, 0	                                                                     ; Beauty 4
-	db 29, CLEFAIRY, MEOWTH, 0			                                                                     ; Beauty 5
-; Route 20
-	db 35, SEAKING, 0					                                                                     ; Beauty 6
-	db 30, SHELLDER, SHELLDER, CLOYSTER, 0	                                                                 ; Beauty 7
-	db 31, POLIWAG, SEAKING, 0			                                                                     ; Beauty 8
+	db 27, MEOWTH, VULPIX, MEOWTH, 0	                                                                     ; Beauty 7               ; Trainer number changed from 4 to 7 by G-Dubs (Rattatas changed to Meowths by G-Dubs)
+	db 29, CLEFAIRY, MEOWTH, 0			                                                                     ; Beauty 8               ; Trainer number changed from 5 to 8 by G-Dubs
 ; Route 15
-	db 29, PIDGEOTTO, WIGGLYTUFF, 0		                                                                     ; Beauty 9
-	db 29, BULBASAUR, IVYSAUR, 0			                                                                 ; Beauty 10
+	db 29, PIDGEOTTO, WIGGLYTUFF, 0		                                                                     ; Beauty 9              
+	db 29, BULBASAUR, IVYSAUR, 0			                                                                 ; Beauty 10              
 ; Unused
 	db 33, WEEPINBELL, BELLSPROUT, WEEPINBELL, 0	                                                         ; Beauty 11              ; (Unused)
+/********************
+Default Beauty Sprite
+********************/
 ; Route 19
-	db 27, POLIWAG, GOLDEEN, SEAKING, GOLDEEN, POLIWAG, 0	                                                 ; Beauty 12
-	db 30, GOLDEEN, SEAKING, 0			                                                                     ; Beauty 13
-	db 29, STARYU, STARYU, STARYU, 0		                                                                 ; Beauty 14
+	db 27, POLIWAG, GOLDEEN, SEAKING, GOLDEEN, POLIWAG, 0	                                                 ; Beauty 12              
+	db 30, GOLDEEN, SEAKING, 0			                                                                     ; Beauty 13              
+	db 29, STARYU, STARYU, STARYU, 0		                                                                 ; Beauty 14              
 ; Route 20
-	db 30, SEADRA, HORSEA, SEADRA, 0		                                                                 ; Beauty 15
+	db 35, SEAKING, 0					                                                                     ; Beauty 15              ; Trainer number changed from 6 to 15 by G-Dubs
+	db 30, SHELLDER, SHELLDER, CLOYSTER, 0	                                                                 ; Beauty 16              ; Trainer number changed from 10 to 16 by G-Dubs
+	db 31, POLIWAG, SEAKING, 0			                                                                     ; Beauty 17              ; Trainer number changed from 11 to 17 by G-Dubs
+	db 30, SEADRA, HORSEA, SEADRA, 0		                                                                 ; Beauty 18              ; Trainer number changed from 15 to 18 by G-Dubs
+
 
 PsychicData:
 ; Saffron Gym
@@ -793,17 +816,18 @@ GentlemanData:
 ; SS Anne 2F Rooms/Vermilion Gym
 	db 22, VOLTORB, MAGNEMITE, 0			                                                                 ; Gentleman 3            ; Party had been used multiple times
 ; SS Anne 2F Rooms
-    db 23, SEEL, FEAROW, SEAKING, 0
-	db 17, GROWLITHE, PONYTA, 0			                                                                     ; Gentleman 5
+    db 23, SEEL, FEAROW, SEAKING, 0                                                                          ; Gentleman 4            ; New trainer added by G-Dubs
+	db 22, MAGMAR, ELECTABUZZ, 0                                                                             ; Gentleman 5
+	db 17, GROWLITHE, PONYTA, 0			                                                                     ; Gentleman 6            ; New trainer added by G-Dubs
 ; SS Anne 1F Rooms (Again)
-    db 17, GROWLITHE, PIDGEOTTO, MAGNEMITE, 0                                                                ; Gentleman 6            ; New trainer added by G-Dubs
-	db 20, PIKACHU, PONYTA, FEAROW, 0                                                                        ; Gentleman 7            ; New trainer added by G-Dubs
+    db 17, GROWLITHE, PIDGEOTTO, MAGNEMITE, 0                                                                ; Gentleman 7            ; New trainer added by G-Dubs
+	db 20, PIKACHU, PONYTA, FEAROW, 0                                                                        ; Gentleman 8            ; New trainer added by G-Dubs
 ; Unused
-	db 48, PRIMEAPE, 0				                                                                         ; Gentleman 4            ; (Unused)
+	db 48, PRIMEAPE, 0				                                                                         ; Gentleman 9            ; (Unused)
 
-Rival2Data:                                                                                                  ; Rival 2 Parties based on Yellow Legacy Parties
+Rival2Data:                                                                                                  ; Rival 2 Parties based on Yellow Legacy Parties (modified by G-Dubs)
 ; SS Anne 2F
-	db $FF, 21, PIDGEOTTO, 20, RATICATE , 22, WEEPINBELL, 21, KADABRA, 21, SANDSHREW, 24, EEVEE, 0	         ; Rival 2 1              ; Pidgeotto, Raticate, & Kadabra added by G-Dubs 
+	db $FF, 23, PIDGEOTTO, 20, RATICATE , 23, WEEPINBELL, 21, KADABRA, 22, SANDSHREW, 25, EEVEE, 0	         ; Rival 2 1              ; Pidgeotto, Raticate, & Kadabra added by G-Dubs 
 ; Pokémon Tower 2F
     db $FF, 34, FEAROW, 33, SANDSLASH, 32, SHELLDER, 32, GROWLITHE, 33, KADABRA, 35, JOLTEON, 0              ; Rival 2 Jolteon   2    ; Sandslash added by G-Dubs
    ;db $FF, 28, FEAROW, 26, SANDSLASH, 26, KADABRA, 25, GYARADOS, 25, VULPIX, 30, EEVEE, 0                   
@@ -992,13 +1016,16 @@ School Girl Sprite
     db 5, PIDGEY, BULBASAUR, 0                                                                               ; School Kid 2 	      ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 ; S.S. Anne 1F Rooms
     db 22, WIGGLYTUFF, 0                                                                                     ; School Kid 3           ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs) 
+; S.S. Anne 2F Rooms
+    db 23, PIDGEY, PIKACHU, GOLDEEN, 0                                                                       ; School Kid 4            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)   
 /****************
 School Boy Sprite
 *****************/ 
 ; Viridian City Trainer's School (Again)
-    db 5, RATTATA, SQUIRTLE, 0	                                                                             ; School Kid 4            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-    db 5, NIDORAN_M, ODDISH, 0                                                                               ; School Kid 5            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-	
+    db 5, RATTATA, SQUIRTLE, 0	                                                                             ; School Kid 5            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+    db 5, NIDORAN_M, ODDISH, 0                                                                               ; School Kid 6            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+; SS Anne 2F Rooms
+    db 22, MAGNEMITE, ODDISH, POLIWAG, 0	                                                                 ; School Kid 7 		   ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
     
 
 

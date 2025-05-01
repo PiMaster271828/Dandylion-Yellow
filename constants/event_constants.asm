@@ -689,7 +689,11 @@
 	const EVENT_BEAT_SS_ANNE_9_TRAINER_2                                                           ; $603
 	const EVENT_BEAT_SS_ANNE_9_TRAINER_3                                                           ; $604
 	const EVENT_BEAT_SS_ANNE_9_TRAINER_4         ; NPC changed to trainer by G-Dubs                ; $605
-	const_skip 10                                ; Formerly const_skip 12                          ; $606 - $60F
+	const EVENT_BEAT_SS_ANNE_9_TRAINER_5         ; NPC changed to trainer by G-Dubs                ; $606
+	const EVENT_BEAT_SS_ANNE_9_TRAINER_6         ; NPC changed to trainer by G-Dubs                ; $607
+	const EVENT_BEAT_SS_ANNE_9_TRAINER_7         ; NPC changed to trainer by G-Dubs                ; $608
+	const EVENT_BEAT_SS_ANNE_9_TRAINER_8         ; NPC changed to trainer by G-Dubs                ; $609
+	const_skip 6                                 ; Formerly const_skip 12                          ; $60A - $60F
 
 ; S.S. Anne B1F Rooms Events                     ; Section added by G-Dubs
     const_next $610

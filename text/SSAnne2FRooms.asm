@@ -1,39 +1,3 @@
-_SSAnne2FRoomsGentleman3Text::
-	text "In all my travels,"
-	line "I've never seen"
-	cont "any #MON sleep"
-	cont "like this one!"
-
-	para "It was something"
-	line "like this!"
-	prompt
-
-_SSAnne2FRoomsGentleman4BattleText::	    ; NPC changed to trainer by G-Dubs
-	text "I go on cruises to"
-	line "observe #MON"
-	cont "that live in the"
-	cont "sea."
-	done
-
-_SSAnne2FRoomsGentleman4EndBattleText::
-	text "I"
-	line "am defeated!"
-	prompt
-
-_SSAnne2FRoomsGentleman4AfterBattleText::
-	text "Ah yes, I have"
-	line "seen some #MON"
-	cont "ferry people"
-	cont "across the water!"
-	cont "LAPRAS, I believe"
-	cont "It was called..."
-	done
-
-_SSAnne2FRoomsGrampsText::
-	text "#MON can CUT"
-	line "down small bushes."
-	done
-
 _SSAnne2FRoomsGentleman1BattleText::
 	text "Competing against"
 	line "the young keeps"
@@ -100,28 +64,146 @@ _SSAnne2FRoomsCooltrainerFAfterBattleText::
 	line "strong #MON!"
 	done
 
-_SSAnne2FRoomsGentleman5Text::
+_SSAnne2FRoomsGentleman3BattleText::	    ; NPC changed to trainer by G-Dubs
+	text "I go on cruises to"
+	line "observe #MON"
+	cont "that live in the"
+	cont "sea."
+	done
+
+_SSAnne2FRoomsGentleman3EndBattleText::
+	text "I"
+	line "am defeated!"
+	prompt
+
+_SSAnne2FRoomsGentleman3AfterBattleText::
+	text "Ah yes, I have"
+	line "seen some #MON"
+	cont "ferry people"
+	cont "across the water!"
+	cont "LAPRAS, I believe"
+	cont "It was called..."
+	done
+
+_SSAnne2FRoomsGentleman4BattleText::	    ; NPC changed to trainer by G-Dubs
+	text "Ah, a challenger."
+	line "It is nice to"
+	cont "have a bit of"
+	cont "action while at"
+	cont "sea."
+	done	
+
+_SSAnne2FRoomsGentleman4EndBattleText::
+	text "You"
+	line "are very good!"
+	prompt	
+
+_SSAnne2FRoomsGentleman4AfterBattleText::
 	text "Have you gone to"
 	line "the SAFARI ZONE"
 	cont "in FUCHSIA CITY?"
 
-	para "It had many rare"
-	line "kinds of #MON!!"
+	para "I have heard that" 
+	line "it has many rare"
+	cont "kinds of #MON!!"
 	done
 
-_SSAnne2FRoomsLittleBoyText::
+_SSAnne2FRoomsLittleBoyBattleText::	        ; NPC changed to trainer by G-Dubs
+	text "I'm on vacation"
+	line "with my family!"
+	cont "I hope we go to"
+	cont "the SAFARI ZONE!"
+	cont "I'm going to"
+	cont "catch lots of"
+	cont "#MON!"
+	done
+
+_SSAnne2FRoomsLittleBoyEndBattleText::
+	text "I"
+	line "lost! Maybe I can"
+	cont "get a stronger"
+	cont "#MON at the"
+	cont "SAFARI ZONE!"
+	prompt
+
+_SSAnne2FRoomsLittleBoyAfterBattleText::
 	text "Me and my Daddy"
 	line "think the SAFARI"
 	cont "ZONE is awesome!"
 	done
 
-_SSAnne2FRoomsBrunetteGirlText::
+_SSAnne2FRoomsBrunetteGirlBattleText::		; NPC changed to trainer by G-Dubs
+	text "This is my first"
+	line "time on a ship!"
+	cont "Let's have a"
+	cont "battle to"
+	cont "celebrate!"
+	done		
+
+_SSAnne2FRoomsBrunetteGirlEndBattleText::
+	text "Wow!"
+	line "That was a great"
+	cont "battle!"
+	prompt
+
+_SSAnne2FRoomsBrunetteGirlAfterBattleText::
 	text "The CAPTAIN looked"
 	line "really sick and"
-	cont "pale!"
+	cont "pale!  My mom"
+	cont "says he got sea-"
+	cont "sick, but I don't"
+	cont "think so!"
 	done
 
-_SSAnne2FRoomsBeautyText::
+_SSAnne2FRoomsBeauty1BattleText::	   ; NPC changed to trainer by G-Dubs
+	text "This cruise is"
+	line "amazing! It is"
+	cont "full of fancy"
+	cont "parties and"
+	cont "#MON trainers!"
+	done
+
+_SSAnne2FRoomsBeauty1EndBattleText::
+	text "I"
+	line "was hoping to"
+	cont "have won, to show"
+	cont "my skills off to"
+	cont "my daughter!"
+	cont "It's all good,"
+	cont "though!  We'll"
+	cont "have a great time"
+	cont "on the cruise"
+	cont "anyway!"
+	prompt
+
+_SSAnne2FRoomsBeauty1AfterBattleText::
 	text "I hear many people"
 	line "get seasick!"
+	cont "I'm glad I didn't"
+	cont "get sick, but our"
+	cont "CAPTAIN doesn't"
+	cont "look so good, I"
+	cont "hope we can leave"
+	cont "on time!"
+	done
+
+
+
+
+
+
+
+_SSAnne2FRoomsGentleman5Text::
+	text "In all my travels,"
+	line "I've never seen"
+	cont "any #MON sleep"
+	cont "like this one!"
+
+	para "It was something"
+	line "like this!"
+	prompt
+
+_SSAnne2FRoomsGrampsText::
+	text "#MON can CUT"
+	line "down small bushes."
 	done

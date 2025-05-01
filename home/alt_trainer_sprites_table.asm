@@ -162,15 +162,15 @@ BeautySpriteHandler:
 	cp $01
 	ret c ; Trainer 0 -> Use default (BeautyPic)
 	cp $02
-	jr nc, .CheckBeauty2to3 ; Check if >= 2
-	; Trainer 1 -> Use Beauty2Pic
+	jr nc, .CheckBeauty2to6 ; Check if >= 2
+	; Trainer 1 -> Use Beauty2Pic (Dream Girl)
 	ld de, Beauty2Pic
 	call UpdateTrainerPicPointer
 	ret ; Done for this range
-.CheckBeauty2to3:
-    cp $04
-    jr nc, .BeautyDone ; Check if >= 4
-    ; Trainers 2-3 -> Use Beauty3Pic
+.CheckBeauty2to6:
+    cp $07
+    jr nc, .BeautyDone ; Check if >= 7
+    ; Trainers 2-6 -> Use Beauty3Pic (Beauty 2 Jp)
     ld de, Beauty3Pic
     call UpdateTrainerPicPointer
     ret ; Done for this range
@@ -193,10 +193,10 @@ TeacherSpriteHandler:
 SchoolKidSpriteHandler:
 	ld a, [wTrainerNo]
 	cp $01
-	ret c ; Trainers 0-1 -> Use default (SchoolKidPic) ( School Boy)
-	cp $04
-	jr nc, .SchoolKidDone ; Check if >= 4
-	; Trainers 1-3 -> Use SchoolKid2Pic (School Girl)
+	ret c ; Trainers 0-1 -> Use default (SchoolKidPic) (School Boy)
+	cp $05
+	jr nc, .SchoolKidDone ; Check if >= 5
+	; Trainers 1-4 -> Use SchoolKid2Pic (School Girl)
 	ld de, SchoolKid2Pic
 	call UpdateTrainerPicPointer
 	ret ; Done for this range

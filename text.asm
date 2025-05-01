@@ -10,7 +10,6 @@ INCLUDE "text/SSAnneBow.asm"
 INCLUDE "text/SSAnneKitchen.asm"
 INCLUDE "text/SSAnneCaptainsRoom.asm"
 INCLUDE "text/SSAnne2FRooms.asm"
-INCLUDE "text/SSAnneB1FRooms.asm"
 INCLUDE "text/VictoryRoad3F.asm"
 INCLUDE "text/RocketHideoutB1F.asm"
 INCLUDE "text/RocketHideoutB2F.asm"
@@ -27,6 +26,7 @@ INCLUDE "text/SilphCo8F.asm"
 INCLUDE "text/SilphCo9F.asm"
 INCLUDE "text/SilphCo10F.asm"
 
+
 SECTION "Text 1.5", ROMX                         ; Made a new Text Bank and added these files because they were too big for their original Text Banks
 
 INCLUDE "text/MtMoon1F.asm"                      ; Moved from Text 1 by G-Dubs to avoid the Text Bank from growing too big
@@ -38,9 +38,12 @@ INCLUDE "text/Route6.asm"                        ; Moved from Text 3 by G-Dubs t
 INCLUDE "text/Route12.asm"                       ; Moved from Text 4 by G-Dubs to avoid the Text Bank from growing too big
 INCLUDE "text/PokemonTower7F.asm"                ; Moved from Text 5 by G-Dubs to avoid the Text Bank from growing too big
 
+
 SECTION "Text 1.75", ROMX                        ; Made a new Text Bank and added these files because they were too big for their original Text Banks
 
 INCLUDE "text/SSAnne1FRooms.asm"                 ; Moved from Text 1 by G-Dubs to avoid the Text Bank from growing too big
+INCLUDE "text/SSAnneB1FRooms.asm"                ; Moved from Text 1 by G-Dubs to avoid the Text Bank from growing too big
+
 
 SECTION "Text 2", ROMX
 

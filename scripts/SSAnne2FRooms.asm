@@ -19,14 +19,17 @@ SSAnne2FRooms_TextPointers:
 	dw_const SSAnne2FRoomsFisherText,       TEXT_SSANNE2FROOMS_FISHER
 	dw_const SSAnne2FRoomsGentleman2Text,   TEXT_SSANNE2FROOMS_GENTLEMAN2
 	dw_const SSAnne2FRoomsCooltrainerFText, TEXT_SSANNE2FROOMS_COOLTRAINER_F
+	dw_const SSAnne2FRoomsGentleman3Text,   TEXT_SSANNE2FROOMS_GENTLEMAN3      ; NPC changed to trainer by G-Dubs
 	dw_const SSAnne2FRoomsGentleman4Text,   TEXT_SSANNE2FROOMS_GENTLEMAN4      ; NPC changed to trainer by G-Dubs
-	
-	dw_const SSAnne2FRoomsGentleman3Text,   TEXT_SSANNE2FROOMS_GENTLEMAN3
-	dw_const SSAnne2FRoomsGrampsText,       TEXT_SSANNE2FROOMS_GRAMPS
+    dw_const SSAnne2FRoomsLittleBoyText,    TEXT_SSANNE2FROOMS_LITTLE_BOY	   ; NPC changed to trainer by G-Dubs
+    dw_const SSAnne2FRoomsBrunetteGirlText, TEXT_SSANNE2FROOMS_BRUNETTE_GIRL   ; NPC changed to trainer by G-Dubs
+    dw_const SSAnne2FRoomsBeauty1Text,       TEXT_SSANNE2FROOMS_BEAUTY1		   ; NPC changed to trainer by G-Dubs
+
+
 	dw_const SSAnne2FRoomsGentleman5Text,   TEXT_SSANNE2FROOMS_GENTLEMAN5
-	dw_const SSAnne2FRoomsLittleBoyText,    TEXT_SSANNE2FROOMS_LITTLE_BOY
-	dw_const SSAnne2FRoomsBrunetteGirlText, TEXT_SSANNE2FROOMS_BRUNETTE_GIRL
-	dw_const SSAnne2FRoomsBeautyText,       TEXT_SSANNE2FROOMS_BEAUTY
+	dw_const SSAnne2FRoomsGrampsText,       TEXT_SSANNE2FROOMS_GRAMPS
+	
+	
 	dw_const PickUpItemText,                TEXT_SSANNE2FROOMS_MAX_ETHER
 	dw_const PickUpItemText,                TEXT_SSANNE2FROOMS_RARE_CANDY
 
@@ -41,7 +44,17 @@ SSAnne9TrainerHeader2:
 SSAnne9TrainerHeader3:
 	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_3, 2, SSAnne2FRoomsCooltrainerFBattleText, SSAnne2FRoomsCooltrainerFEndBattleText, SSAnne2FRoomsCooltrainerFAfterBattleText
 SSAnne9TrainerHeader4:
-	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_4, 3, SSAnne2FRoomsGentleman4BattleText, SSAnne2FRoomsGentleman4EndBattleText, SSAnne2FRoomsGentleman4AfterBattleText            ; NPC changed to trainer by G-Dubs
+	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_4, 3, SSAnne2FRoomsGentleman3BattleText, SSAnne2FRoomsGentleman3EndBattleText, SSAnne2FRoomsGentleman3AfterBattleText            ; NPC changed to trainer by G-Dubs
+SSAnne9TrainerHeader5:
+	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_5, 2, SSAnne2FRoomsGentleman4BattleText, SSAnne2FRoomsGentleman4EndBattleText, SSAnne2FRoomsGentleman4AfterBattleText            ; NPC changed to trainer by G-Dubs
+SSAnne9TrainerHeader6:	
+	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_6, 0, SSAnne2FRoomsLittleBoyBattleText, SSAnne2FRoomsLittleBoyEndBattleText, SSAnne2FRoomsLittleBoyAfterBattleText               ; NPC changed to trainer by G-Dubs		
+SSAnne9TrainerHeader7:	
+	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_7, 0, SSAnne2FRoomsBrunetteGirlBattleText, SSAnne2FRoomsBrunetteGirlEndBattleText, SSAnne2FRoomsBrunetteGirlAfterBattleText      ; NPC changed to trainer by G-Dubs
+SSAnne9TrainerHeader8:	
+	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_8, 0, SSAnne2FRoomsBeauty1BattleText, SSAnne2FRoomsBeauty1EndBattleText, SSAnne2FRoomsBeauty1AfterBattleText                     ; NPC changed to trainer by G-Dubs
+;SSAnne9TrainerHeader9:	
+	
 	db -1 ; end
 
 SSAnne2FRoomsGentleman1Text:
@@ -68,13 +81,43 @@ SSAnne2FRoomsCooltrainerFText:
 	call TalkToTrainer
 	jp TextScriptEnd
 
-SSAnne2FRoomsGentleman4Text:			; NPC changed to trainer by G-Dubs
+SSAnne2FRoomsGentleman3Text:		   ; NPC changed to trainer by G-Dubs
 	text_asm
 	ld hl, SSAnne9TrainerHeader4
 	call TalkToTrainer
 	jp TextScriptEnd
 
-SSAnne2FRoomsGentleman3Text:
+SSAnne2FRoomsGentleman4Text:		   ; NPC changed to trainer by G-Dubs
+	text_asm
+	ld hl, SSAnne9TrainerHeader5
+	call TalkToTrainer
+	jp TextScriptEnd
+
+SSAnne2FRoomsLittleBoyText:			   ; NPC changed to trainer by G-Dubs
+	text_asm
+	ld hl, SSAnne9TrainerHeader6
+	call TalkToTrainer
+	jp TextScriptEnd
+
+SSAnne2FRoomsBrunetteGirlText:
+	text_asm
+	ld hl, SSAnne9TrainerHeader7
+	call TalkToTrainer
+	jp TextScriptEnd
+
+SSAnne2FRoomsBeauty1Text:
+	text_asm
+	ld hl, SSAnne9TrainerHeader8
+	call TalkToTrainer
+	jp TextScriptEnd
+
+
+
+
+
+
+
+SSAnne2FRoomsGentleman5Text:
 	text_asm
 	call SaveScreenTilesToBuffer1
 	ld hl, .Text
@@ -85,38 +128,17 @@ SSAnne2FRoomsGentleman3Text:
 	jp TextScriptEnd
 
 .Text:
-	text_far _SSAnne2FRoomsGentleman3Text
+	text_far _SSAnne2FRoomsGentleman5Text
 	text_end
 
 SSAnne2FRoomsGrampsText:
-	text_asm
-	ld hl, .Text
-	call PrintText
-	jp TextScriptEnd
-
-.Text:
 	text_far _SSAnne2FRoomsGrampsText
 	text_end
 
-SSAnne2FRoomsGentleman5Text:
-	text_asm
-	farcall SSAnne2FRoomsPrintGentleman5Text
-	jp TextScriptEnd
 
-SSAnne2FRoomsLittleBoyText:
-	text_asm
-	farcall SSAnne2FRoomsPrintLittleBoyText
-	jp TextScriptEnd
 
-SSAnne2FRoomsBrunetteGirlText:
-	text_asm
-	farcall SSAnne2FRoomsPrintBrunetteGirlText
-	jp TextScriptEnd
 
-SSAnne2FRoomsBeautyText:
-	text_asm
-	farcall SSAnne2FRoomsPrintBeautyText
-	jp TextScriptEnd
+
 
 SSAnne2FRoomsGentleman1BattleText:
 	text_far _SSAnne2FRoomsGentleman1BattleText
@@ -166,12 +188,62 @@ SSAnne2FRoomsCooltrainerFAfterBattleText:
 	text_far _SSAnne2FRoomsCooltrainerFAfterBattleText
 	text_end
 
+SSAnne2FRoomsGentleman3BattleText:						   ; NPC changed to trainer by G-Dubs
+	text_far _SSAnne2FRoomsGentleman3BattleText
+	text_end
+
+SSAnne2FRoomsGentleman3EndBattleText:
+	text_far _SSAnne2FRoomsGentleman3EndBattleText
+	text_end
+
+SSAnne2FRoomsGentleman3AfterBattleText:
+	text_far _SSAnne2FRoomsGentleman3AfterBattleText
+	text_end
+
 SSAnne2FRoomsGentleman4BattleText:						   ; NPC changed to trainer by G-Dubs
 	text_far _SSAnne2FRoomsGentleman4BattleText
 	text_end
+
 SSAnne2FRoomsGentleman4EndBattleText:
 	text_far _SSAnne2FRoomsGentleman4EndBattleText
 	text_end
+
 SSAnne2FRoomsGentleman4AfterBattleText:
 	text_far _SSAnne2FRoomsGentleman4AfterBattleText
+	text_end
+
+SSAnne2FRoomsLittleBoyBattleText:						   ; NPC changed to trainer by G-Dubs
+	text_far _SSAnne2FRoomsLittleBoyBattleText
+	text_end
+
+SSAnne2FRoomsLittleBoyEndBattleText:
+	text_far _SSAnne2FRoomsLittleBoyEndBattleText
+	text_end
+
+SSAnne2FRoomsLittleBoyAfterBattleText:
+	text_far _SSAnne2FRoomsLittleBoyAfterBattleText
+	text_end
+
+SSAnne2FRoomsBrunetteGirlBattleText:					   ; NPC changed to trainer by G-Dubs
+	text_far _SSAnne2FRoomsBrunetteGirlBattleText
+	text_end
+
+SSAnne2FRoomsBrunetteGirlEndBattleText:
+	text_far _SSAnne2FRoomsBrunetteGirlEndBattleText
+	text_end
+
+SSAnne2FRoomsBrunetteGirlAfterBattleText:
+	text_far _SSAnne2FRoomsBrunetteGirlAfterBattleText
+	text_end
+
+SSAnne2FRoomsBeauty1BattleText:					           ; NPC changed to trainer by G-Dubs
+	text_far _SSAnne2FRoomsBeauty1BattleText
+	text_end
+
+SSAnne2FRoomsBeauty1EndBattleText:
+	text_far _SSAnne2FRoomsBeauty1EndBattleText
+	text_end
+
+SSAnne2FRoomsBeauty1AfterBattleText:
+	text_far _SSAnne2FRoomsBeauty1AfterBattleText
 	text_end
