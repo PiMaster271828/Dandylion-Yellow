@@ -23,13 +23,10 @@ SSAnne2FRooms_TextPointers:
 	dw_const SSAnne2FRoomsGentleman4Text,   TEXT_SSANNE2FROOMS_GENTLEMAN4      ; NPC changed to trainer by G-Dubs
     dw_const SSAnne2FRoomsLittleBoyText,    TEXT_SSANNE2FROOMS_LITTLE_BOY	   ; NPC changed to trainer by G-Dubs
     dw_const SSAnne2FRoomsBrunetteGirlText, TEXT_SSANNE2FROOMS_BRUNETTE_GIRL   ; NPC changed to trainer by G-Dubs
-    dw_const SSAnne2FRoomsBeauty1Text,       TEXT_SSANNE2FROOMS_BEAUTY1		   ; NPC changed to trainer by G-Dubs
-
-
-	dw_const SSAnne2FRoomsGentleman5Text,   TEXT_SSANNE2FROOMS_GENTLEMAN5
-	dw_const SSAnne2FRoomsGrampsText,       TEXT_SSANNE2FROOMS_GRAMPS
-	
-	
+    dw_const SSAnne2FRoomsBeauty1Text,      TEXT_SSANNE2FROOMS_BEAUTY1		   ; NPC changed to trainer by G-Dubs
+    dw_const SSAnne2FRoomsBeauty2Text,      TEXT_SSANNE2FROOMS_BEAUTY2		   ; New trainer added by G-Dubs
+    dw_const SSAnne2FRoomsBeauty3Text,      TEXT_SSANNE2FROOMS_BEAUTY3		   ; New trainer added by G-Dubs
+	dw_const SSAnne2FRoomsGrampsText,       TEXT_SSANNE2FROOMS_GRAMPS	
 	dw_const PickUpItemText,                TEXT_SSANNE2FROOMS_MAX_ETHER
 	dw_const PickUpItemText,                TEXT_SSANNE2FROOMS_RARE_CANDY
 
@@ -53,8 +50,10 @@ SSAnne9TrainerHeader7:
 	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_7, 0, SSAnne2FRoomsBrunetteGirlBattleText, SSAnne2FRoomsBrunetteGirlEndBattleText, SSAnne2FRoomsBrunetteGirlAfterBattleText      ; NPC changed to trainer by G-Dubs
 SSAnne9TrainerHeader8:	
 	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_8, 0, SSAnne2FRoomsBeauty1BattleText, SSAnne2FRoomsBeauty1EndBattleText, SSAnne2FRoomsBeauty1AfterBattleText                     ; NPC changed to trainer by G-Dubs
-;SSAnne9TrainerHeader9:	
-	
+SSAnne9TrainerHeader9:
+	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_9, 2, SSAnne2FRoomsBeauty2BattleText, SSAnne2FRoomsBeauty2EndBattleText, SSAnne2FRoomsBeauty2AfterBattleText                     ; New trainer added by G-Dubs	
+SSAnne9TrainerHeader10:
+	trainer EVENT_BEAT_SS_ANNE_9_TRAINER_10, 2, SSAnne2FRoomsBeauty3BattleText, SSAnne2FRoomsBeauty3EndBattleText, SSAnne2FRoomsBeauty3AfterBattleText                    ; New trainer added by G-Dubs	
 	db -1 ; end
 
 SSAnne2FRoomsGentleman1Text:
@@ -99,25 +98,31 @@ SSAnne2FRoomsLittleBoyText:			   ; NPC changed to trainer by G-Dubs
 	call TalkToTrainer
 	jp TextScriptEnd
 
-SSAnne2FRoomsBrunetteGirlText:
+SSAnne2FRoomsBrunetteGirlText:		   ; NPC changed to trainer by G-Dubs
 	text_asm
 	ld hl, SSAnne9TrainerHeader7
 	call TalkToTrainer
 	jp TextScriptEnd
 
-SSAnne2FRoomsBeauty1Text:
+SSAnne2FRoomsBeauty1Text:			   ; NPC changed to trainer by G-Dubs
 	text_asm
 	ld hl, SSAnne9TrainerHeader8
 	call TalkToTrainer
 	jp TextScriptEnd
 
+SSAnne2FRoomsBeauty2Text:			   ; New trainer added by G-Dubs
+	text_asm
+	ld hl, SSAnne9TrainerHeader9
+	call TalkToTrainer
+	jp TextScriptEnd
 
+SSAnne2FRoomsBeauty3Text:			   ; New trainer added by G-Dubs
+	text_asm
+	ld hl, SSAnne9TrainerHeader10
+	call TalkToTrainer
+	jp TextScriptEnd
 
-
-
-
-
-SSAnne2FRoomsGentleman5Text:
+SSAnne2FRoomsGrampsText:
 	text_asm
 	call SaveScreenTilesToBuffer1
 	ld hl, .Text
@@ -128,17 +133,8 @@ SSAnne2FRoomsGentleman5Text:
 	jp TextScriptEnd
 
 .Text:
-	text_far _SSAnne2FRoomsGentleman5Text
-	text_end
-
-SSAnne2FRoomsGrampsText:
 	text_far _SSAnne2FRoomsGrampsText
 	text_end
-
-
-
-
-
 
 SSAnne2FRoomsGentleman1BattleText:
 	text_far _SSAnne2FRoomsGentleman1BattleText
@@ -246,4 +242,28 @@ SSAnne2FRoomsBeauty1EndBattleText:
 
 SSAnne2FRoomsBeauty1AfterBattleText:
 	text_far _SSAnne2FRoomsBeauty1AfterBattleText
+	text_end
+
+SSAnne2FRoomsBeauty2BattleText:					           ; New trainer added by G-Dubs
+	text_far _SSAnne2FRoomsBeauty2BattleText
+	text_end
+
+SSAnne2FRoomsBeauty2EndBattleText:
+	text_far _SSAnne2FRoomsBeauty2EndBattleText
+	text_end
+
+SSAnne2FRoomsBeauty2AfterBattleText:
+	text_far _SSAnne2FRoomsBeauty2AfterBattleText
+	text_end
+
+SSAnne2FRoomsBeauty3BattleText:					           ; New trainer added by G-Dubs
+	text_far _SSAnne2FRoomsBeauty3BattleText
+	text_end
+
+SSAnne2FRoomsBeauty3EndBattleText:
+	text_far _SSAnne2FRoomsBeauty3EndBattleText
+	text_end
+
+SSAnne2FRoomsBeauty3AfterBattleText:
+	text_far _SSAnne2FRoomsBeauty3AfterBattleText
 	text_end

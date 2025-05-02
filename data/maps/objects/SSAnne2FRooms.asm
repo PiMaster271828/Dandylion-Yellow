@@ -8,10 +8,8 @@
     const_export SSANNE2FROOMS_LITTLE_BOY		 ; NPC changed to trainer by G-Dubs
     const_export SSANNE2FROOMS_BRUNETTE_GIRL     ; NPC changed to trainer by G-Dubs
     const_export SSANNE2FROOMS_BEAUTY1           ; NPC changed to trainer by G-Dubs
-
-
-
-	const_export SSANNE2FROOMS_GENTLEMAN5
+	const_export SSANNE2FROOMS_BEAUTY2           ; New trainer added by G-Dubs
+    const_export SSANNE2FROOMS_BEAUTY3           ; New trainer added by G-Dubs
 	const_export SSANNE2FROOMS_GRAMPS
 	const_export SSANNE2FROOMS_MAX_ETHER
     const_export SSANNE2FROOMS_RARE_CANDY
@@ -43,19 +41,16 @@ SSAnne2FRooms_Object:
 	object_event 10,  2, SPRITE_GENTLEMAN, STAY, RIGHT, TEXT_SSANNE2FROOMS_GENTLEMAN1, OPP_GENTLEMAN, 3
 	object_event 13,  4, SPRITE_FISHER, STAY, LEFT, TEXT_SSANNE2FROOMS_FISHER, OPP_FISHER, 1
 	object_event 30,  4, SPRITE_GENTLEMAN, STAY, RIGHT, TEXT_SSANNE2FROOMS_GENTLEMAN2, OPP_GENTLEMAN, 5
-	object_event 32,  1, SPRITE_COOLTRAINER_F, STAY, DOWN, TEXT_SSANNE2FROOMS_COOLTRAINER_F, OPP_LASS, 12
+	object_event 32, 11, SPRITE_COOLTRAINER_F, STAY, DOWN, TEXT_SSANNE2FROOMS_COOLTRAINER_F, OPP_LASS, 12
 	object_event 21,  2, SPRITE_GENTLEMAN, STAY, DOWN, TEXT_SSANNE2FROOMS_GENTLEMAN3, OPP_GENTLEMAN, 4            ; NPC changed to trainer by G-Dubs
 	object_event  2, 12, SPRITE_GENTLEMAN, STAY, DOWN, TEXT_SSANNE2FROOMS_GENTLEMAN4, OPP_GENTLEMAN, 7            ; NPC changed to trainer by G-Dubs
-    object_event  1, 14, SPRITE_LITTLE_BOY, STAY, NONE, TEXT_SSANNE2FROOMS_LITTLE_BOY, OPP_SCHOOL_KID, 7          ; NPC changed to trainer by G-Dubs
+	object_event  1, 14, SPRITE_LITTLE_BOY, STAY, NONE, TEXT_SSANNE2FROOMS_LITTLE_BOY, OPP_SCHOOL_KID, 7          ; NPC changed to trainer by G-Dubs
 	object_event 12, 12, SPRITE_BRUNETTE_GIRL, STAY, LEFT, TEXT_SSANNE2FROOMS_BRUNETTE_GIRL, OPP_SCHOOL_KID, 4    ; NPC changed to trainer by G-Dubs
-    object_event 10, 12, SPRITE_BEAUTY, STAY, RIGHT, TEXT_SSANNE2FROOMS_BEAUTY1, OPP_BEAUTY, 4                    ; NPC changed to trainer by G-Dubs
-
-
-
-
-	object_event  1,  2, SPRITE_GENTLEMAN, STAY, DOWN, TEXT_SSANNE2FROOMS_GENTLEMAN5
-	object_event 22,  1, SPRITE_GRAMPS, STAY, DOWN, TEXT_SSANNE2FROOMS_GRAMPS
+	object_event 10, 12, SPRITE_BEAUTY, STAY, RIGHT, TEXT_SSANNE2FROOMS_BEAUTY1, OPP_BEAUTY, 4                    ; NPC changed to trainer by G-Dubs
+	object_event 20, 14, SPRITE_BEAUTY, STAY, RIGHT, TEXT_SSANNE2FROOMS_BEAUTY2, OPP_BEAUTY, 5                    ; New trainer added by G-Dubs
+	object_event 20, 12, SPRITE_BEAUTY, STAY, RIGHT, TEXT_SSANNE2FROOMS_BEAUTY3, OPP_BEAUTY, 6                    ; New trainer added by G-Dubs
+	object_event  1,  2, SPRITE_GRAMPS, STAY, DOWN, TEXT_SSANNE2FROOMS_GRAMPS
 	object_event 12,  1, SPRITE_POKE_BALL, STAY, NONE, TEXT_SSANNE2FROOMS_MAX_ETHER, MAX_ETHER
-	object_event 30,  2, SPRITE_POKE_BALL, STAY, NONE, TEXT_SSANNE2FROOMS_RARE_CANDY, RARE_CANDY
+	object_event 32,  1, SPRITE_POKE_BALL, STAY, NONE, TEXT_SSANNE2FROOMS_RARE_CANDY, RARE_CANDY
 
 	def_warps_to SS_ANNE_2F_ROOMS

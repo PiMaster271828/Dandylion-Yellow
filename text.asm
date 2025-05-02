@@ -9,7 +9,6 @@ INCLUDE "text/SSAnne3F.asm"
 INCLUDE "text/SSAnneBow.asm"
 INCLUDE "text/SSAnneKitchen.asm"
 INCLUDE "text/SSAnneCaptainsRoom.asm"
-INCLUDE "text/SSAnne2FRooms.asm"
 INCLUDE "text/VictoryRoad3F.asm"
 INCLUDE "text/RocketHideoutB1F.asm"
 INCLUDE "text/RocketHideoutB2F.asm"
@@ -43,6 +42,7 @@ SECTION "Text 1.75", ROMX                        ; Made a new Text Bank and adde
 
 INCLUDE "text/SSAnne1FRooms.asm"                 ; Moved from Text 1 by G-Dubs to avoid the Text Bank from growing too big
 INCLUDE "text/SSAnneB1FRooms.asm"                ; Moved from Text 1 by G-Dubs to avoid the Text Bank from growing too big
+INCLUDE "text/SSAnne2FRooms.asm"                 ; Moved from Text 1 by G-Dubs to avoid the Text Bank from growing too big 
 
 
 SECTION "Text 2", ROMX

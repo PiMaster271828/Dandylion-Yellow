@@ -187,23 +187,61 @@ _SSAnne2FRoomsBeauty1AfterBattleText::
 	cont "on time!"
 	done
 
+_SSAnne2FRoomsBeauty2BattleText::	   ; New trainer added by G-Dubs
+	text "Ah, another"
+	line "trainer!  This"
+	cont "cruise is full of"
+	cont "fun people!"
+	done
 
+_SSAnne2FRoomsBeauty2EndBattleText::
+	text "Oh"	
+	line "deary me! Please"
+	cont "let me try again!"
+	prompt
 
+_SSAnne2FRoomsBeauty2AfterBattleText::
+	text "There is so much"
+	line "to explore on"
+	cont "this ship. If you"
+	cont "want to see more,"
+	cont "I could show you!"
+	done
 
+_SSAnne2FRoomsBeauty3BattleText::	   ; New trainer added by G-Dubs
+	text "I heard you can"
+	line "get money for"
+	cont "battling!"
+	done
 
+_SSAnne2FRoomsBeauty3EndBattleText::
+	text "Wow!"	
+	line "You're really"
+	cont "strong!"
+	prompt
 
+_SSAnne2FRoomsBeauty3AfterBattleText::
+	text "I need to find a"
+	line "way to get more"
+	cont "cash. I want to"
+	cont "buy a new outfit,"
+	cont "or maybe upgrade"
+	cont "my room, before"
+	cont "the ship leaves!"
+	done
 
-_SSAnne2FRoomsGentleman5Text::
-	text "In all my travels,"
-	line "I've never seen"
-	cont "any #MON sleep"
+_SSAnne2FRoomsGrampsText::
+	text "I've seen a"
+	line "#MON CUT down"
+	cont "small bushes"
+	cont "using the HM CUT!"
+
+	para "But in all my"
+	line "travels, I've"
+	cont "never seen any"
+	cont "#MON sleep "
 	cont "like this one!"
 
 	para "It was something"
 	line "like this!"
 	prompt
-
-_SSAnne2FRoomsGrampsText::
-	text "#MON can CUT"
-	line "down small bushes."
-	done

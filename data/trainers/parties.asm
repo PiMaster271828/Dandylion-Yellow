@@ -472,8 +472,8 @@ Beauty 2 Jp Sprite
 	db 17, PSYDUCK, POLIWAG, 0		                                                                         ; Beauty 2               ; Party and level changed by G-Dubs
 	db 18, SQUIRTLE, WARTORTLE, 0					                                                         ; Beauty 3               ; Party and level changed by G-Dubs
 ; S.S. Anne 2F Rooms
-    db 23, WIGGLYTUFF, CLEFABLE, 0                                                                           ; Beauty 4               ; New trainer added by G-Dubs 
-    db 24, SHELLDER, PERSIAN, STARYU, 0                                                                      ; Beauty 5               ; New trainer added by G-Dubs 
+    db 23, SHELLDER, PERSIAN, STARYU, 0                                                                      ; Beauty 4               ; New trainer added by G-Dubs 
+    db 24, WIGGLYTUFF, CLEFABLE, 0                                                                           ; Beauty 5               ; New trainer added by G-Dubs 
     db 25, SEAKING, GLOOM, 0                                                                                 ; Beauty 6               ; New trainer added by G-Dubs
 /********************
 Beauty 2 Jp 97 Sprite
