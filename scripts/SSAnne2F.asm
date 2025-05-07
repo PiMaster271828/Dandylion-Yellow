@@ -1,8 +1,16 @@
 SSAnne2F_Script:
-	call EnableAutoTextBoxDrawing
-	ld hl, SSAnne2F_ScriptPointers
-	ld a, [wSSAnne2FCurScript]
-	jp CallFunctionInTable
+    call EnableAutoTextBoxDrawing
+    ld hl, SSAnne6TrainerHeaders     
+    ld de, SSAnne2F_ScriptPointers
+    ld a, [wSSAnne2FCurScript]
+    call ExecuteCurMapScriptInTable
+    ld [wSSAnne2FCurScript], a
+    ret
+    
+SSAnne2FSetCurScript:
+    ld [wSSAnne2FCurScript], a
+	ld [wCurMapScript], a
+    ret
 
 SSAnne2FResetScripts:
 	xor a
@@ -12,16 +20,16 @@ SSAnne2FResetScripts:
 
 SSAnne2F_ScriptPointers:
 	def_script_pointers
-	dw_const SSAnne2FDefaultScript,          SCRIPT_SSANNE2F_DEFAULT
-	dw_const SSAnne2FRivalStartBattleScript, SCRIPT_SSANNE2F_RIVAL_START_BATTLE
-	dw_const SSAnne2FRivalAfterBattleScript, SCRIPT_SSANNE2F_RIVAL_AFTER_BATTLE
-	dw_const SSAnne2FRivalExitScript,        SCRIPT_SSANNE2F_RIVAL_EXIT
-	dw_const SSAnne2FNoopScript,             SCRIPT_SSANNE2F_NOOP
-
-SSAnne2FNoopScript:
-	ret
+	dw_const SSAnne2FDefaultScript,                 SCRIPT_SSANNE2F_DEFAULT
+	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_SSANNE2F_START_BATTLE
+	dw_const EndTrainerBattle,                      SCRIPT_SSANNE2F_END_BATTLE
+	dw_const SSAnne2FRivalStartBattleScript,        SCRIPT_SSANNE2F_RIVAL_START_BATTLE
+	dw_const SSAnne2FRivalAfterBattleScript,        SCRIPT_SSANNE2F_RIVAL_AFTER_BATTLE
+	dw_const SSAnne2FRivalExitScript,               SCRIPT_SSANNE2F_RIVAL_EXIT
 
 SSAnne2FDefaultScript:
+	CheckEvent EVENT_BEAT_SS_ANNE_RIVAL
+	ret nz
 	ld hl, .PlayerCoordinatesArray
 	call ArePlayerCoordsInArray
 	ret nc
@@ -52,20 +60,18 @@ SSAnne2FDefaultScript:
 .move_sprite
 	call MoveSprite
 	ld a, SCRIPT_SSANNE2F_RIVAL_START_BATTLE
-	ld [wSSAnne2FCurScript], a
-	ret
+	jp SSAnne2FSetCurScript
 
 .RivalDownFourMovement:
 	db NPC_MOVEMENT_DOWN
 .RivalDownThreeMovement:
 	db NPC_MOVEMENT_DOWN
 	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
 	db -1 ; end
 
 .PlayerCoordinatesArray:
-	dbmapcoord 36,  8
-	dbmapcoord 37,  8
+	dbmapcoord 36,  7
+	dbmapcoord 37,  7
 	db -1 ; end
 
 SSAnne2FSetFacingDirectionScript:
@@ -101,8 +107,7 @@ SSAnne2FRivalStartBattleScript:
 	ld [wTrainerNo], a
 	call SSAnne2FSetFacingDirectionScript
 	ld a, SCRIPT_SSANNE2F_RIVAL_AFTER_BATTLE
-	ld [wSSAnne2FCurScript], a
-	ret
+	jp SSAnne2FSetCurScript
 
 SSAnne2FRivalAfterBattleScript:
 	ld a, [wIsInBattle]
@@ -111,6 +116,7 @@ SSAnne2FRivalAfterBattleScript:
 	call SSAnne2FSetFacingDirectionScript
 	ld a, D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a
+	SetEvent EVENT_BEAT_SS_ANNE_RIVAL
 	ld a, TEXT_SSANNE2F_RIVAL_CUT_MASTER
 	ldh [hTextID], a
 	call DisplayTextID
@@ -131,8 +137,7 @@ SSAnne2FRivalAfterBattleScript:
 	call StopAllMusic
 	farcall Music_RivalAlternateStart
 	ld a, SCRIPT_SSANNE2F_RIVAL_EXIT
-	ld [wSSAnne2FCurScript], a
-	ret
+	jp SSAnne2FSetCurScript
 
 .RivalWalkAroundPlayerMovement:
 	db NPC_MOVEMENT_RIGHT
@@ -154,18 +159,38 @@ SSAnne2FRivalExitScript:
 	ld [wMissableObjectIndex], a
 	predef HideObject
 	call PlayDefaultMusic
-	ld a, SCRIPT_SSANNE2F_NOOP
-	ld [wSSAnne2FCurScript], a
-	ret
+	xor a
+	ld [wJoyIgnore], a
+	jp SSAnne2FSetCurScript
 
 SSAnne2F_TextPointers:
 	def_text_pointers
-	dw_const SSAnne2FWaiterText,         TEXT_SSANNE2F_WAITER
+	dw_const SSAnne2FWaiterText,         TEXT_SSANNE2F_WAITER	          ; NPC changed to trainer by G-Dubs
 	dw_const SSAnne2FRivalText,          TEXT_SSANNE2F_RIVAL
 	dw_const SSAnne2FRivalCutMasterText, TEXT_SSANNE2F_RIVAL_CUT_MASTER
 
-SSAnne2FWaiterText:
-	text_far _SSAnne2FWaiterText
+SSAnne6TrainerHeaders:
+	def_trainers
+SSAnne6TrainerHeader0:
+	trainer EVENT_BEAT_SS_ANNE_6_TRAINER_0, 0, SSAnne2FWaiterBattleText, SSAnne2FWaiterEndBattleText, SSAnne2FWaiterAfterBattleText   ; NPC changed to trainer by G-Dubs
+	db -1 ; end
+
+SSAnne2FWaiterText:		                         ; NPC changed to trainer by G-Dubs
+	text_asm
+	ld hl, SSAnne6TrainerHeader0
+	call TalkToTrainer
+	jp TextScriptEnd
+
+SSAnne2FWaiterBattleText:
+	text_far _SSAnne2FWaiterBattleText
+	text_end
+
+SSAnne2FWaiterEndBattleText:
+	text_far _SSAnne2FWaiterEndBattleText
+	text_end
+
+SSAnne2FWaiterAfterBattleText:
+	text_far _SSAnne2FWaiterAfterBattleText
 	text_end
 
 SSAnne2FRivalText:

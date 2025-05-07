@@ -988,6 +988,7 @@ LadyData:
 WaiterData:
 ; S.S. Anne 1F
     db 21, SHELLDER, MEOWTH, BELLSPROUT, 0                                                                   ; Waiter 1               ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+    db 22, PIDGEY, KRABBY, EXEGGCUTE, 0                                                                      ; Waiter 2               ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)  
 
 ChefData:
 ; S.S Anne Kitchen

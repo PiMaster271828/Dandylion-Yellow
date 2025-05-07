@@ -1,4 +1,17 @@
-_SSAnne2FWaiterText::
+_SSAnne2FWaiterBattleText::	           ; NPC changed to trainer by G-Dubs
+	text "I'm the waiter on"
+	line "this ship!"
+	para "I'm not just a"	
+	line "waiter, I'm a"
+	cont "trainer too!"
+	done
+
+_SSAnne2FWaiterEndBattleText::
+	text "You"
+	line "beat me!"
+	prompt
+
+_SSAnne2FWaiterAfterBattleText::
 	text "This ship, she is"
 	line "a luxury liner"
 	cont "for trainers!"

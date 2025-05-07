@@ -647,23 +647,27 @@
 	const EVENT_BEAT_SS_ANNE_5_TRAINER_3                                                           ; $5C6
 	const EVENT_BEAT_SS_ANNE_5_TRAINER_4         ; New trainer added by G-Dubs                     ; $5C7
 	const EVENT_BEAT_SS_ANNE_5_TRAINER_5                                                           ; $5C8
-	const_skip 23                                ; Formerly const_skip 26                          ; $5C9 - $5DF
+	const_skip 7                                 ; Formerly const_skip 26                          ; $5C9 - $5CF
 
 ; S.S. Anne 2F/Dock Events	                     ; Section added by G-Dubs 
-	const_next $5E0
-	const EVENT_GOT_HM01                                                                           ; $5E0
-	const EVENT_RUBBED_CAPTAINS_BACK                                                               ; $5E1
-	const EVENT_SS_ANNE_LEFT                                                                       ; $5E2
-	const EVENT_WALKED_PAST_GUARD_AFTER_SS_ANNE_LEFT                                               ; $5E3
-	const EVENT_STARTED_WALKING_OUT_OF_DOCK                                                        ; $5E4
-	const EVENT_WALKED_OUT_OF_DOCK                                                                 ; $5E5
-	const_skip 2                                 ; Formerly const_skip 11                          ; $5E6 - $5E7
+	const_next $5D0
+	const EVENT_GOT_HM01                                                                           ; $5D0
+	const EVENT_RUBBED_CAPTAINS_BACK                                                               ; $5D1
+	const EVENT_SS_ANNE_LEFT                                                                       ; $5D2
+	const EVENT_WALKED_PAST_GUARD_AFTER_SS_ANNE_LEFT                                               ; $5D3
+	const EVENT_STARTED_WALKING_OUT_OF_DOCK                                                        ; $5D4
+	const EVENT_WALKED_OUT_OF_DOCK                                                                 ; $5D5
+	const_skip                                   ; Formerly part of const_skip 11                  ; $5D6
+    const EVENT_BEAT_SS_ANNE_RIVAL               ; Why wasn't this event in the original code?!?   ; $5E7
+	const_skip                                   ; Formerly part of const_skip 11                  ; $5D8
+	const EVENT_BEAT_SS_ANNE_6_TRAINER_0		 ; NPC changed to trainer by G-Dubs				   ; $5D9
+	const_skip 6                                 ; const_skip added by G-Dubs                      ; $5DA - $5DF
 
 ; S.S. Anne 1F Events                            ; New section added by G-Dubs
-	const_next $5E8
-	const_skip                                                                                     ; $5E8
-	const EVENT_BEAT_SS_ANNE_7_TRAINER_0         ; NPC changed to trainer by G-Dubs                ; $5E9
-	const_skip 6                                                                                   ; $5EA - $5EF
+	const_next $5E0
+	const_skip                                                                                     ; $5E0
+	const EVENT_BEAT_SS_ANNE_7_TRAINER_0         ; NPC changed to trainer by G-Dubs                ; $5E1
+	const_skip 14	                                                                               ; $5E2 - $5EF
 	
 ; S.S. Anne 1F Rooms Events                      ; Section added by G-Dubs
     const_next $5F0

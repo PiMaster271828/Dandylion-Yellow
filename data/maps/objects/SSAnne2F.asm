@@ -1,5 +1,5 @@
 	object_const_def
-	const_export SSANNE2F_WAITER
+	const_export SSANNE2F_WAITER  ; NPC changed to trainer by G-Dubs
 	const_export SSANNE2F_RIVAL
 
 SSAnne2F_Object:
@@ -21,7 +21,7 @@ SSAnne2F_Object:
 	def_bg_events
 
 	def_object_events
-	object_event  3,  7, SPRITE_WAITER, WALK, UP_DOWN, TEXT_SSANNE2F_WAITER
+	object_event  3,  7, SPRITE_WAITER, WALK, UP_DOWN, TEXT_SSANNE2F_WAITER, OPP_WAITER, 2    ; NPC changed to trainer by G-Dubs
 	object_event 36,  4, SPRITE_BLUE, STAY, DOWN, TEXT_SSANNE2F_RIVAL, OPP_RIVAL1, 1
 
 	def_warps_to SS_ANNE_2F
