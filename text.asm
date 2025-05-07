@@ -3,6 +3,7 @@ SECTION "Text 1", ROMX
 INCLUDE "data/text/text_1.asm"
 
 INCLUDE "text/ViridianForest.asm"
+INCLUDE "text/SSAnneB1F.asm"                     ; Text file added by G-Dubs
 INCLUDE "text/SSAnne1F.asm"
 INCLUDE "text/SSAnne2F.asm"
 INCLUDE "text/SSAnne3F.asm"

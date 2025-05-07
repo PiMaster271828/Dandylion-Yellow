@@ -710,17 +710,24 @@
 	const EVENT_BEAT_SS_ANNE_10_TRAINER_3                                                          ; $614
 	const EVENT_BEAT_SS_ANNE_10_TRAINER_4                                                          ; $615
 	const EVENT_BEAT_SS_ANNE_10_TRAINER_5                                                          ; $616
+	const_skip 9                                                                                   ; $617 - $61F
+
+; S.S. Anne B1F Events                           ; Section added by G-Dubs
+    const_next $620
+	const_skip                                   ; const_skip added by G-Dubs                      ; $620
+	const EVENT_BEAT_SS_ANNE_11_TRAINER_0        ; New trainer added by G-Dubs                     ; $621
+	const_skip 14                                                                                  ; $622 - $62F
 
 ; S.S. Anne Kitchen Events                       ; Section added by G-Dubs
 	const_next $630
 	const_skip 	                                                                                   ; $630
-	const EVENT_BEAT_SS_ANNE_11_TRAINER_0        ; NPC changed to trainer by G-Dubs                ; $631
-    const EVENT_BEAT_SS_ANNE_11_TRAINER_1        ; NPC changed to trainer by G-Dubs                ; $632
-    const EVENT_BEAT_SS_ANNE_11_TRAINER_2        ; NPC changed to trainer by G-Dubs                ; $633
-    const EVENT_BEAT_SS_ANNE_11_TRAINER_3		 ; NPC changed to trainer by G-Dubs                ; $634
-    const EVENT_BEAT_SS_ANNE_11_TRAINER_4        ; NPC changed to trainer by G-Dubs                ; $635
-    const EVENT_BEAT_SS_ANNE_11_TRAINER_5        ; NPC changed to trainer by G-Dubs                ; $636
-    const EVENT_BEAT_SS_ANNE_11_TRAINER_6        ; NPC changed to trainer by G-Dubs                ; $637
+	const EVENT_BEAT_SS_ANNE_12_TRAINER_0        ; NPC changed to trainer by G-Dubs                ; $631
+    const EVENT_BEAT_SS_ANNE_12_TRAINER_1        ; NPC changed to trainer by G-Dubs                ; $632
+    const EVENT_BEAT_SS_ANNE_12_TRAINER_2        ; NPC changed to trainer by G-Dubs                ; $633
+    const EVENT_BEAT_SS_ANNE_12_TRAINER_3		 ; NPC changed to trainer by G-Dubs                ; $634
+    const EVENT_BEAT_SS_ANNE_12_TRAINER_4        ; NPC changed to trainer by G-Dubs                ; $635
+    const EVENT_BEAT_SS_ANNE_12_TRAINER_5        ; NPC changed to trainer by G-Dubs                ; $636
+    const EVENT_BEAT_SS_ANNE_12_TRAINER_6        ; NPC changed to trainer by G-Dubs                ; $637
   
 ; Victory Road 3F events
 	const_next $660

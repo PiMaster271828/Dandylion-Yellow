@@ -36,7 +36,7 @@ MACRO warp_tiles
 ENDM
 
 .OverworldWarpTileIDs:
-.Overworld2WarpTileIDs:           ; New tileset added by G-Dubs
+.Overworld2WarpTileIDs:                     ; New tileset added by G-Dubs
 	warp_tiles $1B, $58
 
 .ForestGateWarpTileIDs:
@@ -62,8 +62,8 @@ ENDM
 .HouseWarpTileIDs:
 	warp_tiles $54, $5C, $32
 
-.ShipWarpTileIDs:
-	warp_tiles $37, $39, $1E, $4A
+.ShipWarpTileIDs:                           ; New warp tiles added to this tile set by G-Dubs
+	warp_tiles $37, $39, $1E, $4A, $5E
 
 .InteriorWarpTileIDs:
 	warp_tiles $15, $55, $04

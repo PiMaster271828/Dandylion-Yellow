@@ -15,16 +15,22 @@ SSAnneB1FRooms_Object:
 	db $c ; border block
 
 	def_warp_events
-	warp_event  2,  5, SS_ANNE_B1F, 5
-	warp_event  3,  5, SS_ANNE_B1F, 5
-	warp_event 12,  5, SS_ANNE_B1F, 4
-	warp_event 13,  5, SS_ANNE_B1F, 4
-	warp_event 22,  5, SS_ANNE_B1F, 3
-	warp_event 23,  5, SS_ANNE_B1F, 3
-	warp_event  2, 15, SS_ANNE_B1F, 2
-	warp_event  3, 15, SS_ANNE_B1F, 2
-	warp_event 12, 15, SS_ANNE_B1F, 1
-	warp_event 13, 15, SS_ANNE_B1F, 1
+	warp_event 32, 15, SS_ANNE_B1F, 1  ; Warp event 1
+	warp_event 33, 15, SS_ANNE_B1F, 1  ; Warp event 2
+	warp_event 22, 15, SS_ANNE_B1F, 2  ; Warp event 3
+	warp_event 23, 15, SS_ANNE_B1F, 2  ; Warp event 4
+	warp_event 12, 15, SS_ANNE_B1F, 3  ; Warp event 5
+	warp_event 13, 15, SS_ANNE_B1F, 3  ; Warp event 6
+	warp_event  2, 15, SS_ANNE_B1F, 4  ; Warp event 7
+	warp_event  3, 15, SS_ANNE_B1F, 4  ; Warp event 8
+	warp_event 32,  5, SS_ANNE_B1F, 5  ; Warp event 9
+	warp_event 33,  5, SS_ANNE_B1F, 5  ; Warp event 10
+	warp_event 22,  5, SS_ANNE_B1F, 6  ; Warp event 11
+	warp_event 23,  5, SS_ANNE_B1F, 6  ; Warp event 12
+	warp_event 12,  5, SS_ANNE_B1F, 7  ; Warp event 13
+	warp_event 13,  5, SS_ANNE_B1F, 7  ; Warp event 14
+	warp_event  2,  5, SS_ANNE_B1F, 8  ; Warp event 15
+	warp_event  3,  5, SS_ANNE_B1F, 8  ; Warp event 16
 
 	def_bg_events
 

@@ -2163,11 +2163,11 @@ wPalletTownCurScript:: db
 wBluesHouseCurScript:: db
 wViridianCityCurScript:: db
 wViridianSchoolHouseCurScript:: db     ; Viridian School House Script added by G-Dubs (Replaced ds 1)
-wViridianPokeCenterCurScript:: db      ; Viridian PokeCenter Script added by Vlad for Jessie & James battle
+wViridianPokeCenterCurScript:: db      ; Viridian PokeCenter Script added by Vlad for Jessie & James battle (reduced total ds by 1)
 wPewterCityCurScript:: db
 wRoute3CurScript:: db
 wRoute4CurScript:: db
-wRoute5CurScript:: db                  ; Route 5 script added by G-Dubs
+wRoute5CurScript:: db                  ; Route 5 script added by G-Dubs (reduced total ds by 1)
 wPokemonFanClubCurScript:: db
 wViridianGymCurScript:: db
 wPewterGymCurScript:: db
@@ -2203,13 +2203,13 @@ wRoute21CurScript:: db
 wSafariZoneGateCurScript:: db
 wRockTunnelB1FCurScript:: db
 wRockTunnel1FCurScript:: db
-	ds 1
 wRoute11CurScript:: db
 wRoute12CurScript:: db
 wRoute15CurScript:: db
 wRoute16CurScript:: db
 wRoute18CurScript:: db
 wRoute20CurScript:: db
+wSSAnneB1FCurScript:: db               ; SS Anne 1F script added by G-Dubs (reduced total ds by 1)
 wSSAnneB1FRoomsCurScript:: db
 wVermilionCityCurScript:: db
 wPokemonTower2FCurScript:: db
