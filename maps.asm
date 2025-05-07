@@ -1253,5 +1253,5 @@ INCLUDE "scripts/SummerBeachHouse_2.asm"
 
 INCLUDE "scripts/BillsHouse_2.asm"
 INCLUDE "scripts/ViridianForest_2.asm"
-;INCLUDE "scripts/SSAnne2FRooms_2.asm"
+;INCLUDE "scripts/SSAnne2FRooms_2.asm"           ; I  believe we can remove this file
 INCLUDE "scripts/SilphCo11F_2.asm"
