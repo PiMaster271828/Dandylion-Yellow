@@ -11,7 +11,7 @@ _ScrollTrainerPicAfterBattle:
 .scrollLoop
 	inc c
 	ld a, c
-	cp 10
+	cp 9      ; bug: should be 10   ; Line fixed by G-Dubs (This is to make the trainer's end position match its start position)
 	ret z
 	ld d, $0
 	push bc

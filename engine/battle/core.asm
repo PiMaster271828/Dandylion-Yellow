@@ -5624,7 +5624,7 @@ AIGetTypeEffectiveness:
 	inc hl
 	ld c, [hl]                 ; c = type 2 of player's pokemon
 	; initialize to neutral effectiveness
-	ld a, $10 ; bug: should be EFFECTIVE (10)
+	ld a, EFFECTIVE ; bug: should be EFFECTIVE (10)   ; Line fixed by G-Dubs (Listed as a bug in comments)
 	ld [wTypeEffectiveness], a
 	ld hl, TypeEffects
 .loop
