@@ -404,6 +404,9 @@ FisherData:
     db 15, MAGIKARP, GYARADOS, MAGIKARP, 0                                                                   ; Fisher 12              ; New trainer added by G-Dubs
 ; Route 12 (Again)
     db 25, MAGIKARP, GYARADOS, MAGIKARP, GYARADOS, MAGIKARP, 0                                               ; Fisher 13              ; New trainer added by G-Dubs
+; SS Anne B1F Rooms (Again)
+    db 20, KRABBY, HORSEA, SHELLDER, GOLDEEN, 0                                                              ; Fisher 14              ; New trainer added by G-Dubs
+    db 23, MAGIKARP, GOLDEEN, HORSEA, MAGIKARP, SEAKING, GYARADOS, 0                                         ; Fisher 15              ; New trainer added by G-Dubs
 
 SwimmerData:
 /******************
@@ -969,15 +972,17 @@ Guitarist 2
 Guitarist 3
 *************/
 ; Vermillion Gym
-    db 25, ELECTABUZZ, 0                                                                                      ; Guitarist 7            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+    db 25, ELECTABUZZ, 0                                                                                     ; Guitarist 7            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 ; SS Anne B1F
-    db 25, ELECTABUZZ, MACHOKE, 0                                                                             ; Guitarist 8            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+    db 25, ELECTABUZZ, MACHOKE, 0                                                                            ; Guitarist 8            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 ; Power Plant
-   ;db                                                                                                        ; Guitarist 9            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)  
+   ;db                                                                                                       ; Guitarist 9            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)  
 
 SoldierData:
 ; Vermillion Gym
 	db 23, MAGNEMITE, MACHOP, VOLTORB, 0                                                                     ; Soldier 1	          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+; SS Anne B1F Rooms        
+    db 22, MANKEY, GROWLITHE, VOLTORB, MACHOP, 0                                                             ; Soldier 2	          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)                                  
 
 LadyData:
 ; S.S. Anne Bow

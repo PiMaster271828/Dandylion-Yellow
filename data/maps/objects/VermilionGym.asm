@@ -6,7 +6,7 @@
 	const_export VERMILIONGYM_SUPER_NERD2        ; New trainer added by G-Dubs	
 	const_export VERMILIONGYM_COOLTRAINER_F      ; New trainer added by G-Dubs
 	const_export VERMILIONGYM_SUPER_NERD3        ; New trainer added by G-Dubs
-	const_export VERMILIONGYM_SOLDIER            ; New trainer added by G-Dubs
+	const_export VERMILIONGYM_SAILOR2            ; New trainer added by G-Dubs
 	const_export VERMILIONGYM_GYM_GUIDE
 
 VermilionGym_Object:
@@ -26,7 +26,7 @@ VermilionGym_Object:
 	object_event  0,  6, SPRITE_SUPER_NERD, STAY, RIGHT, TEXT_VERMILIONGYM_SUPER_NERD2, OPP_GUITARIST, 7          ; New trainer added by G-Dubs
 	object_event  7,  8, SPRITE_COOLTRAINER_F, STAY, RIGHT, TEXT_VERMILIONGYM_COOLTRAINER_F, OPP_GUITARIST, 4     ; New trainer added by G-Dubs
 	object_event  9, 10, SPRITE_SUPER_NERD, STAY, LEFT, TEXT_VERMILIONGYM_SUPER_NERD3, OPP_GUITARIST, 1           ; New trainer added by G-Dubs
-	object_event  2,  3, SPRITE_SAILOR, STAY, RIGHT, TEXT_VERMILIONGYM_SOLDIER, OPP_SOLDIER, 1                    ; New trainer added by G-Dubs
+	object_event  2,  3, SPRITE_SAILOR, STAY, RIGHT, TEXT_VERMILIONGYM_SAILOR2, OPP_SOLDIER, 1                    ; New trainer added by G-Dubs
 	object_event  4, 14, SPRITE_GYM_GUIDE, STAY, DOWN, TEXT_VERMILIONGYM_GYM_GUIDE
 
 	def_warps_to VERMILION_GYM

@@ -20,8 +20,11 @@ SSAnneB1FRooms_TextPointers:
 	dw_const SSAnneB1FRoomsSailor3Text,   TEXT_SSANNEB1FROOMS_SAILOR3
 	dw_const SSAnneB1FRoomsSailor4Text,   TEXT_SSANNEB1FROOMS_SAILOR4
 	dw_const SSAnneB1FRoomsSailor5Text,   TEXT_SSANNEB1FROOMS_SAILOR5
-	dw_const SSAnneB1FRoomsFisherText,    TEXT_SSANNEB1FROOMS_FISHER
+	dw_const SSAnneB1FRoomsFisher1Text,   TEXT_SSANNEB1FROOMS_FISHER1
 	dw_const SSAnneB1FRoomsSuperNerdText, TEXT_SSANNEB1FROOMS_SUPER_NERD  ; NPC changed to trainer by G-Dubs
+    dw_const SSAnneB1FRoomsFisher2Text,   TEXT_SSANNEB1FROOMS_FISHER2     ; New trainer added by G-Dubs
+	dw_const SSAnneB1FRoomsSailor6Text,   TEXT_SSANNEB1FROOMS_SAILOR6	  ; New trainer added by G-Dubs
+	dw_const SSAnneB1FRoomsFisher3Text,   TEXT_SSANNEB1FROOMS_FISHER3	  ; New trainer added by G-Dubs 
 	dw_const SSAnneB1FRoomsMachokeText,   TEXT_SSANNEB1FROOMS_MACHOKE
 	dw_const PickUpItemText,              TEXT_SSANNEB1FROOMS_ETHER
 	dw_const PickUpItemText,              TEXT_SSANNEB1FROOMS_TM_REST
@@ -40,9 +43,15 @@ SSAnne10TrainerHeader3:
 SSAnne10TrainerHeader4:
 	trainer EVENT_BEAT_SS_ANNE_10_TRAINER_4, 2, SSAnneB1FRoomsSailor5BattleText, SSAnneB1FRoomsSailor5EndBattleText, SSAnneB1FRoomsSailor5AfterBattleText
 SSAnne10TrainerHeader5:
-	trainer EVENT_BEAT_SS_ANNE_10_TRAINER_5, 3, SSAnneB1FRoomsFisherBattleText, SSAnneB1FRoomsFisherEndBattleText, SSAnneB1FRoomsFisherAfterBattleText
+	trainer EVENT_BEAT_SS_ANNE_10_TRAINER_5, 3, SSAnneB1FRoomsFisher1BattleText, SSAnneB1FRoomsFisher1EndBattleText, SSAnneB1FRoomsFisher1AfterBattleText
 SSAnne10TrainerHeader6:
 	trainer EVENT_BEAT_SS_ANNE_10_TRAINER_6, 0, SSAnneB1FRoomsSuperNerdBattleText, SSAnneB1FRoomsSuperNerdEndBattleText, SSAnneB1FRoomsSuperNerdAfterBattleText     ; NPC changed to trainer by G-Dubs
+SSAnne10TrainerHeader7:
+	trainer EVENT_BEAT_SS_ANNE_10_TRAINER_7, 2, SSAnneB1FRoomsFisher2BattleText, SSAnneB1FRoomsFisher2EndBattleText, SSAnneB1FRoomsFisher2AfterBattleText           ; New trainer added by G-Dubs	
+SSAnne10TrainerHeader8:
+	trainer EVENT_BEAT_SS_ANNE_10_TRAINER_8, 2, SSAnneB1FRoomsSailor6BattleText, SSAnneB1FRoomsSailor6EndBattleText, SSAnneB1FRoomsSailor6AfterBattleText           ; New trainer added by G-Dubs	
+SSAnne10TrainerHeader9:
+	trainer EVENT_BEAT_SS_ANNE_10_TRAINER_9, 2, SSAnneB1FRoomsFisher3BattleText, SSAnneB1FRoomsFisher3EndBattleText, SSAnneB1FRoomsFisher3AfterBattleText           ; New trainer added by G-Dubs	
 	db -1 ; end
 
 SSAnneB1FRoomsSailor1Text:
@@ -75,15 +84,33 @@ SSAnneB1FRoomsSailor5Text:
 	call TalkToTrainer
 	jp TextScriptEnd
 
-SSAnneB1FRoomsFisherText:
+SSAnneB1FRoomsFisher1Text:
 	text_asm
 	ld hl, SSAnne10TrainerHeader5
 	call TalkToTrainer
 	jp TextScriptEnd
 
-SSAnneB1FRoomsSuperNerdText:
+SSAnneB1FRoomsSuperNerdText:          ; NPC changed to trainer by G-Dubs
 	text_asm
 	ld hl, SSAnne10TrainerHeader6
+	call TalkToTrainer
+	jp TextScriptEnd
+
+SSAnneB1FRoomsFisher2Text:	           ; New trainer added by G-Dubs
+	text_asm
+	ld hl, SSAnne10TrainerHeader7
+	call TalkToTrainer
+	jp TextScriptEnd
+
+SSAnneB1FRoomsSailor6Text:	           ; New trainer added by G-Dubs
+	text_asm
+	ld hl, SSAnne10TrainerHeader8
+	call TalkToTrainer
+	jp TextScriptEnd
+
+SSAnneB1FRoomsFisher3Text:	           ; New trainer added by G-Dubs
+	text_asm
+	ld hl, SSAnne10TrainerHeader9
 	call TalkToTrainer
 	jp TextScriptEnd
 
@@ -154,16 +181,16 @@ SSAnneB1FRoomsSailor5AfterBattleText:
 	text_far _SSAnneB1FRoomsSailor5AfterBattleText
 	text_end
 
-SSAnneB1FRoomsFisherBattleText:
-	text_far _SSAnneB1FRoomsFisherBattleText
+SSAnneB1FRoomsFisher1BattleText:
+	text_far _SSAnneB1FRoomsFisher1BattleText
 	text_end
 
-SSAnneB1FRoomsFisherEndBattleText:
-	text_far _SSAnneB1FRoomsFisherEndBattleText
+SSAnneB1FRoomsFisher1EndBattleText:
+	text_far _SSAnneB1FRoomsFisher1EndBattleText
 	text_end
 
-SSAnneB1FRoomsFisherAfterBattleText:
-	text_far _SSAnneB1FRoomsFisherAfterBattleText
+SSAnneB1FRoomsFisher1AfterBattleText:
+	text_far _SSAnneB1FRoomsFisher1AfterBattleText
 	text_end
 
 SSAnneB1FRoomsSuperNerdBattleText:	                  ; NPC changed to trainer by G-Dubs
@@ -177,4 +204,39 @@ SSAnneB1FRoomsSuperNerdEndBattleText:
 SSAnneB1FRoomsSuperNerdAfterBattleText:
 	text_far _SSAnneB1FRoomsSuperNerdAfterBattleText
 	text_end
-	
+
+SSAnneB1FRoomsFisher2BattleText:	                  ; New trainer added by G-Dubs
+	text_far _SSAnneB1FRoomsFisher2BattleText
+	text_end
+
+SSAnneB1FRoomsFisher2EndBattleText:
+	text_far _SSAnneB1FRoomsFisher2EndBattleText
+	text_end
+
+SSAnneB1FRoomsFisher2AfterBattleText:
+	text_far _SSAnneB1FRoomsFisher2AfterBattleText
+	text_end
+
+SSAnneB1FRoomsSailor6BattleText:	                  ; New trainer added by G-Dubs
+	text_far _SSAnneB1FRoomsSailor6BattleText
+	text_end
+
+SSAnneB1FRoomsSailor6EndBattleText:
+	text_far _SSAnneB1FRoomsSailor6EndBattleText
+	text_end
+
+SSAnneB1FRoomsSailor6AfterBattleText:
+	text_far _SSAnneB1FRoomsSailor6AfterBattleText
+	text_end
+
+SSAnneB1FRoomsFisher3BattleText:	                  ; New trainer added by G-Dubs
+	text_far _SSAnneB1FRoomsFisher3BattleText
+	text_end
+
+SSAnneB1FRoomsFisher3EndBattleText:
+	text_far _SSAnneB1FRoomsFisher3EndBattleText
+	text_end
+
+SSAnneB1FRoomsFisher3AfterBattleText:
+	text_far _SSAnneB1FRoomsFisher3AfterBattleText
+	text_end

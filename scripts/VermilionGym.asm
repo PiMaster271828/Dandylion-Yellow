@@ -99,7 +99,7 @@ VermilionGym_TextPointers:
 	dw_const VermilionGymSuperNerd2Text,              TEXT_VERMILIONGYM_SUPER_NERD2                     ; New trainer added by G-Dubs
 	dw_const VermilionGymCooltrainerFText,            TEXT_VERMILIONGYM_COOLTRAINER_F                   ; New trainer added by G-Dubs
 	dw_const VermilionGymSuperNerd3Text,              TEXT_VERMILIONGYM_SUPER_NERD3                     ; New trainer added by G-Dubs
-	dw_const VermilionGymSoldierText,                 TEXT_VERMILIONGYM_SOLDIER                         ; New trainer added by G-Dubs
+	dw_const VermilionGymSailor2Text,                 TEXT_VERMILIONGYM_SAILOR2                         ; New trainer added by G-Dubs
 	dw_const VermilionGymGymGuideText,                TEXT_VERMILIONGYM_GYM_GUIDE
 	dw_const VermilionGymLTSurgeThunderBadgeInfoText, TEXT_VERMILIONGYM_LT_SURGE_THUNDER_BADGE_INFO
 	dw_const VermilionGymLTSurgeReceivedTM24Text,     TEXT_VERMILIONGYM_LT_SURGE_RECEIVED_TM24
@@ -120,7 +120,7 @@ VermilionGymTrainerHeader4:
 VermilionGymTrainerHeader5:
 	trainer EVENT_BEAT_VERMILION_GYM_TRAINER_5, 3, VermilionGymSuperNerd3BattleText, VermilionGymSuperNerd3EndBattleText, VermilionGymSuperNerd3AfterBattleText          ; New trainer added by G-Dubs
 VermilionGymTrainerHeader6:
-	trainer EVENT_BEAT_VERMILION_GYM_TRAINER_6, 3, VermilionGymSoldierBattleText, VermilionGymSoldierEndBattleText, VermilionGymSoldierAfterBattleText                   ; New trainer added by G-Dubs
+	trainer EVENT_BEAT_VERMILION_GYM_TRAINER_6, 3, VermilionGymSailor2BattleText, VermilionGymSailor2EndBattleText, VermilionGymSailor2AfterBattleText                   ; New trainer added by G-Dubs
 	db -1 ; end
 
 VermilionGymLTSurgeText:
@@ -293,22 +293,22 @@ VermilionGymSuperNerd3AfterBattleText:
 	text_far _VermilionGymSuperNerd3AfterBattleText
 	text_end
 
-VermilionGymSoldierText:				              ; New trainer added by G-Dubs	
+VermilionGymSailor2Text:				              ; New trainer added by G-Dubs	
 	text_asm
     ld hl, VermilionGymTrainerHeader6
     call TalkToTrainer
     jp TextScriptEnd
 
-VermilionGymSoldierBattleText:
-	text_far _VermilionGymSoldierBattleText
+VermilionGymSailor2BattleText:
+	text_far _VermilionGymSailor2BattleText
 	text_end
 
-VermilionGymSoldierEndBattleText:
-	text_far _VermilionGymSoldierEndBattleText
+VermilionGymSailor2EndBattleText:
+	text_far _VermilionGymSailor2EndBattleText
 	text_end
 
-VermilionGymSoldierAfterBattleText:
-	text_far _VermilionGymSoldierAfterBattleText
+VermilionGymSailor2AfterBattleText:
+	text_far _VermilionGymSailor2AfterBattleText
 	text_end
 
 VermilionGymGymGuideText:

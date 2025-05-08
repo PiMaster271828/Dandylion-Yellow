@@ -711,7 +711,10 @@
 	const EVENT_BEAT_SS_ANNE_10_TRAINER_4                                                          ; $615
 	const EVENT_BEAT_SS_ANNE_10_TRAINER_5                                                          ; $616
 	const EVENT_BEAT_SS_ANNE_10_TRAINER_6        ; NPC changed to trainer by G-Dubs                ; $617
-	const_skip 8                                 ; Formerly const_skip 9                           ; $618 - $61F
+	const EVENT_BEAT_SS_ANNE_10_TRAINER_7        ; New trainer added by G-Dubs                     ; $618
+	const EVENT_BEAT_SS_ANNE_10_TRAINER_8        ; New trainer added by G-Dubs                     ; $619
+	const EVENT_BEAT_SS_ANNE_10_TRAINER_9        ; New trainer added by G-Dubs                     ; $61A
+	const_skip 5                                 ; Formerly const_skip 9                           ; $61B - $61F
 
 ; S.S. Anne B1F Events                           ; Section added by G-Dubs
     const_next $620

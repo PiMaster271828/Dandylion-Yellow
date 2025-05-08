@@ -208,19 +208,19 @@ _VermilionGymSuperNerd3AfterBattleText::
 	cont "order right."
 	done
 
-_VermilionGymSoldierBattleText::                 ; New trainer added by G-Dubs	
+_VermilionGymSailor2BattleText::                 ; New trainer added by G-Dubs	
 	text "I'm LT.SURGE's"
 	line "right-hand man!"
 	cont "You're not"
 	cont "allowed in here!"
 	done
 
-_VermilionGymSoldierEndBattleText::
+_VermilionGymSailor2EndBattleText::
 	text "You"
 	line "beat me!"
 	prompt
 	
-_VermilionGymSoldierAfterBattleText::
+_VermilionGymSailor2AfterBattleText::
 	text "I'm just here"
 	line "to guard LT."
 	cont "SURGE. He's"

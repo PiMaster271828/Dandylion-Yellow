@@ -84,7 +84,7 @@ _SSAnneB1FRoomsSailor5AfterBattleText::
 	cont "the ship."
 	done
 
-_SSAnneB1FRoomsFisherBattleText::
+_SSAnneB1FRoomsFisher1BattleText::
 	text "Hello stranger!"
 	line "Stop and chat!"
 
@@ -92,13 +92,13 @@ _SSAnneB1FRoomsFisherBattleText::
 	line "are from the sea!"
 	done
 
-_SSAnneB1FRoomsFisherEndBattleText::
+_SSAnneB1FRoomsFisher1EndBattleText::
 	text "Darn!"
 	line "I let that one"
 	cont "get away!"
 	prompt
 
-_SSAnneB1FRoomsFisherAfterBattleText::
+_SSAnneB1FRoomsFisher1AfterBattleText::
 	text "I was going to"
 	line "make you my"
 	cont "assistant too!"
@@ -131,4 +131,86 @@ _SSAnneB1FRoomsSuperNerdAfterBattleText::
 	para "He has enough"
 	line "STRENGTH to move"
 	cont "big rocks!"
+	done
+
+_SSAnneB1FRoomsFisher2BattleText::
+	text "These cabins are"
+	line "cozy, but my"
+	cont "#MON and I"
+	cont "miss the open"
+	cont "water! How about"
+    cont "a battle to liven"
+	cont "things up?"
+	done
+
+_SSAnneB1FRoomsFisher2EndBattleText::
+	text "Hook," 
+	line "line, and sinker!"
+	cont "You got me!"
+	prompt
+
+_SSAnneB1FRoomsFisher2AfterBattleText::
+	text "That was quite"
+	line "refreshing! My"
+	cont "KRABBY & GOLDEEN"
+	cont "especially"
+	cont "enjoyed the"
+	cont "workout, I"
+	cont "reckon!"
+	done
+_SSAnneB1FRoomsSailor6BattleText::	                  ; New trainer added by G-Dubs
+	text "This ship's"
+	line "finally reached"
+	cont "VERMILLION CITY!"
+	cont "I gotta show LT."
+	cont "SURGE that I'm"
+	cont "ready! Care for"
+	cont "a warm-up battle?"
+	done
+
+_SSAnneB1FRoomsSailor6EndBattleText::
+	text "Urk!"
+	line "Looks like my"
+	cont "#MON and I"
+	cont "need more field"
+	cont "training before"
+	cont "I report in!"
+	prompt
+
+_SSAnneB1FRoomsSailor6AfterBattleText::
+	text "Good battle! It's"
+	line "sharpened my"
+	cont "combat skills!"
+	cont "When I get to the"
+	cont "VERMILLION GYM,"
+	cont "I'll be even"
+	cont "stronger, thanks"
+	cont "to you!"
+	done
+
+_SSAnneB1FRoomsFisher3BattleText::	                  ; New trainer added by G-Dubs
+	text "Well now! Ain't"
+	line "many youngsters"
+	cont "venture down to"
+	cont "these decks! Must"
+	cont "be lookin' for a"
+	cont "real fishing"
+	cont "tale... or a"
+	cont "#MON battle!"
+    done 
+
+_SSAnneB1FRoomsFisher3EndBattleText::
+	text "Oh!"
+	line "Barnacles! I'll"
+	cont "always be chasing"
+	cont "the big one that" 
+	cont "got away..."
+	prompt
+
+_SSAnneB1FRoomsFisher3AfterBattleText::
+	text "The sea's full of"
+    line "surprises, kid."
+	cont "Just like #MON"
+    cont "battles, eh, kid?"
+    cont "Heh heh."
 	done
