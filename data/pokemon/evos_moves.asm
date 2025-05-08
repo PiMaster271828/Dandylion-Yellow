@@ -204,6 +204,7 @@ EvosMovesPointerTable:
 
 RhydonEvosMoves:
 ; Evolutions
+   ;db EVOLVE_ITEM, PROTECTOR, 1, RHYPERIOR
 	db 0
 ; Learnset
 	db 2, TACKLE
@@ -834,6 +835,7 @@ SlowpokeEvosMoves:
 KadabraEvosMoves:
 ; Evolutions
 	db EVOLVE_TRADE, 1, ALAKAZAM
+	db EVOLVE_LEVEL, 38, ALAKAZAM
 	db 0
 ; Learnset
 	db 16, CONFUSION
@@ -847,6 +849,7 @@ KadabraEvosMoves:
 GravelerEvosMoves:
 ; Evolutions
 	db EVOLVE_TRADE, 1, GOLEM
+	db EVOLVE_LEVEL, 38, GOLEM
 	db 0
 ; Learnset
 	db 1, TACKLE
@@ -876,6 +879,7 @@ ChanseyEvosMoves:
 
 MachokeEvosMoves:
 ; Evolutions
+	db EVOLVE_TRADE, 1, MACHAMP
 	db EVOLVE_LEVEL, 38, MACHAMP
 	db 0
 ; Learnset
@@ -1034,6 +1038,7 @@ MissingNo32EvosMoves:
 
 MagmarEvosMoves:
 ; Evolutions
+   ;db EVOLVE_ITEM, MAGMARIZER, 1, MAGMORTAR 
 	db 0
 ; Learnset
 	db 36, LEER
@@ -1052,6 +1057,7 @@ MissingNo34EvosMoves:
 
 ElectabuzzEvosMoves:
 ; Evolutions
+   ;db EVOLVE_ITEM, ELECTIRIZER, 1, ELECTIVIRE
 	db 0
 ; Learnset
 	db 1, TACKLE
@@ -1636,6 +1642,7 @@ HorseaEvosMoves:
 
 SeadraEvosMoves:
 ; Evolutions
+   ;db EVOLVE_ITEM, DRAGON_SCALE, 1, KINGDRA
 	db 0
 ; Learnset
 	db 1, BUBBLE
@@ -2094,6 +2101,7 @@ DodrioEvosMoves:
 
 PrimeapeEvosMoves:
 ; Evolutions
+   ;db EVOLVE_???, ???, 1, ANNIHILAPE
 	db 0
 ; Learnset
 	db 1, POUND 
@@ -2317,6 +2325,7 @@ HypnoEvosMoves:
 
 GolbatEvosMoves:
 ; Evolutions
+   ;db EVOLVE_LEVEL, 33, CROBAT
 	db 0
 ; Learnset
 	db 1, ABSORB
@@ -2452,20 +2461,6 @@ CloysterEvosMoves:
 	db 55, BLIZZARD
 	db 0
 
-   
-	
-	
-	
-	
-	
-   
-	
-	db 32, AURORA_BEAM
-	db 36, ACID_ARMOR
-	db 40, ICE_BEAM
-	db 44, BARRAGE
-	db 48, HYDRO_PUMP
-
 MissingNo8CEvosMoves:
 ; Evolutions
 	db 0
@@ -2570,6 +2565,7 @@ MissingNo92EvosMoves:
 HaunterEvosMoves:
 ; Evolutions
 	db EVOLVE_TRADE, 1, GENGAR
+	db EVOLVE_LEVEL, 38, GENGAR
 	db 0
 ; Learnset
 	db 29, HYPNOSIS
@@ -3024,6 +3020,9 @@ SquirtleEvosMoves:
 
 CharmeleonEvosMoves:
 ; Evolutions
+   ;db EVOLVE_ITEM, CHARIZARDITE_X, 1, CHARIZARD_X   (Mega Charizard X)
+   ;db EVOLVE_ITEM, CHARIZARDITE_Y, 1, CHARIZARD_Y   (Mega Charizard Y)
+   ;db EVOLVE_ITEM, CHARIZARDITE_Z, 1, CHARIZARD_Z   (Dark Charizard)
 	db EVOLVE_LEVEL, 36, CHARIZARD
 	db 0
 ; Learnset
@@ -3037,6 +3036,7 @@ CharmeleonEvosMoves:
 
 WartortleEvosMoves:
 ; Evolutions
+   ;db EVOLVE_ITEM, ???, 1, KAMENKRIEGEN
 	db EVOLVE_LEVEL, 36, BLASTOISE
 	db 0
 ; Learnset
@@ -3115,6 +3115,7 @@ OddishEvosMoves:
 
 GloomEvosMoves:
 ; Evolutions
+   ;db EVOLVE_ITEM, SUN_STONE, 1, BELLOSSOM
 	db EVOLVE_ITEM, LEAF_STONE, 1, VILEPLUME
 	db 0
 ; Learnset
@@ -3173,6 +3174,7 @@ BellsproutEvosMoves:
 
 WeepinbellEvosMoves:
 ; Evolutions
+   ;db EVOLVE_ITEM, SUN_STONE, 1, MITTENBELL
 	db EVOLVE_ITEM, LEAF_STONE, 1, VICTREEBEL
 	db 0
 ; Learnset

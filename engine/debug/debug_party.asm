@@ -16,8 +16,8 @@ DebugNewGameParty: ; unreferenced except in _DEBUG
 	db SNORLAX, 80
 	db STARTER_PIKACHU, 15
 	db CHANSEY, 100
-   ;db MANKEY, 9
-   ;db NIDORAN_M, 12
+   ;db CUBONE, 9
+   ;db MACHOKE, 37
    ;db NIDORAN_F, 12
 	
 	db -1 ; end
