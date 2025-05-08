@@ -959,19 +959,21 @@ Guitarist 1
 /*************
 Guitarist 2
 *************/
-; Dummy list
+; Vermillion Gym
     db 25, PIKACHU, CLEFAIRY, /* TOXTRICITY, */ 0                                                            ; Guitarist 4            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs) 
-    db 1, VOLTORB, 0                                                                                         ; Guitarist 5            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+; Dummy List    
+	db 1, VOLTORB, 0                                                                                         ; Guitarist 5            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
     db 1, ELECTABUZZ, 0                                                                                      ; Guitarist 6            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 
 /*************
 Guitarist 3
 *************/
 ; Vermillion Gym
-   db 25, ELECTABUZZ, 0                                                                                      ; Guitarist 7            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-; Power Plant   
-   ;db                                                                                                       ; Guitarist 8            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-   ;db                                                                                                       ; Guitarist 9            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)  
+    db 25, ELECTABUZZ, 0                                                                                      ; Guitarist 7            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+; SS Anne B1F
+    db 25, ELECTABUZZ, MACHOKE, 0                                                                             ; Guitarist 8            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+; Power Plant
+   ;db                                                                                                        ; Guitarist 9            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)  
 
 SoldierData:
 ; Vermillion Gym

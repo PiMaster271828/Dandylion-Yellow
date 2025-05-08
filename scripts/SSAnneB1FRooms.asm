@@ -21,7 +21,7 @@ SSAnneB1FRooms_TextPointers:
 	dw_const SSAnneB1FRoomsSailor4Text,   TEXT_SSANNEB1FROOMS_SAILOR4
 	dw_const SSAnneB1FRoomsSailor5Text,   TEXT_SSANNEB1FROOMS_SAILOR5
 	dw_const SSAnneB1FRoomsFisherText,    TEXT_SSANNEB1FROOMS_FISHER
-	dw_const SSAnneB1FRoomsSuperNerdText, TEXT_SSANNEB1FROOMS_SUPER_NERD
+	dw_const SSAnneB1FRoomsSuperNerdText, TEXT_SSANNEB1FROOMS_SUPER_NERD  ; NPC changed to trainer by G-Dubs
 	dw_const SSAnneB1FRoomsMachokeText,   TEXT_SSANNEB1FROOMS_MACHOKE
 	dw_const PickUpItemText,              TEXT_SSANNEB1FROOMS_ETHER
 	dw_const PickUpItemText,              TEXT_SSANNEB1FROOMS_TM_REST
@@ -41,6 +41,8 @@ SSAnne10TrainerHeader4:
 	trainer EVENT_BEAT_SS_ANNE_10_TRAINER_4, 2, SSAnneB1FRoomsSailor5BattleText, SSAnneB1FRoomsSailor5EndBattleText, SSAnneB1FRoomsSailor5AfterBattleText
 SSAnne10TrainerHeader5:
 	trainer EVENT_BEAT_SS_ANNE_10_TRAINER_5, 3, SSAnneB1FRoomsFisherBattleText, SSAnneB1FRoomsFisherEndBattleText, SSAnneB1FRoomsFisherAfterBattleText
+SSAnne10TrainerHeader6:
+	trainer EVENT_BEAT_SS_ANNE_10_TRAINER_6, 0, SSAnneB1FRoomsSuperNerdBattleText, SSAnneB1FRoomsSuperNerdEndBattleText, SSAnneB1FRoomsSuperNerdAfterBattleText     ; NPC changed to trainer by G-Dubs
 	db -1 ; end
 
 SSAnneB1FRoomsSailor1Text:
@@ -76,6 +78,12 @@ SSAnneB1FRoomsSailor5Text:
 SSAnneB1FRoomsFisherText:
 	text_asm
 	ld hl, SSAnne10TrainerHeader5
+	call TalkToTrainer
+	jp TextScriptEnd
+
+SSAnneB1FRoomsSuperNerdText:
+	text_asm
+	ld hl, SSAnne10TrainerHeader6
 	call TalkToTrainer
 	jp TextScriptEnd
 
@@ -158,6 +166,15 @@ SSAnneB1FRoomsFisherAfterBattleText:
 	text_far _SSAnneB1FRoomsFisherAfterBattleText
 	text_end
 
-SSAnneB1FRoomsSuperNerdText:
-	text_far _SSAnneB1FRoomsSuperNerdText
+SSAnneB1FRoomsSuperNerdBattleText:	                  ; NPC changed to trainer by G-Dubs
+	text_far _SSAnneB1FRoomsSuperNerdBattleText
 	text_end
+
+SSAnneB1FRoomsSuperNerdEndBattleText:
+	text_far _SSAnneB1FRoomsSuperNerdEndBattleText
+	text_end
+
+SSAnneB1FRoomsSuperNerdAfterBattleText:
+	text_far _SSAnneB1FRoomsSuperNerdAfterBattleText
+	text_end
+	

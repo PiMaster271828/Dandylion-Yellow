@@ -123,6 +123,15 @@ New trainers added by Vlad and George
 	  db 2, 4, FOCUS_ENERGY
 	  db 0
 
+; Guitarists
+   ; S.S Anne B1F Rooms
+      db GUITARIST, 8
+	  db 2, 2, KARATE_CHOP   ; Guitarist's Machoke                                  ; Added by G-Dubs
+	  db 2, 2, FOCUS_ENERGY
+	  db 2, 3, THUNDERPUNCH
+	  db 2, 4, STRENGTH
+	  db 0
+
 ; Chefs 
    ; S.S Anne Kitchen 
       db CHEF, 5             

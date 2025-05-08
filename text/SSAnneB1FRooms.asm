@@ -104,7 +104,27 @@ _SSAnneB1FRoomsFisherAfterBattleText::
 	cont "assistant too!"
 	done
 
-_SSAnneB1FRoomsSuperNerdText::
+_SSAnneB1FRoomsSuperNerdBattleText::	    ; NPC changed to trainer by G-Dubs
+	text "Yo! Feel that"
+	line "beat?"
+	
+	para "That's the sound"
+	line "of my MACHOKE's"
+	cont "heart and my"
+	cont "guitar!"
+	
+	para "Let's jam!"
+	done
+
+_SSAnneB1FRoomsSuperNerdEndBattleText::
+	text "Whoa!"
+	line "Your style's got"
+	cont "a real punch!"
+	cont "Even MACHOKE felt"
+	cont "that rhythm!" 
+	prompt
+
+_SSAnneB1FRoomsSuperNerdAfterBattleText::
 	text "My buddy, MACHOKE,"
 	line "is super strong!"
 
