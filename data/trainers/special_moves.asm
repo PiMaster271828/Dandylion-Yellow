@@ -95,11 +95,22 @@ SpecialTrainerMoves:
 
 ; Sailors
    ; Vermillion City Gym
-      db SAILOR, 8            ; Added Machop to a Sailor in Lt. Surge's gym         ; Added by G-Dubs
-	  db 2, 1, THUNDERPUNCH   ; Adding Thunderpunch to a Machop                     ; Added by G-Dubs
+      db SAILOR, 8           ; Added Machop to a Sailor in Lt. Surge's gym         ; Added by G-Dubs
+	  db 2, 1, THUNDERPUNCH  ; Adding Thunderpunch to a Machop                     ; Added by G-Dubs
 	  db 2, 2, LEER
 	  db 2, 3, KARATE_CHOP
 	  db 2, 4, FOCUS_ENERGY
+	  db 0
+   ; SS Anne 3F
+      db SAILOR, 11                       
+      db 1, 1, VICEGRIP      ; METAL_CLAW  ; Sailor's Krabby
+	  db 1, 2, BUBBLEBEAM
+	  db 1, 3, SWORDS_DANCE
+	  db 1, 4, CUT
+	  db 3, 1, CUT           ; Sailor's Tentacool
+	  db 3, 2, BUBBLEBEAM
+	  db 3, 3, ACID
+	  db 3, 4, WRAP
 	  db 0
 
 ; Team Rocket

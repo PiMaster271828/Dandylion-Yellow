@@ -2211,6 +2211,7 @@ wRoute18CurScript:: db
 wRoute20CurScript:: db
 wSSAnneB1FCurScript:: db               ; SS Anne 1F script added by G-Dubs (reduced total ds by 1)
 wSSAnneB1FRoomsCurScript:: db
+wSSAnne3FCurScript:: db                ; SS Anne 3F script added by G-Dubs (reduced total ds by 1)
 wVermilionCityCurScript:: db
 wPokemonTower2FCurScript:: db
 wPokemonTower3FCurScript:: db
@@ -2222,7 +2223,6 @@ wRocketHideoutB1FCurScript:: db
 wRocketHideoutB2FCurScript:: db
 wRocketHideoutB3FCurScript:: db
 wRocketHideoutB4FCurScript:: db
-	ds 1
 wRoute6GateCurScript:: db
 wRoute8GateCurScript:: db
 	ds 1

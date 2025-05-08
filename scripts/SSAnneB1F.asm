@@ -17,7 +17,6 @@ SSAnneB1F_TextPointers:
 	def_text_pointers
 	dw_const SSAnneB1FWaiterText,         TEXT_SSANNEB1F_WAITER	          ; New trainer added by G-Dubs
 
-
 SSAnne11TrainerHeaders:
 	def_trainers
 SSAnne11TrainerHeader0:

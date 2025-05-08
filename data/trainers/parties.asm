@@ -191,6 +191,8 @@ SailorData:
 ; SS Anne Stern (Again)
     db 21, MACHOP, STARYU, 0                                                                                 ; Sailor 9               ; New trainer added by G-Dubs
 	db 19, MACHOP, HORSEA, 0                                                                                 ; Sailor 10              ; New trainer added by G-Dubs 
+; SS Anne 3F
+    db 25, KRABBY, MACHOKE, TENTACOOL, SEAKING, 0                                                            ; Sailor 11              ; New trainer added by G-Dubs 
 
 JrTrainerMData:
 ; Pewter Gym

@@ -45,7 +45,3 @@ SSAnne1FWaiterEndBattleText:
 SSAnne1FWaiterAfterBattleText:
 	text_far _SSAnne1FWaiterAfterBattleText
 	text_end
-
-
-	
-
