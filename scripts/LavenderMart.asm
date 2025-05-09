@@ -33,4 +33,4 @@ LavenderMartCooltrainerMText:
 	text_end
 
 LavenderMartClerkText: 			                                     ; New text added by G-Dubs (Followed tutorial to free up space in the home bank)
-	script_mart GREAT_BALL, SUPER_POTION, REVIVE, ESCAPE_ROPE, SUPER_REPEL, ANTIDOTE, BURN_HEAL, ICE_HEAL, PARLYZ_HEAL
+	script_mart POKE_BALL, GREAT_BALL, POTION, SUPER_POTION, REVIVE, ESCAPE_ROPE, REPEL, SUPER_REPEL, ANTIDOTE, BURN_HEAL, ICE_HEAL, PARLYZ_HEAL

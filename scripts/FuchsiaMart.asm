@@ -17,4 +17,4 @@ FuchsiaMartCooltrainerFText:
 	text_end
 
 FuchsiaMartClerkText:			                                     ; New text added by G-Dubs (Followed tutorial to free up space in the home bank)
-	script_mart ULTRA_BALL, GREAT_BALL, SUPER_POTION, REVIVE, FULL_HEAL, SUPER_REPEL
+	script_mart POKE_BALL, GREAT_BALL, ULTRA_BALL, POTION, SUPER_POTION, HYPER_POTION, REVIVE, FULL_HEAL, REPEL, SUPER_REPEL, ESCAPE_ROPE

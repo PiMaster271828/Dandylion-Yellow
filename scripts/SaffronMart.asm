@@ -16,4 +16,4 @@ SaffronMartCooltrainerFText:
 	text_end
 
 SaffronMartClerkText:					                             ; New text added by G-Dubs (Followed tutorial to free up space in the home bank)
-	script_mart GREAT_BALL, HYPER_POTION, MAX_REPEL, ESCAPE_ROPE, FULL_HEAL, REVIVE
+	script_mart POKE_BALL, GREAT_BALL, POTION, SUPER_POTION, HYPER_POTION, REPEL, SUPER_REPEL, MAX_REPEL, ESCAPE_ROPE, FULL_HEAL, REVIVE

@@ -67,25 +67,30 @@ SpecialTrainerMoves:
 	  db 0
 
 	  db BUG_CATCHER, 8
-	  db 2, 2, TACKLE         ; Adding Tackle, String Shot, and Bug Bite on Metapod      ; Added by G-Dubs
+	  db 2, 2, TACKLE         ; Adding Tackle, String Shot, and Bug Bite on Metapod       ; Added by G-Dubs
 	  db 2, 3, STRING_SHOT
 	 ;db 2, 4, BUG_BITE
 	  db 0
    ; Route 4
       db BUG_CATCHER, 12
-	  db 3, 2, STRUGGLE       ; Adding Struggle, String Shot, and Bug Bite on Metapod    ; Added by G-Dubs
+	  db 3, 2, STRUGGLE      ; Adding Struggle, String Shot, and Bug Bite on Metapod     ; Added by G-Dubs
 	  db 3, 3, STRING_SHOT
 	 ;db 3, 4, BUG_BITE
-	  db 5, 2, POISON_STING   ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna   ; Added by G-Dubs
+	  db 5, 2, POISON_STING  ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna    ; Added by G-Dubs
 	  db 5, 3, STRING_SHOT
 	 ;db 5, 4, BUG_BITE
 	  db 0
    ; Route 6
       db BUG_CATCHER, 20
-	  db 1, 1, TACKLE 
+	  db 1, 1, TACKLE        ; Adding Struggle, String Shot, and Bug Bite on Metapod     ; Added by G-Dubs    
 	  db 1, 2, HARDEN
 	  db 1, 3, STRUGGLE
 	 ;db 1, 4, BUG_BITE
+	  db 2, 1, POISON_STING  ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna    ; Added by G-Dubs
+	  db 2, 2, HARDEN
+	  db 2, 3, HORN_ATTACK
+	 ;db 2, 4, BUG_BITE
+	  db 0
 
 ; Youngsters
    ; Route 9

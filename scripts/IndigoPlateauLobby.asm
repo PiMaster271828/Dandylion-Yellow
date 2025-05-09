@@ -43,4 +43,4 @@ IndigoPlateauLobbyChanseyText:
 	jp TextScriptEnd
 
 IndigoPlateauLobbyClerkText:						                 ; New text added by G-Dubs (Followed tutorial to free up space in the home bank)
-	script_mart ULTRA_BALL, GREAT_BALL, FULL_RESTORE, MAX_POTION, FULL_HEAL, REVIVE, MAX_REPEL
+	script_mart POKE_BALL, GREAT_BALL, ULTRA_BALL, POTION, SUPER_POTION, MAX_POTION, FULL_RESTORE, FULL_HEAL, REVIVE, REPEL, SUPER_REPEL, MAX_REPEL
