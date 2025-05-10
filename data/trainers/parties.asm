@@ -126,7 +126,6 @@ BugCatcherData:
     db 25, METAPOD, KAKUNA, 0                                                                                ; Bug Catcher 20         ; New trainer added by G-Dubs
 ; Route 11
     db 18, BUTTERFREE, PARASECT, VENOMOTH, BEEDRILL, 0                                                       ; Bug Catcher 21         ; New trainer added by G-Dubs
-
 /*
 ; Route 13
     db 30, BUTTERFREE, BEEDRILL, VENOMOTH, 0                                                                 ; Bug Catcher 22         ; New Trainer added by G-Dubs
