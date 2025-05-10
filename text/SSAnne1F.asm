@@ -34,12 +34,12 @@ _SSAnne1FSailorText::
 	cont "more bored ones!"
 	done
 
-_SSAnneJessieJamesText1::
+_SSAnneJessieJamesText::
 	text "Hold it right"
 	line "there, twerp!@"
 	text_end
 
-_SSAnneJessieJamesText2::
+_SSAnneJessieJamesBattleText::
 	text "Prepare for" 
     line "trouble!"
     cont "Make it double!"
@@ -86,7 +86,7 @@ _SSAnneJessieJamesText2::
 	cont "away from us!"
 	done
 
-_SSAnneJessieJamesText3::
+_SSAnneJessieJamesEndBattleText::
 	text ""
     line "The twerp beat"
     cont "us!?  Again?!"
@@ -94,7 +94,7 @@ _SSAnneJessieJamesText3::
 	para "Just like before!"
 	prompt
 
-_SSAnneJessieJamesText4::
+_SSAnneJessieJamesAfterBattleText::
 	text "TEAM ROCKET's"
     line "blasting off"
     cont "again!@"

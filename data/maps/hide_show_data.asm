@@ -98,7 +98,7 @@ MapHSPointers:
 	dw NoHS                         ; 5C - Vermilion Gym
 	dw NoHS                         ; 5D - Vermilion Pidgey House
 	dw NoHS                         ; 5E - Vermilion Dock
-	dw NoHS                         ; 5F - SS Anne 1F
+	dw SSAnne1FHS                   ; 5F - SS Anne 1F
 	dw SSAnne2FHS                   ; 60 - SS Anne 2F
 	dw NoHS                         ; 61 - SS Anne 3F
 	dw NoHS                         ; 62 - SS Anne B1F
@@ -425,6 +425,9 @@ MtMoonB2FHS:
 	db MT_MOON_B2F, MTMOONB2F_HELIX_FOSSIL,  SHOW
 	db MT_MOON_B2F, MTMOONB2F_HP_UP,         SHOW
 	db MT_MOON_B2F, MTMOONB2F_TM_MEGA_PUNCH, SHOW
+SSAnne1FHS:
+	db SS_ANNE_1F, SSANNE1F_JESSIE, HIDE
+	db SS_ANNE_1F, SSANNE1F_JAMES, HIDE	
 SSAnne2FHS:
 	db SS_ANNE_2F, SSANNE2F_RIVAL, HIDE
 SSAnne1FRoomsHS:

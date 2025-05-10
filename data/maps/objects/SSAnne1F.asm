@@ -1,4 +1,6 @@
 	object_const_def
+	const_export SSANNE1F_JESSIE
+	const_export SSANNE1F_JAMES
 	const_export SSANNE1F_WAITER
 	const_export SSANNE1F_SAILOR
 
@@ -23,7 +25,9 @@ SSAnne1F_Object:
 	def_bg_events
 
 	def_object_events
-	object_event 12,  6, SPRITE_WAITER, WALK, LEFT_RIGHT, TEXT_SSANNE1F_WAITER, OPP_WAITER, 1      ; NPC changed to trainer by G-Dubs
+    object_event 25,  6, SPRITE_JESSIE, WALK, LEFT_RIGHT, TEXT_SSANNE1F_JESSIE
+	object_event 25,  7, SPRITE_JAMES, WALK, LEFT_RIGHT, TEXT_SSANNE1F_JAMES
+    object_event 12,  6, SPRITE_WAITER, WALK, LEFT_RIGHT, TEXT_SSANNE1F_WAITER, OPP_WAITER, 1      ; NPC changed to trainer by G-Dubs
 	object_event 27,  6, SPRITE_SAILOR, STAY, NONE, TEXT_SSANNE1F_SAILOR
 
 	def_warps_to SS_ANNE_1F

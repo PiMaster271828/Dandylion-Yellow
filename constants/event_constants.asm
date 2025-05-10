@@ -665,7 +665,7 @@
 
 ; S.S. Anne 1F Events                            ; New section added by G-Dubs
 	const_next $5E0
-	const_skip                                                                                     ; $5E0
+	const EVENT_BEAT_SS_ANNE_JESSIE_JAMES                                                                                     ; $5E0
 	const EVENT_BEAT_SS_ANNE_7_TRAINER_0         ; NPC changed to trainer by G-Dubs                ; $5E1
 	const_skip 14	                                                                               ; $5E2 - $5EF
 	

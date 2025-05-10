@@ -128,6 +128,8 @@ DEF SHOW EQU $15
 	const HS_MT_MOON_B2F_FOSSIL_2          ; 76
 	const HS_MT_MOON_B2F_ITEM_1            ; 77
 	const HS_MT_MOON_B2F_ITEM_2            ; 78
+    const HS_SS_ANNE_1F_JESSIE             ; 79
+    const HS_SS_ANNE_1F_JAMES              ; 7A
 	const HS_SS_ANNE_2F_RIVAL              ; 79
 	const HS_SS_ANNE_1F_ROOMS_ITEM         ; 7A
 	const HS_SS_ANNE_2F_ROOMS_ITEM_1       ; 7B
