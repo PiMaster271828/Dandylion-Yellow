@@ -31,5 +31,4 @@ DEF SPECIAL EQU const_value
 	const SOUND        ; $1C
 	const GLASS    	   ; $1D
 
-
 DEF NUM_TYPES EQU const_value

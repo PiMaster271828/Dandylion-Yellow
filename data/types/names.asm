@@ -12,7 +12,6 @@ TypeNames:
 	dw .Dragon
 	dw .Steel
 	dw .Dark
-	dw .Glass
 	dw .Struggler
 
 REPT UNUSED_TYPES_END - UNUSED_TYPES
@@ -28,6 +27,7 @@ ENDR
 	dw .Ghost
 	dw .Fairy
 	dw .Sound
+	dw .Glass
 
 	assert_table_length NUM_TYPES
 
