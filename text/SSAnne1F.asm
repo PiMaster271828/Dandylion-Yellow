@@ -21,7 +21,7 @@ _SSAnne1FWaiterAfterBattleText::
 	line "serve you anyway."
 	
 	para "Anything you ask,"
-	cont "is my job to try"
+	line "is my job to try"
 	cont "to get for you!"
 	done
 
