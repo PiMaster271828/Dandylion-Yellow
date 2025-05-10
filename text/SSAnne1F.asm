@@ -33,3 +33,69 @@ _SSAnne1FSailorText::
 	line "challenged by the"
 	cont "more bored ones!"
 	done
+
+_SSAnneJessieJamesText1::
+	text "Hold it right"
+	line "there, twerp!@"
+	text_end
+
+_SSAnneJessieJamesText2::
+	text "Prepare for" 
+    line "trouble!"
+    cont "Make it double!"
+    
+	para "To protect the"
+    line "world from"
+    cont "devastation!"
+    
+	para "To unite all"
+    line "people within"
+    cont "our nation!"
+    
+	para "To denounce"
+    line "the evils of"
+    cont "truth and love!"
+    
+	para "To extend our"
+    line "reach to the"
+    cont "stars above!"
+    
+	para "JESSIE!"
+    
+	para "JAMES!"
+    
+	para "TEAM ROCKET"
+    line "blasts off at"
+    cont "the speed of"
+    cont "light!"
+    
+	para "Surrender now,"
+    line "or prepare to"
+    cont "fight!"
+    
+	para "MEOWTH:"
+    line "That's right!"
+	
+	para "We found an empty"
+	line "room to stow away"
+	cont "in, then you had"
+	cont "to show up."
+	
+	para "It even had a bed"
+	line "you're not taking"
+	cont "away from us!"
+	done
+
+_SSAnneJessieJamesText3::
+	text ""
+    line "The twerp beat"
+    cont "us!?  Again?!"
+    
+	para "Just like before!"
+	prompt
+
+_SSAnneJessieJamesText4::
+	text "TEAM ROCKET's"
+    line "blasting off"
+    cont "again!@"
+    text_end

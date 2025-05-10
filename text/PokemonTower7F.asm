@@ -6,25 +6,33 @@ _PokemonTowerJessieJamesText2::
 	text "Prepare for" 
     line "trouble!"
     cont "Make it double!"
-    para "To protect the"
+    
+	para "To protect the"
     line "world from"
     cont "devastation!"
-    para "To unite all"
+    
+	para "To unite all"
     line "people within"
     cont "our nation!"
-    para "To denounce"
+    
+	para "To denounce"
     line "the evils of"
     cont "truth and love!"
-    para "To extend our"
+    
+	para "To extend our"
     line "reach to the"
     cont "stars above!"
-    para "JESSIE!"
-    para "JAMES!"
-    para "TEAM ROCKET"
+    
+	para "JESSIE!"
+    
+	para "JAMES!"
+    
+	para "TEAM ROCKET"
     line "blasts off at"
     cont "the speed of"
     cont "light!"
-    para "Surrender now,"
+    
+	para "Surrender now,"
     line "or prepare to"
     cont "fight!"
     para "MEOWTH:"
