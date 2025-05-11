@@ -2988,12 +2988,22 @@ CharmanderEvosMoves:
 	db EVOLVE_LEVEL, 16, CHARMELEON
 	db 0
 ; Learnset
-	db 9, EMBER
-	db 15, LEER
-	db 22, RAGE
-	db 30, SLASH
-	db 38, FLAMETHROWER
-	db 46, FIRE_SPIN
+    db 2, SCRATCH
+	db 4, GROWL
+   ;db 8, KINDLE
+	db 12, SMOKESCREEN 
+	db 16, LEER
+    db 20, EMBER
+   ;db 24, METAL_CLAW
+	db 28, DRAGON_RAGE 
+    db 32, FIRE_PUNCH
+   ;db 36, DRAGONBREATH
+	db 40, SLASH
+	db 44, RAGE 
+    db 48, FLAMETHROWER
+   ;db 52, DRAGON_CLAW
+    db 56, FIRE_SPIN
+    db 60, FIRE_BLAST
 	db 0
 
 SquirtleEvosMoves:
@@ -3020,18 +3030,31 @@ SquirtleEvosMoves:
 
 CharmeleonEvosMoves:
 ; Evolutions
+   ;db EVOLVE_ITEM, CHARIZARDITE_V, 1, CHARIZARD_V   (G-Max Charizard)
+   ;db EVOMVE_ITEM, CHARIZARDITE_W, 1, CHARIZARD_W   (Possibly Clone Charizard) (Possibly Gen II Shiny Charizard) (I just wanted VWXYZ Charizard)
    ;db EVOLVE_ITEM, CHARIZARDITE_X, 1, CHARIZARD_X   (Mega Charizard X)
    ;db EVOLVE_ITEM, CHARIZARDITE_Y, 1, CHARIZARD_Y   (Mega Charizard Y)
    ;db EVOLVE_ITEM, CHARIZARDITE_Z, 1, CHARIZARD_Z   (Dark Charizard)
 	db EVOLVE_LEVEL, 36, CHARIZARD
 	db 0
 ; Learnset
-	db 9, EMBER
-	db 15, LEER
-	db 24, RAGE
-	db 33, SLASH
-	db 42, FLAMETHROWER
-	db 56, FIRE_SPIN
+	db 2, SCRATCH
+	db 4, GROWL
+   ;db 8, KINDLE
+	db 12, SMOKESCREEN 
+	db 16, LEER
+	db 16, FURY_SWIPES
+    db 22, EMBER
+   ;db 26, METAL_CLAW
+	db 29, DRAGON_RAGE 
+    db 33, FIRE_PUNCH
+   ;db 36, DRAGONBREATH
+	db 42, SLASH
+	db 47, RAGE 
+    db 52, FLAMETHROWER
+   ;db 57, DRAGON_CLAW
+    db 62, FIRE_SPIN
+    db 67, FIRE_BLAST
 	db 0
 
 WartortleEvosMoves:
@@ -3061,12 +3084,34 @@ CharizardEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 9, EMBER
+    db 2, SCRATCH
+	db 4, GROWL
+   ;db 8, KINDLE
+	db 12, SMOKESCREEN 
 	db 15, LEER
-	db 24, RAGE
-	db 36, SLASH
-	db 46, FLAMETHROWER
-	db 55, FIRE_SPIN
+	db 16, FURY_SWIPES
+    db 22, EMBER
+   ;db 26, METAL_CLAW
+	db 29, DRAGON_RAGE 
+    db 33, FIRE_PUNCH
+    db 36, ROAR
+   ;db 36, DRAGONBREATH
+   ;db 36, SHADOW_CLAW
+    db 36, WING_ATTACK 
+	db 40, SEISMIC_TOSS
+	db 45, SLASH
+	db 48, FLY
+	db 50, RAGE 
+   ;db 52, DUALWINGBEAT
+    db 55, FLAMETHROWER
+	db 58, SWORDS_DANCE
+   ;db 60, DRAGON_CLAW
+   ;db 62, MAX_WILDFIRE
+    db 65, FIRE_SPIN
+	db 68, SKY_ATTACK
+    db 70, FIRE_BLAST
+	db 72, HYPER_BEAM
+   ;db 75, BLAST_BURN
 	db 0
 
 MissingNoB5EvosMoves:

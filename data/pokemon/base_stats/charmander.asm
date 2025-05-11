@@ -1,7 +1,7 @@
 	db DEX_CHARMANDER ; pokedex id
 
-	db  39,  52,  43,  65,  50
-	;   hp  atk  def  spd  spc
+	db  40,  55,  45,  65,  50 ; 305 
+	;   hp  atk  def  spd  spc   tot
 
 	db FIRE, FIRE ; type
 	db 45 ; catch rate
@@ -16,9 +16,11 @@
 	; tm/hm learnset
 	tmhm MEGA_PUNCH,   SWORDS_DANCE, MEGA_KICK,    TOXIC,        BODY_SLAM,    \
 	     TAKE_DOWN,    DOUBLE_EDGE,  SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
-	     RAGE,         DRAGON_RAGE,  DIG,          MIMIC,        DOUBLE_TEAM,  \
-	     REFLECT,      BIDE,         FIRE_BLAST,   SWIFT,        SKULL_BASH,   \
-	     REST,         SUBSTITUTE,   CUT,          STRENGTH
+		 RAGE,         DRAGON_RAGE,  DIG,          MIMIC,        DOUBLE_TEAM,  \
+		 REFLECT,      BIDE,         FIRE_BLAST,   SWIFT,        SKULL_BASH,   \
+	  /*LIGHT_SCREEN,*/REST,         SUBSTITUTE, /*FLAMETHROWER, FIRE_PUNCH,   \
+	     HEADBUTT,     IRON_TAIL,    DRAGON_CLAW,  ROCK_SMASH,   METAL_CLAW    \          
+	   */CUT,          STRENGTH
 	; end
 
 	db 0 ; padding
