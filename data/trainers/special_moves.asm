@@ -150,11 +150,12 @@ New trainers added by Vlad and George
 
 ; Chefs 
    ; S.S Anne Kitchen 
-      db CHEF, 5             
+      db CHEF, 3             
 	  db 2, 1, WATER_GUN     ; Chef's Psyduck
 	  db 2, 2, DISABLE
 	  db 2, 3, CONFUSION
-	  db 2, 4, DIZZY_PUNCH   ; Adding Dizzy Punch to the Chef's Psyduck             ; Added by G-Dubs 
+	  db 2, 4, DIZZY_PUNCH   ; Adding Dizzy Punch to the Chef's Psyduck             ; Added by G-Dubs
+	  db 0 
 
 /*****************************************************************************************************
 Gym Leaders
