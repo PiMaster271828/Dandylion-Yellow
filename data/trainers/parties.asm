@@ -88,9 +88,9 @@ YoungsterData:
 	db 17, RATTATA, RATTATA, RATICATE, 0                                                                     ; Youngster 11
 	db 18, NIDORAN_M, NIDORINO, 0                                                                            ; Youngster 12
 ; Viridian Forest (Previously Unused)
-	db 7, PIDGEY, RATTATA, NIDORAN_M, SPEAROW, 0                                                             ; Youngster 13           ; Trainer unused in any version added by G-Dubs (Some PokéMon Changed) (Level hanged from 17 to 7)
+	db 7, PIDGEY, RATTATA, NIDORAN_M, SPEAROW, 0                                                             ; Youngster 13           ; Trainer unused in any version added by G-Dubs (Some PokéMon changed by G-Dubs) (Level changed from 17 to 7 by G-Dubs)
 ; Route 9      
-	db 24, SANDSHREW, 0                                                                                      ; Youngster 14           ; A.J. from the Anime and his OP Sandshrew
+	db 25, SANDSHREW, 0                                                                                      ; Youngster 14           ; A.J. from the Anime and his OP Sandshrew (Level changed from 24 to 25 by G-Dubs)
 ; Viridian Forest (Again)
     db $FF, 6, RATTATA, 7, PIDGEY, 6, CATERPIE, 7, NIDORAN_M, 6, WEEDLE, 9, PIDGEOTTO, 0                     ; Youngster 15           ; New Trainer added by G-Dubs
 
@@ -114,7 +114,7 @@ BugCatcherData:
 ; Route 4 (Previously Unused)
 	db 18, PARAS, WEEDLE, METAPOD, CATERPIE, KAKUNA, VENONAT, 0                                              ; Bug Catcher 12         ; Trainer unused in any version added by G-Dubs (PokéMon added by G-Dubs)
 ; Route 9
-	db 20, BEEDRILL, BEEDRILL, 0                                                                             ; Bug Catcher 13         ; Level changed from 19 to 20 by G-Dubs
+	db 25, BEEDRILL, BEEDRILL, 0                                                                             ; Bug Catcher 13         ; Level changed from 19 to 25 by G-Dubs
 	db 25, CATERPIE, WEEDLE, VENONAT, 0                                                                      ; Bug Catcher 14         ; Level changed from 20 to 25 by G-Dubs
 ; Viridian Forest (Again)
 	db 8, CATERPIE, METAPOD, 0                                                                               ; Bug Catcher 15         ; Yellow exclusive Bug Catcher in Viridian Forest (Poor coding)
@@ -203,11 +203,10 @@ JrTrainerMData:
 ; Route 6
 	db 22, SQUIRTLE, 0					                                                                     ; Jr. Trainer ♂ 4        ; Previously Unused (Level changed from 20 to 22 by G-Dubs)   
 	db 20, SPEAROW, NIDORAN_M ,RATICATE, 0                                                                   ; Jr. Trainer ♂ 5        ; Nidoran♂ added by G-Dubs (Level changed from 16 to 20 by G-Dubs)
-; Unused
-	db 18, DIGLETT, DIGLETT, SANDSHREW, 0	                                                                 ; Jr. Trainer ♂ 6        ; (Unused)
-	db 21, GROWLITHE, CHARMANDER, 0		                                                                     ; Jr. Trainer ♂ 7        ; (Unused)
 ; Route 9
-	db 19, RATTATA, DIGLETT, EKANS, SANDSHREW, 0                                                             ; Jr. Trainer ♂ 8
+	db 24, DIGLETT, SANDSHREW, DIGLETT, 0	                                                                 ; Jr. Trainer ♂ 6        ; Previously Unused (Level changed from 18 to 24 by G-Dubs)
+	db 21, GROWLITHE, NIDORAN_M, CHARMANDER, 0		                                                         ; Jr. Trainer ♂ 7        ; Previously Unused (Nidoran♂ added by G-Dubs)
+	db 22, RATTATA, DIGLETT, EKANS, SANDSHREW, 0                                                             ; Jr. Trainer ♂ 8        ; Level changed from 19 to 22 by G-Dubs             
 ; Route 12
 	db 29, NIDORAN_M, NIDORINO, 0                                                                            ; Jr. Trainer ♂ 9
 ; Route 6 (Again)
@@ -311,7 +310,7 @@ HikerData:
 	db 13, GEODUDE, GEODUDE, MACHOP, GEODUDE, 0	                                                             ; Hiker 3
 	db 17, ONIX, 0						                                                                     ; Hiker 4
 ; Route 9
-	db 21, GEODUDE, ONIX, 0				                                                                     ; Hiker 5
+	db 21, GEODUDE, SANDSHREW, ONIX, 0	                                                                     ; Hiker 5                ; Sandshrew added by G-Dubs
 	db 20, GEODUDE, MACHOP, GEODUDE, 0	                                                                     ; Hiker 6
 ; Route 10
 	db 21, GEODUDE, ONIX, 0				                                                                     ; Hiker 7
@@ -369,8 +368,8 @@ BurglarData:
 	db 34, GROWLITHE, PONYTA, 0			                                                                     ; Burglar 9
 
 EngineerData:
-; Route 6/Route 9
-	db 21, VOLTORB, MAGNEMITE, 0			                                                                 ; Engineer 1             ; Previously Unused (Now used in two different locations)
+; Route 6
+	db 21, VOLTORB, MAGNEMITE, 0			                                                                 ; Engineer 1             ; Trainer unused in any version added by G-Dubs 
 ; Route 11
 	db 21, MAGNEMITE, 0                                                                                      ; Engineer 2
 	db 18, MAGNEMITE, MAGNEMITE, MAGNETON, 0                                                                 ; Engineer 3              

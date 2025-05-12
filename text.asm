@@ -121,7 +121,7 @@ INCLUDE "text/Route9.asm"
 
 SECTION "Text 4", ROMX
 
-INCLUDE "text/Route9_2.asm"
+;INCLUDE "text/Route9_2.asm"
 INCLUDE "text/Route10.asm"
 INCLUDE "text/Route11.asm"
 INCLUDE "text/Route13.asm"

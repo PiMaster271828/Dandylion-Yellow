@@ -16,7 +16,7 @@ Route9_ScriptPointers:
 Route9_TextPointers:
 	def_text_pointers
 	dw_const Route9CooltrainerF1Text, TEXT_ROUTE9_COOLTRAINER_F1
-	dw_const Route9AJText,            TEXT_ROUTE9_COOLTRAINER_M1
+	dw_const Route9AJText,            TEXT_ROUTE9_COOLTRAINER_M1	 ; A.J. from the Anime and his OP Sandshrew
 	dw_const Route9CooltrainerM2Text, TEXT_ROUTE9_COOLTRAINER_M2
 	dw_const Route9CooltrainerF2Text, TEXT_ROUTE9_COOLTRAINER_F2
 	dw_const Route9Hiker1Text,        TEXT_ROUTE9_HIKER1
@@ -24,6 +24,8 @@ Route9_TextPointers:
 	dw_const Route9Youngster1Text,    TEXT_ROUTE9_YOUNGSTER1
 	dw_const Route9Hiker3Text,        TEXT_ROUTE9_HIKER3
 	dw_const Route9Youngster2Text,    TEXT_ROUTE9_YOUNGSTER2
+	dw_const Route9CooltrainerM3Text, TEXT_ROUTE9_COOLTRAINER_M3	 ; New trainer added by G-Dubs
+    dw_const Route9CooltrainerM4Text, TEXT_ROUTE9_COOLTRAINER_M4	 ; New trainer added by G-Dubs
 	dw_const PickUpItemText,          TEXT_ROUTE9_TM_TELEPORT
 	dw_const Route9SignText,          TEXT_ROUTE9_SIGN
 
@@ -32,7 +34,7 @@ Route9TrainerHeaders:
 Route9TrainerHeader0:
 	trainer EVENT_BEAT_ROUTE_9_TRAINER_0, 3, Route9CooltrainerF1BattleText, Route9CooltrainerF1EndBattleText, Route9CooltrainerF1AfterBattleText
 Route9TrainerHeader1:
-	trainer EVENT_BEAT_ROUTE_9_TRAINER_1, 2, Route9AJBattleText, Route9AJEndBattleText, Route9AJAfterBattleText
+	trainer EVENT_BEAT_ROUTE_9_TRAINER_1, 2, Route9AJBattleText, Route9AJEndBattleText, Route9AJAfterBattleText	                                     ; A.J. from the Anime and his OP Sandshrew
 Route9TrainerHeader2:
 	trainer EVENT_BEAT_ROUTE_9_TRAINER_2, 4, Route9CooltrainerM2BattleText, Route9CooltrainerM2EndBattleText, Route9CooltrainerM2AfterBattleText
 Route9TrainerHeader3:
@@ -47,54 +49,83 @@ Route9TrainerHeader7:
 	trainer EVENT_BEAT_ROUTE_9_TRAINER_7, 2, Route9Hiker3BattleText, Route9Hiker3EndBattleText, Route9Hiker3AfterBattleText
 Route9TrainerHeader8:
 	trainer EVENT_BEAT_ROUTE_9_TRAINER_8, 2, Route9Youngster2BattleText, Route9Youngster2EndBattleText, Route9Youngster2AfterBattleText
+Route9TrainerHeader9:
+	trainer EVENT_BEAT_ROUTE_9_TRAINER_9, 3, Route9CooltrainerM3BattleText, Route9CooltrainerM3EndBattleText, Route9CooltrainerM3AfterBattleText	 ; New trainer added by G-Dubs
+Route9TrainerHeader10:
+	trainer EVENT_BEAT_ROUTE_9_TRAINER_10, 3, Route9CooltrainerM4BattleText, Route9CooltrainerM4EndBattleText, Route9CooltrainerM4AfterBattleText	 ; New trainer added by G-Dubs
 	db -1 ; end
 
 Route9CooltrainerF1Text:
 	text_asm
 	ld hl, Route9TrainerHeader0
-	jr Route9TalkToTrainer
+	call TalkToTrainer
+	jp TextScriptEnd
 
 Route9AJText:
 	text_asm
 	ld hl, Route9TrainerHeader1
-	jr Route9TalkToTrainer
+	call TalkToTrainer
+	jp TextScriptEnd
 
 Route9CooltrainerM2Text:
 	text_asm
 	ld hl, Route9TrainerHeader2
-	jr Route9TalkToTrainer
+	call TalkToTrainer
+	jp TextScriptEnd
 
 Route9CooltrainerF2Text:
 	text_asm
 	ld hl, Route9TrainerHeader3
-	jr Route9TalkToTrainer
+	call TalkToTrainer
+	jp TextScriptEnd
 
 Route9Hiker1Text:
 	text_asm
 	ld hl, Route9TrainerHeader4
-	jr Route9TalkToTrainer
+	call TalkToTrainer
+	jp TextScriptEnd
 
 Route9Hiker2Text:
 	text_asm
 	ld hl, Route9TrainerHeader5
-	jr Route9TalkToTrainer
+	call TalkToTrainer
+	jp TextScriptEnd
 
 Route9Youngster1Text:
 	text_asm
 	ld hl, Route9TrainerHeader6
-	jr Route9TalkToTrainer
+	call TalkToTrainer
+	jp TextScriptEnd
 
 Route9Hiker3Text:
 	text_asm
 	ld hl, Route9TrainerHeader7
-	jr Route9TalkToTrainer
+	call TalkToTrainer
+	jp TextScriptEnd
 
 Route9Youngster2Text:
 	text_asm
 	ld hl, Route9TrainerHeader8
+    call TalkToTrainer
+	jp TextScriptEnd
+
+Route9CooltrainerM3Text:		       ; New trainer added by G-Dubs
+	text_asm	
+	ld hl, Route9TrainerHeader9
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route9CooltrainerM4Text:		       ; New trainer added by G-Dubs
+	text_asm	
+	ld hl, Route9TrainerHeader10
+	call TalkToTrainer
+	jp TextScriptEnd
+
+/*
 Route9TalkToTrainer:
 	call TalkToTrainer
 	jp TextScriptEnd
+*/
 
 Route9CooltrainerF1BattleText:
 	text_far _Route9CooltrainerF1BattleText
@@ -202,6 +233,30 @@ Route9Youngster2EndBattleText:
 
 Route9Youngster2AfterBattleText:
 	text_far _Route9Youngster2AfterBattleText
+	text_end
+
+Route9CooltrainerM3BattleText:		                  ; New trainer added by G-Dubs
+	text_far _Route9CooltrainerM3BattleText
+	text_end
+
+Route9CooltrainerM3EndBattleText:		              
+	text_far _Route9CooltrainerM3EndBattleText
+	text_end
+
+Route9CooltrainerM3AfterBattleText:		              
+	text_far _Route9CooltrainerM3AfterBattleText
+	text_end
+
+Route9CooltrainerM4BattleText:		                  ; New trainer added by G-Dubs
+	text_far _Route9CooltrainerM4BattleText
+	text_end
+
+Route9CooltrainerM4EndBattleText:		              
+	text_far _Route9CooltrainerM4EndBattleText
+	text_end
+
+Route9CooltrainerM4AfterBattleText:		              
+	text_far _Route9CooltrainerM4AfterBattleText
 	text_end
 
 Route9SignText:

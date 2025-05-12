@@ -97,6 +97,13 @@ _Route9Hiker2EndBattleText::
 _Route9Hiker2AfterBattleText::
 	text "Hahaha! Kids"
 	line "should be tough!"
+
+	para "Rock Tunnel is"
+	line "just up ahead."
+	cont "It's pretty dark"
+	cont "in there! Make"
+	cont "sure your #MON"
+    cont "are ready for it!"
 	done
 
 _Route9Youngster1BattleText::
@@ -134,3 +141,88 @@ _Route9Hiker3AfterBattleText::
 	line "Us hearty guys"
 	cont "always laugh!"
 	done
+
+_Route9Youngster2BattleText::
+	text "Go, my super bug"
+	line "#MON!"
+	done
+
+_Route9Youngster2EndBattleText::
+	text "My"
+	line "bugs..."
+	prompt
+
+_Route9Youngster2AfterBattleText::
+	text "If you don't like"
+	line "bug #MON, you"
+	cont "bug me!"
+	done
+
+_Route9CooltrainerM3BattleText::	   ; New trainer added by G-Dubs
+    text "Hey! Are you on a"
+    line "#MON journey"
+	cont "too?"
+
+	para "I'm training hard"
+	line "right here on"
+	cont "ROUTE 9!"
+	
+	para "Let's battle!"
+	done
+
+_Route9CooltrainerM3EndBattleText::
+    text "Wow!"
+	line "I didn't see that"
+	cont "coming!"
+    cont "Good battle!"
+
+	para "I guess I need to"
+    line "train even more!"
+	prompt
+
+_Route9CooltrainerM3AfterBattleText::
+    text "I'm gonna keep"
+    line "training right"
+	cont "here until my"
+	cont "#MON are the"
+	cont "strongest on"
+	cont "this route!"
+    done
+
+_Route9CooltrainerM4BattleText::	   ; New trainer added by G-Dubs
+    text "I saw some other"
+	line "trainers around"
+	cont "here... but I bet"
+	cont "bet my team's the"
+	cont "best on ROUTE 9!"
+
+	para "Let's see if you"
+	line "can prove me"
+	cont "wrong!"
+	done
+
+_Route9CooltrainerM4EndBattleText::
+    text "No"
+	line "way! I lost?!"
+
+	para "You must be"
+	line "heading to the"
+	cont "#MON LEAGUE"
+    cont "or something!"
+	prompt
+
+_Route9CooltrainerM4AfterBattleText::
+    text "Keep going on"
+	line "your journey!"
+	cont "Maybe we'll even"
+	cont "battle again when"
+    cont "we're both much"
+	cont "stronger!"
+    done
+
+_Route9SignText::
+	text "ROUTE 9"
+	line "CERULEAN CITY-"
+	cont "ROCK TUNNEL"
+	done
+

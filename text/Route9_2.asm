@@ -1,3 +1,4 @@
+/*
 _Route9Youngster2BattleText::
 	text "Go, my super bug"
 	line "#MON!"
@@ -19,3 +20,4 @@ _Route9SignText::
 	line "CERULEAN CITY-"
 	cont "ROCK TUNNEL"
 	done
+*/

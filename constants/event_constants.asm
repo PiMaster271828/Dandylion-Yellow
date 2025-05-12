@@ -346,6 +346,9 @@
 	const EVENT_BEAT_ROUTE_9_TRAINER_6                                                             ; $447
 	const EVENT_BEAT_ROUTE_9_TRAINER_7                                                             ; $448
 	const EVENT_BEAT_ROUTE_9_TRAINER_8	                                                           ; $449
+    const EVENT_BEAT_ROUTE_9_TRAINER_9		; New trainer added by G-Dubs                          ; $44A
+    const EVENT_BEAT_ROUTE_9_TRAINER_10	    ; New trainer added by G-Dubs                          ; $44B
+
 
 ; Route 10 Events
 	const_next $450
