@@ -44,6 +44,7 @@ SpecialTrainerMoves:
 	  db BUG_CATCHER, 18
 	  db 1, 4, HEADBUTT       ; Adding a TCG exclusive move to this level 9 Caterpie     ; Added by G-Dubs
 	  db 0
+
    ; Route 3
       db BUG_CATCHER, 5
 	  db 2, 2, POISON_STING   ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna   ; Added by G-Dubs
@@ -59,6 +60,7 @@ SpecialTrainerMoves:
 	  db 2, 3, STRING_SHOT
 	 ;db 2, 4, BUG_BITE
 	  db 0
+
    ; Mt. Moon
       db BUG_CATCHER, 7
       db 2, 2, POISON_STING   ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna   ; Added by G-Dubs
@@ -71,6 +73,7 @@ SpecialTrainerMoves:
 	  db 2, 3, STRING_SHOT
 	 ;db 2, 4, BUG_BITE
 	  db 0
+
    ; Route 4
       db BUG_CATCHER, 12
 	  db 3, 2, STRUGGLE      ; Adding Struggle, String Shot, and Bug Bite on Metapod     ; Added by G-Dubs
@@ -80,6 +83,7 @@ SpecialTrainerMoves:
 	  db 5, 3, STRING_SHOT
 	 ;db 5, 4, BUG_BITE
 	  db 0
+
    ; Route 6
       db BUG_CATCHER, 20
 	  db 1, 1, TACKLE        ; Adding Struggle, String Shot, and Bug Bite on Metapod     ; Added by G-Dubs    
@@ -106,6 +110,7 @@ SpecialTrainerMoves:
 	  db 2, 3, KARATE_CHOP
 	  db 2, 4, FOCUS_ENERGY
 	  db 0
+	  
    ; SS Anne 3F
       db SAILOR, 11                       
       db 1, 1, VICEGRIP      ; METAL_CLAW  ; Sailor's Krabby
@@ -407,4 +412,4 @@ Elite Four
 	  db 6, 3, QUICK_ATTACK
 	  db 0
       
-	   db -1 ; End of list
+	  db -1 ; End of list
