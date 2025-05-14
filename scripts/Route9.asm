@@ -121,12 +121,6 @@ Route9CooltrainerM4Text:		       ; New trainer added by G-Dubs
 	call TalkToTrainer
 	jp TextScriptEnd
 
-/*
-Route9TalkToTrainer:
-	call TalkToTrainer
-	jp TextScriptEnd
-*/
-
 Route9CooltrainerF1BattleText:
 	text_far _Route9CooltrainerF1BattleText
 	text_end
