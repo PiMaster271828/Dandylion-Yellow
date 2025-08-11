@@ -174,7 +174,8 @@ Moves:
 	move TRI_ATTACK,    NO_ADDITIONAL_EFFECT,        80, NORMAL,       100, 10 ; (Tri Attack effect to be added)                                      ; Move #161
 	move SUPER_FANG,    SUPER_FANG_EFFECT,            1, NORMAL,        90, 10                                                                        ; Move #162
 	move SLASH,         NO_ADDITIONAL_EFFECT,        70, NORMAL,       100, 20                                                                        ; Move #163
-	move SUBSTITUTE,    SUBSTITUTE_EFFECT,            0, NORMAL,       100, 10                                                                        ; Move #164
+	move SUBSTITUTE,    SUBSTITUTE_EFFECT,            0, NORMAL,       100, 10 
+	move BUG_BITE,      FLINCH_SIDE_EFFECT2,         60, BUG,          100, 20 ; New Move                                                             ; Move #164
 	move STRUGGLE,      RECOIL_EFFECT,               50, STRUGGLER,    100, 10 ; Changed to Struggler type                                            ; Move #165  (Always last move number)
 	assert_table_length NUM_ATTACKS
 /*
