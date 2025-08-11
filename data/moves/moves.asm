@@ -23,13 +23,13 @@ Moves:
 	move SCRATCH,       NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 35                                                                        ; Move #10
 	move VICEGRIP,      NO_ADDITIONAL_EFFECT,        55, STEEL,        100, 30 ; Changed to Steel type                                                ; Move #11
 	move GUILLOTINE,    OHKO_EFFECT,                  1, NORMAL,        30,  5                                                                        ; Move #12   (Pinsir's signature move)
-	move RAZOR_WIND,    CHARGE_EFFECT,              100, NORMAL,        95, 10 ; changed to Flying type, buf. pow. & acc. (New high crit. rate move)  ; Move #13
+	move RAZOR_WIND,    CHARGE_EFFECT,              100, FLYING,        95, 10 ; Changed to Flying type, buf. pow. & acc. (New high crit. rate move)  ; Move #13
 	move SWORDS_DANCE,  ATTACK_UP2_EFFECT,            0, NORMAL,       100, 30                                                                        ; Move #14
 	move CUT,           NO_ADDITIONAL_EFFECT,        55, BUG,           95, 30 ; Changed to Bug type, & buffed power (New high crit. rate move)       ; Move #15
 	move GUST,          NO_ADDITIONAL_EFFECT,        40, FLYING,       100, 35 ; Changed to Flying type                                               ; Move #16
 	move WING_ATTACK,   NO_ADDITIONAL_EFFECT,        60, FLYING,       100, 35 ; Buffed power                                                         ; Move #17
 	move WHIRLWIND,     SWITCH_AND_TELEPORT_EFFECT,   0, FLYING,       100, 20 ; Changed to Flying type, & buffed accuracy                            ; Move #18
-	move FLY,           FLY_EFFECT,                  70, FLYING,        95, 15 ; Buffed power                                                         ; Move #19
+	move FLY,           FLY_EFFECT,                  90, FLYING,        95, 15 ; Buffed power                                                         ; Move #19
 	move BIND,          TRAPPING_EFFECT,             15, NORMAL,        85, 20 ; Buffed accuracy                                                      ; Move #20
 	move SLAM,          NO_ADDITIONAL_EFFECT,        80, DRAGON,        85, 20 ; Changed to Dragon type, & buffed power & accuracy                    ; Move #21
 	move VINE_WHIP,     NO_ADDITIONAL_EFFECT,        40, GRASS,        100, 10 ; Buffed power                                                         ; Move #22
@@ -84,7 +84,7 @@ Moves:
 	move ABSORB,        DRAIN_HP_EFFECT,             30, GRASS,        100, 20 ; Buffed power                                                         ; Move #71
 	move MEGA_DRAIN,    DRAIN_HP_EFFECT,             60, GRASS,        100, 10 ; Buffed power                                                         ; Move #72
 	move LEECH_SEED,    LEECH_SEED_EFFECT,            0, GRASS,         90, 10                                                                        ; Move #73
-	move GROWTH,        SPECIAL_UP1_EFFECT,           0, NORMAL,       100, 40                                                                        ; Move #74
+	move GROWTH,        SPECIAL_UP1_EFFECT,           0, GRASS,        100, 40 ; Changed to Grass type                                                                       ; Move #74
 	move RAZOR_LEAF,    NO_ADDITIONAL_EFFECT,        55, GRASS,         95, 25                                                                        ; Move #75
 	move SOLARBEAM,     CHARGE_EFFECT,              180, GRASS,        100, 10 ; Buffed power (Burn side effect to be added)                          ; Move #76
 	move POISONPOWDER,  POISON_EFFECT,                0, POISON,        85, 35 ; Buffed accuracy                                                      ; Move #77
@@ -97,7 +97,7 @@ Moves:
 	move THUNDERSHOCK,  PARALYZE_SIDE_EFFECT1,       40, ELECTRIC,     100, 30                                                                        ; Move #84
 	move THUNDERBOLT,   PARALYZE_SIDE_EFFECT1,       95, ELECTRIC,     100, 15                                                                        ; Move #85
 	move THUNDER_WAVE,  PARALYZE_EFFECT,              0, ELECTRIC,     100, 20                                                                        ; Move #86
-	move THUNDER,       FLINCH_SIDE_EFFECT1,        120, SOUND,         85, 10 ; Changed to Sound type, changed side effect to flinch, & buffed acc.  ; Move #87   (A new Electric type move "Thunder Strike" will replace this move)
+	move THUNDER,       PARALYZE_SIDE_EFFECT2,      120, ELECTRIC,      85, 10 ; Buffed accuracy                                                          ; Move #87
 	move ROCK_THROW,    NO_ADDITIONAL_EFFECT,        55, ROCK,          90, 15 ; Buffed power & accuracy                                              ; Move #88
 	move EARTHQUAKE,    NO_ADDITIONAL_EFFECT,       100, GROUND,       100, 10 ; Unchanged (This is the best move in the game!)                       ; Move #89
 	move FISSURE,       OHKO_EFFECT,                  1, GROUND,        30,  5                                                                        ; Move #90
@@ -162,8 +162,8 @@ Moves:
 	move PSYWAVE,       SPECIAL_DAMAGE_EFFECT,        1, PSYCHIC_TYPE, 100, 15 ; Buffed accuracy and damage calculation                               ; Move #149
 	move SPLASH,        SPLASH_EFFECT,                0, WATER,         10, 40 ; Nerfed accuracy (Move too strong, please nerf!)                      ; Move #150  (Magikarp's signatire move)
 	move ACID_ARMOR,    DEFENSE_UP2_EFFECT,           0, POISON,       100, 40                                                                        ; Move #151
-	move CRABHAMMER,    NO_ADDITIONAL_EFFECT,        90, WATER,         95, 10 ; Gave flinch side effect, & buffed power & accuracy                   ; Move #152  (Kingler & Parasect signature move)
-	move EXPLOSION,     EXPLODE_EFFECT,             250, NORMAL,       100,  5 ; Buffed power (Defense halving effect to be added)                    ; Move #153
+	move CRABHAMMER,    FLINCH_SIDE_EFFECT2,         90, WATER,         95, 10 ; Gave flinch side effect, & buffed power & accuracy (High-crit. move) ; Move #152  (Kingler & Parasect signature move)
+	move EXPLOSION,     EXPLODE_EFFECT,             250, NORMAL,       100,  5 ; Buffed power                                                         ; Move #153
 	move FURY_SWIPES,   TWO_TO_FIVE_ATTACKS_EFFECT,  20, NORMAL,        85, 15 ; Buffed power & accuracy                                              ; Move #154
 	move BONEMERANG,    ATTACK_TWICE_EFFECT,         50, GROUND,        90, 10                                                                        ; Move #155  (Cubone line's signature move)
 	move REST,          HEAL_EFFECT,                  0, NORMAL,       100, 10 ; Changed to Normal type                                               ; Move #156
@@ -174,14 +174,14 @@ Moves:
 	move TRI_ATTACK,    NO_ADDITIONAL_EFFECT,        80, NORMAL,       100, 10 ; (Tri Attack effect to be added)                                      ; Move #161
 	move SUPER_FANG,    SUPER_FANG_EFFECT,            1, NORMAL,        90, 10                                                                        ; Move #162
 	move SLASH,         NO_ADDITIONAL_EFFECT,        70, NORMAL,       100, 20                                                                        ; Move #163
-	move SUBSTITUTE,    SUBSTITUTE_EFFECT,            0, NORMAL,       100, 10 
-	move BUG_BITE,      FLINCH_SIDE_EFFECT2,         60, BUG,          100, 20 ; New Move                                                             ; Move #164
-	move STRUGGLE,      RECOIL_EFFECT,               50, STRUGGLER,    100, 10 ; Changed to Struggler type                                            ; Move #165  (Always last move number)
+	move SUBSTITUTE,    SUBSTITUTE_EFFECT,            0, NORMAL,       100, 10                                                                        ; Move #164
+; New Moves	
+	move BUG_BITE,      FLINCH_SIDE_EFFECT1,         60, BUG,          100, 20 ; New move added by Vlad                                               ; Move #165  (Beginning of new moves)
+; Struggle	
+	move STRUGGLE,      RECOIL_EFFECT,               50, STRUGGLER,    100, 10 ; Changed to Struggler type                                            ; Move #166  (Always last move number)
 	assert_table_length NUM_ATTACKS
+
 /*
-; New Moves
-
-
 ; Unadded moves   
     move STEEL_WING,     STEEL_WING_EFFECT,           70, STEEL,         90, 25 ; 10% Raise user's Defense                                            ; Move #166
 	move SLUDGE_BOMB,    POISON_SIDE_EFFECT2,         95, POISON,       100, 10                                                                       ; Move #167
@@ -211,7 +211,7 @@ Moves:
     move SACRED_FIRE,    SACRED_FIRE_EFFECT,         100, FIRE,          95,  5 ; 50% Burn                                                            ; Move #191  (Bidoof & Ho-Oh signature move)
     move ANCIENTPOWER,	 ANCIENT_POWER_EFFECT,        60, ROCK,         100, 10 ; 10% Omniboost                                                       ; Move #192  (Fossil PokéMon signature move)
 	move FIN_SLAP,       ATTACK_TWICE_EFFECT,         20, WATER,         10, 30                                                                       ; Move #193
-    move BUG_BITE,       FLINCH_SIDE_EFFECT2,         60, BUG,          100, 20                                                                       ; Move #194
+
     move SHADOW_BONE     SPECIAL_DOWN_SIDE_EFFECT,    85, GHOST,        100, 10                                                                       ; Move #195  (Marowak signature move)
 	move DRAGONBREATH,   PARALYZE_SIDE_EFFECT1,       60, DRAGON,       100, 20                                                                       ; Move #196
 	move PSY-KICK,       FLINCH_SIDE_EFFECT2,         75, PSYCHIC_TYPE, 100, 15                                                                       ; Move #197
