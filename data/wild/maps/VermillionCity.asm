@@ -1,4 +1,4 @@
-VermillionCityWildMons:
+VermilionCityWildMons:
 	def_grass_wildmons 15 ; encounter rate
 	db 18, SPEAROW        ; 20%
 	db 18, MACHOP         ; 20% 

@@ -166,7 +166,7 @@ MapHSPointers:
 	dw SeafoamIslandsB2FHS          ; A0 - Seafoam Islands B2F
 	dw SeafoamIslandsB3FHS          ; A1 - Seafoam Islands B3F
 	dw SeafoamIslandsB4FHS          ; A2 - Seafoam Islands B4F
-	dw NoHS                         ; A3 - Vermillion Old Rod House
+	dw NoHS                         ; A3 - Vermilion Old Rod House
 	dw NoHS                         ; A4 - Fuchsia Good Rod House
 	dw PokemonMansion1FHS           ; A5 - Pokemon Mansion 1F
 	dw NoHS                         ; A6 - Cinnabar Gym

@@ -177,7 +177,7 @@ _VermilionCityFishingNoticeSignText::        ; New sign added by G-Dubs
 	text "NOTICE!"
 	
 	para "The waters near"
-	line "the VERMILLION"
+	line "the VERMILION"
 	cont "HARBOR are home"
 	cont "to aggressive" 
 	cont "TENTACOOL. Fish" 

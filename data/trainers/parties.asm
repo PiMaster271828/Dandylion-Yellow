@@ -962,7 +962,7 @@ Guitarist 1
 /*************
 Guitarist 2
 *************/
-; Vermillion Gym
+; Vermilion Gym
     db 25, PIKACHU, CLEFAIRY, /* TOXTRICITY, */ 0                                                            ; Guitarist 4            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs) 
 ; Dummy List    
 	db 1, VOLTORB, 0                                                                                         ; Guitarist 5            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
@@ -971,7 +971,7 @@ Guitarist 2
 /*************
 Guitarist 3
 *************/
-; Vermillion Gym
+; Vermilion Gym
     db 25, ELECTABUZZ, 0                                                                                     ; Guitarist 7            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 ; SS Anne B1F
     db 25, ELECTABUZZ, MACHOKE, 0                                                                            ; Guitarist 8            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
@@ -979,7 +979,7 @@ Guitarist 3
    ;db                                                                                                       ; Guitarist 9            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)  
 
 SoldierData:
-; Vermillion Gym
+; Vermilion Gym
 	db 23, MAGNEMITE, MACHOP, VOLTORB, 0                                                                     ; Soldier 1	          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 ; SS Anne B1F Rooms        
     db 22, MANKEY, GROWLITHE, VOLTORB, MACHOP, 0                                                             ; Soldier 2	          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)                                  

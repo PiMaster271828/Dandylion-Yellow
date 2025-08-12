@@ -161,7 +161,7 @@ _SSAnneB1FRoomsFisher2AfterBattleText::
 _SSAnneB1FRoomsSailor6BattleText::	                  ; New trainer added by G-Dubs
 	text "This ship's"
 	line "finally reached"
-	cont "VERMILLION CITY!"
+	cont "VERMILION CITY!"
 	cont "I gotta show LT."
 	cont "SURGE that I'm"
 	cont "ready! Care for"
@@ -182,7 +182,7 @@ _SSAnneB1FRoomsSailor6AfterBattleText::
 	line "sharpened my"
 	cont "combat skills!"
 	cont "When I get to the"
-	cont "VERMILLION GYM,"
+	cont "VERMILION GYM,"
 	cont "I'll be even"
 	cont "stronger, thanks"
 	cont "to you!"

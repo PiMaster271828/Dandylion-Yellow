@@ -103,7 +103,7 @@ SpecialTrainerMoves:
 	  db 0
 
 ; Sailors
-   ; Vermillion City Gym
+   ; Vermilion City Gym
       db SAILOR, 8           ; Added Machop to a Sailor in Lt. Surge's gym         ; Added by G-Dubs
 	  db 2, 1, THUNDERPUNCH  ; Adding Thunderpunch to a Machop                     ; Added by G-Dubs
 	  db 2, 2, LEER
@@ -136,7 +136,7 @@ SpecialTrainerMoves:
 New trainers added by Vlad and George
 *****************************************************************************************************/
 ; Soldiers
-   ; Vermillion City Gym
+   ; Vermilion City Gym
       db SOLDIER, 1           ; Added Machop to a Soldier in Lt. Surge's gym        ; Added by G-Dubs
 	  db 2, 1, THUNDERPUNCH   ; Adding Thunderpunch to a Machop                     ; Added by G-Dubs
 	  db 2, 2, LEER
@@ -221,7 +221,7 @@ Gym Leaders
 	  db 6, 3, CONFUSION
 	  db 6, 4, BUBBLEBEAM    
 	  db 0
-; Vermillion City Gym
+; Vermilion City Gym
    ; Lt. Surge
 	  db LT_SURGE, 1
 	  db 1, 1, QUICK_ATTACK   ; Lt. Surge's Raticate
