@@ -30,10 +30,10 @@ SpecialTrainerMoves:
 	  db BUG_CATCHER, 16
 	  db 1, 2, POISON_STING   ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna   ; Added by G-Dubs
 	  db 1, 3, STRING_SHOT
-	 ;db 1, 4, BUG_BITE
+	  db 1, 4, BUG_BITE
 	  db 3, 2, POISON_STING   ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna   ; Added by G-Dubs
 	  db 3, 3, STRING_SHOT
-	 ;db 3, 4, BUG_BITE
+	  db 3, 4, BUG_BITE
 	  db 0
 	  
 	  db BUG_CATCHER, 17
@@ -49,39 +49,39 @@ SpecialTrainerMoves:
       db BUG_CATCHER, 5
 	  db 2, 2, POISON_STING   ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna   ; Added by G-Dubs
 	  db 2, 3, STRING_SHOT
-	 ;db 2, 4, BUG_BITE
+	  db 2, 4, BUG_BITE
 	  db 4, 2, TACKLE         ; Adding Tackle, String Shot, and Bug Bite on Metapod      ; Added by G-Dubs
 	  db 4, 3, STRING_SHOT
-	 ;db 4, 4, BUG_BITE
+	  db 4, 4, BUG_BITE
       db 0
 
 	  db BUG_CATCHER, 6
 	  db 2, 2, TACKLE         ; Adding Tackle, String Shot, and Bug Bite on Metapod      ; Added by G-Dubs
 	  db 2, 3, STRING_SHOT
-	 ;db 2, 4, BUG_BITE
+	  db 2, 4, BUG_BITE
 	  db 0
 
    ; Mt. Moon
       db BUG_CATCHER, 7
       db 2, 2, POISON_STING   ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna   ; Added by G-Dubs
 	  db 2, 3, STRING_SHOT
-	 ;db 2, 4, BUG_BITE
+	  db 2, 4, BUG_BITE
 	  db 0
 
 	  db BUG_CATCHER, 8
 	  db 2, 2, TACKLE         ; Adding Tackle, String Shot, and Bug Bite on Metapod       ; Added by G-Dubs
 	  db 2, 3, STRING_SHOT
-	 ;db 2, 4, BUG_BITE
+	  db 2, 4, BUG_BITE
 	  db 0
 
    ; Route 4
       db BUG_CATCHER, 12
 	  db 3, 2, STRUGGLE      ; Adding Struggle, String Shot, and Bug Bite on Metapod     ; Added by G-Dubs
 	  db 3, 3, STRING_SHOT
-	 ;db 3, 4, BUG_BITE
+	  db 3, 4, BUG_BITE
 	  db 5, 2, POISON_STING  ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna    ; Added by G-Dubs
 	  db 5, 3, STRING_SHOT
-	 ;db 5, 4, BUG_BITE
+	  db 5, 4, BUG_BITE
 	  db 0
 
    ; Route 6
@@ -89,11 +89,11 @@ SpecialTrainerMoves:
 	  db 1, 1, TACKLE        ; Adding Struggle, String Shot, and Bug Bite on Metapod     ; Added by G-Dubs    
 	  db 1, 2, HARDEN
 	  db 1, 3, STRUGGLE
-	 ;db 1, 4, BUG_BITE
+	  db 1, 4, BUG_BITE
 	  db 2, 1, POISON_STING  ; Adding Poison Sting, String Shot, & Bug Bite on Kakuna    ; Added by G-Dubs
 	  db 2, 2, HARDEN
 	  db 2, 3, HORN_ATTACK
-	 ;db 2, 4, BUG_BITE
+	  db 2, 4, BUG_BITE
 	  db 0
 
 ; Youngsters
@@ -198,10 +198,10 @@ Gym Leaders
 	  db MISTY, 1
 	  db 1, 1, SMOKESCREEN   ; Misty's Horsea
 	  db 1, 2, BUBBLEBEAM
-	  db 1, 3, LEER ; FIN_SLAP
+	  db 1, 3, FIN_SLAP
       db 1, 4, WATER_GUN 
 	  db 2, 1, HEADBUTT      ; Misty's Seel
-	  db 2, 2, GROWL ; FIN_SLAP
+	  db 2, 2, FIN_SLAP
 	  db 2, 3, HORN_ATTACK
 	  db 2, 4, BUBBLEBEAM     
 	  db 3, 1, TACKLE        ; Misty's Staryu
@@ -209,7 +209,7 @@ Gym Leaders
 	  db 3, 3, WATER_GUN
 	  db 3, 4, SWIFT
 	  db 4, 1, PECK           ; Misty's Goldeen
-	  db 4, 2, TAIL_WHIP ; FIN_SLAP
+	  db 4, 2, FIN_SLAP
 	  db 4, 3, HORN_ATTACK
 	  db 4, 4, SUPERSONIC
       db 5, 1, HEADBUTT       ; Misty's Psyduck

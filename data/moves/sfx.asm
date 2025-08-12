@@ -165,7 +165,10 @@ MoveSoundTable:
 	db SFX_BATTLE_26,          $f0, $ff ; SUPER_FANG
 	db SFX_NOT_VERY_EFFECTIVE, $01, $ff ; SLASH
 	db SFX_BATTLE_2C,          $d8, $04 ; SUBSTITUTE
+; New Moves
 	db SFX_BATTLE_1E,          $00, $80 ; BUG_BITE
+	db SFX_DOUBLESLAP,         $00, $80 ; FIN_SLAP
+; Struggle
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80

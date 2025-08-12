@@ -170,8 +170,11 @@
 	const SUPER_FANG   ; a2
 	const SLASH        ; a3
 	const SUBSTITUTE   ; a4
-	const BUG_BITE	   ; a5 ;New Move
-	const STRUGGLE     ; a6
+; New Moves
+	const BUG_BITE	   ; a5 ; New move added by Vlad
+	const FIN_SLAP     ; a6 ; New move added by G-Dubs
+; Struggle 	
+	const STRUGGLE     ; a7
 DEF NUM_ATTACKS EQU const_value - 1
 
 	; Moves do double duty as animation identifiers.

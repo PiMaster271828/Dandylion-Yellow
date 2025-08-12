@@ -164,9 +164,13 @@ AttackAnimationPointers:
 	dw SuperFangAnim
 	dw SlashAnim
 	dw SubstituteAnim
+; New Moves	
 	dw BugBiteAnim
+	dw FinSlapAnim
+; Struggle
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
+;Non-move Animations
 	dw ShowPicAnim
 	dw EnemyFlashAnim
 	dw PlayerFlashAnim
@@ -1153,6 +1157,8 @@ SubstituteAnim:
 	battle_anim NO_MOVE, SE_SUBSTITUTE_MON
 	db -1 ; end
 
+; New Move Animations
+
 BugBiteAnim:
 	battle_anim AMNESIA, SE_MOVE_MON_HORIZONTALLY
     battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
@@ -1163,6 +1169,14 @@ BugBiteAnim:
     battle_anim AMNESIA, SE_RESET_MON_POSITION
     battle_anim BITE, SUBANIM_0_STAR_THRICE, 0, 6
     db -1 ; end
+
+FinSlapAnim:
+    battle_anim SPLASH, SE_BOUNCE_UP_AND_DOWN
+	battle_anim POUND, SUBANIM_0_STAR_TWICE, 0, 6	
+	battle_anim POUND, SUBANIM_0_STAR_TWICE, 0, 6
+	db -1 ; end
+
+; Non-Move Animations
 
 BallTossAnim:
 	battle_anim NO_MOVE, SUBANIM_0_BALL_TOSS_HIGH, 0, 3

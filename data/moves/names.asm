@@ -164,6 +164,9 @@ MoveNames::
 	li "SUPER FANG"
 	li "SLASH"
 	li "SUBSTITUTE"
-	li "BUG BITE"
+; New Moves
+	li "BUG BITE"       ; New move added by Vlad
+	li "FIN SLAP"       ; New move added by G-Dubs
+; Struggle
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS

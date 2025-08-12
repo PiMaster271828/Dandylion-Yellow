@@ -507,7 +507,7 @@ LaprasEvosMoves:
 	db 1, WATER_GUN
 	db 2, GROWL
 	db 4, MIST 
-   ;db 8, FIN_SLAP
+    db 8, FIN_SLAP
    ;db 12, POWDER_SNOW
 	db 16, CONFUSE_RAY
 	db 20, SING
@@ -621,7 +621,7 @@ ScytherEvosMoves:
 	db 3, SHARPEN
 	db 4, SCRATCH
 	db 7, LEER
-   ;db 11, BUG_BITE
+    db 11, BUG_BITE
 	db 15, WING_ATTACK
    ;db 17, FAINT_ATTACK
 	db 20, FOCUS_ENERGY
@@ -691,7 +691,7 @@ PinsirEvosMoves:
 	db 4, SHARPEN
 	db 8, HORN_ATTACK
 	db 11, VICEGRIP
-   ;db 15, BUG_BITE
+    db 15, BUG_BITE
 	db 18, BIND 
 	db 21, FURY_ATTACK
 	db 25, SEISMIC_TOSS
@@ -964,7 +964,7 @@ ParasectEvosMoves:
 	db 6, POISONPOWDER
 	db 11, ABSORB
 	db 13, STUN_SPORE
-   ;db 17, BUG_BITE
+    db 17, BUG_BITE
 	db 20, GROWTH
 	db 22, SLEEP_POWDER
 	db 24, CRABHAMMER
@@ -1155,7 +1155,7 @@ SeelEvosMoves:
 ; Learnset
 	db 1, HEADBUTT
 	db 5, GROWL,
-   ;db 9, FIN_SLAP
+    db 9, FIN_SLAP
    ;db 13, POWDER_SNOW
 	db 17, HORN_ATTACK
     db 21, BUBBLEBEAM
@@ -1258,7 +1258,7 @@ VenonatEvosMoves:
    ;db 13, GNAW  
 	db 15, POISONPOWDER
 	db 17, SUPERSONIC
-   ;db 19, BUG_BITE
+    db 19, BUG_BITE
 	db 21, STUN_SPORE
    ;db 23, POISON_FANG
 	db 25, MEGA_DRAIN
@@ -1325,7 +1325,7 @@ PoliwagEvosMoves:
 	db 1, SPLASH
 	db 3, BUBBLE
 	db 6, POUND
-   ;db 9, FIN_SLAP
+    db 9, FIN_SLAP
    ;db 12, MUD-SLAP
 	db 15, WATER_GUN
    ;db 18, MUD_SHOT 
@@ -1631,7 +1631,7 @@ HorseaEvosMoves:
 	db 1, BUBBLE
 	db 5, SMOKESCREEN
 	db 9, LEER
-   ;db 15, FIN_SLAP
+    db 15, FIN_SLAP
 	db 19, WATER_GUN
 	db 24, BUBBLEBEAM
    ;db 27, OCTAZOOKA
@@ -1648,7 +1648,7 @@ SeadraEvosMoves:
 	db 1, BUBBLE
 	db 5, SMOKESCREEN
 	db 9, LEER
-   ;db 15, FIN_SLAP
+    db 15, FIN_SLAP
 	db 19, WATER_GUN
 	db 24, BUBBLEBEAM
    ;db 27, OCTAZOOKA
@@ -1974,7 +1974,7 @@ ParasEvosMoves:
 	db 6, POISONPOWDER
 	db 11, ABSORB
 	db 13, STUN_SPORE
-   ;db 17, BUG_BITE
+    db 17, BUG_BITE
 	db 20, GROWTH
 	db 22, SLEEP_POWDER
 	db 27, CUT
@@ -2044,7 +2044,7 @@ WeedleEvosMoves:
     db 1, POISON_STING
 	db 2, STRING_SHOT
 	db 9, HORN_ATTACK
-   ;db 15, BUG_BITE
+    db 15, BUG_BITE
 	db 0
 
 KakunaEvosMoves:
@@ -2158,7 +2158,7 @@ VenomothEvosMoves:
    ;db 13, GNAW  
 	db 15, POISONPOWDER
 	db 17, SUPERSONIC
-   ;db 19, BUG_BITE
+    db 19, BUG_BITE
 	db 21, STUN_SPORE
    ;db 23, POISON_FANG
 	db 25, MEGA_DRAIN
@@ -2183,7 +2183,7 @@ DewgongEvosMoves:
 	db 1, HEADBUTT
    ;db 3, TAIL_SLAP
 	db 5, GROWL,
-   ;db 9, FIN_SLAP
+    db 9, FIN_SLAP
    ;db 13, POWDER_SNOW
 	db 17, HORN_ATTACK
     db 21, BUBBLEBEAM
@@ -2220,7 +2220,7 @@ CaterpieEvosMoves:
     db 1, TACKLE
 	db 2, STRING_SHOT
 	db 9, STRUGGLE
-   ;db 15, BUG_BITE
+    db 15, BUG_BITE
 	db 0
 
 MetapodEvosMoves:
@@ -2378,7 +2378,7 @@ MagikarpEvosMoves:
 	db 15, TACKLE
    ;db 30, BOUNCE
 	db 45, BUBBLE
-   ;db 60, FIN_SLAP
+    db 60, FIN_SLAP
 	db 75, HYDRO_PUMP
 	db 90, DRAGON_RAGE
 	db 0
@@ -2720,7 +2720,7 @@ GoldeenEvosMoves:
 ; Learnset
 	db 1, SPLASH
 	db 5, PECK
-   ;db 9, FIN_SLAP
+    db 9, FIN_SLAP
     db 11, TAIL_WHIP
 	db 15, HORN_ATTACK
 	db 19, SUPERSONIC
@@ -2739,7 +2739,7 @@ SeakingEvosMoves:
 	db 1, SPLASH
 	db 5, PECK
 	db 9, TAIL_WHIP
-   ;db 11, FIN_SLAP
+    db 11, FIN_SLAP
 	db 15, HORN_ATTACK
 	db 19, SUPERSONIC
 	db 24, FURY_ATTACK

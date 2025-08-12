@@ -64,13 +64,13 @@ IF DEF(_DEBUG)
     ld a, BONEMERANG
     ld hl, wPartyMon3Moves        ; Replaces the move in the first slot with the above move
     ld [hl], a
-    ld a, TWINEEDLE
+    ld a, BUG_BITE
 	ld hl, wPartyMon3Moves + 1    ; Replaces the move in the second slot with the above move
 	ld [hl], a
 	ld a, PIN_MISSILE
 	ld hl, wPartyMon3Moves + 2    ; Replaces the move in the third slot with the above move
 	ld [hl], a
-	ld a, SPIKE_CANNON
+	ld a, FIN_SLAP
 	ld hl, wPartyMon3Moves + 3    ; Replaces the move in the fourth slot with the above move
 	ld [hl], a
 

@@ -177,8 +177,9 @@ Moves:
 	move SUBSTITUTE,    SUBSTITUTE_EFFECT,            0, NORMAL,       100, 10                                                                        ; Move #164
 ; New Moves	
 	move BUG_BITE,      FLINCH_SIDE_EFFECT1,         60, BUG,          100, 20 ; New move added by Vlad                                               ; Move #165  (Beginning of new moves)
+    move FIN_SLAP,       ATTACK_TWICE_EFFECT,        20, WATER,        100, 30 ; New move added by G-Dubs                                             ; Move #166
 ; Struggle	
-	move STRUGGLE,      RECOIL_EFFECT,               50, STRUGGLER,    100, 10 ; Changed to Struggler type                                            ; Move #166  (Always last move number)
+	move STRUGGLE,      RECOIL_EFFECT,               50, STRUGGLER,    100, 10 ; Changed to Struggler type                                            ; Move #167  (Always last move number)
 	assert_table_length NUM_ATTACKS
 
 /*
@@ -210,8 +211,7 @@ Moves:
     move EXTREMESPEED,   EXTREMESPEED_EFFECT,         80, NORMAL,       100, 10 ; Priority +2                                                         ; Move #190
     move SACRED_FIRE,    SACRED_FIRE_EFFECT,         100, FIRE,          95,  5 ; 50% Burn                                                            ; Move #191  (Bidoof & Ho-Oh signature move)
     move ANCIENTPOWER,	 ANCIENT_POWER_EFFECT,        60, ROCK,         100, 10 ; 10% Omniboost                                                       ; Move #192  (Fossil PokéMon signature move)
-	move FIN_SLAP,       ATTACK_TWICE_EFFECT,         20, WATER,         10, 30                                                                       ; Move #193
-
+	
     move SHADOW_BONE     SPECIAL_DOWN_SIDE_EFFECT,    85, GHOST,        100, 10                                                                       ; Move #195  (Marowak signature move)
 	move DRAGONBREATH,   PARALYZE_SIDE_EFFECT1,       60, DRAGON,       100, 20                                                                       ; Move #196
 	move PSY-KICK,       FLINCH_SIDE_EFFECT2,         75, PSYCHIC_TYPE, 100, 15                                                                       ; Move #197
