@@ -167,6 +167,7 @@ AttackAnimationPointers:
 ; New Moves	
 	dw BugBiteAnim
 	dw FinSlapAnim
+	dw GnawAnim
 ; Struggle
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
@@ -458,6 +459,7 @@ LeerAnim:
 
 BiteAnim:
 	battle_anim BITE, SUBANIM_0_STAR_THRICE, 0, 8
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
 	db -1 ; end
 
 GrowlAnim:
@@ -1175,6 +1177,10 @@ FinSlapAnim:
 	battle_anim POUND, SUBANIM_0_STAR_TWICE, 0, 6	
 	battle_anim POUND, SUBANIM_0_STAR_TWICE, 0, 6
 	db -1 ; end
+
+GnawAnim:
+    battle_anim BITE, SUBANIM_0_STAR_THRICE, 0, 6
+    db -1 ; end
 
 ; Non-Move Animations
 

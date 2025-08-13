@@ -177,9 +177,10 @@ Moves:
 	move SUBSTITUTE,    SUBSTITUTE_EFFECT,            0, NORMAL,       100, 10                                                                        ; Move #164
 ; New Moves	
 	move BUG_BITE,      FLINCH_SIDE_EFFECT1,         60, BUG,          100, 20 ; New move added by Vlad                                               ; Move #165  (Beginning of new moves)
-    move FIN_SLAP,       ATTACK_TWICE_EFFECT,        20, WATER,        100, 30 ; New move added by G-Dubs                                             ; Move #166
+    move FIN_SLAP,      ATTACK_TWICE_EFFECT,         20, WATER,        100, 30 ; New move added by G-Dubs                                             ; Move #166
+    move GNAW,          FLINCH_SIDE_EFFECT2,         55, NORMAL,       100, 25 ; New move added by G-Dubs                                             ; Move #167  (TCG exclusive move)
 ; Struggle	
-	move STRUGGLE,      RECOIL_EFFECT,               50, STRUGGLER,    100, 10 ; Changed to Struggler type                                            ; Move #167  (Always last move number)
+	move STRUGGLE,      RECOIL_EFFECT,               50, STRUGGLER,    100, 10 ; Changed to Struggler type                                            ; Move #168  (Always last move number)
 	assert_table_length NUM_ATTACKS
 
 /*
@@ -246,11 +247,7 @@ Moves:
     move PSYCHIC_ARMOR,  DEFENSE_UP2_EFFECT,           0, PSYCHIC_TYPE, 100, 40 ; Barrier effect + Reflect & Light Screen                             ; Move #225  (Armored Mewtwo's signature move)
 
 ; Unanimated moves
-	
-	
-; Struggle
-	move STRUGGLE,       RECOIL_EFFECT,               50, STRUGGLE,     100, 10                                                                       ; Move #240  (Always last move number)
-
+		
 ; Moves I really want to add into the game
     move TOMBSTONER,     POISON_SIDE_EFFECT1,         70, GHOST,         75, 15                                                                       ; Move #227  (Added as TM 56 for the memes)
 	move METAL_CLAW,     METAL_CLAW_EFFECT,           50, STEEL,         95, 35 ; 10% Raise user's Attack                                             ; Move #228  (This move must be added as it is the best move in the game!)
@@ -258,7 +255,7 @@ Moves:
 	move OCTAZOOKA,      ACCURACY_DOWN_SIDE_EFFECT3   65, WATER,         95, 10 ; Lowers opponent's Accuracy 50%                                      ; Move #230  (Horsea line's signature move)
 	move SNIPE_SHOT,     NO_ADDITIONAL_EFFECT,        80, WATER,        100, 15 ; High Crit. rate                                                     ; Move #231  (Blastoise's signature move)
 	move SEARING_SAND,   BURN_SIDE_EFFECT1,           70, GROUND,       100, 10	                                                                      ; Move #232
-	move GNAW,           FLINCH_SIDE_EFFECT2,         60, NORMAL,       100, 25                                                                       ; Move #233  (TCG exclusive move)
+	
     move RADAR_EYES,     EVASION_DOWN_SIDE_EFFECT,    35, BUG,          100, 20 ; This move can't miss, and always lowers the foe's evasion           ; Move #???  (Venonat's signature move)
 	move BLOOM_DOOM,     EXPLODE_EFFECT,             175, GRASS,        100,  5                                                                       ; Move #???
  	move POWER_WHIP,     DEFENSE_DOWN_SIDE_EFFECT,    80, GRASS,        100, 10 ; High Crit. rate                                                     ; Move #???  (Venusaur's signature move)

@@ -61,7 +61,7 @@ IF DEF(_DEBUG)
 	ld [hl], a
 	
     ; Use this to test new moves  ; The PokeMon with the new move must be in the third slot
-    ld a, BONEMERANG
+    ld a, GNAW
     ld hl, wPartyMon3Moves        ; Replaces the move in the first slot with the above move
     ld [hl], a
     ld a, BUG_BITE

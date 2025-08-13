@@ -168,6 +168,7 @@ MoveSoundTable:
 ; New Moves
 	db SFX_BATTLE_1E,          $00, $80 ; BUG_BITE
 	db SFX_DOUBLESLAP,         $00, $80 ; FIN_SLAP
+	db SFX_BATTLE_1E,          $00, $80 ; GNAW
 ; Struggle
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS

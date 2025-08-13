@@ -437,9 +437,8 @@ NidoranFEvosMoves:
 	db 4, TAIL_WHIP
 	db 8, SCRATCH
 	db 12, DOUBLE_KICK
-	db 17, POISON_STING
-    db 20, BITE 
-   ;db 20, GNAW
+	db 17, POISON_STING 
+    db 20, GNAW
 	db 24, FURY_SWIPES
    ;db 28, SWEET_KISS 
    ;db 32, POISON_JAB
@@ -458,6 +457,7 @@ NidoqueenEvosMoves:
 	db 8, SCRATCH
 	db 12, DOUBLE_KICK
 	db 19, POISON_STING
+	db 20, BITE
 	db 23, BODY_SLAM
    ;db 35, POISON_TAIL
    ;db 47, CRUNCH
@@ -665,7 +665,7 @@ BlastoiseEvosMoves:
 	db 7, BUBBLE
 	db 10, WITHDRAW
 	db 13, WATER_GUN
-   ;db 17, GNAW
+    db 17, GNAW
 	db 21, DEFENSE_CURL
 	db 25, BITE
 	db 29, BUBBLEBEAM
@@ -1178,7 +1178,7 @@ DiglettEvosMoves:
 	db 4, GROWL
 	db 8, SAND_ATTACK
    ;db 12, MUD-SLAP
-   ;db 15, GNAW
+    db 15, GNAW
 	db 19, DIG
    ;db 24, MUD_SHOT
    ;db 29, MUD_BOMB
@@ -1255,7 +1255,7 @@ VenonatEvosMoves:
 	db 7, ABSORB
    ;db 9, RADAR_EYES
 	db 11, CONFUSION
-   ;db 13, GNAW  
+    db 13, GNAW  
 	db 15, POISONPOWDER
 	db 17, SUPERSONIC
     db 19, BUG_BITE
@@ -1395,7 +1395,7 @@ MeowthEvosMoves:
 ; Learnset
 	db 1, SCRATCH
 	db 4, GROWL
-   ;db 8, GNAW
+    db 8, GNAW
 	db 12, LICK
    ;db 15, COPYCAT
 	db 20, PAY_DAY
@@ -1924,7 +1924,7 @@ ZubatEvosMoves:
 	db 0
 ; Learnset
 	db 1, ABSORB
-   ;db 3, GNAW
+    db 3, GNAW
 	db 5, SUPERSONIC
 	db 9, GUST
 	db 13, BITE
@@ -2133,7 +2133,7 @@ DugtrioEvosMoves:
 	db 4, GROWL
 	db 8, SAND_ATTACK
    ;db 12, MUD-SLAP
-   ;db 15, GNAW
+    db 15, GNAW
 	db 19, DIG
    ;db 24, MUD_SHOT
    ;db 26, BITE
@@ -2155,7 +2155,7 @@ VenomothEvosMoves:
 	db 7, ABSORB
 	db 9, LEECH_LIFE
 	db 11, CONFUSION
-   ;db 13, GNAW  
+    db 13, GNAW  
 	db 15, POISONPOWDER
 	db 17, SUPERSONIC
     db 19, BUG_BITE
@@ -2329,7 +2329,7 @@ GolbatEvosMoves:
 	db 0
 ; Learnset
 	db 1, ABSORB
-   ;db 3, GNAW
+    db 3, GNAW
 	db 5, SUPERSONIC
 	db 9, GUST
 	db 13, BITE
@@ -2839,7 +2839,7 @@ RattataEvosMoves:
 	db 1, TACKLE
 	db 4, TAIL_WHIP
 	db 7, QUICK_ATTACK
-   ;db 10, GNAW
+    db 10, GNAW
 	db 14, HYPER_FANG
 	db 16, BITE
 	db 19, FOCUS_ENERGY
@@ -2856,7 +2856,7 @@ RaticateEvosMoves:
 	db 1, TACKLE
 	db 4, TAIL_WHIP
 	db 7, QUICK_ATTACK
-   ;db 10, GNAW
+    db 10, GNAW
 	db 14, HYPER_FANG
 	db 16, BITE
 	db 24, FOCUS_ENERGY
@@ -3016,7 +3016,7 @@ SquirtleEvosMoves:
 	db 7, BUBBLE
 	db 10, WITHDRAW
 	db 13, WATER_GUN
-   ;db 16, GNAW
+    db 16, GNAW
 	db 19, DEFENSE_CURL
 	db 22, BITE
 	db 25, BUBBLEBEAM
@@ -3068,7 +3068,7 @@ WartortleEvosMoves:
 	db 7, BUBBLE
 	db 10, WITHDRAW
 	db 13, WATER_GUN
-   ;db 17, GNAW
+    db 17, GNAW
 	db 21, DEFENSE_CURL
 	db 25, BITE
 	db 29, BUBBLEBEAM
