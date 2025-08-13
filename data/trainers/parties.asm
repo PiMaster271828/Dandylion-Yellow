@@ -126,19 +126,21 @@ BugCatcherData:
     db 25, METAPOD, KAKUNA, 0                                                                                ; Bug Catcher 20         ; New trainer added by G-Dubs
 ; Route 11
     db 18, BUTTERFREE, PARASECT, VENOMOTH, BEEDRILL, 0                                                       ; Bug Catcher 21         ; New trainer added by G-Dubs
+; Route 9 (Again)
+    db 22, PARAS, BUTTERFREE, VENONAT, BEEDRILL, PARASECT, 0                                                 ; Bug Catcher 22         ; New trainer added by G-Dubs
 /*
 ; Route 13
-    db 30, BUTTERFREE, BEEDRILL, VENOMOTH, 0                                                                 ; Bug Catcher 22         ; New Trainer added by G-Dubs
+    db 30, BUTTERFREE, BEEDRILL, VENOMOTH, 0                                                                 ; Bug Catcher 23         ; New Trainer added by G-Dubs
 ; Route 16
-    db $FF, 34, VENONAT, 36, VENONAT, 38, VENONAT, 40, VENOMOTH, 0                                           ; Bug Catcher 23         ; New Trainer added by G-Dubs
+    db $FF, 34, VENONAT, 36, VENONAT, 38, VENONAT, 40, VENOMOTH, 0                                           ; Bug Catcher 24         ; New Trainer added by G-Dubs
 ; Safari Zone Area 1 Rest House
-    db $FF, 32, PARAS, 36, PARASECT, 0                                                                       ; Bug Catcher 24         ; New Trainer added by G-Dubs
+    db $FF, 32, PARAS, 36, PARASECT, 0                                                                       ; Bug Catcher 25         ; New Trainer added by G-Dubs
 ; Safari Zone Area 3 Rest House	
-	db 33, SCYTHER, PINSIR, 0                                                                                ; Bug Catcher 25         ; New Trainer added by G-Dubs
+	db 33, SCYTHER, PINSIR, 0                                                                                ; Bug Catcher 26         ; New Trainer added by G-Dubs
 ; Safari Zone Area 4 Rest House
-   db $FF, 32, VENONAT, 36, VENOMOTH, 0                                                                      ; Bug Catcher 26         ; New Trainer added by G-Dubs
+   db $FF, 32, VENONAT, 36, VENOMOTH, 0                                                                      ; Bug Catcher 27         ; New Trainer added by G-Dubs
 ; Victory Road  
-    db 50, BUTTERFREE, PARASECT, BEEDRILL, VENOMOTH, 0                                                       ; Bug Catcher 27         ; New Trainer added by G-Dubs
+    db 50, BUTTERFREE, PARASECT, BEEDRILL, VENOMOTH, 0                                                       ; Bug Catcher 28         ; New Trainer added by G-Dubs
 */
 LassData:
 ; Route 3
@@ -174,6 +176,8 @@ LassData:
     db $FF, 14, JIGGLYPUFF, 13, PARAS, 12, GEODUDE, 13, NIDORAN_F, 14, CLEFAIRY, 0                           ; Lass 20                ; New Trainer added by G-Dubs
 ; Route 24
     db 15, LAPRAS, 0                                                                                         ; Lass 21                ; New trainer added by G-Dubs 
+; Route 9
+	db 21, MEOWTH, PIDGEY, PIKACHU, NIDORAN_F, JIGGLYPUFF, 0                                                 ; Lass 22                ; New trainer added by G-Dubs
 
 SailorData:
 ; SS Anne Stern

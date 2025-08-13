@@ -338,7 +338,7 @@
 	const_next $440
 	const_skip	                                                                                   ; $440
 	const EVENT_BEAT_ROUTE_9_TRAINER_0			                                  	               ; $441
-	const EVENT_BEAT_ROUTE_9_TRAINER_1		                                                       ; $442
+	const EVENT_BEAT_ROUTE_9_TRAINER_1	    ; A.J. from the Anime and his OP Sandshrew	           ; $442
 	const EVENT_BEAT_ROUTE_9_TRAINER_2	                                                           ; $443
 	const EVENT_BEAT_ROUTE_9_TRAINER_3                                                             ; $444
 	const EVENT_BEAT_ROUTE_9_TRAINER_4                                                             ; $445
@@ -348,6 +348,8 @@
 	const EVENT_BEAT_ROUTE_9_TRAINER_8	                                                           ; $449
     const EVENT_BEAT_ROUTE_9_TRAINER_9		; New trainer added by G-Dubs                          ; $44A
     const EVENT_BEAT_ROUTE_9_TRAINER_10	    ; New trainer added by G-Dubs                          ; $44B
+	const EVENT_BEAT_ROUTE_9_TRAINER_11     ; New trainer added by G-Dubs                          ; $44C
+	const EVENT_BEAT_ROUTE_9_TRAINER_12     ; New trainer added by G-Dubs                          ; $44D
 
 
 ; Route 10 Events

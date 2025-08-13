@@ -15,7 +15,7 @@ _Route9CooltrainerF1AfterBattleText::
 	cont "dark tunnel ahead."
 	done
 
-_Route9AJBattleText::
+_Route9AJBattleText::                  ; A.J. from the Anime and his OP Sandshrew
 	text "I aim to be the"
 	line "ultimate trainer!"
 	done
@@ -219,6 +219,84 @@ _Route9CooltrainerM4AfterBattleText::
     cont "we're both much"
 	cont "stronger!"
     done
+
+_Route9CooltrainerF3BattleText::	   ; New trainer added by G-Dubs
+    text "Isn't it lovely"
+    line "out here?"
+	
+	para "My Jigglypuff"
+	line "loves to sing"
+	cont "and make echoes!"
+
+	para "Let us show you"
+	line "our special"
+	cont "harmony..."
+	done
+
+_Route9CooltrainerF3EndBattleText::
+    text "Aww! You're"
+	line "just too strong!"
+	
+	para "You're kinda"
+	line "cute too..."
+	prompt
+
+_Route9CooltrainerF3AfterBattleText::
+    text "Even if we lost,"
+    line "my #MON are"
+	cont "still the cutest!"
+	
+	para "And that's what"
+	line "really matters!"
+    done
+
+_Route9Youngster3BattleText::	       ; New trainer added by G-Dubs
+	text "I took a wrong"
+	line "turn at CERULEAN"
+	cont "CITY and ended"
+    cont "up here!"
+	
+	para "I'm looking for"
+	line "BUG type #MON"
+	cont "that live in"
+	cont "the mountains."
+	
+	para "They must be"
+	line "super strong!"
+	cont "Think my team is"
+	cont "tough enough yet?"
+	done
+
+_Route9Youngster3EndBattleText::
+	text "Buzzz!"
+	line "I guess we're not"
+	cont "ready for the"
+	cont "mountains just"
+	cont "yet..."
+	prompt
+
+_Route9Youngster3AfterBattleText::
+	text "You're really"
+	line "strong!"
+	
+	para "You should be"
+	line "careful, ROCK"
+	cont "TUNNEL, up ahead"
+	cont "is super dark!"
+    cont "My BUG #MON"
+	cont "wouldn't do well"
+    cont "there, because of"
+    cont "all the ROCK type"
+    cont "#MON there."
+
+	para "I'm going to keep"
+	line "training here."
+	cont "One day, I'm gonna"
+	cont "find a BUG type"
+	cont "#MON as tough"
+	cont "as a GEODUDE!"
+	cont "You'll see!"
+	done
 
 _Route9SignText::
 	text "ROUTE 9"

@@ -43,7 +43,8 @@ SECTION "Text 1.75", ROMX                        ; Made a new Text Bank and adde
 
 INCLUDE "text/SSAnne1FRooms.asm"                 ; Moved from Text 1 by G-Dubs to avoid the Text Bank from growing too big
 INCLUDE "text/SSAnneB1FRooms.asm"                ; Moved from Text 1 by G-Dubs to avoid the Text Bank from growing too big
-INCLUDE "text/SSAnne2FRooms.asm"                 ; Moved from Text 1 by G-Dubs to avoid the Text Bank from growing too big 
+INCLUDE "text/SSAnne2FRooms.asm"                 ; Moved from Text 1 by G-Dubs to avoid the Text Bank from growing too big
+INCLUDE "text/Route9.asm"                        ; Moved from Text 3 by G-Dubs to avoid the Text Bank from growing too big 
 
 
 SECTION "Text 2", ROMX
@@ -117,11 +118,9 @@ INCLUDE "text/Route3.asm"
 INCLUDE "text/Route4.asm"
 INCLUDE "text/Route7.asm"
 INCLUDE "text/Route8.asm"
-INCLUDE "text/Route9.asm"
 
 SECTION "Text 4", ROMX
 
-;INCLUDE "text/Route9_2.asm"
 INCLUDE "text/Route10.asm"
 INCLUDE "text/Route11.asm"
 INCLUDE "text/Route13.asm"

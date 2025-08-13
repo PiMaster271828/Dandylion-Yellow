@@ -26,6 +26,8 @@ Route9_TextPointers:
 	dw_const Route9Youngster2Text,    TEXT_ROUTE9_YOUNGSTER2
 	dw_const Route9CooltrainerM3Text, TEXT_ROUTE9_COOLTRAINER_M3	 ; New trainer added by G-Dubs
     dw_const Route9CooltrainerM4Text, TEXT_ROUTE9_COOLTRAINER_M4	 ; New trainer added by G-Dubs
+	dw_const Route9CooltrainerF3Text, TEXT_ROUTE9_COOLTRAINER_F3	 ; New trainer added by G-Dubs
+	dw_const Route9Youngster3Text,    TEXT_ROUTE9_YOUNGSTER3 	     ; New trainer added by G-Dubs
 	dw_const PickUpItemText,          TEXT_ROUTE9_TM_TELEPORT
 	dw_const Route9SignText,          TEXT_ROUTE9_SIGN
 
@@ -53,6 +55,10 @@ Route9TrainerHeader9:
 	trainer EVENT_BEAT_ROUTE_9_TRAINER_9, 3, Route9CooltrainerM3BattleText, Route9CooltrainerM3EndBattleText, Route9CooltrainerM3AfterBattleText	 ; New trainer added by G-Dubs
 Route9TrainerHeader10:
 	trainer EVENT_BEAT_ROUTE_9_TRAINER_10, 3, Route9CooltrainerM4BattleText, Route9CooltrainerM4EndBattleText, Route9CooltrainerM4AfterBattleText	 ; New trainer added by G-Dubs
+Route9TrainerHeader11:
+	trainer EVENT_BEAT_ROUTE_9_TRAINER_11, 2, Route9CooltrainerF3BattleText, Route9CooltrainerF3EndBattleText, Route9CooltrainerF3AfterBattleText	 ; New trainer added by G-Dubs
+Route9TrainerHeader12:
+	trainer EVENT_BEAT_ROUTE_9_TRAINER_12, 3, Route9Youngster3BattleText, Route9Youngster3EndBattleText, Route9Youngster3AfterBattleText			 ; New trainer added by G-Dubs	
 	db -1 ; end
 
 Route9CooltrainerF1Text:
@@ -61,7 +67,7 @@ Route9CooltrainerF1Text:
 	call TalkToTrainer
 	jp TextScriptEnd
 
-Route9AJText:
+Route9AJText:                          ; A.J. from the Anime and his OP Sandshrew
 	text_asm
 	ld hl, Route9TrainerHeader1
 	call TalkToTrainer
@@ -121,6 +127,18 @@ Route9CooltrainerM4Text:		       ; New trainer added by G-Dubs
 	call TalkToTrainer
 	jp TextScriptEnd
 
+Route9CooltrainerF3Text:		       ; New trainer added by G-Dubs
+	text_asm	
+	ld hl, Route9TrainerHeader11
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route9Youngster3Text:			       ; New trainer added by G-Dubs
+	text_asm
+	ld hl, Route9TrainerHeader12
+    call TalkToTrainer
+	jp TextScriptEnd
+
 Route9CooltrainerF1BattleText:
 	text_far _Route9CooltrainerF1BattleText
 	text_end
@@ -133,7 +151,7 @@ Route9CooltrainerF1AfterBattleText:
 	text_far _Route9CooltrainerF1AfterBattleText
 	text_end
 
-Route9AJBattleText:
+Route9AJBattleText:                                   ; A.J. from the Anime and his OP Sandshrew
 	text_far _Route9AJBattleText
 	text_end
 
@@ -251,6 +269,30 @@ Route9CooltrainerM4EndBattleText:
 
 Route9CooltrainerM4AfterBattleText:		              
 	text_far _Route9CooltrainerM4AfterBattleText
+	text_end
+
+Route9CooltrainerF3BattleText:		                  ; New trainer added by G-Dubs
+	text_far _Route9CooltrainerF3BattleText
+	text_end
+
+Route9CooltrainerF3EndBattleText:		              
+	text_far _Route9CooltrainerF3EndBattleText
+	text_end
+
+Route9CooltrainerF3AfterBattleText:		              
+	text_far _Route9CooltrainerF3AfterBattleText
+	text_end
+
+Route9Youngster3BattleText:			                  ; New trainer added by G-Dubs
+	text_far _Route9Youngster3BattleText
+	text_end
+
+Route9Youngster3EndBattleText:
+	text_far _Route9Youngster3EndBattleText
+	text_end
+
+Route9Youngster3AfterBattleText:
+	text_far _Route9Youngster3AfterBattleText
 	text_end
 
 Route9SignText:
