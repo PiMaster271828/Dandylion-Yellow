@@ -25,7 +25,8 @@ WarpTileIDPointers:
 	dw .FacilityWarpTileIDs
 	dw .PlateauWarpTileIDs
 	dw .BeachHouseWarpTileIDs
-	dw .Overworld2WarpTileIDs
+	dw .Overworld2WarpTileIDs     ; New tileset added by G-Dubs
+	dw .VermilionCityWarpTileIDs  ; New tileset added by G-Dubs
 	assert_table_length NUM_TILESETS
 
 MACRO warp_tiles
@@ -37,6 +38,7 @@ ENDM
 
 .OverworldWarpTileIDs:
 .Overworld2WarpTileIDs:                     ; New tileset added by G-Dubs
+.VermilionCityWarpTileIDs:                  ; New tileset added by G-Dubs
 	warp_tiles $1B, $58
 
 .ForestGateWarpTileIDs:

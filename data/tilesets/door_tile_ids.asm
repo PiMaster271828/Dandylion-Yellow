@@ -1,19 +1,20 @@
 DoorTileIDPointers:
-	dbw OVERWORLD,   .OverworldDoorTileIDs
-	dbw FOREST,      .ForestDoorTileIDs
-	dbw MART,        .MartDoorTileIDs
-	dbw HOUSE,       .HouseDoorTileIDs
-	dbw FOREST_GATE, .TilesetMuseumDoorTileIDs
-	dbw MUSEUM,      .TilesetMuseumDoorTileIDs
-	dbw GATE,        .TilesetMuseumDoorTileIDs
-	dbw SHIP,        .ShipDoorTileIDs
-	dbw LOBBY,       .LobbyDoorTileIDs
-	dbw MANSION,     .MansionDoorTileIDs
-	dbw LAB,         .LabDoorTileIDs
-	dbw FACILITY,    .FacilityDoorTileIDs
-	dbw PLATEAU,     .PlateauDoorTileIDs
-	dbw INTERIOR,    .InteriorDoorTileIDs
-	dbw OVERWORLD2,   .Overworld2DoorTileIDs          ; New tileset added by G-Dubs
+	dbw OVERWORLD,    .OverworldDoorTileIDs
+	dbw FOREST,       .ForestDoorTileIDs
+	dbw MART,         .MartDoorTileIDs
+	dbw HOUSE,        .HouseDoorTileIDs
+	dbw FOREST_GATE,  .TilesetMuseumDoorTileIDs
+	dbw MUSEUM,       .TilesetMuseumDoorTileIDs
+	dbw GATE,         .TilesetMuseumDoorTileIDs
+	dbw SHIP,         .ShipDoorTileIDs
+	dbw LOBBY,        .LobbyDoorTileIDs
+	dbw MANSION,      .MansionDoorTileIDs
+	dbw LAB,          .LabDoorTileIDs
+	dbw FACILITY,     .FacilityDoorTileIDs
+	dbw PLATEAU,      .PlateauDoorTileIDs
+	dbw INTERIOR,     .InteriorDoorTileIDs
+	dbw OVERWORLD2,   .Overworld2DoorTileIDs     ; New tileset added by G-Dubs
+	dbw CITY_TILESET, .VermilionCityDoorTileIDs  ; New tileset added by G-Dubs
 	db -1 ; end
 
 MACRO door_tiles
@@ -24,7 +25,8 @@ MACRO door_tiles
 ENDM
 
 .OverworldDoorTileIDs:
-.Overworld2DoorTileIDs:                               ; New tileset added by G-Dubs
+.Overworld2DoorTileIDs:                                    ; New tileset added by G-Dubs
+.VermilionCityDoorTileIDs:                                 ; New tileset added by G-Dubs
 	door_tiles $1B, $58, $AD      ; New door tile added by G-Dubs
 
 .ForestDoorTileIDs:

@@ -3,11 +3,13 @@ HandleLedges::
 	bit BIT_LEDGE_OR_FISHING, a
 	ret nz
 	ld a, [wCurMapTileset]
-	cp OVERWORLD2            ; Check if tileset is overworld2
+	cp OVERWORLD2       ; Check if tileset is overworld2
 	jr z, .overworld
-	and a                    ; Check if tileset is OVERWORLD (ID 0)
-	ret nz                   ; If not overworld or overworld2, return
-.overworld                   ; New function added for overworld functionality 
+	cp CITY_TILESET     ; Check if tileset is Vermilion City
+	jr z, .overworld
+	and a               ; Check if tileset is OVERWORLD (ID 0)
+	ret nz              ; If not overworld or overworld2, return
+.overworld              ; New function added for overworld functionality 
 	predef GetTileAndCoordsInFrontOfPlayer
 	ld a, [wSpritePlayerStateData1FacingDirection]
 	ld b, a
