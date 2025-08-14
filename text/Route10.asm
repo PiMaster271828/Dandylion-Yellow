@@ -273,17 +273,6 @@ _Route10SuperNerd6AfterBattleText::
 	cont "Heh heh heh..."
 	done
 
-   
-   
-
- 
-
-
-  
-
-  
-  
-
 _Route10RockTunnelSignText::
 	text "ROCK TUNNEL"
 	done
