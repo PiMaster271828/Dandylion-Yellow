@@ -25,8 +25,8 @@ WarpTileIDPointers:
 	dw .FacilityWarpTileIDs
 	dw .PlateauWarpTileIDs
 	dw .BeachHouseWarpTileIDs
-	dw .Overworld2WarpTileIDs     ; New tileset added by G-Dubs
-	dw .VermilionCityWarpTileIDs  ; New tileset added by G-Dubs
+	dw .Overworld2WarpTileIDs               ; New tileset added by G-Dubs
+	dw .VermilionCityWarpTileIDs            ; New tileset added by G-Dubs
 	assert_table_length NUM_TILESETS
 
 MACRO warp_tiles
