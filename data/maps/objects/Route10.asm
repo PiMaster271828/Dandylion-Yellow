@@ -9,6 +9,7 @@
     const_export ROUTE10_COOLTRAINER_F3		; New trainer added by G-Dubs
 	const_export ROUTE10_SUPER_NERD4		; New trainer added by G-Dubs
 	const_export ROUTE10_SUPER_NERD5		; New trainer added by G-Dubs
+	const_export ROUTE10_SUPER_NERD6		; New trainer added by G-Dubs
 
 Route10_Object:
 	db $2c ; border block
@@ -36,4 +37,5 @@ Route10_Object:
 	object_event 15,  4, SPRITE_COOLTRAINER_F, STAY, LEFT, TEXT_ROUTE10_COOLTRAINER_F3, OPP_GUITARIST, 5	 ; New trainer added by G-Dubs
 	object_event  7, 21, SPRITE_SUPER_NERD, STAY, LEFT, TEXT_ROUTE10_SUPER_NERD4, OPP_POKEMANIAC, 8          ; New trainer added by G-Dubs
 	object_event 14, 34, SPRITE_SUPER_NERD, STAY, DOWN, TEXT_ROUTE10_SUPER_NERD5, OPP_POKEMANIAC, 9          ; New trainer added by G-Dubs
+	object_event 17, 59, SPRITE_SUPER_NERD, STAY, LEFT, TEXT_ROUTE10_SUPER_NERD6, OPP_POKEMANIAC, 10         ; New trainer added by G-Dubs
 	def_warps_to ROUTE_10

@@ -364,6 +364,7 @@
 	const EVENT_BEAT_ROUTE_10_TRAINER_7                                                            ; $448
 	const EVENT_BEAT_ROUTE_10_TRAINER_8                                                            ; $449
 	const EVENT_BEAT_ROUTE_10_TRAINER_9                                                            ; $44A
+	const EVENT_BEAT_ROUTE_10_TRAINER_10														   ; $44B
 	
 ; Rock Tunnel 1F Events
 	const_next $450

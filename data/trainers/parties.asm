@@ -275,21 +275,23 @@ PokemaniacData:
 	db 45, CHARIZARD, LAPRAS, LICKITUNG, 0                                                                   ; Pokémaniac 6           ; Level changed from 40 to 45, and Charmeleon changed to Charizard by G-Dubs
 ; Rock Tunnel 1F
 	db 23, CUBONE, SLOWPOKE, 0                                                                               ; Pokémaniac 7
-; Route 10 (Again)
-    db 23, CHARMELEON, MAROWAK, ELECTABUZZ, 0                                                                ; Pokémaniac 8			  ; New trainer added by G-Dubs
-	db 33, SLOWBRO, ELECTABUZZ, RHYHORN, 0                                                                  ; Pokémaniac 9			  ; New trainer added by G-Dubs
 /**************************
 Pokémaniac Alternate Sprite
 **************************/
+; Route 10 (Again)
+    db 23, CHARMELEON, MAROWAK, ELECTABUZZ, 0                                                                ; Pokémaniac 8			  ; New trainer added by G-Dubs
+	db 33, SLOWBRO, ELECTABUZZ, RHYHORN, 0                                                                   ; Pokémaniac 9			  ; New trainer added by G-Dubs
+    db 25, CUBONE, SLOWPOKE, RHYHORN, 0                                                                      ; Pokémaniac 10          ; New trainer added by G-Dubs
 ; Route 4
-    db 35, CUBONE, NIDORINO, RHYHORN, NIDOQUEEN, 0                                                           ; Pokémaniac 8           ; New trainer added by G-Dubs
+    db 35, CUBONE, NIDORINO, RHYHORN, NIDOQUEEN, 0                                                           ; Pokémaniac 11          ; New trainer added by G-Dubs
 ; S.S. Anne Bow
-    db 19, NIDORINO, SLOWPOKE, NIDORINA, 0                                                                   ; Pokémaniac 9           ; New trainer added by G-Dubs
+    db 19, NIDORINO, SLOWPOKE, NIDORINA, 0                                                                   ; Pokémaniac 12          ; New trainer added by G-Dubs
+/*
 ; Route 23
-    db 45, NIDOKING, KANGASKHAN, CHARIZARD, SLOWBRO, LICKITUNG, LAPRAS, 0                                    ; Pokémaniac 10          ; New trainer added by G-Dubs
+    db 45, NIDOKING, KANGASKHAN, CHARIZARD, SLOWBRO, LICKITUNG, LAPRAS, 0                                    ; Pokémaniac 13          ; New trainer added by G-Dubs
 ; Safari Zone Area 2 Rest House
-    db 33, RHYHORN, PINSIR, TANGELA, KANGASKHAN, SCYTHER, MAROWAK, 0                                         ; Pokémaniac 11          ; New trainer added by G-Dubs
-
+    db 33, RHYHORN, PINSIR, TANGELA, KANGASKHAN, SCYTHER, MAROWAK, 0                                         ; Pokémaniac 14          ; New trainer added by G-Dubs
+*/
 SuperNerdData:
 ; Mt. Moon 1F
 	db 12, MAGNEMITE, VOLTORB, 0			                                                                 ; Super Nerd 1           ; Level changed from 11 to 12 by G-Dubs 

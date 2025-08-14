@@ -242,6 +242,48 @@ _Route10SuperNerd5AfterBattleText::
 	cont "black inside!"
 	done
 
+_Route10SuperNerd6BattleText::         ; New trainer added by G-Dubs
+	text "Heh heh heh..."
+	line "See my CUBONE?"
+	cont "So tough! And my"
+	cont "RHYHORN is super"
+    cont "rare! ROCK TUNNEL"
+	cont "must have even"
+	cont "more inside!"
+	done
+
+_Route10SuperNerd6EndBattleText::
+	text "Gwaah!"
+	line "My rare #MON"
+    cont "collection! How"
+	cont "could you beat"
+	cont "them?!?"
+	prompt
+
+_Route10SuperNerd6AfterBattleText::
+	text "I bet you could"
+	line "find some cool"
+	cont "#MON in"
+	cont "there..."
+	
+	para "But you won't" 
+	line "see a thing!"
+	cont "It's is pitch-"
+	cont "black inside!"
+	cont "Heh heh heh..."
+	done
+
+   
+   
+
+ 
+
+
+  
+
+  
+  
+
 _Route10RockTunnelSignText::
 	text "ROCK TUNNEL"
 	done

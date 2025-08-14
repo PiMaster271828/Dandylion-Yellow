@@ -25,6 +25,7 @@ Route10_TextPointers:
     dw_const Route10CooltrainerF3Text,  TEXT_ROUTE10_COOLTRAINER_F3		       ; New trainer added by G-Dubs
 	dw_const Route10SuperNerd4Text,     TEXT_ROUTE10_SUPER_NERD4               ; New trainer added by G-Dubs
 	dw_const Route10SuperNerd5Text,     TEXT_ROUTE10_SUPER_NERD5		       ; New trainer added by G-Dubs
+	dw_const Route10SuperNerd6Text,     TEXT_ROUTE10_SUPER_NERD6		       ; New trainer added by G-Dubs
 	dw_const Route10RockTunnelSignText, TEXT_ROUTE10_ROCKTUNNEL_NORTH_SIGN
 	dw_const PokeCenterSignText,        TEXT_ROUTE10_POKECENTER_SIGN
 	dw_const Route10RockTunnelSignText, TEXT_ROUTE10_ROCKTUNNEL_SOUTH_SIGN
@@ -52,6 +53,8 @@ Route10TrainerHeader8:
 	trainer EVENT_BEAT_ROUTE_10_TRAINER_8, 3, Route10SuperNerd4BattleText, Route10SuperNerd4EndBattleText, Route10SuperNerd4AfterBattleText               ; New trainer added by G-Dubs
 Route10TrainerHeader9:
 	trainer EVENT_BEAT_ROUTE_10_TRAINER_9, 3, Route10SuperNerd5BattleText, Route10SuperNerd5EndBattleText, Route10SuperNerd5AfterBattleText               ; New trainer added by G-Dubs
+Route10TrainerHeader10:
+	trainer EVENT_BEAT_ROUTE_10_TRAINER_10, 3, Route10SuperNerd6BattleText, Route10SuperNerd6EndBattleText, Route10SuperNerd6AfterBattleText              ; New trainer added by G-Dubs
 	db -1 ; end
 
 Route10SuperNerd1Text:
@@ -234,6 +237,23 @@ Route10SuperNerd5AfterBattleText:
 	text_far _Route10SuperNerd5AfterBattleText
 	text_end
 
+Route10SuperNerd6Text:
+	text_asm
+	ld hl, Route10TrainerHeader10
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route10SuperNerd6BattleText:
+	text_far _Route10SuperNerd6BattleText
+	text_end
+
+Route10SuperNerd6EndBattleText:
+	text_far _Route10SuperNerd6EndBattleText
+	text_end
+
+Route10SuperNerd6AfterBattleText:
+	text_far _Route10SuperNerd6AfterBattleText
+	text_end
 
 Route10RockTunnelSignText:
 	text_far _Route10RockTunnelSignText
