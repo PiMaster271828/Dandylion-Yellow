@@ -19,12 +19,12 @@ SSAnneBow_Object:
 
 	def_object_events
 	object_event  6, 11, SPRITE_COOLTRAINER_M, STAY, NONE, TEXT_SSANNEBOW_COOLTRAINER_M
-	object_event 10, 11, SPRITE_COOLTRAINER_F, STAY, NONE, TEXT_SSANNEBOW_COOLTRAINER_F            ; NPC added by G-Dubs
-	object_event  5,  2, SPRITE_SUPER_NERD, STAY, UP, TEXT_SSANNEBOW_SUPER_NERD, OPP_POKEMANIAC, 9 ; NPC changed to trainer by G-Dubs
-	object_event  5,  8, SPRITE_SAILOR, STAY, DOWN, TEXT_SSANNEBOW_SAILOR1, OPP_SAILOR, 9          ; NPC changed to trainer by G-Dubs
+	object_event 10, 11, SPRITE_COOLTRAINER_F, STAY, NONE, TEXT_SSANNEBOW_COOLTRAINER_F                 ; NPC added by G-Dubs
+	object_event  5,  2, SPRITE_SUPER_NERD, STAY, UP, TEXT_SSANNEBOW_SUPER_NERD, OPP_POKEMANIAC, 12     ; NPC changed to trainer by G-Dubs
+	object_event  5,  8, SPRITE_SAILOR, STAY, DOWN, TEXT_SSANNEBOW_SAILOR1, OPP_SAILOR, 9               ; NPC changed to trainer by G-Dubs
 	object_event  4,  5, SPRITE_SAILOR, STAY, DOWN, TEXT_SSANNEBOW_SAILOR2, OPP_SAILOR, 1
 	object_event  9,  8, SPRITE_SAILOR, STAY, UP, TEXT_SSANNEBOW_SAILOR3, OPP_SAILOR, 2
-	object_event  1,  7, SPRITE_GIRL, STAY, LEFT, TEXT_SSANNEBOW_GIRL, OPP_LADY, 1                 ; New trainer added by G-Dubs
-	object_event 11,  2, SPRITE_SAILOR, STAY, DOWN, TEXT_SSANNEBOW_SAILOR4, OPP_SAILOR, 7 	       ; New trainer added by G-Dubs 
+	object_event  1,  7, SPRITE_GIRL, STAY, LEFT, TEXT_SSANNEBOW_GIRL, OPP_LADY, 1                      ; New trainer added by G-Dubs
+	object_event 11,  2, SPRITE_SAILOR, STAY, DOWN, TEXT_SSANNEBOW_SAILOR4, OPP_SAILOR, 7 	            ; New trainer added by G-Dubs 
 
 	def_warps_to SS_ANNE_BOW
