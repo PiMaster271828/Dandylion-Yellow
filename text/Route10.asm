@@ -99,6 +99,149 @@ _Route10CooltrainerF2AfterBattleText::
 	cont "floral pattern!"
 	done
 
+_Route10SuperNerd3BattleText::         ; New trainer added by G-Dubs
+	text "Yeah! I'm getting"
+	line "ready to enter"
+	cont "ROCK TUNNEL!"
+	cont "Gotta have some"
+	cont "good rock music"
+	cont "to get me pumped!"
+
+	para "Ready for my"
+	line "opening act?"
+	done
+
+_Route10SuperNerd3EndBattleText::
+	text "Oh no!"
+	line "You totally"
+	cont "rocked me! I"
+	cont "guess my amp"
+    cont "only went to 10!"
+	cont "ROUTE 10 that is."
+	prompt
+
+_Route10SuperNerd3AfterBattleText::
+	text "That was a great"
+	line "jam! Rock on!"
+
+	para "But seriously,"
+	line "ROCK TUNNEL is"
+	cont "like really dark." 
+	cont "Hope you brought"
+	cont "#MON that knows"
+	cont "FLASH!"
+	done
+
+_Route10CooltrainerF3BattleText::         ; New trainer added by G-Dubs
+	text "Wow, can you feel"
+	line "that buzz from"
+	cont "the POWER PLANT?"
+	cont "It gets me so"
+	cont "pumped!"
+	
+	para "Okay,"
+	line "I've practiced"
+	cont "my new song"
+	cont "enough! It's"
+	cont "time for my"
+	cont "debut"
+	cont "performance!"
+    cont "You can be my"
+    cont "first official"
+	cont "fan!"
+
+	para "C'mon, let's"
+	line "have a battle"
+	cont "that's totally"
+	cont "electric!"
+	done
+
+_Route10CooltrainerF3EndBattleText::
+	text "No way!"
+	line "You've got a"
+	cont "much better"
+	cont "stage presence"
+	cont "than I do!"
+	prompt
+
+_Route10CooltrainerF3AfterBattleText::
+	text "Thanks for the"
+	line "battle! I'm"
+	cont "going to write a"
+	cont "power ballad"
+	cont "about how you"
+	cont "stole the show!"
+
+	para "Just a tip for"
+	line "you, ROCK TUNNEL"
+	cont "is like crazy"
+	cont "dark! Hope you"
+	cont "have FLASH!"
+	done	
+	
+_Route10SuperNerd4BattleText::         ; New trainer added by G-Dubs
+	text "GYAHAHA! Can you"
+	line "feel it? We are"
+	cont "so close to the"
+	cont "ROCK TUNNEL!"
+
+	para "I bet it's full"
+	line "of rare #MON"
+	cont "My team is"
+	cont "ready! Are you?"
+	done
+
+_Route10SuperNerd4EndBattleText::
+	text "Gwah!" 
+	line "My precious"
+    cont "#MON! How"
+    cont "could you beat"
+	cont "them all?"
+	prompt
+
+_Route10SuperNerd4AfterBattleText::
+    text "Go away! I need"
+	line "to train more!"
+	cont "The rare #MON"
+	cont "will wait for me!"
+	cont "They have to!"
+	done
+
+_Route10SuperNerd5BattleText::         ; New trainer added by G-Dubs
+	text "ONIX! I heard"
+	line "you can find a"
+	cont "giant ONIX in"
+    cont "ROCK TUNNEL!"
+
+    para "I'm going to be"
+	line "the one to catch"
+	cont "it!"
+
+	para "Let's have a"
+	line "battle to warm"
+	cont "up!"
+	done
+
+_Route10SuperNerd5EndBattleText::
+	text "No!"
+	line "I'm not worthy"
+    cont "of catching an"
+	cont "ONIX yet!"
+	prompt
+
+_Route10SuperNerd5AfterBattleText::
+	text "You're strong..."
+	line "You could"
+	cont "probably even"
+	cont "catch an ONIX..."
+	
+	para "But you'll never" 
+	line "find one if you"
+	cont "can't see! ROCK"
+	cont "TUNNEL is pitch-"
+	cont "black inside!"
+	done
+
 _Route10RockTunnelSignText::
 	text "ROCK TUNNEL"
 	done

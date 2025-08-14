@@ -5,6 +5,10 @@
 	const_export ROUTE10_COOLTRAINER_F1
 	const_export ROUTE10_HIKER2
 	const_export ROUTE10_COOLTRAINER_F2
+	const_export ROUTE10_SUPER_NERD3		; New trainer added by G-Dubs
+    const_export ROUTE10_COOLTRAINER_F3		; New trainer added by G-Dubs
+	const_export ROUTE10_SUPER_NERD4		; New trainer added by G-Dubs
+	const_export ROUTE10_SUPER_NERD5		; New trainer added by G-Dubs
 
 Route10_Object:
 	db $2c ; border block
@@ -28,5 +32,8 @@ Route10_Object:
 	object_event  7, 25, SPRITE_COOLTRAINER_F, STAY, LEFT, TEXT_ROUTE10_COOLTRAINER_F1, OPP_JR_TRAINER_F, 7
 	object_event  3, 61, SPRITE_HIKER, STAY, DOWN, TEXT_ROUTE10_HIKER2, OPP_HIKER, 8
 	object_event  7, 54, SPRITE_COOLTRAINER_F, STAY, DOWN, TEXT_ROUTE10_COOLTRAINER_F2, OPP_JR_TRAINER_F, 8
-
+	object_event  0,  4, SPRITE_SUPER_NERD, STAY, RIGHT, TEXT_ROUTE10_SUPER_NERD3, OPP_GUITARIST, 9			 ; New trainer added by G-Dubs
+	object_event 15,  4, SPRITE_COOLTRAINER_F, STAY, LEFT, TEXT_ROUTE10_COOLTRAINER_F3, OPP_GUITARIST, 5	 ; New trainer added by G-Dubs
+	object_event  7, 21, SPRITE_SUPER_NERD, STAY, LEFT, TEXT_ROUTE10_SUPER_NERD4, OPP_POKEMANIAC, 8          ; New trainer added by G-Dubs
+	object_event 14, 34, SPRITE_SUPER_NERD, STAY, DOWN, TEXT_ROUTE10_SUPER_NERD5, OPP_POKEMANIAC, 9          ; New trainer added by G-Dubs
 	def_warps_to ROUTE_10

@@ -275,6 +275,9 @@ PokemaniacData:
 	db 45, CHARIZARD, LAPRAS, LICKITUNG, 0                                                                   ; Pokémaniac 6           ; Level changed from 40 to 45, and Charmeleon changed to Charizard by G-Dubs
 ; Rock Tunnel 1F
 	db 23, CUBONE, SLOWPOKE, 0                                                                               ; Pokémaniac 7
+; Route 10 (Again)
+    db 23, CHARMELEON, MAROWAK, ELECTABUZZ, 0                                                                ; Pokémaniac 8			  ; New trainer added by G-Dubs
+	db 33, SLOWBRO, ELECTABUZZ, RHYHORN, 0                                                                  ; Pokémaniac 9			  ; New trainer added by G-Dubs
 /**************************
 Pokémaniac Alternate Sprite
 **************************/
@@ -505,7 +508,6 @@ Default Beauty Sprite
 	db 30, SHELLDER, SHELLDER, CLOYSTER, 0	                                                                 ; Beauty 16              ; Trainer number changed from 10 to 16 by G-Dubs
 	db 31, POLIWAG, SEAKING, 0			                                                                     ; Beauty 17              ; Trainer number changed from 11 to 17 by G-Dubs
 	db 30, SEADRA, HORSEA, SEADRA, 0		                                                                 ; Beauty 18              ; Trainer number changed from 15 to 18 by G-Dubs
-
 
 PsychicData:
 ; Saffron Gym
@@ -968,9 +970,10 @@ Guitarist 2
 *************/
 ; Vermilion Gym
     db 25, PIKACHU, CLEFAIRY, /* TOXTRICITY, */ 0                                                            ; Guitarist 4            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs) 
+; Route 10    
+	db 25, PIKACHU, CLEFAIRY, ELECTABUZZ, 0                                                                  ; Guitarist 5            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 ; Dummy List    
-	db 1, VOLTORB, 0                                                                                         ; Guitarist 5            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-    db 1, ELECTABUZZ, 0                                                                                      ; Guitarist 6            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+	db 1, ELECTABUZZ, 0                                                                                      ; Guitarist 6            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 
 /*************
 Guitarist 3
@@ -979,8 +982,10 @@ Guitarist 3
     db 25, ELECTABUZZ, 0                                                                                     ; Guitarist 7            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 ; SS Anne B1F
     db 25, ELECTABUZZ, MACHOKE, 0                                                                            ; Guitarist 8            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+; Route 10
+    db 25, VOLTORB, ELECTABUZZ, MAGNEMITE, 0                                                                 ; Guitarist 9            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 ; Power Plant
-   ;db                                                                                                       ; Guitarist 9            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)  
+   ;db                                                                                                       ; Guitarist 10           ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)  
 
 SoldierData:
 ; Vermilion Gym
