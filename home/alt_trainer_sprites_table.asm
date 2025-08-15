@@ -45,7 +45,7 @@ TrainerSpriteJumpTable: ; Index (Decimal), Class ID (Hex) Comment
 	dw DefaultTrainerSpriteHandler ; 4, $05: JR_TRAINER_M
 	dw DefaultTrainerSpriteHandler ; 5, $06: JR_TRAINER_F
 	dw PokemaniacSpriteHandler     ; 6, $07: POKEMANIAC              ; Has multiple sprites
-	dw DefaultTrainerSpriteHandler ; 7, $08: SUPER_NERD				 ; Has multiple sprites        ; Not implemented yet 
+	dw SuperNerdSpriteHandler      ; 7, $08: SUPER_NERD				 ; Has multiple sprites 
 	dw DefaultTrainerSpriteHandler ; 8, $09: HIKER
 	dw DefaultTrainerSpriteHandler ; 9, $0A: BIKER
 	dw DefaultTrainerSpriteHandler ; 10, $0B: BURGLAR
@@ -130,7 +130,7 @@ SuperNerdSpriteHandler:
 	cp $08
 	ret c ; Trainers 0-7 -> Use default (SuperNerdPic)
 	cp $0D
-	jr nc, .SuperNerdDone ; Check if >= 11
+	jr nc, .SuperNerdDone ; Check if >= 13
 	; Trainers 8-12 -> Use SuperNerd2Pic
 	ld de, SuperNerd2Pic
 	call UpdateTrainerPicPointer
