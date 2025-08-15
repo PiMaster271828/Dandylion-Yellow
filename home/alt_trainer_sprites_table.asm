@@ -135,7 +135,7 @@ SuperNerdSpriteHandler:
 	ld de, SuperNerd2Pic
 	call UpdateTrainerPicPointer
 	ret ; Done for this range
-.PokemaniacDone:
+.SuperNerdDone:
 	ret
 
 ; Handler for Swimmer class ($0F) - Index 14
