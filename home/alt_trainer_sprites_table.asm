@@ -107,40 +107,8 @@ TrainerSpriteJumpTable: ; Index (Decimal), Class ID (Hex) Comment
 DefaultTrainerSpriteHandler:
 	ret
 
-; Handler for Swimmer class ($0F) - Index 14
-SwimmerSpriteHandler:
-	ld a, [wTrainerNo]
-	cp $01
-	ret c ; Trainer 0 -> Use default (SwimmerPic)
-	cp $02
-	jr nc, .NotSwimmer1 ; Check if >= 2
-	; Trainer 1 -> Use Swimmer2Pic
-	ld de, Swimmer2Pic
-	call UpdateTrainerPicPointer
-	ret ; Explicitly return after update
-.NotSwimmer1:
-	ret
+; Handler for Lass class ($03) - Index 2
 
-; Handler for Guitarist class ($33) - Index 50 (Corrected from $32 label)
-GuitaristSpriteHandler:
-	ld a, [wTrainerNo]
-	cp $04
-	ret c ; Trainers 0-3 -> Use default (Guitarist1Pic)
-	cp $07
-	jr nc, .CheckGuitarist7to9 ; Check if >= 7
-	; Trainers 4-6 -> Use Guitarist2Pic
-	ld de, Guitarist2Pic
-	call UpdateTrainerPicPointer
-	ret ; Done for this range
-.CheckGuitarist7to9:
-	cp $0A
-	jr nc, .GuitaristDone ; Check if >= 10
-	; Trainers 7-9 -> Use Guitarist3Pic
-	ld de, Guitarist3Pic
-	call UpdateTrainerPicPointer
-	ret ; Done for this range
-.GuitaristDone:
-	ret
 
 ; Handler for Pokemaniac class ($07) - Index 6
 PokemaniacSpriteHandler:
@@ -154,6 +122,34 @@ PokemaniacSpriteHandler:
 	call UpdateTrainerPicPointer
 	ret ; Done for this range
 .PokemaniacDone:
+	ret
+
+; Handler for SuperNerd class ($08) - Index 7
+SuperNerdSpriteHandler:
+	ld a, [wTrainerNo]
+	cp $08
+	ret c ; Trainers 0-7 -> Use default (SuperNerdPic)
+	cp $0D
+	jr nc, .SuperNerdDone ; Check if >= 11
+	; Trainers 8-12 -> Use SuperNerd2Pic
+	ld de, SuperNerd2Pic
+	call UpdateTrainerPicPointer
+	ret ; Done for this range
+.PokemaniacDone:
+	ret
+
+; Handler for Swimmer class ($0F) - Index 14
+SwimmerSpriteHandler:
+	ld a, [wTrainerNo]
+	cp $01
+	ret c ; Trainer 0 -> Use default (SwimmerPic)
+	cp $02
+	jr nc, .NotSwimmer1 ; Check if >= 2
+	; Trainer 1 -> Use Swimmer2Pic
+	ld de, Swimmer2Pic
+	call UpdateTrainerPicPointer
+	ret ; Explicitly return after update
+.NotSwimmer1:
 	ret
 
 ; Handler for Beauty class ($12) - Index 17
@@ -177,7 +173,79 @@ BeautySpriteHandler:
 .BeautyDone:
 	ret
 
-; Handler for Teacher class ($13) - Index 18
+; Handler for Psychic class ($13) - Index 19
+
+
+; Handler for Juggler class ($15) - Index 21
+
+
+; Handler for Prof. Oak class ($1A) - Index 26
+
+
+; Handler for Scientist class ($1D) - Index 28
+
+
+; Handler for Giovanni class ($1E) - Index 29 
+
+
+; Handler for Rocket class ($1F) - Index 30
+
+
+; Handler for Bruno class ($21) - Index 33
+
+
+; Handler for Brock class ($22) - Index 34
+
+
+; Handler for Misty class ($23) - Index 35
+
+
+; Handler for Lt. Surge class ($24) - Index 36
+
+
+; Handler for Erika class ($25) - Index 37
+
+
+; Handler for Koga class ($26) - Index 38
+
+
+; Handler for Blaine class ($27) - Index 39 
+
+
+; Handler for Sabrina class ($28) - Index 40
+
+
+; Handler for Lorelei class ($2C) - Index 44
+
+
+; Handler for Agatha class ($2E) - Index 46
+
+
+; Handler for Lance class ($2F) - Index 47
+
+
+; Handler for Guitarist class ($33) - Index 51 (Corrected from $32 label)
+GuitaristSpriteHandler:
+	ld a, [wTrainerNo]
+	cp $04
+	ret c ; Trainers 0-3 -> Use default (Guitarist1Pic)
+	cp $07
+	jr nc, .CheckGuitarist7to9 ; Check if >= 7
+	; Trainers 4-6 -> Use Guitarist2Pic
+	ld de, Guitarist2Pic
+	call UpdateTrainerPicPointer
+	ret ; Done for this range
+.CheckGuitarist7to9:
+	cp $0A
+	jr nc, .GuitaristDone ; Check if >= 10
+	; Trainers 7-9 -> Use Guitarist3Pic
+	ld de, Guitarist3Pic
+	call UpdateTrainerPicPointer
+	ret ; Done for this range
+.GuitaristDone:
+	ret
+
+; Handler for Teacher class ($38) - Index 56
 TeacherSpriteHandler:
     ld a, [wTrainerNo]    
     cp $02
@@ -189,7 +257,7 @@ TeacherSpriteHandler:
 .TeacherDone:
     ret
 
-; Handler for SchoolKid class ($14) - Index 19
+; Handler for SchoolKid class ($39) - Index 57
 SchoolKidSpriteHandler:
 	ld a, [wTrainerNo]
 	cp $01

@@ -324,8 +324,8 @@ VictreebelPicFront::   INCBIN "gfx/pokemon/front/victreebel.pic"
 VictreebelPicBack::    INCBIN "gfx/pokemon/back/victreebelb.pic"
 
 SECTION "Alt Pokemon Sprites", ROMX
-RMeowthPicFront::       INCBIN "gfx/pokemon/front/rmeowth.pic"
-RMeowthPicBack::        INCBIN "gfx/pokemon/back/meowthb.pic"
+RMeowthPicFront::       INCBIN "gfx/pokemon/front/rmeowth.pic"            ; Rocket's Meowth sprite added by Vlad
+RMeowthPicBack::        INCBIN "gfx/pokemon/back/meowthb.pic"             ; Rocket's Meowth sprite added by Vlad
 
 
 SECTION "Trainer Pics 1", ROMX
@@ -339,6 +339,7 @@ JrTrainerFPic::    INCBIN "gfx/trainers/jr.trainerf.pic"
 PokemaniacPic::    INCBIN "gfx/trainers/pokemaniac.pic"
 Pokemaniac2Pic::   INCBIN "gfx/trainers/pokemaniac_alt.pic"               ; Alt trainer sprite added by G-Dubs
 SuperNerdPic::     INCBIN "gfx/trainers/supernerd.pic"
+SuperNerd2Pic::    INCBIN "gfx/trainers/supernerd_alt.pic"                ; Alt trainer sprite added by G-Dubs
 HikerPic::         INCBIN "gfx/trainers/hiker.pic"
 BikerPic::         INCBIN "gfx/trainers/biker.pic"
 BurglarPic::       INCBIN "gfx/trainers/burglar.pic"
@@ -391,16 +392,16 @@ JessieJamesPic::   INCBIN "gfx/trainers/jessie_james_meowth_alt.pic"      ; New 
 PokeFanMPic::      INCBIN "gfx/trainers/poke_fan_male.pic"                ; New trainer sprite added by G-Dubs
 PokeFanFPic::      INCBIN "gfx/trainers/poke_fan_female.pic"              ; New trainer sprite added by G-Dubs
 Guitarist1Pic::    INCBIN "gfx/trainers/guitarist_1.pic"                  ; New trainer sprite added by G-Dubs
-Guitarist2Pic::    INCBIN "gfx/trainers/guitarist_2.pic"                  ; New trainer sprite added by G-Dubs
-Guitarist3Pic::    INCBIN "gfx/trainers/guitarist_3.pic"                  ; New trainer sprite added by G-Dubs
+Guitarist2Pic::    INCBIN "gfx/trainers/guitarist_2.pic"                  ; New alternate trainer sprite added by G-Dubs
+Guitarist3Pic::    INCBIN "gfx/trainers/guitarist_3.pic"                  ; New alternate trainer sprite added by G-Dubs
 SoldierPic::       INCBIN "gfx/trainers/soldier.pic"                      ; New trainer sprite added by G-Dubs
 LadyPic::          INCBIN "gfx/trainers/lady.pic"                         ; New trainer sprite added by G-Dubs
 WaiterPic::        INCBIN "gfx/trainers/waiter.pic"                       ; New trainer sprite added by G-Dubs
 ChefPic::          INCBIN "gfx/trainers/chef.pic"                         ; New trainer sprite added by G-Dubs
 TeacherPic::       INCBIN "gfx/trainers/teacher.pic"                      ; New trainer sprite added by G-Dubs
-Teacher2Pic::      INCBIN "gfx/trainers/unused_teacher.pic"               ; New trainer sprite added by G-Dubs
+Teacher2Pic::      INCBIN "gfx/trainers/unused_teacher.pic"               ; New alternate trainer sprite added by G-Dubs
 SchoolKidPic::     INCBIN "gfx/trainers/school_boy.pic"                   ; New trainer sprite added by G-Dubs
-SchoolKid2Pic::    INCBIN "gfx/trainers/school_girl.pic"                  ; New trainer sprite added by G-Dubs
+SchoolKid2Pic::    INCBIN "gfx/trainers/school_girl.pic"                  ; New alternate trainer sprite added by G-Dubs
 
 ;GypsyJugglerPic::  INCBIN "gfx/trainers/gypsy_juggler.pic"
 ;Rival4Pic::      INCBIN "gfx/trainers/rival4.pic"
