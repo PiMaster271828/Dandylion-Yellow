@@ -301,10 +301,12 @@ SuperNerdData:
 	db 20, VOLTORB, KOFFING, VOLTORB, MAGNEMITE, 0	                                                         ; Super Nerd 3
 	db 22, GRIMER, MUK, GRIMER, 0			                                                                 ; Super Nerd 4
 	db 26, KOFFING, 0						                                                                 ; Super Nerd 5
-; Unused
-	db 22, KOFFING, MAGNEMITE, WEEZING, 0	                                                                 ; Super Nerd 6           ; (Unused)
-	db 20, MAGNEMITE, MAGNEMITE, KOFFING, MAGNEMITE, 0	                                                     ; Super Nerd 7           ; (Unused)
-	db 24, MAGNEMITE, VOLTORB, 0			                                                                 ; Super Nerd 8
+	db 22, KOFFING, MAGNEMITE, WEEZING, 0	                                                                 ; Super Nerd 6           ; (Previously Unused)
+	db 24, MAGNEMITE, ELECTRODE, MAGNEMITE, 0			                                                     ; Super Nerd 7           ; (Previously Unused) Voltorb changed to Electrode and Magnemite added by G-Dubs
+/****************************
+Super Nerd Alternative Sprite
+****************************/	
+	db 25, MAGNEMITE, VOLTORB, KOFFING, MAGNETON, 0	                                                         ; Super Nerd 8           ; (Previously Unused) Level changed from 20 to 25 and second Magnemite changed to Voltorb by G-Dubs
 ; Cinnabar Gym
 	db 36, VULPIX, VULPIX, NINETALES, 0	                                                                     ; Super Nerd 9
 	db 34, PONYTA, CHARMANDER, VULPIX, GROWLITHE, 0	                                                         ; Super Nerd 10
@@ -465,10 +467,8 @@ GamblerData:
 	db 18, VOLTORB, MAGNEMITE, 0			                                                                 ; Gambler 3
 	db 18, GROWLITHE, VULPIX, 0			                                                                     ; Gambler 4
 ; Route 8
-	db 22, POLIWAG, POLIWAG, POLIWHIRL, 0	                                                                 ; Gambler 5
-; Unused
-	db 22, ONIX, GEODUDE, GRAVELER, 0	                                                                     ; Gambler 6              ; (Unused)
-; Route 8
+	db 23, POLIWAG, POLIWAG, POLIWHIRL, 0	                                                                 ; Gambler 5              ; Level changed from 22 to 23 by G-Dubs
+	db 25, ONIX, GEODUDE, GRAVELER, 0	                                                                     ; Gambler 6              ; (Previously Unused) Level changed from 22 to 25 by G-Dubs
 	db 24, GROWLITHE, VULPIX, 0			                                                                     ; Gambler 7
 
 BeautyData:

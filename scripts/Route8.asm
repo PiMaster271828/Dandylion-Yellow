@@ -24,6 +24,10 @@ Route8_TextPointers:
 	dw_const Route8CooltrainerF3Text,   TEXT_ROUTE8_COOLTRAINER_F3
 	dw_const Route8Gambler2Text,        TEXT_ROUTE8_GAMBLER2
 	dw_const Route8CooltrainerF4Text,   TEXT_ROUTE8_COOLTRAINER_F4
+	dw_const Route8SuperNerd4Text,      TEXT_ROUTE8_SUPER_NERD4           ; New trainer added by G-Dubs
+	dw_const Route8Gambler3Text,        TEXT_ROUTE8_GAMBLER3              ; New trainer added by G-Dubs
+	dw_const Route8SuperNerd5Text,      TEXT_ROUTE8_SUPER_NERD5           ; New trainer added by G-Dubs
+	dw_const Route8SuperNerd6Text,      TEXT_ROUTE8_SUPER_NERD6           ; New trainer added by G-Dubs
 	dw_const Route8UndergroundSignText, TEXT_ROUTE8_UNDERGROUND_SIGN
 
 Route8TrainerHeaders:
@@ -46,6 +50,14 @@ Route8TrainerHeader7:
 	trainer EVENT_BEAT_ROUTE_8_TRAINER_7, 2, Route8Gambler2BattleText, Route8Gambler2EndBattleText, Route8Gambler2AfterBattleText
 Route8TrainerHeader8:
 	trainer EVENT_BEAT_ROUTE_8_TRAINER_8, 4, Route8CooltrainerF4BattleText, Route8CooltrainerF4EndBattleText, Route8CooltrainerF4AfterBattleText
+Route8TrainerHeader9:
+	trainer EVENT_BEAT_ROUTE_8_TRAINER_9, 3, Route8SuperNerd4BattleText, Route8SuperNerd4EndBattleText, Route8SuperNerd4AfterBattleText              ; New trainer added by G-Dubs
+Route8TrainerHeader10:
+    trainer EVENT_BEAT_ROUTE_8_TRAINER_10, 4, Route8Gambler3BattleText, Route8Gambler3EndBattleText, Route8Gambler3AfterBattleText                   ; New trainer added by G-Dubs
+Route8TrainerHeader11:	
+	trainer EVENT_BEAT_ROUTE_8_TRAINER_11, 4, Route8SuperNerd5BattleText, Route8SuperNerd5EndBattleText, Route8SuperNerd5AfterBattleText             ; New trainer added by G-Dubs
+Route8TrainerHeader12:
+    trainer EVENT_BEAT_ROUTE_8_TRAINER_12, 4, Route8SuperNerd6BattleText, Route8SuperNerd6EndBattleText, Route8SuperNerd6AfterBattleText             ; New trainer added by G-Dubs
 	db -1 ; end
 
 Route8SuperNerd1Text:
@@ -208,6 +220,78 @@ Route8CooltrainerF4EndBattleText:
 
 Route8CooltrainerF4AfterBattleText:
 	text_far _Route8CooltrainerF4AfterBattleText
+	text_end
+
+Route8SuperNerd4Text:                                 ; New trainer added by G-Dubs
+	text_asm
+	ld hl, Route8TrainerHeader9
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route8SuperNerd4BattleText:
+	text_far _Route8SuperNerd4BattleText
+	text_end
+
+Route8SuperNerd4EndBattleText:
+	text_far _Route8SuperNerd4EndBattleText
+	text_end
+
+Route8SuperNerd4AfterBattleText:
+	text_far _Route8SuperNerd4AfterBattleText
+	text_end
+
+Route8Gambler3Text:                                   ; New trainer added by G-Dubs
+	text_asm
+	ld hl, Route8TrainerHeader10
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route8Gambler3BattleText:
+	text_far _Route8Gambler3BattleText
+	text_end
+
+Route8Gambler3EndBattleText:
+	text_far _Route8Gambler3EndBattleText
+	text_end
+
+Route8Gambler3AfterBattleText:
+	text_far _Route8Gambler3AfterBattleText
+	text_end
+
+Route8SuperNerd5Text:                                 ; New trainer added by G-Dubs
+	text_asm
+	ld hl, Route8TrainerHeader11
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route8SuperNerd5BattleText:
+	text_far _Route8SuperNerd5BattleText
+	text_end
+
+Route8SuperNerd5EndBattleText:
+	text_far _Route8SuperNerd5EndBattleText
+	text_end
+
+Route8SuperNerd5AfterBattleText:
+	text_far _Route8SuperNerd5AfterBattleText
+	text_end
+
+Route8SuperNerd6Text:                                 ; New trainer added by G-Dubs
+	text_asm
+	ld hl, Route8TrainerHeader12
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route8SuperNerd6BattleText:
+	text_far _Route8SuperNerd6BattleText
+	text_end
+
+Route8SuperNerd6EndBattleText:
+	text_far _Route8SuperNerd6EndBattleText
+	text_end
+
+Route8SuperNerd6AfterBattleText:
+	text_far _Route8SuperNerd6AfterBattleText
 	text_end
 
 Route8UndergroundSignText:

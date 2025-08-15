@@ -8,6 +8,10 @@
 	const_export ROUTE8_COOLTRAINER_F3
 	const_export ROUTE8_GAMBLER2
 	const_export ROUTE8_COOLTRAINER_F4
+	const_export ROUTE8_SUPER_NERD4         ; New trainer added by G-Dubs
+    const_export ROUTE8_GAMBLER3            ; New trainer added by G-Dubs
+	const_export ROUTE8_SUPER_NERD5         ; New trainer added by G-Dubs
+	const_export ROUTE8_SUPER_NERD6         ; New trainer added by G-Dubs
 
 Route8_Object:
 	db $2c ; border block
@@ -32,5 +36,9 @@ Route8_Object:
 	object_event 26,  6, SPRITE_COOLTRAINER_F, STAY, RIGHT, TEXT_ROUTE8_COOLTRAINER_F3, OPP_LASS, 15
 	object_event 46, 13, SPRITE_GAMBLER, STAY, DOWN, TEXT_ROUTE8_GAMBLER2, OPP_GAMBLER, 7
 	object_event 51, 12, SPRITE_COOLTRAINER_F, STAY, LEFT, TEXT_ROUTE8_COOLTRAINER_F4, OPP_LASS, 16
+	object_event 10, 14, SPRITE_SUPER_NERD, STAY, RIGHT, TEXT_ROUTE8_SUPER_NERD4, OPP_SUPER_NERD, 6     ; New trainer added by G-Dubs
+	object_event 34, 11, SPRITE_GAMBLER, STAY, RIGHT, TEXT_ROUTE8_GAMBLER3, OPP_GAMBLER, 6              ; New trainer added by G-Dubs
+	object_event 18, 10, SPRITE_SUPER_NERD, STAY, RIGHT, TEXT_ROUTE8_SUPER_NERD5, OPP_SUPER_NERD, 7     ; New trainer added by G-Dubs
+	object_event 21,  5, SPRITE_SUPER_NERD, STAY, LEFT, TEXT_ROUTE8_SUPER_NERD6, OPP_SUPER_NERD, 8      ; New trainer added by G-Dubs
 
 	def_warps_to ROUTE_8

@@ -333,6 +333,10 @@
 	const EVENT_BEAT_ROUTE_8_TRAINER_6	                                                 	       ; $427
 	const EVENT_BEAT_ROUTE_8_TRAINER_7                                                             ; $428
 	const EVENT_BEAT_ROUTE_8_TRAINER_8                                                             ; $429
+	const EVENT_BEAT_ROUTE_8_TRAINER_9	    ; New trainer added by G-Dubs                          ; $42A
+	const EVENT_BEAT_ROUTE_8_TRAINER_10	    ; New trainer added by G-Dubs                 	       ; $42B
+	const EVENT_BEAT_ROUTE_8_TRAINER_11     ; New trainer added by G-Dubs                          ; $42C
+	const EVENT_BEAT_ROUTE_8_TRAINER_12     ; New trainer added by G-Dubs                          ; $42D
 
 ; Route 9 Events
 	const_next $430
