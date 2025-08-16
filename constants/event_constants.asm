@@ -380,19 +380,20 @@
 	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_4                                                       ; $455
 	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_5                                                       ; $456
 	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_6                                                       ; $457
+	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_7     ; New trainer added by G-Dubs                     ; $458
 
 ; Power Plant Events
-	const_next $458
-	const_skip                                                                                     ; $458
-	const EVENT_BEAT_POWER_PLANT_VOLTORB_0                                                         ; $459
-	const EVENT_BEAT_POWER_PLANT_VOLTORB_1                                                         ; $45A
-	const EVENT_BEAT_POWER_PLANT_VOLTORB_2                                                         ; $45B
-	const EVENT_BEAT_POWER_PLANT_VOLTORB_3                                                         ; $45C
-	const EVENT_BEAT_POWER_PLANT_VOLTORB_4                                                         ; $45D
-	const EVENT_BEAT_POWER_PLANT_VOLTORB_5                                                         ; $45E
-	const EVENT_BEAT_POWER_PLANT_VOLTORB_6                                                         ; $45F
-	const EVENT_BEAT_POWER_PLANT_VOLTORB_7                                                         ; $460
-	const EVENT_BEAT_ZAPDOS                                                                        ; $461
+	const_next $460
+	const_skip                                                                                     ; $460
+	const EVENT_BEAT_POWER_PLANT_VOLTORB_0                                                         ; $461
+	const EVENT_BEAT_POWER_PLANT_VOLTORB_1                                                         ; $462
+	const EVENT_BEAT_POWER_PLANT_VOLTORB_2                                                         ; $463
+	const EVENT_BEAT_POWER_PLANT_VOLTORB_3                                                         ; $464
+	const EVENT_BEAT_POWER_PLANT_VOLTORB_4                                                         ; $465
+	const EVENT_BEAT_POWER_PLANT_VOLTORB_5                                                         ; $466
+	const EVENT_BEAT_POWER_PLANT_VOLTORB_6                                                         ; $467
+	const EVENT_BEAT_POWER_PLANT_VOLTORB_7                                                         ; $468
+	const EVENT_BEAT_ZAPDOS                                                                        ; $469
 
 ; Route 11 Events
 	const_next $470                                                           

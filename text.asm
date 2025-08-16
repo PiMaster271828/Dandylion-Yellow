@@ -45,6 +45,7 @@ INCLUDE "text/SSAnne1FRooms.asm"                 ; Moved from Text 1 by G-Dubs t
 INCLUDE "text/SSAnneB1FRooms.asm"                ; Moved from Text 1 by G-Dubs to avoid the Text Bank from growing too big
 INCLUDE "text/SSAnne2FRooms.asm"                 ; Moved from Text 1 by G-Dubs to avoid the Text Bank from growing too big
 INCLUDE "text/Route9.asm"                        ; Moved from Text 3 by G-Dubs to avoid the Text Bank from growing too big 
+INCLUDE "text/RockTunnel1F.asm"                  ; Moved from Text 3 by G-Dubs to avoid the Text Bank from growing too big
 
 
 SECTION "Text 2", ROMX
@@ -93,7 +94,6 @@ INCLUDE "text/UndergroundPathRoute7.asm"
 INCLUDE "text/UndergroundPathRoute7Copy.asm"
 INCLUDE "text/UndergroundPathRoute8.asm"
 INCLUDE "text/RockTunnelPokecenter.asm"
-INCLUDE "text/RockTunnel1F.asm"
 INCLUDE "text/PowerPlant.asm"
 INCLUDE "text/Route11Gate1F.asm"
 INCLUDE "text/Route11Gate2F.asm"

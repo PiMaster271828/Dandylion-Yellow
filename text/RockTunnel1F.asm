@@ -47,17 +47,17 @@ _RockTunnel1FHiker3AfterBattleText::
 	line "enough to hike!"
 	done
 
-_RockTunnel1FSuperNerdBattleText::
+_RockTunnel1FSuperNerd1BattleText::
 	text "#MON battle!"
 	line "Ready, go!"
 	done
 
-_RockTunnel1FSuperNerdEndBattleText::
+_RockTunnel1FSuperNerd1EndBattleText::
 	text "Game"
 	line "over!"
 	prompt
 
-_RockTunnel1FSuperNerdAfterBattleText::
+_RockTunnel1FSuperNerd1AfterBattleText::
 	text "Oh well, I'll get"
 	line "a ZUBAT as I go!"
 	done
@@ -106,6 +106,32 @@ _RockTunnel1FCooltrainerF3EndBattleText::
 _RockTunnel1FCooltrainerF3AfterBattleText::
 	text "Whew! I'm all"
 	line "sweaty now!"
+	done
+
+_RockTunnel1FSuperNerd2BattleText::
+	text "Heh heh heh..."
+    line "Isn't this cave"
+    cont "the best place?"
+    cont "So dark, so cool!"
+    
+	para "You look tough!"
+    line "You must have"
+    cont "rare #MON!"
+    cont "Let's battle!"
+	done
+
+_RockTunnel1FSuperNerd2EndBattleText::
+	text "Gwaah!"
+    line "My precious team!"
+    cont "How could you?"
+	prompt
+
+_RockTunnel1FSuperNerd2AfterBattleText::
+	text "Okay, you win."
+    line "You can leave my"
+    cont "special tunnel..."
+    cont "Lavender Town is"
+    cont "just ahead."
 	done
 
 _RockTunnel1FSignText::

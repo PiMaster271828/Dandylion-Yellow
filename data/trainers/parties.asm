@@ -286,11 +286,13 @@ Pokémaniac Alternate Sprite
     db 35, CUBONE, NIDORINO, RHYHORN, NIDOQUEEN, 0                                                           ; Pokémaniac 11          ; New trainer added by G-Dubs
 ; S.S. Anne Bow
     db 19, NIDORINO, SLOWPOKE, NIDORINA, 0                                                                   ; Pokémaniac 12          ; New trainer added by G-Dubs
+; Rock Tunnel 1F (Again)
+	db 23, RHYHORN, KANGASKHAN, 0                                                                            ; Pokémaniac 13          ; New trainer added by G-Dubs
 /*
 ; Route 23
-    db 45, NIDOKING, KANGASKHAN, CHARIZARD, SLOWBRO, LICKITUNG, LAPRAS, 0                                    ; Pokémaniac 13          ; New trainer added by G-Dubs
+    db 45, NIDOKING, KANGASKHAN, CHARIZARD, SLOWBRO, LICKITUNG, LAPRAS, 0                                    ; Pokémaniac 14          ; New trainer added by G-Dubs
 ; Safari Zone Area 2 Rest House
-    db 33, RHYHORN, PINSIR, TANGELA, KANGASKHAN, SCYTHER, MAROWAK, 0                                         ; Pokémaniac 14          ; New trainer added by G-Dubs
+    db 33, RHYHORN, PINSIR, TANGELA, KANGASKHAN, SCYTHER, MAROWAK, 0                                         ; Pokémaniac 15          ; New trainer added by G-Dubs
 */
 SuperNerdData:
 ; Mt. Moon 1F
