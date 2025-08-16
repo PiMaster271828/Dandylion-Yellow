@@ -115,9 +115,9 @@ PokemaniacSpriteHandler:
 	ld a, [wTrainerNo]
 	cp $08
 	ret c ; Trainers 0-7 -> Use default (PokemaniacPic)
-	cp $0B
-	jr nc, .PokemaniacDone ; Check if >= 11
-	; Trainers 8-10 -> Use Pokemaniac2Pic
+	cp $0E
+	jr nc, .PokemaniacDone ; Check if >= 14
+	; Trainers 8-13 -> Use Pokemaniac2Pic
 	ld de, Pokemaniac2Pic
 	call UpdateTrainerPicPointer
 	ret ; Done for this range
