@@ -84,7 +84,7 @@ Moves:
 	move ABSORB,        DRAIN_HP_EFFECT,             30, GRASS,        100, 20 ; Buffed power                                                         ; Move #71
 	move MEGA_DRAIN,    DRAIN_HP_EFFECT,             60, GRASS,        100, 10 ; Buffed power                                                         ; Move #72
 	move LEECH_SEED,    LEECH_SEED_EFFECT,            0, GRASS,         90, 10                                                                        ; Move #73
-	move GROWTH,        SPECIAL_UP1_EFFECT,           0, GRASS,        100, 40 ; Changed to Grass type                                                                       ; Move #74
+	move GROWTH,        SPECIAL_UP1_EFFECT,           0, GRASS,        100, 40 ; Changed to Grass type                                                ; Move #74
 	move RAZOR_LEAF,    NO_ADDITIONAL_EFFECT,        55, GRASS,         95, 25                                                                        ; Move #75
 	move SOLARBEAM,     CHARGE_EFFECT,              180, GRASS,        100, 10 ; Buffed power (Burn side effect to be added)                          ; Move #76
 	move POISONPOWDER,  POISON_EFFECT,                0, POISON,        85, 35 ; Buffed accuracy                                                      ; Move #77
@@ -97,7 +97,7 @@ Moves:
 	move THUNDERSHOCK,  PARALYZE_SIDE_EFFECT1,       40, ELECTRIC,     100, 30                                                                        ; Move #84
 	move THUNDERBOLT,   PARALYZE_SIDE_EFFECT1,       95, ELECTRIC,     100, 15                                                                        ; Move #85
 	move THUNDER_WAVE,  PARALYZE_EFFECT,              0, ELECTRIC,     100, 20                                                                        ; Move #86
-	move THUNDER,       PARALYZE_SIDE_EFFECT2,      120, ELECTRIC,      85, 10 ; Buffed accuracy                                                          ; Move #87
+	move THUNDER,       PARALYZE_SIDE_EFFECT2,      120, ELECTRIC,      85, 10 ; Buffed accuracy                                                      ; Move #87
 	move ROCK_THROW,    NO_ADDITIONAL_EFFECT,        55, ROCK,          90, 15 ; Buffed power & accuracy                                              ; Move #88
 	move EARTHQUAKE,    NO_ADDITIONAL_EFFECT,       100, GROUND,       100, 10 ; Unchanged (This is the best move in the game!)                       ; Move #89
 	move FISSURE,       OHKO_EFFECT,                  1, GROUND,        30,  5                                                                        ; Move #90
