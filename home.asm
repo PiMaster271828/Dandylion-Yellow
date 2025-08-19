@@ -85,3 +85,4 @@ INCLUDE "home/predef_text.asm"
 Section "Home 2", ROMX
 
 INCLUDE "home/alt_trainer_sprites_table.asm"
+INCLUDE "home/alt_pokemon_sprites_table.asm"
