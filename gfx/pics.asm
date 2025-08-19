@@ -66,7 +66,7 @@ SECTION "Pics 2", ROMX
 
 GrowlithePicFront::   INCBIN "gfx/pokemon/front/growlithe.pic"
 GrowlithePicBack::    INCBIN "gfx/pokemon/back/growlitheb.pic"
-OnixPicFront::        INCBIN "gfx/pokemon/front/onix.pic"
+OnixPicFront::        INCBIN "gfx/pokemon/front/onixsilver.pic"
 OnixPicBack::         INCBIN "gfx/pokemon/back/onixb.pic"
 FearowPicFront::      INCBIN "gfx/pokemon/front/fearow.pic"
 FearowPicBack::       INCBIN "gfx/pokemon/back/fearowb.pic"
@@ -326,6 +326,8 @@ VictreebelPicBack::    INCBIN "gfx/pokemon/back/victreebelb.pic"
 SECTION "Alt Pokemon Sprites", ROMX
 RMeowthPicFront::       INCBIN "gfx/pokemon/front/rmeowth.pic"            ; Rocket's Meowth sprite added by Vlad
 RMeowthPicBack::        INCBIN "gfx/pokemon/back/meowthb.pic"             ; Rocket's Meowth sprite added by Vlad
+BrockOnixPicFront::     INCBIN "gfx/pokemon/front/onix.pic"           
+BrockOnixPicBack::     INCBIN "gfx/pokemon/back/onixb.pic"   
 
 
 SECTION "Trainer Pics 1", ROMX
