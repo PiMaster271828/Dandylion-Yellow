@@ -940,6 +940,7 @@ TrainerBattleVictory:
 	ld b, MUSIC_DEFEATED_GYM_LEADER
 	ld hl, wStatusFlags7
 	set BIT_NO_MAP_MUSIC, [hl]
+	
 .notrival
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
@@ -961,6 +962,8 @@ TrainerBattleVictory:
 	ld c, 40
 	call DelayFrames
 	call PrintEndBattleText
+	xor a
+	ld [wTrainerClass], a
 ; win money
 	ld hl, MoneyForWinningText
 	call PrintText
@@ -1194,6 +1197,8 @@ HandlePlayerBlackOut:
 	call DelayFrames
 	ld hl, Rival1WinText
 	call PrintText
+	xor a
+	ld [wTrainerClass], a
 	ld a, [wCurMap]
 	cp OAKS_LAB
 	ret z            ; starter battle in oak's lab: don't black out
@@ -1207,6 +1212,8 @@ HandlePlayerBlackOut:
 	ld hl, LinkBattleLostText
 .noLinkBattle
 	call PrintText
+	xor a
+	ld [wTrainerClass], a
 	ld a, [wStatusFlags6]
 	res BIT_ALWAYS_ON_BIKE, a
 	ld [wStatusFlags6], a

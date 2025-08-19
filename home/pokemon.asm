@@ -117,8 +117,17 @@ LoadFrontSpriteByMonIndex::
 	ret
 .validDexNumber
 	push hl
+	ld a, [wTrainerClass]
+	ld b, a
+	xor a
+	ld [wTrainerClass], a
+	xor a
+	push bc
 	ld de, vFrontPic
 	call LoadMonFrontSprite
+	pop bc
+	ld a, b
+	ld [wTrainerClass], a
 	pop hl
 	ldh a, [hLoadedROMBank]
 	push af

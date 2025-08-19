@@ -25,31 +25,74 @@ UncompressMonSprite::
 	ld a, [wCurPartySpecies]
 	cp FOSSIL_KABUTOPS
 	ld a, BANK(FossilKabutopsPic)
-	jr z, .GotBank
+	jr z, .GotBank1
 	ld a, b
 	cp TANGELA + 1
 	ld a, BANK("Pics 1")
-	jr c, .GotBank
+	jr c, .GotBank1
 	ld a, b
 	cp MOLTRES + 1
 	ld a, BANK("Pics 2")
-	jr c, .GotBank
+	jr c, .GotBank1
 	ld a, b
 	cp BEEDRILL + 2
 	ld a, BANK("Pics 3")
-	jr c, .GotBank
+	jr c, .GotBank1
 	ld a, b
 	cp STARMIE + 1
 	ld a, BANK("Pics 4")
-	jr c, .GotBank
+	jr c, .GotBank1
 	ld a, BANK("Pics 5")
-	jp .GotBank
+	jp .GotBank1
 .Alternate
 	ld a, BANK("Alt Pokemon Sprites")
-.GotBank
+.GotBank1
 	jp UncompressSpriteData
 
 ; de: destination location
+
+UncompressMonBackSprite::
+	ld bc, wMonHeader
+	add hl, bc
+	ld a, [hli]
+	ld [wSpriteInputPtr], a    ; fetch sprite input pointer
+	ld a, [hl]
+	ld [wSpriteInputPtr+1], a
+; define (by index number) the bank that a pokemon's image is in
+; index = MEW:             bank $1
+; index = FOSSIL_KABUTOPS: bank $B
+;       index < $1F:       bank $9 ("Pics 1")
+; $1F ≤ index < $4A:       bank $A ("Pics 2")
+; $4A ≤ index < $74:       bank $B ("Pics 3")
+; $74 ≤ index < $99:       bank $C ("Pics 4")
+; $99 ≤ index:             bank $D ("Pics 5")
+	ld a, [wCurPartySpecies]
+	ld b, a
+	ld a, [wCurPartySpecies]
+	cp FOSSIL_KABUTOPS
+	ld a, BANK(FossilKabutopsPic)
+	jr z, .GotBank2
+	ld a, b
+	cp TANGELA + 1
+	ld a, BANK("Pics 1")
+	jr c, .GotBank2
+	ld a, b
+	cp MOLTRES + 1
+	ld a, BANK("Pics 2")
+	jr c, .GotBank2
+	ld a, b
+	cp BEEDRILL + 2
+	ld a, BANK("Pics 3")
+	jr c, .GotBank2
+	ld a, b
+	cp STARMIE + 1
+	ld a, BANK("Pics 4")
+	jr c, .GotBank2
+	ld a, BANK("Pics 5")
+	jp .GotBank2
+.GotBank2
+	jp UncompressSpriteData
+	
 LoadMonFrontSprite::
 	push de
 	ld hl, wMonHFrontSprite - wMonHeader
