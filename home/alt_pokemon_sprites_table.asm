@@ -1,0 +1,84 @@
+CheckAlternatePokemonSprite::
+; Compact version assuming all alternate sprites are in same bank
+; Returns: carry set if alternate sprite loaded, clear if using normal sprite
+	ld hl, AlternatePokemonSpriteTable
+	
+.tableLoop
+	ld a, [hli]  ; trainer class
+	cp $FF
+	jr z, .noAlternate
+	
+	ld b, a
+	ld a, [wTrainerClass]
+	cp b
+	jr nz, .skipEntry
+	
+	ld a, [hli]  ; pokemon species  
+	ld b, a
+	ld a, [wCurPartySpecies]
+	cp b
+	jr z, .foundMatch
+	
+	; Skip sprite pointer (2 bytes)
+	inc hl
+	inc hl
+	jr .tableLoop
+	
+.skipEntry
+	; Skip pokemon + sprite pointer (3 bytes)
+	inc hl
+	inc hl  
+	inc hl
+	jr .tableLoop
+
+.foundMatch
+	ld a, [hli]  ; sprite pointer low
+	ld [wSpriteInputPtr], a
+	ld a, [hl]   ; sprite pointer high
+	ld [wSpriteInputPtr + 1], a
+	scf
+	ret
+
+.noAlternate
+	and a
+	ret
+
+; COMPACT TABLE - Only 4 bytes per entry (no bank stored)
+AlternatePokemonSpriteTable:
+	db JESSIE_JAMES, MEOWTH, LOW(RMeowthPicFront), HIGH(RMeowthPicFront)					; JESSIE_JAMES
+	db JESSIE_JAMES, KOFFING, LOW(RKoffingPicFront), HIGH(RKoffingPicFront)
+	db JESSIE_JAMES, WEEZING, LOW(RWeezingPicFront), HIGH(RWeezingPicFront)
+	db JESSIE_JAMES, VICTREEBEL, LOW(RVictreebelPicFront), HIGH(RVictreebelPicFront)
+	db JESSIE_JAMES, ARBOK, LOW(RArbokPicFront), HIGH(RArbokPicFront)
+	db JESSIE_JAMES, EKANS, LOW(REkansPicFront), HIGH(REkansPicFront)
+	db BROCK, ONIX, LOW(BrockOnixPicFront), HIGH(BrockOnixPicFront)							; BROCK
+	db MISTY, PSYDUCK, LOW(MistyPsyduckPicFront), HIGH(MistyPsyduckPicFront)				; MISTY
+	db MISTY, STARYU, LOW(MistyStaryuPicFront), HIGH(MistyStaryuPicFront) 
+	db MISTY, STARMIE, LOW(MistyStarmiePicFront), HIGH(MistyStarmiePicFront) 				
+	db LT_SURGE, RAICHU, LOW(LtSurgeRaichuPicFront), HIGH(LtSurgeRaichuPicFront)			; LT_SURGE
+	db LT_SURGE, FEAROW, LOW(LtSurgeFearowPicFront), HIGH(LtSurgeFearowPicFront)	
+	db ERIKA, VILEPLUME, LOW(ErikaVileplumePicFront), HIGH(ErikaVileplumePicFront)			; ERIKA
+	db KOGA, WEEZING, LOW(KogaWeezingPicFront), HIGH(KogaWeezingPicFront)					; KOGA			
+	db KOGA, VENOMOTH, LOW(KogaVenomothPicFront), HIGH(KogaVenomothPicFront)				
+	db BLACKBELT, HITMONLEE, LOW(KarateHitmonleePicFront), HIGH(KarateHitmonleePicFront)	; KARATE MASTER
+	db BLACKBELT, HITMONCHAN, LOW(KarateHitmonchanPicFront), HIGH(KarateHitmonchanPicFront)
+	db SABRINA, KADABRA, LOW(SabrinaKadabraPicFront), HIGH(SabrinaKadabraPicFront)			; SABRINA
+	db SABRINA, ALAKAZAM, LOW(SabrinaAlakazamPicFront), HIGH(SabrinaAlakazamPicFront)
+	db BLAINE, ARCANINE, LOW(BlaineArcaninePicFront), HIGH(BlaineArcaninePicFront)			; BLAINE
+	db BLAINE, MAGMAR, LOW(BlaineMagmarPicFront), HIGH(BlaineMagmarPicFront)
+	db GIOVANNI, PERSIAN, LOW(GiovanniPersianPicFront), HIGH(GiovanniPersianPicFront)		; GIOVANNI
+	db GIOVANNI, RHYDON, LOW(GiovanniRhydonPicFront), HIGH(GiovanniRhydonPicFront)
+	db LORELEI, DEWGONG, LOW(LoreleiDewgongPicFront), HIGH(LoreleiDewgongPicFront)			; LORELEI
+	db LORELEI, CLOYSTER, LOW(LoreleiCloysterPicFront), HIGH(LoreleiCloysterPicFront)
+	db LORELEI, SLOWBRO, LOW(LoreleiSlowbroPicFront), HIGH(LoreleiSlowbroPicFront)
+	db LORELEI, LAPRAS, LOW(LoreleiLaprasPicFront), HIGH(LoreleiLaprasPicFront)
+	db BRUNO, HITMONLEE, LOW(BrunoHitmonleePicFront), HIGH(BrunoHitmonleePicFront)			; BRUNO
+	db BRUNO, HITMONCHAN, LOW(BrunoHitmonchanPicFront), HIGH(BrunoHitmonchanPicFront)
+	db BRUNO, ONIX, LOW(BrunoOnixPicFront), HIGH(BrunoOnixPicFront)
+	db BRUNO, MACHAMP, LOW(BrunoMachampPicFront), HIGH(BrunoMachampPicFront)
+	db AGATHA, ARBOK, LOW(AgathaArbokPicFront), HIGH(AgathaArbokPicFront)					; AGATHA
+	db AGATHA, GENGAR, LOW(AgathaGengarPicFront), HIGH(AgathaGengarPicFront)
+	db LANCE, GYARADOS, LOW(LanceGyaradosPicFront), HIGH(LanceGyaradosPicFront)				; LANCE
+	db LANCE, DRAGONAIR, LOW(LanceDragonairPicFront), HIGH(LanceDragonairPicFront)
+	db LANCE, DRAGONITE, LOW(LanceDragonitePicFront), HIGH(LanceDragonitePicFront)
+	db $FF

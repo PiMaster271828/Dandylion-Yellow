@@ -182,7 +182,7 @@ LoadMonBackPic:
 	lb bc, 7, 8
 	call ClearScreenArea
 	ld hl,  wMonHBackSprite - wMonHeader
-	call UncompressMonSprite
+	call UncompressMonBackSprite
 	predef ScaleSpriteByTwo
 	ld de, vBackPic
 	call InterlaceMergeSpriteBuffers ; combine the two buffers to a single 2bpp sprite
