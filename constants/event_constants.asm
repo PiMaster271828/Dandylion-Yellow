@@ -381,6 +381,8 @@
 	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_5                                                       ; $456
 	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_6                                                       ; $457
 	const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_7     ; New trainer added by G-Dubs                     ; $458
+    const EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_8     ; New trainer added by G-Dubs                     ; $459
+	
 
 ; Power Plant Events                             ; Power Plant Events Section added by G-Dubs
 	const_next $460
@@ -942,17 +944,21 @@ DEF INDIGO_PLATEAU_EVENTS_END EQU const_value - 1
 	const_skip 4
 	const EVENT_VICTORY_ROAD_1_BOULDER_ON_SWITCH
 
-; Rock Tunnel 2F Events
+; Rock Tunnel B1F Events
 	const_next $9B0
-	const_skip
-	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_0
-	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_1
-	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_2
-	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_3
-	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_4
-	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_5
-	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_6
-	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_7
+	const_skip                                                                                     ; $9B0
+	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_0                                                       ; $9B1
+	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_1                                                       ; $9B2
+	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_2                                                       ; $9B3
+	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_3                                                       ; $9B4
+	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_4                                                       ; $9B5
+	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_5                                                       ; $9B6
+	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_6                                                       ; $9B7
+	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_7                                                       ; $9B8
+	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_8     ; New trainer added by G-Dubs                     ; $9B9
+	const EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_9     ; New trainer added by G-Dubs                     ; $9BA
+	const_skip 5                                                                                   ; $9BB - $9BF
+
 
 ; Seafoam Islands Events
 	const_next $9C0

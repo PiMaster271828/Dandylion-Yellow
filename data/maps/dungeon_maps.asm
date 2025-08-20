@@ -10,6 +10,7 @@ DungeonMaps1:
 	db ROCK_TUNNEL_1F
 	db SEAFOAM_ISLANDS_1F
 	db ROCK_TUNNEL_B1F
+	db ROCK_TUNNEL_B2F       ; New map added by G-Dubs
 	db -1 ; end
 
 ; GetBattleTransitionID_IsDungeonMap checks if wCurMap

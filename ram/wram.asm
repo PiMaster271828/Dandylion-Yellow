@@ -2190,7 +2190,7 @@ wRedsHouse2FCurScript:: db
 wViridianMartCurScript:: db
 wRoute22GateCurScript:: db
 wCeruleanCityCurScript:: db
-	ds 6                               ; Changed from 7 to 6 by G-Dubs to make room for other scripts  
+	ds 5                               ; Changed from 7 to 5 by G-Dubs to make room for other scripts  
 wSSAnneBowCurScript:: db
 wSSAnneKitchenCurScript:: db           ; SS Anne Kitchen script added by G-Dubs (reduced total ds by 1)
 wViridianForestCurScript:: db
@@ -2201,6 +2201,7 @@ wRoute17CurScript:: db
 wRoute19CurScript:: db
 wRoute21CurScript:: db
 wSafariZoneGateCurScript:: db
+wRockTunnelB2FCurScript:: db           ; Rock Tunnel B2F script added by G-Dubs (reduced total ds by 1)
 wRockTunnelB1FCurScript:: db
 wRockTunnel1FCurScript:: db
 wRoute11CurScript:: db

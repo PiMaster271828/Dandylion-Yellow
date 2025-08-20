@@ -250,4 +250,5 @@ MapHeaderBanks::
 	db BANK(BrunosRoom_h)
 	db BANK(AgathasRoom_h)
 	db BANK(SummerBeachHouse_h)
+	db BANK(RockTunnelB2F_h)      ; New map added by G-Dubs
 	assert_table_length NUM_MAPS

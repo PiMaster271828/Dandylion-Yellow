@@ -5,7 +5,7 @@ RockTunnel1FWildMons:
 	db 21, ZUBAT          ; 15%
 	db 22, ZUBAT          ; 10%
 	db 20, GEODUDE        ; 10%
-	db 22, MANKEY         ; 10%
+	db 22, GEODUDE        ; 10%
 	db 21, MACHOP         ;  5%
 	db 23, MACHOP         ;  5%
 	db 20, CUBONE         ;  4%
@@ -13,8 +13,7 @@ RockTunnel1FWildMons:
 	end_grass_wildmons
 	
 	; Zubat    45%
-    ; Geodude  30%
-	; Mankey   10%
+    ; Geodude  40%
     ; Machop   10%
 	; Cubone    4%
 	; Onix      1%      	

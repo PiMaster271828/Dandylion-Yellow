@@ -142,6 +142,7 @@ BugCatcherData:
 ; Victory Road  
     db 50, BUTTERFREE, PARASECT, BEEDRILL, VENOMOTH, 0                                                       ; Bug Catcher 28         ; New Trainer added by G-Dubs
 */
+
 LassData:
 ; Route 3
 	db 9, PIDGEY, PIDGEY, 0                                                                                  ; Lass 1
@@ -167,17 +168,22 @@ LassData:
 	db 24, MEOWTH, MEOWTH, MEOWTH, 0                                                                         ; Lass 14
 	db 19, PIDGEY, RATTATA, NIDORAN_F, MEOWTH, NIDORAN_M, PIKACHU, 0                                         ; Lass 15                ; Pikachu from Red/Blue added by G-Dubs
 	db 22, CLEFAIRY, CLEFAIRY, 0                                                                             ; Lass 16
-; Celadon Gym
+; (Formerly Celadon Gym) 
 	db 23, BELLSPROUT, WEEPINBELL, 0		                                                                 ; Lass 17
 	db 23, ODDISH, GLOOM, 0				                                                                     ; Lass 18
 ; Viridian Forest (Again)
 	db 6, NIDORAN_F, NIDORAN_M, 0                                                                            ; Lass 19                ; Yellow exclusive Lass in Viridian Forest (Poor coding)
 ; Route 4 (Again)
     db $FF, 14, JIGGLYPUFF, 13, PARAS, 12, GEODUDE, 13, NIDORAN_F, 14, CLEFAIRY, 0                           ; Lass 20                ; New Trainer added by G-Dubs
-; Route 24
-    db 15, LAPRAS, 0                                                                                         ; Lass 21                ; New trainer added by G-Dubs 
+; Rock Tunnel 1F
+    db 24, CLEFAIRY, NIDORAN_F, GEODUDE, JIGGLYPUFF, 0                                                       ; Lass 21                ; New trainer added by G-Dubs 
+/********************
+Lass Alternate Sprite
+********************/
 ; Route 9
 	db 21, MEOWTH, PIDGEY, PIKACHU, NIDORAN_F, JIGGLYPUFF, 0                                                 ; Lass 22                ; New trainer added by G-Dubs
+; Rock Tunnel B1F 
+    db $FF, 19, VULPIX, 21, CLEFAIRY, 23, EEVEE, 25, LAPRAS, 0                                               ; Lass 23                ; New trainer added by G-Dubs
 
 SailorData:
 ; SS Anne Stern
@@ -765,7 +771,9 @@ CooltrainerFData:
 ; Route 24
     db 15, LAPRAS, 0                                                                                         ; Cooltrainer ♀ 9        ; New trainer added by G-Dubs
 ; Route 12
-    db 28, POLIWHIRL, GLOOM, NINETALES, 0                                                                    ; Cooltrainer ♀ 10       ; New trainer added by G-Dubs
+    db 28, SEADRA, GLOOM, NINETALES, 0                                                                       ; Cooltrainer ♀ 10       ; New trainer added by G-Dubs
+; Rock Tunnel B1F   
+    db 25, PIDGEOTTO, WEEPINBELL, POLIWHIRL, SANDSLASH, KADABRA, 0                                           ; Cooltrainer ♀ 11       ; New trainer added by G-Dubs                                          
 
 BrunoData:
 ; First Battle

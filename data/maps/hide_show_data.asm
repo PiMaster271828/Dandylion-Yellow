@@ -200,7 +200,7 @@ MapHSPointers:
 	dw VictoryRoad2FHS              ; C2 - Victory Road 2F
 	dw NoHS                         ; C3 - Route 12 Gate 2F
 	dw NoHS                         ; C4 - Vermilion  Trade House
-	dw NoHS                         ; C5 - Diggletts Cave
+	dw NoHS                         ; C5 - Digletts Cave
 	dw VictoryRoad3FHS              ; C6 - Victory Road 3F
 	dw RocketHideoutB1FHS           ; C7 - Rocket Hideout B1F
 	dw RocketHideoutB2FHS           ; C8 - Rocket Hideout B2F
@@ -235,7 +235,7 @@ MapHSPointers:
 	dw NoHS                         ; E5 - Name Rater's House
 	dw NoHS                         ; E6 - Cerulean Badge House
 	dw NoHS                         ; E7 - **Unused**
-	dw NoHS                         ; E8 - Rock Tunne B1F
+	dw NoHS                         ; E8 - Rock Tunnel B1F
 	dw SilphCo9FHS                  ; E9 - Silph Co 9F
 	dw SilphCo10FHS                 ; EA - Silph Co 10F
 	dw SilphCo11FHS                 ; EB - Silph Co 11F
@@ -252,6 +252,7 @@ MapHSPointers:
 	dw NoHS                         ; F6 - Bruno's Room
 	dw NoHS                         ; F7 - Agatha's Room
 	dw NoHS                         ; F8 - Summer Beach House
+	dw NoHS                         ; F9 - Rock Tunnel B2F           ; New map added by G-Dubs
 	assert_table_length NUM_MAPS
 	dw -1 ; end
 

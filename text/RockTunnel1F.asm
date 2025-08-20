@@ -108,7 +108,7 @@ _RockTunnel1FCooltrainerF3AfterBattleText::
 	line "sweaty now!"
 	done
 
-_RockTunnel1FSuperNerd2BattleText::
+_RockTunnel1FSuperNerd2BattleText::              ; New trainer added by G-Dubs
 	text "Heh heh heh..."
     line "Isn't this cave"
     cont "the best place?"
@@ -130,8 +130,37 @@ _RockTunnel1FSuperNerd2AfterBattleText::
 	text "Okay, you win."
     line "You can leave my"
     cont "special tunnel..."
-    cont "Lavender Town is"
+    cont "LAVENDER TOWN is"
     cont "just ahead."
+	done
+
+_RockTunnel1FCooltrainerF4BattleText::           ; New trainer added by G-Dubs
+    text "My GEODUDE is"
+	line "like the cutest"
+	cont "GEODUDE ever!"
+	cont "You should see"
+	cont "it in battle."
+	done
+
+_RockTunnel1FCooltrainerF4EndBattleText::
+    text "Oh-no!"
+	line "You beat my"
+	cont "GEODUDE, you"
+	cont "meanie!"
+	prompt
+
+_RockTunnel1FCooltrainerF4AfterBattleText::
+    text "Don't worry about"
+	line "my GEODUDE, I"
+	cont "have a POTION."
+
+	para "I'll need it,"
+	line "since I can't"
+	cont "find my way out"
+	cont "to go to the"
+	cont "#CENTER. It's"
+	cont "dark in here, I"
+	cont "wish I had FLASH."
 	done
 
 _RockTunnel1FSignText::

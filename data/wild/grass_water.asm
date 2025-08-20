@@ -249,6 +249,7 @@ WildDataPointers:
 	dw NothingWildMons
 	dw NothingWildMons
 	dw NothingWildMons
+	dw RockTunnelB2FWildMons  ; New map added by G-Dubs   
 	assert_table_length NUM_MAPS
 	dw -1 ; end
 
@@ -328,3 +329,4 @@ INCLUDE "data/wild/maps/ViridianCity.asm"             ; New WildMons file added 
 INCLUDE "data/wild/maps/CeruleanCity.asm"             ; New WildMons file added by G-Dubs
 INCLUDE "data/wild/maps/VermilionCity.asm"            ; New WildMons file added by G-Dubs
 INCLUDE "data/wild/maps/CeladonCity.asm"              ; New WildMons file added by G-Dubs
+INCLUDE "data/wild/maps/RockTunnelB2F.asm"            ; New WildMons file added by G-Dubs

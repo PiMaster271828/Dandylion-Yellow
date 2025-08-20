@@ -62,10 +62,12 @@ RockTunnel1F_TextPointers:
 	dw_const RockTunnel1FCooltrainerF2Text, TEXT_ROCKTUNNEL1F_COOLTRAINER_F2
 	dw_const RockTunnel1FCooltrainerF3Text, TEXT_ROCKTUNNEL1F_COOLTRAINER_F3
     dw_const RockTunnel1FSuperNerd2Text,    TEXT_ROCKTUNNEL1F_SUPER_NERD2      ; New trainer added by G-Dubs
-
-   ;dw_const PickUpItemText,                TEXT_ROCKTUNNEL1F_RARE_CANDY       ; Temporary item (Until the TM for Steel wing is added)
+	dw_const RockTunnel1FCooltrainerF4Text, TEXT_ROCKTUNNEL1F_COOLTRAINER_F4   ; New trainer added by G-Dubs
+   ;dw_const PickUpItemText,                TEXT_ROCKTUNNEL1F_NUGGET           ; New item added by G-Dubs
+   ;dw_const PickUpItemText,                TEXT_ROCKTUNNEL1F_RARE_CANDY       ; New item added by G-Dubs
    ;dw_const PickUpItemText,                TEXT_ROCKTUNNEL1F_TM_STEEL_WING    ; New TM added by G-Dubs (TM 51 Steel Wing) 
 	dw_const BoulderText,                   TEXT_ROCKTUNNEL1F_BOULDER1         ; New Strength Boulder added by G-Dubs
+	dw_const BoulderText,                   TEXT_ROCKTUNNEL1F_BOULDER2         ; New Strength Boulder added by G-Dubs
 	dw_const RockTunnel1FSignText,          TEXT_ROCKTUNNEL1F_SIGN
 
 RockTunnel1TrainerHeaders:
@@ -85,7 +87,9 @@ RockTunnel1TrainerHeader5:
 RockTunnel1TrainerHeader6:
 	trainer EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_6, 4, RockTunnel1FCooltrainerF3BattleText, RockTunnel1FCooltrainerF3EndBattleText, RockTunnel1FCooltrainerF3AfterBattleText
 RockTunnel1TrainerHeader7:
-	trainer EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_7, 3, RockTunnel1FSuperNerd2BattleText, RockTunnel1FSuperNerd2EndBattleText, RockTunnel1FSuperNerd2AfterBattleText	
+	trainer EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_7, 3, RockTunnel1FSuperNerd2BattleText, RockTunnel1FSuperNerd2EndBattleText, RockTunnel1FSuperNerd2AfterBattleText	             ; New trainer added by G-Dubs
+RockTunnel1TrainerHeader8:	
+	trainer EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_8, 4, RockTunnel1FCooltrainerF4BattleText, RockTunnel1FCooltrainerF4EndBattleText, RockTunnel1FCooltrainerF4AfterBattleText     ; New trainer added by G-Dubs
 	db -1 ; end
 
 RockTunnel1FHiker1Text:
@@ -121,14 +125,21 @@ RockTunnel1FCooltrainerF2Text:
 RockTunnel1FCooltrainerF3Text:
 	text_asm
 	ld hl, RockTunnel1TrainerHeader6
-RockTunnel1FTalkToTrainer:
-	call TalkToTrainer
-	jp TextScriptEnd
+    jr RockTunnel1FTalkToTrainer
 
 RockTunnel1FSuperNerd2Text:                 ; New trainer added by G-Dubs
 	text_asm
 	ld hl, RockTunnel1TrainerHeader7
 	jr RockTunnel1FTalkToTrainer
+
+RockTunnel1FCooltrainerF4Text:
+	text_asm
+	ld hl, RockTunnel1TrainerHeader8        ; New trainer added by G-Dubs
+    jr RockTunnel1FTalkToTrainer
+
+RockTunnel1FTalkToTrainer:
+	call TalkToTrainer
+	jp TextScriptEnd
 
 RockTunnel1FHiker1BattleText:
 	text_far _RockTunnel1FHiker1BattleText
@@ -224,6 +235,18 @@ RockTunnel1FSuperNerd2EndBattleText:
 
 RockTunnel1FSuperNerd2AfterBattleText:
 	text_far _RockTunnel1FSuperNerd2AfterBattleText
+	text_end
+
+RockTunnel1FCooltrainerF4BattleText:                       ; New trainer added by G-Dubs
+	text_far _RockTunnel1FCooltrainerF4BattleText
+	text_end
+
+RockTunnel1FCooltrainerF4EndBattleText:
+	text_far _RockTunnel1FCooltrainerF4EndBattleText
+	text_end
+
+RockTunnel1FCooltrainerF4AfterBattleText:
+	text_far _RockTunnel1FCooltrainerF4AfterBattleText
 	text_end
 
 RockTunnel1FSignText:

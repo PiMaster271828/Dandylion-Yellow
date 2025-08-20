@@ -401,6 +401,11 @@ INCLUDE "data/maps/headers/Route7.asm"
 INCLUDE "data/maps/objects/Route7.asm"
 Route7_Blocks: INCBIN "maps/Route7.blk"
 
+INCLUDE "data/maps/headers/RockTunnelB2F.asm"              ; New map files added by G-Dubs
+INCLUDE "scripts/RockTunnelB2F.asm"
+INCLUDE "data/maps/objects/RockTunnelB2F.asm"
+RockTunnelB2F_Blocks: INCBIN "maps/RockTunnelB2F.blk"
+
 CeladonPokecenter_Blocks:
 RockTunnelPokecenter_Blocks:
 MtMoonPokecenter_Blocks: INCBIN "maps/MtMoonPokecenter.blk"

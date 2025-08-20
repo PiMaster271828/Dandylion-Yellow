@@ -1,4 +1,4 @@
-RockTunnelB1FWildMons:
+RockTunnelB2FWildMons:
 	def_grass_wildmons 15 ; encounter rate
 	db 22, ZUBAT          ; 20%
 	db 22, GEODUDE        ; 20%
@@ -8,8 +8,8 @@ RockTunnelB1FWildMons:
 	db 22, GOLBAT         ; 10%
 	db 25, MACHOKE        ;  5%
 	db 25, GRAVELER       ;  5%
-	db 25, MAROWAK        ;  4%
-	db 24, KANGASKHAN     ;  1%
+	db 24, KANGASKHAN     ;  4%
+	db 20, DITTO          ;  1%
 	end_grass_wildmons
 
     ; Zubat       20%
@@ -20,8 +20,8 @@ RockTunnelB1FWildMons:
 	; Golbat      10%
 	; Machoke      5%
 	; Graveler     5%
-	; Marowak      4%
-	; Kangaskhan   1%
+	; Kangaskhan   4%
+	; Ditto        1%
 
 	def_water_wildmons 0 ; encounter rate
 	end_water_wildmons

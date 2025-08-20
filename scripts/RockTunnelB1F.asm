@@ -23,6 +23,11 @@ RockTunnelB1F_TextPointers:
 	dw_const RockTunnelB1FCooltrainerF2Text, TEXT_ROCKTUNNELB1F_COOLTRAINER_F2
 	dw_const RockTunnelB1FHiker3Text,        TEXT_ROCKTUNNELB1F_HIKER3
 	dw_const RockTunnelB1FSuperNerd3Text,    TEXT_ROCKTUNNELB1F_SUPER_NERD3
+	dw_const RockTunnelB1FCooltrainerF3Text, TEXT_ROCKTUNNELB1F_COOLTRAINER_F3      ; New trainer added by G-Dubs
+	dw_const RockTunnelB1FCooltrainerF4Text, TEXT_ROCKTUNNELB1F_COOLTRAINER_F4      ; New trainer added by G-Dubs
+   ;dw_const PickUpItemText,                 TEXT_ROCKTUNNELB1F_MAX_ETHER           ; New item added by G-Dubs
+   ;dw_const PickUpItemText,                 TEXT_ROCKTUNNELB1F_REVIVE              ; New item added by G-Dubs
+   ;dw_const PickUpItemText,                 TEXT_ROCKTUNNELB1F_TM_ROCK_TOMB        ; New item added by G-Dubs
 
 RockTunnel2TrainerHeaders:
 	def_trainers
@@ -42,6 +47,10 @@ RockTunnel2TrainerHeader6:
 	trainer EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_6, 3, RockTunnelB1FHiker3BattleText, RockTunnelB1FHiker3EndBattleText, RockTunnelB1FHiker3AfterBattleText
 RockTunnel2TrainerHeader7:
 	trainer EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_7, 3, RockTunnelB1FSuperNerd3BattleText, RockTunnelB1FSuperNerd3EndBattleText, RockTunnelB1FSuperNerd3AfterBattleText
+RockTunnel2TrainerHeader8:
+	trainer EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_8, 4, RockTunnelB1FCooltrainerF3BattleText, RockTunnelB1FCooltrainerF3EndBattleText, RockTunnelB1FCooltrainerF3AfterBattleText   ; New trainer added by G-Dubs
+RockTunnel2TrainerHeader9:	
+	trainer EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_9, 3, RockTunnelB1FCooltrainerF4BattleText, RockTunnelB1FCooltrainerF4EndBattleText, RockTunnelB1FCooltrainerF4AfterBattleText	  ; New trainer added by G-Dubs
 	db -1 ; end
 
 RockTunnelB1FCooltrainerF1Text:
@@ -89,6 +98,18 @@ RockTunnelB1FHiker3Text:
 RockTunnelB1FSuperNerd3Text:
 	text_asm
 	ld hl, RockTunnel2TrainerHeader7
+	call TalkToTrainer
+	jp TextScriptEnd
+
+RockTunnelB1FCooltrainerF3Text:             ; New trainer added by G-Dubs
+	text_asm
+	ld hl, RockTunnel2TrainerHeader8
+	call TalkToTrainer
+	jp TextScriptEnd
+
+RockTunnelB1FCooltrainerF4Text:             ; New trainer added by G-Dubs 
+	text_asm
+	ld hl, RockTunnel2TrainerHeader9
 	call TalkToTrainer
 	jp TextScriptEnd
 
@@ -186,4 +207,28 @@ RockTunnelB1FSuperNerd3EndBattleText:
 
 RockTunnelB1FSuperNerd3AfterBattleText:
 	text_far _RockTunnelB1FSuperNerd3AfterBattleText
+	text_end
+
+RockTunnelB1FCooltrainerF3BattleText:                      ; New trainer added by G-Dubs
+	text_far _RockTunnelB1FCooltrainerF3BattleText
+	text_end
+
+RockTunnelB1FCooltrainerF3EndBattleText:
+	text_far _RockTunnelB1FCooltrainerF3EndBattleText
+	text_end
+
+RockTunnelB1FCooltrainerF3AfterBattleText:
+	text_far _RockTunnelB1FCooltrainerF3AfterBattleText
+	text_end
+
+RockTunnelB1FCooltrainerF4BattleText:                      ; New trainer added by G-Dubs
+	text_far _RockTunnelB1FCooltrainerF4BattleText
+	text_end
+
+RockTunnelB1FCooltrainerF4EndBattleText:
+	text_far _RockTunnelB1FCooltrainerF4EndBattleText
+	text_end
+
+RockTunnelB1FCooltrainerF4AfterBattleText:
+	text_far _RockTunnelB1FCooltrainerF4AfterBattleText
 	text_end

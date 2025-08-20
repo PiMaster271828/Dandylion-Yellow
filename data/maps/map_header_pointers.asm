@@ -250,4 +250,5 @@ MapHeaderPointers::
 	dw BrunosRoom_h
 	dw AgathasRoom_h
 	dw SummerBeachHouse_h
+	dw RockTunnelB2F_h                 ; New map added by G-Dubs
 	assert_table_length NUM_MAPS
