@@ -333,6 +333,7 @@ SECTION "Trainer Pics 1", ROMX
 YoungsterPic::     INCBIN "gfx/trainers/youngster.pic"
 BugCatcherPic::    INCBIN "gfx/trainers/bugcatcher.pic"
 LassPic::          INCBIN "gfx/trainers/lass.pic"
+Lass2Pic::         INCBIN "gfx/trainers/lass_alt.pic"                     ; Alt trainer sprite added by G-Dubs
 SailorPic::        INCBIN "gfx/trainers/sailor.pic"
 JrTrainerMPic::    INCBIN "gfx/trainers/jr.trainerm.pic"
 JrTrainerFPic::    INCBIN "gfx/trainers/jr.trainerf.pic"
@@ -346,7 +347,7 @@ BurglarPic::       INCBIN "gfx/trainers/burglar.pic"
 EngineerPic::      INCBIN "gfx/trainers/engineer.pic"
 FisherPic::        INCBIN "gfx/trainers/fisher.pic"
 SwimmerPic::       INCBIN "gfx/trainers/swimmer.pic"
-Swimmer2Pic::       INCBIN "gfx/trainers/swimmer_female_10.pic"           ; Alt trainer sprite added by G-Dubs (Swimmer in Cerulean City Gym)
+Swimmer2Pic::      INCBIN "gfx/trainers/swimmer_female_10.pic"            ; Alt trainer sprite added by G-Dubs (Swimmer in Cerulean City Gym)
 ;Swimmer3Pic::      INCBIN "gfx/trainers/swimmer_female_12.pic"
 ;Swimmer4Pic::      INCBIN "gfx/trainers/triathlete_biker_female.pic"
 ;Swimmer5Pic::      INCBIN "gfx/trainers/cooltrainer_male_alt.pic"

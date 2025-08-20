@@ -38,16 +38,16 @@ HandleAlternateTrainerSprite::
 ; -----------------------------------------------------------------
 TrainerSpriteJumpTable: ; Index (Decimal), Class ID (Hex) Comment
 	; Index $00 (Class $01 YOUNGSTER)
-	dw DefaultTrainerSpriteHandler ; 0, $01: YOUNGSTER
-	dw DefaultTrainerSpriteHandler ; 1, $02: BUG_CATCHER
-	dw DefaultTrainerSpriteHandler ; 2, $03: LASS
-	dw DefaultTrainerSpriteHandler ; 3, $04: SAILOR
-	dw DefaultTrainerSpriteHandler ; 4, $05: JR_TRAINER_M
-	dw DefaultTrainerSpriteHandler ; 5, $06: JR_TRAINER_F
-	dw PokemaniacSpriteHandler     ; 6, $07: POKEMANIAC              ; Has multiple sprites
-	dw SuperNerdSpriteHandler      ; 7, $08: SUPER_NERD				 ; Has multiple sprites 
-	dw DefaultTrainerSpriteHandler ; 8, $09: HIKER
-	dw DefaultTrainerSpriteHandler ; 9, $0A: BIKER
+	dw DefaultTrainerSpriteHandler ;  0, $01: YOUNGSTER
+	dw DefaultTrainerSpriteHandler ;  1, $02: BUG_CATCHER
+	dw LassSpriteHandler           ;  2, $03: LASS                   ; Has multiple sprites
+	dw DefaultTrainerSpriteHandler ;  3, $04: SAILOR
+	dw DefaultTrainerSpriteHandler ;  4, $05: JR_TRAINER_M
+	dw DefaultTrainerSpriteHandler ;  5, $06: JR_TRAINER_F
+	dw PokemaniacSpriteHandler     ;  6, $07: POKEMANIAC             ; Has multiple sprites
+	dw SuperNerdSpriteHandler      ;  7, $08: SUPER_NERD			 ; Has multiple sprites 
+	dw DefaultTrainerSpriteHandler ;  8, $09: HIKER
+	dw DefaultTrainerSpriteHandler ;  9, $0A: BIKER
 	dw DefaultTrainerSpriteHandler ; 10, $0B: BURGLAR
 	dw DefaultTrainerSpriteHandler ; 11, $0C: ENGINEER
 	dw DefaultTrainerSpriteHandler ; 12, $0D: UNUSED_JUGGLER
@@ -108,7 +108,18 @@ DefaultTrainerSpriteHandler:
 	ret
 
 ; Handler for Lass class ($03) - Index 2
-
+LassSpriteHandler:
+	ld a, [wTrainerNo]
+	cp $16
+	ret c ; Trainers 0-21 -> Use default (LassPic)
+	cp $19
+	jr nc, .LassDone ; Check if >= 22
+	; Trainers 22-25 -> Use Lass2Pic
+	ld de, Lass2Pic
+	call UpdateTrainerPicPointer
+	ret ; Done for this range
+.LassDone:
+	ret
 
 ; Handler for Pokemaniac class ($07) - Index 6
 PokemaniacSpriteHandler:
