@@ -290,7 +290,7 @@ NidorinoPicFront::     INCBIN "gfx/pokemon/front/nidorino.pic"
 NidorinoPicBack::      INCBIN "gfx/pokemon/back/nidorinob.pic"
 NidorinaPicFront::     INCBIN "gfx/pokemon/front/nidorina.pic"
 NidorinaPicBack::      INCBIN "gfx/pokemon/back/nidorinab.pic"
-GeodudePicFront::      INCBIN "gfx/pokemon/front/geodude.pic"
+GeodudePicFront::      INCBIN "gfx/pokemon/front/geodudeemerald.pic"           ; Geodude default sprite changed by G-Dubs
 GeodudePicBack::       INCBIN "gfx/pokemon/back/geodudeb.pic"
 PorygonPicFront::      INCBIN "gfx/pokemon/front/porygon.pic"
 PorygonPicBack::       INCBIN "gfx/pokemon/back/porygonb.pic"
@@ -333,10 +333,12 @@ RVictreebelPicFront::      INCBIN "gfx/pokemon/front/victreebelsilver.pic"
 RArbokPicFront::           INCBIN "gfx/pokemon/front/arbok.pic"                ; Jessie's PokéMon sprites added by Vlad
 RLickitungPicFront::       INCBIN "gfx/pokemon/front/lickitungsilver.pic"
 REkansPicFront::           INCBIN "gfx/pokemon/front/ekansgold.pic"
-BrockOnixPicFront::        INCBIN "gfx/pokemon/front/onixsilver.pic"           ; Brock's PokéMon sprites added by Vlad 
+BrockOnixPicFront::        INCBIN "gfx/pokemon/front/onixsilver.pic"           ; Brock's PokéMon sprites added by Vlad
+BrockGeodudePicFront::     INCBIN "gfx/pokemon/front/geodude.pic" 
 BrockVulpixPicFront::      INCBIN "gfx/pokemon/front/vulpixsilver.pic"
 BrockZubatPicFront::       INCBIN "gfx/pokemon/front/zubatsilver.pic"
-MistyPsyduckPicFront::     INCBIN "gfx/pokemon/front/psyduck.pic"              ; Misty's PokéMon sprites added by Vlad
+MistyPsyduckPicFront::     INCBIN "gfx/pokemon/front/psyduck.pic"              ; Misty's PokéMon sprites added by Vlad & G-Dubs
+MistyGolduckPicFront::     INCBIN "gfx/pokemon/front/golducksilver.pic"
 MistyStaryuPicFront::      INCBIN "gfx/pokemon/front/staryur.pic"
 MistyStarmiePicFront::     INCBIN "gfx/pokemon/front/starmierg.pic"
 LtSurgeRaichuPicFront::    INCBIN "gfx/pokemon/front/raichusilver.pic"         ; Lt. Surge's PokéMon sprites added by Vlad
@@ -346,7 +348,8 @@ KogaWeezingPicFront::      INCBIN "gfx/pokemon/front/weezinggold.pic"          ;
 KogaVenomothPicFront::     INCBIN "gfx/pokemon/front/venomothsilver.pic"
 KarateHitmonleePicFront::  INCBIN "gfx/pokemon/front/hitmonlee.pic"            ; Karate Master's PokéMon sprites added by Vlad
 KarateHitmonchanPicFront:: INCBIN "gfx/pokemon/front/hitmonchan.pic"
-SabrinaKadabraPicFront::   INCBIN "gfx/pokemon/front/kadabragold.pic"          ; Sabrina's PokéMon sprites added by Vlad
+SabrinaGolduckPicFront::   INCBIN "gfx/pokemon/front/golduckemerald.pic"       ; Sabrina's PokéMon sprites added by Vlad & G-Dubs
+SabrinaKadabraPicFront::   INCBIN "gfx/pokemon/front/kadabragold.pic"          
 SabrinaAlakazamPicFront::  INCBIN "gfx/pokemon/front/alakazamgold.pic"
 SabrinaHaunterPicFront::   INCBIN "gfx/pokemon/front/hauntersilver.pic"
 BlaineArcaninePicFront::   INCBIN "gfx/pokemon/front/arcaninesilver.pic"       ; Blaine's PokéMon sprites added by Vlad
