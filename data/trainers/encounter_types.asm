@@ -3,9 +3,9 @@ FemaleTrainerList::
 	db OPP_JR_TRAINER_F
 	db OPP_BEAUTY
 	db OPP_COOLTRAINER_F
-    db OPP_POKEFAN_F
-	db OPP_LADY
-    db OPP_TEACHER
+    db OPP_POKEFAN_F     
+	db OPP_LADY         ; New trainer class added by G-Dubs
+    db OPP_TEACHER      ; New trainer class added by G-Dubs
 	db -1 ; end
 
 EvilTrainerList::
@@ -17,5 +17,5 @@ EvilTrainerList::
 	db OPP_SCIENTIST
 	db OPP_GIOVANNI
 	db OPP_ROCKET
-	db OPP_JESSIE_JAMES ; New Trainer Class Jessie_James added by Vlad
+	db OPP_JESSIE_JAMES ; New trainer class added by Vlad
 	db -1 ; end

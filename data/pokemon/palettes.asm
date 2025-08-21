@@ -95,7 +95,7 @@ MonsterPalettes:
 	db PAL_PURPLEMON                   ; GASTLY
 	db PAL_PURPLEMON                   ; HAUNTER
 	db PAL_PURPLEMON                   ; GENGAR
-	db PAL_GRAYMON                     ; ONIX
+	db PAL_DEFAULTMON                  ; ONIX
 	db PAL_YELLOWMON                   ; DROWZEE
 	db PAL_YELLOWMON                   ; HYPNO
 	db PAL_REDMON                      ; KRABBY

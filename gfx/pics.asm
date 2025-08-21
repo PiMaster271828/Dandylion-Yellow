@@ -376,6 +376,7 @@ LanceGyaradosPicFront::    INCBIN "gfx/pokemon/front/gyarados.pic"            ; 
 LanceDragonairPicFront::   INCBIN "gfx/pokemon/front/dragonairsilver.pic"
 LanceDragonitePicFront::   INCBIN "gfx/pokemon/front/dragonitesilver.pic"
 RivalAlakazamPicFront::    INCBIN "gfx/pokemon/front/alakazamsilver.pic"      ; Rival's PokéMon sprites added by G-Dubs
+RivalGolduckPicFront::     INCBIN "gfx/pokemon/front/golduckfrlg.pic"
 
 
 SECTION "Trainer Pics 1", ROMX
