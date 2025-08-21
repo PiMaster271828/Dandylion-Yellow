@@ -90,6 +90,7 @@ CheckAlternatePokemonSprite2::
 
 ; COMPACT TABLE - Only 4 bytes per entry (no bank stored)
 AlternatePokemonSpriteTable1:
+    db ROCKET, MEOWTH, LOW(RocketZubatPicFront), HIGH(RocketZubatPicFront)			        ; ROCKET
 	db JESSIE_JAMES, MEOWTH, LOW(RMeowthPicFront), HIGH(RMeowthPicFront)					; JESSIE_JAMES
 	db JESSIE_JAMES, KOFFING, LOW(RKoffingPicFront), HIGH(RKoffingPicFront)
 	db JESSIE_JAMES, WEEZING, LOW(RWeezingPicFront), HIGH(RWeezingPicFront)

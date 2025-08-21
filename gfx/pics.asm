@@ -184,7 +184,7 @@ VaporeonPicFront::    INCBIN "gfx/pokemon/front/vaporeon.pic"
 VaporeonPicBack::     INCBIN "gfx/pokemon/back/vaporeonb.pic"
 MachopPicFront::      INCBIN "gfx/pokemon/front/machop.pic"
 MachopPicBack::       INCBIN "gfx/pokemon/back/machopb.pic"
-ZubatPicFront::       INCBIN "gfx/pokemon/front/zubat.pic"
+ZubatPicFront::       INCBIN "gfx/pokemon/front/zubatsilver.pic"               ; Zubat default sprite changed by G-Dubs
 ZubatPicBack::        INCBIN "gfx/pokemon/back/zubatb.pic"
 EkansPicFront::       INCBIN "gfx/pokemon/front/ekans.pic"
 EkansPicBack::        INCBIN "gfx/pokemon/back/ekansb.pic"
@@ -325,6 +325,7 @@ VictreebelPicBack::    INCBIN "gfx/pokemon/back/victreebelb.pic"
 
 SECTION "Alt Pokemon Sprites 1", ROMX
 
+RocketZubatPicFront::      INCBIN "gfx/pokemon/front/zubat.pic"                ; Rocket Grunt's Zubat sprite added by G-Dubs
 RMeowthPicFront::          INCBIN "gfx/pokemon/front/rmeowth.pic"              ; Team Rocket's Meowth sprite added by Vlad               
 RKoffingPicFront::         INCBIN "gfx/pokemon/front/koffinggold.pic"          ; James's PokéMon sprites added by Vlad
 RWeezingPicFront::         INCBIN "gfx/pokemon/front/weezing.pic"
@@ -333,10 +334,10 @@ RVictreebelPicFront::      INCBIN "gfx/pokemon/front/victreebelsilver.pic"
 RArbokPicFront::           INCBIN "gfx/pokemon/front/arbok.pic"                ; Jessie's PokéMon sprites added by Vlad
 RLickitungPicFront::       INCBIN "gfx/pokemon/front/lickitungsilver.pic"
 REkansPicFront::           INCBIN "gfx/pokemon/front/ekansgold.pic"
-BrockOnixPicFront::        INCBIN "gfx/pokemon/front/onixsilver.pic"           ; Brock's PokéMon sprites added by Vlad
+BrockOnixPicFront::        INCBIN "gfx/pokemon/front/onix.pic"                 ; Brock's PokéMon sprites added by Vlad
 BrockGeodudePicFront::     INCBIN "gfx/pokemon/front/geodude.pic" 
 BrockVulpixPicFront::      INCBIN "gfx/pokemon/front/vulpixsilver.pic"
-BrockZubatPicFront::       INCBIN "gfx/pokemon/front/zubatsilver.pic"
+BrockZubatPicFront::       INCBIN "gfx/pokemon/front/zubatemerald.pic"
 MistyPsyduckPicFront::     INCBIN "gfx/pokemon/front/psyduck.pic"              ; Misty's PokéMon sprites added by Vlad & G-Dubs
 MistyGolduckPicFront::     INCBIN "gfx/pokemon/front/golducksilver.pic"
 MistyStaryuPicFront::      INCBIN "gfx/pokemon/front/staryur.pic"
