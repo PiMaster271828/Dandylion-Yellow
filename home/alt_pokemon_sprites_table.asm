@@ -113,7 +113,7 @@ AlternatePokemonSpriteTable1:
 	db BLACKBELT, HITMONCHAN, LOW(KarateHitmonchanPicFront), HIGH(KarateHitmonchanPicFront)
 	db SABRINA, KADABRA, LOW(SabrinaKadabraPicFront), HIGH(SabrinaKadabraPicFront)			; SABRINA
 	db SABRINA, ALAKAZAM, LOW(SabrinaAlakazamPicFront), HIGH(SabrinaAlakazamPicFront)
-	;db SABRINA, HAUNTER, LOW(SabrinaHaunterPicFront), HIGH(SabrinaHaunterPicFront)
+	db SABRINA, HAUNTER, LOW(SabrinaHaunterPicFront), HIGH(SabrinaHaunterPicFront)
 	db BLAINE, ARCANINE, LOW(BlaineArcaninePicFront), HIGH(BlaineArcaninePicFront)			; BLAINE
 	db BLAINE, MAGMAR, LOW(BlaineMagmarPicFront), HIGH(BlaineMagmarPicFront)
 	db GIOVANNI, PERSIAN, LOW(GiovanniPersianPicFront), HIGH(GiovanniPersianPicFront)		; GIOVANNI
@@ -130,9 +130,9 @@ AlternatePokemonSpriteTable2:
 	db BRUNO, ONIX, LOW(BrunoOnixPicFront), HIGH(BrunoOnixPicFront)
 	db BRUNO, POLIWRATH, LOW(BrunoPoliwrathPicFront), HIGH(BrunoPoliwrathPicFront)
 	db BRUNO, MACHAMP, LOW(BrunoMachampPicFront), HIGH(BrunoMachampPicFront)
-	;db AGATHA, HAUNTER, LOW(AgathaHaunterPicFront), HIGH(AgathaHaunterPicFront)				; AGATHA
+	db AGATHA, HAUNTER, LOW(AgathaHaunterPicFront), HIGH(AgathaHaunterPicFront)				; AGATHA
 	db AGATHA, ARBOK, LOW(AgathaArbokPicFront), HIGH(AgathaArbokPicFront)	
-	;db AGATHA, GENGAR, LOW(AgathaGengarPicFront), HIGH(AgathaGengarPicFront)
+	db AGATHA, GENGAR, LOW(AgathaGengarPicFront), HIGH(AgathaGengarPicFront)
 	db LANCE, GYARADOS, LOW(LanceGyaradosPicFront), HIGH(LanceGyaradosPicFront)				; LANCE
 	db LANCE, DRAGONAIR, LOW(LanceDragonairPicFront), HIGH(LanceDragonairPicFront)
 	db LANCE, DRAGONITE, LOW(LanceDragonitePicFront), HIGH(LanceDragonitePicFront)
