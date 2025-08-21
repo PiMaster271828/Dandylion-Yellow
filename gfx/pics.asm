@@ -240,7 +240,7 @@ MukPicFront::          INCBIN "gfx/pokemon/front/muk.pic"
 MukPicBack::           INCBIN "gfx/pokemon/back/mukb.pic"
 KinglerPicFront::      INCBIN "gfx/pokemon/front/kingler.pic"
 KinglerPicBack::       INCBIN "gfx/pokemon/back/kinglerb.pic"
-CloysterPicFront::     INCBIN "gfx/pokemon/front/george.pic"                  ;  Weezing default sprite changed by G-Dubs
+CloysterPicFront::     INCBIN "gfx/pokemon/front/cloystergeorge.pic"                  ;  Weezing default sprite changed by G-Dubs
 CloysterPicBack::      INCBIN "gfx/pokemon/back/cloysterb.pic"
 ElectrodePicFront::    INCBIN "gfx/pokemon/front/electrode.pic"
 ElectrodePicBack::     INCBIN "gfx/pokemon/back/electrodeb.pic"
