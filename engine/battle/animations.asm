@@ -2172,6 +2172,8 @@ AnimationTransformMon:
 	ld [wChangeMonPicEnemyTurnSpecies], a
 
 ChangeMonPic:
+	ld a, 1
+	ld [wUnusedMoveAnimByte], a
 	ldh a, [hWhoseTurn]
 	and a
 	jr z, .playerTurn

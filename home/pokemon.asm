@@ -117,17 +117,27 @@ LoadFrontSpriteByMonIndex::
 	ret
 .validDexNumber
 	push hl
+	ld a, [wUnusedMoveAnimByte]
+	cp 1
+	jr z, .skipTrainerClear1
 	ld a, [wTrainerClass]
 	ld b, a
 	xor a
 	ld [wTrainerClass], a
 	xor a
 	push bc
+.skipTrainerClear1
 	ld de, vFrontPic
 	call LoadMonFrontSprite
+	ld a, [wUnusedMoveAnimByte]
+	cp 1
+	jr z, .skipTrainerClear2
 	pop bc
 	ld a, b
 	ld [wTrainerClass], a
+.skipTrainerClear2
+	xor a
+	ld [wUnusedMoveAnimByte], a
 	pop hl
 	ldh a, [hLoadedROMBank]
 	push af
