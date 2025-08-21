@@ -105,6 +105,7 @@ AlternatePokemonSpriteTable1:
 	db BROCK, ZUBAT, LOW(BrockZubatPicFront), HIGH(BrockZubatPicFront)	
 	db MISTY, PSYDUCK, LOW(MistyPsyduckPicFront), HIGH(MistyPsyduckPicFront)				; MISTY
 	db MISTY, GOLDUCK, LOW(MistyGolduckPicFront), HIGH(MistyGolduckPicFront)
+	db MISTY, HORSEA, LOW(MistyHorseaPicFront), HIGH(MistyHorseaPicFront)
 	db MISTY, STARYU, LOW(MistyStaryuPicFront), HIGH(MistyStaryuPicFront) 
 	db MISTY, STARMIE, LOW(MistyStarmiePicFront), HIGH(MistyStarmiePicFront) 				
 	db LT_SURGE, RAICHU, LOW(LtSurgeRaichuPicFront), HIGH(LtSurgeRaichuPicFront)			; LT_SURGE
