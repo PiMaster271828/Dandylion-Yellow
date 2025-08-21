@@ -240,7 +240,7 @@ MukPicFront::          INCBIN "gfx/pokemon/front/muk.pic"
 MukPicBack::           INCBIN "gfx/pokemon/back/mukb.pic"
 KinglerPicFront::      INCBIN "gfx/pokemon/front/kingler.pic"
 KinglerPicBack::       INCBIN "gfx/pokemon/back/kinglerb.pic"
-CloysterPicFront::     INCBIN "gfx/pokemon/front/george.pic"                  ;  Weezing default sprite changed by G-Dubs
+CloysterPicFront::     INCBIN "gfx/pokemon/front/cloystergeorge.pic"           ;  Cloyster default sprite changed by G-Dubs
 CloysterPicBack::      INCBIN "gfx/pokemon/back/cloysterb.pic"
 ElectrodePicFront::    INCBIN "gfx/pokemon/front/electrode.pic"
 ElectrodePicBack::     INCBIN "gfx/pokemon/back/electrodeb.pic"
@@ -347,7 +347,7 @@ KogaVenomothPicFront::     INCBIN "gfx/pokemon/front/venomothsilver.pic"
 KarateHitmonleePicFront::  INCBIN "gfx/pokemon/front/hitmonlee.pic"            ; Karate Master's PokéMon sprites added by Vlad
 KarateHitmonchanPicFront:: INCBIN "gfx/pokemon/front/hitmonchan.pic"
 SabrinaKadabraPicFront::   INCBIN "gfx/pokemon/front/kadabragold.pic"          ; Sabrina's PokéMon sprites added by Vlad
-SabrinaAlakazamPicFront::  INCBIN "gfx/pokemon/front/alakazamsilver.pic"
+SabrinaAlakazamPicFront::  INCBIN "gfx/pokemon/front/alakazamgold.pic"
 SabrinaHaunterPicFront::   INCBIN "gfx/pokemon/front/hauntersilver.pic"
 BlaineArcaninePicFront::   INCBIN "gfx/pokemon/front/arcaninesilver.pic"       ; Blaine's PokéMon sprites added by Vlad
 BlaineMagmarPicFront::     INCBIN "gfx/pokemon/front/magmarsilver.pic"
@@ -369,7 +369,8 @@ AgathaArbokPicFront::      INCBIN "gfx/pokemon/front/arbokgold.pic"
 AgathaGengarPicFront::     INCBIN "gfx/pokemon/front/gengar.pic"
 LanceGyaradosPicFront::    INCBIN "gfx/pokemon/front/gyarados.pic"            ; Lance's PokéMon sprites added by Vlad
 LanceDragonairPicFront::   INCBIN "gfx/pokemon/front/dragonairsilver.pic"
-LanceDragonitePicFront::   INCBIN "gfx/pokemon/front/dragonitesilver.pic" 
+LanceDragonitePicFront::   INCBIN "gfx/pokemon/front/dragonitesilver.pic"
+RivalAlakazamPicFront::    INCBIN "gfx/pokemon/front/alakazamsilver.pic"      ; Rival's PokéMon sprites added by G-Dubs
 
 
 SECTION "Trainer Pics 1", ROMX
