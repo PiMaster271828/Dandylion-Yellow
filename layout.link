@@ -238,7 +238,10 @@ ROMX $42
 
 ROMX $43
 	"Home 2"
-	"Alt Pokemon Sprites"
+	"Alt Pokemon Sprites 1"
+
+ROMX $44
+	"Alt Pokemon Sprites 2"
 	
 WRAM0
 	"Audio RAM"

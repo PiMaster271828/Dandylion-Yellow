@@ -18,8 +18,10 @@ UncompressMonSprite::
 ; $99 ≤ index:             bank $D ("Pics 5")
 	ld a, [wCurPartySpecies]
 	ld b, a
-	farcall CheckAlternatePokemonSprite
-	jr c, .Alternate
+	farcall CheckAlternatePokemonSprite1
+	jr c, .Alternate1
+	farcall CheckAlternatePokemonSprite2
+	jr c, .Alternate2
 	ld a, [wCurPartySpecies]
 	ld b, a
 	ld a, [wCurPartySpecies]
@@ -44,8 +46,11 @@ UncompressMonSprite::
 	jr c, .GotBank1
 	ld a, BANK("Pics 5")
 	jp .GotBank1
-.Alternate
-	ld a, BANK("Alt Pokemon Sprites")
+.Alternate1
+	ld a, BANK("Alt Pokemon Sprites 1")
+	jp .GotBank1
+.Alternate2
+	ld a, BANK("Alt Pokemon Sprites 2")
 .GotBank1
 	jp UncompressSpriteData
 
