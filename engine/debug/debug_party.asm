@@ -130,6 +130,7 @@ DebugItemsList:
     db RARE_CANDY, 99
 	db FULL_RESTORE, 99
 	db REVIVE, 99
+	db MAX_ELIXER, 99
 	db FULL_HEAL, 99
 	db FRESH_WATER, 99
 	db ESCAPE_ROPE, 99

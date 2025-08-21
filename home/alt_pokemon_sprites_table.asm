@@ -128,7 +128,7 @@ AlternatePokemonSpriteTable2:
 	db BRUNO, HITMONLEE, LOW(BrunoHitmonleePicFront), HIGH(BrunoHitmonleePicFront)			; BRUNO
 	db BRUNO, HITMONCHAN, LOW(BrunoHitmonchanPicFront), HIGH(BrunoHitmonchanPicFront)
 	db BRUNO, ONIX, LOW(BrunoOnixPicFront), HIGH(BrunoOnixPicFront)
-	db BRUNO, POLIWRATH, LOW(BrunoPoliwrathPicFront), HIGH(BrunoPoliwrathPicFront)
+	db BRUNO, POLIWRATH, LOW(BrunoPoliwrathPicFront), HIGH(BrunoPoliwrathPicFront) 
 	db BRUNO, MACHAMP, LOW(BrunoMachampPicFront), HIGH(BrunoMachampPicFront)
 	db AGATHA, HAUNTER, LOW(AgathaHaunterPicFront), HIGH(AgathaHaunterPicFront)				; AGATHA
 	db AGATHA, ARBOK, LOW(AgathaArbokPicFront), HIGH(AgathaArbokPicFront)	
