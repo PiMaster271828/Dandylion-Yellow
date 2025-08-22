@@ -148,7 +148,7 @@ MonsterPalettes:
 	db PAL_YELLOWMON                   ; ZAPDOS
 	db PAL_REDMON                      ; MOLTRES
 	db PAL_CYANMON                     ; DRATINI
-	db PAL_BLUEMON                     ; DRAGONAIR
+	db PAL_CYANMON                     ; DRAGONAIR
 	db PAL_ORANGEMON                   ; DRAGONITE
 	db PAL_MEWTWO                      ; MEWTWO
 	db PAL_PINKMON                     ; MEW
