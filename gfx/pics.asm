@@ -36,7 +36,7 @@ CubonePicFront::      INCBIN "gfx/pokemon/front/cubone.pic"
 CubonePicBack::       INCBIN "gfx/pokemon/back/cuboneb.pic"
 RhyhornPicFront::     INCBIN "gfx/pokemon/front/rhyhorn.pic"
 RhyhornPicBack::      INCBIN "gfx/pokemon/back/rhyhornb.pic"
-LaprasPicFront::      INCBIN "gfx/pokemon/front/laprassilver.pic"              ; Lapras default sprite changed by Vlad
+LaprasPicFront::      INCBIN "gfx/pokemon/front/laprascrystal.pic"             ; Lapras default sprite changed by Vlad
 LaprasPicBack::       INCBIN "gfx/pokemon/back/laprasb.pic"
 ArcaninePicFront::    INCBIN "gfx/pokemon/front/arcanine.pic"
 ArcaninePicBack::     INCBIN "gfx/pokemon/back/arcanineb.pic"
@@ -138,7 +138,7 @@ ZapdosPicFront::      INCBIN "gfx/pokemon/front/zapdos.pic"
 ZapdosPicBack::       INCBIN "gfx/pokemon/back/zapdosb.pic"
 DittoPicFront::       INCBIN "gfx/pokemon/front/ditto.pic"
 DittoPicBack::        INCBIN "gfx/pokemon/back/dittob.pic"
-MeowthPicFront::      INCBIN "gfx/pokemon/front/meowth.pic"                    ; Meowth default sprite changed by Vlad
+MeowthPicFront::      INCBIN "gfx/pokemon/front/meowthredblue.pic"             ; Meowth default sprite changed by Vlad
 MeowthPicBack::       INCBIN "gfx/pokemon/back/meowthb.pic"
 KrabbyPicFront::      INCBIN "gfx/pokemon/front/krabby.pic"
 KrabbyPicBack::       INCBIN "gfx/pokemon/back/krabbyb.pic"
@@ -326,14 +326,15 @@ VictreebelPicBack::    INCBIN "gfx/pokemon/back/victreebelb.pic"
 SECTION "Alt Pokemon Sprites 1", ROMX
 
 RocketZubatPicFront::      INCBIN "gfx/pokemon/front/zubat.pic"                ; Rocket Grunt's Zubat sprite added by G-Dubs
-RMeowthPicFront::          INCBIN "gfx/pokemon/front/rmeowth.pic"              ; Team Rocket's Meowth sprite added by Vlad               
-RKoffingPicFront::         INCBIN "gfx/pokemon/front/koffinggold.pic"          ; James's PokéMon sprites added by Vlad
-RWeezingPicFront::         INCBIN "gfx/pokemon/front/weezing.pic"
-RWeepinbellPicFront::      INCBIN "gfx/pokemon/front/weepinbellsilver.pic"
-RVictreebelPicFront::      INCBIN "gfx/pokemon/front/victreebelsilver.pic"
-RArbokPicFront::           INCBIN "gfx/pokemon/front/arbok.pic"                ; Jessie's PokéMon sprites added by Vlad
-RLickitungPicFront::       INCBIN "gfx/pokemon/front/lickitungsilver.pic"
-REkansPicFront::           INCBIN "gfx/pokemon/front/ekansgold.pic"
+RocketRattataPicFront::    INCBIN "gfx/pokemon/front/rattatasilver.pic"        ; Rocket Grunt's Rattata sprite added by G-Dubs
+RocketMeowthPicFront::     INCBIN "gfx/pokemon/front/meowth.pic"               ; Team Rocket's Meowth sprite added by Vlad               
+JamesKoffingPicFront::     INCBIN "gfx/pokemon/front/koffinggold.pic"          ; James's PokéMon sprites added by Vlad
+JamesWeezingPicFront::     INCBIN "gfx/pokemon/front/weezing.pic"
+JamesWeepinbellPicFront::  INCBIN "gfx/pokemon/front/weepinbellsilver.pic"
+JamesVictreebelPicFront::  INCBIN "gfx/pokemon/front/victreebelsilver.pic"
+JessieEkansPicFront::      INCBIN "gfx/pokemon/front/ekansgold.pic"            ; Jessie's PokéMon sprites added by Vlad
+JessieArbokPicFront::      INCBIN "gfx/pokemon/front/arbok.pic"                
+JessieLickitungPicFront::  INCBIN "gfx/pokemon/front/lickitungsilver.pic"
 BrockOnixPicFront::        INCBIN "gfx/pokemon/front/onix.pic"                 ; Brock's PokéMon sprites added by Vlad
 BrockGeodudePicFront::     INCBIN "gfx/pokemon/front/geodude.pic" 
 BrockVulpixPicFront::      INCBIN "gfx/pokemon/front/vulpixsilver.pic"
@@ -377,6 +378,8 @@ LanceDragonairPicFront::   INCBIN "gfx/pokemon/front/dragonairsilver.pic"
 LanceDragonitePicFront::   INCBIN "gfx/pokemon/front/dragonitesilver.pic"
 RivalAlakazamPicFront::    INCBIN "gfx/pokemon/front/alakazamsilver.pic"      ; Rival's PokéMon sprites added by G-Dubs
 RivalGolduckPicFront::     INCBIN "gfx/pokemon/front/golduckfrlg.pic"
+;FemalePikachuPicFront::    INCBIN "gfx/pokemon/front/lapras.pic"              ; Female Trainer's PokéMon sprites added by G-Dubs
+;FemaleLaprasPicFront::     INCBIN "gfx/pokemon/front/laprassilver.pic"
 
 
 SECTION "Trainer Pics 1", ROMX
