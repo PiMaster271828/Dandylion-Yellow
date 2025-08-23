@@ -286,6 +286,8 @@ OverworldLoopLessDelay::
 	ld a, [wCurMap]
 	cp OAKS_LAB
 	jp z, .noFaintCheck ; no blacking out if the player lost to the rival in Oak's lab
+	cp VIRIDIAN_POKECENTER
+	jp z, .noFaintCheck
 	callfar AnyPartyAlive
 	ld a, d
 	and a

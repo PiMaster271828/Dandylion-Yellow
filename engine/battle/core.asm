@@ -1187,6 +1187,24 @@ HandlePlayerBlackOut:
 	cp LINK_STATE_BATTLING
 	jr z, .notRival1Battle
 	ld a, [wCurOpponent]
+	cp JESSIE_JAMES ; TRAINER ID can be found in constants\trainer_constants.asm
+    jr nz, .notThatTrainer
+	ld a, [wTrainerNo]
+	cp $01
+	jr nz, .notThatRocket
+    hlcoord 0, 0
+	lb bc, 8, 21
+	call ClearScreenArea
+	call ScrollTrainerPicAfterBattle
+	ld c, 40
+	call DelayFrames
+	ld hl, JessieJamesWinText ; WIN TEXT is whatever text you have set up
+	call PrintText
+    ld a, [wCurMap]
+	cp VIRIDIAN_POKECENTER ; MAP ID can be found in constants\map_constants.asm
+	ret
+.notThatRocket
+.notThatTrainer       
 	cp OPP_RIVAL1
 	jr nz, .notRival1Battle
 	hlcoord 0, 0  ; rival 1 battle
@@ -1223,6 +1241,10 @@ HandlePlayerBlackOut:
 
 Rival1WinText:
 	text_far _Rival1WinText
+	text_end
+
+JessieJamesWinText:
+	text_far _JessieJamesWinText
 	text_end
 
 PlayerBlackedOutText2:
