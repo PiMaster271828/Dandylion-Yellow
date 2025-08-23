@@ -88,6 +88,51 @@ CheckAlternatePokemonSprite2::
 	and a
 	ret
 
+CheckAlternatePokemonSprite3::
+; Compact version assuming all alternate sprites are in same bank
+; Returns: carry set if alternate sprite loaded, clear if using normal sprite
+	ld hl, AlternatePokemonSpriteTable3
+	
+.tableLoop3
+	ld a, [hli]  ; trainer class
+	cp $FF
+	jr z, .noAlternate3
+	
+	ld b, a
+	ld a, [wTrainerClass]
+	cp b
+	jr nz, .skipEntry3
+	
+	ld a, [hli]  ; pokemon species  
+	ld b, a
+	ld a, [wCurPartySpecies]
+	cp b
+	jr z, .foundMatch3
+	
+	; Skip sprite pointer (2 bytes)
+	inc hl
+	inc hl
+	jr .tableLoop3
+	
+.skipEntry3
+	; Skip pokemon + sprite pointer (3 bytes)
+	inc hl
+	inc hl  
+	inc hl
+	jr .tableLoop3
+
+.foundMatch3
+	ld a, [hli]  ; sprite pointer low
+	ld [wSpriteInputPtr], a
+	ld a, [hl]   ; sprite pointer high
+	ld [wSpriteInputPtr + 1], a
+	scf
+	ret
+
+.noAlternate3
+	and a
+	ret
+
 ; COMPACT TABLE - Only 4 bytes per entry (no bank stored)
 AlternatePokemonSpriteTable1:
     db ROCKET, ZUBAT, LOW(RocketZubatPicFront), HIGH(RocketZubatPicFront)                     ; ROCKET
@@ -102,7 +147,10 @@ AlternatePokemonSpriteTable1:
 	db JESSIE_JAMES, EKANS, LOW(JessieEkansPicFront), HIGH(JessieEkansPicFront)                     
 	db JESSIE_JAMES, ARBOK, LOW(JessieArbokPicFront), HIGH(JessieArbokPicFront)
 	db JESSIE_JAMES, LICKITUNG, LOW(JessieLickitungPicFront), HIGH(JessieLickitungPicFront)
-	db BROCK, ONIX, LOW(BrockOnixPicFront), HIGH(BrockOnixPicFront)							  ; BROCK
+	db $FF
+
+AlternatePokemonSpriteTable2:
+ 	db BROCK, ONIX, LOW(BrockOnixPicFront), HIGH(BrockOnixPicFront)							  ; BROCK
 	db BROCK, GEODUDE, LOW(BrockGeodudePicFront), HIGH(BrockGeodudePicFront)
 	db BROCK, VULPIX, LOW(BrockVulpixPicFront), HIGH(BrockVulpixPicFront)	
 	db BROCK, ZUBAT, LOW(BrockZubatPicFront), HIGH(BrockZubatPicFront)	
@@ -134,7 +182,7 @@ AlternatePokemonSpriteTable1:
 	db GIOVANNI, RHYDON, LOW(GiovanniRhydonPicFront), HIGH(GiovanniRhydonPicFront)
 	db $FF
 
-AlternatePokemonSpriteTable2:
+AlternatePokemonSpriteTable3:
 	db LORELEI, DEWGONG, LOW(LoreleiDewgongPicFront), HIGH(LoreleiDewgongPicFront)			  ; LORELEI
 	db LORELEI, CLOYSTER, LOW(LoreleiCloysterPicFront), HIGH(LoreleiCloysterPicFront)
 	db LORELEI, SLOWBRO, LOW(LoreleiSlowbroPicFront), HIGH(LoreleiSlowbroPicFront)
@@ -153,5 +201,5 @@ AlternatePokemonSpriteTable2:
 	db RIVAL2, ALAKAZAM, LOW(RivalAlakazamPicFront), HIGH(RivalAlakazamPicFront)              ; RIVAL
 	db RIVAL3, ALAKAZAM, LOW(RivalAlakazamPicFront), HIGH(RivalAlakazamPicFront)            
    ;db RIVAL4, ALAKAZAM, LOW(RivalAlakazamPicFront), HIGH(RivalAlakazamPicFront)
-    db RIVAL2, GOLDUCK, LOW(RivalGolduckPicFront), HIGH(RivalGolduckPicFront)          
+    db RIVAL2, GOLDUCK, LOW(RivalGolduckPicFront), HIGH(RivalGolduckPicFront)        
 	db $FF

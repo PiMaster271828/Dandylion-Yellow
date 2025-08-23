@@ -353,6 +353,9 @@ JamesMagikarpPicFront::    INCBIN "gfx/pokemon/front/magikarpgreen.pic"
 JessieEkansPicFront::      INCBIN "gfx/pokemon/front/ekansgold.pic"            ; Jessie's PokéMon sprites added by Vlad
 JessieArbokPicFront::      INCBIN "gfx/pokemon/front/arbok.pic"                
 JessieLickitungPicFront::  INCBIN "gfx/pokemon/front/lickitungsilver.pic"
+
+
+SECTION "Alt Pokemon Sprites 2", ROMX                                          ; Section for Elite Four & Rival PokéMon alt. sprites
 BrockOnixPicFront::        INCBIN "gfx/pokemon/front/onix.pic"                 ; Brock's PokéMon sprites added by Vlad
 BrockGeodudePicFront::     INCBIN "gfx/pokemon/front/geodude.pic" 
 BrockVulpixPicFront::      INCBIN "gfx/pokemon/front/vulpixsilver.pic"
@@ -384,7 +387,8 @@ GiovanniPersianPicFront::  INCBIN "gfx/pokemon/front/persian.pic"              ;
 GiovanniPinsirPicFront::   INCBIN "gfx/pokemon/front/pinsir.pic"
 GiovanniRhydonPicFront::   INCBIN "gfx/pokemon/front/rhydonsilver.pic"
 
-SECTION "Alt Pokemon Sprites 2", ROMX                                          ; Section for Elite Four & Rival PokéMon alt. sprites
+
+SECTION "Alt Pokemon Sprites 3", ROMX 
 LoreleiDewgongPicFront::   INCBIN "gfx/pokemon/front/dewgong.pic"              ; Lorelei's PokéMon sprites added by Vlad
 LoreleiCloysterPicFront::  INCBIN "gfx/pokemon/front/cloyster.pic"      
 LoreleiSlowbroPicFront::   INCBIN "gfx/pokemon/front/slowbrogold.pic"
@@ -402,8 +406,6 @@ LanceDragonairPicFront::   INCBIN "gfx/pokemon/front/dragonairsilver.pic"
 LanceDragonitePicFront::   INCBIN "gfx/pokemon/front/dragonitesilver.pic"
 RivalAlakazamPicFront::    INCBIN "gfx/pokemon/front/alakazamsilver.pic"      ; Rival's PokéMon sprites added by G-Dubs
 RivalGolduckPicFront::     INCBIN "gfx/pokemon/front/golduckfrlg.pic"
-
-
 
 SECTION "Trainer Pics 1", ROMX
 
