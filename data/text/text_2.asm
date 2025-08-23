@@ -943,6 +943,10 @@ _Rival1WinText::
 	line "I great or what?"
 	prompt
 
+_JessieJamesWinText::
+	text "JESSIE & JAMES:"
+	line "Get Wrekt!"
+
 _PlayerBlackedOutText2::
 	text "<PLAYER> is out of"
 	line "useable #MON!"
