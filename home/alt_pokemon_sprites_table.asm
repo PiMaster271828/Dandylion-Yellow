@@ -97,6 +97,7 @@ AlternatePokemonSpriteTable1:
 	db JESSIE_JAMES, WEEZING, LOW(JamesWeezingPicFront), HIGH(JamesWeezingPicFront)
 	db JESSIE_JAMES, WEEPINBELL, LOW(JamesWeepinbellPicFront), HIGH(JamesWeepinbellPicFront)
 	db JESSIE_JAMES, VICTREEBEL, LOW(JamesVictreebelPicFront), HIGH(JamesVictreebelPicFront)
+	db JESSIE_JAMES, MAGIKARP, LOW(JamesMagikarpPicFront), HIGH(JamesMagikarpPicFront)
 	db JESSIE_JAMES, EKANS, LOW(JessieEkansPicFront), HIGH(JessieEkansPicFront)                     
 	db JESSIE_JAMES, ARBOK, LOW(JessieArbokPicFront), HIGH(JessieArbokPicFront)
 	db JESSIE_JAMES, LICKITUNG, LOW(JessieLickitungPicFront), HIGH(JessieLickitungPicFront)
@@ -121,6 +122,7 @@ AlternatePokemonSpriteTable1:
 	db SABRINA, KADABRA, LOW(SabrinaKadabraPicFront), HIGH(SabrinaKadabraPicFront)
 	db SABRINA, ALAKAZAM, LOW(SabrinaAlakazamPicFront), HIGH(SabrinaAlakazamPicFront)
 	db SABRINA, HAUNTER, LOW(SabrinaHaunterPicFront), HIGH(SabrinaHaunterPicFront)
+	db SABRINA, MR_MIME, LOW(SabrinaMrMimePicFront), HIGH(SabrinaMrMimePicFront)
 	db BLAINE, ARCANINE, LOW(BlaineArcaninePicFront), HIGH(BlaineArcaninePicFront)			  ; BLAINE
 	db BLAINE, TAUROS, LOW(BlaineTaurosPicFront), HIGH(BlaineTaurosPicFront)
 	db BLAINE, MAGMAR, LOW(BlaineMagmarPicFront), HIGH(BlaineMagmarPicFront)
