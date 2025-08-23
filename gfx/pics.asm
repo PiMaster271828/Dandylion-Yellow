@@ -56,7 +56,7 @@ StaryuPicFront::      INCBIN "gfx/pokemon/front/staryu.pic"
 StaryuPicBack::       INCBIN "gfx/pokemon/back/staryub.pic"
 BlastoisePicFront::   INCBIN "gfx/pokemon/front/blastoise.pic"
 BlastoisePicBack::    INCBIN "gfx/pokemon/back/blastoiseb.pic"
-PinsirPicFront::      INCBIN "gfx/pokemon/front/pinsir.pic"
+PinsirPicFront::      INCBIN "gfx/pokemon/front/pinsirsilver.pic"              ; Pinsir default sprite changed by G-Dubs
 PinsirPicBack::       INCBIN "gfx/pokemon/back/pinsirb.pic"
 TangelaPicFront::     INCBIN "gfx/pokemon/front/tangela.pic"
 TangelaPicBack::      INCBIN "gfx/pokemon/back/tangelab.pic"
@@ -284,7 +284,7 @@ PonytaPicBack::        INCBIN "gfx/pokemon/back/ponytab.pic"
 RapidashPicBack::      INCBIN "gfx/pokemon/back/rapidashb.pic"
 RattataPicFront::      INCBIN "gfx/pokemon/front/rattata.pic"
 RattataPicBack::       INCBIN "gfx/pokemon/back/rattatab.pic"
-RaticatePicFront::     INCBIN "gfx/pokemon/front/raticate.pic"
+RaticatePicFront::     INCBIN "gfx/pokemon/front/raticategold.pic"             ; Raticate default sprite changed by G-Dubs
 RaticatePicBack::      INCBIN "gfx/pokemon/back/raticateb.pic"
 NidorinoPicFront::     INCBIN "gfx/pokemon/front/nidorino.pic"
 NidorinoPicBack::      INCBIN "gfx/pokemon/back/nidorinob.pic"
@@ -323,10 +323,27 @@ WeepinbellPicBack::    INCBIN "gfx/pokemon/back/weepinbellb.pic"
 VictreebelPicFront::   INCBIN "gfx/pokemon/front/victreebel.pic"
 VictreebelPicBack::    INCBIN "gfx/pokemon/back/victreebelb.pic"
 
+
+/*SECTION "Alt Pokemon Sprites 1", ROMX                                         ; Section for Random trainer's PokéMon alt. sprites
+RocketZubatPicFront::      INCBIN "gfx/pokemon/front/zubat.pic"                ; Rocket Grunt's PokéMon sprite added by G-Dubs
+RocketRattataPicFront::    INCBIN "gfx/pokemon/front/rattatasilver.pic"        
+RocketRaticatePicFront::    INCBIN "gfx/pokemon/front/raticate.pic"        
+RocketMeowthPicFront::     INCBIN "gfx/pokemon/front/meowth.pic"               ; Team Rocket's Meowth sprite added by Vlad               
+JamesKoffingPicFront::     INCBIN "gfx/pokemon/front/koffinggold.pic"          ; James's PokéMon sprites added by Vlad
+JamesWeezingPicFront::     INCBIN "gfx/pokemon/front/weezing.pic"
+JamesWeepinbellPicFront::  INCBIN "gfx/pokemon/front/weepinbellsilver.pic"
+JamesVictreebelPicFront::  INCBIN "gfx/pokemon/front/victreebelsilver.pic"
+JamesMagikarpPicFront::    INCBIN "gfx/pokemon/front/magikarpgreen.pic"
+JessieEkansPicFront::      INCBIN "gfx/pokemon/front/ekansgold.pic"            ; Jessie's PokéMon sprites added by Vlad
+JessieArbokPicFront::      INCBIN "gfx/pokemon/front/arbok.pic"*/
+;FemalePikachuPicFront::    INCBIN "gfx/pokemon/front/pikachufemale.pic"       ; Female Trainer's PokéMon sprites added by G-Dubs
+;FemaleLaprasPicFront::     INCBIN "gfx/pokemon/front/laprassilver.pic"
+
 SECTION "Alt Pokemon Sprites 1", ROMX
 
-RocketZubatPicFront::      INCBIN "gfx/pokemon/front/zubat.pic"                ; Rocket Grunt's Zubat sprite added by G-Dubs
-RocketRattataPicFront::    INCBIN "gfx/pokemon/front/rattatasilver.pic"        ; Rocket Grunt's Rattata sprite added by G-Dubs
+RocketZubatPicFront::      INCBIN "gfx/pokemon/front/zubat.pic"                ; Rocket Grunt's PokéMon sprite added by G-Dubs
+RocketRattataPicFront::    INCBIN "gfx/pokemon/front/rattatasilver.pic"        
+RocketRaticatePicFront::    INCBIN "gfx/pokemon/front/raticate.pic"        
 RocketMeowthPicFront::     INCBIN "gfx/pokemon/front/meowth.pic"               ; Team Rocket's Meowth sprite added by Vlad               
 JamesKoffingPicFront::     INCBIN "gfx/pokemon/front/koffinggold.pic"          ; James's PokéMon sprites added by Vlad
 JamesWeezingPicFront::     INCBIN "gfx/pokemon/front/weezing.pic"
@@ -341,12 +358,14 @@ BrockGeodudePicFront::     INCBIN "gfx/pokemon/front/geodude.pic"
 BrockVulpixPicFront::      INCBIN "gfx/pokemon/front/vulpixsilver.pic"
 BrockZubatPicFront::       INCBIN "gfx/pokemon/front/zubatemerald.pic"
 MistyPsyduckPicFront::     INCBIN "gfx/pokemon/front/psyduck.pic"              ; Misty's PokéMon sprites added by Vlad & G-Dubs
+MistyGoldeenPicFront::     INCBIN "gfx/pokemon/front/goldeensilver.pic"
 MistyGolduckPicFront::     INCBIN "gfx/pokemon/front/golducksilver.pic"
 MistyHorseaPicFront::      INCBIN "gfx/pokemon/front/horsea.pic"
 MistyStaryuPicFront::      INCBIN "gfx/pokemon/front/staryuredandblue.pic"
 MistyStarmiePicFront::     INCBIN "gfx/pokemon/front/starmiegreen.pic"
 LtSurgeRaichuPicFront::    INCBIN "gfx/pokemon/front/raichusilver.pic"         ; Lt. Surge's PokéMon sprites added by Vlad
 LtSurgeFearowPicFront::    INCBIN "gfx/pokemon/front/fearowsilver.pic"
+LtSurgeRaticatePicFront::  INCBIN "gfx/pokemon/front/raticatesilver.pic"
 ErikaVileplumePicFront::   INCBIN "gfx/pokemon/front/vileplume.pic"            ; Erika's PokéMon sprites added by Vlad & G-Dubs
 ErikaDragonairPicFront::   INCBIN "gfx/pokemon/front/dragonairgold.pic"
 KogaWeezingPicFront::      INCBIN "gfx/pokemon/front/weezinggold.pic"          ; Koga's PokéMon sprites added by Vlad
@@ -362,10 +381,11 @@ BlaineArcaninePicFront::   INCBIN "gfx/pokemon/front/arcaninesilver.pic"       ;
 BlaineTaurosPicFront::     INCBIN "gfx/pokemon/front/tauroscrystal.pic"
 BlaineMagmarPicFront::     INCBIN "gfx/pokemon/front/magmarsilver.pic"
 GiovanniPersianPicFront::  INCBIN "gfx/pokemon/front/persian.pic"              ; Giovanni's PokéMon sprites added by Vlad
+GiovanniPinsirPicFront::   INCBIN "gfx/pokemon/front/pinsir.pic"
 GiovanniRhydonPicFront::   INCBIN "gfx/pokemon/front/rhydonsilver.pic"
 
-SECTION "Alt Pokemon Sprites 2", ROMX
-LoreleiDewgongPicFront::   INCBIN "gfx/pokemon/front/dewgong.pic"             ; Lorelei's PokéMon sprites added by Vlad
+SECTION "Alt Pokemon Sprites 2", ROMX                                          ; Section for Elite Four & Rival PokéMon alt. sprites
+LoreleiDewgongPicFront::   INCBIN "gfx/pokemon/front/dewgong.pic"              ; Lorelei's PokéMon sprites added by Vlad
 LoreleiCloysterPicFront::  INCBIN "gfx/pokemon/front/cloyster.pic"      
 LoreleiSlowbroPicFront::   INCBIN "gfx/pokemon/front/slowbrogold.pic"
 LoreleiLaprasPicFront::    INCBIN "gfx/pokemon/front/lapras.pic"
@@ -382,8 +402,7 @@ LanceDragonairPicFront::   INCBIN "gfx/pokemon/front/dragonairsilver.pic"
 LanceDragonitePicFront::   INCBIN "gfx/pokemon/front/dragonitesilver.pic"
 RivalAlakazamPicFront::    INCBIN "gfx/pokemon/front/alakazamsilver.pic"      ; Rival's PokéMon sprites added by G-Dubs
 RivalGolduckPicFront::     INCBIN "gfx/pokemon/front/golduckfrlg.pic"
-;FemalePikachuPicFront::    INCBIN "gfx/pokemon/front/pikachufemale.pic"       ; Female Trainer's PokéMon sprites added by G-Dubs
-;FemaleLaprasPicFront::     INCBIN "gfx/pokemon/front/laprassilver.pic"
+
 
 
 SECTION "Trainer Pics 1", ROMX

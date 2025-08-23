@@ -91,7 +91,8 @@ CheckAlternatePokemonSprite2::
 ; COMPACT TABLE - Only 4 bytes per entry (no bank stored)
 AlternatePokemonSpriteTable1:
     db ROCKET, ZUBAT, LOW(RocketZubatPicFront), HIGH(RocketZubatPicFront)                     ; ROCKET
-    db ROCKET, RATTATA, LOW(RocketRattataPicFront), HIGH(RocketRattataPicFront)			        
+    db ROCKET, RATTATA, LOW(RocketRattataPicFront), HIGH(RocketRattataPicFront)
+	db ROCKET, RATICATE, LOW(RocketRaticatePicFront), HIGH(RocketRaticatePicFront)			        
 	db JESSIE_JAMES, MEOWTH, LOW(RocketMeowthPicFront), HIGH(RocketMeowthPicFront) 			  ; JESSIE_JAMES
 	db JESSIE_JAMES, KOFFING, LOW(JamesKoffingPicFront), HIGH(JamesKoffingPicFront)
 	db JESSIE_JAMES, WEEZING, LOW(JamesWeezingPicFront), HIGH(JamesWeezingPicFront)
@@ -106,12 +107,14 @@ AlternatePokemonSpriteTable1:
 	db BROCK, VULPIX, LOW(BrockVulpixPicFront), HIGH(BrockVulpixPicFront)	
 	db BROCK, ZUBAT, LOW(BrockZubatPicFront), HIGH(BrockZubatPicFront)	
 	db MISTY, PSYDUCK, LOW(MistyPsyduckPicFront), HIGH(MistyPsyduckPicFront)				  ; MISTY
+	db MISTY, GOLDEEN, LOW(MistyGoldeenPicFront), HIGH(MistyGoldeenPicFront)
 	db MISTY, GOLDUCK, LOW(MistyGolduckPicFront), HIGH(MistyGolduckPicFront)
 	db MISTY, HORSEA, LOW(MistyHorseaPicFront), HIGH(MistyHorseaPicFront)
 	db MISTY, STARYU, LOW(MistyStaryuPicFront), HIGH(MistyStaryuPicFront) 
 	db MISTY, STARMIE, LOW(MistyStarmiePicFront), HIGH(MistyStarmiePicFront) 				
 	db LT_SURGE, RAICHU, LOW(LtSurgeRaichuPicFront), HIGH(LtSurgeRaichuPicFront)			  ; LT_SURGE
-	db LT_SURGE, FEAROW, LOW(LtSurgeFearowPicFront), HIGH(LtSurgeFearowPicFront)	
+	db LT_SURGE, FEAROW, LOW(LtSurgeFearowPicFront), HIGH(LtSurgeFearowPicFront)
+	db LT_SURGE, RATICATE, LOW(LtSurgeRaticatePicFront), HIGH(LtSurgeRaticatePicFront)	
 	db ERIKA, VILEPLUME, LOW(ErikaVileplumePicFront), HIGH(ErikaVileplumePicFront)			  ; ERIKA
 	db ERIKA, DRAGONAIR, LOW(ErikaDragonairPicFront), HIGH(ErikaDragonairPicFront)
 	db KOGA, WEEZING, LOW(KogaWeezingPicFront), HIGH(KogaWeezingPicFront)					  ; KOGA			
@@ -127,6 +130,7 @@ AlternatePokemonSpriteTable1:
 	db BLAINE, TAUROS, LOW(BlaineTaurosPicFront), HIGH(BlaineTaurosPicFront)
 	db BLAINE, MAGMAR, LOW(BlaineMagmarPicFront), HIGH(BlaineMagmarPicFront)
 	db GIOVANNI, PERSIAN, LOW(GiovanniPersianPicFront), HIGH(GiovanniPersianPicFront)		  ; GIOVANNI
+	db GIOVANNI, PINSIR, LOW(GiovanniPinsirPicFront), HIGH(GiovanniPinsirPicFront)
 	db GIOVANNI, RHYDON, LOW(GiovanniRhydonPicFront), HIGH(GiovanniRhydonPicFront)
 	db $FF
 
