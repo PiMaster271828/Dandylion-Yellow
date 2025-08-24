@@ -165,19 +165,22 @@ AlternatePokemonSpriteTable2:
 	db LT_SURGE, RATICATE, LOW(LtSurgeRaticatePicFront), HIGH(LtSurgeRaticatePicFront)	
 	db ERIKA, VILEPLUME, LOW(ErikaVileplumePicFront), HIGH(ErikaVileplumePicFront)			  ; ERIKA
 	db ERIKA, DRAGONAIR, LOW(ErikaDragonairPicFront), HIGH(ErikaDragonairPicFront)
-	db KOGA, WEEZING, LOW(KogaWeezingPicFront), HIGH(KogaWeezingPicFront)					  ; KOGA			
+	db KOGA, WEEZING, LOW(KogaWeezingPicFront), HIGH(KogaWeezingPicFront)					  ; KOGA
+	db KOGA, VENONAT, LOW(KogaVenonatPicFront), HIGH(KogaVenonatPicFront)				
 	db KOGA, VENOMOTH, LOW(KogaVenomothPicFront), HIGH(KogaVenomothPicFront)				
 	db BLACKBELT, HITMONLEE, LOW(KarateHitmonleePicFront), HIGH(KarateHitmonleePicFront)	  ; KARATE MASTER
 	db BLACKBELT, HITMONCHAN, LOW(KarateHitmonchanPicFront), HIGH(KarateHitmonchanPicFront)
 	db SABRINA, GOLDUCK, LOW(SabrinaGolduckPicFront), HIGH(SabrinaGolduckPicFront)			  ; SABRINA
 	db SABRINA, KADABRA, LOW(SabrinaKadabraPicFront), HIGH(SabrinaKadabraPicFront)
 	db SABRINA, ALAKAZAM, LOW(SabrinaAlakazamPicFront), HIGH(SabrinaAlakazamPicFront)
+	db SABRINA, HYPNO, LOW(SabrinaHypnoPicFront), HIGH(SabrinaHypnoPicFront)
 	db SABRINA, HAUNTER, LOW(SabrinaHaunterPicFront), HIGH(SabrinaHaunterPicFront)
 	db SABRINA, MR_MIME, LOW(SabrinaMrMimePicFront), HIGH(SabrinaMrMimePicFront)
 	db BLAINE, ARCANINE, LOW(BlaineArcaninePicFront), HIGH(BlaineArcaninePicFront)			  ; BLAINE
 	db BLAINE, TAUROS, LOW(BlaineTaurosPicFront), HIGH(BlaineTaurosPicFront)
 	db BLAINE, MAGMAR, LOW(BlaineMagmarPicFront), HIGH(BlaineMagmarPicFront)
 	db GIOVANNI, PERSIAN, LOW(GiovanniPersianPicFront), HIGH(GiovanniPersianPicFront)		  ; GIOVANNI
+	db GIOVANNI, DUGTRIO, LOW(GiovanniDugtrioPicFront), HIGH(GiovanniDugtrioPicFront)
 	db GIOVANNI, PINSIR, LOW(GiovanniPinsirPicFront), HIGH(GiovanniPinsirPicFront)
 	db GIOVANNI, RHYDON, LOW(GiovanniRhydonPicFront), HIGH(GiovanniRhydonPicFront)
 	db $FF
