@@ -186,7 +186,7 @@ MachopPicFront::      INCBIN "gfx/pokemon/front/machop.pic"
 MachopPicBack::       INCBIN "gfx/pokemon/back/machopb.pic"
 ZubatPicFront::       INCBIN "gfx/pokemon/front/zubatsilver.pic"               ; Zubat default sprite changed by G-Dubs
 ZubatPicBack::        INCBIN "gfx/pokemon/back/zubatb.pic"
-EkansPicFront::       INCBIN "gfx/pokemon/front/ekans.pic"
+EkansPicFront::       INCBIN "gfx/pokemon/front/ekansgeorge.pic"               ; Ekans default sprite changed by G-Dubs
 EkansPicBack::        INCBIN "gfx/pokemon/back/ekansb.pic"
 ParasPicFront::       INCBIN "gfx/pokemon/front/paras.pic"
 ParasPicBack::        INCBIN "gfx/pokemon/back/parasb.pic"
@@ -328,14 +328,15 @@ SECTION "Alt Pokemon Sprites 1", ROMX                                          ;
 
 RocketZubatPicFront::         INCBIN "gfx/pokemon/front/zubat.pic"             ; Rocket Grunt's PokéMon sprite added by G-Dubs
 RocketRattataPicFront::       INCBIN "gfx/pokemon/front/rattatasilver.pic"        
-RocketRaticatePicFront::      INCBIN "gfx/pokemon/front/raticate.pic"        
+RocketRaticatePicFront::      INCBIN "gfx/pokemon/front/raticate.pic"
+RocketEkansPicFront::         INCBIN "gfx/pokemon/front/ekansgold.pic"        
 RocketMeowthPicFront::        INCBIN "gfx/pokemon/front/meowth.pic"            ; Team Rocket's Meowth sprite added by Vlad               
 JamesKoffingPicFront::        INCBIN "gfx/pokemon/front/koffinggold.pic"       ; James's PokéMon sprites added by Vlad
 JamesWeezingPicFront::        INCBIN "gfx/pokemon/front/weezing.pic"
 JamesWeepinbellPicFront::     INCBIN "gfx/pokemon/front/weepinbellsilvervlad.pic"
 JamesVictreebelPicFront::     INCBIN "gfx/pokemon/front/victreebelsilver.pic"
 JamesMagikarpPicFront::       INCBIN "gfx/pokemon/front/magikarpgreen.pic"
-JessieEkansPicFront::         INCBIN "gfx/pokemon/front/ekansgold.pic"         ; Jessie's PokéMon sprites added by Vlad
+JessieEkansPicFront::         INCBIN "gfx/pokemon/front/ekans.pic"             ; Jessie's PokéMon sprites added by Vlad
 JessieArbokPicFront::         INCBIN "gfx/pokemon/front/arbok.pic"
 JessieLickitungPicFront::     INCBIN "gfx/pokemon/front/lickitungsilver.pic"
 KarateHitmonleePicFront::     INCBIN "gfx/pokemon/front/hitmonleegold.pic"     ; Karate Master's PokéMon sprites added by Vlad
