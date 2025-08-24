@@ -147,7 +147,12 @@ AlternatePokemonSpriteTable1:
 	db JESSIE_JAMES, EKANS, LOW(JessieEkansPicFront), HIGH(JessieEkansPicFront)                     
 	db JESSIE_JAMES, ARBOK, LOW(JessieArbokPicFront), HIGH(JessieArbokPicFront)
 	db JESSIE_JAMES, LICKITUNG, LOW(JessieLickitungPicFront), HIGH(JessieLickitungPicFront)
-	db GUITARIST, ELECTABUZZ, LOW(GuitaristElectabuzzPicFront), HIGH(GuitaristElectabuzzPicFront)
+	db BLACKBELT, HITMONLEE, LOW(KarateHitmonleePicFront), HIGH(KarateHitmonleePicFront)	       ; KARATE MASTER
+	db BLACKBELT, HITMONCHAN, LOW(KarateHitmonchanPicFront), HIGH(KarateHitmonchanPicFront)
+   ;db JANINE, NIDOQUEEN, LOW(JanineNidoqueenPicFront), HIGH(JanineNidoqueenPicFront)              ; JANINE
+   ;db JANINE, VENOMOTH, LOW(JanineVenomothPicFront), HIGH(JanineVenomothPicFront)
+	db GUITARIST, ELECTABUZZ, LOW(GuitaristElectabuzzPicFront), HIGH(GuitaristElectabuzzPicFront)  ; OTHER TRAINERS
+   ;db FEMALE TRAINERS                                                                             ; FEMALE TRAINERS
 	db $FF
 
 AlternatePokemonSpriteTable2:
@@ -170,10 +175,9 @@ AlternatePokemonSpriteTable2:
 	db ERIKA, DRAGONAIR, LOW(ErikaDragonairPicFront), HIGH(ErikaDragonairPicFront)
 	db ERIKA, EXEGGUTOR, Low(ExeggutorPicFront), HIGH(ExeggutorPicFront)
 	db KOGA, WEEZING, LOW(KogaWeezingPicFront), HIGH(KogaWeezingPicFront)					       ; KOGA
+	db KOGA, SCYTHER, LOW(KogaScytherPicFront), HIGH(KogaScytherPicFront)
 	db KOGA, VENONAT, LOW(KogaVenonatPicFront), HIGH(KogaVenonatPicFront)				
 	db KOGA, VENOMOTH, LOW(KogaVenomothPicFront), HIGH(KogaVenomothPicFront)				
-	db BLACKBELT, HITMONLEE, LOW(KarateHitmonleePicFront), HIGH(KarateHitmonleePicFront)	       ; KARATE MASTER
-	db BLACKBELT, HITMONCHAN, LOW(KarateHitmonchanPicFront), HIGH(KarateHitmonchanPicFront)
 	db SABRINA, GOLDUCK, LOW(SabrinaGolduckPicFront), HIGH(SabrinaGolduckPicFront)			       ; SABRINA
 	db SABRINA, KADABRA, LOW(SabrinaKadabraPicFront), HIGH(SabrinaKadabraPicFront)
 	db SABRINA, ALAKAZAM, LOW(SabrinaAlakazamPicFront), HIGH(SabrinaAlakazamPicFront)

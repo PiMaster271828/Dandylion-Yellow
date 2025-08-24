@@ -48,7 +48,7 @@ MonsterPalettes:
 	db PAL_REDBLUEMON                  ; VILEPLUME
 	db PAL_REDMON                      ; PARAS
 	db PAL_REDMON                      ; PARASECT
-	db PAL_PURPLEMON                   ; VENONAT
+	db PAL_REDBLUEMON                  ; VENONAT
 	db PAL_PURPLEMON                   ; VENOMOTH
 	db PAL_BROWNMON                    ; DIGLETT
 	db PAL_BROWNMON                    ; DUGTRIO
@@ -93,8 +93,8 @@ MonsterPalettes:
 	db PAL_LAVENDERMON                 ; SHELLDER
 	db PAL_LAVENDERMON                 ; CLOYSTER
 	db PAL_PURPLEMON                   ; GASTLY
-	db PAL_PURPLEMON                   ; HAUNTER
-	db PAL_PURPLEMON                   ; GENGAR
+	db PAL_REDBLUEMON                  ; HAUNTER
+	db PAL_REDBLUEMON                  ; GENGAR
 	db PAL_DEFAULTMON                  ; ONIX
 	db PAL_YELLOWMON                   ; DROWZEE
 	db PAL_YELLOWMON                   ; HYPNO
