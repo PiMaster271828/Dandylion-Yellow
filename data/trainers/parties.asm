@@ -850,34 +850,34 @@ Rival2Data:                                                                     
 ; SS Anne 2F
 	db $FF, 23, PIDGEOTTO, 20, RATICATE , 23, WEEPINBELL, 21, KADABRA, 22, SANDSHREW, 25, EEVEE, 0	         ; Rival 2 1              ; Pidgeotto, Raticate, & Kadabra added by G-Dubs 
 ; Pokémon Tower 2F
-    db $FF, 34, FEAROW, 33, SANDSLASH, 32, SHELLDER, 32, GROWLITHE, 33, KADABRA, 35, JOLTEON, 0              ; Rival 2 Jolteon   2    ; Sandslash added by G-Dubs
+    db $FF, 34, FEAROW, 33, SANDSLASH, 32, SHELLDER, 32, GROWLITHE, 33, KADABRA, 35, JOLTEON, 0              ; Rival 2  2 Jolteon     ; Sandslash added by G-Dubs
    ;db $FF, 28, FEAROW, 26, SANDSLASH, 26, KADABRA, 25, GYARADOS, 25, VULPIX, 30, EEVEE, 0                   
-	db $FF, 34, FEAROW, 33, SANDSLASH, 32, MAGNEMITE, 33, KADABRA, 32, SHELLDER, 35, FLAREON, 0              ; Rival 2 Flareon   3    ; Sandslash added by G-Dubs
+	db $FF, 34, FEAROW, 33, SANDSLASH, 32, MAGNEMITE, 33, KADABRA, 32, SHELLDER, 35, FLAREON, 0              ; Rival 2  3 Flareon     ; Sandslash added by G-Dubs
    ;db $FF, 28, FEAROW, 26, SANDSLASH, 26, KADABRA, 25, MAGNEMITE, 25, GYARADOS, 30, EEVEE, 0                
-	db $FF, 34, FEAROW, 33, SANDSLASH, 32, VULPIX, 33, KADABRA, 32, SCYTHER, 35, VAPOREON, 0                 ; Rival 2 Vaporeon  4    ; Sandslash added by G-Dubs
+	db $FF, 34, FEAROW, 33, SANDSLASH, 32, VULPIX, 33, KADABRA, 32, SCYTHER, 35, VAPOREON, 0                 ; Rival 2  4 Vaporeon    ; Sandslash added by G-Dubs
    ;db $FF, 28, FEAROW, 26, SANDSLASH, 26, KADABRA, 25, VULPIX, 22, MAGNEMITE, 30, EEVEE, 0	                 
 ; Silph Co. 7F
-    db $FF, 43, TAUROS, 43, PARASECT, 44, GYARADOS, 43, RHYDON, 44, ALAKAZAM, 46, JOLTEON, 0                 ; Rival 2 Jolteon   5    ; Tauros added by G-Dubs
+    db $FF, 43, TAUROS, 43, PARASECT, 44, GYARADOS, 43, RHYDON, 44, ALAKAZAM, 46, JOLTEON, 0                 ; Rival 2  5 Jolteon     ; Tauros added by G-Dubs
    ;db $FF, 38, SANDSLASH, 37, PIDGEOT, 35, NINETALES, 36, CLOYSTER, 37, KADABRA, 40, JOLTEON, 0             
-    db $FF, 43, PIDGEOT, 43, ELECTABUZZ, 44, CLOYSTER, 43, DODRIO , 44, ALAKAZAM, 46, FLAREON, 0             ; Rival 2 Flareon   6    ; Pidgeot added by G-Dubs
+    db $FF, 43, PIDGEOT, 43, ELECTABUZZ, 44, CLOYSTER, 43, DODRIO , 44, ALAKAZAM, 46, FLAREON, 0             ; Rival 2  6 Flareon     ; Pidgeot added by G-Dubs
    ;db $FF, 38, SANDSLASH, 37, PIDGEOT, 35, CLOYSTER, 36, MAGNETON, 37, KADABRA, 40, FLAREON, 0              
-    db $FF, 43, MAROWAK, 43, VICTREEBEL, 44, PORYGON, 43, PRIMEAPE, 44, ALAKAZAM, 46, VAPOREON, 0	         ; Rival 2 Vaporeon  7    ; Marowak added by G-Dubs
+    db $FF, 43, MAROWAK, 43, VICTREEBEL, 44, PORYGON, 43, PRIMEAPE, 44, ALAKAZAM, 46, VAPOREON, 0	         ; Rival 2  7 Vaporeon    ; Marowak added by G-Dubs
    ;db $FF, 38, SANDSLASH, 37, PIDGEOT, 35, MAGNETON, 36, NINETALES, 37, KADABRA, 40, VAPOREON, 0                 
 ; Route 22
-    db $FF, 55, JOLTEON, 53, PIDGEOT, 52, EXEGGUTOR, 52, MAROWAK, 54, ARCANINE, 54, ALAKAZAM, 0              ; Rival 2 Jolteon   8
+    db $FF, 55, JOLTEON, 53, PIDGEOT, 52, EXEGGUTOR, 52, MAROWAK, 54, ARCANINE, 54, ALAKAZAM, 0              ; Rival 2  8 Jolteon
    ;db $FF, 47, SANDSLASH, 45, EXEGGCUTE, 45, NINETALES, 47, CLOYSTER, 50, KADABRA, 53, JOLTEON, 0
-	db $FF, 54, FEAROW, 54, ALAKAZAM, 52, MAROWAK, 52, MAGNETON, 53, GOLDUCK, 55, FLAREON, 0                 ; Rival 2 Flareon   9           
+	db $FF, 54, FEAROW, 54, ALAKAZAM, 52, MAROWAK, 52, MAGNETON, 53, GOLDUCK, 55, FLAREON, 0                 ; Rival 2  9 Flareon             
    ;db $FF, 47, SANDSLASH, 45, EXEGGCUTE, 45, CLOYSTER, 47, MAGNETON, 50, KADABRA, 53, FLAREON, 0   
-	db $FF, 53, PIDGEOT, 54, MACHAMP, 54, ALAKAZAM, 52, NINETALES, 52, SCYTHER, 55, VAPOREON, 0              ; Rival 2 Vaporeon 10         
+	db $FF, 53, PIDGEOT, 54, MACHAMP, 54, ALAKAZAM, 52, NINETALES, 52, SCYTHER, 55, VAPOREON, 0              ; Rival 2 10 Vaporeon          
    ;db $FF, 47, SANDSLASH, 45, EXEGGCUTE, 45, MAGNETON, 47, NINETALES, 50, KADABRA, 53, VAPOREON, 0          
 
 Rival3Data:                                                                                                  ; Rival 3 Parties based on Yellow Legacy Parties
 ; Champion's Room
-	db $FF, 60, RHYDON, 63, ALAKAZAM, 62, EXEGGUTOR, 63, ARCANINE, 61, GYARADOS, 65, JOLTEON, 0              ; Rival 2 Jolteon  1
+	db $FF, 61, RHYDON, 63, ALAKAZAM, 62, EXEGGUTOR, 63, ARCANINE, 61, GYARADOS, 65, JOLTEON, 0              ; Rival 3  1 Jolteon  
    ;db $FF, 61, SANDSLASH, 59, ALAKAZAM, 61, EXEGGUTOR, 61, CLOYSTER, 63, NINETALES, 65, JOLTEON, 0          
-	db $FF, 61, DODRIO, 60, SANDSLASH, 63, ALAKAZAM, 62, MAGNETON, 62, CLOYSTER, 65, FLAREON, 0              ; Rival 2 Flareon  2
+	db $FF, 61, DODRIO, 61, SANDSLASH, 63, ALAKAZAM, 63, MAGNETON, 62, CLOYSTER, 65, FLAREON, 0              ; Rival 3  2 Flareon  
    ;db $FF, 61, SANDSLASH, 59, ALAKAZAM, 61, EXEGGUTOR, 61, MAGNETON, 63, CLOYSTER, 65, FLAREON, 0           
-	db $FF, 61, PIDGEOT, 60, MACHAMP, 63, ALAKAZAM, 62, NINETALES, 62, VICTREEBEL, 65, VAPOREON, 0           ; Rival 2 Vaporeon 3
+	db $FF, 61, PIDGEOT, 61, MACHAMP, 63, ALAKAZAM, 62, NINETALES, 63, VICTREEBEL, 65, VAPOREON, 0           ; Rival 3  3 Vaporeon 
    ;db $FF, 61, SANDSLASH, 59, ALAKAZAM, 61, EXEGGUTOR, 61, NINETALES, 63, MAGNETON, 65, VAPOREON, 0         
 
 LoreleiData:
