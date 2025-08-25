@@ -193,6 +193,7 @@ AlternatePokemonSpriteTable2:
 	db BLAINE, MAGMAR, LOW(BlaineMagmarPicFront), HIGH(BlaineMagmarPicFront)
 	db GIOVANNI, PERSIAN, LOW(GiovanniPersianPicFront), HIGH(GiovanniPersianPicFront)		       ; GIOVANNI
 	db GIOVANNI, KANGASKHAN, LOW(GiovanniKangaskhanPicFront), HIGH(GiovanniKangaskhanPicFront)
+	db GIOVANNI, ONIX, LOW(GiovanniOnixPicFront), HIGH(GiovanniOnixPicFront)
 	db GIOVANNI, DUGTRIO, LOW(GiovanniDugtrioPicFront), HIGH(GiovanniDugtrioPicFront)
 	db GIOVANNI, PINSIR, LOW(GiovanniPinsirPicFront), HIGH(GiovanniPinsirPicFront)
 	db GIOVANNI, RHYDON, LOW(GiovanniRhydonPicFront), HIGH(GiovanniRhydonPicFront)
