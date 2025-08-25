@@ -14,7 +14,7 @@ VoltorbPicFront::     INCBIN "gfx/pokemon/front/voltorb.pic"
 VoltorbPicBack::      INCBIN "gfx/pokemon/back/voltorbb.pic"
 NidokingPicFront::    INCBIN "gfx/pokemon/front/nidoking.pic"
 NidokingPicBack::     INCBIN "gfx/pokemon/back/nidokingb.pic"
-SlowbroPicFront::     INCBIN "gfx/pokemon/front/slowbrofrlgvlad.pic"               ; Slowbro default sprite changed by G-Dubs
+SlowbroPicFront::     INCBIN "gfx/pokemon/front/slowbrofrlgvlad.pic"           ; Slowbro default sprite changed by G-Dubs
 SlowbroPicBack::      INCBIN "gfx/pokemon/back/slowbrob.pic"
 IvysaurPicFront::     INCBIN "gfx/pokemon/front/ivysaur.pic"
 IvysaurPicBack::      INCBIN "gfx/pokemon/back/ivysaurb.pic"
@@ -36,7 +36,7 @@ CubonePicFront::      INCBIN "gfx/pokemon/front/cubone.pic"
 CubonePicBack::       INCBIN "gfx/pokemon/back/cuboneb.pic"
 RhyhornPicFront::     INCBIN "gfx/pokemon/front/rhyhorn.pic"
 RhyhornPicBack::      INCBIN "gfx/pokemon/back/rhyhornb.pic"
-LaprasPicFront::      INCBIN "gfx/pokemon/front/laprascrystalvlad.pic"             ; Lapras default sprite changed by Vlad
+LaprasPicFront::      INCBIN "gfx/pokemon/front/laprascrystalvlad.pic"         ; Lapras default sprite changed by Vlad
 LaprasPicBack::       INCBIN "gfx/pokemon/back/laprasb.pic"
 ArcaninePicFront::    INCBIN "gfx/pokemon/front/arcanine.pic"
 ArcaninePicBack::     INCBIN "gfx/pokemon/back/arcanineb.pic"
@@ -82,7 +82,7 @@ ChanseyPicFront::     INCBIN "gfx/pokemon/front/chansey.pic"
 ChanseyPicBack::      INCBIN "gfx/pokemon/back/chanseyb.pic"
 MachokePicFront::     INCBIN "gfx/pokemon/front/machoke.pic"
 MachokePicBack::      INCBIN "gfx/pokemon/back/machokeb.pic"
-MrMimePicFront::      INCBIN "gfx/pokemon/front/mr.mimegreenvlad.pic"              ; Mr. Mime Default sprite changed by G-Dubs
+MrMimePicFront::      INCBIN "gfx/pokemon/front/mr.mimegreenvlad.pic"          ; Mr. Mime Default sprite changed by G-Dubs
 MrMimePicBack::       INCBIN "gfx/pokemon/back/mr.mimeb.pic"
 HitmonleePicFront::   INCBIN "gfx/pokemon/front/hitmonleesilver.pic"           ; Hitmonlee default sprite changed by Vlad
 HitmonleePicBack::    INCBIN "gfx/pokemon/back/hitmonleeb.pic"
@@ -330,7 +330,7 @@ RocketZubatPicFront::         INCBIN "gfx/pokemon/front/zubat.pic"             ;
 RocketRattataPicFront::       INCBIN "gfx/pokemon/front/rattatasilver.pic"        
 RocketRaticatePicFront::      INCBIN "gfx/pokemon/front/raticate.pic"
 RocketKoffingPicFront::       INCBIN "gfx/pokemon/front/koffingsilver.pic"
-RocketGrimerPicFront::       INCBIN "gfx/pokemon/front/grimersilver.pic"
+RocketGrimerPicFront::        INCBIN "gfx/pokemon/front/grimersilver.pic"
 RocketEkansPicFront::         INCBIN "gfx/pokemon/front/ekansgold.pic"        
 RocketMeowthPicFront::        INCBIN "gfx/pokemon/front/meowth.pic"            ; Team Rocket's Meowth sprite added by Vlad               
 JamesKoffingPicFront::        INCBIN "gfx/pokemon/front/koffinggold.pic"       ; James's PokéMon sprites added by Vlad
