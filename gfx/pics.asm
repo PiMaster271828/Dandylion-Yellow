@@ -56,7 +56,7 @@ StaryuPicFront::      INCBIN "gfx/pokemon/front/staryu.pic"
 StaryuPicBack::       INCBIN "gfx/pokemon/back/staryub.pic"
 BlastoisePicFront::   INCBIN "gfx/pokemon/front/blastoise.pic"
 BlastoisePicBack::    INCBIN "gfx/pokemon/back/blastoiseb.pic"
-PinsirPicFront::      INCBIN "gfx/pokemon/front/pinsirsilver.pic"              ; Pinsir default sprite changed by G-Dubs
+PinsirPicFront::      INCBIN "gfx/pokemon/front/pinsirsilvervlad.pic"              ; Pinsir default sprite changed by G-Dubs
 PinsirPicBack::       INCBIN "gfx/pokemon/back/pinsirb.pic"
 TangelaPicFront::     INCBIN "gfx/pokemon/front/tangela.pic"
 TangelaPicBack::      INCBIN "gfx/pokemon/back/tangelab.pic"
@@ -158,7 +158,7 @@ KabutoPicFront::      INCBIN "gfx/pokemon/front/kabuto.pic"
 KabutoPicBack::       INCBIN "gfx/pokemon/back/kabutob.pic"
 KabutopsPicFront::    INCBIN "gfx/pokemon/front/kabutops.pic"
 KabutopsPicBack::     INCBIN "gfx/pokemon/back/kabutopsb.pic"
-HorseaPicFront::      INCBIN "gfx/pokemon/front/horseasilver.pic"              ; Horsea default sprite changed by G-Dubs
+HorseaPicFront::      INCBIN "gfx/pokemon/front/horseasilvervlad.pic"              ; Horsea default sprite changed by G-Dubs
 HorseaPicBack::       INCBIN "gfx/pokemon/back/horseab.pic"
 SeadraPicFront::      INCBIN "gfx/pokemon/front/seadra.pic"
 SeadraPicBack::       INCBIN "gfx/pokemon/back/seadrab.pic"
@@ -387,7 +387,7 @@ BlaineMagmarPicFront::       INCBIN "gfx/pokemon/front/magmarsilver.pic"
 GiovanniPersianPicFront::    INCBIN "gfx/pokemon/front/persian.pic"            ; Giovanni's PokéMon sprites added by Vlad
 GiovanniKangaskhanPicFront:: INCBIN "gfx/pokemon/front/kangaskhan.pic"
 GiovanniDugtrioPicFront::    INCBIN "gfx/pokemon/front/dugtrio.pic"
-GiovanniPinsirPicFront::     INCBIN "gfx/pokemon/front/pinsirsilvervlad.pic"
+GiovanniPinsirPicFront::     INCBIN "gfx/pokemon/front/pinsir.pic"
 GiovanniRhydonPicFront::     INCBIN "gfx/pokemon/front/rhydonsilver.pic"
 
 
