@@ -14,7 +14,7 @@ VoltorbPicFront::     INCBIN "gfx/pokemon/front/voltorb.pic"
 VoltorbPicBack::      INCBIN "gfx/pokemon/back/voltorbb.pic"
 NidokingPicFront::    INCBIN "gfx/pokemon/front/nidoking.pic"
 NidokingPicBack::     INCBIN "gfx/pokemon/back/nidokingb.pic"
-SlowbroPicFront::     INCBIN "gfx/pokemon/front/slowbrofrlg.pic"               ; Slowbro default sprite changed by G-Dubs
+SlowbroPicFront::     INCBIN "gfx/pokemon/front/slowbrofrlgvlad.pic"               ; Slowbro default sprite changed by G-Dubs
 SlowbroPicBack::      INCBIN "gfx/pokemon/back/slowbrob.pic"
 IvysaurPicFront::     INCBIN "gfx/pokemon/front/ivysaur.pic"
 IvysaurPicBack::      INCBIN "gfx/pokemon/back/ivysaurb.pic"
@@ -36,7 +36,7 @@ CubonePicFront::      INCBIN "gfx/pokemon/front/cubone.pic"
 CubonePicBack::       INCBIN "gfx/pokemon/back/cuboneb.pic"
 RhyhornPicFront::     INCBIN "gfx/pokemon/front/rhyhorn.pic"
 RhyhornPicBack::      INCBIN "gfx/pokemon/back/rhyhornb.pic"
-LaprasPicFront::      INCBIN "gfx/pokemon/front/laprascrystal.pic"             ; Lapras default sprite changed by Vlad
+LaprasPicFront::      INCBIN "gfx/pokemon/front/laprascrystalvlad.pic"             ; Lapras default sprite changed by Vlad
 LaprasPicBack::       INCBIN "gfx/pokemon/back/laprasb.pic"
 ArcaninePicFront::    INCBIN "gfx/pokemon/front/arcanine.pic"
 ArcaninePicBack::     INCBIN "gfx/pokemon/back/arcanineb.pic"
@@ -82,7 +82,7 @@ ChanseyPicFront::     INCBIN "gfx/pokemon/front/chansey.pic"
 ChanseyPicBack::      INCBIN "gfx/pokemon/back/chanseyb.pic"
 MachokePicFront::     INCBIN "gfx/pokemon/front/machoke.pic"
 MachokePicBack::      INCBIN "gfx/pokemon/back/machokeb.pic"
-MrMimePicFront::      INCBIN "gfx/pokemon/front/mr.mimegreen.pic"              ; Mr. Mime Default sprite changed by G-Dubs
+MrMimePicFront::      INCBIN "gfx/pokemon/front/mr.mimegreenvlad.pic"              ; Mr. Mime Default sprite changed by G-Dubs
 MrMimePicBack::       INCBIN "gfx/pokemon/back/mr.mimeb.pic"
 HitmonleePicFront::   INCBIN "gfx/pokemon/front/hitmonleesilver.pic"           ; Hitmonlee default sprite changed by Vlad
 HitmonleePicBack::    INCBIN "gfx/pokemon/back/hitmonleeb.pic"
@@ -347,7 +347,7 @@ KarateHitmonchanPicFront::    INCBIN "gfx/pokemon/front/hitmonchangold.pic"
 ;JanineNidoqueenPicFront::     INCBIN "gfx/pokemon/front/nidoqueen.pic"
 GuitaristElectabuzzPicFront:: INCBIN "gfx/pokemon/front/electabuzzcrystal.pic"
 ;FemalePikachuPicFront::       INCBIN "gfx/pokemon/front/pikachufemale.pic"     ; Female Trainer's PokéMon sprites added by G-Dubs
-;FemaleLaprasPicFront::        INCBIN "gfx/pokemon/front/laprassilver.pic"
+;FemaleLaprasPicFront::        INCBIN "gfx/pokemon/front/laprassilvervlad.pic"
 
 
 SECTION "Alt Pokemon Sprites 2", ROMX                                          ; Section for Gym Leader's PokéMon alt. sprites
@@ -359,12 +359,12 @@ BrockZubatPicFront::         INCBIN "gfx/pokemon/front/zubatemerald.pic"
 MistyPsyduckPicFront::       INCBIN "gfx/pokemon/front/psyduck.pic"            ; Misty's PokéMon sprites added by Vlad & G-Dubs
 MistyGoldeenPicFront::       INCBIN "gfx/pokemon/front/goldeensilver.pic"
 MistyGolduckPicFront::       INCBIN "gfx/pokemon/front/golducksilvervlad.pic"
-MistyHorseaPicFront::        INCBIN "gfx/pokemon/front/horsea.pic"
+MistyHorseaPicFront::        INCBIN "gfx/pokemon/front/horseasilvervlad.pic"
 MistyStaryuPicFront::        INCBIN "gfx/pokemon/front/staryuredandblue.pic"
 MistyStarmiePicFront::       INCBIN "gfx/pokemon/front/starmiegreen.pic"
 LtSurgeRaichuPicFront::      INCBIN "gfx/pokemon/front/raichusilver.pic"       ; Lt. Surge's PokéMon sprites added by Vlad
 LtSurgeFearowPicFront::      INCBIN "gfx/pokemon/front/fearowsilvervlad.pic"
-LtSurgeRaticatePicFront::    INCBIN "gfx/pokemon/front/raticatesilver.pic"
+LtSurgeRaticatePicFront::    INCBIN "gfx/pokemon/front/raticatesilvervlad.pic"
 LtSurgeElectrodePicFront::   INCBIN "gfx/pokemon/front/electrodesilver.pic"
 LtSurgeElectabuzzPicFront::  INCBIN "gfx/pokemon/front/electabuzzsilver.pic"
 ErikaVileplumePicFront::     INCBIN "gfx/pokemon/front/vileplume.pic"          ; Erika's PokéMon sprites added by Vlad & G-Dubs
@@ -382,12 +382,12 @@ SabrinaHypnoPicFront::       INCBIN "gfx/pokemon/front/hypno.pic"
 SabrinaHaunterPicFront::     INCBIN "gfx/pokemon/front/hauntersilver.pic"
 SabrinaMrMimePicFront::      INCBIN "gfx/pokemon/front/mr.mime.pic"
 BlaineArcaninePicFront::     INCBIN "gfx/pokemon/front/arcaninesilver.pic"     ; Blaine's PokéMon sprites added by Vlad & G-Dubs
-BlaineTaurosPicFront::       INCBIN "gfx/pokemon/front/tauroscrystal.pic"
+BlaineTaurosPicFront::       INCBIN "gfx/pokemon/front/tauroscrystalvlad.pic"
 BlaineMagmarPicFront::       INCBIN "gfx/pokemon/front/magmarsilver.pic"
 GiovanniPersianPicFront::    INCBIN "gfx/pokemon/front/persian.pic"            ; Giovanni's PokéMon sprites added by Vlad
 GiovanniKangaskhanPicFront:: INCBIN "gfx/pokemon/front/kangaskhan.pic"
 GiovanniDugtrioPicFront::    INCBIN "gfx/pokemon/front/dugtrio.pic"
-GiovanniPinsirPicFront::     INCBIN "gfx/pokemon/front/pinsir.pic"
+GiovanniPinsirPicFront::     INCBIN "gfx/pokemon/front/pinsirsilvervlad.pic"
 GiovanniRhydonPicFront::     INCBIN "gfx/pokemon/front/rhydonsilver.pic"
 
 
@@ -395,12 +395,12 @@ SECTION "Alt Pokemon Sprites 3", ROMX                                          ;
 
 LoreleiDewgongPicFront::   INCBIN "gfx/pokemon/front/dewgong.pic"              ; Lorelei's PokéMon sprites added by Vlad
 LoreleiCloysterPicFront::  INCBIN "gfx/pokemon/front/cloyster.pic"      
-LoreleiSlowbroPicFront::   INCBIN "gfx/pokemon/front/slowbrosilver.pic"
-LoreleiLaprasPicFront::    INCBIN "gfx/pokemon/front/lapras.pic"
+LoreleiSlowbroPicFront::   INCBIN "gfx/pokemon/front/slowbrosilvervlad.pic"
+LoreleiLaprasPicFront::    INCBIN "gfx/pokemon/front/laprasfixed.pic"
 BrunoHitmonleePicFront::   INCBIN "gfx/pokemon/front/hitmonlee.pic"           ; Bruno's PokéMon sprites added by Vlad
 BrunoHitmonchanPicFront::  INCBIN "gfx/pokemon/front/hitmonchan.pic"
 BrunoOnixPicFront::        INCBIN "gfx/pokemon/front/onixgold.pic"
-BrunoSlowbroPicFront::     INCBIN "gfx/pokemon/front/slowbrogold.pic"
+BrunoSlowbroPicFront::     INCBIN "gfx/pokemon/front/slowbrogoldvlad.pic"
 BrunoPoliwrathPicFront::   INCBIN "gfx/pokemon/front/poliwrath.pic"
 BrunoMachampPicFront::     INCBIN "gfx/pokemon/front/machampsilver.pic"
 AgathaHaunterPicFront::    INCBIN "gfx/pokemon/front/hauntergold.pic"         ; Agatha's PokéMon sprites added by Vlad
