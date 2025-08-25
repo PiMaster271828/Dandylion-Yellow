@@ -329,6 +329,8 @@ SECTION "Alt Pokemon Sprites 1", ROMX                                          ;
 RocketZubatPicFront::         INCBIN "gfx/pokemon/front/zubat.pic"             ; Rocket Grunt's PokéMon sprite added by G-Dubs
 RocketRattataPicFront::       INCBIN "gfx/pokemon/front/rattatasilver.pic"        
 RocketRaticatePicFront::      INCBIN "gfx/pokemon/front/raticate.pic"
+RocketKoffingPicFront::       INCBIN "gfx/pokemon/front/koffingsilver.pic"
+RocketGrimerPicFront::       INCBIN "gfx/pokemon/front/grimersilver.pic"
 RocketEkansPicFront::         INCBIN "gfx/pokemon/front/ekansgold.pic"        
 RocketMeowthPicFront::        INCBIN "gfx/pokemon/front/meowth.pic"            ; Team Rocket's Meowth sprite added by Vlad               
 JamesKoffingPicFront::        INCBIN "gfx/pokemon/front/koffinggold.pic"       ; James's PokéMon sprites added by Vlad
