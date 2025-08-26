@@ -793,7 +793,7 @@ BrockData:
 ; Badge Match
     db $FF, 19, HORSEA, 19, SEEL, 20, STARYU, 20, GOLDEEN, 21, PSYDUCK, 21, STARMIE, 0                       ; Misty 1                ; Animeesque Pokémon added by G-Dubs	
 ; Rematch
-	db $FF, 64, KINGDRA, 65, GOLDUCK, 64, LAPRAS, 64, BLASTOISE, 64, VAPOREON, 65, STARMIE, 0                ; Misty 2                ; Misty Rematch from Yellow Legacy
+	db $FF, /*64, KINGDRA,*/ 65, GOLDUCK, 64, LAPRAS, 64, BLASTOISE, 64, VAPOREON, 65, STARMIE, 0            ; Misty 2                ; Misty Rematch from Yellow Legacy
 ; Other Battles
     db $FF, 30, SEADRA, 31, TENTACRUEL, 32, STARYU, 33, SEAKING, 34, PSYDUCK, 35, STARMIE, 0
 
