@@ -337,7 +337,7 @@ JamesKoffingPicFront::       INCBIN "gfx/pokemon/front/koffinggold.pic"        ;
 JamesWeezingPicFront::       INCBIN "gfx/pokemon/front/weezing.pic"
 JamesWeepinbellPicFront::    INCBIN "gfx/pokemon/front/weepinbellsilvervlad.pic"
 JamesVictreebelPicFront::    INCBIN "gfx/pokemon/front/victreebelsilver.pic"
-JamesMagikarpPicFront::      INCBIN "gfx/pokemon/front/magikarpgreen.pic"
+JamesMagikarpPicFront::      INCBIN "gfx/pokemon/front/magikarpgreenvlad.pic"
 JessieEkansPicFront::        INCBIN "gfx/pokemon/front/ekans.pic"              ; Jessie's PokéMon sprites added by Vlad
 JessieArbokPicFront::        INCBIN "gfx/pokemon/front/arbok.pic"
 JessieLickitungPicFront::    INCBIN "gfx/pokemon/front/lickitungsilver.pic"
@@ -414,7 +414,7 @@ BrunoHitmonleePicFront::   INCBIN "gfx/pokemon/front/hitmonlee.pic"            ;
 BrunoHitmonchanPicFront::  INCBIN "gfx/pokemon/front/hitmonchan.pic"
 BrunoOnixPicFront::        INCBIN "gfx/pokemon/front/onixredandblue.pic"
 BrunoSlowbroPicFront::     INCBIN "gfx/pokemon/front/slowbrogoldvlad.pic"
-BrunoPrimeapePicFront::    INCBIN "gfx/pokemon/front/primeapesilver.pic"
+BrunoPrimeapePicFront::    INCBIN "gfx/pokemon/front/primeapesilvervlad.pic"
 BrunoPoliwrathPicFront::   INCBIN "gfx/pokemon/front/poliwrath.pic"
 BrunoMachampPicFront::     INCBIN "gfx/pokemon/front/machampsilver.pic"
 AgathaHaunterPicFront::    INCBIN "gfx/pokemon/front/hauntergold.pic"          ; Agatha's PokéMon sprites added by Vlad
@@ -430,7 +430,7 @@ SECTION "Alt Pokemon Sprites 6", ROMX                                          ;
 RivalAlakazamPicFront::       INCBIN "gfx/pokemon/front/alakazamsilver.pic"    ; Rival's PokéMon sprites added by G-Dubs
 RivalExeggutorPicFront::      INCBIN "gfx/pokemon/front/exeggutorfrlgvlad.pic"
 RivalVictreebelPicFront::     INCBIN "gfx/pokemon/front/victreebelemerald.pic"
-RivalSandslashPicFront::      INCBIN "gfx/pokemon/front/sandslashgold.pic"
+RivalSandslashPicFront::      INCBIN "gfx/pokemon/front/sandslashgoldvlad.pic"
 ;RivalGolduckPicFront::        INCBIN "gfx/pokemon/front/golduckfrlg.pic"
 ;RivalPrimeapePicFront::       INCBIN "gfx/pokemon/front/primeapegold.pic"
 ;RivalMagnetonPicFront::       INCBIN "gfx/pokemon/front/magneton.pic"
