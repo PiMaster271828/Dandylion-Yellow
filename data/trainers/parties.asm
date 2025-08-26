@@ -848,7 +848,7 @@ GentlemanData:
 
 Rival2Data:                                                                                                  ; Rival 2 Parties based on Yellow Legacy Parties (modified by G-Dubs)
 ; SS Anne 2F
-	db $FF, 23, PIDGEOTTO, 20, RATICATE , 23, WEEPINBELL, 21, KADABRA, 22, SANDSHREW, 25, EEVEE, 0	         ; Rival 2 1              ; Pidgeotto, Raticate, & Kadabra added by G-Dubs 
+	db $FF, 23, PIDGEOTTO, 20, RATICATE, 23, WEEPINBELL, 21, KADABRA, 22, SANDSHREW, 25, EEVEE, 0	         ; Rival 2 1              ; Pidgeotto, Raticate, & Kadabra added by G-Dubs 
 ; Pokémon Tower 2F
     db $FF, 34, FEAROW, 33, SANDSLASH, 32, SHELLDER, 32, GROWLITHE, 33, KADABRA, 35, JOLTEON, 0              ; Rival 2  2 Jolteon     ; Sandslash added by G-Dubs
    ;db $FF, 28, FEAROW, 26, SANDSLASH, 26, KADABRA, 25, GYARADOS, 25, VULPIX, 30, EEVEE, 0                   

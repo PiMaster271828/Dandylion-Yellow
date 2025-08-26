@@ -24,6 +24,12 @@ UncompressMonSprite::
 	jr c, .Alternate2
 	farcall CheckAlternatePokemonSprite3
 	jr c, .Alternate3
+	farcall CheckAlternatePokemonSprite4
+	jr c, .Alternate4
+	farcall CheckAlternatePokemonSprite5
+	jr c, .Alternate5
+    farcall CheckAlternatePokemonSprite6
+	jr c, .Alternate6
 	ld a, [wCurPartySpecies]
 	ld b, a
 	ld a, [wCurPartySpecies]
@@ -56,6 +62,15 @@ UncompressMonSprite::
 	jp .GotBank1
 .Alternate3
 	ld a, BANK("Alt Pokemon Sprites 3")
+    jp .GotBank1
+.Alternate4
+	ld a, BANK("Alt Pokemon Sprites 4")
+	jp .GotBank1
+.Alternate5
+	ld a, BANK("Alt Pokemon Sprites 5")
+	jp .GotBank1
+.Alternate6
+	ld a, BANK("Alt Pokemon Sprites 6")
 .GotBank1
 	jp UncompressSpriteData
 
