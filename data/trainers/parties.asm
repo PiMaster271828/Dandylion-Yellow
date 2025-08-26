@@ -786,12 +786,16 @@ BrockData:
 	db $FF, 12, GEODUDE, 13, KABUTO, 12, ZUBAT, 12, VULPIX, 13, OMANYTE, 14, ONIX, 0                         ; Brock 1                ; Animeesque Pokémon added by G-Dubs
 ; Rematch
 	db $FF, 64, OMASTAR, 65, ONIX, 64, KABUTOPS, 64, GOLEM, 64, NINETALES, 65, AERODACTYL, 0                 ; Brock 2                ; Brock Rematch from Yellow Legacy
+; Other Battles
+    db $FF , 
 
  MistyData:
 ; Badge Match
-    db $FF, 19, HORSEA, 19, SEEL, 20, STARYU, 20, GOLDEEN, 21, PSYDUCK , 21, STARMIE, 0                      ; Misty 1                ; Animeesque Pokémon added by G-Dubs	
+    db $FF, 19, HORSEA, 19, SEEL, 20, STARYU, 20, GOLDEEN, 21, PSYDUCK, 21, STARMIE, 0                       ; Misty 1                ; Animeesque Pokémon added by G-Dubs	
 ; Rematch
-	db $FF, 64, SEADRA, 65, GOLDUCK, 64, LAPRAS, 64, BLASTOISE, 64, VAPOREON, 65, STARMIE, 0                 ; Misty 2                ; Misty Rematch from Yellow Legacy
+	db $FF, /*64, KINGDRA,*/ 65, GOLDUCK, 64, LAPRAS, 64, BLASTOISE, 64, VAPOREON, 65, STARMIE, 0            ; Misty 2                ; Misty Rematch from Yellow Legacy
+; Other Battles
+    db $FF, 30, SEADRA, 31, TENTACRUEL, 32, STARYU, 33, SEAKING, 34, PSYDUCK, 35, STARMIE, 0
 
 LtSurgeData:
 ; Badge Match
@@ -805,8 +809,8 @@ ErikaData:
 ; Rematch
 	db $FF, 64, TANGELA, 64, VENUSAUR, 64, PARASECT, 64, EXEGGUTOR, 65, VICTREEBEL, 65, VILEPLUME, 0         ; Erika 2                ; Erika Rematch from Yellow Legacy
 ; Other Battles
-    db $FF, 33, TANGELA, 34, VICTREEBEL, 31, IVYSAUR, 35, VILEPLUME, 0                                       ; Erika 3                ; Other battles from Yellow Legacy
-	db $FF, 41, TANGELA, 42, VICTREEBEL, 42, VENUSAUR, 43, VILEPLUME, 0                                      ; Erika 4                ; Other battles from Yellow Legacy
+    db $FF, 30, TANGELA, 34, WEEPINBELL, 33, CLEFAIRY,32, BUTTERFREE, 31, IVYSAUR, 34, GLOOM, 0              ; Erika 3                ; Other battles from Yellow Legacy (TCG Cards added by G-Dubs)
+	db $FF, 41, TANGELA, 42, VICTREEBEL, 40, DRAGONAIR, 42, VENUSAUR, 43, VILEPLUME, 0                       ; Erika 4                ; Other battles from Yellow Legacy
 	db $FF, 48, TANGELA, 49, VICTREEBEL, 48, VENUSAUR, 49, EXEGGUTOR, 50, VILEPLUME, 0	                     ; Erika 5                ; Other battles from Yellow Legacy
 
 KogaData:
@@ -827,8 +831,8 @@ SabrinaData:
 ; Rematch
 	db $FF, 65, MR_MIME, 64, HYPNO, 64, SLOWBRO, 64, JYNX, 64, GENGAR, 65, ALAKAZAM, 0                       ; Sabrina 2          	  ; Sabrina Rematch from Yellow Legacy
 ; Other Battles
-    db $FF, 50, ABRA,  48, HYPNO, 49, MR_MIME, 50, KADABRA,  50, ALAKAZAM, 0                                 ; Sabrina 3              ; Other battles from Yellow Legacy
-	db $FF, 43, ABRA,  42, MR_MIME, 43, KADABRA,  43, ALAKAZAM, 0                                            ; Sabrina 4              ; Other battles from Yellow Legacy
+    db $FF, 50, ABRA, 48, HYPNO, 49, MR_MIME, 50, KADABRA, 50, ALAKAZAM, 0                                   ; Sabrina 3              ; Other battles from Yellow Legacy
+	db $FF, 43, ABRA, 42, VENOMOTH, 42, MR_MIME, 43, KADABRA, 43, ALAKAZAM, 0                                ; Sabrina 4              ; Other battles from Yellow Legacy
 
 GentlemanData:
 ; SS Anne 1F Rooms
@@ -876,11 +880,23 @@ Rival3Data:                                                                     
               
 	db $FF, 61, PIDGEOT, 61, MACHAMP, 63, ALAKAZAM, 62, NINETALES, 63, VICTREEBEL, 65, VAPOREON, 0           ; Rival 3  3 Vaporeon    
 
+/*
+Rival4Data:                                                                                                  ; Rival 4 Parties based on Red, Blue, & Yellow Parties
+; Champion's Room
+    db $FF, 61, RHYDON, 63, ALAKAZAM, 62, EXEGGUTOR, 63, ARCANINE, 61, GYARADOS, 65, JOLTEON, 0              ; Rival 4  1 Jolteon  
+             
+	db $FF, 61, DODRIO, 61, RHYDON, 63, ALAKAZAM, 63, MAGNETON, 62, CLOYSTER, 65, FLAREON, 0                 ; Rival 4  2 Flareon  
+              
+	db $FF, 61, PIDGEOT, 61, RHYDON, 63, ALAKAZAM, 62, CHARIZARD, 63, VENUSAUR, 65, VAPOREON, 0              ; Rival 4  3 Vaporeon
+*/
+
 LoreleiData:
 ; First Battle
     db $FF, 54, DEWGONG, 53, CLOYSTER, 54, SLOWBRO, 55, ARTICUNO, 56, JYNX, 58, LAPRAS, 0	                 ; Lorelei 1              ; Animeesque Pokémon added by G-Dubs
 ; Rematch
 	db $FF, 70, WIGGLYTUFF, 71, STARMIE, 71, CLOYSTER, 70, OMASTAR, 70, EXEGGUTOR, 72, LAPRAS, 0             ; Lorelei 2              ; Lorelei Rematch from Yellow Legacy
+; Other Battles
+    db $FF, 40, DEWGONG, 42, CLOYSTER, 44, SLOWBRO, 46, JYNX, 48, LAPRAS, 50, ARTICUNO, 0                    ; Lorelei 3              ; Lorelei Seafoam Islands added by G-Dubs
 
 ChannelerData:
 ; PokéMon Tower 3F or (Previously Unused)
