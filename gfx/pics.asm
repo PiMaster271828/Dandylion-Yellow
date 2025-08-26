@@ -414,6 +414,7 @@ BrunoHitmonleePicFront::   INCBIN "gfx/pokemon/front/hitmonlee.pic"            ;
 BrunoHitmonchanPicFront::  INCBIN "gfx/pokemon/front/hitmonchan.pic"
 BrunoOnixPicFront::        INCBIN "gfx/pokemon/front/onixredandblue.pic"
 BrunoSlowbroPicFront::     INCBIN "gfx/pokemon/front/slowbrogoldvlad.pic"
+BrunoPrimeapePicFront::    INCBIN "gfx/pokemon/front/primeape.pic"
 BrunoPoliwrathPicFront::   INCBIN "gfx/pokemon/front/poliwrath.pic"
 BrunoMachampPicFront::     INCBIN "gfx/pokemon/front/machampsilver.pic"
 AgathaHaunterPicFront::    INCBIN "gfx/pokemon/front/hauntergold.pic"          ; Agatha's PokéMon sprites added by Vlad
@@ -428,10 +429,15 @@ SECTION "Alt Pokemon Sprites 6", ROMX                                          ;
 
 RivalAlakazamPicFront::       INCBIN "gfx/pokemon/front/alakazamsilver.pic"    ; Rival's PokéMon sprites added by G-Dubs
 RivalExeggutorPicFront::      INCBIN "gfx/pokemon/front/exeggutorfrlg.pic"
+RivalVictreebelPicFront::     INCBIN "gfx/pokemon/front/victreebelemerald.pic"
+RivalSandslashPicFront::      INCBIN "gfx/pokemon/front/sandslashgold.pic"
 RivalGolduckPicFront::        INCBIN "gfx/pokemon/front/golduckfrlg.pic"
-RivalVictreebelPicFront::     INCBIN "gfx/pokemon/front/victreebel.pic"
+RivalPrimeapePicFront::       INCBIN "gfx/pokemon/front/primeapegold.pic"
 RivalMagnetonPicFront::       INCBIN "gfx/pokemon/front/magneton.pic"
-GuitaristElectabuzzPicFront:: INCBIN "gfx/pokemon/front/electabuzzcrystal.pic"
+RivalDodrioPicFront::       INCBIN "gfx/pokemon/front/dodriogold.pic"
+
+GuitaristElectabuzzPicFront:: INCBIN "gfx/pokemon/front/electabuzzcrystal.pic" ; Other Trainer's PokéMon sprites added by G-Dubs
+TamerSandslashPicFront::      INCBIN "gfx/pokemon/front/sandslashsilver.pic"
 FemalePikachuPicFront::       INCBIN "gfx/pokemon/front/pikachufemale.pic"     ; Female Trainer's PokéMon sprites added by G-Dubs
 FemaleLaprasPicFront::        INCBIN "gfx/pokemon/front/laprassilvervlad.pic"
 

@@ -352,7 +352,8 @@ AlternatePokemonSpriteTable5:
 	db BRUNO, HITMONLEE, LOW(BrunoHitmonleePicFront), HIGH(BrunoHitmonleePicFront)			       ; BRUNO
 	db BRUNO, HITMONCHAN, LOW(BrunoHitmonchanPicFront), HIGH(BrunoHitmonchanPicFront)
 	db BRUNO, ONIX, LOW(BrunoOnixPicFront), HIGH(BrunoOnixPicFront)
-	db BRUNO, MACHOKE, LOW(BrunoSlowbroPicFront), HIGH(BrunoSlowbroPicFront)
+	db BRUNO, SLOWBRO, LOW(BrunoSlowbroPicFront), HIGH(BrunoSlowbroPicFront)
+	db BRUNO, PRIMEAPE, LOW(BrunoPrimeapePicFront), HIGH(BrunoPrimeapePicFront)
 	db BRUNO, POLIWRATH, LOW(BrunoPoliwrathPicFront), HIGH(BrunoPoliwrathPicFront) 
 	db BRUNO, MACHAMP, LOW(BrunoMachampPicFront), HIGH(BrunoMachampPicFront)
 	db AGATHA, HAUNTER, LOW(AgathaHaunterPicFront), HIGH(AgathaHaunterPicFront)				       ; AGATHA
@@ -365,11 +366,27 @@ AlternatePokemonSpriteTable5:
 	
 AlternatePokemonSpriteTable6:	
 	db RIVAL2, ALAKAZAM, LOW(RivalAlakazamPicFront), HIGH(RivalAlakazamPicFront)                   ; RIVAL 2
-    db RIVAL2, EXEGGUTOR, LOW(RivalExeggutorPicFront), HIGH(RivalExeggutorPicFront) 
+    db RIVAL2, EXEGGUTOR, LOW(RivalExeggutorPicFront), HIGH(RivalExeggutorPicFront)
+	db RIVAL2, VICTREEBEL, LOW(RivalVictreebelPicFront), HIGH(RivalVictreebelPicFront)
+	db RIVAL2, SANDSLASH, LOW(RivalSandslashPicFront), HIGH(RivalSandslashPicFront)
+	db RIVAL2, GOLDUCK, LOW(RivalGolduckPicFront), HIGH(RivalGolduckPicFront)
+    db RIVAL2, PRIMEAPE, LOW(RivalPrimeapePicFront), HIGH(RivalPrimeapePicFront)
+	db RIVAL2, MAGNETON, LOW(RivalMagnetonPicFront), HIGH(RivalMagnetonPicFront)
+	db RIVAL2, DODRIO, LOW(RivalDodrioPicFront), HIGH(RivalDodrioPicFront)
 	db RIVAL3, ALAKAZAM, LOW(RivalAlakazamPicFront), HIGH(RivalAlakazamPicFront)                   ; RIVAL 3
-	db RIVAL3, EXEGGUTOR, LOW(RivalExeggutorPicFront), HIGH(RivalExeggutorPicFront)            
+	db RIVAL3, EXEGGUTOR, LOW(RivalExeggutorPicFront), HIGH(RivalExeggutorPicFront)
+	db RIVAL3, VICTREEBEL, LOW(RivalVictreebelPicFront), HIGH(RivalVictreebelPicFront)            
+    db RIVAL3, SANDSLASH, LOW(RivalSandslashPicFront), HIGH(RivalSandslashPicFront)
+	db RIVAL3, GOLDUCK, LOW(RivalGolduckPicFront), HIGH(RivalGolduckPicFront)
+	db RIVAL3, MAGNETON, LOW(RivalMagnetonPicFront), HIGH(RivalMagnetonPicFront)
+	db RIVAL2, DODRIO, LOW(RivalDodrioPicFront), HIGH(RivalDodrioPicFront)
    ;db RIVAL4, ALAKAZAM, LOW(RivalAlakazamPicFront), HIGH(RivalAlakazamPicFront)                   ; RIVAL 4
-    db RIVAL2, GOLDUCK, LOW(RivalGolduckPicFront), HIGH(RivalGolduckPicFront)        
+   ;db RIVAL4, RHYDON, LOW(RivalRhydonPicFront), HIGH(RivalRhydonPicFront)        
 	db GUITARIST, ELECTABUZZ, LOW(GuitaristElectabuzzPicFront), HIGH(GuitaristElectabuzzPicFront)  ; OTHER TRAINERS
-   ;db FEMALE TRAINERS                                                                             ; FEMALE TRAINERS
+	db GUITARIST, PIKACHU, LOW(FemalePikachuPicFront), HIGH(FemalePikachuPicFront)
+	db TAMER, SANDSLASH, LOW(TamerSandslashPicFront), HIGH(TamerSandslashPicFront)
+    db LASS, PIKACHU, LOW(FemalePikachuPicFront), HIGH(FemalePikachuPicFront)                      ; FEMALE TRAINERS
+	db LASS, LAPRAS, LOW(FemaleLaprasPicFront), HIGH(FemaleLaprasPicFront)
+	db JR_TRAINER_F, PIKACHU, LOW(FemalePikachuPicFront), HIGH(FemalePikachuPicFront)
+	db JR_TRAINER_F, PIKACHU, LOW(FemaleLaprasPicFront), HIGH(FemaleLaprasPicFront)
 	db $FF
