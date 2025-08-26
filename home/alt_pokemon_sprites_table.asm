@@ -177,6 +177,8 @@ AlternatePokemonSpriteTable2:
 	db ERIKA, VILEPLUME, LOW(ErikaVileplumePicFront), HIGH(ErikaVileplumePicFront)			       ; ERIKA
 	db ERIKA, DRAGONAIR, LOW(ErikaDragonairPicFront), HIGH(ErikaDragonairPicFront)
 	db ERIKA, EXEGGUTOR, Low(ExeggutorPicFront), HIGH(ExeggutorPicFront)
+   ;db ERIKA, TANGELA, LOW(ErikaTangelaPicFront), HIGH(ErikaTangelaPicFront)
+	db ERIKA, DRAGONITE, LOW(ErikaVictreebelPicFront), HIGH(ErikaVictreebelPicFront)
 	db KOGA, WEEZING, LOW(KogaWeezingPicFront), HIGH(KogaWeezingPicFront)					       ; KOGA
 	db KOGA, SCYTHER, LOW(KogaScytherPicFront), HIGH(KogaScytherPicFront)
 	db KOGA, VENONAT, LOW(KogaVenonatPicFront), HIGH(KogaVenonatPicFront)				
