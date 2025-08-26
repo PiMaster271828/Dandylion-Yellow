@@ -414,7 +414,7 @@ BrunoHitmonleePicFront::   INCBIN "gfx/pokemon/front/hitmonlee.pic"            ;
 BrunoHitmonchanPicFront::  INCBIN "gfx/pokemon/front/hitmonchan.pic"
 BrunoOnixPicFront::        INCBIN "gfx/pokemon/front/onixredandblue.pic"
 BrunoSlowbroPicFront::     INCBIN "gfx/pokemon/front/slowbrogoldvlad.pic"
-BrunoPrimeapePicFront::    INCBIN "gfx/pokemon/front/primeape.pic"
+BrunoPrimeapePicFront::    INCBIN "gfx/pokemon/front/primeapesilver.pic"
 BrunoPoliwrathPicFront::   INCBIN "gfx/pokemon/front/poliwrath.pic"
 BrunoMachampPicFront::     INCBIN "gfx/pokemon/front/machampsilver.pic"
 AgathaHaunterPicFront::    INCBIN "gfx/pokemon/front/hauntergold.pic"          ; Agatha's PokéMon sprites added by Vlad
