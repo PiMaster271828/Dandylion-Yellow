@@ -431,6 +431,7 @@ RivalAlakazamPicFront::       INCBIN "gfx/pokemon/front/alakazamsilver.pic"    ;
 RivalExeggutorPicFront::      INCBIN "gfx/pokemon/front/exeggutorfrlgvlad.pic"
 RivalVictreebelPicFront::     INCBIN "gfx/pokemon/front/victreebelemerald.pic"
 RivalSandslashPicFront::      INCBIN "gfx/pokemon/front/sandslashgoldvlad.pic"
+RivalFearowPicFront::      INCBIN "gfx/pokemon/front/fearowsilvervlad.pic"
 ;RivalGolduckPicFront::        INCBIN "gfx/pokemon/front/golduckfrlg.pic"
 ;RivalPrimeapePicFront::       INCBIN "gfx/pokemon/front/primeapegold.pic"
 ;RivalMagnetonPicFront::       INCBIN "gfx/pokemon/front/magneton.pic"

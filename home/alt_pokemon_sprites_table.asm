@@ -273,7 +273,7 @@ AlternatePokemonSpriteTable1:
     db ROCKET, ZUBAT, LOW(RocketZubatPicFront), HIGH(RocketZubatPicFront)                          ; ROCKET
     db ROCKET, RATTATA, LOW(RocketRattataPicFront), HIGH(RocketRattataPicFront)
 	db ROCKET, RATICATE, LOW(RocketRaticatePicFront), HIGH(RocketRaticatePicFront)	
-;	db ROCKET, GOLBAT, LOW(RocketRaticatePicFront), HIGH(RocketRaticatePicFront)	        
+;	db ROCKET, GOLBAT, LOW(RocketGolbatPicFront), HIGH(RocketPicFront)	        
 	db JESSIE_JAMES, MEOWTH, LOW(RocketMeowthPicFront), HIGH(RocketMeowthPicFront) 			       ; JESSIE_JAMES
 	db JESSIE_JAMES, KOFFING, LOW(JamesKoffingPicFront), HIGH(JamesKoffingPicFront)
 	db JESSIE_JAMES, WEEZING, LOW(JamesWeezingPicFront), HIGH(JamesWeezingPicFront)
@@ -300,8 +300,8 @@ AlternatePokemonSpriteTable2:
 	db MISTY, STARYU, LOW(MistyStaryuPicFront), HIGH(MistyStaryuPicFront) 				       	   ; MISTY
 	db MISTY, STARMIE, LOW(MistyStarmiePicFront), HIGH(MistyStarmiePicFront) 	
 	db MISTY, HORSEA, LOW(MistyHorseaPicFront), HIGH(MistyHorseaPicFront)	
-;	db MISTY, SEADRA, LOW(MistyHorseaPicFront), HIGH(MistyHorseaPicFront)	
-;	db MISTY, KINGDRA, LOW(MistyHorseaPicFront), HIGH(MistyHorseaPicFront)			
+;	db MISTY, SEADRA, LOW(MistySeadraPicFront), HIGH(MistySeadraPicFront)	
+;	db MISTY, KINGDRA, LOW(MistyKingdraPicFront), HIGH(MistyKingdraPicFront)			
 	db LT_SURGE, RAICHU, LOW(LtSurgeRaichuPicFront), HIGH(LtSurgeRaichuPicFront)
 	db LT_SURGE, ELECTRODE, LOW(LtSurgeElectrodePicFront), HIGH(LtSurgeElectrodePicFront)		   ; LT_SURGE
 	db LT_SURGE, ELECTABUZZ, LOW(LtSurgeElectabuzzPicFront), HIGH(LtSurgeElectabuzzPicFront)	
@@ -319,7 +319,7 @@ AlternatePokemonSpriteTable3:
 	db SABRINA, ALAKAZAM, LOW(SabrinaAlakazamPicFront), HIGH(SabrinaAlakazamPicFront)
 	db SABRINA, HYPNO, LOW(SabrinaHypnoPicFront), HIGH(SabrinaHypnoPicFront)
 	db SABRINA, HAUNTER, LOW(SabrinaHaunterPicFront), HIGH(SabrinaHaunterPicFront)
-;	db SABRINA, GENGAR, LOW(SabrinaHaunterPicFront), HIGH(SabrinaHaunterPicFront)
+;	db SABRINA, GENGAR, LOW(SabrinaGengarPicFront), HIGH(SabrinaGengarPicFront)
     db $FF
 
 AlternatePokemonSpriteTable4:
