@@ -364,9 +364,11 @@ AlternatePokemonSpriteTable5:
 	db $FF
 	
 AlternatePokemonSpriteTable6:	
-	db RIVAL2, ALAKAZAM, LOW(RivalAlakazamPicFront), HIGH(RivalAlakazamPicFront)                   ; RIVAL
-	db RIVAL3, ALAKAZAM, LOW(RivalAlakazamPicFront), HIGH(RivalAlakazamPicFront)            
-   ;db RIVAL4, ALAKAZAM, LOW(RivalAlakazamPicFront), HIGH(RivalAlakazamPicFront)
+	db RIVAL2, ALAKAZAM, LOW(RivalAlakazamPicFront), HIGH(RivalAlakazamPicFront)                   ; RIVAL 2
+    db RIVAL2, EXEGGUTOR, LOW(RivalExeggutorPicFront), HIGH(RivalExeggutorPicFront) 
+	db RIVAL3, ALAKAZAM, LOW(RivalAlakazamPicFront), HIGH(RivalAlakazamPicFront)                   ; RIVAL 3
+	db RIVAL3, EXEGGUTOR, LOW(RivalExeggutorPicFront), HIGH(RivalExeggutorPicFront)            
+   ;db RIVAL4, ALAKAZAM, LOW(RivalAlakazamPicFront), HIGH(RivalAlakazamPicFront)                   ; RIVAL 4
     db RIVAL2, GOLDUCK, LOW(RivalGolduckPicFront), HIGH(RivalGolduckPicFront)        
 	db GUITARIST, ELECTABUZZ, LOW(GuitaristElectabuzzPicFront), HIGH(GuitaristElectabuzzPicFront)  ; OTHER TRAINERS
    ;db FEMALE TRAINERS                                                                             ; FEMALE TRAINERS

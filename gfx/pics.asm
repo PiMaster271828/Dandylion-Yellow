@@ -426,10 +426,11 @@ LanceDragonitePicFront::   INCBIN "gfx/pokemon/front/dragonitesilvervlad.pic"
 
 SECTION "Alt Pokemon Sprites 6", ROMX                                          ; Section for Rival & Random Trainer's PokéMon alt. sprites
 
-RivalAlakazamPicFront::    INCBIN "gfx/pokemon/front/alakazamsilver.pic"       ; Rival's PokéMon sprites added by G-Dubs
-RivalGolduckPicFront::     INCBIN "gfx/pokemon/front/golduckfrlg.pic"
-RivalExeggutorPicFront::   INCBIN "gfx/pokemon/front/exeggutor.pic"
-RivalMagnetonPicFront::     INCBIN "gfx/pokemon/front/magneton.pic"
+RivalAlakazamPicFront::       INCBIN "gfx/pokemon/front/alakazamsilver.pic"    ; Rival's PokéMon sprites added by G-Dubs
+RivalExeggutorPicFront::      INCBIN "gfx/pokemon/front/exeggutorfrlg.pic"
+RivalGolduckPicFront::        INCBIN "gfx/pokemon/front/golduckfrlg.pic"
+RivalVictreebelPicFront::     INCBIN "gfx/pokemon/front/victreebel.pic"
+RivalMagnetonPicFront::       INCBIN "gfx/pokemon/front/magneton.pic"
 GuitaristElectabuzzPicFront:: INCBIN "gfx/pokemon/front/electabuzzcrystal.pic"
 FemalePikachuPicFront::       INCBIN "gfx/pokemon/front/pikachufemale.pic"     ; Female Trainer's PokéMon sprites added by G-Dubs
 FemaleLaprasPicFront::        INCBIN "gfx/pokemon/front/laprassilvervlad.pic"
