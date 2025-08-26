@@ -377,9 +377,9 @@ SECTION "Alt Pokemon Sprites 3", ROMX                                          ;
 
 ErikaVileplumePicFront::     INCBIN "gfx/pokemon/front/vileplume.pic"          ; Erika's PokéMon sprites added by Vlad & G-Dubs
 ;ErikaDragonairPicFront::     INCBIN "gfx/pokemon/front/dragonairgold.pic"
-ErikaExeggutorpicFront::     INCBIN "gfx/pokemon/front/exeggutorsilver.pic"
+ErikaExeggutorpicFront::     INCBIN "gfx/pokemon/front/exeggutorsilvervlad.pic"
 ErikaTangelaPicFront::       INCBIN "gfx/pokemon/front/tangela.pic"
-ErikaVictreebelPicFront::    INCBIN "gfx/pokemon/front/victreebelcrystal.pic"
+ErikaVictreebelPicFront::    INCBIN "gfx/pokemon/front/victreebelcrystalvlad.pic"
 KarateHitmonleePicFront::    INCBIN "gfx/pokemon/front/hitmonleegold.pic"      ; Karate Master's PokéMon sprites added by Vlad
 KarateHitmonchanPicFront::   INCBIN "gfx/pokemon/front/hitmonchangold.pic"
 SabrinaGolduckPicFront::     INCBIN "gfx/pokemon/front/golduckemerald.pic"     ; Sabrina's PokéMon sprites added by Vlad & G-Dubs
@@ -428,7 +428,7 @@ LanceDragonitePicFront::   INCBIN "gfx/pokemon/front/dragonitesilvervlad.pic"
 SECTION "Alt Pokemon Sprites 6", ROMX                                          ; Section for Rival & Random Trainer's PokéMon alt. sprites
 
 RivalAlakazamPicFront::       INCBIN "gfx/pokemon/front/alakazamsilver.pic"    ; Rival's PokéMon sprites added by G-Dubs
-RivalExeggutorPicFront::      INCBIN "gfx/pokemon/front/exeggutorfrlg.pic"
+RivalExeggutorPicFront::      INCBIN "gfx/pokemon/front/exeggutorfrlgvlad.pic"
 RivalVictreebelPicFront::     INCBIN "gfx/pokemon/front/victreebelemerald.pic"
 RivalSandslashPicFront::      INCBIN "gfx/pokemon/front/sandslashgold.pic"
 ;RivalGolduckPicFront::        INCBIN "gfx/pokemon/front/golduckfrlg.pic"

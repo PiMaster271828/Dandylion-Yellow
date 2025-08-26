@@ -314,7 +314,7 @@ AlternatePokemonSpriteTable3:
 	db ERIKA, EXEGGUTOR, Low(ExeggutorPicFront), HIGH(ExeggutorPicFront)
     db BLACKBELT, HITMONLEE, LOW(KarateHitmonleePicFront), HIGH(KarateHitmonleePicFront)	       ; KARATE MASTER
 	db BLACKBELT, HITMONCHAN, LOW(KarateHitmonchanPicFront), HIGH(KarateHitmonchanPicFront)
-	db SABRINA, ABRA, LOW(SabrinaAbraPicFront), HIGH(SabrinaAbraPicFront)						   ; SABRINA
+;	db SABRINA, ABRA, LOW(SabrinaAbraPicFront), HIGH(SabrinaAbraPicFront)						   ; SABRINA
 	db SABRINA, KADABRA, LOW(SabrinaKadabraPicFront), HIGH(SabrinaKadabraPicFront)	
 	db SABRINA, ALAKAZAM, LOW(SabrinaAlakazamPicFront), HIGH(SabrinaAlakazamPicFront)
 	db SABRINA, HYPNO, LOW(SabrinaHypnoPicFront), HIGH(SabrinaHypnoPicFront)
@@ -384,9 +384,9 @@ AlternatePokemonSpriteTable6:
 	db LASS, LAPRAS, LOW(FemaleLaprasPicFront), HIGH(FemaleLaprasPicFront)
 	db JR_TRAINER_F, PIKACHU, LOW(FemalePikachuPicFront), HIGH(FemalePikachuPicFront)
 	db JR_TRAINER_F, LAPRAS, LOW(FemaleLaprasPicFront), HIGH(FemaleLaprasPicFront)
-	db COOL_TRAINER_F, LAPRAS, LOW(FemaleLaprasPicFront), HIGH(FemaleLaprasPicFront)
+	db COOLTRAINER_F, LAPRAS, LOW(FemaleLaprasPicFront), HIGH(FemaleLaprasPicFront)
 	db POKEFAN_F, PIKACHU, LOW(FemalePikachuPicFront), HIGH(FemalePikachuPicFront)
-	db SCHOOLKID, PIKACHU, LOW(FemalePikachuPicFront), HIGH(FemalePikachuPicFront)
+	db SCHOOL_KID, PIKACHU, LOW(FemalePikachuPicFront), HIGH(FemalePikachuPicFront)
 	db $FF
 
 
