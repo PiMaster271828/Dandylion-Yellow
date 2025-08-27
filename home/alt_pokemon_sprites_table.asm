@@ -319,7 +319,8 @@ AlternatePokemonSpriteTable3:
 	db SABRINA, ALAKAZAM, LOW(SabrinaAlakazamPicFront), HIGH(SabrinaAlakazamPicFront)
 	db SABRINA, HYPNO, LOW(SabrinaHypnoPicFront), HIGH(SabrinaHypnoPicFront)
 	db SABRINA, HAUNTER, LOW(SabrinaHaunterPicFront), HIGH(SabrinaHaunterPicFront)
-;	db SABRINA, GENGAR, LOW(SabrinaGengarPicFront), HIGH(SabrinaGengarPicFront)
+    db SABRINA, MR_MIME, LOW(SabrinaMrMimePicFront), HIGH(SabrinaMrMimePicFront) 
+	db SABRINA, GENGAR, LOW(SabrinaGengarPicFront), HIGH(SabrinaGengarPicFront)
     db $FF
 
 AlternatePokemonSpriteTable4:
@@ -426,7 +427,6 @@ AlternatePokemonSpriteTable6:
 ;	Sabrina:  Too many
 ;	db SABRINA, SLOWBRO, LOW(SabrinaSlowbroPicFront), HIGH(SabrinaSlowbroPicFront)
 ;   db SABRINA, GOLDUCK, LOW(SabrinaGolduckPicFront), HIGH(SabrinaGolduckPicFront)			      
-;	db SABRINA, MR_MIME, LOW(SabrinaMrMimePicFront), HIGH(SabrinaMrMimePicFront)
 
 ;	Blaine:  Swapping out Tauros
 ;	db BLAINE, TAUROS, LOW(BlaineTaurosPicFront), HIGH(BlaineTaurosPicFront)

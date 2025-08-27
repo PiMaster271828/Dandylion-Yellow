@@ -225,6 +225,10 @@ JrTrainerMData:
     db 12, DIGLETT, NIDORAN_M, RATTATA, EKANS, SANDSHREW, 0                                                  ; Jr. Trainer ♂ 11       ; New trainer added by G-Dubs
 	db 15, DIGLETT, SANDSHREW, 0                                                                             ; Jr. Trainer ♂ 12       ; New trainer added by G-Dubs
 
+
+; Pewter Gym (Rematch)
+    db 71, DUGTRIO, SANDSLASH, 0                                                                             ; Jr. Trainer ♂ 15       ; New trainer added by G-Dubs to represent Brock's Dugtrio and Brock's Sandslash
+
 JrTrainerFData:
 ; Cerulean Gym
 	db 19, GOLDEEN, 0                                                                                        ; Jr. Trainer ♀ 1
@@ -650,15 +654,16 @@ ScientistData:
 
 GiovanniData:
 ; Rocket Hideout B4F
-	db $FF, 25, ONIX, 25, GRAVELER, 26, RHYHORN, 28, MACHOKE, 29, KANGASKHAN, 30, PERSIAN, 0                 ; Giovanni 1             ; Animeesque Pokémon added by G-Dubs
+	db $FF, 25, ONIX, 25, GRAVELER, 26, RHYHORN, 28, MACHOKE, 29, KANGASKHAN, 30, PERSIAN, 0                 ; Giovanni 1             ; Animeesque & TCG PokéMon added by G-Dubs
 ; Silph Co. 11F
-	db $FF, 37, NIDORINO, 35, PERSIAN, 36, GOLEM, 37, RHYHORN, 38, KINGLER, 41, NIDOQUEEN, 0                 ; Giovanni 2             ; Animeesque Pokémon added by G-Dubs
+	db $FF, 37, NIDORINO, 35, PERSIAN, 36, GOLEM, 37, RHYHORN, 38, KINGLER, 41, NIDOQUEEN, 0                 ; Giovanni 2             ; Animeesque & TCG PokéMon added by G-Dubs
 ; Viridian Gym (Badge Match)
-    db $FF, 50, DUGTRIO, 52, PINSIR, 54, PERSIAN, 56, NIDOQUEEN, 58, NIDOKING, 60, RHYDON, 0                 ; Giovanni 3             ; Animeesque Pokémon added by G-Dubs	
-/*
+    db $FF, 50, DUGTRIO, 52, PINSIR, 54, PERSIAN, 56, NIDOQUEEN, 58, NIDOKING, 60, RHYDON, 0                 ; Giovanni 3             ; Animeesque & TCG PokéMon added by G-Dubs
 ; Viridian City Gym (Mewtwo Match)	
-    db $FF, 52, MACHAMP, 54, PERSIAN, 56, KINGLER, 58, NIDOKING, 60, RHYDON, 65, ARMOREDMEWTWO, 0            ; Giovanni 4             ; New trainer added by G-Dubs (Armored Mewtwo added by G-Dubs)
-*/
+    db $FF, 60, MACHAMP, 63, GYARADOS, 66, KINGLER, 69, PERSIAN, 72, RHYDON, 75, MEWTWO,/*ARMOREDMEWTWO*/ 0  ; Giovanni 4             ; New trainer added by G-Dubs (Armored Mewtwo added by G-Dubs)
+; Final Rematch (Post Game)	
+    db $FF, 80, MACHAMP, 83, GYARADOS, 86, NIDOQUEEN, 89, NIDOKING, 92, RHYDON, 95, PERSIAN, 0               ; Giovanni 5             ; Animeesque & TCG PokéMon added by G-Dubs
+
 RocketData:
 ; Mt. Moon B2F
 	db 14, RATTATA, ZUBAT, 0				                                                                 ; Rocket 1               ; Level changed from 12 to 14 by G-Dubs 
@@ -783,56 +788,77 @@ BrunoData:
 
 BrockData:
 ; Badge Match
-	db $FF, 12, GEODUDE, 13, KABUTO, 12, ZUBAT, 12, VULPIX, 13, OMANYTE, 14, ONIX, 0                         ; Brock 1                ; Animeesque Pokémon added by G-Dubs
-; Rematch
-	db $FF, 64, OMASTAR, 65, ONIX, 64, KABUTOPS, 64, GOLEM, 64, NINETALES, 65, AERODACTYL, 0                 ; Brock 2                ; Brock Rematch from Yellow Legacy
-; Other Battles
-    db $FF , 
+	db $FF, 12, GEODUDE, 13, MANKEY, 12, ZUBAT, 12, VULPIX, 13, RHYHORN, 15, ONIX, 0                         ; Brock 1                ; Animeesque and TCG PokéMon added by G-Dubs
+   ;db $FF, 12, GEODUDE, 13, KABUTO, 12, ZUBAT, 12, VULPIX, 13, OMANYTE, 14, ONIX, 0
+; First Rematch (4 Badges)
+    db $FF, 35, GRAVELER, 33, KABUTO, 36, LICKITUNG, 37, VULPIX, 33, OMANYTE, 40, ONIX, 0                    ; Brock 2                ; Brock Rematch (TCG PokéMon added by G-Dubs)              
+; Second Rematch (8 Badges)
+    db $FF, 50, GOLEM, 53, PRIMEAPE, 52, GOLBAT, 50, NINETALES, 53, RHYDON, 55, ONIX, 0                      ; Brock 3                ; Brock Rematch (TCG PokéMon added by G-Dubs)  
+; Final Rematch (Post Game)
+	db $FF, 72, GOLEM, 73, KABUTOPS, 74, NINETALES, 74, AERODACTYL, 73, OMASTAR, 75, ONIX, 0                 ; Brock 4                ; Brock Rematch from Yellow Legacy
 
  MistyData:
 ; Badge Match
-    db $FF, 19, HORSEA, 19, SEEL, 20, STARYU, 20, GOLDEEN, 21, PSYDUCK, 21, STARMIE, 0                       ; Misty 1                ; Animeesque Pokémon added by G-Dubs	
-; Rematch
-	db $FF, /*64, KINGDRA,*/ 65, GOLDUCK, 64, LAPRAS, 64, BLASTOISE, 64, VAPOREON, 65, STARMIE, 0            ; Misty 2                ; Misty Rematch from Yellow Legacy
-; Other Battles
-    db $FF, 30, SEADRA, 31, TENTACRUEL, 32, STARYU, 33, SEAKING, 34, PSYDUCK, 35, STARMIE, 0
+    db $FF, 19, HORSEA, 19, POLIWAG, 20, STARYU, 20, GOLDEEN, 21, PSYDUCK, 21, STARMIE, 0                    ; Misty 1                ; Animeesque and TCG PokéMon added by G-Dubs
+   ;db $FF, 19, HORSEA, 19, SEEL, 20, STARYU, 20, GOLDEEN, 21, PSYDUCK, 21, STARMIE, 0	
+; First Rematch (Bike Shop)
+    db $FF, 29, HORSEA, 29, PSYDUCK, 30, TENTACOOL, 30, POLIWHIRL, 30, MAGIKARP, 31, STARMIE, 0              ; Misty 2                ; Animeesque and TCG PokéMon added by G-Dubs   
+; Second Rematch (4 Badges)
+    db $FF, 39, HORSEA, 39, POLIWHIRL, 40, DEWGONG, 40, TENTACRUEL, 41, PSYDUCK, 41, STARMIE, 0              ; Misty 3                ; Animeesque and TCG PokéMon added by G-Dubs
+; Third Rematch (8 Badges)
+    db $FF, 36, SEADRA, 36, POLIWRATH, 60, GYARADOS, 60, SEAKING, 61, PSYDUCK, 61, STARMIE, 0                ; Misty 4                ; Animeesque and TCG PokéMon added by G-Dubs
+; Final Rematch (Post Game)
+	db $FF, 64, SEADRA,/*KINGDRA*/ 79, VAPOREON, 80, LAPRAS, 80, BLASTOISE, 81, GOLDUCK, 81, STARMIE, 0      ; Misty 5                ; Misty Rematch from Yellow Legacy (Levels adjusted by G-Dubs)
 
 LtSurgeData:
 ; Badge Match
-    db $FF, 24, RATICATE, 26, ELECTRODE, 26, MAGNETON, 28, FEAROW, 28, ELECTABUZZ, 30, RAICHU, 0             ; Lt. Surge 1            ; Animeesque Pokémon added by G-Dubs	
-; Rematch
-	db $FF, 64, ELECTRODE, 65, MAGNETON, 64, JOLTEON, 64, PORYGON, 64, ELECTABUZZ, 65, RAICHU, 0             ; Lt. Surge 2            ; Lt. Surge Rematch from Yellow Legacy
+    db $FF, 24, RATICATE, 26, ELECTRODE, 26, MAGNETON, 28, FEAROW, 28, ELECTABUZZ, 30, RAICHU, 0             ; Lt. Surge 1            ; Animeesque and TCG PokéMon added by G-Dubs	
+; First Rematch (4 Badges)
+    db $FF, 40, PIKACHU, 42, ELECTRODE, 42, MAGNETON, 40, EEVEE, 41, ELECTABUZZ, 44, RAICHU, 0               ; Lt. Surge 2            ; Animeesque and TCG PokéMon added by G-Dubs
+; Second Rematch (8 Badges)
+    db $FF, 60, JOLTEON, 62, ELECTRODE, 62, MAGNETON, 60, ZAPDOS, 61, ELECTABUZZ, 64, RAICHU, 0              ; Lt. Surge 3            ; Animeesque and TCG PokéMon added by G-Dubs
+; Final Rematch (Post Game)
+ 	db $FF, 80, JOLTEON, 82, ELECTRODE, 82, MAGNETON, 80, PORYGON, 83, ELECTABUZZ, 85, RAICHU, 0             ; Lt. Surge 4            ; Lt. Surge Rematch from Yellow Legacy
 
 ErikaData:
+; Pre Badge Fight (In Front of Celadon Mart)
+	db $FF, 30, WEEPINBELL, 28, PARAS, 29, TANGELA, 29, BULBASAUR, 28, EXEGGCUTE, 30, GLOOM, 0               ; Erika 1                ; Pre Gym Battle to make Erika more memorable and to add all her TCG PokéMon added by G-Dubs
 ; Badge Match
-	db $FF, 34, VICTREEBEL, 33, PARASECT, 32, BUTTERFREE, 33, TANGELA, 33, EXEGGUTOR, 34, VILEPLUME, 0       ; Erika 1                ; Animeesque Pokémon added by G-Dubs
-; Rematch
-	db $FF, 64, TANGELA, 64, VENUSAUR, 64, PARASECT, 64, EXEGGUTOR, 65, VICTREEBEL, 65, VILEPLUME, 0         ; Erika 2                ; Erika Rematch from Yellow Legacy
-; Other Battles
-    db $FF, 30, TANGELA, 34, WEEPINBELL, 33, CLEFAIRY,32, BUTTERFREE, 31, IVYSAUR, 34, GLOOM, 0              ; Erika 3                ; Other battles from Yellow Legacy (TCG Cards added by G-Dubs)
-	db $FF, 41, TANGELA, 42, VICTREEBEL, 40, DRAGONAIR, 42, VENUSAUR, 43, VILEPLUME, 0                       ; Erika 4                ; Other battles from Yellow Legacy
-	db $FF, 48, TANGELA, 49, VICTREEBEL, 48, VENUSAUR, 49, EXEGGUTOR, 50, VILEPLUME, 0	                     ; Erika 5                ; Other battles from Yellow Legacy
+	db $FF, 35, VICTREEBEL, 33, PARASECT, 32, TANGELA, 33, IVYSAUR , 33, EXEGGUTOR, 35, VILEPLUME, 0         ; Erika 2                ; Animeesque and TCG PokéMon added by G-Dubs
+; First Rematch (Post Silph Co. Defeat) (Game Corner)
+    db $FF, 44, VICTREEBEL, 43, CLEFAIRY, 42, TANGELA, 43, DRAGONAIR, 43, WIGGLYTUFF, 45, VILEPLUME, 0       ; Erika 3                ; Rematch featuring Game Corner Prize PokéMon (TCG PokéMon added by G-Dubs)
+; Second Rematch (8 Badges)
+    db $FF, 64, VICTREEBEL, 63, BUTTERFREE, 62, TANGELA, 63, VENUSAUR, 63, CLEFABLE, 65, VILEPLUME, 0        ; Erika 4                ; Rematch featuring Game Corner Prize PokéMon (TCG PokéMon added by G-Dubs)
+; Final Rematch (Post Game)
+	db $FF, 85, VICTREEBEL, 83, PARASECT, 82, TANGELA, 83, VENUSAUR, 83, EXEGGUTOR, 85, VILEPLUME, 0         ; Erika 5                ; Erika Rematch from Yellow Legacy (Levels adjusted by G-Dubs)
 
 KogaData:
+; Pre Badge Match (Post Silph Co. Defeat) (Saffron City)
+    db $FF, 40, VENONAT, 41, TANGELA, 42, PIDGEOTTO, 43, GOLBAT, 44, KOFFING, 45, BEEDRILL, 0                ; Koga 1                 ; Pre-Gym Battle replacing the man the the Pidgeot                
 ; Badge Match
-    db $FF, 45, VENONAT, 46, GOLBAT, 47, SCYTHER, 48, ARBOK, 49, WEEZING, 50, VENOMOTH, 0                    ; Koga 1                 ; Animeesque Pokémon added by G-Dubs
-; Rematch
-	db $FF, 64, GOLBAT, 64, MUK, 64, TENTACRUEL, 65, WEEZING, 64, ARBOK, 65, VENOMOTH, 0                     ; Koga 2                 ; Koga Rematch from Yellow Legacy
+    db $FF, 45, SCYTHER, 46, ARBOK, 47, MUK , 48, GOLBAT, 49, WEEZING, 50, VENOMOTH, 0                       ; Koga 2                 ; Animeesque and TCG PokéMon added by G-Dubs
+; First Rematch (8 Badges)
+    db $FF, 65, DITTO, 66, HYPNO, 67, MUK, 68, GOLBAT,/*CROBAT*/ 69, WEEZING, 70, VENOMOTH, 0                ; Koga 3                 ; Animeesque and TCG PokéMon added by G-Dubs
+; Final Rematch (Post Game)
+	db $FF, 85, TENTACRUEL, 86, ARBOK, 87, MUK, 88, GOLBAT,/*CROBAT*/ 88, WEEZING, 90, VENOMOTH, 0           ; Koga 4                 ; Koga Rematch from Yellow Legacy (Levels adjusted by G-Dubs)
 
 BlaineData:
 ; Badge Match
-    db $FF, 48, NINETALES, 48, TAUROS, 50, RAPIDASH, 52, CHARIZARD, 54, ARCANINE, 58, MAGMAR, 0              ; Blaine 1               ; Animeesque Pokémon added by G-Dubs (Charizard will be Charizard_Y)
-; Rematch
-	db $FF, 64, RAPIDASH, 64, FLAREON, 64, CHARIZARD, 64, NINETALES, 65, ARCANINE, 65, MAGMAR, 0             ; Blaine 2               ; Blaine Rematch from Yellow Legacy
+    db $FF, 48, NINETALES, 48, TAUROS, 50, RAPIDASH, 52, CHARIZARD, 54, ARCANINE, 58, MAGMAR, 0              ; Blaine 1               ; Animeesque PokéMon added by G-Dubs (Charizard will be Charizard_Y)
+; First Rematch (8 Badges)
+	db $FF, 68, NINETALES, 68, RHYDON, 70, RAPIDASH, 70, MOLTRES, 73, ARCANINE, 75, MAGMAR, 0                ; Blaine 2               ; Animeesque PokéMon added by G-Dubs
+; Final Rematch (Post Game)
+	db $FF, 82, NINETALES, 80, FLAREON, 82, RAPIDASH, 84, CHARIZARD, 83, ARCANINE, 85, MAGMAR, 0             ; Blaine 3               ; Blaine Rematch from Yellow Legacy (Charizard will be Charizard_Y) (Levels adjusted by G-Dubs)
 
 SabrinaData:
+; Pre Badge Match (Scripted Loss)
+	db 50, ABRA, VENONAT, KADABRA, EXEGGCUTE, PSYDUCK, ALAKAZAM, 0                                           ; Sabrina 1              ; TCG PokéMon showcase & scripted loss
 ; Badge Match
-    db $FF, 44, GOLDUCK, 46, MR_MIME, 46, HAUNTER, 48, HYPNO, 48, SLOWBRO, 50, ALAKAZAM, 0                   ; Sabrina 1              ; Animeesque Pokémon added by G-Dubs
-; Rematch
-	db $FF, 65, MR_MIME, 64, HYPNO, 64, SLOWBRO, 64, JYNX, 64, GENGAR, 65, ALAKAZAM, 0                       ; Sabrina 2          	  ; Sabrina Rematch from Yellow Legacy
-; Other Battles
-    db $FF, 50, ABRA, 48, HYPNO, 49, MR_MIME, 50, KADABRA, 50, ALAKAZAM, 0                                   ; Sabrina 3              ; Other battles from Yellow Legacy
-	db $FF, 43, ABRA, 42, VENOMOTH, 42, MR_MIME, 43, KADABRA, 43, ALAKAZAM, 0                                ; Sabrina 4              ; Other battles from Yellow Legacy
+    db $FF, 44, GOLDUCK, 46, MR_MIME, 46, HAUNTER, 48, HYPNO, 48, SLOWBRO, 50, ALAKAZAM, 0                   ; Sabrina 1              ; Animeesque & TCG PokéMon added by G-Dubs
+; First Rematch (8 Badges)
+    db $FF, 64, PORYGON, 66, VENOMOTH, 68, HYPNO,/*ESPEON*/ 68, EXEGGUTOR, 70, STARMIE, 72, ALAKAZAM, 0      ; Sabrina 3              ; Animeesque & TCG PokéMon added by G-Dubs
+; Rematch (Post Game)
+	db $FF, 81, MR_MIME, 81, HYPNO, 83, SLOWBRO, 83, JYNX, 85, GENGAR, 87, ALAKAZAM, 0                       ; Sabrina 4          	  ; Sabrina Rematch from Yellow Legacy
 
 GentlemanData:
 ; SS Anne 1F Rooms
@@ -853,7 +879,7 @@ GentlemanData:
 Rival2Data:                                                                                                  ; Rival 2 Parties based on Yellow Legacy Parties (modified by G-Dubs)
 ; SS Anne 2F
 	db $FF, 23, PIDGEOTTO, 20, RATICATE, 23, WEEPINBELL, 21, KADABRA, 22, SANDSHREW, 25, EEVEE, 0	         ; Rival 2 1              ; Pidgeotto, Raticate, & Kadabra added by G-Dubs 
-; Pokémon Tower 2F
+; PokéMon Tower 2F
     db $FF, 34, FEAROW, 33, SANDSLASH, 32, SHELLDER, 32, GROWLITHE, 33, KADABRA, 35, JOLTEON, 0              ; Rival 2  2 Jolteon     ; Sandslash added by G-Dubs
                       
 	db $FF, 34, FEAROW, 33, SANDSLASH, 32, MAGNEMITE, 33, KADABRA, 32, SHELLDER, 35, FLAREON, 0              ; Rival 2  3 Flareon     ; Sandslash added by G-Dubs
@@ -892,7 +918,7 @@ Rival4Data:                                                                     
 
 LoreleiData:
 ; First Battle
-    db $FF, 54, DEWGONG, 53, CLOYSTER, 54, SLOWBRO, 55, ARTICUNO, 56, JYNX, 58, LAPRAS, 0	                 ; Lorelei 1              ; Animeesque Pokémon added by G-Dubs
+    db $FF, 54, DEWGONG, 53, CLOYSTER, 54, SLOWBRO, 55, ARTICUNO, 56, JYNX, 58, LAPRAS, 0	                 ; Lorelei 1              ; Animeesque PokéMon added by G-Dubs
 ; Rematch
 	db $FF, 70, WIGGLYTUFF, 71, STARMIE, 71, CLOYSTER, 70, OMASTAR, 70, EXEGGUTOR, 72, LAPRAS, 0             ; Lorelei 2              ; Lorelei Rematch from Yellow Legacy
 ; Other Battles
@@ -931,13 +957,13 @@ ChannelerData:
 
 AgathaData:
 ; First Battle    
-	db $FF, 56, GENGAR, 58, MAROWAK, 56, GOLBAT, 55, HAUNTER, 60, NINETALES, 62, GENGAR, 0	                 ; Agatha 1               ; Animeesque Pokémon added by G-Dubs
+	db $FF, 56, GENGAR, 58, MAROWAK, 56, GOLBAT, 55, HAUNTER, 60, NINETALES, 62, GENGAR, 0	                 ; Agatha 1               ; Animeesque PokéMon added by G-Dubs
 ; Rematch
 	db $FF, 71, JYNX, 71, GYARADOS, 72, ALAKAZAM, 71, VENUSAUR, 72, ARBOK, 73, GENGAR, 0                     ; Agatha 2               ; Agatha Rematch from Yellow Legacy
 
 LanceData:
 ; First Battle
-    db $FF, 59, GYARADOS, 58, DRAGONAIR, 58, DRAGONAIR, 60, CHARIZARD, 62, AERODACTYL, 64, DRAGONITE, 0      ; Lance 1                ; Animeesque Pokémon added by G-Dubs
+    db $FF, 59, GYARADOS, 58, DRAGONAIR, 58, DRAGONAIR, 60, CHARIZARD, 62, AERODACTYL, 64, DRAGONITE, 0      ; Lance 1                ; Animeesque PokéMon added by G-Dubs
 ; Rematch
 	db $FF, 73, ARCANINE, 73, ELECTABUZZ, 74, SNORLAX, 74, CHARIZARD, 72, KANGASKHAN, 75, DRAGONITE, 0       ; Lance 2                ; Lance Rematch from Yellow Legacy
 
@@ -954,13 +980,13 @@ JessieJamesData:
     db 20, EKANS, MEOWTH, KOFFING, MAGIKARP, 0                                                               ; Jessie & James 3       ; New trainer added by G-Dubs
 ;Rocket Hideout B4F
  	db 25, KOFFING, MEOWTH, EKANS, WEEPINBELL, 0                                                             ; Jessie & James 4       ; Weepinbell added by G-Dubs
-; Pokémon Tower 7F
+; PokéMon Tower 7F
 	db 30, ARBOK, MEOWTH, WEEZING, WEEPINBELL, 0                                                             ; Jessie & James 5       ; Level changed from 27 to 30 by G-Dubs (Weepinbell added by G-Dubs)
 ; Silph Co. 11F
 	db 35, WEEZING, ARBOK, MEOWTH, VICTREEBEL, LICKITUNG, 0                                                  ; Jessie & James 6       ; Level changed from 31 to 35 by G-Dubs (Victreebel and Lickitung added by G-Dubs)
 ; Viridian City Gym        
-	db 45, GYARADOS, GOLEM, KINGLER, MEOWTH, LICKITUNG, ARBOK, 0                                             ; Jessie & James 7       ; New trainer added by G-Dubs (Giovanni's Pokémon)             
-	db 45, SANDSLASH, CLOYSTER, MACHAMP, MEOWTH, VICTREEBEL, WEEZING, 0                                      ; Jessie & James 8       ; New trainer added by G-Dubs (Giovanni's Pokémon)
+	db 45, GYARADOS, GOLEM, KINGLER, MEOWTH, LICKITUNG, ARBOK, 0                                             ; Jessie & James 7       ; New trainer added by G-Dubs (Giovanni's PokéMon)             
+	db 45, SANDSLASH, CLOYSTER, MACHAMP, MEOWTH, VICTREEBEL, WEEZING, 0                                      ; Jessie & James 8       ; New trainer added by G-Dubs (Giovanni's PokéMon)
 
 PokeFanMData:
 ; Route 5

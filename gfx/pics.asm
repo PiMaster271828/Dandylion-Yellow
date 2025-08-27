@@ -26,7 +26,7 @@ ExeggcutePicFront::   INCBIN "gfx/pokemon/front/exeggcute.pic"
 ExeggcutePicBack::    INCBIN "gfx/pokemon/back/exeggcuteb.pic"
 GrimerPicFront::      INCBIN "gfx/pokemon/front/grimer.pic"
 GrimerPicBack::       INCBIN "gfx/pokemon/back/grimerb.pic"
-GengarPicFront::      INCBIN "gfx/pokemon/front/gengargold.pic"                ;  Gengar default sprite changed by G-Dubs
+GengarPicFront::      INCBIN "gfx/pokemon/front/gengarcrystalgeorge.pic"       ; Gengar default sprite changed by G-Dubs
 GengarPicBack::       INCBIN "gfx/pokemon/back/gengarb.pic"
 NidoranFPicFront::    INCBIN "gfx/pokemon/front/nidoranf.pic"
 NidoranFPicBack::     INCBIN "gfx/pokemon/back/nidoranfb.pic"
@@ -50,13 +50,13 @@ TentacoolPicFront::   INCBIN "gfx/pokemon/front/tentacool.pic"
 TentacoolPicBack::    INCBIN "gfx/pokemon/back/tentacoolb.pic"
 GastlyPicFront::      INCBIN "gfx/pokemon/front/gastly.pic"
 GastlyPicBack::       INCBIN "gfx/pokemon/back/gastlyb.pic"
-ScytherPicFront::     INCBIN "gfx/pokemon/front/scythersilver.pic"             ; Scyther default sprite changed by G-Dubs
+ScytherPicFront::     INCBIN "gfx/pokemon/front/scyther.pic"             
 ScytherPicBack::      INCBIN "gfx/pokemon/back/scytherb.pic"
 StaryuPicFront::      INCBIN "gfx/pokemon/front/staryu.pic"
 StaryuPicBack::       INCBIN "gfx/pokemon/back/staryub.pic"
 BlastoisePicFront::   INCBIN "gfx/pokemon/front/blastoise.pic"
 BlastoisePicBack::    INCBIN "gfx/pokemon/back/blastoiseb.pic"
-PinsirPicFront::      INCBIN "gfx/pokemon/front/pinsirsilvervlad.pic"              ; Pinsir default sprite changed by G-Dubs
+PinsirPicFront::      INCBIN "gfx/pokemon/front/pinsirsilvervlad.pic"          ; Pinsir default sprite changed by G-Dubs
 PinsirPicBack::       INCBIN "gfx/pokemon/back/pinsirb.pic"
 TangelaPicFront::     INCBIN "gfx/pokemon/front/tangela.pic"
 TangelaPicBack::      INCBIN "gfx/pokemon/back/tangelab.pic"
@@ -102,7 +102,7 @@ MagmarPicFront::      INCBIN "gfx/pokemon/front/magmar.pic"
 MagmarPicBack::       INCBIN "gfx/pokemon/back/magmarb.pic"
 ElectabuzzPicFront::  INCBIN "gfx/pokemon/front/electabuzz.pic"
 ElectabuzzPicBack::   INCBIN "gfx/pokemon/back/electabuzzb.pic"
-MagnetonPicFront::    INCBIN "gfx/pokemon/front/magnetongold.pic"              ; Magneton default sprite changed by G-Dubs
+MagnetonPicFront::    INCBIN "gfx/pokemon/front/magneton.pic"              
 MagnetonPicBack::     INCBIN "gfx/pokemon/back/magnetonb.pic"
 KoffingPicFront::     INCBIN "gfx/pokemon/front/koffing.pic"
 KoffingPicBack::      INCBIN "gfx/pokemon/back/koffingb.pic"
@@ -210,7 +210,7 @@ DodrioPicFront::       INCBIN "gfx/pokemon/front/dodrio.pic"
 DodrioPicBack::        INCBIN "gfx/pokemon/back/dodriob.pic"
 PrimeapePicFront::     INCBIN "gfx/pokemon/front/primeape.pic"
 PrimeapePicBack::      INCBIN "gfx/pokemon/back/primeapeb.pic"
-DugtrioPicFront::      INCBIN "gfx/pokemon/front/dugtriogold.pic"              ; Dugtrio default sprite changed by G-Dubs
+DugtrioPicFront::      INCBIN "gfx/pokemon/front/dugtrio.pic"              
 DugtrioPicBack::       INCBIN "gfx/pokemon/back/dugtriob.pic"
 VenomothPicFront::     INCBIN "gfx/pokemon/front/venomothgold.pic"             ; Venomoth default sprite changed by G-Dubs
 VenomothPicBack::      INCBIN "gfx/pokemon/back/venomothb.pic"
@@ -240,7 +240,7 @@ MukPicFront::          INCBIN "gfx/pokemon/front/muk.pic"
 MukPicBack::           INCBIN "gfx/pokemon/back/mukb.pic"
 KinglerPicFront::      INCBIN "gfx/pokemon/front/kingler.pic"
 KinglerPicBack::       INCBIN "gfx/pokemon/back/kinglerb.pic"
-CloysterPicFront::     INCBIN "gfx/pokemon/front/cloystergeorge.pic"           ;  Cloyster default sprite changed by G-Dubs
+CloysterPicFront::     INCBIN "gfx/pokemon/front/cloystergeorge.pic"           ; Cloyster default sprite changed by G-Dubs
 CloysterPicBack::      INCBIN "gfx/pokemon/back/cloysterb.pic"
 ElectrodePicFront::    INCBIN "gfx/pokemon/front/electrode.pic"
 ElectrodePicBack::     INCBIN "gfx/pokemon/back/electrodeb.pic"
@@ -290,7 +290,7 @@ NidorinoPicFront::     INCBIN "gfx/pokemon/front/nidorino.pic"
 NidorinoPicBack::      INCBIN "gfx/pokemon/back/nidorinob.pic"
 NidorinaPicFront::     INCBIN "gfx/pokemon/front/nidorina.pic"
 NidorinaPicBack::      INCBIN "gfx/pokemon/back/nidorinab.pic"
-GeodudePicFront::      INCBIN "gfx/pokemon/front/geodudeemerald.pic"           ; Geodude default sprite changed by G-Dubs
+GeodudePicFront::      INCBIN "gfx/pokemon/front/geodude.pic"
 GeodudePicBack::       INCBIN "gfx/pokemon/back/geodudeb.pic"
 PorygonPicFront::      INCBIN "gfx/pokemon/front/porygon.pic"
 PorygonPicBack::       INCBIN "gfx/pokemon/back/porygonb.pic"
@@ -388,7 +388,8 @@ SabrinaAlakazamPicFront::    INCBIN "gfx/pokemon/front/alakazamgold.pic"
 ;SabrinaSlowbroPicFront::     INCBIN "gfx/pokemon/front/slowbro.pic"
 SabrinaHypnoPicFront::       INCBIN "gfx/pokemon/front/hypno.pic"
 SabrinaHaunterPicFront::     INCBIN "gfx/pokemon/front/hauntersilver.pic"
-;SabrinaMrMimePicFront::      INCBIN "gfx/pokemon/front/mr.mime.pic"
+SabrinaMrMimePicFront::      INCBIN "gfx/pokemon/front/mr.mime.pic"
+SabrinaGengarPicFront::      INCBIN "gfx/pokemon/front/gengarsilvergeorge.pic"
 
 
 SECTION "Alt Pokemon Sprites 4", ROMX                                          ; Section for Next 3 Gym Leader's PokéMon alt. sprites
