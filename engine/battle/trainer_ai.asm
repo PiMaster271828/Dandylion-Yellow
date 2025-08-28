@@ -351,10 +351,21 @@ CooltrainerMAI:
 	jp AIUseXAttack
 
 CooltrainerFAI:
-	; The intended 25% chance to consider switching will not apply.
+	; --- Check if HP ≤ 10% ---
+    ld a, 10
+    call AICheckIfHPBelowFraction
+    jr nc, .check20percent   ; If HP > 10%, skip to 20% check
+    ; At this point, HP ≤ 10%
+    call Random
+    cp 25 percent            ; 25% chance
+    jr nc, .check20percent   ; If roll fails, skip
+    jp AIUseHyperPotion      ; Otherwise use Hyper Potion
+
+.check20percent
+    ; The intended 25% chance to consider switching will not apply.
 	; Uncomment the line below to fix this.
 	cp 25 percent + 1
-	; ret nc
+	ret nc
 	ld a, 10
 	call AICheckIfHPBelowFraction
 	jp c, AIUseHyperPotion
@@ -399,7 +410,7 @@ BlaineAI:
 	ld a, 10
 	call AICheckIfHPBelowFraction
 	ret nc
-	jp AIUseHyperPotion                ; Super Potion changed to Super Potion by G-Dubs
+	jp AIUseHyperPotion                ; Super Potion changed to Hyper Potion by G-Dubs
 
 SabrinaAI:
 	cp 25 percent + 1
@@ -412,9 +423,13 @@ Rival2AI:
 	ld a, 5
 	call AICheckIfHPBelowFraction
 	ret nc
-	jp AIUseSuperPotion                ; Potion changed to Super Potion by G-Dubs
+	jp AIUsePotion                
 
 Rival3AI:
+    ld a, [wEnemyMonStatus]
+	and a
+	ret z
+	jp AIUseFullRestore
 	cp 13 percent - 1
 	ret nc
 	ld a, 5
@@ -428,7 +443,7 @@ LoreleiAI:
 	ld a, 5
 	call AICheckIfHPBelowFraction
 	ret nc
-	jp AIUseHyperPotion                ; Super Potion changed to Super Potion by G-Dubs
+	jp AIUseHyperPotion                ; Super Potion changed to Hyper Potion by G-Dubs
 
 BrunoAI:
 	cp 25 percent + 1
@@ -443,7 +458,7 @@ AgathaAI:
 	ld a, 4
 	call AICheckIfHPBelowFraction
 	ret nc
-	jp AIUseHyperPotion                ; Super Potion changed to Super Potion by G-Dubs
+	jp AIUseHyperPotion                ; Super Potion changed to Hyper Potion by G-Dubs
 
 LanceAI:
 	cp 50 percent + 1
@@ -452,7 +467,7 @@ LanceAI:
 	call AICheckIfHPBelowFraction
 	ret nc
 	jp AIUseMaxPotion                  ; Hyper Potion changed to Max Potion by G-Dubs
-
+/*
 LadyAI:
     ld a, [wEnemyMonStatus]
 	and a
@@ -464,6 +479,13 @@ LadyAI:
 	call AICheckIfHPBelowFraction
 	ret nc
 	jp AIUseFullRestore
+*/
+FirefighterAI:
+; if his active monster has the burn condition, use a burn heal
+	ld a, [wEnemyMonStatus]
+	bit BRN, a               ; test the Burn bit (BRN = 2)
+	ret z
+	jp AIUseBurnHeal
 
 GenericAI:
 	and a ; clear carry
@@ -665,6 +687,12 @@ AIUseFullHeal:
 	call AIPlayRestoringSFX
 	call AICureStatus
 	ld a, FULL_HEAL
+	jp AIPrintItemUse
+
+AIUseBurnHeal:
+    call AIPlayRestoringSFX
+	call AICureStatus
+	ld a, BURN_HEAL
 	jp AIPrintItemUse
 
 AICureStatus:

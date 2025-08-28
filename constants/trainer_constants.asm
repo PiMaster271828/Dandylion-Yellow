@@ -73,4 +73,7 @@ ENDM
 	trainer_const CHEF           ; $37 ; $250 ; New trainer class added by G-Dubs
 	trainer_const TEACHER        ; $38 ; $251 ; New trainer class added by G-Dubs
     trainer_const SCHOOL_KID     ; $39 ; $252 ; New trainer class added by G-Dubs
+	trainer_const OFFICER_JENNY  ; $3A ; $253 ; New trainer class added by G-Dubs
+    trainer_const FIREFIGHTER    ; $3B ; $254 ; New trainer class added by G-Dubs
+   ;trainer_const NURSE_JOY      ; $3C ; $255 ; New trainer class added by G-Dubs
 DEF NUM_TRAINERS EQU const_value - 1

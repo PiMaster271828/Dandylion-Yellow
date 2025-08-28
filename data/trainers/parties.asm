@@ -57,6 +57,9 @@ TrainerDataPointers:
 	dw ChefData              ; New trainer class added by G-Dubs
 	dw TeacherData			 ; New trainer class added by G-Dubs
 	dw SchoolKidData		 ; New trainer class added by G-Dubs
+	dw OfficerJennyData      ; New trainer class added by G-Dubs
+	dw FirefighterData       ; New trainer class added by G-Dubs
+   ;dw NurseJoyData          ; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS
 
 ; if first byte != $FF, then
@@ -858,7 +861,7 @@ SabrinaData:
 ; First Rematch (8 Badges)
     db $FF, 64, PORYGON, 66, VENOMOTH, 68, HYPNO,/*ESPEON*/ 68, EXEGGUTOR, 70, STARMIE, 72, ALAKAZAM, 0      ; Sabrina 3              ; Animeesque & TCG PokéMon added by G-Dubs
 ; Rematch (Post Game)
-	db $FF, 81, MR_MIME, 81, HYPNO, 83, SLOWBRO, 83, JYNX, 85, GENGAR, 87, ALAKAZAM, 0                       ; Sabrina 4          	  ; Sabrina Rematch from Yellow Legacy
+	db $FF, 81, MR_MIME, 81, HYPNO, 83, SLOWBRO, 83, JYNX, 85, GENGAR, 87, ALAKAZAM, 0                       ; Sabrina 4          	  ; Sabrina Rematch from Yellow Legacy (Levels adjusted by G-Dubs)
 
 GentlemanData:
 ; SS Anne 1F Rooms
@@ -1090,11 +1093,30 @@ School Girl Sprite
 School Boy Sprite
 *****************/ 
 ; Viridian City Trainer's School (Again)
-    db 5, RATTATA, SQUIRTLE, 0	                                                                             ; School Kid 5            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-    db 5, NIDORAN_M, ODDISH, 0                                                                               ; School Kid 6            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+    db 5, RATTATA, SQUIRTLE, 0	                                                                             ; School Kid 5           ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+    db 5, NIDORAN_M, ODDISH, 0                                                                               ; School Kid 6           ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 ; SS Anne 2F Rooms
-    db 22, MAGNEMITE, ODDISH, POLIWAG, 0	                                                                 ; School Kid 7 		   ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+    db 22, MAGNEMITE, ODDISH, POLIWAG, 0	                                                                 ; School Kid 7 		  ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
     
+OfficerJennyData:
+; Vermilion City 
+    db 25, SQUIRTLE, 0                                                                                       ; Officer Jenny 1 	      ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+
+FirefighterData:
+/**********************
+Beta Firefighter Sprite
+**********************/
+; Vermilion City 
+    db $FF, 21, SQUIRTLE, 22, SQUIRTLE, 23, SQUIRTLE, 24, SQUIRTLE, 0                                        ; Firefighter 1 	      ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+/*********************
+New Firefighter Sprite
+*********************/ 
+; Route 7
+    db 30, GEODUDE, GROWLITHE, POLIWHIRL, 0	                                                                 ; Firefighter 2          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+
+
+
+
 
 
 

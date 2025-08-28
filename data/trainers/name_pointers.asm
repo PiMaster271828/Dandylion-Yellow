@@ -60,29 +60,58 @@ TrainerNamePointers:
 	dw .ChefName             ; New trainer class added by G-Dubs
 	dw .TeacherName          ; New trainer class added by G-Dubs
 	dw .SchoolKidName        ; New trainer class added by G-Dubs
+	dw .OfficerJennyName     ; New trainer class added by G-Dubs
+	dw .FirefighterName      ; New trainer class added by G-Dubs
+   ;dw .NurseJoyName         ; New trainer class added by G-Dubs 
 	assert_table_length NUM_TRAINERS
 
 .YoungsterName:     db "YOUNGSTER@"
 .BugCatcherName:    db "BUG CATCHER@"
 .LassName:          db "LASS@"
+;.SailorName         db "SAILOR@"
 .JrTrainerMName:    db "JR.TRAINER♂@"
 .JrTrainerFName:    db "JR.TRAINER♀@"
 .PokemaniacName:    db "POKéMANIAC@"
 .SuperNerdName:     db "SUPER NERD@"
+;.HikerName          db "HIKER@"
+;.BikerName          db "BIKER@"
 .BurglarName:       db "BURGLAR@"
 .EngineerName:      db "ENGINEER@"
 .UnusedJugglerName: db "JUGGLER@"
+;.FisherName         db "FISHER@"
 .SwimmerName:       db "SWIMMER@"
+;.CueBallName        db "CUE BALL@"
+;.GamblerName        db "GAMBLER@"
 .BeautyName:        db "BEAUTY@"
+;.PsychicName        db "PSYCHIC@"
 .RockerName:        db "ROCKER@"
 .JugglerName:       db "JUGGLER@"
+;.TamerName          db "TAMER@"
+;.BirdKeeper         db "BIRDKEEPER"
 .BlackbeltName:     db "BLACKBELT@"
+;Rival1Name:         db "???@"
 .ProfOakName:       db "PROF.OAK@"
 .ChiefName:         db "CHIEF@"
 .ScientistName:     db "SCIENTIST@"
+;.GiovanniName:      db "GIOVANNI@"
 .RocketName:        db "ROCKET@"
 .CooltrainerMName:  db "COOLTRAINER♂@"
 .CooltrainerFName:  db "COOLTRAINER♀@"
+;.BrunoName:         db "BRUNO@"
+;.BrockName:	     db "BROCK@"	
+;.MistyName:         db "MISTY@"
+;.SurgeName:         db "LT.SURGE@"
+;.ErikaName:         db "ERIKA@"
+;.KogaName:          db "KOGA@"
+;.BlaineName:        db "BLAINE@"
+;.SabrinaName:       db "SABRINA@"
+;.GentlemanName:     db "GENTLEMAN@"
+;.Rival2Name:        db "???@"
+;.Rival3Name:        db "???@"
+;.LoreleiName:       db "LORELEI@"
+;.ChannelerName:     db "CHANNELER@"
+;.AgathaName:        db "AGATHA@"
+;.LanceName:         db "LANCE@"
 .JessieJamesName:   db "JESSIE & JAMES@"    ; New trainer class added by Vlad       ; Name changed by G-Dubs
 .PokeFanMName:      db "POKéFAN♂@"          ; New trainer class added by G-Dubs
 .PokeFanFName:      db "POKéFAN♀@"          ; New trainer class added by G-Dubs
@@ -93,3 +122,13 @@ TrainerNamePointers:
 .ChefName:          db "CHEF@"              ; New trainer class added by G-Dubs
 .TeacherName:       db "TEACHER@"           ; New trainer class added by G-Dubs
 .SchoolKidName:     db "SCHOOL KID@"        ; New trainer class added by G-Dubs
+.OfficerJennyName:  db "OFFICER JENNY@"     ; New trainer class added by G-Dubs
+.FirefighterName:   db "FIREFIGHTER@"     ; New trainer class added by G-Dubs
+;.NurseJoyName:      db "NURSE JOY@"         ; New trainer class added by G-Dubs
+
+
+
+
+
+
+

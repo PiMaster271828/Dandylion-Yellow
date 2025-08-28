@@ -214,4 +214,7 @@ TrainerPalettes:
 	db PAL_MEWMON                      ; CHEF              ; New trainer class added by G-Dubs
 	db PAL_GRAYMON                     ; TEACHER           ; New trainer class added by G-Dubs
 	db PAL_MEWMON                      ; SCHOOL KID        ; New trainer class added by G-Dubs
+	db PAL_BLUEMON                     ; OFFICER JENNY     ; New trainer class added by G-Dubs
+	db PAL_MEWMON                      ; FIREFIGHTER       ; New trainer class added by G-Dubs
+   ;db PAL_PINKMON                     ; NURSE JOY         ; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS + 1

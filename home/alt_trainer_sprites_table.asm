@@ -94,7 +94,10 @@ TrainerSpriteJumpTable: ; Index (Decimal), Class ID (Hex) Comment
 	dw DefaultTrainerSpriteHandler ; 53, $36: WAITER
 	dw DefaultTrainerSpriteHandler ; 54, $37: CHEF
 	dw TeacherSpriteHandler        ; 55, $38: TEACHER				 ; Has multiple sprites		   
-	dw SchoolKidSpriteHandler      ; 56, $39: SCHOOL_KID			 ; Has multiple sprites		   
+	dw SchoolKidSpriteHandler      ; 56, $39: SCHOOL_KID			 ; Has multiple sprites
+	dw OfficerJennySpriteHandler   ; 57  $3A: OFFICER_JENNY          ; Has multiple sprites        
+	dw FirefighterSpriteHandler    ; 58, $3B: FIREFIGHTER			 ; Has multiple sprites        
+   ;dw NurseJoySpriteHandler       ; ??, $??: NURSE_JOY				 ; Has multiple sprites		   ; Not implemented yet   
 
 	; NOTE: Table has 55 entries (indices 0-54), correctly matching NUM_TRAINERS ($37 = 55)
 	; for classes $01-$37. Class $00 (NOBODY) is not handled by this table.
@@ -275,12 +278,42 @@ SchoolKidSpriteHandler:
 	ret c ; Trainers 0-1 -> Use default (SchoolKidPic) (School Boy)
 	cp $05
 	jr nc, .SchoolKidDone ; Check if >= 5
-	; Trainers 1-4 -> Use SchoolKid2Pic (School Girl)
+	; Trainers 2-4 -> Use SchoolKid2Pic (School Girl)
 	ld de, SchoolKid2Pic
 	call UpdateTrainerPicPointer
 	ret ; Done for this range
 .SchoolKidDone:
 	ret
+
+; Handler for Officer Jenny class ($3A) - Index 58
+OfficerJennySpriteHandler:
+	ld a, [wTrainerNo]
+	cp $01
+	ret c ; Trainers 0-1 -> Use default (OfficerJennyPic)
+	cp $05
+	jr nc, .OfficerJennyDone ; Check if >= 5
+	; Trainers 2-4 -> Use OfficerJenny2Pic
+	ld de, OfficerJenny2Pic
+	call UpdateTrainerPicPointer
+	ret ; Done for this range
+.OfficerJennyDone:
+	ret
+
+; Handler for Lass class ($3B) - Index 59
+FirefighterSpriteHandler:
+	ld a, [wTrainerNo]
+	cp $01
+	ret c ; Trainers 0-1 -> Use default (FirefighterPic)
+	cp $05
+	jr nc, .FirefighterDone ; Check if >= 5
+	; Trainers 2-5 -> Use Firefighter2Pic
+	ld de, Firefighter2Pic
+	call UpdateTrainerPicPointer
+	ret ; Done for this range
+.FirefighterDone:
+	ret
+
+; Handler for Nurse Joy class ($??) - Index ??
 
 ; -----------------------------------------------------------------
 ; Helper function to update the sprite pointer

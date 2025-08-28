@@ -518,9 +518,14 @@ TeacherPic::       INCBIN "gfx/trainers/teacher.pic"                      ; New 
 Teacher2Pic::      INCBIN "gfx/trainers/unused_teacher.pic"               ; New alternate trainer sprite added by G-Dubs
 SchoolKidPic::     INCBIN "gfx/trainers/school_boy.pic"                   ; New trainer sprite added by G-Dubs
 SchoolKid2Pic::    INCBIN "gfx/trainers/school_girl.pic"                  ; New alternate trainer sprite added by G-Dubs
-
+OfficerJennyPic::  INCBIN "gfx/trainers/officer_jenny.pic"                ; New trainer sprite added by G-Dubs
+OfficerJenny2Pic:: INCBIN "gfx/trainers/officer_jenny_alt.pic"            ; New alternate trainer sprite added by G-Dubs
+FirefighterPic::   INCBIN "gfx/trainers/firefighter.pic"                  ; New trainer sprite added by G-Dubs
+Firefighter2Pic::  INCBIN "gfx/trainers/firefighter_alt.pic"              ; New alternate trainer sprite added by G-Dubs
+NurseJoyPic::      INCBIN "gfx/trainers/nurse_joy.pic"                    ; New trainer sprite added by G-Dubs
+NurseJoy2Pic::     INCBIN "gfx/trainers/nurse_joy_alt.pic"                ; New alternate trainer sprite added by G-Dubs
 ;GypsyJugglerPic::  INCBIN "gfx/trainers/gypsy_juggler.pic"
-;Rival4Pic::      INCBIN "gfx/trainers/rival4.pic"
+;Rival4Pic::        INCBIN "gfx/trainers/rival4.pic"
 
 SECTION "Pics 7", ROMX
 

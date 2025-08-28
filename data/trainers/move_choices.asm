@@ -69,4 +69,7 @@ TrainerClassMoveChoiceModifications:
 	move_choices 1       ; CHEF				; New trainer class added by G-Dubs
 	move_choices 1       ; TEACHER   		; New trainer class added by G-Dubs
 	move_choices 1, 3    ; SCHOOL KID		; New trainer class added by G-Dubs
+	move_choices 1       ; OFFICER JENNY   	; New trainer class added by G-Dubs
+	move_choices 1       ; FIREFIGHTER      ; New trainer class added by G-Dubs
+   ;move_choices 1       ; NURSE JOY        ; New trainer class added by G-Dubs
 	assert_list_length NUM_TRAINERS
