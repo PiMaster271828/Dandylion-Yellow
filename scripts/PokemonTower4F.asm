@@ -20,7 +20,7 @@ PokemonTower4F_TextPointers:
 	dw_const PokemonTower4FChanneler3Text, TEXT_POKEMONTOWER4F_CHANNELER3
 	dw_const PokemonTower4FChanneler4Text, TEXT_POKEMONTOWER4F_CHANNELER4      ; New trainer added by G-Dubs
 	dw_const PokemonTower4FChanneler5Text, TEXT_POKEMONTOWER4F_CHANNELER5      ; New trainer added by G-Dubs
-	dw_const PickUpItemText,               TEXT_POKEMONTOWER4F_ELIXER
+	dw_const PickUpItemText,               TEXT_POKEMONTOWER4F_ELIXIR
 	dw_const PickUpItemText,               TEXT_POKEMONTOWER4F_AWAKENING
 	dw_const PickUpItemText,               TEXT_POKEMONTOWER4F_HP_UP
 

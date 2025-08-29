@@ -726,7 +726,7 @@ _ViridianBlackboardPrlzText::
 	para "Paralysis remains"
 	line "after battles."
 
-	para "Use PARLYZ HEAL"
+	para "Use PARALYZE HEAL"
 	line "for treatment!"
 	prompt
 

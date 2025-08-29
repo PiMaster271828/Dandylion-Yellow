@@ -130,7 +130,7 @@ DebugItemsList:
     db RARE_CANDY, 99
 	db FULL_RESTORE, 99
 	db REVIVE, 99
-	db MAX_ELIXER, 99
+	db MAX_ELIXIR, 99
 	db FULL_HEAL, 99
 	db FRESH_WATER, 99
 	db ESCAPE_ROPE, 99
@@ -161,8 +161,8 @@ DebugUnusedList:
 	db LIFT_KEY, 1
 	db ETHER, 99
 	db MAX_ETHER, 99
-	db ELIXER, 99
-	db MAX_ELIXER, 99
+	db ELIXIR, 99
+	db MAX_ELIXIR, 99
 	db TM_RAZOR_WIND, 10
 	db TM_HORN_DRILL, 10
 	db TM_TAKE_DOWN, 10

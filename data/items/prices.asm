@@ -14,7 +14,7 @@ ItemPrices::
 	bcd3 250   ; BURN_HEAL
 	bcd3 250   ; ICE_HEAL
 	bcd3 200   ; AWAKENING
-	bcd3 200   ; PARLYZ_HEAL
+	bcd3 200   ; PARALYZE_HEAL
 	bcd3 3000  ; FULL_RESTORE
 	bcd3 2500  ; MAX_POTION
 	bcd3 1500  ; HYPER_POTION
@@ -39,7 +39,7 @@ ItemPrices::
 	bcd3 9800  ; IRON
 	bcd3 9800  ; CARBOS
 	bcd3 9800  ; CALCIUM
-	bcd3 4800  ; RARE_CANDY
+	bcd3 9800  ; RARE_CANDY
 	bcd3 0     ; DOME_FOSSIL
 	bcd3 0     ; HELIX_FOSSIL
 	bcd3 0     ; SECRET_KEY
@@ -53,7 +53,7 @@ ItemPrices::
 	bcd3 1000  ; POKE_DOLL
 	bcd3 600   ; FULL_HEAL
 	bcd3 1500  ; REVIVE
-	bcd3 4000  ; MAX_REVIVE
+	bcd3 6000  ; MAX_REVIVE
 	bcd3 700   ; GUARD_SPEC
 	bcd3 500   ; SUPER_REPEL
 	bcd3 700   ; MAX_REPEL
@@ -65,9 +65,9 @@ ItemPrices::
 	bcd3 0     ; S_S_TICKET
 	bcd3 0     ; GOLD_TEETH
 	bcd3 500   ; X_ATTACK
-	bcd3 550   ; X_DEFEND
+	bcd3 300   ; X_DEFEND
 	bcd3 350   ; X_SPEED
-	bcd3 350   ; X_SPECIAL
+	bcd3 550   ; X_SPECIAL
 	bcd3 0     ; COIN_CASE
 	bcd3 0     ; OAKS_PARCEL
 	bcd3 0     ; ITEMFINDER
@@ -78,11 +78,11 @@ ItemPrices::
 	bcd3 0     ; OLD_ROD
 	bcd3 0     ; GOOD_ROD
 	bcd3 0     ; SUPER_ROD
-	bcd3 0     ; PP_UP
-	bcd3 0     ; ETHER
-	bcd3 0     ; MAX_ETHER
-	bcd3 0     ; ELIXER
-	bcd3 0     ; MAX_ELIXER
+	bcd3 9800  ; PP_UP
+	bcd3 2500  ; ETHER
+	bcd3 5000  ; MAX_ETHER
+	bcd3 7500  ; ELIXIR
+	bcd3 10000 ; MAX_ELIXIR
 	assert_table_length NUM_ITEMS
 	bcd3 0     ; FLOOR_B2F
 	bcd3 0     ; FLOOR_B1F

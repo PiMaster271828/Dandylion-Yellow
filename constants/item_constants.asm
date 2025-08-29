@@ -21,7 +21,7 @@
 	const BURN_HEAL     ; $0C
 	const ICE_HEAL      ; $0D
 	const AWAKENING     ; $0E
-	const PARLYZ_HEAL   ; $0F
+	const PARALYZE_HEAL   ; $0F
 	const FULL_RESTORE  ; $10
 	const MAX_POTION    ; $11
 	const HYPER_POTION  ; $12
@@ -90,8 +90,8 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const PP_UP         ; $4F
 	const ETHER         ; $50
 	const MAX_ETHER     ; $51
-	const ELIXER        ; $52
-	const MAX_ELIXER    ; $53
+	const ELIXIR        ; $52
+	const MAX_ELIXIR    ; $53
 DEF NUM_ITEMS EQU const_value - 1
 
 ; elevator floors use item IDs

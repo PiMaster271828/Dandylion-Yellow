@@ -5,7 +5,7 @@ UsableItems_PartyMenu:
 	db BURN_HEAL
 	db ICE_HEAL
 	db AWAKENING
-	db PARLYZ_HEAL
+	db PARALYZE_HEAL
 	db FULL_RESTORE
 	db MAX_POTION
 	db HYPER_POTION
@@ -34,6 +34,6 @@ UsableItems_PartyMenu:
 	db PP_UP
 	db ETHER
 	db MAX_ETHER
-	db ELIXER
-	db MAX_ELIXER
+	db ELIXIR
+	db MAX_ELIXIR
 	db -1 ; end

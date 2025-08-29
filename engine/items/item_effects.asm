@@ -31,7 +31,7 @@ ItemUsePtrTable:
 	dw ItemUseMedicine   ; BURN_HEAL
 	dw ItemUseMedicine   ; ICE_HEAL
 	dw ItemUseMedicine   ; AWAKENING
-	dw ItemUseMedicine   ; PARLYZ_HEAL
+	dw ItemUseMedicine   ; PARALYZE_HEAL
 	dw ItemUseMedicine   ; FULL_RESTORE
 	dw ItemUseMedicine   ; MAX_POTION
 	dw ItemUseMedicine   ; HYPER_POTION
@@ -98,8 +98,8 @@ ItemUsePtrTable:
 	dw ItemUsePPUp       ; PP_UP
 	dw ItemUsePPRestore  ; ETHER
 	dw ItemUsePPRestore  ; MAX_ETHER
-	dw ItemUsePPRestore  ; ELIXER
-	dw ItemUsePPRestore  ; MAX_ELIXER
+	dw ItemUsePPRestore  ; ELIXIR
+	dw ItemUsePPRestore  ; MAX_ELIXIR
 
 ItemUseBall:
 
@@ -981,7 +981,7 @@ ItemUseMedicine:
 	cp AWAKENING
 	jr z, .checkMonStatus
 	lb bc, PARALYZ_HEAL_MSG, 1 << PAR
-	cp PARLYZ_HEAL
+	cp PARALYZE_HEAL
 	jr z, .checkMonStatus
 	lb bc, FULL_HEAL_MSG, $ff ; Full Heal
 .checkMonStatus
@@ -2207,7 +2207,7 @@ ItemUsePPRestore:
 
 .usePPItem
 	ld a, [wPPRestoreItem]
-	cp ELIXER
+	cp ELIXIR
 	jp nc, .useElixir ; if Elixir or Max Elixir
 	ld a, $02
 	ld [wMoveMenuType], a
@@ -2334,7 +2334,7 @@ ItemUsePPRestore:
 	jr .storeNewAmount
 
 .useElixir
-; decrement the item ID so that ELIXER becomes ETHER and MAX_ELIXER becomes MAX_ETHER
+; decrement the item ID so that ELIXIR becomes ETHER and MAX_ELIXIR becomes MAX_ETHER
 	ld hl, wPPRestoreItem
 	dec [hl]
 	dec [hl]

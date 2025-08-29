@@ -14,7 +14,7 @@ KeyItemFlags:
 	dbit FALSE ; BURN_HEAL
 	dbit FALSE ; ICE_HEAL
 	dbit FALSE ; AWAKENING
-	dbit FALSE ; PARLYZ_HEAL
+	dbit FALSE ; PARALYZE_HEAL
 	dbit FALSE ; FULL_RESTORE
 	dbit FALSE ; MAX_POTION
 	dbit FALSE ; HYPER_POTION
@@ -81,6 +81,6 @@ KeyItemFlags:
 	dbit FALSE ; PP_UP
 	dbit FALSE ; ETHER
 	dbit FALSE ; MAX_ETHER
-	dbit FALSE ; ELIXER
-	dbit FALSE ; MAX_ELIXER
+	dbit FALSE ; ELIXIR
+	dbit FALSE ; MAX_ELIXIR
 	end_bit_array NUM_ITEMS
