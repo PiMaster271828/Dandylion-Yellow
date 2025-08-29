@@ -62,6 +62,7 @@ TrainerNamePointers:
 	dw .SchoolKidName        ; New trainer class added by G-Dubs
 	dw .OfficerJennyName     ; New trainer class added by G-Dubs
 	dw .FirefighterName      ; New trainer class added by G-Dubs
+	dw .DragonTamerName      ; New trainer class added by G-Dubs
    ;dw .NurseJoyName         ; New trainer class added by G-Dubs 
 	assert_table_length NUM_TRAINERS
 
@@ -123,7 +124,8 @@ TrainerNamePointers:
 .TeacherName:       db "TEACHER@"           ; New trainer class added by G-Dubs
 .SchoolKidName:     db "SCHOOL KID@"        ; New trainer class added by G-Dubs
 .OfficerJennyName:  db "OFFICER JENNY@"     ; New trainer class added by G-Dubs
-.FirefighterName:   db "FIREFIGHTER@"     ; New trainer class added by G-Dubs
+.FirefighterName:   db "FIREFIGHTER@"       ; New trainer class added by G-Dubs
+.DragonTamerName:   db "DRAGON TAMER@"      ; New trainer class added by G-Dubs
 ;.NurseJoyName:      db "NURSE JOY@"         ; New trainer class added by G-Dubs
 
 

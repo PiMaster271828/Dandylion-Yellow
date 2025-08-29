@@ -59,5 +59,6 @@ TrainerNames::
 	li "SCHOOL KID"                    ; New trainer class added by G-Dubs
 	li "OFFICER JENNY"                 ; New trainer class added by G-Dubs
 	li "FIREFIGHTER"                   ; New trainer class added by G-Dubs
+	li "DRAGON TAMER"                  ; New trainer class added by G-Dubs
    ;li "NURSE JOY"                     ; New trainer class added by G-Dubs
 	assert_list_length NUM_TRAINERS

@@ -59,6 +59,7 @@ TrainerDataPointers:
 	dw SchoolKidData		 ; New trainer class added by G-Dubs
 	dw OfficerJennyData      ; New trainer class added by G-Dubs
 	dw FirefighterData       ; New trainer class added by G-Dubs
+	dw DragonTamerData       ; New trainer class added by G-Dubs
    ;dw NurseJoyData          ; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS
 
@@ -301,11 +302,13 @@ Pokémaniac Alternate Sprite
     db 19, NIDORINO, SLOWPOKE, NIDORINA, 0                                                                   ; Pokémaniac 12          ; New trainer added by G-Dubs
 ; Rock Tunnel 1F (Again)
 	db 23, RHYHORN, KANGASKHAN, 0                                                                            ; Pokémaniac 13          ; New trainer added by G-Dubs
+; Rock Tunnel B2F
+    db 43, CUBONE, RHYHORN, MAROWAK, KANGASKHAN, RHYDON, 0                                                   ; Pokémaniac 14          ; New trainer added by G-Dubs
 /*
 ; Route 23
-    db 45, NIDOKING, KANGASKHAN, CHARIZARD, SLOWBRO, LICKITUNG, LAPRAS, 0                                    ; Pokémaniac 14          ; New trainer added by G-Dubs
+    db 45, NIDOKING, KANGASKHAN, CHARIZARD, SLOWBRO, LICKITUNG, LAPRAS, 0                                    ; Pokémaniac 15          ; New trainer added by G-Dubs
 ; Safari Zone Area 2 Rest House
-    db 33, RHYHORN, PINSIR, TANGELA, KANGASKHAN, SCYTHER, MAROWAK, 0                                         ; Pokémaniac 15          ; New trainer added by G-Dubs
+    db 33, RHYHORN, PINSIR, TANGELA, KANGASKHAN, SCYTHER, MAROWAK, 0                                         ; Pokémaniac 16          ; New trainer added by G-Dubs
 */
 SuperNerdData:
 ; Mt. Moon 1F
@@ -353,6 +356,9 @@ HikerData:
 ; Mt. Moon 1F (Again)
     db 12, SANDSHREW, GEODUDE, MACHOP, ONIX, 0                                                               ; Hiker 15               ; New trainer added by G-Dubs
     db 12, SANDSHREW, ZUBAT, MACHOP, GEODUDE, 0                                                              ; Hiker 16               ; New trainer added by G-Dubs
+; Rock Tunnel B2F
+    db 45, GEODUDE, ONIX, MACHOKE, GRAVELER, 0                                                               ; Hiker 17               ; New trainer added by G-Dubs
+    db 48, GEODUDE, GRAVELER, GOLEM, ONIX, 0                                                                 ; Hiker 18               ; New trainer added by G-Dubs
 
 BikerData:
 ; Route 13
@@ -754,8 +760,9 @@ CooltrainerMData:
 	db 45, KINGLER, STARMIE, 0				                                                                 ; Cooltrainer ♂ 4        ; (Unused)
 ; Victory Road 1F
 	db 42, IVYSAUR, WARTORTLE, CHARMELEON, CHARIZARD, 0	                                                     ; Cooltrainer ♂ 5
-; Unused
-	db 44, IVYSAUR, WARTORTLE, CHARMELEON, 0		                                                         ; Cooltrainer ♂ 6        ; (Unused)
+; Rock Tunnel B2F or Previously Unused
+	db 44, IVYSAUR, WARTORTLE, CHARMELEON, 0		                                                         ; Cooltrainer ♂ 6        ; Previously unused trainer added by G-Dubs
+; Unused	
 	db 49, NIDOKING, 0					                                                                     ; Cooltrainer ♂ 7        ; (Unused)
 	db 44, KINGLER, CLOYSTER, 0				                                                                 ; Cooltrainer ♂ 8        ; (Unused)
 ; Viridian Gym
@@ -768,8 +775,8 @@ CooltrainerFData:
 ; Victory Road 3F
 	db 43, BELLSPROUT, WEEPINBELL, VICTREEBEL, 0	                                                         ; Cooltrainer ♀ 2
 	db 43, PARASECT, DEWGONG, CHANSEY, 0		                                                             ; Cooltrainer ♀ 3
-; Unused
-	db 46, VILEPLUME, BUTTERFREE, 0			                                                                 ; Cooltrainer ♀ 4        ; (Unused)
+; Rock Tunnel B2F (Previously Unused)
+	db 46, IVYSAUR, BUTTERFREE, VILEPLUME, 0			                                                     ; Cooltrainer ♀ 4        ; Previoisly unused trainer added by G-Dubs (Ivysaur added by G-Dubs)
 ; Victory Road 1F
 	db 44, PERSIAN, NINETALES, 0			                                                                 ; Cooltrainer ♀ 5
 ; Unused
@@ -1114,6 +1121,9 @@ New Firefighter Sprite
 ; Route 7
     db 30, GEODUDE, GROWLITHE, POLIWHIRL, 0	                                                                 ; Firefighter 2          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 
+DragonTamerData:
+; Rock Tunnel B2F 
+    db 47, SEADRA, CHARMELEON, GYARADOS, 0                                                                   ; Dragon Tamer 1 	      ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 
 
 

@@ -66,5 +66,6 @@ TrainerPicAndMoneyPointers::
 	pic_money SchoolKidPic,    1250    ; New trainer class added by G-Dubs
 	pic_money OfficerJennyPic, 2500    ; New trainer class added by G-Dubs
 	pic_money FirefighterPic,  2500    ; New trainer class added by G-Dubs
+	pic_money DragonTamerPic,  3000    ; New trainer class added by G-Dubs
    ;pic_money NursejoyPic,     2500    ; New trainer class added by G-Dubs
 	assert_table_length NUM_TRAINERS

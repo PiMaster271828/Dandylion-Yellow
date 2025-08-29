@@ -522,6 +522,7 @@ OfficerJennyPic::  INCBIN "gfx/trainers/officer_jenny.pic"                ; New 
 OfficerJenny2Pic:: INCBIN "gfx/trainers/officer_jenny_alt.pic"            ; New alternate trainer sprite added by G-Dubs
 FirefighterPic::   INCBIN "gfx/trainers/firefighter.pic"                  ; New trainer sprite added by G-Dubs
 Firefighter2Pic::  INCBIN "gfx/trainers/firefighter_alt.pic"              ; New alternate trainer sprite added by G-Dubs
+DragonTamerPic::   INCBIN "gfx/trainers/dragon_tamer.pic"                 ; New trainer sprite added by G-Dubs
 NurseJoyPic::      INCBIN "gfx/trainers/nurse_joy.pic"                    ; New trainer sprite added by G-Dubs
 NurseJoy2Pic::     INCBIN "gfx/trainers/nurse_joy_alt.pic"                ; New alternate trainer sprite added by G-Dubs
 ;GypsyJugglerPic::  INCBIN "gfx/trainers/gypsy_juggler.pic"

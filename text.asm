@@ -46,6 +46,7 @@ INCLUDE "text/SSAnneB1FRooms.asm"                ; Moved from Text 1 by G-Dubs t
 INCLUDE "text/SSAnne2FRooms.asm"                 ; Moved from Text 1 by G-Dubs to avoid the Text Bank from growing too big
 INCLUDE "text/Route9.asm"                        ; Moved from Text 3 by G-Dubs to avoid the Text Bank from growing too big 
 INCLUDE "text/RockTunnel1F.asm"                  ; Moved from Text 3 by G-Dubs to avoid the Text Bank from growing too big
+INCLUDE "text/RockTunnelB2F.asm"                 ; New text file created for a new map by G-Dubs
 
 
 SECTION "Text 2", ROMX

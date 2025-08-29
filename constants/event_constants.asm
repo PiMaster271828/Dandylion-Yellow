@@ -962,16 +962,30 @@ DEF INDIGO_PLATEAU_EVENTS_END EQU const_value - 1
 
 ; Seafoam Islands Events
 	const_next $9C0
-	const EVENT_SEAFOAM2_BOULDER1_DOWN_HOLE
-	const EVENT_SEAFOAM2_BOULDER2_DOWN_HOLE
-	const_skip 6
-	const EVENT_SEAFOAM3_BOULDER1_DOWN_HOLE
-	const EVENT_SEAFOAM3_BOULDER2_DOWN_HOLE
-	const_skip 6
-	const EVENT_SEAFOAM4_BOULDER1_DOWN_HOLE
-	const EVENT_SEAFOAM4_BOULDER2_DOWN_HOLE
-	const_skip 8
-	const EVENT_BEAT_ARTICUNO
+	const EVENT_SEAFOAM2_BOULDER1_DOWN_HOLE                                                        ; $9C0
+	const EVENT_SEAFOAM2_BOULDER2_DOWN_HOLE                                                        ; $9C1
+	const_skip 6                                                                                   ; $9C2 - $9C7
+	const EVENT_SEAFOAM3_BOULDER1_DOWN_HOLE                                                        ; $9C8
+	const EVENT_SEAFOAM3_BOULDER2_DOWN_HOLE                                                        ; $9C9
+	const_skip 6                                                                                   ; $9CA - $9CF
+	const EVENT_SEAFOAM4_BOULDER1_DOWN_HOLE                                                        ; $9D0
+	const EVENT_SEAFOAM4_BOULDER2_DOWN_HOLE                                                        ; $9D1
+	const_skip 8                                                                                   ; $9D2 - $9D9 
+	const EVENT_BEAT_ARTICUNO                                                                      ; $9DA
+	const_skip 5                                 ; const_skip added by G-Dubs                      ; $9DB - $9DF
+
+; Rock Tunnel B2F Events                         ; New section added by G-Dubs
+	const_next $9E0
+	const_skip                                   ; const_skip added by G-Dubs                      ; $9E0
+	const EVENT_BEAT_ROCK_TUNNEL_3_TRAINER_0     ; New trainer added by G-Dubs                     ; $9E1
+	const EVENT_BEAT_ROCK_TUNNEL_3_TRAINER_1     ; New trainer added by G-Dubs                     ; $9E2
+	const EVENT_BEAT_ROCK_TUNNEL_3_TRAINER_2     ; New trainer added by G-Dubs                     ; $9E3
+	const EVENT_BEAT_ROCK_TUNNEL_3_TRAINER_3     ; New trainer added by G-Dubs                     ; $9E4
+	const EVENT_BEAT_ROCK_TUNNEL_3_TRAINER_4     ; New trainer added by G-Dubs                     ; $9E5
+	const EVENT_BEAT_ROCK_TUNNEL_3_TRAINER_5     ; New trainer added by G-Dubs                     ; $9E6
+	const_skip                                   ; const_skip added by G-Dubs                      ; $9E7
+   ;const EVENT_BEAT_CRYSTAL_ONIX                ; Crystal Onix added by G-Dubs                    ; $9E9
+    const_skip 7                                                                                   ; $9B8 - $9BF
 
 ; End of Events
 	const_next $A00

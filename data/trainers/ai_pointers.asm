@@ -64,5 +64,6 @@ TrainerAIPointers:
 	dbw 3, GenericAI         ; School Kid		 ; New trainer class added by G-Dubs
 	dbw 3, GenericAI         ; Officer Jenny   	 ; New trainer class added by G-Dubs
 	dbw 3, FirefighterAI     ; Firefighter		 ; New trainer class added by G-Dubs     ; Firefighter uses Burn Heals
+	dbw 3, GenericAI         ; Dragon Tamer      ; New trainer class added by G-Dubs
    ;dbw 3, Rival3AI          ; Nurse Joy		 ; New trainer class added by G-Dubs     ; Nurse Joy uses Full Restores
 	assert_table_length NUM_TRAINERS
