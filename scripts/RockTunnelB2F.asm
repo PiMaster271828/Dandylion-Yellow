@@ -125,7 +125,7 @@ RockTunnelB2FSuperNerd1EndBattleText:
 	text_end
 
 RockTunnelB2FSuperNerd1AfterBattleText:
-	text_far _RockTunnelB1FSuperNerd1AfterBattleText
+	text_far _RockTunnelB2FSuperNerd1AfterBattleText
 	text_end
 
 RockTunnelB2FHiker2BattleText:                             ; New trainer added by G-Dubs 

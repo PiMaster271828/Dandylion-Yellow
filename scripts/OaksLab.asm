@@ -345,6 +345,8 @@ OaksLabRivalStartBattleScript:
 	ld a, OAKSLAB_RIVAL
 	ld [wSpriteIndex], a
 	call GetSpritePosition1
+	ld a, $1  ; New lines added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+	ld [wIsTrainerBattle], a
 	ld a, OPP_RIVAL1
 	ld [wCurOpponent], a
 	ld a, $1
@@ -364,6 +366,9 @@ OaksLabRivalStartBattleScript:
 	ret
 
 OaksLabRivalEndBattleScript:
+    xor a     ; New lines added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+	ld [wIsTrainerBattle], a
+
 	ld a, A_BUTTON | B_BUTTON | SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a
 

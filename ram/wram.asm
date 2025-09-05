@@ -1862,7 +1862,11 @@ wPseudoItemID:: db
 
 wUnusedAlreadyOwnedFlag:: db
 
-	ds 2
+   ;ds 2                               ; ds 2 removed by G-Dubs
+
+wIsTrainerBattle:: db                  ; Added by G-Dubs to track trainer battles (Total reduced by ds 1)
+
+wWasTrainerBattle:: db                 ; Added by G-Dubs to track trainer battles (Total reduced by ds 1)
 
 wEvoStoneItemID:: db
 

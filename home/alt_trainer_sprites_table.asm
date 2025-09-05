@@ -96,7 +96,8 @@ TrainerSpriteJumpTable: ; Index (Decimal), Class ID (Hex) Comment
 	dw TeacherSpriteHandler        ; 55, $38: TEACHER				 ; Has multiple sprites		   
 	dw SchoolKidSpriteHandler      ; 56, $39: SCHOOL_KID			 ; Has multiple sprites
 	dw OfficerJennySpriteHandler   ; 57  $3A: OFFICER_JENNY          ; Has multiple sprites        
-	dw FirefighterSpriteHandler    ; 58, $3B: FIREFIGHTER			 ; Has multiple sprites        
+	dw FirefighterSpriteHandler    ; 58, $3B: FIREFIGHTER			 ; Has multiple sprites  
+	dw DefaultTrainerSpriteHandler ; 59, $3C: DRAGON TAMER			       
    ;dw NurseJoySpriteHandler       ; ??, $??: NURSE_JOY				 ; Has multiple sprites		   ; Not implemented yet   
 
 	; NOTE: Table has 55 entries (indices 0-54), correctly matching NUM_TRAINERS ($37 = 55)

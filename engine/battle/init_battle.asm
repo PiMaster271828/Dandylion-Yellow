@@ -30,9 +30,10 @@ InitBattleCommon:
 	push af
 	res BIT_TEXT_DELAY, [hl] ; no delay
 	call InitBattleVariables
+	ld a, [wIsTrainerBattle] ; New lines added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+	and a
+	jp z, InitWildBattle
 	ld a, [wEnemyMonSpecies2]
-	sub OPP_ID_OFFSET
-	jp c, InitWildBattle
 	ld [wTrainerClass], a
 	call GetTrainerInformation
 	callfar ReadTrainer

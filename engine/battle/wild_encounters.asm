@@ -98,6 +98,7 @@ TryDoWildEncounter:
 	ret
 .willEncounter
 	xor a
+	ld [wIsTrainerBattle], a ; New line added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
 	ret
 
 INCLUDE "data/wild/probabilities.asm"

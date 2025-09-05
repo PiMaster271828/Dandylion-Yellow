@@ -63,4 +63,6 @@ DEF LEFT       EQU $D2
 DEF RIGHT      EQU $D3
 DEF NONE       EQU $FF
 
+DEF OW_POKEMON EQU $80  ; New line added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+
 DEF BOULDER_MOVEMENT_BYTE_2 EQU $10

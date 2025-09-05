@@ -141,7 +141,8 @@ CeruleanCityRivalBattleScript:
 	ld [wCurOpponent], a
 	ld a, 3
 	ld [wTrainerNo], a
-	xor a
+	ld a, 1   ; New lines added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+	ld [wIsTrainerBattle], a
 	ldh [hJoyHeld], a
 	call CeruleanCityFaceRivalScript
 	ld a, SCRIPT_CERULEANCITY_RIVAL_DEFEATED
@@ -152,6 +153,8 @@ CeruleanCityRivalDefeatedScript:
 	ld a, [wIsInBattle]
 	cp $ff
 	jp z, CeruleanCityClearScripts
+	xor a     ; New lines added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+	ld [wIsTrainerBattle], a
 	call CeruleanCityFaceRivalScript
 	ld a, D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a

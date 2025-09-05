@@ -105,6 +105,8 @@ SSAnne2FRivalStartBattleScript:
 	ld [wCurOpponent], a
 	ld a, $1
 	ld [wTrainerNo], a
+	ld a, 1   ; New lines added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+	ld [wIsTrainerBattle], a
 	call SSAnne2FSetFacingDirectionScript
 	ld a, SCRIPT_SSANNE2F_RIVAL_AFTER_BATTLE
 	jp SSAnne2FSetCurScript
@@ -113,6 +115,8 @@ SSAnne2FRivalAfterBattleScript:
 	ld a, [wIsInBattle]
 	cp $ff
 	jp z, SSAnne2FResetScripts
+	xor a     ; New lines added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+	ld [wIsTrainerBattle], a
 	call SSAnne2FSetFacingDirectionScript
 	ld a, D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a

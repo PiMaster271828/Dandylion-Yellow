@@ -73,6 +73,8 @@ ChampionsRoomRivalReadyToBattleScript:
 	ld a, [wRivalStarter]
 	add $0 ; Wow GameFreak
 	ld [wTrainerNo], a
+	ld a, 1   ; New lines added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+	ld [wIsTrainerBattle], a
 
 	xor a
 	ldh [hJoyHeld], a
@@ -84,6 +86,8 @@ ChampionsRoomRivalDefeatedScript:
 	ld a, [wIsInBattle]
 	cp $ff
 	jp z, ResetRivalScript
+	xor a     ; New lines added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+	ld [wIsTrainerBattle], a
 	call UpdateSprites
 	SetEvent EVENT_BEAT_CHAMPION_RIVAL
 	ld a, D_RIGHT | D_LEFT | D_UP | D_DOWN

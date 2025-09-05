@@ -8,8 +8,8 @@ _RockTunnelB2FCooltrainerM1BattleText::          ; New trainer added by G-Dubs
     cont "not sight."
     
     para "Let's see how well"
-    line "you can battle! In"
-	cont "the dark..."	
+    line "you can battle!"
+	cont "In the dark..."	
     done
 
 _RockTunnelB2FCooltrainerM1EndBattleText::
@@ -58,7 +58,11 @@ _RockTunnelB2FCooltrainerF1EndBattleText::
 	prompt
 
 _RockTunnelB2FCooltrainerF1AfterBattleText::
-	text "The CRYSTAL ONIX" 
+	text "I left CELADON"
+    line "GYM to search for"
+    cont "The CRYSTAL ONIX."
+    
+    para "The CRYSTAL ONIX" 
     line "is said to glow."
     cont "Don't rely on"
     cont "that light alone."
@@ -87,7 +91,7 @@ _RockTunnelB2FHiker1EndBattleText::
 
 _RockTunnelB2FHiker1AfterBattleText::
 	text "Rumor has it that"
-    line "The CRYSTAL ONIX"
+    line "the CRYSTAL ONIX"
     cont "is the mountain's"
     cont "true heart."
     cont "Legends state"
@@ -178,6 +182,6 @@ _RockTunnelB2FLance1AfterBattleText::
     cont "is a dragon in"
     cont "spirit, if not"
     cont "in form. Its"
-    cont "Draconic aura is"
+    cont "draconic aura is"
     cont "strong. Be wary."
 	done

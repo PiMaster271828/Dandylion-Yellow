@@ -216,13 +216,14 @@ Func_fe81a:
 	jr Func_fe7db
 
 Func_fe850:
-	dec b
-	ld a, b
-	cp OPP_ID_OFFSET + 1
-	jp c, Func_fe81a
-	ld a, NUM_POKEMON_INDEXES
-	ld b, a
-	jp Func_fe81a
+    dec b
+    ld a, b
+    cp NUM_POKEMON_INDEXES
+    jp c, Func_fe81a ; still a valid Pokémon ID
+    ; otherwise reset to last Pokémon
+    ld a, NUM_POKEMON_INDEXES - 1
+    ld b, a
+    jp Func_fe81a
 
 Func_fe85d:
 	ld a, [wWhichPokemon]
@@ -754,9 +755,6 @@ Func_fec10:
 	ld a, [wIsInBattle]
 	dec a
 	jr z, .asm_fec28
-	ld a, b
-	add OPP_ID_OFFSET
-	ld b, a
 	ld a, c
 	ld [wTrainerNo], a
 .asm_fec28

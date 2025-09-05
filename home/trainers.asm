@@ -192,32 +192,40 @@ EndTrainerBattle::
 	res BIT_SEEN_BY_TRAINER, [hl] ; player is no longer engaged by any trainer
 	ld a, [wIsInBattle]
 	cp $ff
-	jp z, ResetButtonPressedAndMapScript
+   ;jp z, ResetButtonPressedAndMapScript
+	jr z, EndTrainerBattleWhiteout ; New line added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
 	ld a, $2
 	call ReadTrainerHeaderInfo
 	ld a, [wTrainerHeaderFlagBit]
 	ld c, a
 	ld b, FLAG_SET
-	call TrainerFlagAction   ; flag trainer as fought
-	ld a, [wEnemyMonOrTrainerClass]
-	cp OPP_ID_OFFSET
-	jr nc, .skipRemoveSprite    ; test if trainer was fought (in that case skip removing the corresponding sprite)
+	call TrainerFlagAction    ; Flag trainer as fought
+	ld a, [wWasTrainerBattle] ; New lines added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+	and a
+	jr nz, .skipRemoveSprite  ; Test if trainer was fought (in that case skip removing the corresponding sprite)
+	ld a, [wCurMap]
+	cp POKEMON_TOWER_7F
+	jr z, .skipRemoveSprite   ; The two 7F scripts call EndTrainerBattle manually after wIsTrainerBattle has been unset
 	ld hl, wMissableObjectList
 	ld de, $2
 	ld a, [wSpriteIndex]
-	call IsInArray              ; search for sprite ID
+	call IsInArray                ; search for sprite ID
 	inc hl
 	ld a, [hl]
-	ld [wMissableObjectIndex], a               ; load corresponding missable object index and remove it
+	ld [wMissableObjectIndex], a  ; load corresponding missable object index and remove it
 	predef HideObject
 .skipRemoveSprite
+    xor a                         ; New lines added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+	ld [wWasTrainerBattle], a
 	ld hl, wStatusFlags5
 	bit BIT_UNKNOWN_5_4, [hl]
 	res BIT_UNKNOWN_5_4, [hl]
 	ret nz
 
-ResetButtonPressedAndMapScript::
-	xor a
+EndTrainerBattleWhiteout::        ; Function renamed by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+	xor a              
+	ld [wIsTrainerBattle], a      ; New lines added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+	ld [wWasTrainerBattle], a
 	ld [wJoyIgnore], a
 	ldh [hJoyHeld], a
 	ldh [hJoyPressed], a
@@ -234,9 +242,10 @@ InitBattleEnemyParameters::
 	ld a, [wEngagedTrainerClass]
 	ld [wCurOpponent], a
 	ld [wEnemyMonOrTrainerClass], a
-	cp OPP_ID_OFFSET
+	ld a, [wIsTrainerBattle] ; New lines added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+	and a
 	ld a, [wEngagedTrainerSet]
-	jr c, .noTrainer
+	jr z, .noTrainer         ; Line changed by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
 	ld [wTrainerNo], a
 	ret
 .noTrainer
@@ -335,8 +344,19 @@ EngageMapTrainer::
 	ld a, [hli]    ; load trainer class
 	ld [wEngagedTrainerClass], a
 	ld a, [hl]     ; load trainer mon set
+	bit 7, a       ; New lines added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+	jr nz, .pokemon
 	ld [wEngagedTrainerSet], a
+	ld a, 1
+	ld [wIsTrainerBattle], a
 	jp PlayTrainerMusic
+.pokemon
+	and $7F
+	ld [wEngagedTrainerSet], a
+	xor a          ; New lines added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+	ld [wIsTrainerBattle], a
+	jp PlayTrainerMusic
+	
 
 PrintEndBattleText::
 	push hl

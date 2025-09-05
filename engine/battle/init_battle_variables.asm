@@ -2,6 +2,7 @@ InitBattleVariables:
 	ldh a, [hTileAnimations]
 	ld [wSavedTileAnimations], a
 	xor a
+	ld [wWasTrainerBattle], a  ; New line added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
 	ld [wActionResultOrTookBattleTurn], a
 	ld [wBattleResult], a
 	ld hl, wPartyAndBillsPCSavedMenuItem

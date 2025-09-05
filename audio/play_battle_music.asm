@@ -11,14 +11,15 @@ PlayBattleMusic::
 	ld a, MUSIC_GYM_LEADER_BATTLE
 	jr .playSong
 .notGymLeaderBattle
-	ld a, [wCurOpponent]
-	cp OPP_ID_OFFSET
-	jr c, .wildBattle
+	ld a, [wIsTrainerBattle] ; New lines added by G-Dubs to get rid of trainer OFFSETs (Followed Tutorial)
+    and a
+    jr z, .wildBattle
+    ld a, [wCurOpponent]
 	cp OPP_RIVAL3
 	jr z, .finalBattle
 	cp OPP_LANCE
 	jr nz, .normalTrainerBattle
-	ld a, MUSIC_GYM_LEADER_BATTLE ; lance also plays gym leader theme
+	ld a, MUSIC_GYM_LEADER_BATTLE ; Lance also plays gym leader theme
 	jr .playSong
 .normalTrainerBattle
 	ld a, MUSIC_TRAINER_BATTLE

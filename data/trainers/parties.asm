@@ -1125,11 +1125,6 @@ DragonTamerData:
 ; Rock Tunnel B2F 
     db 47, SEADRA, CHARMELEON, GYARADOS, 0                                                                   ; Dragon Tamer 1 	      ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 
-
-
-
-
-
 /*
 Former Beauty Data
 	
@@ -1137,4 +1132,10 @@ Former Beauty Data
 	db 21, ODDISH, BELLSPROUT, ODDISH, BELLSPROUT, 0	                                                     ; Aroma Girl 1
 	db 24, BELLSPROUT, BELLSPROUT, 0		                                                                 ; Aroma Girl 2
 	db 26, EXEGGCUTE, 0					                                                                     ; Aroma Girl 3
+
+VladData:
+    db $FF, 80, 
+
+G-DubsData:
+    db $FF, 88, PIKACHU, 85, HYPNO, 85, SNORLAX, 87, PARASECT, 87, CHARIZARD_X, 87, GYARADOS, 0 
 */
