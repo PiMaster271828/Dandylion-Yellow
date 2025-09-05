@@ -21,7 +21,7 @@
 	const BURN_HEAL     ; $0C
 	const ICE_HEAL      ; $0D
 	const AWAKENING     ; $0E
-	const PARALYZE_HEAL   ; $0F
+	const PARALYZE_HEAL ; $0F
 	const FULL_RESTORE  ; $10
 	const MAX_POTION    ; $11
 	const HYPER_POTION  ; $12
