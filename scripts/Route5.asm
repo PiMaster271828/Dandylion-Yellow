@@ -22,7 +22,7 @@ Route5_TextPointers:
 	dw_const Route5PokefanF3Text,           TEXT_ROUTE5_POKEFAN_F3                  ; New trainer added by G-Dubs
 	dw_const Route5PokefanM3Text,           TEXT_ROUTE5_POKEFAN_M3                  ; New trainer added by G-Dubs
 	dw_const Route5UndergroundPathSignText, TEXT_ROUTE5_UNDERGROUND_PATH_SIGN
-	dw_const Route5SignText,                TEXT_ROUTE5_SIGN                         ; New sign added by G-Dubs
+	dw_const Route5SignText,                TEXT_ROUTE5_SIGN                        ; New sign added by G-Dubs
 
 Route5TrainerHeaders:
 	def_trainers
