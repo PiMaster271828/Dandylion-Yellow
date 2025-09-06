@@ -292,7 +292,7 @@
 	const EVENT_BEAT_ROUTE_4_TRAINER_0           ; New trainer added by G-Dubs                     ; $3F1
     const EVENT_BEAT_ROUTE_4_TRAINER_1                                                             ; $3F2
 	const EVENT_BEAT_ROUTE_4_TRAINER_2           ; New trainer added by G-Dubs                     ; $3F3
-	const EVENT_BEAT_ROUTE_4_TRAINER_3           ; New trainer added by G-Dub                      ; $3F4
+	const EVENT_BEAT_ROUTE_4_TRAINER_3           ; New trainer added by G-Dubs                     ; $3F4
 	const_skip 12                                                                                  ; $3F5 - $400
 	const EVENT_BOUGHT_MAGIKARP                                                                    ; $401
 
@@ -647,18 +647,26 @@
 	const EVENT_BEAT_MT_MOON_1_TRAINER_8         ; New trainer added by G-Dubs                     ; $579
 
 ; Mt. Moon B2F Events                            ; New Section added by Vlad (How did this not break the game?!?)
-	const_next $590
-	const EVENT_GOT_DOME_FOSSIL                                                                    ; $57A
-	const EVENT_BEAT_MT_MOON_EXIT_SUPER_NERD                                                       ; $57B
-	const EVENT_BEAT_MT_MOON_3_JESSIE_JAMES                                                        ; $57C
-	const EVENT_BEAT_MT_MOON_3_TRAINER_0         ; Trainer from Red & Blue added by G-Dubs         ; $57D
-	const EVENT_BEAT_MT_MOON_3_TRAINER_1                                                           ; $57E
-	const EVENT_BEAT_MT_MOON_3_TRAINER_2                                                           ; $57F
-	const EVENT_BEAT_MT_MOON_3_TRAINER_3         ; Trainer from Red & Blue added by G-Dubs         ; $580
-	const EVENT_BEAT_MT_MOON_3_TRAINER_4         ; New trainer added by G-Dubs                     ; $581
-	const EVENT_BEAT_MT_MOON_3_TRAINER_5         ; New trainer added by G-Dubs                     ; $582
-	const EVENT_57E                                                                                ; $583
-	const EVENT_GOT_HELIX_FOSSIL                                                                   ; $584
+	const_next $580
+	const EVENT_GOT_DOME_FOSSIL                                                                    ; $580
+	const EVENT_BEAT_MT_MOON_EXIT_SUPER_NERD                                                       ; $581
+	const EVENT_BEAT_MT_MOON_3_JESSIE_JAMES                                                        ; $582
+	const EVENT_BEAT_MT_MOON_3_TRAINER_0         ; Trainer from Red & Blue added by G-Dubs         ; $583
+	const EVENT_BEAT_MT_MOON_3_TRAINER_1                                                           ; $584
+	const EVENT_BEAT_MT_MOON_3_TRAINER_2                                                           ; $585
+	const EVENT_BEAT_MT_MOON_3_TRAINER_3         ; Trainer from Red & Blue added by G-Dubs         ; $586
+	const EVENT_BEAT_MT_MOON_3_TRAINER_4         ; New trainer added by G-Dubs                     ; $587
+	const EVENT_BEAT_MT_MOON_3_TRAINER_5         ; New trainer added by G-Dubs                     ; $588
+	const EVENT_57E                                                                                ; $589
+	const EVENT_GOT_HELIX_FOSSIL                                                                   ; $58A
+
+; Route 7 Events                                 ; New Section added by G-Dubs
+    const_next $590
+	const_skip                                   ; const_skip added by G-Dubs                      ; $590
+	const EVENT_BEAT_ROUTE_7_TRAINER_0           ; New trainer added by G-Dubs                     ; $591
+   ;const EVENT_BEAT_ROUTE_7_TRAINER_1           ; New trainer added by G-Dubs                     ; $592
+   ;const EVENT_BEAT_ROUTE_7_TRAINER_2           ; New trainer added by G-Dubs                     ; $593
+   ;const EVENT_BEAT_ROUTE_7_TRAINER_3           ; New trainer added by G-Dubs                     ; $594
 
 ; S.S. Bow Anne Events                           ; Section split up by G-Dubs
 	const_next $5C0

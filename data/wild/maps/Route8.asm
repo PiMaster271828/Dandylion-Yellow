@@ -2,7 +2,7 @@ Route8WildMons:
 	def_grass_wildmons 15 ; encounter rate
 	db 22, PIDGEY         ; 20%
 	db 22, RATTATA        ; 20%
-	db 20, GROWLITHE      ; 15%
+	db 20, VULPIX         ; 15%
 	db 23, MEOWTH         ; 10%
 	db 23, MANKEY         ; 10%
 	db 19, ABRA           ; 10%
@@ -14,7 +14,7 @@ Route8WildMons:
 
     ; Pidgey     20%
 	; Rattata    20%
-	; Growlithe  15%
+	; Vulpix     15%
 	; Meowth     10%
 	; Mankey     10%
 	; Abra       10%

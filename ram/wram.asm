@@ -2179,6 +2179,7 @@ wCeruleanGymCurScript:: db
 wVermilionGymCurScript:: db
 wCeladonGymCurScript:: db
 wRoute6CurScript:: db
+wRoute7CurScript:: db                  ; Route 7 script added by G-Dubs (reduced total ds by 1)
 wRoute8CurScript:: db
 wRoute24CurScript:: db
 wRoute25CurScript:: db
@@ -2194,7 +2195,7 @@ wRedsHouse2FCurScript:: db
 wViridianMartCurScript:: db
 wRoute22GateCurScript:: db
 wCeruleanCityCurScript:: db
-	ds 5                               ; Changed from 7 to 5 by G-Dubs to make room for other scripts  
+	ds 4                               ; Changed from 7 to 4 by G-Dubs to make room for other scripts  
 wSSAnneBowCurScript:: db
 wSSAnneKitchenCurScript:: db           ; SS Anne Kitchen script added by G-Dubs (reduced total ds by 1)
 wViridianForestCurScript:: db
