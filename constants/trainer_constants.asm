@@ -86,7 +86,7 @@ ENDM
    ;trainer_const NURSE_JOY       ; $?? ; ?? ; New trainer class added by G-Dubs
    ;trainer_const DAISY_OAK       ; $?? ; ?? ; New trainer class added by G-Dubs
    ;trainer_const JANINE          ; $?? ; ?? ; New trainer class added by G-Dubs
-   ;trainer_const RIVAL_4         ; $?? ; ?? ; New trainer class added by G-Dubs
+   ;trainer_const RIVAL4          ; $?? ; ?? ; New trainer class added by G-Dubs
    ;trainer_const NINJA           ; $?? ; ?? ; New trainer class added by G-Dubs
    ;trainer_const KINDLER         ; $?? ; ?? ; New trainer class added by G-Dubs
    ;trainer_const TRIATHLETE_M    ; $?? ; ?? ; New trainer class added by G-Dubs
@@ -98,7 +98,8 @@ ENDM
    ;trainer_const BUTCH_CASSIDY   ; $?? ; ?? ; New trainer class added by G-Dubs
    ;trainer_const ROCKET_BROTHER  ; $?? ; ?? ; New trainer class added by G-Dubs
    ;trainer_const ROCKET_SISTER   ; $?? ; ?? ; New trainer class added by G-Dubs
-   ;trainer_const ROCKET_F        ; $?? ; ?? ; New trainer class added by G-Dubs
+   ;trainer_const ROCKET_GRUNT_M  ; $?? ; ?? ; New trainer class added by G-Dubs
+   ;trainer_const ROCKET_GRUNT_F  ; $?? ; ?? ; New trainer class added by G-Dubs
    ;trainer_const BATTLE_GIRL     ; $?? ; ?? ; New trainer class added by G-Dubs
    ;trainer_const BODYBUILDER     ; $?? ; ?? ; New trainer class added by G-Dubs
    ;trainer_const PSYCHIC_F       ; $?? ; ?? ; New trainer class added by G-Dubs
@@ -118,6 +119,10 @@ ENDM
    ;trainer_const CUTE_GIRL       ; $?? ; ?? ; New trainer class added by G-Dubs
    ;trainer_const TYRA_CHOPPER    ; $?? ; ?? ; New trainer class added by G-Dubs
    ;trainer_const MIKAN           ; $?? ; ?? ; New trainer class added by G-Dubs
+   ;trainer_const SCIENTIST_F     ; $?? ; ?? ; New trainer class added by G-Dubs
+   ;trainer_const SURFER          ; $?? ; ?? ; New trainer class added by G-Dubs
+   ;trainer_const NINJA_BOY       ; $?? ; ?? ; New trainer class added by G-Dubs
+   ;trainer_const HAYATO          ; $?? ; ?? ; New trainer class added by G-Dubs
    ;trainer_const VLAD            ; $?? ; ?? ; New trainer class added by G-Dubs
    ;trainer_const G-DUBS          ; $?? ; ?? ; New trainer class added by G-Dubs
 DEF NUM_TRAINERS EQU const_value - 1
