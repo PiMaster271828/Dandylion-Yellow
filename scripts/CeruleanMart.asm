@@ -44,7 +44,7 @@ CeruleanMartClerkText:                                               ; New text 
 
 .CascadeStock
 	; Inventory for 2-3 Badges 
-	script_mart POKE_BALL, POTION, ANTIDOTE, BURN_HEAL, AWAKENING, ESCAPE_ROPE, REPEL
+	script_mart POKE_BALL, POTION, ANTIDOTE, PARALYZE_HEAL, BURN_HEAL, AWAKENING, ESCAPE_ROPE, REPEL
 	ret
 
 .RainbowStock
