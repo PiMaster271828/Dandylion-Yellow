@@ -23,6 +23,9 @@ CeladonMart5FCurrentFloorSignText:
 	text_end
 
 CeladonMart5FClerk1Text:		                                     ; New text added by G-Dubs (Followed tutorial to free up space in the home bank)
+	script_mart X_ACCURACY, GUARD_SPEC, DIRE_HIT, X_ATTACK, X_DEFEND, X_SPEED, X_SPECIAL
+
+/*	
 	ld hl, wObtainedBadges                                           ; New functions added by G-Dubs to test badge specific mart inventories
 	; Check for Earth Badge (8th)
 	bit BIT_EARTHBADGE, [hl]
@@ -58,9 +61,13 @@ CeladonMart5FClerk1Text:		                                     ; New text added 
 
 .EarthStock
     ; Inventory for 8 (All) Badges
-    script_mart X_ACCURACY, GUARD_SPEC, DIRE_HIT, X_ATTACK, X_DEFEND, X_SPEED, X_SPECIAL, ETHER, ELIXIR, MAX_ETHER, MAX_ELIXIR
-	
+    script_mart X_ACCURACY, GUARD_SPEC, DIRE_HIT, X_ATTACK, X_DEFEND, X_SPEED, X_SPECIAL, ETHER, ELIXIR, MAX_ETHER, MAX_ELIXIR	
+*/
+
 CeladonMart5FClerk2Text:		                                     ; New text added by G-Dubs (Followed tutorial to free up space in the home bank)
+	script_mart HP_UP, PROTEIN, IRON, CARBOS, CALCIUM
+
+/*	
 	ld hl, wObtainedBadges                                           ; New functions added by G-Dubs to test badge specific mart inventories
 	; Check for Earth Badge (8th)
 	bit BIT_EARTHBADGE, [hl]
@@ -73,3 +80,4 @@ CeladonMart5FClerk2Text:		                                     ; New text added 
 .EarthStock
     ; Inventory for 8 (All) Badges
     script_mart HP_UP, PROTEIN, IRON, CARBOS, CALCIUM, PP_UP
+*/
