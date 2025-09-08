@@ -5,7 +5,9 @@ HandleLedges::
 	ld a, [wCurMapTileset]
 	cp OVERWORLD2       ; Check if tileset is overworld2
 	jr z, .overworld
-	cp CITY_TILESET     ; Check if tileset is Vermilion City
+	cp VERMILION_TILE   ; Check if tileset is Vermilion City
+	jr z, .overworld
+	cp SAFFRON_TILE     ; Check if tileset is Saffron City
 	jr z, .overworld
 	and a               ; Check if tileset is OVERWORLD (ID 0)
 	ret nz              ; If not overworld or overworld2, return

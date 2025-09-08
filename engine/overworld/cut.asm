@@ -6,9 +6,11 @@ UsedCut:
 	jr z, .overworld
 	cp GYM
 	jr z, .gym
-	cp OVERWORLD2    ; check for new overworld tileset
+	cp OVERWORLD2       ; check for new overworld tileset
 	jr z, .overworld
-	cp CITY_TILESET  ; check for new overworld tileset
+	cp VERMILION_TILE   ; check for new overworld tileset
+	jr z, .overworld
+	cp SAFFRON_TILE     ; check for new overworld tileset
 	jr z, .overworld
 	jr .nothingToCut
 
@@ -16,6 +18,8 @@ UsedCut:
 	dec a
 	ld a, [wTileInFrontOfPlayer]
 	cp $3d ; cut tree
+	jr z, .canCut
+	cp $70 ; cut tree in grass added by G-Dubs
 	jr z, .canCut
 	cp $52 ; grass
 	jr z, .canCut
