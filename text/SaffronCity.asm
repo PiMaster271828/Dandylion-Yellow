@@ -105,15 +105,15 @@ _SaffronCityGymSignText::
 	line "#MON GYM"
 	cont "LEADER: SABRINA"
 
-	para "The Master of"
-	line "Psychic #MON!"
+    para "The Master of"
+	line "PSYCHIC #MON!"
 	done
 
 _SaffronCityTrainerTips1Text::
 	text "TRAINER TIPS"
 
 	para "FULL HEAL cures"
-	line "all ailments like"
+	line "all ailments likes"
 	cont "sleep and burns."
 
 	para "It costs a bit"
@@ -149,4 +149,24 @@ _SaffronCitySilphCoLatestProductSignText::
 
 	para "Release to be"
 	line "determined..."
+	done
+
+_SaffronCityMagnetTrainSignText::                ; New sign added by G-Dubs
+	text "SAFFRON CITY to"
+	line "be the future"
+	cont "site of a MAGNET"
+	cont "TRAIN STATION."
+	
+	para "MAGNET TRAIN will"
+	line "have service to"
+	cont "GOLDENROD CITY in"
+	cont "the JOHTO REGION."
+	done
+
+_SaffronCityPokeBallSignText::                   ; New sign added by G-Dubs
+    text "SAFFRON CITY - "
+    line "Home of SILPH CO."
+	cont "Innovators in" 
+	cont "#BALL" 
+	cont "Technology."
 	done

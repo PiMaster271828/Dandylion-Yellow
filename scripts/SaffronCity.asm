@@ -28,6 +28,8 @@ SaffronCity_TextPointers:
 	dw_const PokeCenterSignText,                      TEXT_SAFFRONCITY_POKECENTER_SIGN
 	dw_const SaffronCityMrPsychicsHouseSignText,      TEXT_SAFFRONCITY_MR_PSYCHICS_HOUSE_SIGN
 	dw_const SaffronCitySilphCoLatestProductSignText, TEXT_SAFFRONCITY_SILPH_CO_LATEST_PRODUCT_SIGN
+	dw_const SaffronCityMagnetTrainSignText,          TEXT_SAFFRONCITY_MAGNET_TRAIN_SIGN                ; New sign added by G-Dubs
+	dw_const SaffronCityPokeBallSignText,             TEXT_SAFFRONCITY_POKEBALL_SIGN                    ; New sign added by G-Dubs
 
 SaffronCityRocket1Text:
 	text_far _SaffronCityRocket1Text
@@ -120,4 +122,12 @@ SaffronCityMrPsychicsHouseSignText:
 
 SaffronCitySilphCoLatestProductSignText:
 	text_far _SaffronCitySilphCoLatestProductSignText
+	text_end
+
+SaffronCityMagnetTrainSignText:                            ; New sign added by G-Dubs
+    text_far _SaffronCityMagnetTrainSignText
+	text_end
+
+SaffronCityPokeBallSignText:                               ; New sign added by G-Dubs	
+    text_far _SaffronCityPokeBallSignText
 	text_end

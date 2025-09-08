@@ -47,6 +47,8 @@ SaffronCity_Object:
 	bg_event 10, 29, TEXT_SAFFRONCITY_POKECENTER_SIGN
 	bg_event 27, 29, TEXT_SAFFRONCITY_MR_PSYCHICS_HOUSE_SIGN
 	bg_event  1, 20, TEXT_SAFFRONCITY_SILPH_CO_LATEST_PRODUCT_SIGN
+	bg_event  1, 17, TEXT_SAFFRONCITY_MAGNET_TRAIN_SIGN              ; New sign added by G-Dubs
+	bg_event 38, 17, TEXT_SAFFRONCITY_POKEBALL_SIGN                  ; New sign added by G-Dubs
 
 	def_object_events
 	object_event  7,  6, SPRITE_ROCKET, STAY, NONE, TEXT_SAFFRONCITY_ROCKET1
