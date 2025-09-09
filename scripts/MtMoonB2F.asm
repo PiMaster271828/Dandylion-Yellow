@@ -332,6 +332,8 @@ MtMoonB2FScript12:
 	ld hl, MtMoonB2FJessieJamesEndBattleText
 	ld de, MtMoonB2FJessieJamesEndBattleText
 	call SaveEndBattleTextPointers
+	ld a, 1                                 ; Lines added by G-Dubs to make sure we are in a trainer battle
+	ld [wIsTrainerBattle], a
 	ld a, OPP_JESSIE_JAMES
 	ld [wCurOpponent], a
 	ld a, $02
@@ -350,6 +352,8 @@ MtMoonB2FScript13:
 	ld a, [wIsInBattle]
 	cp $ff
 	jp z, MtMoonB2FResetScripts
+	xor a                                   ; Lines added by G-Dubs to make sure we are no longer in a trainer battle
+	ld [wIsTrainerBattle], a
 	ld a, $2
 	ld [wSprite02StateData1MovementStatus], a
 	ld [wSprite06StateData1MovementStatus], a

@@ -208,6 +208,8 @@ RocketHideoutB4FScript10:
 	ld hl, RocketHideoutB4FJessieJamesEndBattleText
 	ld de, RocketHideoutB4FJessieJamesEndBattleText
 	call SaveEndBattleTextPointers
+	ld a, 1                                 ; Lines added by G-Dubs to make sure we are in a trainer battle
+	ld [wIsTrainerBattle], a
 	ld a, OPP_JESSIE_JAMES
 	ld [wCurOpponent], a
 	ld a, $04
@@ -226,6 +228,8 @@ RocketHideoutB4FScript11:
 	ld a, [wIsInBattle]
 	cp $ff
 	jp z, RocketHideoutB4FResetScripts
+	xor a                                   ; Lines added by G-Dubs to make sure we are no longer in a trainer battle
+	ld [wIsTrainerBattle], a
 	ld a, $2
 	ld [wSprite02StateData1MovementStatus], a
 	ld [wSprite03StateData1MovementStatus], a

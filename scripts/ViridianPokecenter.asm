@@ -32,16 +32,16 @@ ViridianPokeCenter_ScriptPointers:
 ;	dw_const CheckFightingMapTrainers				 SCRIPT_VIRIDIANPOKECENTER_CHECK_TRAINERS
 	dw_const DisplayEnemyTrainerTextAndStartBattle,  SCRIPT_VIRIDIANPOKECENTER_START_BATTLE
 	dw_const EndTrainerBattle,                       SCRIPT_VIRIDIANPOKECENTER_END_BATTLE
-	dw_const ViridianPokecenterScript3,              SCRIPT_VIRIDIANPOKECENTER_SCRIPT3  ;Jessie Movement Script
-	dw_const ViridianPokecenterScript4,              SCRIPT_VIRIDIANPOKECENTER_SCRIPT4  ;NPC Movement Flags
-	dw_const ViridianPokecenterScript5,              SCRIPT_VIRIDIANPOKECENTER_SCRIPT5  ;Movement Status/Sprite Facing Direction
-	dw_const ViridianPokecenterScript6,              SCRIPT_VIRIDIANPOKECENTER_SCRIPT6  ;James Movement Script
-	dw_const ViridianPokecenterScript7,              SCRIPT_VIRIDIANPOKECENTER_SCRIPT7  ;NPC Movement Flags
-	dw_const ViridianPokecenterScript8,              SCRIPT_VIRIDIANPOKECENTER_SCRIPT8  ;Movement Status/Sprite Facing Direction and continuation of script
-	dw_const ViridianPokecenterScript9,              SCRIPT_VIRIDIANPOKECENTER_SCRIPT9  ;Initiates Battle
-	dw_const ViridianPokecenterScript10,             SCRIPT_VIRIDIANPOKECENTER_SCRIPT10 ;After Battle
-	dw_const ViridianPokecenterScript11,             SCRIPT_VIRIDIANPOKECENTER_SCRIPT11 ;Team Rocket Leaves
-	dw_const ViridianPokecenterScript12,             SCRIPT_VIRIDIANPOKECENTER_SCRIPT12 ;Reset Music/Scripts
+	dw_const ViridianPokecenterScript3,              SCRIPT_VIRIDIANPOKECENTER_SCRIPT3        ; Jessie Movement Script
+	dw_const ViridianPokecenterScript4,              SCRIPT_VIRIDIANPOKECENTER_SCRIPT4        ; NPC Movement Flags
+	dw_const ViridianPokecenterScript5,              SCRIPT_VIRIDIANPOKECENTER_SCRIPT5        ; Movement Status/Sprite Facing Direction
+	dw_const ViridianPokecenterScript6,              SCRIPT_VIRIDIANPOKECENTER_SCRIPT6        ; James Movement Script
+	dw_const ViridianPokecenterScript7,              SCRIPT_VIRIDIANPOKECENTER_SCRIPT7        ; NPC Movement Flags
+	dw_const ViridianPokecenterScript8,              SCRIPT_VIRIDIANPOKECENTER_SCRIPT8        ; Movement Status/Sprite Facing Direction and continuation of script
+	dw_const ViridianPokecenterScript9,              SCRIPT_VIRIDIANPOKECENTER_SCRIPT9        ; Initiates Battle
+	dw_const ViridianPokecenterScript10,             SCRIPT_VIRIDIANPOKECENTER_SCRIPT10       ; After Battle
+	dw_const ViridianPokecenterScript11,             SCRIPT_VIRIDIANPOKECENTER_SCRIPT11       ; Team Rocket Leaves
+	dw_const ViridianPokecenterScript12,             SCRIPT_VIRIDIANPOKECENTER_SCRIPT12       ; Reset Music/Scripts
 
 ViridianPokecenterDefaultScript:
 IF DEF(_DEBUG)
@@ -121,7 +121,7 @@ ViridianPokecenterScript4:
 
 ViridianPokecenterScript5:
 	ld a, $2
-	ld [wSprite06StateData1MovementStatus], a               ;Note the number is the sprite index in the maps/objects file, so sprite 6 is the 6th sprite that is listed, which is Jessie in this case
+	ld [wSprite06StateData1MovementStatus], a              ; Note the number is the sprite index in the maps/objects file, so sprite 6 is the 6th sprite that is listed, which is Jessie in this case
 	ld a, SPRITE_FACING_LEFT
 	ld [wSprite06StateData1FacingDirection], a
 
@@ -143,7 +143,6 @@ ViridianPokecenterScript7:
 	bit BIT_SCRIPTED_NPC_MOVEMENT, a
 	ret nz
 
-
 ViridianPokecenterScript8:
 	ld a, $2
 	ld [wSprite07StateData1MovementStatus], a          
@@ -163,6 +162,8 @@ ViridianPokecenterScript9:
 	ld hl, ViridianPokecenterJessieEndBattleText
 	ld de, ViridianPokecenterJessieEndBattleText
 	call SaveEndBattleTextPointers
+	ld a, 1                                 ; Lines added by G-Dubs to make sure we are in a trainer battle
+	ld [wIsTrainerBattle], a
 	ld a, OPP_JESSIE_JAMES
 	ld [wCurOpponent], a
 	ld a, $01
@@ -181,6 +182,8 @@ ViridianPokecenterScript10:
 	ld a, [wIsInBattle]
 	cp $ff
 	jp z, ViridianPokecenterResetScripts
+	xor a                                   ; Lines added by G-Dubs to make sure we are no longer in a trainer battle
+	ld [wIsTrainerBattle], a
 	ld a, $2
 	ld [wSprite06StateData1MovementStatus], a
 	ld [wSprite07StateData1MovementStatus], a

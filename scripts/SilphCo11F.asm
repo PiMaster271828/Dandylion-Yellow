@@ -328,6 +328,7 @@ SilphCo11FScript6:
 	ld a, [wStatusFlags5]
 	bit BIT_SCRIPTED_NPC_MOVEMENT, a
 	ret nz
+
 SilphCo11FScript7:
 	ld a, $2
 	ld [wSprite04StateData1MovementStatus], a
@@ -341,6 +342,7 @@ SilphCo11FScript7:
 	call Delay3
 	ld a, SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a
+
 SilphCo11FScript8:
 	ld de, SilphCo11FMovementData_622fb
 	CheckEitherEventSet EVENT_780, EVENT_781
@@ -368,6 +370,7 @@ SilphCo11FScript9:
 	ret nz
 	ld a, SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a
+
 SilphCo11FScript10:
 	ld a, $2
 	ld [wSprite06StateData1MovementStatus], a
@@ -382,6 +385,7 @@ SilphCo11FScript10:
 	ld a, TEXT_SILPHCO11F_TEXT9
 	ldh [hTextID], a
 	call DisplayTextID
+
 SilphCo11FScript11:
 	ld hl, wStatusFlags3
 	set BIT_TALKED_TO_TRAINER, [hl]
@@ -389,6 +393,8 @@ SilphCo11FScript11:
 	ld hl, SilphCo11FText_624c2
 	ld de, SilphCo11FText_624c2
 	call SaveEndBattleTextPointers
+	ld a, 1                                 ; Lines added by G-Dubs to make sure we are in a trainer battle
+	ld [wIsTrainerBattle], a
 	ld a, OPP_JESSIE_JAMES
 	ld [wCurOpponent], a
 	ld a, $06
@@ -406,6 +412,8 @@ SilphCo11FScript12:
 	ld a, [wIsInBattle]
 	cp $ff
 	jp z, SilphCo11FResetCurScript
+	xor a                                   ; Lines added by G-Dubs to make sure we are no longer in a trainer battle
+	ld [wIsTrainerBattle], a
 	ld a, $2
 	ld [wSprite04StateData1MovementStatus], a
 	ld [wSprite06StateData1MovementStatus], a

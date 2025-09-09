@@ -39,19 +39,12 @@ IF DEF(_DEBUG)
 	call DebugPressedOrHeldB
 	ret nz
 ENDC
-;	ld hl, PokemonTower7FJessieJamesCoords
-;	call ArePlayerCoordsInArray
-;	jp nc, CheckFightingMapTrainers
+
 	CheckEvent EVENT_BEAT_POKEMONTOWER_7_TRAINER_3
 	jp z, CheckFightingMapTrainers
 	CheckEvent EVENT_BEAT_POKEMONTOWER_7_JESSIE_JAMES
 	call z, PokemonTower7FScript_60d2a
 	ret
-
-;PokemonTower7FJessieJamesCoords:
-;	dbmapcoord 10, 4
-;	dbmapcoord 11, 4
-;	db -1 ; end
 
 PokemonTower7FEndBattleScript:
 	ld hl, wMiscFlags
@@ -115,15 +108,6 @@ PokemonTower7FScript_60d2a:
 	ld a, SCRIPT_POKEMONTOWER7F_SCRIPT1
 	call PokemonTower7FSetScript
 	ret
-
-/*PokemonTower7FMovementData_60d7a:
-	db $4
-PokemonTower7FMovementData_60d7b:
-	db $4
-	db $4
-	db $4
-	db $FF
-*/
 
 PokemonTower7FMovementData_60d7a:
 	db NPC_MOVEMENT_UP
@@ -208,6 +192,8 @@ PokemonTower7FScript7:
 	ld hl, PokemonTower7FJessieJamesEndBattleText
 	ld de, PokemonTower7FJessieJamesEndBattleText
 	call SaveEndBattleTextPointers
+	ld a, 1                                 ; Lines added by G-Dubs to make sure we are in a trainer battle
+	ld [wIsTrainerBattle], a
 	ld a, OPP_JESSIE_JAMES
 	ld [wCurOpponent], a
 	ld a, $05
@@ -225,6 +211,8 @@ PokemonTower7FScript8:
 	ld a, [wIsInBattle]
 	cp $ff
 	jp z, PokemonTower7FSetDefaultScript
+	xor a                                   ; Lines added by G-Dubs to make sure we are no longer in a trainer battle
+	ld [wIsTrainerBattle], a
 	ld a, $2
 	ld [wSprite01StateData1MovementStatus], a
 	ld [wSprite02StateData1MovementStatus], a
@@ -305,7 +293,6 @@ PokemonTower7FHideNPCScript:
 	ld [wJoyIgnore], a
 	ld [wSpriteIndex], a
 	ld [wTrainerHeaderFlagBit], a
-   ;ld [wOpponentAfterWrongAnswer], a ; not used here; likely a mistake copied from maps/CinnabarGym.asm
 	ld a, SCRIPT_POKEMONTOWER7F_SCRIPT0
 	ld [wPokemonTower7FCurScript], a
 	ld [wCurMapScript], a

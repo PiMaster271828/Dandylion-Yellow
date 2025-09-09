@@ -182,6 +182,8 @@ SSAnne1FRocketScript7:
 	ld hl, SSAnne1FJessieJamesEndBattleText
 	ld de, SSAnne1FJessieJamesEndBattleText
 	call SaveEndBattleTextPointers
+	ld a, 1                                 ; Lines added by G-Dubs to make sure we are in a trainer battle
+	ld [wIsTrainerBattle], a
 	ld a, OPP_JESSIE_JAMES
 	ld [wCurOpponent], a
 	ld a, $03
@@ -199,6 +201,8 @@ SSAnne1FRocketScript8:
 	ld a, [wIsInBattle]
 	cp $ff
 	jp z, SSAnne1FResetScript
+	xor a                                   ; Lines added by G-Dubs to make sure we are no longer in a trainer battle
+	ld [wIsTrainerBattle], a
 	ld a, $2
 	ld [wSprite01StateData1MovementStatus], a
 	ld [wSprite02StateData1MovementStatus], a
