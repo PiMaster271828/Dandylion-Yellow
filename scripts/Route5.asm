@@ -38,7 +38,6 @@ Route5TrainerHeader4:
 	trainer EVENT_BEAT_ROUTE_5_TRAINER_4, 2, Route5PokefanF3BattleText, Route5PokefanF3EndBattleText, Route5PokefanF3AfterBattleText  ; New trainer added by G-Dubs
 Route5TrainerHeader5:    
 	trainer EVENT_BEAT_ROUTE_5_TRAINER_5, 2, Route5PokefanM3BattleText, Route5PokefanM3EndBattleText, Route5PokefanM3AfterBattleText  ; New trainer added by G-Dubs
-
     db -1 ; end
 
 Route5PokefanF1Text:                             ; New trainer added by G-Dubs

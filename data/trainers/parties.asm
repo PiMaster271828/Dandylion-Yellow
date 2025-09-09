@@ -1005,7 +1005,8 @@ PokeFanMData:
 	db 20, PIKACHU, PIKACHU, PIKACHU, 0                                                                      ; PokéFan ♂ 3            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 ; S.S. Anne 1F Rooms
     db 22, PIKACHU, CLEFAIRY, MEOWTH, 0	 	                                                                 ; PokéFan ♂ 4            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-
+; Route 7
+    db 30, VULPIX, PIKACHU, GROWLITHE, 0                                                                     ; PokéFan ♂ 5            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 ; Route ??
    ;db ??, NIDOKING, KINGLER, SEAKING, KINGDRA, 0                                                            ; PokéFan ♂ ?            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 

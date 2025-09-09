@@ -11,9 +11,10 @@
 	const SPRITESET_SAFFRON         ; 07
 	const SPRITESET_SILENCE_BRIDGE  ; 08
 	const SPRITESET_CYCLING_ROAD    ; 09
-	const SPRITESET_FUCHSIA         ; 0a
-	const SPRITESET_CINNABAR_ISLAND ; 0b
-	const SPRITESET_NEW_SPRITE_SET  ; 0c    ; New sprite set added by G-Dubs
+	const SPRITESET_FUCHSIA         ; 0A
+	const SPRITESET_CINNABAR_ISLAND ; 0B
+	const SPRITESET_ROUTE_5         ; 0C    ; New sprite set added by G-Dubs
+	const SPRITESET_ROUTE_7         ; 0D    ; New sprite set added by G-Dubs
 DEF NUM_SPRITE_SETS EQU const_value - 1
 
 ; split sprite set ids
@@ -21,18 +22,14 @@ DEF NUM_SPRITE_SETS EQU const_value - 1
 ; values for MapSpriteSets (see data/maps/sprite_sets.asm)
 	const_next $f1
 DEF FIRST_SPLIT_SET EQU const_value
-	const SPLITSET_ROUTE_2  ; f1
-	const SPLITSET_ROUTE_10 ; f2
-	const SPLITSET_ROUTE_11 ; f3
-	const SPLITSET_ROUTE_12 ; f4
-	const SPLITSET_ROUTE_15 ; f5
-	const SPLITSET_ROUTE_16 ; f6
-	const SPLITSET_ROUTE_18 ; f7
-	const SPLITSET_ROUTE_20 ; f8
-	const SPLITSET_ROUTE_5  ; f9
-	const SPLITSET_ROUTE_6  ; fa
-	const SPLITSET_ROUTE_7  ; fb
-	const SPLITSET_ROUTE_8  ; fc
+	const SPLITSET_ROUTE_2  ; F1
+	const SPLITSET_ROUTE_10 ; F2
+	const SPLITSET_ROUTE_11 ; F3
+	const SPLITSET_ROUTE_12 ; F4
+	const SPLITSET_ROUTE_15 ; F5
+	const SPLITSET_ROUTE_16 ; F6
+	const SPLITSET_ROUTE_18 ; F7
+	const SPLITSET_ROUTE_20 ; F8
 DEF NUM_SPLIT_SETS EQU const_value - FIRST_SPLIT_SET
 
 ; split directions
