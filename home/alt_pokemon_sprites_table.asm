@@ -271,9 +271,12 @@ CheckAlternatePokemonSprite6::
 ; COMPACT TABLE - Only 4 bytes per entry (no bank stored)
 AlternatePokemonSpriteTable1:
     db ROCKET, ZUBAT, LOW(RocketZubatPicFront), HIGH(RocketZubatPicFront)                          ; ROCKET
+;	db ROCKET, GOLBAT, LOW(RocketGolbatPicFront), HIGH(RocketPicFront)	
+	db ROCKET, EKANS, LOW(RocketEkansPicFront), HIGH(RocketEkansPicFront)
+	db ROCKET, GRIMER, LOW(RocketGrimerPicFront), HIGH(RocketGrimerPicFront)
+	db ROCKET, KOFFING, LOW(RocketKoffingPicFront), HIGH(RocketKoffingPicFront)	
     db ROCKET, RATTATA, LOW(RocketRattataPicFront), HIGH(RocketRattataPicFront)
 	db ROCKET, RATICATE, LOW(RocketRaticatePicFront), HIGH(RocketRaticatePicFront)	
-;	db ROCKET, GOLBAT, LOW(RocketGolbatPicFront), HIGH(RocketPicFront)	        
 	db JESSIE_JAMES, MEOWTH, LOW(RocketMeowthPicFront), HIGH(RocketMeowthPicFront) 			       ; JESSIE_JAMES
 	db JESSIE_JAMES, KOFFING, LOW(JamesKoffingPicFront), HIGH(JamesKoffingPicFront)
 	db JESSIE_JAMES, WEEZING, LOW(JamesWeezingPicFront), HIGH(JamesWeezingPicFront)
@@ -394,10 +397,7 @@ AlternatePokemonSpriteTable6:
 ;	Extras to look at:
 
 ;	Rocket Grunts:  I just took the most common ones in the parties and used them
-;	db ROCKET, EKANS, LOW(RocketEkansPicFront), HIGH(RocketEkansPicFront)
-;	db ROCKET, GRIMER, LOW(RocketGrimerPicFront), HIGH(RocketGrimerPicFront)
-;	db ROCKET, KOFFING, LOW(RocketKoffingPicFront), HIGH(RocketKoffingPicFront)	
-
+;	
 ;	Team Rocket:  I'd be more ok with added these back since they are the main villains
 
 

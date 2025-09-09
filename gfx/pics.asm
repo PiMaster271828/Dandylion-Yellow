@@ -104,7 +104,7 @@ ElectabuzzPicFront::  INCBIN "gfx/pokemon/front/electabuzz.pic"
 ElectabuzzPicBack::   INCBIN "gfx/pokemon/back/electabuzzb.pic"
 MagnetonPicFront::    INCBIN "gfx/pokemon/front/magneton.pic"              
 MagnetonPicBack::     INCBIN "gfx/pokemon/back/magnetonb.pic"
-KoffingPicFront::     INCBIN "gfx/pokemon/front/koffing.pic"
+KoffingPicFront::     INCBIN "gfx/pokemon/front/koffingredandblueedited.pic"
 KoffingPicBack::      INCBIN "gfx/pokemon/back/koffingb.pic"
 MankeyPicFront::      INCBIN "gfx/pokemon/front/mankey.pic"
 MankeyPicBack::       INCBIN "gfx/pokemon/back/mankeyb.pic"
@@ -327,13 +327,14 @@ VictreebelPicBack::    INCBIN "gfx/pokemon/back/victreebelb.pic"
 SECTION "Alt Pokemon Sprites 1", ROMX                                          ; Section for Team Rocket's PokéMon alt. sprites
 
 RocketZubatPicFront::        INCBIN "gfx/pokemon/front/zubat.pic"              ; Rocket Grunt's PokéMon sprite added by G-Dubs
+;RocketGolbatPicFront::       INCBIN "gfx/pokemon/front/golbat.pic"             
+RocketKoffingPicFront::      INCBIN "gfx/pokemon/front/koffingsilver.pic"
+RocketGrimerPicFront::       INCBIN "gfx/pokemon/front/grimersilver.pic"
+RocketEkansPicFront::        INCBIN "gfx/pokemon/front/ekansgold.pic"
 RocketRattataPicFront::      INCBIN "gfx/pokemon/front/rattatasilver.pic"        
-RocketRaticatePicFront::     INCBIN "gfx/pokemon/front/raticate.pic"
-;RocketKoffingPicFront::      INCBIN "gfx/pokemon/front/koffingsilver.pic"
-;RocketGrimerPicFront::       INCBIN "gfx/pokemon/front/grimersilver.pic"
-;RocketEkansPicFront::        INCBIN "gfx/pokemon/front/ekansgold.pic"        
+RocketRaticatePicFront::     INCBIN "gfx/pokemon/front/raticate.pic"        
 RocketMeowthPicFront::       INCBIN "gfx/pokemon/front/meowth.pic"             ; Team Rocket's Meowth sprite added by Vlad               
-JamesKoffingPicFront::       INCBIN "gfx/pokemon/front/koffinggold.pic"        ; James's PokéMon sprites added by Vlad
+JamesKoffingPicFront::       INCBIN "gfx/pokemon/front/koffing.pic"            ; James's PokéMon sprites added by Vlad
 JamesWeezingPicFront::       INCBIN "gfx/pokemon/front/weezing.pic"
 JamesWeepinbellPicFront::    INCBIN "gfx/pokemon/front/weepinbellsilvervlad.pic"
 JamesVictreebelPicFront::    INCBIN "gfx/pokemon/front/victreebelsilver.pic"
