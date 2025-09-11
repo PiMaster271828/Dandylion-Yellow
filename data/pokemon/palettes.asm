@@ -6,7 +6,7 @@ MonsterPalettes:
 	db PAL_GREENMON                    ; VENUSAUR
 	db PAL_REDMON                      ; CHARMANDER
 	db PAL_REDMON                      ; CHARMELEON
-	db PAL_REDMON                      ; CHARIZARD
+	db PAL_CHARIZARD                   ; CHARIZARD
 	db PAL_CYANMON                     ; SQUIRTLE
 	db PAL_CYANMON                     ; WARTORTLE
 	db PAL_CYANMON                     ; BLASTOISE
@@ -72,8 +72,8 @@ MonsterPalettes:
 	db PAL_GREENMON                    ; BELLSPROUT
 	db PAL_GREENMON                    ; WEEPINBELL
 	db PAL_GREENMON                    ; VICTREEBEL
-	db PAL_CYANMON                     ; TENTACOOL
-	db PAL_CYANMON                     ; TENTACRUEL
+	db PAL_REDCYANMON                  ; TENTACOOL
+	db PAL_REDCYANMON                  ; TENTACRUEL
 	db PAL_GRAYMON                     ; GEODUDE
 	db PAL_GRAYMON                     ; GRAVELER
 	db PAL_GRAYMON                     ; GOLEM
@@ -149,7 +149,7 @@ MonsterPalettes:
 	db PAL_REDMON                      ; MOLTRES
 	db PAL_CYANMON                     ; DRATINI
 	db PAL_CYANMON                     ; DRAGONAIR
-	db PAL_ORANGEMON                   ; DRAGONITE
+	db PAL_DRAGONITE                   ; DRAGONITE
 	db PAL_MEWTWO                      ; MEWTWO
 	db PAL_PINKMON                     ; MEW
 	assert_table_length NUM_POKEMON + 1
