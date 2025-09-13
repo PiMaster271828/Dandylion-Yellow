@@ -72,6 +72,7 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_CHARIZARD                     ; $20     ; New Charizard Palette
 	const PAL_DRAGONITE                     ; $21     ; New Dragonite Palette
 	const PAL_REDCYANMON                    ; $22     ; New Red/Cyan Palette
+	const PAL_STARMIE                       ; $23     ; New Starmie Palette (Tried non-black color)
 	const PAL_SLOTS1                        ; $23
 	const PAL_SLOTS2                        ; $23
 	const PAL_SLOTS3                        ; $24

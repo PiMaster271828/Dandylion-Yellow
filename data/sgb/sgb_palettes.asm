@@ -36,6 +36,7 @@ SuperPalettes:
     RGB 31,31,30, 31,24,11, 18,14,10, 06,06,06 ; PAL_CHARIZARD       ; New Charizard Palette
 	RGB 31,31,30, 31,31,19, 18,14,10, 06,06,06 ; PAL_DRAGONITE       ; New Dragonite Palette
 	RGB 31,31,30, 26,28,31, 26,09,06, 06,06,06 ; PAL_REDCYANMON      ; New Red/Cyan Palette
+	RGB 31,31,30, 31,31,19, 26,09,06, 18,14,10 ; PAL_STARMIE         ; New Starmie Palette (Tried non-black color)
 	RGB 31,31,30, 27,22,30, 26,09,06, 06,06,06 ; PAL_SLOTS1
 	RGB 31,31,30, 31,23,26, 29,29,08, 06,06,06 ; PAL_SLOTS2
 	RGB 31,31,30, 23,31,20, 29,29,08, 06,06,06 ; PAL_SLOTS3
@@ -90,6 +91,7 @@ GBCBasePalettes:
 	RGB 31,31,31, 31,17,00, 07,06,15, 03,03,03 ; PAL_CHARIZARD       ; New Charizard Palette
 	RGB 31,31,31, 31,22,08, 07,06,15, 03,03,03 ; PAL_DRAGONITE       ; New Dragonite Palette
 	RGB 31,31,31, 16,26,31, 31,00,00, 03,03,03 ; PAL_REDCYANMON      ; New Red/Cyan Palette
+	RGB 31,31,31, 31,31,00, 31,00,00, 07,06,15 ; PAL_STARMIE         ; New Starmie Palette (Tried non-black color)
 	RGB 31,31,31, 16,26,31, 31,00,00, 03,03,03 ; PAL_SLOTS1
 	RGB 31,31,31, 31,04,19, 31,31,00, 03,03,03 ; PAL_SLOTS2
 	RGB 31,31,31, 08,31,00, 31,31,00, 03,03,03 ; PAL_SLOTS3

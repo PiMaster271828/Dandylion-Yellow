@@ -118,7 +118,7 @@ FarfetchdPicFront::   INCBIN "gfx/pokemon/front/farfetchd.pic"
 FarfetchdPicBack::    INCBIN "gfx/pokemon/back/farfetchdb.pic"
 VenonatPicFront::     INCBIN "gfx/pokemon/front/venonatgeorge.pic"             ; Venonat default sprite changed by G-Dubs
 VenonatPicBack::      INCBIN "gfx/pokemon/back/venonatb.pic"
-DragonitePicFront::   INCBIN "gfx/pokemon/front/dragonitepurple.pic"
+DragonitePicFront::   INCBIN "gfx/pokemon/front/dragonitepurple.pic"           ; Dragonite default sprite to use 2 different colors
 DragonitePicBack::    INCBIN "gfx/pokemon/back/dragoniteb.pic"
 DoduoPicFront::       INCBIN "gfx/pokemon/front/doduo.pic"
 DoduoPicBack::        INCBIN "gfx/pokemon/back/doduob.pic"
@@ -262,7 +262,7 @@ PidgeottoPicFront::    INCBIN "gfx/pokemon/front/pidgeotto.pic"
 PidgeottoPicBack::     INCBIN "gfx/pokemon/back/pidgeottob.pic"
 PidgeotPicFront::      INCBIN "gfx/pokemon/front/pidgeot.pic"
 PidgeotPicBack::       INCBIN "gfx/pokemon/back/pidgeotb.pic"
-StarmiePicFront::      INCBIN "gfx/pokemon/front/starmie.pic"
+StarmiePicFront::      INCBIN "gfx/pokemon/front/starmiethreecolors.pic"
 StarmiePicBack::       INCBIN "gfx/pokemon/back/starmieb.pic"
 
 
@@ -424,7 +424,7 @@ AgathaHaunterPicFront::    INCBIN "gfx/pokemon/front/hauntergold.pic"          ;
 AgathaGengarPicFront::     INCBIN "gfx/pokemon/front/gengargeorge.pic"
 LanceGyaradosPicFront::    INCBIN "gfx/pokemon/front/gyarados.pic"             ; Lance's PokéMon sprites added by Vlad
 ;LanceDragonairPicFront::   INCBIN "gfx/pokemon/front/dragonairsilver.pic"
-LanceDragonitePicFront::   INCBIN "gfx/pokemon/front/dragonitesilvervlad.pic"
+LanceDragonitePicFront::   INCBIN "gfx/pokemon/front/dragonitesilverpurple.pic"  
 
 
 SECTION "Alt Pokemon Sprites 6", ROMX                                          ; Section for Rival & Random Trainer's PokéMon alt. sprites
