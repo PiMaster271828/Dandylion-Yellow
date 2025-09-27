@@ -83,7 +83,6 @@ DEF HOF_TEAM_CAPACITY EQU 50
 	const EVOLVE_ITEM  ; 2
 	const EVOLVE_TRADE ; 3
 
-
 ; wMonHGrowthRate values
 ; GrowthRateTable indexes (see data/growth_rates.asm)
 	const_def
@@ -96,5 +95,5 @@ DEF HOF_TEAM_CAPACITY EQU 50
 DEF NUM_GROWTH_RATES EQU const_value
 
 ; wild data (see data/wild/maps/*.asm)
-DEF NUM_WILDMONS EQU 10
+DEF NUM_WILDMONS EQU 12
 DEF WILDDATA_LENGTH EQU 1 + NUM_WILDMONS * 2
