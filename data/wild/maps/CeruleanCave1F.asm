@@ -10,6 +10,8 @@ CeruleanCave1FWildMons:
 	db 54, PARASECT
 	db 55, DITTO
 	db 60, DITTO
+	db 55, DITTO
+	db 60, DITTO
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

@@ -1,16 +1,31 @@
 VictoryRoad3FWildMons:
 	def_grass_wildmons 15 ; encounter rate
-	db 36, GEODUDE
-	db 44, GOLBAT
-	db 41, GEODUDE
-	db 49, ONIX
-	db 46, GEODUDE
-	db 41, GRAVELER
-	db 42, MACHOKE
-	db 45, MACHOKE
-	db 47, GRAVELER
-	db 47, GRAVELER
+	db 46, GEODUDE        ; 15%
+	db 44, ZUBAT          ; 15%
+	db 47, GOLBAT         ; 15%
+	db 49, ONIX           ; 15%
+	db 46, MACHOKE        ; 10%
+	db 46, PRIMEAPE       ; 10%
+	db 49, GRAVELER       ; 10%
+	db 45, MAROWAK        ;  5%
+	db 46, SANDSLASH      ;  2%
+	db 45, VENOMOTH       ;  1%
+	db 45, RHYHORN        ;  1%
+	db 48, RHYDON         ;  1%
 	end_grass_wildmons
+   
+    ; Geodude    15%
+	; Zubat      15% 
+	; Golbat     15%
+	; Onix       15%
+	; Machoke    10%
+	; Primeape   10%
+	; Graveler   10%
+    ; Marowak     5%
+    ; Sandslash   2%
+	; Venomoth    1%
+	; Rhyhorn     1%
+	; Rhydon      1%
 
 	def_water_wildmons 0 ; encounter rate
 	end_water_wildmons

@@ -1,25 +1,29 @@
 Route9WildMons:
 	def_grass_wildmons 15 ; encounter rate
-	db 19, NIDORAN_M      ; 20%
-	db 19, NIDORAN_F      ; 20%
+	db 19, NIDORAN_M      ; 15%
+	db 19, NIDORAN_F      ; 15%
 	db 18, RATTATA        ; 15%
-	db 18, EKANS          ; 10%
+	db 18, SPEAROW        ; 15%
 	db 18, SANDSHREW      ; 10%
-	db 18, SPEAROW        ; 10%
-	db 22, NIDORINO       ;  5%
-	db 22, NIDORINA       ;  5%
-	db 24, RATICATE       ;  4%
-	db 19, FEAROW         ;  1%
+	db 22, NIDORINO       ; 10%
+	db 22, NIDORINA       ; 10%
+	db 18, EKANS          ;  5%
+	db 23, PIDGEY         ;  2%
+	db 25, PIDGEOTTO      ;  1%
+	db 24, RATICATE       ;  1%
+	db 21, FEAROW         ;  1%
 	end_grass_wildmons
 	
-	; Nidoran♂   20%
-	; Nidoran♀   20%
+	; Nidoran♂   15%
+	; Nidoran♀   15%
 	; Rattata    15%
-	; Ekans      10%
+	; Spearow    15%
 	; Sandshrew  10%
-	; Spearow    10%
-	; Nidorino    5%
-	; Nidorina    5%
+	; Nidorino   10%
+	; Nidorina   10%
+	; Ekans       5%
+	; Pidgey      2%
+	; Pidgeotto   1%
 	; Raticate    4%
 	; Fearow      1%
 

@@ -8,7 +8,7 @@ WildDataPointers:
 	dw VermilionCityWildMons   ; VERMILION_CITY       ; Wild PokéMon enabled by G-Dubs
 	dw CeladonCityWildMons     ; CELADON_CITY         ; Wild PokéMon enabled by G-Dubs
 	dw NothingWildMons         ; FUCHSIA_CITY
-	dw NothingWildMons         ; CINNABAR_ISLAND
+	dw CinnabarIslandWildMons  ; CINNABAR_ISLAND      ; Wild PokéMon enabled by G-Dubs
 	dw NothingWildMons         ; INDIGO_PLATEAU
 	dw NothingWildMons         ; SAFFRON_CITY
 	dw NothingWildMons         ; unused
@@ -51,7 +51,7 @@ WildDataPointers:
 	dw NothingWildMons
 	dw NothingWildMons
 	dw NothingWildMons
-	dw ViridianForestWildMons ; ViridianForest
+	dw ViridianForestWildMons  ; VIRIDIAN_FOREST
 	dw NothingWildMons
 	dw NothingWildMons
 	dw NothingWildMons
@@ -249,7 +249,7 @@ WildDataPointers:
 	dw NothingWildMons
 	dw NothingWildMons
 	dw NothingWildMons
-	dw RockTunnelB2FWildMons  ; New map added by G-Dubs   
+	dw RockTunnelB2FWildMons                          ; New map added by G-Dubs   
 	assert_table_length NUM_MAPS
 	dw -1 ; end
 
@@ -265,7 +265,9 @@ WildDataPointers:
         ; level, species (ten times)
 
 INCLUDE "data/wild/maps/nothing.asm"
+INCLUDE "data/wild/maps/PalletTown.asm"               ; New WildMons file added by G-Dubs
 INCLUDE "data/wild/maps/Route1.asm"
+INCLUDE "data/wild/maps/ViridianCity.asm"             ; New WildMons file added by G-Dubs
 INCLUDE "data/wild/maps/Route2.asm"
 INCLUDE "data/wild/maps/Route22.asm"
 INCLUDE "data/wild/maps/ViridianForest.asm"
@@ -274,18 +276,22 @@ INCLUDE "data/wild/maps/MtMoon1F.asm"
 INCLUDE "data/wild/maps/MtMoonB1F.asm"
 INCLUDE "data/wild/maps/MtMoonB2F.asm"
 INCLUDE "data/wild/maps/Route4.asm"
+INCLUDE "data/wild/maps/CeruleanCity.asm"             ; New WildMons file added by G-Dubs
 INCLUDE "data/wild/maps/Route24.asm"
 INCLUDE "data/wild/maps/Route25.asm"
 INCLUDE "data/wild/maps/Route9.asm"
 INCLUDE "data/wild/maps/Route5.asm"
 INCLUDE "data/wild/maps/Route6.asm"
+INCLUDE "data/wild/maps/VermilionCity.asm"            ; New WildMons file added by G-Dubs
 INCLUDE "data/wild/maps/Route11.asm"
 INCLUDE "data/wild/maps/RockTunnel1F.asm"
 INCLUDE "data/wild/maps/RockTunnelB1F.asm"
+INCLUDE "data/wild/maps/RockTunnelB2F.asm"            ; New WildMons file added by G-Dubs
 INCLUDE "data/wild/maps/Route10.asm"
 INCLUDE "data/wild/maps/Route12.asm"
 INCLUDE "data/wild/maps/Route8.asm"
 INCLUDE "data/wild/maps/Route7.asm"
+INCLUDE "data/wild/maps/CeladonCity.asm"              ; New WildMons file added by G-Dubs
 INCLUDE "data/wild/maps/PokemonTower1F.asm"
 INCLUDE "data/wild/maps/PokemonTower2F.asm"
 INCLUDE "data/wild/maps/PokemonTower3F.asm"
@@ -310,6 +316,7 @@ INCLUDE "data/wild/maps/SeafoamIslandsB1F.asm"
 INCLUDE "data/wild/maps/SeafoamIslandsB2F.asm"
 INCLUDE "data/wild/maps/SeafoamIslandsB3F.asm"
 INCLUDE "data/wild/maps/SeafoamIslandsB4F.asm"
+INCLUDE "data/wild/maps/CinnabarIsland.asm"           ; New WildMons file added by G-Dubs
 INCLUDE "data/wild/maps/PokemonMansion1F.asm"
 INCLUDE "data/wild/maps/PokemonMansion2F.asm"
 INCLUDE "data/wild/maps/PokemonMansion3F.asm"
@@ -324,9 +331,3 @@ INCLUDE "data/wild/maps/VictoryRoad2F.asm"
 INCLUDE "data/wild/maps/VictoryRoad3F.asm"
 INCLUDE "data/wild/maps/VictoryRoad1F.asm"
 INCLUDE "data/wild/maps/DiglettsCave.asm"
-INCLUDE "data/wild/maps/PalletTown.asm"               ; New WildMons file added by G-Dubs
-INCLUDE "data/wild/maps/ViridianCity.asm"             ; New WildMons file added by G-Dubs
-INCLUDE "data/wild/maps/CeruleanCity.asm"             ; New WildMons file added by G-Dubs
-INCLUDE "data/wild/maps/VermilionCity.asm"            ; New WildMons file added by G-Dubs
-INCLUDE "data/wild/maps/CeladonCity.asm"              ; New WildMons file added by G-Dubs
-INCLUDE "data/wild/maps/RockTunnelB2F.asm"            ; New WildMons file added by G-Dubs
