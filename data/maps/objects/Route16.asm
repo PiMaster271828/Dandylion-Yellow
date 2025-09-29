@@ -19,14 +19,14 @@ Route16_Object:
 	warp_event 17,  5, ROUTE_16_GATE_1F, 5
 	warp_event 24,  4, ROUTE_16_GATE_1F, 7
 	warp_event 24,  5, ROUTE_16_GATE_1F, 7
-	warp_event  7,  5, ROUTE_16_FLY_HOUSE, 1
+	warp_event  5,  5, ROUTE_16_FLY_HOUSE, 1
 
 	def_bg_events
 	bg_event 27, 11, TEXT_ROUTE16_CYCLING_ROAD_SIGN
 	bg_event  5, 17, TEXT_ROUTE16_SIGN
 
 	def_object_events
-	object_event 17, 12, SPRITE_BIKER, STAY, LEFT, TEXT_ROUTE16_BIKER1, OPP_BIKER, 5
+	object_event 18, 12, SPRITE_BIKER, STAY, LEFT, TEXT_ROUTE16_BIKER1, OPP_BIKER, 5
 	object_event 14, 13, SPRITE_BIKER, STAY, RIGHT, TEXT_ROUTE16_BIKER2, OPP_CUE_BALL, 1
 	object_event 11, 12, SPRITE_BIKER, STAY, UP, TEXT_ROUTE16_BIKER3, OPP_CUE_BALL, 2
 	object_event  9, 11, SPRITE_BIKER, STAY, LEFT, TEXT_ROUTE16_BIKER4, OPP_BIKER, 6

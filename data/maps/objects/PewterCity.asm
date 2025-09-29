@@ -14,7 +14,7 @@ PewterCity_Object:
 	warp_event 14, 17, PEWTER_GYM, 1
 	warp_event 29, 13, PEWTER_NIDORAN_HOUSE, 1
 	warp_event 23, 17, PEWTER_MART, 1
-	warp_event  7, 29, PEWTER_SPEECH_HOUSE, 1
+	warp_event  5, 27, PEWTER_SPEECH_HOUSE, 1
 	warp_event 13, 25, PEWTER_POKECENTER, 1
 
 	def_bg_events
@@ -22,7 +22,7 @@ PewterCity_Object:
 	bg_event 33, 19, TEXT_PEWTERCITY_POLICE_NOTICE_SIGN
 	bg_event 24, 17, TEXT_PEWTERCITY_MART_SIGN
 	bg_event 14, 25, TEXT_PEWTERCITY_POKECENTER_SIGN
-	bg_event 15,  9, TEXT_PEWTERCITY_MUSEUM_SIGN
+	bg_event 18,  9, TEXT_PEWTERCITY_MUSEUM_SIGN
 	bg_event  7, 17, TEXT_PEWTERCITY_GYM_SIGN
 	bg_event 25, 23, TEXT_PEWTERCITY_SIGN
 

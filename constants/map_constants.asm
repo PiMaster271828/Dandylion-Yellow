@@ -17,21 +17,21 @@ ENDM
 ; Order: towns/cities, then routes, then indoor/dungeon maps
 	const_def
 ; First Town Map
-	map_const PALLET_TOWN,                   10,  9 ; $00
-	map_const VIRIDIAN_CITY,                 20, 18 ; $01
+	map_const PALLET_TOWN,                   12,  9 ; $00  ; Map expanded by G-Dubs
+	map_const VIRIDIAN_CITY,                 21, 18 ; $01  ; Map expanded by G-Dubs
 	map_const PEWTER_CITY,                   20, 18 ; $02
 	map_const CERULEAN_CITY,                 20, 18 ; $03
 	map_const LAVENDER_TOWN,                 10,  9 ; $04
 	map_const VERMILION_CITY,                20, 18 ; $05
 	map_const CELADON_CITY,                  25, 18 ; $06
 	map_const FUCHSIA_CITY,                  20, 18 ; $07
-	map_const CINNABAR_ISLAND,               10,  9 ; $08
+	map_const CINNABAR_ISLAND,               12, 10 ; $08  ; Map expanded by G-Dubs
 	map_const INDIGO_PLATEAU,                10,  9 ; $09
 	map_const SAFFRON_CITY,                  20, 18 ; $0A
 DEF NUM_CITY_MAPS EQU const_value
 	map_const UNUSED_MAP_0B,                  0,  0 ; $0B
 DEF FIRST_ROUTE_MAP EQU const_value
-	map_const ROUTE_1,                       10, 18 ; $0C
+	map_const ROUTE_1,                       12, 18 ; $0C  ; Map expanded by G-Dubs
 	map_const ROUTE_2,                       10, 36 ; $0D
 	map_const ROUTE_3,                       35,  9 ; $0E
 	map_const ROUTE_4,                       45,  9 ; $0F
@@ -50,8 +50,8 @@ DEF FIRST_ROUTE_MAP EQU const_value
 	map_const ROUTE_17,                      10, 72 ; $1C
 	map_const ROUTE_18,                      25,  9 ; $1D
 	map_const ROUTE_19,                      10, 27 ; $1E
-	map_const ROUTE_20,                      50,  9 ; $1F
-	map_const ROUTE_21,                      10, 45 ; $20
+	map_const ROUTE_20,                      50, 10 ; $1F  ; Map expanded by G-Dubs
+	map_const ROUTE_21,                      12, 45 ; $20  ; Map expanded by G-Dubs
 	map_const ROUTE_22,                      20,  9 ; $21
 	map_const ROUTE_23,                      10, 72 ; $22
 	map_const ROUTE_24,                      10, 18 ; $23

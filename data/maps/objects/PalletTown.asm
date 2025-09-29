@@ -8,18 +8,18 @@ PalletTown_Object:
 
 	def_warp_events
 	warp_event  5,  5, REDS_HOUSE_1F, 1
-	warp_event 13,  5, BLUES_HOUSE, 1
-	warp_event 12, 11, OAKS_LAB, 2
+	warp_event 17,  5, BLUES_HOUSE, 1
+	warp_event 16, 11, OAKS_LAB, 2
 
 	def_bg_events
-	bg_event 13, 13, TEXT_PALLETTOWN_OAKSLAB_SIGN
+	bg_event 17, 13, TEXT_PALLETTOWN_OAKSLAB_SIGN
 	bg_event  7,  9, TEXT_PALLETTOWN_SIGN
-	bg_event  3,  5, TEXT_PALLETTOWN_PLAYERSHOUSE_SIGN
-	bg_event 11,  5, TEXT_PALLETTOWN_RIVALSHOUSE_SIGN
+	bg_event  8,  5, TEXT_PALLETTOWN_PLAYERSHOUSE_SIGN
+	bg_event 15,  5, TEXT_PALLETTOWN_RIVALSHOUSE_SIGN
 
 	def_object_events
-	object_event 10,  4, SPRITE_OAK, STAY, NONE, TEXT_PALLETTOWN_OAK
-	object_event  3,  8, SPRITE_GIRL, WALK, ANY_DIR, TEXT_PALLETTOWN_GIRL
-	object_event 11, 14, SPRITE_FISHER, WALK, ANY_DIR, TEXT_PALLETTOWN_FISHER
+	object_event 12,  4, SPRITE_OAK, STAY, NONE, TEXT_PALLETTOWN_OAK
+	object_event  5,  8, SPRITE_GIRL, WALK, ANY_DIR, TEXT_PALLETTOWN_GIRL
+	object_event 18, 14, SPRITE_FISHER, WALK, ANY_DIR, TEXT_PALLETTOWN_FISHER
 
 	def_warps_to PALLET_TOWN
