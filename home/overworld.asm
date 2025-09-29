@@ -692,11 +692,20 @@ CheckIfInOutsideMap::
 	ret z
 	cp OVERWORLD2       ; Make sure overworld2 counts as an outside map
 	ret z
-	cp VERMILION_CITY   ; Make sure Vermilion City counts as an outside map
+	cp VERMILION_TILE   ; Make sure Vermilion City counts as an outside map
 	ret z
-	cp SAFFRON_CITY     ; Make sure Saffron City counts as an outside map
+	cp SAFFRON_TILE     ; Make sure Saffron City counts as an outside map
 	ret z
 	cp PLATEAU          ; Route 23 / Indigo Plateau
+	ret z
+	cp SHIP_PORT        ; Vermilion Port is an outdoor map
+	ret z
+   	ld a, [wCurMap]     ; Loads the current map to check against
+	cp SS_ANNE_BOW      ; The S.S. Anne's Bow is outside
+	ret z
+    cp CELADON_MART_ROOF  ; The Celadon Mart Roof is outside 
+	ret z
+    ld a, [wCurMapTileset]  ; Reload the current map's tileset, so nothing breaks
 	ret
 
 ; this function is an extra check that sometimes has to pass in order to warp, beyond just standing on a warp
