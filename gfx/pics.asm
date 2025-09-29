@@ -158,7 +158,7 @@ KabutoPicFront::      INCBIN "gfx/pokemon/front/kabuto.pic"
 KabutoPicBack::       INCBIN "gfx/pokemon/back/kabutob.pic"
 KabutopsPicFront::    INCBIN "gfx/pokemon/front/kabutops.pic"
 KabutopsPicBack::     INCBIN "gfx/pokemon/back/kabutopsb.pic"
-HorseaPicFront::      INCBIN "gfx/pokemon/front/horseasilvervlad.pic"              ; Horsea default sprite changed by G-Dubs
+HorseaPicFront::      INCBIN "gfx/pokemon/front/horseasilvervlad.pic"          ; Horsea default sprite changed by G-Dubs
 HorseaPicBack::       INCBIN "gfx/pokemon/back/horseab.pic"
 SeadraPicFront::      INCBIN "gfx/pokemon/front/seadra.pic"
 SeadraPicBack::       INCBIN "gfx/pokemon/back/seadrab.pic"

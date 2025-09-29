@@ -5,13 +5,13 @@
 ; MoveEffectPointerTable indexes (see data/moves/effects_pointers.asm)
 	const_def
 	const NO_ADDITIONAL_EFFECT       ; $00
-	const EFFECT_01                  ; $01 unused
+	const EFFECT_01                  ; $01  Unused
 	const POISON_SIDE_EFFECT1        ; $02
 	const DRAIN_HP_EFFECT            ; $03
 	const BURN_SIDE_EFFECT1          ; $04
 	const FREEZE_SIDE_EFFECT1        ; $05
 	const PARALYZE_SIDE_EFFECT1      ; $06
-	const EXPLODE_EFFECT             ; $07 Explosion, Self Destruct
+	const EXPLODE_EFFECT             ; $07  Explosion, Self Destruct
 	const DREAM_EATER_EFFECT         ; $08
 	const MIRROR_MOVE_EFFECT         ; $09
 	const ATTACK_UP1_EFFECT          ; $0A
@@ -34,33 +34,33 @@
 	const THRASH_PETAL_DANCE_EFFECT  ; $1B
 	const SWITCH_AND_TELEPORT_EFFECT ; $1C
 	const TWO_TO_FIVE_ATTACKS_EFFECT ; $1D
-	const PIN_MISSILE_EFFECT         ; $1E Previously Unused, now used for Pin Missile
+	const PIN_MISSILE_EFFECT         ; $1E  Previously Unused, now used for Pin Missile
 	const FLINCH_SIDE_EFFECT1        ; $1F
 	const SLEEP_EFFECT               ; $20
 	const POISON_SIDE_EFFECT2        ; $21
 	const BURN_SIDE_EFFECT2          ; $22
-	const FREEZE_SIDE_EFFECT2        ; $23 unused (Blizzard in JP Red/Green)
+	const FREEZE_SIDE_EFFECT2        ; $23  Previously unused (Blizzard in JP Red/Green)
 	const PARALYZE_SIDE_EFFECT2      ; $24
 	const FLINCH_SIDE_EFFECT2        ; $25
-	const OHKO_EFFECT                ; $26 moves like Horn Drill
-	const CHARGE_EFFECT              ; $27 moves like Solar Beam
+	const OHKO_EFFECT                ; $26  Moves like Horn Drill
+	const CHARGE_EFFECT              ; $27  Moves like Solar Beam
 	const SUPER_FANG_EFFECT          ; $28
-	const SPECIAL_DAMAGE_EFFECT      ; $29 Seismic Toss, Night Shade, Sonic Boom, Dragon Rage, Psywave
-	const TRAPPING_EFFECT            ; $2A moves like Wrap
+	const SPECIAL_DAMAGE_EFFECT      ; $29  Seismic Toss, Night Shade, Sonic Boom, Dragon Rage, Psywave
+	const TRAPPING_EFFECT            ; $2A  Moves like Wrap
 	const FLY_EFFECT                 ; $2B
 	const ATTACK_TWICE_EFFECT        ; $2C
-	const JUMP_KICK_EFFECT           ; $2D Jump Kick and Hi Jump Kick effect
+	const JUMP_KICK_EFFECT           ; $2D  Jump Kick and Hi Jump Kick effect
 	const MIST_EFFECT                ; $2E
 	const FOCUS_ENERGY_EFFECT        ; $2F
-	const RECOIL_EFFECT              ; $30 moves like Double Edge
-	const CONFUSION_EFFECT           ; $31 Confuse Ray, Supersonic (not the move Confusion)
+	const RECOIL_EFFECT              ; $30  Moves like Double Edge
+	const CONFUSION_EFFECT           ; $31  Confuse Ray, Supersonic (not the move Confusion)
 	const ATTACK_UP2_EFFECT          ; $32
 	const DEFENSE_UP2_EFFECT         ; $33
 	const SPEED_UP2_EFFECT           ; $34
 	const SPECIAL_UP2_EFFECT         ; $35
 	const ACCURACY_UP2_EFFECT        ; $36
 	const EVASION_UP2_EFFECT         ; $37
-	const HEAL_EFFECT                ; $38 Recover, Softboiled, Rest
+	const HEAL_EFFECT                ; $38  Recover, Softboiled, Rest
 	const TRANSFORM_EFFECT           ; $39
 	const ATTACK_DOWN2_EFFECT        ; $3A
 	const DEFENSE_DOWN2_EFFECT       ; $3B
