@@ -15,21 +15,23 @@ Route10_ScriptPointers:
 
 Route10_TextPointers:
 	def_text_pointers
-	dw_const Route10SuperNerd1Text,     TEXT_ROUTE10_SUPER_NERD1
-	dw_const Route10Hiker1Text,         TEXT_ROUTE10_HIKER1
-	dw_const Route10SuperNerd2Text,     TEXT_ROUTE10_SUPER_NERD2
-	dw_const Route10CooltrainerF1Text,  TEXT_ROUTE10_COOLTRAINER_F1
-	dw_const Route10Hiker2Text,         TEXT_ROUTE10_HIKER2
-	dw_const Route10CooltrainerF2Text,  TEXT_ROUTE10_COOLTRAINER_F2
-	dw_const Route10SuperNerd3Text,     TEXT_ROUTE10_SUPER_NERD3	           ; New trainer added by G-Dubs
-    dw_const Route10CooltrainerF3Text,  TEXT_ROUTE10_COOLTRAINER_F3		       ; New trainer added by G-Dubs
-	dw_const Route10SuperNerd4Text,     TEXT_ROUTE10_SUPER_NERD4               ; New trainer added by G-Dubs
-	dw_const Route10SuperNerd5Text,     TEXT_ROUTE10_SUPER_NERD5		       ; New trainer added by G-Dubs
-	dw_const Route10SuperNerd6Text,     TEXT_ROUTE10_SUPER_NERD6		       ; New trainer added by G-Dubs
-	dw_const Route10RockTunnelSignText, TEXT_ROUTE10_ROCKTUNNEL_NORTH_SIGN
-	dw_const PokeCenterSignText,        TEXT_ROUTE10_POKECENTER_SIGN
-	dw_const Route10RockTunnelSignText, TEXT_ROUTE10_ROCKTUNNEL_SOUTH_SIGN
-	dw_const Route10PowerPlantSignText, TEXT_ROUTE10_POWERPLANT_SIGN
+	dw_const Route10SuperNerd1Text,       TEXT_ROUTE10_SUPER_NERD1
+	dw_const Route10Hiker1Text,           TEXT_ROUTE10_HIKER1
+	dw_const Route10SuperNerd2Text,       TEXT_ROUTE10_SUPER_NERD2
+	dw_const Route10CooltrainerF1Text,    TEXT_ROUTE10_COOLTRAINER_F1
+	dw_const Route10Hiker2Text,           TEXT_ROUTE10_HIKER2
+	dw_const Route10CooltrainerF2Text,    TEXT_ROUTE10_COOLTRAINER_F2
+	dw_const Route10SuperNerd3Text,       TEXT_ROUTE10_SUPER_NERD3	           ; New trainer added by G-Dubs
+    dw_const Route10CooltrainerF3Text,    TEXT_ROUTE10_COOLTRAINER_F3		   ; New trainer added by G-Dubs
+	dw_const Route10SuperNerd4Text,       TEXT_ROUTE10_SUPER_NERD4             ; New trainer added by G-Dubs
+	dw_const Route10SuperNerd5Text,       TEXT_ROUTE10_SUPER_NERD5		       ; New trainer added by G-Dubs
+	dw_const Route10SuperNerd6Text,       TEXT_ROUTE10_SUPER_NERD6		       ; New trainer added by G-Dubs
+	dw_const Route10RockTunnelSignText,   TEXT_ROUTE10_ROCKTUNNEL_NORTH_SIGN
+	dw_const PokeCenterSignText,          TEXT_ROUTE10_POKECENTER_SIGN
+	dw_const Route10RockTunnelSignText,   TEXT_ROUTE10_ROCKTUNNEL_SOUTH_SIGN
+	dw_const Route10PowerPlantSignText,   TEXT_ROUTE10_POWERPLANT_SIGN
+	dw_const Route10SignText,             TEXT_ROUTE10_SIGN                    ; New sign added by G-Dubs
+	dw_const Route10LavenderTownSignText, TEXT_ROUTE10_LAVENDER_TOWN_SIGN      ; New sign added by G-Dubs
 
 Route10TrainerHeaders:
 	def_trainers
@@ -165,7 +167,7 @@ Route10CooltrainerF2AfterBattleText:
 	text_far _Route10CooltrainerF2AfterBattleText
 	text_end
 
-Route10SuperNerd3Text:
+Route10SuperNerd3Text:                           ; New trainer added by G-Dubs
 	text_asm
 	ld hl, Route10TrainerHeader6
 	call TalkToTrainer
@@ -183,7 +185,7 @@ Route10SuperNerd3AfterBattleText:
 	text_far _Route10SuperNerd3AfterBattleText
 	text_end
 
-Route10CooltrainerF3Text:
+Route10CooltrainerF3Text:                        ; New trainer added by G-Dubs
 	text_asm
 	ld hl, Route10TrainerHeader7
 	call TalkToTrainer
@@ -201,7 +203,7 @@ Route10CooltrainerF3AfterBattleText:
 	text_far _Route10CooltrainerF3AfterBattleText
 	text_end
 
-Route10SuperNerd4Text:
+Route10SuperNerd4Text:                           ; New trainer added by G-Dubs
 	text_asm
 	ld hl, Route10TrainerHeader8
 	call TalkToTrainer
@@ -219,7 +221,7 @@ Route10SuperNerd4AfterBattleText:
 	text_far _Route10SuperNerd4AfterBattleText
 	text_end
 
-Route10SuperNerd5Text:
+Route10SuperNerd5Text:                           ; New trainer added by G-Dubs
 	text_asm
 	ld hl, Route10TrainerHeader9
 	call TalkToTrainer
@@ -237,7 +239,7 @@ Route10SuperNerd5AfterBattleText:
 	text_far _Route10SuperNerd5AfterBattleText
 	text_end
 
-Route10SuperNerd6Text:
+Route10SuperNerd6Text:                           ; New trainer added by G-Dubs
 	text_asm
 	ld hl, Route10TrainerHeader10
 	call TalkToTrainer
@@ -261,4 +263,12 @@ Route10RockTunnelSignText:
 
 Route10PowerPlantSignText:
 	text_far _Route10PowerPlantSignText
+	text_end
+
+Route10SignText:                                 ; New sign added by G-Dubs
+	text_far _Route10SignText
+	text_end
+
+Route10LavenderTownSignText:                     ; New sign added by G-Dubs
+	text_far _Route10LavendarTownSignText
 	text_end

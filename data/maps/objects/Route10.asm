@@ -23,8 +23,10 @@ Route10_Object:
 	def_bg_events
 	bg_event  7, 19, TEXT_ROUTE10_ROCKTUNNEL_NORTH_SIGN
 	bg_event 12, 19, TEXT_ROUTE10_POKECENTER_SIGN
-	bg_event  9, 55, TEXT_ROUTE10_ROCKTUNNEL_SOUTH_SIGN
+	bg_event  9, 54, TEXT_ROUTE10_ROCKTUNNEL_SOUTH_SIGN
 	bg_event  5, 41, TEXT_ROUTE10_POWERPLANT_SIGN
+	bg_event  7,  5, TEXT_ROUTE10_SIGN                     ; New sign added by G-Dubs
+	bg_event 12, 62, TEXT_ROUTE10_LAVENDER_TOWN_SIGN       ; New sign added by G-Dubs
 
 	def_object_events
 	object_event 10, 44, SPRITE_SUPER_NERD, STAY, LEFT, TEXT_ROUTE10_SUPER_NERD1, OPP_POKEMANIAC, 1

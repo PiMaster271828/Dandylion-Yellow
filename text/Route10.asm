@@ -280,3 +280,17 @@ _Route10RockTunnelSignText::
 _Route10PowerPlantSignText::
 	text "POWER PLANT"
 	done
+
+_Route10SignText::                     ; New sign added by G-Dubs
+    text "ROUTE 10"
+	line "ROCK TUNNEL"
+	cont "#MON CENTER -"
+	cont "LAVENDER TOWN"
+	done
+
+_Route10LavendarTownSignText::         ; New sign added by G-Dubs
+    text "ROUTE 10"
+	line "LAVENDER TOWN -"
+	cont "ROCK TUNNEL"
+	cont "#MON CENTER"	
+	done
