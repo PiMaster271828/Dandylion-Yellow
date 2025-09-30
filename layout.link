@@ -208,10 +208,11 @@ ROMX $39
 	"Pikachu Graphics 1"
 ROMX $3A
 	"bank3A"
-; bank $3B is empty
+
+; bank $3B is empty 
+
 ROMX $3C
 	"Pikachu PCM"
-	"Tilesets 4"
 	"Try Pikachu Movement"
 	"Pikachu Graphics 2"
 	"Credits"
@@ -234,25 +235,17 @@ ROMX $41
     "Battle Engine 10"
 
 ROMX $42
-	"Text 1.5"
-
-ROMX $43
 	"Home 2"
 	"Alt Pokemon Sprites 1"
-
-ROMX $44
+ROMX $43
 	"Alt Pokemon Sprites 2"
-
-ROMX $45
+ROMX $44
 	"Alt Pokemon Sprites 3"
-
-ROMX $46
+ROMX $45
     "Alt Pokemon Sprites 4"
-
-ROMX $47 
+ROMX $46 
     "Alt Pokemon Sprites 5"
-
-ROMX $48 
+ROMX $47 
     "Alt Pokemon Sprites 6"
 	
 WRAM0
