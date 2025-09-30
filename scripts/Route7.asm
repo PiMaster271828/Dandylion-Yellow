@@ -68,6 +68,6 @@ Route7UndergroundPathSignText:                   ; Original Route 7 Sign (Underg
 	text_far _Route7UndergroundPathSignText
 	text_end
 
-Route7SignText:                                  ; New sign added by G-Dubs (Route 5 Sign)
+Route7SignText:                                  ; New sign added by G-Dubs (Route 7 Sign)
 	text_far _Route7SignText
 	text_end
