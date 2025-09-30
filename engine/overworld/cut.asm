@@ -12,6 +12,8 @@ UsedCut:
 	jr z, .overworld
 	cp SAFFRON_TILE     ; check for new overworld tileset
 	jr z, .overworld
+	cp CELADON_TILE     ; check for new overworld tileset
+	jr z, .overworld
 	jr .nothingToCut
 
 .overworld

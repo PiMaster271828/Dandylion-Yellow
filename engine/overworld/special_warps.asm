@@ -67,7 +67,7 @@ LoadSpecialWarpData:
 	ld a, [hli]
 	ld [wCurMapTileset], a
 	xor a
-	jr .done
+	jp .done
 .notNewGameWarp
 	ld a, [wLastMap] ; this value is overwritten before it's ever read
 	ld hl, wStatusFlags6
@@ -143,6 +143,8 @@ LoadSpecialWarpData:
 	cp VERMILION_TILE   ; Vermilion City (26)
 	jr z, .done
 	cp SAFFRON_TILE     ; Saffron City (27)
+	jr z, .done
+	cp CELADON_TILE     ; Celadon City (28)
 	jr z, .done
     xor a               ; Otherwise, default to OVERWORLD (0)
     ld [wCurMapTileset], a

@@ -441,7 +441,7 @@ VermilionGymHiddenObjects:
 	db -1 ; end
 
 CeladonCityHiddenObjects:
-	hidden_object 48, 15, PP_UP, HiddenItems
+	hidden_object 45, 16, PP_UP, HiddenItems
 	db -1 ; end
 
 CeladonHotelHiddenObjects:

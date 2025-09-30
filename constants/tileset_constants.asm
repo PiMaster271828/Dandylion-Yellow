@@ -29,4 +29,5 @@
 	const OVERWORLD2         ; 25    ; New tileset added by G-Dubs
 	const VERMILION_TILE     ; 26    ; New tileset added by G-Dubs
 	const SAFFRON_TILE       ; 27    ; New tileset added by G-Dubs
+	const CELADON_TILE       ; 28    ; New tileset added by G-Dubs
 DEF NUM_TILESETS EQU const_value

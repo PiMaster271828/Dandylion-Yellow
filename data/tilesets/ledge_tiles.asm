@@ -4,6 +4,8 @@ LedgeTiles:
 	db SPRITE_FACING_DOWN,  $2C, $36, D_DOWN     ; New ledge tile added by G-Dubs (This should be in the game)
 	db SPRITE_FACING_DOWN,  $39, $36, D_DOWN
 	db SPRITE_FACING_DOWN,  $39, $37, D_DOWN
+	db SPRITE_FACING_DOWN,  $5B, $37, D_DOWN
+	db SPRITE_FACING_DOWN,  $5B, $36, D_DOWN     ; New ledge tile added by G-Dubs
 	db SPRITE_FACING_LEFT,  $2C, $27, D_LEFT
 	db SPRITE_FACING_LEFT,  $39, $27, D_LEFT
 	db SPRITE_FACING_LEFT,  $52, $27, D_LEFT     ; New ledge tile added by G-Dubs

@@ -57,14 +57,13 @@ Club_Block::         INCBIN "gfx/blocksets/club.bst"
 Underground_GFX::    INCBIN "gfx/tilesets/underground.2bpp"
 Underground_Block::  INCBIN "gfx/blocksets/underground.bst"
 BeachHouse_GFX::     INCBIN "gfx/tilesets/beach_house.2bpp"
-	ds 384
+    ds 384
 BeachHouse_Block::   INCBIN "gfx/blocksets/beach_house.bst"
 
 
 SECTION "Tilesets 4", ROMX                                      ; Section repurposed for adding bigger tilesets/blocksets by G-Dubs
 
 Overworld_GFX::      INCBIN "gfx/tilesets/overworld.2bpp"                 ; Moved from Section 1 to make space for 256 tileset by G-Dubs
-    ds 32
 Overworld_Block::    INCBIN "gfx/blocksets/overworld.bst"                 ; Moved from Section 1 to make space for 256 blockset by G-Dubs
 
 
@@ -76,10 +75,17 @@ Cavern_Block::       INCBIN "gfx/blocksets/cavern.bst"                    ; Move
 Overworld2_GFX::      INCBIN "gfx/tilesets/overworld2.2bpp"               ; New tileset added by G-Dubs
 Overworld2_Block::    INCBIN "gfx/blocksets/overworld2.bst"               ; New blockset added by G-Dubs
 
+
 SECTION "Tilesets 6", ROMX                                      ; New section added for adding bigger tilesets/blocksets by G-Dubs
 
 VermilionTile_GFX::   INCBIN "gfx/tilesets/vermilion_city.2bpp"           ; New tileset added by G-Dubs
 VermilionTile_Block:: INCBIN "gfx/blocksets/vermilion_city.bst"           ; New blockset added by G-Dubs
 
-SaffronTile_GFX::   INCBIN "gfx/tilesets/vermilion_city.2bpp"             ; New tileset added by G-Dubs
+SaffronTile_GFX::   INCBIN "gfx/tilesets/saffron_city.2bpp"               ; New tileset added by G-Dubs
 SaffronTile_Block:: INCBIN "gfx/blocksets/saffron_city.bst"               ; New blockset added by G-Dubs
+
+
+SECTION "Tilesets 7", ROMX                                      ; New section added for adding bigger tilesets/blocksets by G-Dubs
+
+CeladonTile_GFX::    INCBIN "gfx/tilesets/celadon_city.2bpp"              ; New tileset added by G-Dubs
+CeladonTile_Block::  INCBIN "gfx/blocksets/celadon_city.bst"              ; New blockset added by G-Dubs

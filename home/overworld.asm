@@ -696,6 +696,8 @@ CheckIfInOutsideMap::
 	ret z
 	cp SAFFRON_TILE     ; Make sure Saffron City counts as an outside map
 	ret z
+	cp CELADON_TILE     ; Make sure Celadon City counts as an outside map
+	ret z
 	cp PLATEAU          ; Route 23 / Indigo Plateau
 	ret z
 	cp SHIP_PORT        ; Vermilion Port is an outdoor map
@@ -727,19 +729,21 @@ ExtraWarpCheck::
 	cp ROCK_TUNNEL_1F
 	jr z, .useFunction2
 	ld a, [wCurMapTileset]
-	cp OVERWORLD  ; outside tileset (OVERWORLD)
+	cp OVERWORLD             ; outside tileset (OVERWORLD)
 	jr z, .useFunction2
-	cp OVERWORLD2 ; Make sure overworld2 is also treated as outdoor
+	cp OVERWORLD2            ; Make sure overworld2 is also treated as outdoor
 	jr z, .useFunction2
-	cp VERMILION_TILE ; Vermilion City tileset is also treated as outdoor
+	cp VERMILION_TILE        ; Vermilion City tileset is also treated as outdoor
 	jr z, .useFunction2
-	cp SAFFRON_TILE ; Saffron City tileset is also treated as outdoor
+	cp SAFFRON_TILE          ; Saffron City tileset is also treated as outdoor
 	jr z, .useFunction2
-	cp SHIP ; S.S. Anne tileset
+	cp CELADON_TILE          ; Celadon City tileset is also treated as outdoor
 	jr z, .useFunction2
-	cp SHIP_PORT ; Vermilion Port tileset
+	cp SHIP                  ; S.S. Anne tileset
 	jr z, .useFunction2
-	cp PLATEAU ; Indigo Plateau tileset
+	cp SHIP_PORT             ; Vermilion Port tileset
+	jr z, .useFunction2
+	cp PLATEAU               ; Indigo Plateau tileset
 	jr z, .useFunction2
 .useFunction1
 	ld hl, IsPlayerFacingEdgeOfMap
