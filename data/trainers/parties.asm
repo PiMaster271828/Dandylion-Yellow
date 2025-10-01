@@ -1007,14 +1007,15 @@ PokeFanMData:
     db 22, PIKACHU, CLEFAIRY, MEOWTH, 0	 	                                                                 ; PokéFan ♂ 4            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 ; Route 7
     db 30, VULPIX, PIKACHU, GROWLITHE, 0                                                                     ; PokéFan ♂ 5            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-; Route ??
-   ;db ??, NIDOKING, KINGLER, SEAKING, KINGDRA, 0                                                            ; PokéFan ♂ ?            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+    db 35, SEAKING, NIDOKING, KINGLER, /*KINGDRA, SLOWKING ,*/0                                              ; PokéFan ♂ 6            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 
 PokeFanFData:
 ; Route 5
     db 17, JIGGLYPUFF, PIKACHU, CLEFAIRY, 0                                                                  ; PokéFan ♀ 1            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 	db 19, POLIWAG, ODDISH, CUBONE, 0                                                                        ; PokéFan ♀ 2            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
-	db 16, BULBASAUR, CHARMANDER, SQUIRTLE, 0                                                                ; PokéFan ♀ 3            ; New trainer added by G-Dubs  (New Trainer Class added by G-Dubs) 
+	db 16, BULBASAUR, CHARMANDER, SQUIRTLE, 0                                                                ; PokéFan ♀ 3            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+; Route 7
+	db 35, NIDORAN_M, NIDORINA, NIDOQUEEN, 0                                                                 ; PokéFan ♀ 4            ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs) 
 
 GuitaristData:
 /*************

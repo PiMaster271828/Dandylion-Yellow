@@ -57,6 +57,51 @@ _Route7PokeFanM1AfterBattleText::
     cont "That's my goal!"
 	done
 
+_Route7PokeFanF1BattleText::                ; New trainer added by G-Dubs
+    text "Behold! My royal"
+    line "line of queens!"
+    cont "Each one is so"
+    cont "graceful, yet so"
+    cont "powerful!"
+    cont "Let us show you"
+    cont "our royal might!"
+    done
+
+_Route7PokeFanF1EndBattleText::    
+    text "Oh, my!"
+    line "Your #MON are"
+    cont "quite majestic"
+    cont "themselves!"
+    prompt
+
+_Route7PokeFanF1AfterBattleText::    
+    text "That was a fun"
+    line "royal rumble!"
+    
+    para "My husband and I"
+    line "love raising our"
+    cont "NIDORAN lines."
+    cont "They are the best"
+    cont "royal couple!"
+    done
+
+_Route7PokeFanM2BattleText::                ; New trainer added by G-Dubs 
+    text "You shall behold"
+    line "the majesty of my"
+    cont "kingly #MON!"
+    done
+
+_Route7PokeFanM2EndBattleText::         
+    text "How..."
+    line "How did you beat"
+    cont "my royalty?"
+    prompt
+
+_Route7PokeFanM2AfterBattleText::
+    text "I think everyone"
+    line "wants to be king."
+    done
+
 _Route7UndergroundPathSignText::
 	text "UNDERGROUND PATH"
 	line "CELADON CITY -"

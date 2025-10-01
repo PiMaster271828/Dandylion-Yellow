@@ -48,7 +48,7 @@ INCLUDE "text/Route9.asm"                        ; Moved from Text 3 by G-Dubs t
 INCLUDE "text/RockTunnel1F.asm"                  ; Moved from Text 3 by G-Dubs to avoid the Text Bank from growing too big
 INCLUDE "text/RockTunnelB2F.asm"                 ; New text file created for a new map by G-Dubs
 INCLUDE "text/Route10.asm"                       ; Moved from Text 4 by G-Dubs to avoid the Text Bank from growing too big
-
+INCLUDE "text/Route7.asm"                        ; Moved from Text 3 by G-Dubs to avoid the Text Bank from growing too big
 
 SECTION "Text 2", ROMX
 
@@ -118,7 +118,6 @@ INCLUDE "text/Route1.asm"
 INCLUDE "text/Route2.asm"
 INCLUDE "text/Route3.asm"
 INCLUDE "text/Route4.asm"
-INCLUDE "text/Route7.asm"
 INCLUDE "text/Route8.asm"
 
 SECTION "Text 4", ROMX
