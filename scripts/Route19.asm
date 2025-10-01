@@ -26,6 +26,7 @@ Route19_TextPointers:
 	dw_const Route19Swimmer7Text,      TEXT_ROUTE19_SWIMMER7
 	dw_const Route19Swimmer8Text,      TEXT_ROUTE19_SWIMMER8
 	dw_const Route19SignText,          TEXT_ROUTE19_SIGN
+	dw_const SummerBeachHouseSignText, TEXT_SUMMER_BEACH_HOUSE_SIGN  ; New sign added by G-Dubs
 
 Route19TrainerHeaders:
 	def_trainers
@@ -225,4 +226,8 @@ Route19Swimmer8AfterBattleText:
 
 Route19SignText:
 	text_far _Route19SignText
+	text_end
+
+SummerBeachHouseSignText:                        ; New sign added by G-Dubs
+	text_far _SummerBeachHouseSignText
 	text_end

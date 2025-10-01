@@ -29,10 +29,11 @@ CeladonCity_TextPointers:
 	dw_const PokeCenterSignText,               TEXT_CELADONCITY_POKECENTER_SIGN
 	dw_const CeladonCityGymSignText,           TEXT_CELADONCITY_GYM_SIGN
 	dw_const CeladonCityMansionSignText,       TEXT_CELADONCITY_MANSION_SIGN
-	dw_const CeladonCityDeptStoreSignText,     TEXT_CELADONCITY_DEPTSTORE_SIGN
+	dw_const CeladonCityDeptStoreSignText,     TEXT_CELADONCITY_DEPTSTORE_SIGN1
 	dw_const CeladonCityTrainerTips2Text,      TEXT_CELADONCITY_TRAINER_TIPS2
 	dw_const CeladonCityPrizeExchangeSignText, TEXT_CELADONCITY_PRIZEEXCHANGE_SIGN
 	dw_const CeladonCityGameCornerSignText,    TEXT_CELADONCITY_GAMECORNER_SIGN
+	dw_const CeladonCityDeptStoreSignText,     TEXT_CELADONCITY_DEPTSTORE_SIGN2
 
 CeladonCityLittleGirlText:
 	text_far _CeladonCityLittleGirlText

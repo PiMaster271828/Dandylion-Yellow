@@ -155,3 +155,10 @@ _Route19SignText::
 	line "FUCHSIA CITY -"
 	cont "SEAFOAM ISLANDS"
 	done
+
+_SummerBeachHouseSignText::            ; New sign added by G-Dubs
+	text "SURFIN' DUDE's"
+	line "SUMMER BEACH"
+	cont "HOUSE"
+	done
+
