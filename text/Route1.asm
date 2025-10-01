@@ -48,3 +48,72 @@ _Route1SignText::
 	line "PALLET TOWN -"
 	cont "VIRIDIAN CITY"
 	done
+
+/*
+Trainer 01:
+    text "I just lost a"
+	line "battle, so I'm"
+	cont "trying to find"
+	cont "more #MON.
+	
+	para "Wait! You look"
+    line "like I could beat"
+	cont "you .Come on,"
+	cont "let's battle!"
+    done
+
+    text "Ugh."
+	line "Why do I only"
+	cont "have these two"
+	cont "#MON?"
+	prompt
+
+    text "I have to catch
+	line "more #MON for
+	cont "battles..."
+	done
+
+Trainer 02:
+    text "Are you a #MON"
+	line "trainer? 
+	
+	para "Let's battle!"
+	done
+
+    text "Ah"
+	line "Man. I won my"
+	cont "last battle."
+    prompt
+
+    text "I hear being a"
+	line "good trainer is"
+	cont "really hard. I'm"
+	cont "going to battle"
+	cont "other trainers to"
+	cont "get stronger."
+    done   
+
+Trainer 03:
+    text "There aren't any"
+	line "bug #MON here,"
+	cont "but I do see a"
+	cont "#MON trainer!"
+    done 
+	
+	text "Argh!"
+	line "You're strong!"
+    prompt
+
+	text "I ran out of"
+	line "#BALLS. I need to"
+	cont "go buy some more."
+	done
+
+NPC 01:
+    text "I'm not a trainer."
+	line "But if you look"
+	cont "one in the eyes,"
+	cont "you need to be"
+	cont "ready to battle."
+	done
+*/
