@@ -244,7 +244,7 @@ _SSAnne1FRoomsLittleGirlEndBattleText::
 _SSAnne1FRoomsLittleGirlAfterBattleText::
 	text "I always travel"
 	line "with WIGGLYTUFF!"
-	cont "It's my best"
+	cont "She's my best"
 	cont "friend!"
 	done
 
