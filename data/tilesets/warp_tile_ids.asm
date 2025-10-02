@@ -43,7 +43,7 @@ ENDM
 .VermilionTileWarpTileIDs:                  ; New tileset added by G-Dubs
 .SaffronTileWarpTileIDs:                    ; New tileset added by G-Dubs
 .CeladonTileWarpTileIDs:                    ; New tileset added by G-Dubs	
-	warp_tiles $1B, $58
+	warp_tiles $1B, $58, $AD
 
 .ForestGateWarpTileIDs:
 .MuseumWarpTileIDs:
