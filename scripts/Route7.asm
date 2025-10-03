@@ -19,6 +19,7 @@ Route7_TextPointers:
 	dw_const Route7PokeFanM1Text,           TEXT_ROUTE7_POKEFAN_M1             ; New trainer added by G-Dubs
 	dw_const Route7PokeFanF1Text,           TEXT_ROUTE7_POKEFAN_F1             ; New trainer added by G-Dubs
 	dw_const Route7PokeFanM2Text,           TEXT_ROUTE7_POKEFAN_M2             ; New trainer added by G-Dubs
+	dw_const Route7CooltrainerM2Text,       TEXT_ROUTE7_COOLTRAINER_M2         ; New trainer added by G-Dubs
 	dw_const Route7UndergroundPathSignText, TEXT_ROUTE7_UNDERGROUND_PATH_SIGN
 	dw_const Route7SignText,                TEXT_ROUTE7_SIGN                   ; New sign added by G-Dubs
 
@@ -32,6 +33,8 @@ Route7TrainerHeader2:
 	trainer EVENT_BEAT_ROUTE_7_TRAINER_2, 2, Route7PokeFanF1BattleText, Route7PokeFanF1EndBattleText, Route7PokeFanF1AfterBattleText                 ; New trainer added by G-Dubs
 Route7TrainerHeader3:    
 	trainer EVENT_BEAT_ROUTE_7_TRAINER_3, 2, Route7PokeFanM2BattleText, Route7PokeFanM2EndBattleText, Route7PokeFanM2AfterBattleText                 ; New trainer added by G-Dubs
+Route7TrainerHeader4:    
+	trainer EVENT_BEAT_ROUTE_7_TRAINER_4, 4, Route7CooltrainerM2BattleText, Route7CooltrainerM2EndBattleText, Route7CooltrainerM2AfterBattleText     ; New trainer added by G-Dubs
 	db -1 ; end
 
 Route7CooltrainerM1Text:                              ; New trainer added by G-Dubs
@@ -104,6 +107,24 @@ Route7PokeFanM2EndBattleText:
 
 Route7PokeFanM2AfterBattleText:
 	text_far _Route7PokeFanM2AfterBattleText
+	text_end
+
+Route7CooltrainerM2Text:                              ; New trainer added by G-Dubs
+	text_asm
+	ld hl, Route7TrainerHeader4
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route7CooltrainerM2BattleText:
+	text_far _Route7CooltrainerM2BattleText
+	text_end
+
+Route7CooltrainerM2EndBattleText:
+	text_far _Route7CooltrainerM2EndBattleText
+	text_end
+
+Route7CooltrainerM2AfterBattleText:
+	text_far _Route7CooltrainerM2AfterBattleText
 	text_end
 
 Route7UndergroundPathSignText:                        ; Original Route 7 Sign (Underground Path)

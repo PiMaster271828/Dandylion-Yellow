@@ -1122,6 +1122,7 @@ New Firefighter Sprite
 *********************/ 
 ; Route 7
     db 30, GEODUDE, GROWLITHE, POLIWHIRL, 0	                                                                 ; Firefighter 2          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
+	db 28, POLIWHIRL, MACHOKE, POLIWHIRL, 0	                                                                 ; Firefighter 3          ; New trainer added by G-Dubs (New Trainer Class added by G-Dubs)
 
 DragonTamerData:
 ; Rock Tunnel B2F 

@@ -102,6 +102,33 @@ _Route7PokeFanM2AfterBattleText::
     line "wants to be king."
     done
 
+_Route7CooltrainerM2BattleText::           ; New trainer added by G-Dubs 
+	text "My Water #MON"
+    line "are my partners!"
+    cont "Together, we can"
+    cont "stop any blaze!"
+    cont "Let's see your"
+    cont "team's power!"
+	done
+
+_Route7CooltrainerM2EndBattleText::
+    text "Whoa!"
+    line "Your team has the"
+    cont "force of a tidal"
+    cont "wave! Well done!"
+    cont "You could make a"
+    cont "good firefighter."
+	prompt
+
+_Route7CooltrainerM2AfterBattleText::
+    text "That was great!"
+    line "The trust you"
+    cont "share with your"
+    cont "#MON is clear."
+    cont "Keep that bond"
+    cont "strong!"
+	done
+
 _Route7UndergroundPathSignText::
 	text "UNDERGROUND PATH"
 	line "CELADON CITY -"
