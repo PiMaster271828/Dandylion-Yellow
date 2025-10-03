@@ -11,7 +11,6 @@
 	const_export ROUTE3_COOLTRAINER_M1  ; New trainer added by G-Dubs
 	const_export ROUTE3_COOLTRAINER_M2  ; New trainer added by G-Dubs
 
-
 Route3_Object:
 	db $2c ; border block
 

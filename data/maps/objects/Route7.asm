@@ -3,6 +3,7 @@ object_const_def
 	const_export ROUTE7_POKEFAN_M1       ; New trainer added by G-Dubs
 	const_export ROUTE7_POKEFAN_F1       ; New trainer added by G-Dubs
 	const_export ROUTE7_POKEFAN_M2       ; New trainer added by G-Dubs
+	const_export ROUTE7_COOLTRAINER_M2   ; New trainer added by G-Dubs
 
 Route7_Object:
 	db $f ; border block
