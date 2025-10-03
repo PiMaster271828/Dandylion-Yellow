@@ -14,7 +14,7 @@ Route18_Object:
 
 	def_bg_events
 	bg_event 43,  7, TEXT_ROUTE18_SIGN
-	bg_event 33,  5, TEXT_ROUTE18_CYCLING_ROAD_SIGN
+	bg_event 33,  4, TEXT_ROUTE18_CYCLING_ROAD_SIGN
 
 	def_object_events
 	object_event 36, 11, SPRITE_COOLTRAINER_M, STAY, RIGHT, TEXT_ROUTE18_COOLTRAINER_M1, OPP_BIRD_KEEPER, 8

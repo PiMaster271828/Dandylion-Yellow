@@ -35,8 +35,8 @@ HiddenItemCoords:
 	hidden_item POWER_PLANT,                   12,   1
 	hidden_item ROUTE_11,                      48,   5
 	hidden_item ROUTE_12,                       2,  63
-	hidden_item ROUTE_13,                       1,  14
-	hidden_item ROUTE_13,                      16,  13
+	hidden_item ROUTE_13,                       1,  12
+	hidden_item ROUTE_13,                      17,  13
 	hidden_item ROUTE_17,                      15,  14
 	hidden_item ROUTE_17,                       8,  45
 	hidden_item ROUTE_17,                      17,  72

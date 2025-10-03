@@ -2165,9 +2165,11 @@ wGameProgressFlags::
 wOaksLabCurScript:: db
 wPalletTownCurScript:: db
 wBluesHouseCurScript:: db
+wRoute1CurScript:: db                  ; Route 1 script added by G-Dubs (reduced total ds by 1)
 wViridianCityCurScript:: db
 wViridianSchoolHouseCurScript:: db     ; Viridian School House Script added by G-Dubs (Replaced ds 1)
 wViridianPokeCenterCurScript:: db      ; Viridian PokeCenter Script added by Vlad for Jessie & James battle (reduced total ds by 1)
+wRoute2CurScript:: db                  ; Route 2 script added by G-Dubs (reduced total ds by 1)
 wPewterCityCurScript:: db
 wRoute3CurScript:: db
 wRoute4CurScript:: db
@@ -2195,7 +2197,7 @@ wRedsHouse2FCurScript:: db
 wViridianMartCurScript:: db
 wRoute22GateCurScript:: db
 wCeruleanCityCurScript:: db
-	ds 4                               ; Changed from 7 to 4 by G-Dubs to make room for other scripts  
+	ds 2                               ; Changed from 7 to 2 by G-Dubs to make room for other scripts  
 wSSAnneBowCurScript:: db
 wSSAnneKitchenCurScript:: db           ; SS Anne Kitchen script added by G-Dubs (reduced total ds by 1)
 wViridianForestCurScript:: db

@@ -264,7 +264,7 @@ ViridianPokeCenterTrainerHeaders:
 	def_trainers 3
 ;ViridianPokeCenterTrainerHeader0:
 ;	trainer EVENT_BEAT_JESSIE_1_TRAINER_0, 2, ViridianPokecenterJessieBattleText, ViridianPokecenterJessieEndBattleText, ViridianPokecenterJessieAfterBattleText
-;	db -1 ; end
+	db -1 ; end
 
 ViridianPokecenterRocketText1:
 	text_far _ViridianPokecenterRocketText1

@@ -73,8 +73,8 @@
 	const_skip 3	                                                                               ; $73 - $75                
 	const EVENT_GOT_TM34		                                                                   ; $76                    
 	const EVENT_BEAT_BROCK	                                                                       ; $77
-	const_skip 8                                 ; const_skip added by G-Dubs                      ; $78 - $7F                    
-
+	const_skip 8                                 ; const_skip added by G-Dubs                      ; $78 - $7F  
+                  
 ; Cerulean City Events
 	const_next $98                                 
 	const EVENT_BEAT_CERULEAN_RIVAL                                                                ; $98
@@ -275,10 +275,12 @@
 ; Route 1 Events
 	const_next $370                                                                                
 	const EVENT_GOT_POTION_SAMPLE                                                                  ; $370
+	const EVENT_BEAT_ROUTE_2_TRAINER_0	                                                           ; $371
 
 ; Route 2 Events
 	const_next $380                                                                                
 	const EVENT_GOT_HM05                                                                           ; $380
+   ;const EVENT_BEAT_ROUTE_2_TRAINER_0	                                                           ; $381
 
 ; Route 3 Events
 	const_next $390

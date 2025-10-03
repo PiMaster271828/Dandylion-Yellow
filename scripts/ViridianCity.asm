@@ -265,7 +265,7 @@ ViridianCity_TextPointers:
 	dw_const ViridianCityFisherText,                         TEXT_VIRIDIANCITY_FISHER
 	dw_const ViridianCityOldManText,                         TEXT_VIRIDIANCITY_OLD_MAN
 	dw_const ViridianCityOldMan2Text,                        TEXT_VIRIDIANCITY_OLD_MAN2
-	dw_const ViridianCityOfficerJennyText,                   TEXT_VIRIDIANCITY_OFFICER_JENNY
+	dw_const ViridianCityOfficerJennyText,                   TEXT_VIRIDIANCITY_OFFICER_JENNY       ; Officer Jenny added by Vlad
 	dw_const ViridianCitySignText,                           TEXT_VIRIDIANCITY_SIGN
 	dw_const ViridianCityTrainerTips1Text,                   TEXT_VIRIDIANCITY_TRAINER_TIPS1
 	dw_const ViridianCityTrainerTips2Text,                   TEXT_VIRIDIANCITY_TRAINER_TIPS2
