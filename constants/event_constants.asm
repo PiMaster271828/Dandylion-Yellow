@@ -273,9 +273,11 @@
 	const_skip 7                                                                                   ; $369 - $36F
 	
 ; Route 1 Events
-	const_next $370                                                                                
-	const EVENT_GOT_POTION_SAMPLE                                                                  ; $370
-	const EVENT_BEAT_ROUTE_2_TRAINER_0	                                                           ; $371
+	const_next $370 
+	const_skip                                                                                     ; $370
+	const EVENT_GOT_POTION_SAMPLE                                                                  ; $371
+	const_skip                                                                                     ; $372
+	const EVENT_BEAT_ROUTE_1_TRAINER_0	                                                           ; $373
 
 ; Route 2 Events
 	const_next $380                                                                                

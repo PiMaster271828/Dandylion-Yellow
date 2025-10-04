@@ -26,4 +26,5 @@ Route5_Object:
 	object_event 18, 15, SPRITE_MIDDLE_AGED_MAN, STAY, LEFT, TEXT_ROUTE5_POKEFAN_M2, OPP_POKEFAN_M, 1       ; New trainer added by G-Dubs
 	object_event  6, 29, SPRITE_MIDDLE_AGED_WOMAN, STAY, UP, TEXT_ROUTE5_POKEFAN_F3, OPP_POKEFAN_F, 2       ; New trainer added by G-Dubs
 	object_event  5, 24, SPRITE_MIDDLE_AGED_MAN, STAY, DOWN, TEXT_ROUTE5_POKEFAN_M3, OPP_POKEFAN_M, 2       ; New trainer added by G-Dubs
+
 	def_warps_to ROUTE_5

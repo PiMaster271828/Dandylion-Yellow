@@ -97,6 +97,8 @@ YoungsterData:
 	db 25, SANDSHREW, 0                                                                                      ; Youngster 14           ; A.J. from the Anime and his OP Sandshrew (Level changed from 24 to 25 by G-Dubs)
 ; Viridian Forest (Again)
     db $FF, 6, RATTATA, 7, PIDGEY, 6, CATERPIE, 7, NIDORAN_M, 6, WEEDLE, 9, PIDGEOTTO, 0                     ; Youngster 15           ; New Trainer added by G-Dubs
+; Route 1
+    db 5, RATTATA, PIDGEY, 0                                                                                 ; Youngster 16           ; New Trainer added by G-Dubs
 
 BugCatcherData:
 ; Viridian Forest

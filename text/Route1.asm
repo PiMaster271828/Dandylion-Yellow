@@ -43,6 +43,41 @@ _Route1Youngster2Text::
 	cont "quicker that way."
 	done
 
+_Route1Youngster3Text::           ; New NPC added by G-Dubs
+	text "I'm not a trainer."
+	line "But if you look"
+	cont "one in the eyes,"
+	cont "you need to be"
+	cont "ready to battle."
+	done
+
+_Route1Youngster4BattleText::     ; New trainer added by G-Dubs
+	text "I just lost a"
+	line "battle, so I'm"
+	cont "trying to find"
+	cont "more #MON."
+
+	para "Wait! You look"
+    line "like I could beat"
+	cont "you. Come on,"
+	cont "let's battle!"
+	done
+
+_Route1Youngster4EndBattleText::
+	text "Ugh."
+	line "You beat me!"
+
+	para "Why do I only"
+	line "have these two"
+	cont "#MON?"
+	prompt
+
+_Route1Youngster4AfterBattleText::
+	text "I have to catch"
+	line "more #MON for"
+	cont "battles..."
+	done
+
 _Route1SignText::
 	text "ROUTE 1"
 	line "PALLET TOWN -"
@@ -50,28 +85,7 @@ _Route1SignText::
 	done
 
 /*
-Trainer 01:
-    text "I just lost a"
-	line "battle, so I'm"
-	cont "trying to find"
-	cont "more #MON.
-	
-	para "Wait! You look"
-    line "like I could beat"
-	cont "you .Come on,"
-	cont "let's battle!"
-    done
 
-    text "Ugh."
-	line "Why do I only"
-	cont "have these two"
-	cont "#MON?"
-	prompt
-
-    text "I have to catch
-	line "more #MON for
-	cont "battles..."
-	done
 
 Trainer 02:
     text "Are you a #MON"

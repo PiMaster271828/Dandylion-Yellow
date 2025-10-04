@@ -96,7 +96,7 @@ TalkToTrainer::
 	ld a, [wTrainerHeaderFlagBit]
 	ld c, a
 	ld b, FLAG_TEST
-	call TrainerFlagAction      ; read trainer's flag
+	call TrainerFlagAction         ; read trainer's flag
 	ld a, c
 	and a
 	jr z, .trainerNotYetFought     ; test trainer's flag

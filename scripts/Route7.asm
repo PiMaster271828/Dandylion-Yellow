@@ -34,7 +34,7 @@ Route7TrainerHeader2:
 Route7TrainerHeader3:    
 	trainer EVENT_BEAT_ROUTE_7_TRAINER_3, 2, Route7PokeFanM2BattleText, Route7PokeFanM2EndBattleText, Route7PokeFanM2AfterBattleText                 ; New trainer added by G-Dubs
 Route7TrainerHeader4:    
-	trainer EVENT_BEAT_ROUTE_7_TRAINER_4, 4, Route7CooltrainerM2BattleText, Route7CooltrainerM2EndBattleText, Route7CooltrainerM2AfterBattleText     ; New trainer added by G-Dubs
+	trainer EVENT_BEAT_ROUTE_7_TRAINER_4, 3, Route7CooltrainerM2BattleText, Route7CooltrainerM2EndBattleText, Route7CooltrainerM2AfterBattleText     ; New trainer added by G-Dubs
 	db -1 ; end
 
 Route7CooltrainerM1Text:                              ; New trainer added by G-Dubs
