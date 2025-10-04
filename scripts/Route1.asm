@@ -22,7 +22,7 @@ Route1_TextPointers:
 	dw_const Route1SignText,       TEXT_ROUTE1_SIGN
 
 Route1TrainerHeaders:
-	def_trainers 3
+	def_trainers 4
 Route1TrainerHeader0:
 	trainer EVENT_BEAT_ROUTE_1_TRAINER_0, 2, Route1Youngster4BattleText, Route1Youngster4EndBattleText, Route1Youngster4AfterBattleText    ; New trainer added by G-Dubs
 	db -1 ; end

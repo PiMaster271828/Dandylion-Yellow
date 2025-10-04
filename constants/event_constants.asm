@@ -274,10 +274,11 @@
 	
 ; Route 1 Events
 	const_next $370 
-	const_skip                                                                                     ; $370
+	const_skip                                   ; const_skip added by G-Dubs                      ; $370
 	const EVENT_GOT_POTION_SAMPLE                                                                  ; $371
-	const_skip                                                                                     ; $372
-	const EVENT_BEAT_ROUTE_1_TRAINER_0	                                                           ; $373
+	const_skip 2                                 ; const_skip added by G-Dubs                      ; $372 - $373
+	const EVENT_BEAT_ROUTE_1_TRAINER_0	         ; New trainer added by G-Dubs                     ; $374
+	const_skip 11                                                                                  ; $375 - $37F
 
 ; Route 2 Events
 	const_next $380                                                                                
@@ -286,18 +287,18 @@
 
 ; Route 3 Events
 	const_next $390
-	const_skip 2                                                                                   ; $390
-	const EVENT_BEAT_ROUTE_3_TRAINER_0                                                             ; $391
-	const EVENT_BEAT_ROUTE_3_TRAINER_1                                                             ; $392
-	const EVENT_BEAT_ROUTE_3_TRAINER_2                                                             ; $393
-	const EVENT_BEAT_ROUTE_3_TRAINER_3                                                             ; $394
-	const EVENT_BEAT_ROUTE_3_TRAINER_4                                                             ; $395
-	const EVENT_BEAT_ROUTE_3_TRAINER_5                                                             ; $396
-	const EVENT_BEAT_ROUTE_3_TRAINER_6                                                             ; $397
-	const EVENT_BEAT_ROUTE_3_TRAINER_7                                                             ; $398
-	const EVENT_BEAT_ROUTE_3_TRAINER_8           ; New trainer added by G-Dubs                     ; $399
-	const EVENT_BEAT_ROUTE_3_TRAINER_9           ; New trainer added by G-Dubs                     ; $39A
-	const_skip 5                                 ; const_skip added by G-Dubs                      ; $39B - $3AF
+	const_skip 2                                                                                   ; $390 - $391
+	const EVENT_BEAT_ROUTE_3_TRAINER_0                                                             ; $392
+	const EVENT_BEAT_ROUTE_3_TRAINER_1                                                             ; $393
+	const EVENT_BEAT_ROUTE_3_TRAINER_2                                                             ; $394
+	const EVENT_BEAT_ROUTE_3_TRAINER_3                                                             ; $395
+	const EVENT_BEAT_ROUTE_3_TRAINER_4                                                             ; $396
+	const EVENT_BEAT_ROUTE_3_TRAINER_5                                                             ; $397
+	const EVENT_BEAT_ROUTE_3_TRAINER_6                                                             ; $398
+	const EVENT_BEAT_ROUTE_3_TRAINER_7                                                             ; $399
+	const EVENT_BEAT_ROUTE_3_TRAINER_8           ; New trainer added by G-Dubs                     ; $39A
+	const EVENT_BEAT_ROUTE_3_TRAINER_9           ; New trainer added by G-Dubs                     ; $39B
+	const_skip 4                                 ; const_skip added by G-Dubs                      ; $39C - $3AF
 
 ; Route 4 Events
 	const_next $3B0
