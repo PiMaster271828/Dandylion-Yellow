@@ -16,14 +16,14 @@ _Route2DiglettsCaveSignText::
 
 _Route2AltSignNorthText::         ; New sign added by G-Dubs
 	text "ROUTE 2"
-	line "VIRIDIAN CITY -"
-	cont "DIGLETT's CAVE"
-	done
-
-_Route2AltSignSouthText::         ; New sign added by G-Dubs
-	text "ROUTE 2"
 	line "DIGLETT's CAVE -"
 	cont "VIRIDIAN CITY"
+	done
+	
+_Route2AltSignSouthText::         ; New sign added by G-Dubs
+	text "ROUTE 2"
+	line "VIRIDIAN CITY -"
+	cont "DIGLETT's CAVE"
 	done
 
 /*

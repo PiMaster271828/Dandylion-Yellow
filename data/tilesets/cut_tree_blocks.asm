@@ -16,13 +16,13 @@ CutTreeBlockSwaps:
 	db $60, $32    ; New cut tree block added by G-Dubs
 	db $80, $84    ; New cut tree block added by G-Dubs
 	db $82, $86    ; New cut tree block added by G-Dubs
-	db $83, $6E    ; New cut tree block added by G-Dubs
+	db $83, $6F    ; New cut tree block added by G-Dubs
 	db $8C, $90    ; New cut tree block added by G-Dubs
 	db $98, $4C    ; New cut tree block added by G-Dubs
 	db $9D, $92    ; New cut tree block added by G-Dubs
 	db $C7, $D4    ; New cut tree block added by G-Dubs
 	db $DC, $66    ; New cut tree block added by G-Dubs
-	db $E5, $A4    ; New cut tree block added by G-Dubs
+	db $E5, $D8    ; New cut tree block added by G-Dubs
 	db $F2, $F3    ; New cut tree block added by G-Dubs
 	db $F3, $E3    ; New cut tree block added by G-Dubs
 	db $FA, $FB    ; New cut tree block added by G-Dubs
