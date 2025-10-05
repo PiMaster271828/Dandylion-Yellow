@@ -1,11 +1,22 @@
+_Route2Youngster1Text::           ; New NPC added by G-Dubs
+   text "See those bushes"
+   line "over there? I"
+   cont "want to see what"
+   cont "they're hiding. If"
+   cont "only I had a the"
+   cont "move CUT.  Then I"
+   cont "could cut them"
+   cont "down."
+   done
+
 _Route2SignSouthText::
-	text "ROUTE 2"
+	text "ROUTE 2 SOUTH"
 	line "VIRIDIAN CITY -"
 	cont "VIRIDIAN FOREST"
 	done
 
 _Route2SignNorthText::
-	text "ROUTE 2"
+	text "ROUTE 2 NORTH"
 	line "VIRIDIAN FOREST -"
 	cont "PEWTER CITY"
 	done
@@ -15,13 +26,13 @@ _Route2DiglettsCaveSignText::
 	done
 
 _Route2AltSignNorthText::         ; New sign added by G-Dubs
-	text "ROUTE 2"
+	text "ROUTE 2 EAST"
 	line "DIGLETT's CAVE -"
 	cont "VIRIDIAN CITY"
 	done
 	
 _Route2AltSignSouthText::         ; New sign added by G-Dubs
-	text "ROUTE 2"
+	text "ROUTE 2 WEST"
 	line "VIRIDIAN CITY -"
 	cont "DIGLETT's CAVE"
 	done

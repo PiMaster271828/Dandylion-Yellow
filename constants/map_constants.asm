@@ -17,12 +17,12 @@ ENDM
 ; Order: towns/cities, then routes, then indoor/dungeon maps
 	const_def
 ; First Town Map
-	map_const PALLET_TOWN,                   12,  9 ; $00  ; Map expanded by G-Dubs
+	map_const PALLET_TOWN,                   12, 12 ; $00  ; Map expanded by G-Dubs
 	map_const VIRIDIAN_CITY,                 21, 18 ; $01  ; Map expanded by G-Dubs
 	map_const PEWTER_CITY,                   21, 18 ; $02  ; Map expanded by G-Dubs
-	map_const CERULEAN_CITY,                 20, 18 ; $03
+	map_const CERULEAN_CITY,                 21, 18 ; $03  ; Map expanded by G-Dubs
 	map_const LAVENDER_TOWN,                 10,  9 ; $04
-	map_const VERMILION_CITY,                24, 18 ; $05  ; Map expanded by G-Dubs
+	map_const VERMILION_CITY,                26, 21 ; $05  ; Map expanded by G-Dubs
 	map_const CELADON_CITY,                  24, 18 ; $06  ; Map expanded by G-Dubs
 	map_const FUCHSIA_CITY,                  20, 18 ; $07
 	map_const CINNABAR_ISLAND,               12, 10 ; $08  ; Map expanded by G-Dubs
@@ -32,20 +32,20 @@ DEF NUM_CITY_MAPS EQU const_value
 	map_const UNUSED_MAP_0B,                  0,  0 ; $0B
 DEF FIRST_ROUTE_MAP EQU const_value
 	map_const ROUTE_1,                       12, 18 ; $0C  ; Map expanded by G-Dubs
-	map_const ROUTE_2,                       12, 36 ; $0D  ; Map expanded by G-Dubs
+	map_const ROUTE_2,                       13, 36 ; $0D  ; Map expanded by G-Dubs
 	map_const ROUTE_3,                       35,  9 ; $0E
 	map_const ROUTE_4,                       45,  9 ; $0F
 	map_const ROUTE_5,                       10, 18 ; $10
 	map_const ROUTE_6,                       10, 18 ; $11
 	map_const ROUTE_7,                       12,  9 ; $12  ; Map expanded by G-Dubs
-	map_const ROUTE_8,                       30,  9 ; $13
+	map_const ROUTE_8,                       30, 10 ; $13  ; Map expanded by G-Dubs
 	map_const ROUTE_9,                       30,  9 ; $14
 	map_const ROUTE_10,                      10, 36 ; $15
-	map_const ROUTE_11,                      30,  9 ; $16
+	map_const ROUTE_11,                      30, 15 ; $16  ; Map expanded by G-Dubs
 	map_const ROUTE_12,                      10, 54 ; $17
 	map_const ROUTE_13,                      30, 10 ; $18  ; Map expanded by G-Dubs
-	map_const ROUTE_14,                      12, 30 ; $19  ; Map expanded by G-Dubs
-	map_const ROUTE_15,                      30, 12 ; $1A  ; Map expanded by G-Dubs
+	map_const ROUTE_14,                      12, 29 ; $19  ; Map expanded by G-Dubs
+	map_const ROUTE_15,                      30, 11 ; $1A  ; Map expanded by G-Dubs
 	map_const ROUTE_16,                      20,  9 ; $1B
 	map_const ROUTE_17,                      10, 72 ; $1C
 	map_const ROUTE_18,                      25,  9 ; $1D

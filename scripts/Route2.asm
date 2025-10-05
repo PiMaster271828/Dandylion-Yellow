@@ -15,6 +15,9 @@ Route2_ScriptPointers:
 
 Route2_TextPointers:
 	def_text_pointers
+    dw_const Route2Youngster1Text,       TEXT_ROUTE2_YOUNGSTER1           ; New NPC added by G-Dubs
+   ;dw_const Route2Youngster2Text,       TEXT_ROUTE2_YOUNGSTER2           ; New trainer added by G-Dubs
+   ;dw_const Route2Youngster3Text,       TEXT_ROUTE2_YOUNGSTER3           ; New trainer added by G-Dubs
 	dw_const PickUpItemText,             TEXT_ROUTE2_MOON_STONE
 	dw_const PickUpItemText,             TEXT_ROUTE2_HP_UP
 	dw_const Route2SignSouthText,        TEXT_ROUTE2_SIGN_SOUTH
@@ -24,8 +27,14 @@ Route2_TextPointers:
 	dw_const Route2SignNorthText,        TEXT_ROUTE2_SIGN_NORTH           ; New sign added by G-Dubs
 
     Route2TrainerHeaders:
-	def_trainers
+		def_trainers 2
+	;Route2TrainerHeader0:
+	;	trainer EVENT_BEAT_ROUTE_3_TRAINER_0, 2, Route2Youngster1BattleText, Route2Youngster1EndBattleText, Route2Youngster1AfterBattleText
     db -1 ; end
+
+Route2Youngster1Text:                       ; New NPC added by G-Dubs
+	text_far _Route2Youngster1Text
+	text_end
 
 Route2SignSouthText:
 	text_far _Route2SignSouthText
