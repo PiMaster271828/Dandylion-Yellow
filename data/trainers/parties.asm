@@ -99,6 +99,8 @@ YoungsterData:
     db $FF, 6, RATTATA, 7, PIDGEY, 6, CATERPIE, 7, NIDORAN_M, 6, WEEDLE, 9, PIDGEOTTO, 0                     ; Youngster 15           ; New Trainer added by G-Dubs
 ; Route 1
     db 5, RATTATA, PIDGEY, 0                                                                                 ; Youngster 16           ; New Trainer added by G-Dubs
+; Route 2
+    db 7, RATTATA, PIDGEY, NIDORAN_M, 0                                                                      ; Youngster 17           ; New Trainer added by G-Dubs
 
 BugCatcherData:
 ; Viridian Forest
@@ -134,19 +136,21 @@ BugCatcherData:
     db 18, BUTTERFREE, PARASECT, VENOMOTH, BEEDRILL, 0                                                       ; Bug Catcher 21         ; New trainer added by G-Dubs
 ; Route 9 (Again)
     db 22, PARAS, BUTTERFREE, VENONAT, BEEDRILL, PARASECT, 0                                                 ; Bug Catcher 22         ; New trainer added by G-Dubs
+; Route 2
+    db 7, CATERPIE, WEEDLE, CATERPIE, 0                                                                      ; Bug Catcher 23         ; New trainer added by G-Dubs 
 /*
 ; Route 13
-    db 30, BUTTERFREE, BEEDRILL, VENOMOTH, 0                                                                 ; Bug Catcher 23         ; New Trainer added by G-Dubs
+    db 30, BUTTERFREE, BEEDRILL, VENOMOTH, 0                                                                 ; Bug Catcher 24         ; New Trainer added by G-Dubs
 ; Route 16
-    db $FF, 34, VENONAT, 36, VENONAT, 38, VENONAT, 40, VENOMOTH, 0                                           ; Bug Catcher 24         ; New Trainer added by G-Dubs
+    db $FF, 34, VENONAT, 36, VENONAT, 38, VENONAT, 40, VENOMOTH, 0                                           ; Bug Catcher 25         ; New Trainer added by G-Dubs
 ; Safari Zone Area 1 Rest House
-    db $FF, 32, PARAS, 36, PARASECT, 0                                                                       ; Bug Catcher 25         ; New Trainer added by G-Dubs
+    db $FF, 32, PARAS, 36, PARASECT, 0                                                                       ; Bug Catcher 26         ; New Trainer added by G-Dubs
 ; Safari Zone Area 3 Rest House	
-	db 33, SCYTHER, PINSIR, 0                                                                                ; Bug Catcher 26         ; New Trainer added by G-Dubs
+	db 33, SCYTHER, PINSIR, 0                                                                                ; Bug Catcher 27         ; New Trainer added by G-Dubs
 ; Safari Zone Area 4 Rest House
-   db $FF, 32, VENONAT, 36, VENOMOTH, 0                                                                      ; Bug Catcher 27         ; New Trainer added by G-Dubs
+   db $FF, 32, VENONAT, 36, VENOMOTH, 0                                                                      ; Bug Catcher 28         ; New Trainer added by G-Dubs
 ; Victory Road  
-    db 50, BUTTERFREE, PARASECT, BEEDRILL, VENOMOTH, 0                                                       ; Bug Catcher 28         ; New Trainer added by G-Dubs
+    db 50, BUTTERFREE, PARASECT, BEEDRILL, VENOMOTH, 0                                                       ; Bug Catcher 29         ; New Trainer added by G-Dubs
 */
 
 LassData:
