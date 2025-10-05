@@ -76,6 +76,16 @@ _PewterCityYoungsterGoTakeOnBrockText::
 	cont "take on BROCK!"
 	done
 
+_PewterCityMiddleAgedManText::
+    text "I once saw a"
+	line "bird that seemed"
+	cont "to appear in a"
+	cont "rainbow..."
+	
+	para "Could that bird"
+	line "be a #MON?"
+	done
+
 _PewterCityTrainerTipsText::
 	text "TRAINER TIPS"
 

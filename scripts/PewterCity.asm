@@ -188,6 +188,7 @@ PewterCity_TextPointers:
 	dw_const PewterCitySuperNerd1Text,             TEXT_PEWTERCITY_SUPER_NERD1
 	dw_const PewterCitySuperNerd2Text,             TEXT_PEWTERCITY_SUPER_NERD2
 	dw_const PewterCityYoungsterText,              TEXT_PEWTERCITY_YOUNGSTER
+    dw_const PewterCityMiddleAgedManText,          TEXT_PEWTERCITY_MIDDLE_AGED_MAN                 ; New NPC added by G-Dubs
 	dw_const PewterCityTrainerTipsText,            TEXT_PEWTERCITY_TRAINER_TIPS
 	dw_const PewterCityPoliceNoticeSignText,       TEXT_PEWTERCITY_POLICE_NOTICE_SIGN
 	dw_const MartSignText,                         TEXT_PEWTERCITY_MART_SIGN
@@ -195,7 +196,7 @@ PewterCity_TextPointers:
 	dw_const PewterCityMuseumSignText,             TEXT_PEWTERCITY_MUSEUM_SIGN
 	dw_const PewterCityGymSignText,                TEXT_PEWTERCITY_GYM_SIGN
 	dw_const PewterCitySignText,                   TEXT_PEWTERCITY_SIGN
-	dw_const PewterCitySuperNerd1ItsRightHereText, TEXT_PEWTERCITY_SUPER_NERD1_ITS_RIGHT_HERE
+	dw_const PewterCitySuperNerd1ItsRightHereText, TEXT_PEWTERCITY_SUPER_NERD1_ITS_RIGHT_HERE 
 	dw_const PewterCityYoungsterGoTakeOnBrockText, TEXT_PEWTERCITY_YOUNGSTER_GO_TAKE_ON_BROCK
 
 PewterCityCooltrainerFText:
@@ -305,6 +306,10 @@ PewterCityYoungsterText:
 
 PewterCityYoungsterGoTakeOnBrockText:
 	text_far _PewterCityYoungsterGoTakeOnBrockText
+	text_end
+
+PewterCityMiddleAgedManText:                                    ; New NPC added by G-Dubs
+	text_far _PewterCityMiddleAgedManText
 	text_end
 
 PewterCityTrainerTipsText:

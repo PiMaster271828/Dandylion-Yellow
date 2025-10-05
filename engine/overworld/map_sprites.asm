@@ -346,10 +346,10 @@ GetSplitMapSpriteSetID:
 	cp 43
 	ld a, SPRITESET_CINNABAR_ISLAND
 	ret c
-	; Use SPRITESET_FUCHSIA if X >= 62.
+	; Use SPRITESET_FUCHSIA_CITY if X >= 62.
 	ld a, [hl]
 	cp 62
-	ld a, SPRITESET_FUCHSIA
+	ld a, SPRITESET_FUCHSIA_CITY
 	ret nc
 	; If 55 <= X < 62, split Y at 8; else 43 <= X < 55, so split Y at 13
 	ld a, [hl]
@@ -358,10 +358,10 @@ GetSplitMapSpriteSetID:
 	jr nc, .next
 	ld b, 13
 .next
-	; Use SPRITESET_FUCHSIA if Y < split; else use SPRITESET_CINNABAR_ISLAND
+	; Use SPRITESET_FUCHSIA_CITY if Y < split; else use SPRITESET_CINNABAR_ISLAND
 	ld a, [wYCoord]
 	cp b
-	ld a, SPRITESET_FUCHSIA
+	ld a, SPRITESET_FUCHSIA_CITY
 	ret c
 	ld a, SPRITESET_CINNABAR_ISLAND
 	ret
