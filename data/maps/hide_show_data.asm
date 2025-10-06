@@ -156,7 +156,7 @@ MapHSPointers:
 	dw NoHS                         ; 96 - Lavender Mart
 	dw NoHS                         ; 97 - Lavender Cubone House
 	dw NoHS                         ; 98 = Fuchsia Mart
-	dw NoHS                         ; 99 - Fuschia Bill's Grandpa's House
+	dw NoHS                         ; 99 - Fuchsia Bill's Grandpa's House
 	dw NoHS                         ; 9A - Fuchsia Pokecenter
 	dw WardensHouseHS               ; 9B - Warden's House
 	dw NoHS                         ; 9C - Safari Zone Gate
