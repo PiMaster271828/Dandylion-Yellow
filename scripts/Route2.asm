@@ -29,9 +29,9 @@ Route2_TextPointers:
     Route2TrainerHeaders:
 		def_trainers 2
 	Route2TrainerHeader0:
-		trainer EVENT_BEAT_ROUTE_3_TRAINER_0, 2, Route2Youngster2BattleText, Route2Youngster2EndBattleText, Route2Youngster2AfterBattleText     ; New trainer added by G-Dubs
+		trainer EVENT_BEAT_ROUTE_2_TRAINER_0, 2, Route2Youngster2BattleText, Route2Youngster2EndBattleText, Route2Youngster2AfterBattleText     ; New trainer added by G-Dubs
 	Route2TrainerHeader1:
-		trainer EVENT_BEAT_ROUTE_3_TRAINER_1, 2, Route2Youngster3BattleText, Route2Youngster3EndBattleText, Route2Youngster3AfterBattleText     ; New trainer added by G-Dubs
+		trainer EVENT_BEAT_ROUTE_2_TRAINER_1, 2, Route2Youngster3BattleText, Route2Youngster3EndBattleText, Route2Youngster3AfterBattleText     ; New trainer added by G-Dubs
     db -1 ; end
 
 Route2Youngster1Text:                       ; New NPC added by G-Dubs
@@ -53,7 +53,7 @@ Route2Youngster2EndBattleText:
 	text_end
 
 Route2Youngster2AfterBattleText:
-	text_far _Route3Youngster2AfterBattleText
+	text_far _Route2Youngster2AfterBattleText
 	text_end
 
 Route2Youngster3Text:                       ; New trainer added by G-Dubs

@@ -38,7 +38,7 @@ _Route2Youngster3BattleText::     ; New trainer added by G-Dubs
 	cont "but I do see a"
 	cont "#MON trainer!"
 	
-	para "Let's battle,"
+	para "Let's battle!"
 	done
 
 _Route2Youngster3EndBattleText::
@@ -48,8 +48,9 @@ _Route2Youngster3EndBattleText::
 
 _Route2Youngster3AfterBattleText::
 	text "I ran out of"
-	line "#BALLS. I need to"
-	cont "go buy some more."
+	line "#BALLS. I need"
+	cont "to go buy some"
+	cont "more."
 	done
 
 _Route2SignSouthText::            ; South sign edited by G-Dubs
@@ -75,7 +76,7 @@ _Route2AltSignNorthText::         ; New sign added by G-Dubs
 	done
 	
 _Route2AltSignSouthText::         ; New sign added by G-Dubs
-	text "ROUTE 2 WEST"
+	text "ROUTE 2 EAST"
 	line "VIRIDIAN CITY -"
 	cont "DIGLETT's CAVE"
 	done

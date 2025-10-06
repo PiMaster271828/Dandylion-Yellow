@@ -283,7 +283,11 @@
 ; Route 2 Events
 	const_next $380                                                                                
 	const EVENT_GOT_HM05                                                                           ; $380
-   ;const EVENT_BEAT_ROUTE_2_TRAINER_0	                                                           ; $381
+	const_skip                                   ; const_skip added by G-Dubs                      ; $381
+    const EVENT_BEAT_ROUTE_2_TRAINER_0           ; New trainer added by G-Dubs                     ; $382
+	const EVENT_BEAT_ROUTE_2_TRAINER_1	         ; New trainer added by G-Dubs                     ; $383
+	const EVENT_BEAT_ROUTE_2_TRAINER_2	         ; New trainer added by G-Dubs                     ; $384
+	const_skip 11                                ; const_skip added by G-Dubs                      ; $385 - $38F
 
 ; Route 3 Events
 	const_next $390

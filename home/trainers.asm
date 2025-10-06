@@ -149,7 +149,8 @@ ENDC
 	xor a ; EXCLAMATION_BUBBLE
 	ld [wWhichEmotionBubble], a
 	predef EmotionBubble
-	ld a, D_RIGHT | D_LEFT | D_UP | D_DOWN
+   ;ld a, D_RIGHT | D_LEFT | D_UP | D_DOWN
+	ld a, $ff                               ; Line added by G-Dubs (from tutorial) to have the player face the trainer
 	ld [wJoyIgnore], a
 	xor a
 	ldh [hJoyHeld], a
@@ -163,6 +164,8 @@ DisplayEnemyTrainerTextAndStartBattle::
 	ld a, [wStatusFlags5]
 	and 1 << BIT_SCRIPTED_NPC_MOVEMENT
 	ret nz ; return if the enemy trainer hasn't finished walking to the player's sprite
+	farcall FaceEnemyTrainer                ; Lines added by G-Dubs (from tutorial) to have the player face the trainer
+	xor a
 	ld [wJoyIgnore], a
 	ld a, [wSpriteIndex]
 	ldh [hSpriteIndex], a
