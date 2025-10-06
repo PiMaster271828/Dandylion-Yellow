@@ -89,3 +89,6 @@ SECTION "Tilesets 7", ROMX                                      ; New section ad
 
 CeladonTile_GFX::    INCBIN "gfx/tilesets/celadon_city.2bpp"              ; New tileset added by G-Dubs
 CeladonTile_Block::  INCBIN "gfx/blocksets/celadon_city.bst"              ; New blockset added by G-Dubs
+
+FuchsiaTile_GFX::    INCBIN "gfx/tilesets/fuchsia_city.2bpp"              ; New tileset added by G-Dubs
+FuchsiaTile_Block::  INCBIN "gfx/blocksets/fuchsia_city.bst"              ; New blockset added by G-Dubs

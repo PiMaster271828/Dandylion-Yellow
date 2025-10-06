@@ -305,6 +305,7 @@ INCLUDE "data/wild/maps/Route15.asm"
 INCLUDE "data/wild/maps/Route16.asm"
 INCLUDE "data/wild/maps/Route17.asm"
 INCLUDE "data/wild/maps/Route18.asm"
+INCLUDE "data/wild/maps/FuchsiaCity.asm"              ; New WildMons file added by G-Dubs
 INCLUDE "data/wild/maps/SafariZoneCenter.asm"
 INCLUDE "data/wild/maps/SafariZoneEast.asm"
 INCLUDE "data/wild/maps/SafariZoneNorth.asm"

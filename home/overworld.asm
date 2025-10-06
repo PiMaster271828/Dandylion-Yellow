@@ -698,6 +698,8 @@ CheckIfInOutsideMap::
 	ret z
 	cp CELADON_TILE     ; Make sure Celadon City counts as an outside map
 	ret z
+	cp FUCHSIA_TILE     ; Make sure Fuchsia City counts as an outside map
+	ret z
 	cp PLATEAU          ; Route 23 / Indigo Plateau
 	ret z
 	cp SHIP_PORT        ; Vermilion Port is an outdoor map
@@ -738,6 +740,8 @@ ExtraWarpCheck::
 	cp SAFFRON_TILE          ; Saffron City tileset is also treated as outdoor
 	jr z, .useFunction2
 	cp CELADON_TILE          ; Celadon City tileset is also treated as outdoor
+	jr z, .useFunction2
+	cp FUCHSIA_TILE           ; Fuchsia City tileset is also treated as outdoor
 	jr z, .useFunction2
 	cp SHIP                  ; S.S. Anne tileset
 	jr z, .useFunction2

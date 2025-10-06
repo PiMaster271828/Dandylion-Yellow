@@ -20,6 +20,12 @@ CutTreeBlockSwaps:
 	db $8C, $90    ; New cut tree block added by G-Dubs
 	db $98, $4C    ; New cut tree block added by G-Dubs
 	db $9D, $92    ; New cut tree block added by G-Dubs
+	db $A4, $70    ; New cut tree block added by G-Dubs
+	db $A5, $76    ; New cut tree block added by G-Dubs
+	db $A6, $70    ; New cut tree block added by G-Dubs
+	db $A7, $76    ; New cut tree block added by G-Dubs
+	db $A8, $75    ; New cut tree block added by G-Dubs
+	db $A9, $B1    ; New cut tree block added by G-Dubs
 	db $C7, $D4    ; New cut tree block added by G-Dubs
 	db $DC, $66    ; New cut tree block added by G-Dubs
 	db $E5, $D8    ; New cut tree block added by G-Dubs

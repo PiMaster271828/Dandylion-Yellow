@@ -72,7 +72,7 @@ _FuchsiaCityVoltorbSignText::
 	text "Name: VOLTORB"
 
 	para "The very image of"
-	line "a # BALL."
+	line "a #BALL."
 	prompt
 
 _FuchsiaCityKangaskhanSignText::
@@ -116,4 +116,17 @@ _FuchsiaCityFossilSignKabutoText::
 
 _FuchsiaCityFossilSignUndeterminedText::
 	text "..."
+	done
+
+_FuchsiaCityTaurosSignText::
+	text "Name: TAUROS"
+
+	para "Its stampeding"
+    line "charge is"
+	cont "unstoppable!"
+	prompt
+
+_FuchsiaCityGoodRodHouseSignText::
+	text "FISHING GURU's"
+	line "HOME"
 	done

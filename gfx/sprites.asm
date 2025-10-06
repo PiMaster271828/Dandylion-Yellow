@@ -87,3 +87,19 @@ ChanseySprite::          INCBIN "gfx/sprites/chansey.2bpp"
 SurfingPikachuSprite::   INCBIN "gfx/sprites/surfing_pikachu.2bpp"
 JessieSprite::           INCBIN "gfx/sprites/jessie.2bpp"
 JamesSprite::            INCBIN "gfx/sprites/james.2bpp"
+MeowthSprite::           INCBIN "gfx/sprites/meowth.2bpp"                 ; New sprite added by G-Dubs
+
+
+SECTION "NPC Sprites 4", ROMX                                             ; New section for more sprites added by G-Dubs
+
+SwimmerFSprite::         INCBIN "gfx/sprites/swimmer_girl.2bpp"          ; New sprite added by G-Dubs
+RocketGirlSprite::       INCBIN "gfx/sprites/rocket_girl.2bpp"            ; New sprite added by G-Dubs
+KarenSprite::            INCBIN "gfx/sprites/karen.2bpp"                  ; New sprite added by G-Dubs
+ErikaSprite::            INCBIN "gfx/sprites/erika.2bpp"                  ; New sprite added by G-Dubs
+SabrinaSprite::          INCBIN "gfx/sprites/sabrina.2bpp"                ; New sprite added by G-Dubs
+JanineSprite::           INCBIN "gfx/sprites/janine.2bpp"                 ; New sprite added by G-Dubs
+JasmineSprite::          INCBIN "gfx/sprites/jasmine.2bpp"                ; New sprite added by G-Dubs
+KimomoGirlSprite::       INCBIN "gfx/sprites/kimono_girl.2bpp"            ; New sprite added by G-Dubs
+QuadrupedSprite::        INCBIN "gfx/sprites/quadruped.2bpp"              ; New sprite added by G-Dubs
+LaprasSprite::           INCBIN "gfx/sprites/lapras.2bpp"                 ; New sprite added by G-Dubs
+;SlowpokeSprite::         INCBIN "gfx/sprites/slowpoke.2bpp"               ; New sprite added by G-Dubs

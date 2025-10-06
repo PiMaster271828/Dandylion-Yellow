@@ -24,7 +24,7 @@ ENDM
 	map_const LAVENDER_TOWN,                 10,  9 ; $04
 	map_const VERMILION_CITY,                26, 21 ; $05  ; Map expanded by G-Dubs
 	map_const CELADON_CITY,                  24, 18 ; $06  ; Map expanded by G-Dubs
-	map_const FUCHSIA_CITY,                  20, 18 ; $07
+	map_const FUCHSIA_CITY,                  30, 23 ; $07  ; Map expanded by G-Dubs
 	map_const CINNABAR_ISLAND,               12, 10 ; $08  ; Map expanded by G-Dubs
 	map_const INDIGO_PLATEAU,                10,  9 ; $09
 	map_const SAFFRON_CITY,                  20, 18 ; $0A
@@ -49,7 +49,7 @@ DEF FIRST_ROUTE_MAP EQU const_value
 	map_const ROUTE_16,                      20,  9 ; $1B
 	map_const ROUTE_17,                      10, 72 ; $1C
 	map_const ROUTE_18,                      25,  9 ; $1D
-	map_const ROUTE_19,                      10, 27 ; $1E
+	map_const ROUTE_19,                      11, 27 ; $1E  ; Map expanded by G-Dubs
 	map_const ROUTE_20,                      50, 10 ; $1F  ; Map expanded by G-Dubs
 	map_const ROUTE_21,                      12, 45 ; $20  ; Map expanded by G-Dubs
 	map_const ROUTE_22,                      20,  9 ; $21

@@ -38,4 +38,5 @@ Tilesets:
 	tileset VermilionTile, -1, -1, -1, $52, TILEANIM_WATER_FLOWER    ; New tileset added by G-Dubs
 	tileset SaffronTile,   -1, -1, -1, $52, TILEANIM_WATER_FLOWER    ; New tileset added by G-Dubs
 	tileset CeladonTile,   -1, -1, -1, $52, TILEANIM_WATER_FLOWER    ; New tileset added by G-Dubs
+	tileset FuchsiaTile,   -1, -1, -1, $52, TILEANIM_WATER_FLOWER    ; New tileset added by G-Dubs
 	assert_table_length NUM_TILESETS

@@ -138,13 +138,15 @@ LoadSpecialWarpData:
 	jr nz, .copyWarpDataLoop2
 	; Ensure overworld2 tileset (ID 25) is not reset to 0
 	ld a, [wCurMapTileset]    
-    cp OVERWORLD2      ; overworld2 (25)
+    cp OVERWORLD2       ; Overworld2 (25)
     jr z, .done
 	cp VERMILION_TILE   ; Vermilion City (26)
 	jr z, .done
 	cp SAFFRON_TILE     ; Saffron City (27)
 	jr z, .done
 	cp CELADON_TILE     ; Celadon City (28)
+	jr z, .done
+	cp FUCHSIA_TILE     ; Fuchsia City (29)
 	jr z, .done
     xor a               ; Otherwise, default to OVERWORLD (0)
     ld [wCurMapTileset], a

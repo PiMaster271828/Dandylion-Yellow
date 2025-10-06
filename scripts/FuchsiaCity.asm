@@ -3,30 +3,33 @@ FuchsiaCity_Script:
 
 FuchsiaCity_TextPointers:
 	def_text_pointers
-	dw_const FuchsiaCityYoungster1Text,      TEXT_FUCHSIACITY_YOUNGSTER1
-	dw_const FuchsiaCityGamblerText,         TEXT_FUCHSIACITY_GAMBLER
-	dw_const FuchsiaCityErikText,            TEXT_FUCHSIACITY_ERIK
-	dw_const FuchsiaCityYoungster2Text,      TEXT_FUCHSIACITY_YOUNGSTER2
-	dw_const FuchsiaCityPokemonText,         TEXT_FUCHSIACITY_CHANSEY
-	dw_const FuchsiaCityPokemonText,         TEXT_FUCHSIACITY_VOLTORB
-	dw_const FuchsiaCityPokemonText,         TEXT_FUCHSIACITY_KANGASKHAN
-	dw_const FuchsiaCityPokemonText,         TEXT_FUCHSIACITY_SLOWPOKE
-	dw_const FuchsiaCityPokemonText,         TEXT_FUCHSIACITY_LAPRAS
-	dw_const FuchsiaCityPokemonText,         TEXT_FUCHSIACITY_FOSSIL
-	dw_const FuchsiaCitySignText,            TEXT_FUCHSIACITY_SIGN1
-	dw_const FuchsiaCitySignText,            TEXT_FUCHSIACITY_SIGN2
-	dw_const FuchsiaCitySafariGameSignText,  TEXT_FUCHSIACITY_SAFARI_GAME_SIGN
-	dw_const MartSignText,                   TEXT_FUCHSIACITY_MART_SIGN
-	dw_const PokeCenterSignText,             TEXT_FUCHSIACITY_POKECENTER_SIGN
-	dw_const FuchsiaCityWardensHomeSignText, TEXT_FUCHSIACITY_WARDENS_HOME_SIGN
-	dw_const FuchsiaCitySafariZoneSignText,  TEXT_FUCHSIACITY_SAFARI_ZONE_SIGN
-	dw_const FuchsiaCityGymSignText,         TEXT_FUCHSIACITY_GYM_SIGN
-	dw_const FuchsiaCityChanseySignText,     TEXT_FUCHSIACITY_CHANSEY_SIGN
-	dw_const FuchsiaCityVoltorbSignText,     TEXT_FUCHSIACITY_VOLTORB_SIGN
-	dw_const FuchsiaCityKangaskhanSignText,  TEXT_FUCHSIACITY_KANGASKHAN_SIGN
-	dw_const FuchsiaCitySlowpokeSignText,    TEXT_FUCHSIACITY_SLOWPOKE_SIGN
-	dw_const FuchsiaCityLaprasSignText,      TEXT_FUCHSIACITY_LAPRAS_SIGN
-	dw_const FuchsiaCityFossilSignText,      TEXT_FUCHSIACITY_FOSSIL_SIGN
+	dw_const FuchsiaCityYoungster1Text,       TEXT_FUCHSIACITY_YOUNGSTER1
+	dw_const FuchsiaCityGamblerText,          TEXT_FUCHSIACITY_GAMBLER
+	dw_const FuchsiaCityErikText,             TEXT_FUCHSIACITY_ERIK
+	dw_const FuchsiaCityYoungster2Text,       TEXT_FUCHSIACITY_YOUNGSTER2
+	dw_const FuchsiaCityPokemonText,          TEXT_FUCHSIACITY_CHANSEY
+	dw_const FuchsiaCityPokemonText,          TEXT_FUCHSIACITY_VOLTORB
+	dw_const FuchsiaCityPokemonText,          TEXT_FUCHSIACITY_KANGASKHAN
+	dw_const FuchsiaCityPokemonText,          TEXT_FUCHSIACITY_SLOWPOKE
+	dw_const FuchsiaCityPokemonText,          TEXT_FUCHSIACITY_LAPRAS
+	dw_const FuchsiaCityPokemonText,          TEXT_FUCHSIACITY_FOSSIL
+	dw_const FuchsiaCityPokemonText,          TEXT_FUCHSIACITY_TAUROS               ; New object added by G-Dubs
+	dw_const FuchsiaCitySignText,             TEXT_FUCHSIACITY_SIGN1
+	dw_const FuchsiaCitySignText,             TEXT_FUCHSIACITY_SIGN2
+	dw_const FuchsiaCitySafariGameSignText,   TEXT_FUCHSIACITY_SAFARI_GAME_SIGN
+	dw_const MartSignText,                    TEXT_FUCHSIACITY_MART_SIGN
+	dw_const PokeCenterSignText,              TEXT_FUCHSIACITY_POKECENTER_SIGN
+	dw_const FuchsiaCityWardensHomeSignText,  TEXT_FUCHSIACITY_WARDENS_HOME_SIGN
+	dw_const FuchsiaCitySafariZoneSignText,   TEXT_FUCHSIACITY_SAFARI_ZONE_SIGN
+	dw_const FuchsiaCityGymSignText,          TEXT_FUCHSIACITY_GYM_SIGN
+	dw_const FuchsiaCityChanseySignText,      TEXT_FUCHSIACITY_CHANSEY_SIGN
+	dw_const FuchsiaCityVoltorbSignText,      TEXT_FUCHSIACITY_VOLTORB_SIGN
+	dw_const FuchsiaCityKangaskhanSignText,   TEXT_FUCHSIACITY_KANGASKHAN_SIGN
+	dw_const FuchsiaCitySlowpokeSignText,     TEXT_FUCHSIACITY_SLOWPOKE_SIGN
+	dw_const FuchsiaCityLaprasSignText,       TEXT_FUCHSIACITY_LAPRAS_SIGN
+	dw_const FuchsiaCityFossilSignText,       TEXT_FUCHSIACITY_FOSSIL_SIGN
+	dw_const FuchsiaCityTaurosSignText,       TEXT_FUCHSIACITY_TAUROS_SIGN
+	dw_const FuchsiaCityGoodRodHouseSignText, TEXT_FUCHSIACITY_GOOD_ROD_HOUSE_SIGN  ; New sign added by G-Dubs
 
 FuchsiaCityYoungster1Text:
 	text_far _FuchsiaCityYoungster1Text
@@ -161,4 +164,20 @@ FuchsiaCityFossilSignText:
 
 .UndeterminedText:
 	text_far _FuchsiaCityFossilSignUndeterminedText
+	text_end
+
+FuchsiaCityTaurosSignText:                            ; New sign added by G-Dubs
+	text_asm
+	ld hl, .Text
+	call PrintText
+	ld a, TAUROS
+	call DisplayPokedex
+	jp TextScriptEnd
+
+.Text:
+	text_far _FuchsiaCityTaurosSignText
+	text_end
+
+FuchsiaCityGoodRodHouseSignText:                      ; New sign added by G-Dubs
+	text_far _FuchsiaCityWardensHomeSignText
 	text_end

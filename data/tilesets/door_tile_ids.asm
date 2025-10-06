@@ -17,6 +17,7 @@ DoorTileIDPointers:
 	dbw VERMILION_TILE, .VermilionCityDoorTileIDs     ; New tileset added by G-Dubs
 	dbw SAFFRON_TILE,   .SaffronCityDoorTileIDs       ; New tileset added by G-Dubs
 	dbw CELADON_TILE,   .CeladonCityDoorTileIDs       ; New tileset added by G-Dubs
+	dbw FUCHSIA_TILE,   .FuchsiaCityDoorTileIDs       ; New tileset added by G-Dubs
 	db -1 ; end
 
 MACRO door_tiles
@@ -31,6 +32,7 @@ ENDM
 .VermilionCityDoorTileIDs:                            ; New tileset added by G-Dubs
 .SaffronCityDoorTileIDs:                              ; New tileset added by G-Dubs
 .CeladonCityDoorTileIDs:                              ; New tileset added by G-Dubs
+.FuchsiaCityDoorTileIDs:                              ; New tileset added by G-Dubs
 	door_tiles $1B, $58, $AD      ; New door tile added by G-Dubs
 
 .ForestDoorTileIDs:

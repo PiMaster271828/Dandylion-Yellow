@@ -13,6 +13,7 @@ Overworld2_Coll::                                                               
 VermilionTile_Coll::                                                                                         ; New tileset added by G-Dubs
 SaffronTile_Coll::                                                                                           ; New tileset added by G-Dubs
 CeladonTile_Coll::                                                                                           ; New tileset added by G-Dubs
+FuchsiaTile_Coll::                                                                                           ; New tileset added by G-Dubs
 	coll_tiles $00, $04, $10, $1b, $1d, $20, $21, $2c, $2d, $2e, $30, $31, $33, $39, $3e, $52, $54, $58, $5b, $64, $65, $66, $67, $68, $69
 
 RedsHouse1_Coll::

@@ -8,4 +8,5 @@ BikeRidingTilesets::
 	db VERMILION_TILE   ; New tileset added by G-Dubs
 	db SAFFRON_TILE     ; New tileset added by G-Dubs
 	db CELADON_TILE     ; New tileset added by G-Dubs
+	db FUCHSIA_TILE     ; New tileset added by G-Dubs
 	db -1 ; end

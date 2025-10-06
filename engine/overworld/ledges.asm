@@ -11,6 +11,8 @@ HandleLedges::
 	jr z, .overworld
 	cp CELADON_TILE     ; Check if tileset is Celadon City
 	jr z, .overworld
+	cp FUCHSIA_TILE     ; Check if tileset is Celadon City
+	jr z, .overworld
 	and a               ; Check if tileset is OVERWORLD (ID 0)
 	ret nz              ; If not overworld or overworld2, return
 .overworld              ; New function added for overworld functionality 
