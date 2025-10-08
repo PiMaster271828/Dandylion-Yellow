@@ -87,4 +87,5 @@ DEF FIRST_STILL_SPRITE EQU const_value
 	const SPRITE_UNUSED_GAMBLER_ASLEEP_1    ; $52
 	const SPRITE_UNUSED_GAMBLER_ASLEEP_2    ; $53
 	const SPRITE_GAMBLER_ASLEEP             ; $54
+	const SPRITE_SLOWPOKE                   ; $55     ; New sprite added by G-Dubs
 DEF NUM_SPRITES EQU const_value - 1

@@ -92,7 +92,8 @@ MeowthSprite::           INCBIN "gfx/sprites/meowth.2bpp"                 ; New 
 
 SECTION "NPC Sprites 4", ROMX                                             ; New section for more sprites added by G-Dubs
 
-SwimmerFSprite::         INCBIN "gfx/sprites/swimmer_girl.2bpp"          ; New sprite added by G-Dubs
+KrisBikeSprite::         INCBIN "gfx/sprites/kris_bike.2bpp"              ; New sprite added by G-Dubs
+SwimmerFSprite::         INCBIN "gfx/sprites/swimmer_girl.2bpp"           ; New sprite added by G-Dubs
 RocketGirlSprite::       INCBIN "gfx/sprites/rocket_girl.2bpp"            ; New sprite added by G-Dubs
 KarenSprite::            INCBIN "gfx/sprites/karen.2bpp"                  ; New sprite added by G-Dubs
 ErikaSprite::            INCBIN "gfx/sprites/erika.2bpp"                  ; New sprite added by G-Dubs
@@ -102,4 +103,4 @@ JasmineSprite::          INCBIN "gfx/sprites/jasmine.2bpp"                ; New 
 KimomoGirlSprite::       INCBIN "gfx/sprites/kimono_girl.2bpp"            ; New sprite added by G-Dubs
 QuadrupedSprite::        INCBIN "gfx/sprites/quadruped.2bpp"              ; New sprite added by G-Dubs
 LaprasSprite::           INCBIN "gfx/sprites/lapras.2bpp"                 ; New sprite added by G-Dubs
-;SlowpokeSprite::         INCBIN "gfx/sprites/slowpoke.2bpp"               ; New sprite added by G-Dubs
+SlowpokeSprite::         INCBIN "gfx/sprites/slowpoke.2bpp"               ; New sprite added by G-Dubs

@@ -97,7 +97,7 @@ SpriteSets:
 	db SPRITE_COOLTRAINER_F
 	db SPRITE_COOLTRAINER_M
 	db SPRITE_POKE_BALL
-    db SPRITE_MONSTER                       ; Unused Gambler replaced to use for Slowbro in Cerulean City by G-Dubs
+    db SPRITE_SLOWPOKE                      ; Unused Gambler replaced to use for Slowbro in Cerulean City by G-Dubs
 
 ; SPRITESET_LAVENDER
 	db SPRITE_PIKACHU

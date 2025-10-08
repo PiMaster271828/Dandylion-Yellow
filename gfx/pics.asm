@@ -214,7 +214,7 @@ DugtrioPicFront::      INCBIN "gfx/pokemon/front/dugtrio.pic"
 DugtrioPicBack::       INCBIN "gfx/pokemon/back/dugtriob.pic"
 VenomothPicFront::     INCBIN "gfx/pokemon/front/venomothgold.pic"             ; Venomoth default sprite changed by G-Dubs
 VenomothPicBack::      INCBIN "gfx/pokemon/back/venomothb.pic"
-DewgongPicFront::      INCBIN "gfx/pokemon/front/dewgonggold.pic"              ; Dewgong default sprite changed by Vlad
+DewgongPicFront::      INCBIN "gfx/pokemon/front/dewgonggoldgeorge.pic"        ; Dewgong default sprite changed by Vlad
 DewgongPicBack::       INCBIN "gfx/pokemon/back/dewgongb.pic"
 CaterpiePicFront::     INCBIN "gfx/pokemon/front/caterpie.pic"
 CaterpiePicBack::      INCBIN "gfx/pokemon/back/caterpieb.pic"
@@ -262,7 +262,7 @@ PidgeottoPicFront::    INCBIN "gfx/pokemon/front/pidgeotto.pic"
 PidgeottoPicBack::     INCBIN "gfx/pokemon/back/pidgeottob.pic"
 PidgeotPicFront::      INCBIN "gfx/pokemon/front/pidgeot.pic"
 PidgeotPicBack::       INCBIN "gfx/pokemon/back/pidgeotb.pic"
-StarmiePicFront::      INCBIN "gfx/pokemon/front/starmiethreecolors.pic"
+StarmiePicFront::      INCBIN "gfx/pokemon/front/starmiegreen.pic"
 StarmiePicBack::       INCBIN "gfx/pokemon/back/starmieb.pic"
 
 
