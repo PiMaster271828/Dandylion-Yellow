@@ -25,11 +25,11 @@ SaffronCity_Object:
 	warp_event 13, 11, SAFFRON_PIDGEY_HOUSE, 1   ; Warp Event 4
 	warp_event 25, 11, SAFFRON_MART, 1           ; Warp Event 5
 	warp_event 18, 21, SILPH_CO_1F, 1            ; Warp Event 6
-	warp_event  9, 29, SAFFRON_POKECENTER, 1     ; Warp Event 7
+	warp_event 11, 29, SAFFRON_POKECENTER, 1     ; Warp Event 7
 	warp_event 29, 29, MR_PSYCHICS_HOUSE, 1      ; Warp Event 8
 	warp_event 20,  1, ROUTE_5_GATE, 1           ; Warp Event 9      ; New warp event added by G-Dubs
-	warp_event 19, 34, ROUTE_6_GATE, 3           ; Warp Event 10     ; New warp event added by G-Dubs
-	warp_event 20, 34, ROUTE_6_GATE, 4           ; Warp Event 11     ; New warp event added by G-Dubs
+	warp_event 19, 33, ROUTE_6_GATE, 3           ; Warp Event 10     ; New warp event added by G-Dubs
+	warp_event 20, 33, ROUTE_6_GATE, 4           ; Warp Event 11     ; New warp event added by G-Dubs
 	warp_event  1, 18, ROUTE_7_GATE, 3           ; Warp Event 12     ; New warp event added by G-Dubs
 	warp_event  1, 19, ROUTE_7_GATE, 4           ; Warp Event 13     ; New warp event added by G-Dubs
 	warp_event 38, 18, ROUTE_8_GATE, 1           ; Warp Event 14     ; New warp event added by G-Dubs
@@ -44,7 +44,7 @@ SaffronCity_Object:
 	bg_event 38, 20, TEXT_SAFFRONCITY_TRAINER_TIPS1
 	bg_event  5, 21, TEXT_SAFFRONCITY_TRAINER_TIPS2
 	bg_event 15, 21, TEXT_SAFFRONCITY_SILPH_CO_SIGN
-	bg_event 10, 29, TEXT_SAFFRONCITY_POKECENTER_SIGN
+	bg_event 12, 29, TEXT_SAFFRONCITY_POKECENTER_SIGN
 	bg_event 27, 29, TEXT_SAFFRONCITY_MR_PSYCHICS_HOUSE_SIGN
 	bg_event  1, 20, TEXT_SAFFRONCITY_SILPH_CO_LATEST_PRODUCT_SIGN
 	bg_event  1, 17, TEXT_SAFFRONCITY_MAGNET_TRAIN_SIGN              ; New sign added by G-Dubs
@@ -57,10 +57,10 @@ SaffronCity_Object:
 	object_event 13, 12, SPRITE_ROCKET, STAY, NONE, TEXT_SAFFRONCITY_ROCKET4
 	object_event 11, 25, SPRITE_ROCKET, WALK, LEFT_RIGHT, TEXT_SAFFRONCITY_ROCKET5
 	object_event 32, 13, SPRITE_ROCKET, WALK, LEFT_RIGHT, TEXT_SAFFRONCITY_ROCKET6
-	object_event 19, 30, SPRITE_ROCKET, WALK, LEFT_RIGHT, TEXT_SAFFRONCITY_ROCKET7
+	object_event 20, 30, SPRITE_ROCKET, WALK, LEFT_RIGHT, TEXT_SAFFRONCITY_ROCKET7
 	object_event  8, 14, SPRITE_SCIENTIST, WALK, ANY_DIR, TEXT_SAFFRONCITY_SCIENTIST
 	object_event 23, 23, SPRITE_SILPH_WORKER_M, STAY, NONE, TEXT_SAFFRONCITY_SILPH_WORKER_M
-	object_event 18, 30, SPRITE_SILPH_WORKER_F, WALK, LEFT_RIGHT, TEXT_SAFFRONCITY_SILPH_WORKER_F
+	object_event 19, 30, SPRITE_SILPH_WORKER_F, WALK, LEFT_RIGHT, TEXT_SAFFRONCITY_SILPH_WORKER_F
 	object_event 30, 12, SPRITE_GENTLEMAN, STAY, DOWN, TEXT_SAFFRONCITY_GENTLEMAN
 	object_event 31, 12, SPRITE_BIRD, STAY, DOWN, TEXT_SAFFRONCITY_PIDGEOT
 	object_event 17,  8, SPRITE_ROCKER, STAY, UP, TEXT_SAFFRONCITY_ROCKER

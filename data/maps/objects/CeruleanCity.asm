@@ -48,6 +48,6 @@ CeruleanCity_Object:
 	object_event  6, 25, SPRITE_COOLTRAINER_F, WALK, LEFT_RIGHT, TEXT_CERULEANCITY_COOLTRAINER_F2
 	object_event  4, 12, SPRITE_SUPER_NERD, STAY, DOWN, TEXT_CERULEANCITY_SUPER_NERD3
 	object_event 28, 12, SPRITE_OFFICER_JENNY, STAY, DOWN, TEXT_CERULEANCITY_GUARD2
-	object_event 18, 28, SPRITE_MONSTER, STAY, UP, TEXT_CERULEANCITY_SLOWBRO                     ; Slowbro from Red & Blue added by G-Dubs
+	object_event 18, 28, SPRITE_SLOWPOKE, STAY, UP, TEXT_CERULEANCITY_SLOWBRO                      ; Slowbro from Red & Blue added by G-Dubs
 
 	def_warps_to CERULEAN_CITY

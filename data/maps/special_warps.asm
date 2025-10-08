@@ -86,6 +86,6 @@ FlyWarpDataPtr:
 .FuchsiaCity:    fly_warp FUCHSIA_CITY,    31, 36
 .CinnabarIsland: fly_warp CINNABAR_ISLAND, 11, 14
 .IndigoPlateau:  fly_warp INDIGO_PLATEAU,   9,  6
-.SaffronCity:    fly_warp SAFFRON_CITY,     9, 30
+.SaffronCity:    fly_warp SAFFRON_CITY,    11, 30
 .Route4:         fly_warp ROUTE_4,         11,  6
 .Route10:        fly_warp ROUTE_10,        11, 20
