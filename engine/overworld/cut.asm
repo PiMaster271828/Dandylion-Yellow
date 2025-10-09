@@ -25,6 +25,8 @@ UsedCut:
 	jr z, .canCut
 	cp $70 ; cut tree in grass added by G-Dubs
 	jr z, .canCut
+	cp $76 ; cut tree on path added by G-Dubs
+	jr z, .canCut
 	cp $52 ; grass
 	jr z, .canCut
 .gym                                   ; New function added for cut trees in gyms
