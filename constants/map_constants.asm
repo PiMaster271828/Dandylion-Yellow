@@ -25,7 +25,7 @@ ENDM
 	map_const VERMILION_CITY,                26, 21 ; $05  ; Map expanded by G-Dubs
 	map_const CELADON_CITY,                  24, 18 ; $06  ; Map expanded by G-Dubs
 	map_const FUCHSIA_CITY,                  30, 23 ; $07  ; Map expanded by G-Dubs
-	map_const CINNABAR_ISLAND,               12, 10 ; $08  ; Map expanded by G-Dubs
+	map_const CINNABAR_ISLAND,               12, 12 ; $08  ; Map expanded by G-Dubs
 	map_const INDIGO_PLATEAU,                10,  9 ; $09
 	map_const SAFFRON_CITY,                  20, 18 ; $0A
 DEF NUM_CITY_MAPS EQU const_value

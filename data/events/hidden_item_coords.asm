@@ -35,7 +35,7 @@ HiddenItemCoords:
 	hidden_item POWER_PLANT,                   12,   1
 	hidden_item ROUTE_11,                      48,   5
 	hidden_item ROUTE_12,                       2,  63
-	hidden_item ROUTE_13,                       1,  12
+	hidden_item ROUTE_13,                       1,  13
 	hidden_item ROUTE_13,                      17,  13
 	hidden_item ROUTE_17,                      15,  14
 	hidden_item ROUTE_17,                       8,  45
@@ -50,7 +50,7 @@ HiddenItemCoords:
 	hidden_item ROUTE_25,                      38,   3
 	hidden_item ROUTE_25,                      10,   1
 	hidden_item ROUTE_4,                       40,   3
-	hidden_item ROUTE_9,                       14,   7
+	hidden_item ROUTE_9,                       14,   9
 	hidden_item COPYCATS_HOUSE_2F,              1,   1
 	hidden_item VIRIDIAN_CITY,                 15,   4
 	hidden_item CERULEAN_CITY,                 15,   8
@@ -58,7 +58,7 @@ HiddenItemCoords:
 	hidden_item POKEMON_TOWER_5F,               4,  12
 	hidden_item VERMILION_CITY,                14,  11
 	hidden_item CELADON_CITY,                  45,  16
-	hidden_item SAFARI_ZONE_GATE,              10,   1 ; inaccessible
+	hidden_item SAFARI_ZONE_GATE,               2,   3 ; previously inaccessible
 	hidden_item POKEMON_MANSION_1F,             8,  16
 	assert_max_table_length MAX_HIDDEN_ITEMS
 	db -1 ; end

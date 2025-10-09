@@ -222,7 +222,7 @@ Route12HiddenObjects:
 	db -1 ; end
 
 Route13HiddenObjects:
-	hidden_object  1, 14, PP_UP, HiddenItems
+	hidden_object  1, 13, PP_UP, HiddenItems
 	hidden_object 16, 13, CALCIUM, HiddenItems
 	db -1 ; end
 
@@ -268,7 +268,7 @@ MtMoonPokecenterHiddenObjects:
 	db -1 ; end
 
 Route9HiddenObjects:
-	hidden_object 14,  7, ETHER, HiddenItems
+	hidden_object 14,  9, ETHER, HiddenItems
 	db -1 ; end
 
 TradeCenterHiddenObjects:
@@ -525,7 +525,7 @@ FuchsiaPokecenterHiddenObjects:
 	db -1 ; end
 
 SafariZoneEntranceHiddenObjects:
-	hidden_object 10,  1, NUGGET, HiddenItems ; inaccessible
+	hidden_object 2,  3, NUGGET, HiddenItems ; Previously inaccessible
 	db -1 ; end
 
 FuchsiaGymHiddenObjects:

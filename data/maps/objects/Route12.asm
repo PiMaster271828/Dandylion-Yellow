@@ -40,7 +40,7 @@ Route12_Object:
 	object_event 15, 62, SPRITE_SUPER_NERD, STAY, LEFT, TEXT_ROUTE12_SUPER_NERD2, OPP_GUITARIST, 3                ; New trainer added by G-Dubs
 	object_event  5, 14, SPRITE_SUPER_NERD, STAY, UP, TEXT_ROUTE12_SUPER_NERD3, OPP_GUITARIST, 2                  ; New trainer added by G-Dubs
 	object_event 13,  4, SPRITE_COOLTRAINER_F, STAY, LEFT, TEXT_ROUTE12_COOLTRAINER_F, OPP_COOLTRAINER_F, 10      ; New trainer added by G-Dubs
-	object_event 14, 34, SPRITE_POKE_BALL, STAY, NONE, TEXT_ROUTE12_TM_PAY_DAY, TM_PAY_DAY
+	object_event 14, 35, SPRITE_POKE_BALL, STAY, NONE, TEXT_ROUTE12_TM_PAY_DAY, TM_PAY_DAY
 	object_event  3, 89, SPRITE_POKE_BALL, STAY, NONE, TEXT_ROUTE12_IRON, IRON
 
 	def_warps_to ROUTE_12
