@@ -73,18 +73,19 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_DRAGONITE                     ; $21     ; New Dragonite Palette
 	const PAL_REDCYANMON                    ; $22     ; New Red/Cyan Palette
 	const PAL_STARMIE                       ; $23     ; New Starmie Palette (Tried non-black color)
-	const PAL_SLOTS1                        ; $23
-	const PAL_SLOTS2                        ; $23
-	const PAL_SLOTS3                        ; $24
-	const PAL_SLOTS4                        ; $25
-	const PAL_BLACK                         ; $26
-	const PAL_GREENBAR                      ; $27
-	const PAL_YELLOWBAR                     ; $28
-	const PAL_REDBAR                        ; $29
-	const PAL_BADGE                         ; $2A
-	const PAL_CAVE                          ; $2B
-	const PAL_GAMEFREAK                     ; $2C
-	const PAL_PIKACHUS_BEACH                ; $2D
-	const PAL_PIKACHU_PORTRAIT              ; $2F
-	const PAL_PIKACHUS_BEACH_TITLE          ; $30
+	const PAL_PORYGON                       ; $24
+	const PAL_SLOTS1                        ; $25
+	const PAL_SLOTS2                        ; $26
+	const PAL_SLOTS3                        ; $27
+	const PAL_SLOTS4                        ; $28
+	const PAL_BLACK                         ; $29
+	const PAL_GREENBAR                      ; $2A
+	const PAL_YELLOWBAR                     ; $2B
+	const PAL_REDBAR                        ; $2C
+	const PAL_BADGE                         ; $2D
+	const PAL_CAVE                          ; $2E
+	const PAL_GAMEFREAK                     ; $2F
+	const PAL_PIKACHUS_BEACH                ; $30
+	const PAL_PIKACHU_PORTRAIT              ; $31
+	const PAL_PIKACHUS_BEACH_TITLE          ; $32
 DEF NUM_SGB_PALS EQU const_value

@@ -384,6 +384,10 @@ AlternatePokemonSpriteTable6:
    ;db RIVAL4, RHYDON, LOW(RivalRhydonPicFront), HIGH(RivalRhydonPicFront)        
 	db GUITARIST, ELECTABUZZ, LOW(GuitaristElectabuzzPicFront), HIGH(GuitaristElectabuzzPicFront)  ; OTHER TRAINERS
 	db GUITARIST, PIKACHU, LOW(FemalePikachuPicFront), HIGH(FemalePikachuPicFront)
+   ;db WILD, PIKACHU, LOW(WildPikachuPicFront), HIGH(WildPikachuPicFront)                          ; WILD PIKACHU
+	db JR_TRAINER_M, PIKACHU, LOW(MalePikachuPicFront), HIGH(MalePikachuPicFront)                  ; MALE PIKACHU
+	db SAILOR, PIKACHU, LOW(MalePikachuPicFront), HIGH(MalePikachuPicFront)
+	db GENTLEMAN, PIKACHU, LOW(MalePikachuPicFront), HIGH(MalePikachuPicFront)                  
     db LASS, PIKACHU, LOW(FemalePikachuPicFront), HIGH(FemalePikachuPicFront)                      ; FEMALE TRAINERS
 	db LASS, LAPRAS, LOW(FemaleLaprasPicFront), HIGH(FemaleLaprasPicFront)
 	db JR_TRAINER_F, PIKACHU, LOW(FemalePikachuPicFront), HIGH(FemalePikachuPicFront)
