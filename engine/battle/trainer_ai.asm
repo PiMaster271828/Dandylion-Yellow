@@ -351,7 +351,7 @@ CooltrainerMAI:
 	jp AIUseXAttack
 
 CooltrainerFAI:
-	; --- Check if HP ≤ 10% ---
+	; Check if HP ≤ 10%
     ld a, 10
     call AICheckIfHPBelowFraction
     jr nc, .check20percent   ; If HP > 10%, skip to 20% check
