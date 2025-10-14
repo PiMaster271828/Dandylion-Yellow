@@ -127,9 +127,8 @@ ROMX $19
 	"Tilesets 1"
 ROMX $1A
 	"Version Graphics"
-	"Tilesets 2"
 ROMX $1B
-	"Tilesets 3"
+	"Tilesets 2"
 ROMX $1C
 	"bank1C"
 ROMX $1D
@@ -209,7 +208,8 @@ ROMX $39
 ROMX $3A
 	"bank3A"
 
-; bank $3B is empty 
+ROMX $3B           ; Bank 3B was empty
+   "Tilesets 3"
 
 ROMX $3C
 	"Pikachu PCM"
@@ -247,6 +247,15 @@ ROMX $46
     "Alt Pokemon Sprites 5"
 ROMX $47 
     "Alt Pokemon Sprites 6"
+
+ROMX $48
+    "Tilesets 4"
+ROMX $49
+    "Tilesets 5"
+ROMX $4A
+    "Tilesets 6"
+ROMX $4B
+    "Tilesets 7"
 	
 WRAM0
 	"Audio RAM"
