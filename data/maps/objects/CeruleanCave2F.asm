@@ -3,6 +3,7 @@
 	const_export CERULEANCAVE2F_ULTRA_BALL
 	const_export CERULEANCAVE2F_MAX_REVIVE
 	const_export CERULEANCAVE2F_FULL_RESTORE
+   ;const_export CERULEANCAVE2F_MAX_REPEL        ; New item added by G-Dubs
 
 CeruleanCave2F_Object:
 	db $7d ; border block
@@ -22,5 +23,6 @@ CeruleanCave2F_Object:
 	object_event 16,  7, SPRITE_POKE_BALL, STAY, NONE, TEXT_CERULEANCAVE2F_ULTRA_BALL, ULTRA_BALL
 	object_event 19, 11, SPRITE_POKE_BALL, STAY, NONE, TEXT_CERULEANCAVE2F_MAX_REVIVE, MAX_REVIVE
 	object_event 27,  9, SPRITE_POKE_BALL, STAY, NONE, TEXT_CERULEANCAVE2F_FULL_RESTORE, FULL_RESTORE
+   ;object_event  6,  0, SPRITE_POKE_BALL, STAY, NONE, TEXT_CERULEANCAVE2F_MAX_REPEL, MAX_REPEL         ; New item added by G-Dubs
 
 	def_warps_to CERULEAN_CAVE_2F

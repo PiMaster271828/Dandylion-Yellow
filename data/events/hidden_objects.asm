@@ -8,7 +8,7 @@ HiddenObjectMaps:
 	dbw SAFARI_ZONE_WEST,             SafariZoneWestHiddenObjects
 	dbw CERULEAN_CAVE_2F,             CeruleanCave2HiddenObjects
 	dbw CERULEAN_CAVE_B1F,            CeruleanCave3HiddenObjects
-	dbw UNUSED_MAP_6F,                UnusedMap6FHiddenObjects
+   ;dbw UNUSED_MAP_6F,                UnusedMap6FHiddenObjects
 	dbw SEAFOAM_ISLANDS_B2F,          SeafoamIslands3HiddenObjects
 	dbw SEAFOAM_ISLANDS_B3F,          SeafoamIslands4HiddenObjects
 	dbw SEAFOAM_ISLANDS_B4F,          SeafoamIslands5HiddenObjects
@@ -72,6 +72,8 @@ HiddenObjectMaps:
 	dbw CELADON_MANSION_ROOF_HOUSE,   CeladonMansion5HiddenObjects
 	dbw CELADON_POKECENTER,           CeladonPokecenterHiddenObjects
 	dbw CELADON_GYM,                  CeladonGymHiddenObjects
+   ;dbw CELADON_CHIEF_HOUSE,	      CeladonChiefHouseHiddenObjects      ; New hidden items section added by G-Dubs
+   ;dbw CELADON_DINER,                CeladonDinerHiddenObjects	          ; New hidden items section added by G-Dubs
 	dbw GAME_CORNER,                  GameCornerHiddenObjects
 	dbw FUCHSIA_POKECENTER,           FuchsiaPokecenterHiddenObjects
 	dbw SAFARI_ZONE_GATE,             SafariZoneEntranceHiddenObjects
@@ -134,15 +136,18 @@ SafariZoneWestHiddenObjects:
 
 CeruleanCave2HiddenObjects:
 	hidden_object 16, 13, PP_UP, HiddenItems
+	hidden_object 18,  2, MAX_ELIXIR, HiddenItems                         ; New hidden item added by G-Dubs
 	db -1 ; end
 
 CeruleanCave3HiddenObjects:
 	hidden_object  8, 14, PP_UP, HiddenItems
 	db -1 ; end
 
+/*
 UnusedMap6FHiddenObjects:
 	hidden_object 14, 11, MAX_ELIXIR, HiddenItems
 	db -1 ; end
+*/
 
 SeafoamIslands3HiddenObjects:
 	hidden_object 15, 15, NUGGET, HiddenItems
@@ -363,7 +368,7 @@ PewterPokecenterHiddenObjects:
 	db -1 ; end
 
 CeruleanCityHiddenObjects:
-	hidden_object 15,  8, RARE_CANDY, HiddenItems
+	hidden_object 16,  8, RARE_CANDY, HiddenItems
 	db -1 ; end
 
 CeruleanPokecenterHiddenObjects:
@@ -387,6 +392,7 @@ BikeShopHiddenObjects:
 
 CeruleanCave1HiddenObjects:
 	hidden_object 18,  7, PP_UP, HiddenItems
+	hidden_object  1, 15, RARE_CANDY, HiddenItems                         ; New hidden item added by G-Dubs
 	db -1 ; end
 
 LavenderPokecenterHiddenObjects:
@@ -467,6 +473,16 @@ CeladonGymHiddenObjects:
 	hidden_object  3, 15, SPRITE_FACING_UP, GymStatues
 	hidden_object  6, 15, SPRITE_FACING_UP, GymStatues
 	db -1 ; end
+
+/*
+CeladonChiefHouseHiddenObjects:
+	hidden_object  9,  7, SPRITE_FACING_RIGHT, ???    ; New hidden item added by G-Dubs
+	db -1 ; end
+
+CeladonDinerHiddenObjects:
+	hidden_object  1,  7, SPRITE_FACING_LEFT, ???     ; New hidden item added by G-Dubs
+	db -1 ; end
+*/
 
 GameCornerHiddenObjects:
 	hidden_object 18, 15, ANY_FACING, StartSlotMachine

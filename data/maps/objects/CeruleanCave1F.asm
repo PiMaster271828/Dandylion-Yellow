@@ -3,6 +3,8 @@
 	const_export CERULEANCAVE1F_MAX_ELIXIR
 	const_export CERULEANCAVE1F_MAX_REVIVE
 	const_export CERULEANCAVE1F_ULTRA_BALL
+   ;const_export CERULEANCAVE1F_NUGGET      ; New item added by G-Dubs
+   ;const_export CERULEANCAVE1F_FULL_HEAL   ; New item added by G-Dubs
 
 CeruleanCave1F_Object:
 	db $7d ; border block
@@ -25,5 +27,7 @@ CeruleanCave1F_Object:
 	object_event  7, 11, SPRITE_POKE_BALL, STAY, NONE, TEXT_CERULEANCAVE1F_MAX_ELIXIR, MAX_ELIXIR
 	object_event 29,  9, SPRITE_POKE_BALL, STAY, NONE, TEXT_CERULEANCAVE1F_MAX_REVIVE, MAX_REVIVE
 	object_event 18,  3, SPRITE_POKE_BALL, STAY, NONE, TEXT_CERULEANCAVE1F_ULTRA_BALL, ULTRA_BALL
+   ;object_event 12,  6, SPRITE_POKE_BALL, STAY, NONE, TEXT_CERULEANCAVE1F_NUGGET, NUGGET          ; New item added by G-Dubs
+   ;object_event  6, 15, SPRITE_POKE_BALL, STAY, NONE, TEXT_CERULEANCAVE1F_FULL_HEAL, FULL_HEAL    ; New item added by G-Dubs
 
 	def_warps_to CERULEAN_CAVE_1F
